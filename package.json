@@ -18,7 +18,8 @@
     "audit:images": "tsx scripts/audit-images.ts",
     "audit:schema": "tsx scripts/audit-schema.ts",
     "audit:all": "tsx scripts/audit-all.ts",
-    "qa:playwright": "tsx scripts/qa-playwright.ts"
+    "qa:playwright": "tsx scripts/qa-playwright.ts",
+    "smoke:prod": "tsx scripts/production-smoke.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

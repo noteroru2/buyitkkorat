@@ -1,12 +1,11 @@
 # Final Launch Report — รับซื้อไอทีโคราช.com
 
-วันที่: 2026-07-14
+วันที่: 2026-07-14 (อัปเดตหลัง Live QA)
 
 ## 1. Executive Summary
 
-เว็บไซต์ Astro SSG สำหรับ **WINNER IT** (บริษัท อำพล เทรดดิ้ง จำกัด) สร้างครบ ทำงานบนเครื่องแล้ว  
-`npm run check`, `npm run build`, `npm run audit:all`, Playwright QA ผ่าน  
-**Deploy / Domain ยังไม่ทำ** — เจ้าของจะอัป Git และ Vercel เอง
+เว็บไซต์ Astro SSG ของ **WINNER IT** (บริษัท อำพล เทรดดิ้ง จำกัด) ขึ้น Production แล้ว  
+โดเมน / SSL / Redirect ทำงาน และ Production Smoke Test ผ่านหลังแก้ `vercel.json` (`cleanUrls`)
 
 ## 2–8. ข้อมูลโปรเจกต์
 
@@ -15,39 +14,41 @@
 | Workspace | `c:\Users\User\Desktop\รวมโปรเจค\รับซื้อไอทีโคราช.com` |
 | Framework | Astro 7 + TypeScript strict + Content Collections |
 | Architecture | SSG, layouts/components/content clusters |
-| Git Branch | `main` (ยังไม่มี commit — ไฟล์พร้อมใน working tree) |
-| Commit Hash | ยังไม่มี |
-| Remote | ยังไม่ได้เชื่อม |
-| Production URL (ตั้งใน config) | `https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com` |
+| Git Branch | `main` |
+| Latest relevant commit | `9599db0` (`fix: enable Vercel cleanUrls for Thai routes`) |
+| Remote | https://github.com/noteroru2/buyitkkorat.git |
+| Production URL | https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com |
+| Thai domain | https://รับซื้อไอทีโคราช.com (Punycode apex) |
 
 ## 9–11. Domain / DNS / SSL
 
 | รายการ | สถานะ |
 |--------|--------|
-| Domain mapping | **BLOCKED** — ยังไม่ deploy |
-| DNS | รอหลังชี้โดเมนบน Vercel |
-| SSL | รอหลัง DNS ถูกต้อง |
+| Domain mapping | PASS — Apex เชื่อมแล้ว |
+| www → apex | PASS — HTTP 301 ไป `https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/` |
+| HTTP → HTTPS | PASS — 308 |
+| SSL | PASS — HTTPS ใช้งานได้ |
 
 ## 12–18. ปริมาณหน้า
 
 | เมตริก | จำนวน |
 |--------|------:|
 | หน้า HTML ที่ build | 89 |
-| Services (money/core/condition) | 54 |
+| Services | 54 |
 | Area pages | 11 |
 | Articles | 15 |
-| Sitemap URLs | 88 (ไม่รวม 404) |
-| Noindex | 404 เท่านั้น |
+| Sitemap URLs | 88 |
+| Noindex | 404 |
 
-## 19–24. Audit Results (รันจริงแล้ว)
+## 19–24. Audit Results
 
 | เมตริก | ผล |
 |--------|-----|
-| Money page word count ต่ำสุด | ≥ 1,500 คำไทย (audit:content critical=0) |
+| Money page word count | ≥ 1,500 (critical=0) |
 | Duplicate Title | 0 |
 | Duplicate Description | 0 |
 | Broken Internal Links | 0 |
-| Claim Risk (critical) | 0 |
+| Claim Risk | 0 |
 | Missing Alt (critical) | 0 |
 | Schema errors (critical) | 0 |
 
@@ -55,31 +56,48 @@
 
 | รายการ | ผล |
 |--------|-----|
-| Build | PASS — 89 pages |
-| `astro check` | PASS — 0 errors |
-| Mobile QA (Playwright 390) | PASS |
-| Desktop QA (Playwright 1440) | PASS |
-| Screenshots | `docs/audits/screenshots/` |
-| Lighthouse | ยังไม่รันบน production (แนะนำหลัง live) |
+| Build | PASS |
+| `astro check` | PASS (0 errors) |
+| Mobile / Desktop Playwright | PASS |
+| Lighthouse | ยังไม่รันบน live (แนะนำรอบถัดไป) |
 
-## 29–30. Production Smoke / Blockers
+## 29. Production Smoke Test
 
-- Production Smoke Test: **ยังไม่ได้รัน** (ยังไม่มี live URL)
-- Blocker: **BLOCKED BY CREDENTIALS** สำหรับ Vercel CLI (`vercel whoami` ขอ device login)  
-  เจ้าของจะ push Git และเชื่อม Vercel เอง
+รันด้วย `scripts/production-smoke.ts` บันทึกที่ `docs/audits/production-smoke.json`
 
-## ขั้นตอนที่คุณทำต่อได้
+| Path | Status |
+|------|--------|
+| `/` | 200 |
+| `/รับซื้อสินค้าไอที` | 200 |
+| `/รับซื้อ-iphone-โคราช` | 200 |
+| `/รับซื้อโน๊ตบุ๊ค-โคราช` | 200 |
+| `/รับซื้อคอมพิวเตอร์-โคราช` | 200 |
+| `/รับซื้อการ์ดจอ-โคราช` | 200 |
+| `/รับซื้อกล้อง-โคราช` | 200 |
+| `/รับซื้อสินค้าไอทียกล็อต` | 200 |
+| `/พื้นที่/เมืองนครราชสีมา` | 200 |
+| `/พื้นที่/ปากช่อง` | 200 |
+| `/เกี่ยวกับเรา` | 200 |
+| `/ติดต่อ` | 200 |
+| `/นโยบายความเป็นส่วนตัว` | 200 |
+| `/robots.txt` | 200 |
+| `/sitemap-index.xml` | 200 |
+| unknown URL | 404 (custom page) |
+| LINE / tel | พบบนหน้าที่ตรวจ |
 
-1. `git add .` แล้ว commit (แนะนำแยกตามงานตามบริฟ)
-2. สร้าง GitHub/Git remote แล้ว `git push -u origin main`
-3. Import โปรเจกต์บน Vercel → Framework Astro → Build `npm run build` → Output `dist`
-4. เพิ่มโดเมน `xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com` เป็น Primary (apex)
-5. ตั้ง www → apex redirect ตามค่า DNS ที่ Vercel แสดง (อย่าเดา A/CNAME)
-6. ตรวจ live: `/`, hub, iPhone, notebook, robots.txt, sitemap
+### Hotfix ที่พบและแก้แล้ว
+
+- อาการ: path ภาษาไทยได้ 404 แต่ `*.html` ได้ 200  
+- สาเหตุ: Vercel ไม่ map clean URL ให้ไฟล์ Unicode  
+- แก้: เพิ่ม `vercel.json` → `"cleanUrls": true`, `"trailingSlash": false` แล้ว redeploy
+
+## 30. Blockers
+
+ไม่มี blocker ค้างหลังแก้ cleanUrls
 
 ## 31. แนะนำ 30–90 วัน
 
-- วัด conversion LINE จริง แล้วค่อยใส่ Measurement ID
-- ขยาย Area เฉพาะอำเภอที่มี demand
-- เพิ่มบทความตามคำถามลูกค้าจาก LINE
-- รัน Lighthouse บน production และเก็บคะแนนใน `docs/audits/`
+- รัน Lighthouse บน production และเก็บคะแนน
+- ใส่ Measurement ID เมื่อพร้อม แล้วผูก event hooks ที่มีอยู่
+- ขยาย Area/บทความตามคำถามจาก LINE จริง
+- Submit sitemap ใน Google Search Console

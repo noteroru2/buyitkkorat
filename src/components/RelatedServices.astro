@@ -1,0 +1,60 @@
+---
+interface Item {
+  title: string;
+  href: string;
+}
+
+interface Props {
+  title?: string;
+  items: Item[];
+}
+
+const { title = "บริการที่เกี่ยวข้อง", items } = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <section class="section section--tight related">
+      <div class="container">
+        <h2 class="section__title">{title}</h2>
+        <ul class="related__list">
+          {items.map((item) => (
+            <li>
+              <a href={item.href}>{item.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .related__list {
+    display: grid;
+    gap: var(--space-3);
+    grid-template-columns: 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 640px) {
+    .related__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .related__list a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: var(--space-3) var(--space-4);
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 600;
+  }
+</style>

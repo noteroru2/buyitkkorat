@@ -1,0 +1,46 @@
+---
+const refused = [
+  "ผู้ขายยืนยันกรรมสิทธิ์ไม่ได้",
+  "ติด iCloud และเจ้าของปลดบัญชีไม่ได้",
+  "ติดบัญชี Google และยืนยันเจ้าของไม่ได้",
+  "Serial Number มีความผิดปกติ",
+  "มีเหตุให้สงสัยว่าได้มาโดยมิชอบ",
+];
+---
+
+<section class="section">
+  <div class="container">
+    <div class="notice">
+      <h2>การยืนยันเจ้าของและความปลอดภัย</h2>
+      <p>
+        WINNER IT ให้ความสำคัญกับการซื้อขายที่โปร่งใส ขอความร่วมมือในการยืนยันกรรมสิทธิ์
+        และเตรียมปลดล็อกบัญชีผู้ผลิตก่อนขาย
+      </p>
+      <p><strong>ไม่รับซื้อสินค้าในกรณีต่อไปนี้</strong></p>
+      <ul>
+        {refused.map((item) => <li>{item}</li>)}
+      </ul>
+      <p>
+        อ่านรายละเอียดเพิ่มที่
+        <a href="/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ">นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .notice {
+    background: #fff5f5;
+    border: 1px solid #f5c2c2;
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+  }
+
+  .notice h2 {
+    margin-top: 0;
+  }
+
+  .notice ul {
+    margin: var(--space-3) 0 var(--space-4);
+  }
+</style>

@@ -1,0 +1,39 @@
+---
+interface Item {
+  title: string;
+  description: string;
+  href: string;
+}
+
+interface Props {
+  title?: string;
+  lead?: string;
+  items: Item[];
+}
+
+const {
+  title = "หมวดบริการที่สอบถามบ่อย",
+  lead = "เลือกหมวดที่ตรงกับสินค้าที่ต้องการขาย แล้วส่งรายละเอียดผ่าน LINE เพื่อประเมินเบื้องต้น",
+  items,
+} = Astro.props;
+---
+
+<section class="section">
+  <div class="container">
+    <p class="section__eyebrow">บริการ</p>
+    <h2 class="section__title">{title}</h2>
+    <p class="section__lead">{lead}</p>
+    <div class="card-grid card-grid--3">
+      {
+        items.map((item) => (
+          <article class="card">
+            <a href={item.href} data-event="service_cta_click">
+              <h3 class="card__title">{item.title}</h3>
+              <p class="card__text">{item.description}</p>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

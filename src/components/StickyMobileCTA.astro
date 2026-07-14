@@ -1,0 +1,46 @@
+---
+import { SITE } from "../data/site";
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+---
+
+<div class="sticky-cta" role="region" aria-label="ติดต่อด่วน">
+  <div class="sticky-cta__inner">
+    <PrimaryLineCTA label={`แอด LINE ${SITE.lineId}`} event="sticky_line_click" />
+    <a
+      class="btn btn--phone"
+      href={`tel:${SITE.phoneTel}`}
+      data-event="phone_click"
+      data-cta="phone"
+    >
+      โทร {SITE.phoneDisplay}
+    </a>
+  </div>
+</div>
+
+<style>
+  .sticky-cta {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 40;
+    background: rgba(255, 248, 239, 0.96);
+    border-top: 1px solid var(--color-border);
+    backdrop-filter: blur(8px);
+    padding: var(--space-3) var(--container-pad);
+    padding-bottom: calc(var(--space-3) + env(safe-area-inset-bottom, 0px));
+  }
+
+  .sticky-cta__inner {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--space-2);
+    width: min(100%, var(--container-max));
+    margin-inline: auto;
+  }
+
+  @media (min-width: 768px) {
+    .sticky-cta {
+      display: none;
+    }
+  }
+</style>

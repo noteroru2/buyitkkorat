@@ -1,0 +1,86 @@
+---
+const steps = [
+  {
+    title: "ส่งข้อมูลผ่าน LINE",
+    text: "แนบรูป รุ่น สภาพ อุปกรณ์ พื้นที่ และจำนวนชิ้น",
+  },
+  {
+    title: "รับประเมินเบื้องต้น",
+    text: "ทีมพิจารณาจากข้อมูลที่ส่งมา โดยราคาอาจปรับหลังตรวจของจริง",
+  },
+  {
+    title: "นัดรับหรือจัดส่ง",
+    text: "เลือกลำดับตามคิว ระยะทาง และเงื่อนไขพื้นที่ในโคราช",
+  },
+  {
+    title: "ยืนยันราคาสุดท้าย",
+    text: "ตรวจสอบสินค้าจริง ยืนยันกรรมสิทธิ์ แล้วสรุปราคา",
+  },
+];
+---
+
+<section class="section">
+  <div class="container">
+    <h2 class="section__title">ขั้นตอนการขายแบบย่อ</h2>
+    <p class="section__lead">เริ่มจาก LINE ให้ครบข้อมูล จะช่วยให้ประเมินและนัดหมายได้ราบรื่นขึ้น</p>
+    <ol class="process">
+      {
+        steps.map((step, index) => (
+          <li class="process__item">
+            <span class="process__num">{index + 1}</span>
+            <div>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+
+<style>
+  .process {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 768px) {
+    .process {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .process__item {
+    display: flex;
+    gap: var(--space-4);
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+  }
+
+  .process__num {
+    flex: 0 0 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--color-blue-soft);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+  }
+
+  .process h3 {
+    margin: 0 0 var(--space-2);
+    font-size: var(--font-size-base);
+  }
+
+  .process p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+  }
+</style>

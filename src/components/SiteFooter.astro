@@ -1,0 +1,95 @@
+---
+import { FOOTER_LINKS, SITE } from "../data/site";
+---
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <p class="footer__brand">{SITE.brand}</p>
+      <p class="footer__legal">ดำเนินงานโดย {SITE.legalName}</p>
+      <p>
+        โทร:
+        <a href={`tel:${SITE.phoneTel}`} data-event="phone_click">{SITE.phoneDisplay}</a>
+      </p>
+      <p>
+        LINE:
+        <a href={SITE.lineUrl} target="_blank" rel="noopener noreferrer" data-event="line_click">
+          {SITE.lineId}
+        </a>
+      </p>
+      <p class="footer__area">พื้นที่ให้บริการ: {SITE.serviceAreaLabel}</p>
+    </div>
+    <nav aria-label="ลิงก์ท้ายหน้า">
+      <ul class="footer__links">
+        {
+          FOOTER_LINKS.map((link) => (
+            <li>
+              <a href={link.href}>{link.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+  <div class="container footer__bottom">
+    <p>© {new Date().getFullYear()} {SITE.brand} · {SITE.name}</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #1f2a3d;
+    color: #f5f7fb;
+    padding: var(--space-7) 0 var(--space-5);
+    margin-top: var(--space-8);
+  }
+
+  .footer a {
+    color: #ffe0c2;
+  }
+
+  .footer__grid {
+    display: grid;
+    gap: var(--space-6);
+  }
+
+  @media (min-width: 768px) {
+    .footer__grid {
+      grid-template-columns: 1.2fr 1fr;
+    }
+  }
+
+  .footer__brand {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin: 0 0 var(--space-2);
+  }
+
+  .footer__legal,
+  .footer__area {
+    color: #c7d0df;
+  }
+
+  .footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .footer__links a {
+    text-decoration: none;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .footer__bottom {
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: var(--font-size-sm);
+    color: #aeb8c9;
+  }
+</style>

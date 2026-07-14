@@ -1,0 +1,64 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import RelatedServices from "../components/RelatedServices.astro";
+import RelatedArticles from "../components/RelatedArticles.astro";
+import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import type { BreadcrumbItem } from "../utils/seo";
+
+interface Related {
+  title: string;
+  href: string;
+  excerpt?: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  h1: string;
+  breadcrumbs: BreadcrumbItem[];
+  canonical?: string;
+  ogImage?: string;
+  updatedDate?: Date | string;
+  publishedDate?: Date | string;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+  relatedServices?: Related[];
+  relatedArticles?: Related[];
+}
+
+const props = Astro.props;
+---
+
+<BaseLayout
+  title={props.title}
+  description={props.description}
+  canonical={props.canonical}
+  ogImage={props.ogImage}
+  ogType="article"
+  updatedDate={props.updatedDate}
+  schema={props.schema}
+>
+  <div class="container" style="padding-top: var(--space-5)">
+    <Breadcrumbs items={props.breadcrumbs} />
+    <h1 style="max-width: 20ch">{props.h1}</h1>
+    {
+      props.updatedDate && (
+        <p style="color: var(--color-text-muted); font-size: var(--font-size-sm)">
+          อัปเดต: {new Date(props.updatedDate).toLocaleDateString("th-TH")}
+        </p>
+      )
+    }
+  </div>
+  <article class="section">
+    <div class="container prose main-content">
+      <slot />
+    </div>
+  </article>
+  <RelatedServices title="หน้าที่เกี่ยวข้อง" items={props.relatedServices ?? []} />
+  <RelatedArticles title="อ่านต่อ" items={props.relatedArticles ?? []} />
+  <section class="section">
+    <div class="container" style="text-align:center">
+      <PrimaryLineCTA label="ส่งรุ่นและสภาพให้ประเมิน" />
+    </div>
+  </section>
+</BaseLayout>

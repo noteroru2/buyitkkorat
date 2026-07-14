@@ -1,0 +1,43 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import type { BreadcrumbItem } from "../utils/seo";
+
+interface Props {
+  title: string;
+  description: string;
+  h1: string;
+  breadcrumbs: BreadcrumbItem[];
+  canonical?: string;
+  ogImage?: string;
+  updatedDate?: Date | string;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const props = Astro.props;
+---
+
+<BaseLayout
+  title={props.title}
+  description={props.description}
+  canonical={props.canonical}
+  ogImage={props.ogImage}
+  updatedDate={props.updatedDate}
+  schema={props.schema}
+>
+  <div class="container" style="padding-top: var(--space-5)">
+    <Breadcrumbs items={props.breadcrumbs} />
+    <h1 style="max-width: 18ch">{props.h1}</h1>
+  </div>
+  <article class="section">
+    <div class="container prose main-content">
+      <slot />
+    </div>
+  </article>
+  <section class="section">
+    <div class="container" style="text-align:center">
+      <PrimaryLineCTA label="แอด LINE @buyhub" />
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,99 @@
+---
+import TrustPageLayout from "../layouts/TrustPageLayout.astro";
+import { absoluteUrl } from "../utils/seo";
+import { buildGraph, webpageSchema, breadcrumbSchema, faqSchema } from "../utils/schema";
+import { SITE } from "../data/site";
+
+const faqs = [
+  {
+    question: "เริ่มต้นขายสินค้าไอทีอย่างไร",
+    answer: `แอด LINE ${SITE.lineId} แล้วส่งรูป รุ่น สภาพ อุปกรณ์ พื้นที่ และจำนวนชิ้นเพื่อประเมินเบื้องต้น`,
+  },
+  {
+    question: "ราคาสุดท้ายยืนยันเมื่อไหร่",
+    answer: `${SITE.priceDisclaimer} ราคาสุดท้ายยืนยันหลังตรวจสอบสินค้าจริง`,
+  },
+  {
+    question: "มีบริการรับถึงที่ในโคราชไหม",
+    answer: "มีตามเงื่อนไขการนัดหมาย พื้นที่ คิว และระยะทาง ไม่ได้รับประกันว่าถึงที่ได้ทันทีทุกกรณี",
+  },
+  {
+    question: "ส่งสินค้ามาประเมินเองได้ไหม",
+    answer: "ได้ ตามรายละเอียดที่แจ้งผ่าน LINE ควรแพ็กให้ปลอดภัยและลบข้อมูลส่วนตัวก่อนส่ง",
+  },
+  {
+    question: "รับซื้อสินค้าองค์กรหรือยกล็อตไหม",
+    answer: "ได้ โดยส่งรายการสินทรัพย์และรูปตัวอย่างมาประเมินก่อนนัดหมาย",
+  },
+  {
+    question: "สินค้าไม่มีกล่องรับไหม",
+    answer: "สอบถามได้เป็นรายชิ้น ราคาอาจต่างจากชุดที่มีอุปกรณ์ครบ",
+  },
+  {
+    question: "ต้องออกจาก iCloud หรือ Google ก่อนไหม",
+    answer: "ต้องเตรียมปลดบัญชีให้พร้อม หากปลดไม่ได้และยืนยันเจ้าของไม่ได้ จะไม่รับซื้อ",
+  },
+  {
+    question: "มีหน้าร้านประจำในจังหวัดนครราชสีมาหรือไม่",
+    answer: "หน้านี้ไม่ได้อ้างว่ามีสาขา หากไม่มีข้อมูลยืนยัน โปรดใช้ช่องทาง LINE และโทรศัพท์เพื่อสอบถามบริการ",
+  },
+];
+
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  { name: "คำถามที่พบบ่อย", href: "/คำถามที่พบบ่อย" },
+];
+const url = absoluteUrl("/คำถามที่พบบ่อย");
+const schema = buildGraph([
+  webpageSchema({
+    url,
+    name: "คำถามที่พบบ่อย",
+    description: "FAQ บริการรับซื้อสินค้าไอทีโคราชของ WINNER IT",
+  }),
+  breadcrumbSchema(breadcrumbs),
+  faqSchema(faqs, url),
+]);
+---
+
+<TrustPageLayout
+  title="คำถามที่พบบ่อย | WINNER IT"
+  description="รวมคำถามที่พบบ่อยเกี่ยวกับการประเมิน รับซื้อ นัดรับ และจัดส่งสินค้าไอทีในโคราช"
+  h1="คำถามที่พบบ่อย"
+  breadcrumbs={breadcrumbs}
+  canonical="/คำถามที่พบบ่อย"
+  schema={schema}
+  updatedDate={new Date("2026-07-14")}
+>
+  <p>รวมคำตอบสั้น ๆ สำหรับผู้ที่อยากขายสินค้าไอทีในจังหวัดนครราชสีมา</p>
+  <div class="faq-embed">
+    {
+      faqs.map((item) => (
+        <details class="faq-embed__item">
+          <summary>{item.question}</summary>
+          <p>{item.answer}</p>
+        </details>
+      ))
+    }
+  </div>
+</TrustPageLayout>
+
+<style>
+  .faq-embed {
+    display: grid;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+  }
+  .faq-embed__item {
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 0 var(--space-4) var(--space-3);
+  }
+  .faq-embed__item summary {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+  }
+</style>

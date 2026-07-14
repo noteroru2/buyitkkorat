@@ -1,0 +1,62 @@
+---
+import TrustPageLayout from "../layouts/TrustPageLayout.astro";
+import { absoluteUrl } from "../utils/seo";
+import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
+import { SITE } from "../data/site";
+
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  {
+    name: "นโยบายรับซื้อสินค้า",
+    href: "/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ",
+  },
+];
+const schema = buildGraph([
+  webpageSchema({
+    url: absoluteUrl("/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ"),
+    name: "นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ",
+    description: "เงื่อนไขการรับซื้อและการยืนยันกรรมสิทธิ์สินค้าไอทีของ WINNER IT",
+  }),
+  breadcrumbSchema(breadcrumbs),
+]);
+---
+
+<TrustPageLayout
+  title="นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ | WINNER IT"
+  description="เงื่อนไขการรับซื้อสินค้าไอที การยืนยันเจ้าของ และรายการที่ไม่รับซื้อของ WINNER IT"
+  h1="นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ"
+  breadcrumbs={breadcrumbs}
+  canonical="/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ"
+  schema={schema}
+  updatedDate={new Date("2026-07-14")}
+>
+  <p>
+    เพื่อให้การซื้อขายโปร่งใส {SITE.brand} ขอความร่วมมือจากผู้ขายในการยืนยันกรรมสิทธิ์
+    และเตรียมปลดล็อกบัญชีที่เกี่ยวข้องก่อนส่งมอบสินค้า
+  </p>
+  <h2>หลักการทั่วไป</h2>
+  <ul>
+    <li>ประเมินเบื้องต้นจากรูปและข้อมูลที่ลูกค้าส่งมา</li>
+    <li>ตรวจสอบสินค้าจริงก่อนยืนยันราคาสุดท้าย</li>
+    <li>พิจารณาตามรุ่น สเปก สภาพ อุปกรณ์ และราคาตลาด</li>
+  </ul>
+  <p class="disclaimer">{SITE.priceDisclaimer}</p>
+  <h2>ไม่รับซื้อสินค้าในกรณีต่อไปนี้</h2>
+  <ul>
+    <li>ผู้ขายยืนยันกรรมสิทธิ์ไม่ได้</li>
+    <li>ติด iCloud และเจ้าของปลดบัญชีไม่ได้</li>
+    <li>ติดบัญชี Google และยืนยันเจ้าของไม่ได้</li>
+    <li>Serial Number มีความผิดปกติ</li>
+    <li>มีเหตุให้สงสัยว่าได้มาโดยมิชอบ</li>
+  </ul>
+  <h2>เอกสารที่อาจขอเพิ่มในบางกรณี</h2>
+  <p>
+    โดยเฉพาะลูกค้าองค์กรหรือยกล็อต อาจขอรายการสินทรัพย์ ใบเบิก หรือหลักฐานที่เกี่ยวข้อง
+    เพื่อความชัดเจนของกรรมสิทธิ์
+  </p>
+  <h2>ติดต่อสอบถาม</h2>
+  <p>
+    LINE <a href={SITE.lineUrl}>{SITE.lineId}</a> · โทร
+    <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a>
+  </p>
+</TrustPageLayout>

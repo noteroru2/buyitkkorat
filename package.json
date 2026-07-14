@@ -1,0 +1,35 @@
+{
+  "name": "winner-it-korat",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "audit:seo": "tsx scripts/audit-seo.ts",
+    "audit:content": "tsx scripts/audit-content.ts",
+    "audit:links": "tsx scripts/audit-links.ts",
+    "audit:claims": "tsx scripts/audit-claims.ts",
+    "audit:images": "tsx scripts/audit-images.ts",
+    "audit:schema": "tsx scripts/audit-schema.ts",
+    "audit:all": "tsx scripts/audit-all.ts",
+    "qa:playwright": "tsx scripts/qa-playwright.ts"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.0.9"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "cheerio": "^1.2.0",
+    "linkedom": "^0.18.13",
+    "playwright": "^1.61.1",
+    "tsx": "^4.23.1",
+    "typescript": "^5.9.3"
+  }
+}

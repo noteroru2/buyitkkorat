@@ -1,0 +1,253 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroSection from "../components/HeroSection.astro";
+import CuteDeviceIllustration from "../components/CuteDeviceIllustration.astro";
+import TrustStrip from "../components/TrustStrip.astro";
+import ServiceCategoryGrid from "../components/ServiceCategoryGrid.astro";
+import WhatToPrepare from "../components/WhatToPrepare.astro";
+import SellingProcess from "../components/SellingProcess.astro";
+import ProductTypeGrid from "../components/ProductTypeGrid.astro";
+import BusinessBulkSection from "../components/BusinessBulkSection.astro";
+import ValuationFactors from "../components/ValuationFactors.astro";
+import ServiceAreaGrid from "../components/ServiceAreaGrid.astro";
+import SafetyNotice from "../components/SafetyNotice.astro";
+import RelatedArticles from "../components/RelatedArticles.astro";
+import FAQSection from "../components/FAQSection.astro";
+import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import { SITE } from "../data/site";
+import { absoluteUrl } from "../utils/seo";
+import { buildGraph, faqSchema, webpageSchema } from "../utils/schema";
+
+const articles = (await getCollection("articles"))
+  .filter((a) => a.data.featured || a.data.indexable)
+  .slice(0, 6)
+  .map((a) => ({
+    title: a.data.h1,
+    href: `/บทความ/${a.data.slug}`,
+    excerpt: a.data.excerpt,
+  }));
+
+const areas = (await getCollection("areas")).slice(0, 6).map((a) => ({
+  title: a.data.areaName,
+  description: a.data.excerpt,
+  href: `/พื้นที่/${a.data.slug}`,
+}));
+
+const faqs = [
+  {
+    question: "รับซื้อสินค้าไอทีอะไรบ้างในโคราช",
+    answer:
+      "สอบถามได้ทั้งโทรศัพท์ แท็บเล็ต โน๊ตบุ๊ค คอมพิวเตอร์ การ์ดจอ กล้อง เครื่องเกม และอุปกรณ์สำนักงาน ส่งรุ่นและสภาพผ่าน LINE เพื่อยืนยันก่อน",
+  },
+  {
+    question: "ต้องมีหน้าร้านในโคราชไหม",
+    answer:
+      "บริการเป็นแบบประเมินผ่าน LINE และนัดหมายตามพื้นที่ ไม่ได้อ้างว่ามีสาขาหน้าร้านในจังหวัดนครราชสีมา",
+  },
+  {
+    question: "ราคาประเมินจากรูปยืนยันได้เลยหรือไม่",
+    answer: SITE.priceDisclaimer,
+  },
+  {
+    question: "นัดรับถึงที่ใช้เวลานานแค่ไหน",
+    answer:
+      "ขึ้นกับคิว ระยะทาง และจำนวนสินค้า กรุณาสอบถามช่วงเวลาผ่าน LINE @buyhub",
+  },
+  {
+    question: "ขายหลายเครื่องหรือยกล็อตได้ไหม",
+    answer:
+      "ได้ แนะนำให้ส่งรายการรุ่น จำนวน Serial และรูปตัวอย่างมาประเมินก่อนนัดหมาย",
+  },
+  {
+    question: "สินค้าติด iCloud หรือบัญชี Google รับไหม",
+    answer:
+      "ไม่รับหากเจ้าของปลดบัญชีไม่ได้หรือยืนยันกรรมสิทธิ์ไม่ได้",
+  },
+];
+
+const schema = buildGraph([
+  webpageSchema({
+    url: absoluteUrl("/"),
+    name: "รับซื้อสินค้าไอทีโคราช ประเมินเบื้องต้นผ่าน LINE",
+    description:
+      "WINNER IT รับซื้อสินค้าไอทีมือสองในโคราช ประเมินผ่าน LINE @buyhub นัดรับตามเงื่อนไขพื้นที่",
+  }),
+  faqSchema(faqs, absoluteUrl("/")),
+]);
+---
+
+<BaseLayout
+  title="รับซื้อสินค้าไอทีโคราช ประเมินเบื้องต้นผ่าน LINE | WINNER IT"
+  description="รับซื้อสินค้าไอทีมือสองในนครราชสีมา ประเมินผ่าน LINE @buyhub นัดรับตามคิวและระยะทาง ราคาสุดท้ายยืนยันหลังตรวจของจริง"
+  canonical="/"
+  schema={schema}
+  updatedDate={new Date("2026-07-14")}
+>
+  <HeroSection
+    h1="รับซื้อสินค้าไอทีโคราช ประเมินเบื้องต้นผ่าน LINE"
+    lead="WINNER IT รับซื้อโทรศัพท์ โน๊ตบุ๊ค คอมพิวเตอร์ และอุปกรณ์ไอทีในจังหวัดนครราชสีมา ส่งรูปประเมินผ่าน LINE @buyhub แล้ววนัดตามพื้นที่ คิว และระยะทาง"
+  >
+    <CuteDeviceIllustration slot="illustration" type="devices" title="อุปกรณ์ไอทีมือสอง" />
+  </HeroSection>
+
+  <TrustStrip />
+
+  <ServiceCategoryGrid
+    items={[
+      {
+        title: "รับซื้อสินค้าไอที",
+        description: "ภาพรวมบริการรับซื้อและหมวดสินค้าหลัก",
+        href: "/รับซื้อสินค้าไอที",
+      },
+      {
+        title: "รับซื้อถึงที่โคราช",
+        description: "นัดรับตามพื้นที่และคิวในจังหวัดนครราชสีมา",
+        href: "/บริการรับซื้อถึงที่โคราช",
+      },
+      {
+        title: "ส่งสินค้ามาประเมิน",
+        description: "ทางเลือกเมื่อยังไม่สะดวกนัดรับ",
+        href: "/ส่งสินค้าไอทีมาประเมิน",
+      },
+      {
+        title: "รับซื้อยกล็อต",
+        description: "หลายชิ้น สำนักงาน หรือองค์กร",
+        href: "/รับซื้อสินค้าไอทียกล็อต",
+      },
+      {
+        title: "iPhone",
+        description: "ประเมินรุ่น ความจุ แบต และ iCloud",
+        href: "/รับซื้อ-iphone-โคราช",
+      },
+      {
+        title: "โน๊ตบุ๊ค",
+        description: "ตรวจสเปก สภาพ และอาการเสีย",
+        href: "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      },
+    ]}
+  />
+
+  <WhatToPrepare />
+  <SellingProcess />
+
+  <ProductTypeGrid
+    items={[
+      { title: "โทรศัพท์มือถือ", description: "iPhone Android Samsung และอื่น ๆ", href: "/รับซื้อโทรศัพท์มือถือ-โคราช" },
+      { title: "คอมพิวเตอร์", description: "ตั้งโต๊ะ ประกอบ เกมมิ่ง เวิร์กสเตชัน", href: "/รับซื้อคอมพิวเตอร์-โคราช" },
+      { title: "การ์ดจอ", description: "GPU มือสองส่งสเปกและรูปพัดลม", href: "/รับซื้อการ์ดจอ-โคราช" },
+      { title: "กล้อง", description: "กล้องและเลนส์พร้อม shutter count", href: "/รับซื้อกล้อง-โคราช" },
+      { title: "เครื่องเกม", description: "PlayStation Nintendo และอุปกรณ์เกม", href: "/รับซื้อเครื่องเกม-โคราช" },
+      { title: "อุปกรณ์สำนักงาน", description: "ปริ้นเตอร์ POS และคอมบริษัท", href: "/รับซื้ออุปกรณ์สำนักงาน" },
+      { title: "โน๊ตบุ๊คเสีย / จอแตก", description: "สอบถามตามสภาพได้", href: "/รับซื้อโน๊ตบุ๊คเสีย-โคราช" },
+      { title: "สินค้าไม่ได้ใช้งาน", description: "เครื่องค้างสต็อกหรือไม่ได้ใช้มานาน", href: "/รับซื้อสินค้าไอทีไม่ได้ใช้งาน-โคราช" },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">เหมาะกับลูกค้าทั่วไป</h2>
+      <p class="section__lead">
+        ผู้ที่อยากขายเครื่องเครื่องเดียวหรือสองสามชิ้น สามารถเริ่มจาก LINE ได้ทันที
+        ไม่จำเป็นต้องจัดทำรายการยาวแบบองค์กร
+      </p>
+      <div class="card-grid card-grid--3">
+        <article class="card">
+          <h3 class="card__title">นักเรียน นักศึกษา</h3>
+          <p class="card__text">โน๊ตบุ๊ค แท็บเล็ต โทรศัพท์ที่ใช้จบเทอมหรืออัปเกรด</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">พนักงานออฟฟิศ</h3>
+          <p class="card__text">เครื่องเก่าที่ไม่ได้ใช้ อุปกรณ์เสริม และจอmonitor</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">ผู้ประกอบการรายย่อย</h3>
+          <p class="card__text">POS ปริ้นเตอร์ หรือเครื่องสำรองที่ต้องการขายออก</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <BusinessBulkSection />
+  <ValuationFactors />
+  <ServiceAreaGrid items={areas} />
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">การดูแลข้อมูลส่วนตัวก่อนขาย</h2>
+      <p class="section__lead">
+        ควรสำรองข้อมูล สำคัญ ออกจาก iCloud หรือบัญชี Google และลบข้อมูลส่วนตัวก่อนส่งมอบ
+      </p>
+      <div class="cta-row">
+        <a class="btn btn--ghost" href="/บทความ/วิธีลบข้อมูลก่อนขายคอมพิวเตอร์">วิธีลบข้อมูลคอมพิวเตอร์</a>
+        <a class="btn btn--ghost" href="/บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad">ออกจาก iCloud</a>
+      </div>
+    </div>
+  </section>
+
+  <SafetyNotice />
+  <RelatedArticles items={articles} />
+
+  <section class="section section--tight">
+    <div class="container">
+      <h2 class="section__title">ลิงก์บริการเพิ่มเติม</h2>
+      <ul class="card-grid card-grid--3" style="list-style:none;margin:0;padding:0">
+        {
+          [
+            ["/รับซื้อ-apple-watch-โคราช", "Apple Watch"],
+            ["/รับซื้อ-cpu-โคราช", "CPU"],
+            ["/รับซื้อ-ssd-hdd-โคราช", "SSD / HDD"],
+            ["/รับซื้อเมนบอร์ด-โคราช", "เมนบอร์ด"],
+            ["/รับซื้อแรม-โคราช", "แรม"],
+            ["/รับซื้อจอมอนิเตอร์-โคราช", "จอมอนิเตอร์"],
+            ["/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช", "อุปกรณ์คอมพิวเตอร์"],
+            ["/รับซื้อเลนส์กล้อง-โคราช", "เลนส์กล้อง"],
+            ["/รับซื้อ-playstation-โคราช", "PlayStation"],
+            ["/รับซื้อ-nintendo-switch-โคราช", "Nintendo Switch"],
+            ["/รับซื้อลำโพง-โคราช", "ลำโพง"],
+            ["/รับซื้อหูฟัง-โคราช", "หูฟัง"],
+            ["/รับซื้อ-server-network-โคราช", "Server / Network"],
+            ["/รับซื้อเครื่องปริ้น-โคราช", "เครื่องปริ้น"],
+            ["/รับซื้ออุปกรณ์-pos-โคราช", "อุปกรณ์ POS"],
+            ["/รับซื้อคอมบริษัท-โคราช", "คอมบริษัท"],
+            ["/รับซื้อคอมเกมมิ่ง-โคราช", "คอมเกมมิ่ง"],
+            ["/รับซื้อคอมประกอบ-โคราช", "คอมประกอบ"],
+            ["/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช", "โน๊ตบุ๊คเกมมิ่ง"],
+            ["/รับซื้อโน๊ตบุ๊คเสีย-โคราช", "โน๊ตบุ๊คเสีย"],
+            ["/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช", "โน๊ตบุ๊คเปิดไม่ติด"],
+            ["/รับซื้อโน๊ตบุ๊คจอแตก-โคราช", "โน๊ตบุ๊คจอแตก"],
+            ["/รับซื้อคอมเก่า-โคราช", "คอมเก่า"],
+            ["/รับซื้อสินค้าไอทีไม่มีอุปกรณ์-โคราช", "ไม่มีอุปกรณ์"],
+            ["/ขายคอมหลายเครื่อง-โคราช", "ขายคอมหลายเครื่อง"],
+            ["/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช", "ยกสำนักงาน"],
+            ["/บริษัทปิดกิจการขายอุปกรณ์ไอที", "ปิดกิจการ"],
+            ["/วิธีประเมินราคา", "วิธีประเมินราคา"],
+            ["/พื้นที่/สีคิ้ว", "สีคิ้ว"],
+            ["/พื้นที่/สูงเนิน", "สูงเนิน"],
+            ["/พื้นที่/พิมาย", "พิมาย"],
+            ["/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี", "มทส."],
+          ].map(([href, label]) => (
+            <li class="card" style="padding:var(--space-3)">
+              <a href={href}>{label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <FAQSection items={faqs} />
+
+  <section class="section">
+    <div class="container" style="text-align:center">
+      <h2 class="section__title">เริ่มขายวันนี้ ส่งรูปมาที่ LINE {SITE.lineId}</h2>
+      <p class="section__lead" style="margin-inline:auto">
+        ทีม WINNER IT พร้อมประเมินเบื้องต้นและแจ้งแนวทางการนัดหมายในโคราช
+      </p>
+      <PrimaryLineCTA label="แอด LINE @buyhub" event="service_cta_click" />
+      <p class="disclaimer" style="margin-top:var(--space-4);display:inline-block;text-align:left">
+        {SITE.priceDisclaimer}
+      </p>
+    </div>
+  </section>
+</BaseLayout>

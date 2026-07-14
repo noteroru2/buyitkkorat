@@ -1,0 +1,35 @@
+---
+interface Item {
+  title: string;
+  description: string;
+  href: string;
+}
+
+interface Props {
+  title?: string;
+  items: Item[];
+}
+
+const { title = "พื้นที่บริการในจังหวัดนครราชสีมา", items } = Astro.props;
+---
+
+<section class="section">
+  <div class="container">
+    <h2 class="section__title">{title}</h2>
+    <p class="section__lead">
+      ให้บริการตามเงื่อนไขการนัดหมายในโคราช ไม่ได้อ้างว่ามีสาขาหรือทีมประจำทุกอำเภอ
+    </p>
+    <div class="card-grid card-grid--3">
+      {
+        items.map((item) => (
+          <article class="card">
+            <a href={item.href}>
+              <h3 class="card__title">{item.title}</h3>
+              <p class="card__text">{item.description}</p>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

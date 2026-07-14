@@ -1,0 +1,56 @@
+---
+import TrustPageLayout from "../layouts/TrustPageLayout.astro";
+import { absoluteUrl } from "../utils/seo";
+import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
+import { SITE } from "../data/site";
+
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  { name: "เกี่ยวกับเรา", href: "/เกี่ยวกับเรา" },
+];
+const url = absoluteUrl("/เกี่ยวกับเรา");
+const schema = buildGraph([
+  webpageSchema({
+    type: "AboutPage",
+    url,
+    name: "เกี่ยวกับ WINNER IT",
+    description: "WINNER IT ดำเนินงานโดย บริษัท อำพล เทรดดิ้ง จำกัด รับซื้อสินค้าไอทีในโคราช",
+  }),
+  breadcrumbSchema(breadcrumbs),
+]);
+---
+
+<TrustPageLayout
+  title="เกี่ยวกับเรา | WINNER IT"
+  description="WINNER IT ดำเนินงานโดย บริษัท อำพล เทรดดิ้ง จำกัด ให้บริการรับซื้อสินค้าไอทีในจังหวัดนครราชสีมาผ่าน LINE @buyhub"
+  h1="เกี่ยวกับ WINNER IT"
+  breadcrumbs={breadcrumbs}
+  canonical="/เกี่ยวกับเรา"
+  schema={schema}
+  updatedDate={new Date("2026-07-14")}
+>
+  <p>
+    <strong>WINNER IT ดำเนินงานโดย บริษัท อำพล เทรดดิ้ง จำกัด</strong>
+  </p>
+  <p>
+    เราให้บริการรับซื้อสินค้าไอทีมือสองจากบุคคลทั่วไป ร้านค้า สำนักงาน บริษัท และหน่วยงาน
+    โดยเน้นพื้นที่จังหวัดนครราชสีมาหรือโคราช ตามเงื่อนไขการนัดหมาย
+  </p>
+  <h2>วิธีทำงานของเรา</h2>
+  <p>
+    ลูกค้าส่งรุ่น รูป สภาพ และรายละเอียดผ่าน LINE {SITE.lineId} เพื่อรับการประเมินเบื้องต้น
+    จากนั้นจึงคุยเรื่องนัดรับตามพื้นที่ คิว และระยะทาง หรือเลือกส่งสินค้ามาตรวจสอบ
+  </p>
+  <p class="disclaimer">{SITE.priceDisclaimer}</p>
+  <h2>สิ่งที่เราไม่ได้อ้าง</h2>
+  <ul>
+    <li>ไม่ได้อ้างว่ามีหน้าร้านหรือสาขาในโคราชหากไม่มีข้อมูลยืนยัน</li>
+    <li>ไม่สร้างรีวิว จำนวนลูกค้า หรือรางวัลที่ไม่มีอยู่จริง</li>
+    <li>ไม่รับซื้อสินค้าที่ยืนยันกรรมสิทธิ์ไม่ได้ หรือมีเหตุสงสัยว่าได้มาโดยมิชอบ</li>
+  </ul>
+  <h2>ช่องทางติดต่อ</h2>
+  <ul>
+    <li>LINE: <a href={SITE.lineUrl}>{SITE.lineId}</a></li>
+    <li>โทร: <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a></li>
+  </ul>
+</TrustPageLayout>

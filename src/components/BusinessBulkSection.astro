@@ -1,0 +1,52 @@
+---
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+---
+
+<section class="section bulk">
+  <div class="container bulk__box">
+    <div>
+      <h2 class="section__title">ลูกค้าบริษัทและยกล็อต</h2>
+      <p>
+        สำนักงาน บริษัท หน่วยงาน หรือผู้ที่ต้องการขายหลายเครื่อง สามารถส่งรายการสินทรัพย์
+        รุ่น จำนวน Serial และรูปตัวอย่างผ่าน LINE เพื่อประเมินเบื้องต้น
+      </p>
+      <ul>
+        <li>ขายคอมหลายเครื่องหรือยกแผนก</li>
+        <li>อุปกรณ์สำนักงานและเครื่องปริ้น</li>
+        <li>กรณีปิดกิจการหรือปรับโอนเครื่อง</li>
+      </ul>
+    </div>
+    <div class="bulk__cta">
+      <PrimaryLineCTA label="มีหลายชิ้น ส่งรายการทาง LINE" event="service_cta_click" />
+      <a class="btn btn--ghost" href="/รับซื้อสินค้าไอทียกล็อต">ดูบริการยกล็อต</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bulk__box {
+    display: grid;
+    gap: var(--space-5);
+    background: linear-gradient(135deg, var(--color-blue-soft), var(--color-mint));
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+  }
+
+  @media (min-width: 900px) {
+    .bulk__box {
+      grid-template-columns: 1.4fr 1fr;
+      align-items: center;
+    }
+  }
+
+  .bulk ul {
+    margin: var(--space-4) 0 0;
+    padding-left: 1.2rem;
+  }
+
+  .bulk__cta {
+    display: grid;
+    gap: var(--space-3);
+    justify-items: start;
+  }
+</style>

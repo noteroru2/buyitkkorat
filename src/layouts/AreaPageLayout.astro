@@ -1,0 +1,71 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import FAQSection from "../components/FAQSection.astro";
+import RelatedServices from "../components/RelatedServices.astro";
+import RelatedArticles from "../components/RelatedArticles.astro";
+import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import { SITE } from "../data/site";
+import type { BreadcrumbItem } from "../utils/seo";
+
+interface Faq {
+  question: string;
+  answer: string;
+}
+
+interface Related {
+  title: string;
+  href: string;
+  excerpt?: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  h1: string;
+  lead: string;
+  breadcrumbs: BreadcrumbItem[];
+  canonical?: string;
+  ogImage?: string;
+  updatedDate?: Date | string;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+  faqs?: Faq[];
+  relatedServices?: Related[];
+  relatedArticles?: Related[];
+}
+
+const props = Astro.props;
+---
+
+<BaseLayout
+  title={props.title}
+  description={props.description}
+  canonical={props.canonical}
+  ogImage={props.ogImage}
+  updatedDate={props.updatedDate}
+  schema={props.schema}
+>
+  <div class="container" style="padding-top: var(--space-5)">
+    <Breadcrumbs items={props.breadcrumbs} />
+    <p class="badge">พื้นที่บริการตามนัดหมาย</p>
+    <h1 style="max-width: 18ch; margin-top: var(--space-3)">{props.h1}</h1>
+    <p style="color: var(--color-text-muted); max-width: 40rem">{props.lead}</p>
+    <div class="cta-row" style="margin: var(--space-4) 0">
+      <PrimaryLineCTA label="สอบถามคิวนัดรับในโคราช" event="hero_line_click" />
+      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`}>โทร {SITE.phoneDisplay}</a>
+    </div>
+  </div>
+  <article class="section">
+    <div class="container prose main-content">
+      <slot />
+    </div>
+  </article>
+  <FAQSection items={props.faqs ?? []} />
+  <RelatedServices items={props.relatedServices ?? []} />
+  <RelatedArticles items={props.relatedArticles ?? []} />
+  <section class="section">
+    <div class="container" style="text-align:center">
+      <PrimaryLineCTA label="แอด LINE @buyhub" />
+    </div>
+  </section>
+</BaseLayout>

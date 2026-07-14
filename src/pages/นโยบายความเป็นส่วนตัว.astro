@@ -1,0 +1,55 @@
+---
+import TrustPageLayout from "../layouts/TrustPageLayout.astro";
+import { absoluteUrl } from "../utils/seo";
+import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
+import { SITE } from "../data/site";
+
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  { name: "นโยบายความเป็นส่วนตัว", href: "/นโยบายความเป็นส่วนตัว" },
+];
+const schema = buildGraph([
+  webpageSchema({
+    url: absoluteUrl("/นโยบายความเป็นส่วนตัว"),
+    name: "นโยบายความเป็นส่วนตัว",
+    description: "นโยบายความเป็นส่วนตัวของ WINNER IT",
+  }),
+  breadcrumbSchema(breadcrumbs),
+]);
+---
+
+<TrustPageLayout
+  title="นโยบายความเป็นส่วนตัว | WINNER IT"
+  description="นโยบายความเป็นส่วนตัวสำหรับการติดต่อและส่งข้อมูลประเมินสินค้าของ WINNER IT"
+  h1="นโยบายความเป็นส่วนตัว"
+  breadcrumbs={breadcrumbs}
+  canonical="/นโยบายความเป็นส่วนตัว"
+  schema={schema}
+  updatedDate={new Date("2026-07-14")}
+>
+  <p>
+    {SITE.brand} ดำเนินงานโดย {SITE.legalName} ให้ความสำคัญกับข้อมูลที่ลูกค้าส่งมาเพื่อประเมินสินค้า
+  </p>
+  <h2>ข้อมูลที่อาจได้รับ</h2>
+  <ul>
+    <li>ชื่อหรือชื่อที่แสดงใน LINE</li>
+    <li>เบอร์โทรศัพท์ที่ลูกค้าให้ไว้</li>
+    <li>รูปสินค้า รุ่น สเปก และรายละเอียดการนัดหมาย</li>
+    <li>พื้นที่โดยประมาณเพื่อวางแผนคิวรับสินค้า</li>
+  </ul>
+  <h2>วัตถุประสงค์การใช้</h2>
+  <ul>
+    <li>ประเมินราคาเบื้องต้นและสื่อสารรายละเอียดบริการ</li>
+    <li>นัดหมายรับสินค้าหรือรับของที่จัดส่งมา</li>
+    <li>ยืนยันกรรมสิทธิ์และความถูกต้องของรายการ</li>
+  </ul>
+  <h2>การเก็บรักษา</h2>
+  <p>
+    เราเก็บข้อมูลเท่าที่จำเป็นต่อการให้บริการ และไม่ขายข้อมูลส่วนบุคคลให้บุคคลภายนอกเพื่อการตลาดที่ไม่เกี่ยวข้อง
+  </p>
+  <h2>ติดต่อเรื่องข้อมูลส่วนบุคคล</h2>
+  <p>
+    LINE <a href={SITE.lineUrl}>{SITE.lineId}</a> หรือโทร
+    <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a>
+  </p>
+</TrustPageLayout>

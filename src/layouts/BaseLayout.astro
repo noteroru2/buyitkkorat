@@ -1,0 +1,76 @@
+---
+import SeoHead from "../components/SeoHead.astro";
+import JsonLd from "../components/JsonLd.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import MobileNavigation from "../components/MobileNavigation.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import StickyMobileCTA from "../components/StickyMobileCTA.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+  noindex?: boolean;
+  updatedDate?: Date | string;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogImage,
+  ogType,
+  noindex = false,
+  updatedDate,
+  schema,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="th">
+  <head>
+    <SeoHead
+      title={title}
+      description={description}
+      canonical={canonical}
+      ogImage={ogImage}
+      ogType={ogType}
+      noindex={noindex}
+      updatedDate={updatedDate}
+    />
+    {schema && <JsonLd data={schema} />}
+    <script is:inline>
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+        const el = target.closest("[data-event]");
+        if (!el) return;
+        const name = el.getAttribute("data-event");
+        if (!name) return;
+        window.dispatchEvent(
+          new CustomEvent("winner_cta", {
+            detail: {
+              event: name,
+              cta: el.getAttribute("data-cta"),
+              href: el.getAttribute("href"),
+            },
+          }),
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+    <SiteHeader />
+    <MobileNavigation />
+    <main id="main" class="site-main">
+      <slot />
+    </main>
+    <SiteFooter />
+    <StickyMobileCTA />
+  </body>
+</html>

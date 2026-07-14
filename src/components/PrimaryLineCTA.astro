@@ -1,0 +1,32 @@
+---
+import { SITE } from "../data/site";
+
+interface Props {
+  label?: string;
+  event?: string;
+  class?: string;
+}
+
+const {
+  label = "ส่งรูปประเมินผ่าน LINE",
+  event = "line_click",
+  class: className = "",
+} = Astro.props;
+---
+
+<a
+  class={`btn btn--line ${className}`.trim()}
+  href={SITE.lineUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  data-event={event}
+  data-cta="line"
+>
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+    <path
+      d="M12 3C6.48 3 2 6.74 2 11.3c0 2.46 1.29 4.66 3.31 6.17-.13.94-.47 2.54-.54 2.9-.08.44.16.43.34.31.15-.1 2.36-1.6 3.31-2.26.84.14 1.72.22 2.58.22 5.52 0 10-3.74 10-8.3S17.52 3 12 3z"
+    ></path>
+  </svg>
+  <span>{label}</span>
+  <span class="visually-hidden">เปิด LINE OA {SITE.lineId}</span>
+</a>

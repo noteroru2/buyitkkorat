@@ -1,0 +1,56 @@
+---
+import { PREPARE_CHECKLIST } from "../data/site";
+---
+
+<section class="section">
+  <div class="container">
+    <h2 class="section__title">ข้อมูลที่ควรเตรียมก่อนส่งประเมิน</h2>
+    <p class="section__lead">ยิ่งข้อมูลครบ ประเมินเบื้องต้นยิ่งตรงประเด็น และลดการถามซ้ำ</p>
+    <ol class="prepare">
+      {PREPARE_CHECKLIST.map((item) => <li>{item}</li>)}
+    </ol>
+  </div>
+</section>
+
+<style>
+  .prepare {
+    display: grid;
+    gap: var(--space-3);
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: prepare;
+  }
+
+  @media (min-width: 640px) {
+    .prepare {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .prepare li {
+    counter-increment: prepare;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-4) var(--space-4) 3.25rem;
+    position: relative;
+  }
+
+  .prepare li::before {
+    content: counter(prepare);
+    position: absolute;
+    left: 0.85rem;
+    top: 0.85rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+</style>

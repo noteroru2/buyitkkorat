@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { absoluteUrl } from "../../utils/seo";
+import { breadcrumbSchema, buildGraph, webpageSchema } from "../../utils/schema";
+
+const articles = (await getCollection("articles"))
+  .filter((a) => a.data.indexable)
+  .sort((a, b) => b.data.updatedDate.valueOf() - a.data.updatedDate.valueOf());
+
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  { name: "บทความ", href: "/บทความ" },
+];
+const url = absoluteUrl("/บทความ");
+const schema = buildGraph([
+  webpageSchema({
+    url,
+    name: "บทความแนะนำก่อนขายสินค้าไอที",
+    description: "คู่มือเตรียมขายสินค้าไอที ลบข้อมูล เช็กสเปก และส่งประเมินผ่าน LINE",
+  }),
+  breadcrumbSchema(breadcrumbs),
+]);
+---
+
+<BaseLayout
+  title="บทความแนะนำก่อนขายสินค้าไอที | WINNER IT"
+  description="รวมบทความวิธีเตรียมขายโน๊ตบุ๊ค โทรศัพท์ คอม และอุปกรณ์ไอทีในโคราช อ่านก่อนส่งประเมินผ่าน LINE @buyhub"
+  canonical="/บทความ"
+  schema={schema}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>บทความแนะนำก่อนขายสินค้าไอที</h1>
+    <p class="section__lead">ความรู้ที่ใช้ได้จริงก่อนส่งรูปประเมินผ่าน LINE</p>
+    <div class="card-grid card-grid--3">
+      {
+        articles.map((article) => (
+          <article class="card">
+            <a href={`/บทความ/${article.data.slug}`}>
+              <h2 class="card__title">{article.data.h1}</h2>
+              <p class="card__text">{article.data.excerpt}</p>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,77 @@
+---
+import { getCollection, render } from "astro:content";
+import ServicePageLayout from "../layouts/ServicePageLayout.astro";
+import {
+  absoluteUrl,
+} from "../utils/seo";
+import {
+  asIllustration,
+  getAllContentIndex,
+  resolveRelated,
+} from "../utils/content";
+import {
+  breadcrumbSchema,
+  buildGraph,
+  faqSchema,
+  serviceSchema,
+  webpageSchema,
+} from "../utils/schema";
+
+export async function getStaticPaths() {
+  const services = await getCollection("services");
+  return services.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const index = await getAllContentIndex();
+const related = resolveRelated(index, entry.data.relatedPages);
+const relatedServices = related.filter((item) => !item.href.startsWith("/บทความ/"));
+const relatedArticles = related.filter((item) => item.href.startsWith("/บทความ/"));
+
+const url = absoluteUrl(`/${entry.data.slug}`);
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  { name: "บริการ", href: "/รับซื้อสินค้าไอที" },
+  { name: entry.data.h1, href: `/${entry.data.slug}` },
+];
+
+const schema = buildGraph([
+  webpageSchema({
+    url,
+    name: entry.data.title,
+    description: entry.data.description,
+    dateModified: entry.data.updatedDate.toISOString(),
+  }),
+  serviceSchema({
+    url,
+    name: entry.data.h1,
+    description: entry.data.description,
+  }),
+  breadcrumbSchema(breadcrumbs),
+  ...(entry.data.faq.length
+    ? [faqSchema(entry.data.faq, url)]
+    : []),
+]);
+---
+
+<ServicePageLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  h1={entry.data.h1}
+  lead={entry.data.excerpt}
+  breadcrumbs={breadcrumbs}
+  canonical={`/${entry.data.slug}`}
+  ogImage={entry.data.ogImage}
+  updatedDate={entry.data.updatedDate}
+  schema={schema}
+  illustration={asIllustration(entry.data.illustration)}
+  faqs={entry.data.faq}
+  relatedServices={relatedServices}
+  relatedArticles={relatedArticles}
+>
+  <Content />
+</ServicePageLayout>

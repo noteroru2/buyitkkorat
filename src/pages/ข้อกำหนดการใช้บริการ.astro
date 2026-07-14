@@ -1,0 +1,51 @@
+---
+import TrustPageLayout from "../layouts/TrustPageLayout.astro";
+import { absoluteUrl } from "../utils/seo";
+import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
+import { SITE } from "../data/site";
+
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  { name: "ข้อกำหนดการใช้บริการ", href: "/ข้อกำหนดการใช้บริการ" },
+];
+const schema = buildGraph([
+  webpageSchema({
+    url: absoluteUrl("/ข้อกำหนดการใช้บริการ"),
+    name: "ข้อกำหนดการใช้บริการ",
+    description: "ข้อกำหนดการใช้บริการเว็บไซต์และบริการรับซื้อของ WINNER IT",
+  }),
+  breadcrumbSchema(breadcrumbs),
+]);
+---
+
+<TrustPageLayout
+  title="ข้อกำหนดการใช้บริการ | WINNER IT"
+  description="ข้อกำหนดการใช้บริการเว็บไซต์รับซื้อไอทีโคราช และเงื่อนไขการประเมินสินค้าของ WINNER IT"
+  h1="ข้อกำหนดการใช้บริการ"
+  breadcrumbs={breadcrumbs}
+  canonical="/ข้อกำหนดการใช้บริการ"
+  schema={schema}
+  updatedDate={new Date("2026-07-14")}
+>
+  <p>
+    การใช้เว็บไซต์ {SITE.name} และการติดต่อเพื่อใช้บริการรับซื้อสินค้าไอที
+    ถือว่าผู้ใช้ยอมรับข้อกำหนดฉบับนี้
+  </p>
+  <h2>ขอบเขตบริการ</h2>
+  <p>
+    บริการประกอบด้วยการประเมินเบื้องต้นผ่าน LINE การนัดรับตามเงื่อนไข
+    และการรับสินค้าที่จัดส่งมาตรวจสอบ ภายใต้ดุลยพินิจและความพร้อมในแต่ละครั้ง
+  </p>
+  <h2>ราคาและการยืนยัน</h2>
+  <p class="disclaimer">{SITE.priceDisclaimer}</p>
+  <h2>ความถูกต้องของข้อมูล</h2>
+  <p>
+    ผู้ขายต้องให้ข้อมูลสภาพสินค้า ประวัติซ่อม และกรรมสิทธิ์ตามจริง
+    หากพบว่าข้อมูลคลาดเคลื่อน อาจปรับราคาหรือปฏิเสธรายการได้
+  </p>
+  <h2>ช่องทางติดต่อ</h2>
+  <p>
+    LINE <a href={SITE.lineUrl}>{SITE.lineId}</a> · โทร
+    <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a>
+  </p>
+</TrustPageLayout>

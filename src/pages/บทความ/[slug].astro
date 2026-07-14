@@ -1,0 +1,68 @@
+---
+import { getCollection, render } from "astro:content";
+import ArticleLayout from "../../layouts/ArticleLayout.astro";
+import { absoluteUrl } from "../../utils/seo";
+import { getAllContentIndex, resolveRelated } from "../../utils/content";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  buildGraph,
+  webpageSchema,
+} from "../../utils/schema";
+
+export async function getStaticPaths() {
+  const articles = await getCollection("articles");
+  return articles.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const index = await getAllContentIndex();
+const related = resolveRelated(index, entry.data.relatedPages);
+const relatedServices = related.filter((item) => !item.href.startsWith("/บทความ/"));
+const relatedArticles = related.filter((item) => item.href.startsWith("/บทความ/"));
+const path = `/บทความ/${entry.data.slug}`;
+const url = absoluteUrl(path);
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  { name: "บทความ", href: "/บทความ" },
+  { name: entry.data.h1, href: path },
+];
+
+const schema = buildGraph([
+  webpageSchema({
+    url,
+    name: entry.data.title,
+    description: entry.data.description,
+    dateModified: entry.data.updatedDate.toISOString(),
+  }),
+  articleSchema({
+    url,
+    headline: entry.data.h1,
+    description: entry.data.description,
+    datePublished: entry.data.publishedDate.toISOString(),
+    dateModified: entry.data.updatedDate.toISOString(),
+    author: entry.data.author,
+  }),
+  breadcrumbSchema(breadcrumbs),
+]);
+---
+
+<ArticleLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  h1={entry.data.h1}
+  breadcrumbs={breadcrumbs}
+  canonical={path}
+  ogImage={entry.data.ogImage}
+  updatedDate={entry.data.updatedDate}
+  publishedDate={entry.data.publishedDate}
+  schema={schema}
+  relatedServices={relatedServices}
+  relatedArticles={relatedArticles}
+>
+  <Content />
+</ArticleLayout>

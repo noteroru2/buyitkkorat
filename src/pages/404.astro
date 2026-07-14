@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+---
+
+<BaseLayout
+  title="ไม่พบหน้า | WINNER IT"
+  description="ไม่พบหน้าเว็บที่คุณต้องการ สามารถกลับหน้าแรกหรือติดต่อ LINE @buyhub ได้"
+  canonical="/404"
+  noindex={true}
+>
+  <section class="section">
+    <div class="container" style="text-align:center;max-width:36rem;margin-inline:auto">
+      <p class="badge">404</p>
+      <h1>ไม่พบหน้านี้</h1>
+      <p>ลิงก์อาจพิมพ์ผิด หรือหน้านี้อาจถูกย้ายแล้ว</p>
+      <div class="cta-row" style="justify-content:center;margin-top:var(--space-5)">
+        <a class="btn btn--primary" href="/">กลับหน้าแรก</a>
+        <a class="btn btn--ghost" href="/รับซื้อสินค้าไอที">ดูบริการ</a>
+        <PrimaryLineCTA label="แอด LINE @buyhub" />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

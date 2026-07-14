@@ -1,0 +1,133 @@
+---
+import { MAIN_NAV, SITE } from "../data/site";
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+---
+
+<div id="mobile-navigation" class="mobile-nav" hidden data-mobile-nav>
+  <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="เมนูมือถือ">
+    <div class="mobile-nav__top">
+      <strong>{SITE.brand}</strong>
+      <button type="button" class="mobile-nav__close" data-mobile-menu-close>
+        ปิด
+      </button>
+    </div>
+    <nav aria-label="เมนูมือถือ">
+      <ul>
+        {
+          MAIN_NAV.flatMap((item) =>
+            item.children?.length
+              ? item.children.map((child) => (
+                  <li>
+                    <a href={child.href}>{child.label}</a>
+                  </li>
+                ))
+              : [
+                  <li>
+                    <a href={item.href}>{item.label}</a>
+                  </li>,
+                ],
+          )
+        }
+        <li><a href="/เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
+        <li><a href="/คำถามที่พบบ่อย">คำถามที่พบบ่อย</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-nav__cta">
+      <PrimaryLineCTA label={`แอด LINE ${SITE.lineId}`} />
+      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`}>โทร {SITE.phoneDisplay}</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function setupMobileNav() {
+    const nav = document.querySelector("[data-mobile-nav]");
+    const toggle = document.querySelector("[data-mobile-menu-toggle]");
+    const closeBtn = document.querySelector("[data-mobile-menu-close]");
+    if (!(nav instanceof HTMLElement) || !(toggle instanceof HTMLElement)) return;
+
+    const open = () => {
+      nav.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+    };
+    const close = () => {
+      nav.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    };
+
+    toggle.addEventListener("click", () => {
+      if (nav.hidden) open();
+      else close();
+    });
+    closeBtn?.addEventListener("click", close);
+    nav.addEventListener("click", (event) => {
+      if (event.target === nav) close();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !nav.hidden) close();
+    });
+  }
+
+  setupMobileNav();
+  document.addEventListener("astro:page-load", setupMobileNav);
+</script>
+
+<style>
+  .mobile-nav {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    background: rgba(36, 50, 74, 0.4);
+  }
+
+  .mobile-nav__panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: min(100%, 22rem);
+    height: 100%;
+    background: var(--color-cream);
+    padding: var(--space-5);
+    overflow: auto;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .mobile-nav__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-5);
+  }
+
+  .mobile-nav__close {
+    min-height: 44px;
+    padding: 0 1rem;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--color-border);
+    background: white;
+    cursor: pointer;
+  }
+
+  .mobile-nav ul {
+    list-style: none;
+    margin: 0 0 var(--space-5);
+    padding: 0;
+  }
+
+  .mobile-nav a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 600;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .mobile-nav__cta {
+    display: grid;
+    gap: var(--space-3);
+  }
+</style>

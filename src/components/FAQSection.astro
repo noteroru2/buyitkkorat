@@ -1,0 +1,69 @@
+---
+interface Faq {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  title?: string;
+  items: Faq[];
+}
+
+const { title = "คำถามที่พบบ่อย", items } = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <section class="section faq" id="faq">
+      <div class="container">
+        <h2 class="section__title">{title}</h2>
+        <div class="faq__list">
+          {items.map((item) => (
+            <details class="faq__item">
+              <summary>{item.question}</summary>
+              <div class="faq__answer">
+                <p>{item.answer}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .faq__list {
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .faq__item {
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 0 var(--space-4);
+  }
+
+  .faq__item summary {
+    cursor: pointer;
+    font-weight: 600;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  .faq__item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq__answer {
+    padding-bottom: var(--space-4);
+    color: var(--color-text-muted);
+  }
+
+  .faq__answer p {
+    margin: 0;
+  }
+</style>

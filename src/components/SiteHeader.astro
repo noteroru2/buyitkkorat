@@ -1,0 +1,176 @@
+---
+import { MAIN_NAV, SITE } from "../data/site";
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+---
+
+<header class="header">
+  <div class="container header__bar">
+    <a class="header__brand" href="/" aria-label={`${SITE.name} หน้าแรก`}>
+      <span class="header__mark" aria-hidden="true">W</span>
+      <span class="header__brand-text">
+        <strong>{SITE.brand}</strong>
+        <small>รับซื้อไอทีโคราช</small>
+      </span>
+    </a>
+
+    <nav class="header__nav" aria-label="เมนูหลัก">
+      <ul class="header__list">
+        {
+          MAIN_NAV.map((item) => (
+            <li class="header__item">
+              <a href={item.href}>{item.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a class="header__phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click">
+        {SITE.phoneDisplay}
+      </a>
+      <PrimaryLineCTA label="LINE ประเมิน" event="line_click" class="header__line" />
+      <button
+        class="header__menu-btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-navigation"
+        data-mobile-menu-toggle
+      >
+        <span class="visually-hidden">เปิดเมนู</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 248, 239, 0.92);
+    border-bottom: 1px solid var(--color-border);
+    backdrop-filter: blur(10px);
+  }
+
+  .header__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    min-height: 4.25rem;
+  }
+
+  .header__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .header__mark {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-coral));
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+  }
+
+  .header__brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+  }
+
+  .header__brand-text strong {
+    font-size: 1rem;
+  }
+
+  .header__brand-text small {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__list {
+    display: flex;
+    gap: var(--space-4);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__list a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .header__phone {
+    display: none;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+  }
+
+  .header__line {
+    display: none;
+  }
+
+  .header__menu-btn {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .header__menu-btn span:not(.visually-hidden) {
+    width: 18px;
+    height: 2px;
+    background: var(--color-text);
+    border-radius: 2px;
+  }
+
+  @media (min-width: 1024px) {
+    .header__nav {
+      display: block;
+    }
+
+    .header__phone,
+    .header__line {
+      display: inline-flex;
+    }
+
+    .header__menu-btn {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,34 @@
+---
+interface Item {
+  title: string;
+  href: string;
+  excerpt?: string;
+}
+
+interface Props {
+  title?: string;
+  items: Item[];
+}
+
+const { title = "บทความที่เกี่ยวข้อง", items } = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <section class="section section--tight">
+      <div class="container">
+        <h2 class="section__title">{title}</h2>
+        <div class="card-grid card-grid--3">
+          {items.map((item) => (
+            <article class="card">
+              <a href={item.href}>
+                <h3 class="card__title">{item.title}</h3>
+                {item.excerpt && <p class="card__text">{item.excerpt}</p>}
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

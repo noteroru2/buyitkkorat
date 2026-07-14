@@ -1,0 +1,32 @@
+---
+interface Item {
+  title: string;
+  description: string;
+  href: string;
+}
+
+interface Props {
+  title?: string;
+  items: Item[];
+}
+
+const { title = "ประเภทสินค้าที่ส่งมาประเมินได้", items } = Astro.props;
+---
+
+<section class="section">
+  <div class="container">
+    <h2 class="section__title">{title}</h2>
+    <div class="card-grid card-grid--4">
+      {
+        items.map((item) => (
+          <article class="card">
+            <a href={item.href}>
+              <h3 class="card__title">{item.title}</h3>
+              <p class="card__text">{item.description}</p>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+{
+  "name": "รับซื้อไอทีโคราช.com",
+  "short_name": "WINNER IT",
+  "description": "รับซื้อสินค้าไอทีในโคราช ประเมินผ่าน LINE @buyhub",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff8ef",
+  "theme_color": "#ff8a3d",
+  "lang": "th",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

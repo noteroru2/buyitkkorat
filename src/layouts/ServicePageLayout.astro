@@ -1,0 +1,93 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import HeroSection from "../components/HeroSection.astro";
+import CuteDeviceIllustration from "../components/CuteDeviceIllustration.astro";
+import FAQSection from "../components/FAQSection.astro";
+import RelatedServices from "../components/RelatedServices.astro";
+import RelatedArticles from "../components/RelatedArticles.astro";
+import SafetyNotice from "../components/SafetyNotice.astro";
+import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import { SITE } from "../data/site";
+import type { BreadcrumbItem } from "../utils/seo";
+
+interface Faq {
+  question: string;
+  answer: string;
+}
+
+interface Related {
+  title: string;
+  href: string;
+  excerpt?: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  h1: string;
+  lead: string;
+  breadcrumbs: BreadcrumbItem[];
+  canonical?: string;
+  ogImage?: string;
+  updatedDate?: Date | string;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
+  illustration?: "phone" | "notebook" | "desktop" | "gpu" | "camera" | "console" | "speaker" | "parcel" | "line" | "staff" | "devices";
+  faqs?: Faq[];
+  relatedServices?: Related[];
+  relatedArticles?: Related[];
+}
+
+const {
+  title,
+  description,
+  h1,
+  lead,
+  breadcrumbs,
+  canonical,
+  ogImage,
+  updatedDate,
+  schema,
+  illustration = "devices",
+  faqs = [],
+  relatedServices = [],
+  relatedArticles = [],
+} = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={ogImage}
+  updatedDate={updatedDate}
+  schema={schema}
+>
+  <div class="container" style="padding-top: var(--space-4)">
+    <Breadcrumbs items={breadcrumbs} />
+  </div>
+  <HeroSection h1={h1} lead={lead} illustration={illustration}>
+    <CuteDeviceIllustration slot="illustration" type={illustration} title={h1} />
+  </HeroSection>
+  <article class="section">
+    <div class="container prose main-content">
+      <slot />
+    </div>
+  </article>
+  <SafetyNotice />
+  <FAQSection items={faqs} />
+  <RelatedServices items={relatedServices} />
+  <RelatedArticles items={relatedArticles} />
+  <section class="section">
+    <div class="container" style="text-align:center">
+      <h2 class="section__title">พร้อมขายแล้ว ส่งรายละเอียดมาได้เลย</h2>
+      <p class="section__lead" style="margin-inline:auto">
+        แอด LINE {SITE.lineId} เพื่อส่งรูปและข้อมูลประเมินเบื้องต้นในโคราช
+      </p>
+      <PrimaryLineCTA label="แอด LINE @buyhub" event="service_cta_click" />
+      <p class="disclaimer" style="margin-top: var(--space-4); display:inline-block; text-align:left">
+        {SITE.priceDisclaimer}
+      </p>
+    </div>
+  </section>
+</BaseLayout>

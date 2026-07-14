@@ -1,0 +1,61 @@
+---
+import TrustPageLayout from "../layouts/TrustPageLayout.astro";
+import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import { absoluteUrl } from "../utils/seo";
+import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
+import { SITE } from "../data/site";
+
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  { name: "ติดต่อ", href: "/ติดต่อ" },
+];
+const url = absoluteUrl("/ติดต่อ");
+const schema = buildGraph([
+  webpageSchema({
+    type: "ContactPage",
+    url,
+    name: "ติดต่อ WINNER IT",
+    description: "ติดต่อประเมินสินค้าไอทีผ่าน LINE @buyhub หรือโทร 095-547-9408",
+  }),
+  breadcrumbSchema(breadcrumbs),
+]);
+---
+
+<TrustPageLayout
+  title="ติดต่อเรา | WINNER IT รับซื้อไอทีโคราช"
+  description="ติดต่อ WINNER IT เพื่อประเมินสินค้าไอทีในโคราช ผ่าน LINE @buyhub หรือโทร 095-547-9408"
+  h1="ติดต่อ WINNER IT"
+  breadcrumbs={breadcrumbs}
+  canonical="/ติดต่อ"
+  schema={schema}
+  updatedDate={new Date("2026-07-14")}
+>
+  <p>
+    ช่องทางหลักสำหรับการส่งรูปและรายละเอียดสินค้าคือ LINE {SITE.lineId}
+    หากต้องการพูดคุยเพิ่มเติม สามารถโทรหาเราได้ตามเบอร์ด้านล่าง
+  </p>
+  <h2>LINE Official</h2>
+  <p>
+    แอดไลน์: <a href={SITE.lineUrl}>{SITE.lineId}</a>
+  </p>
+  <PrimaryLineCTA label="แอด LINE @buyhub" />
+  <h2>โทรศัพท์</h2>
+  <p>
+    <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a>
+  </p>
+  <h2>พื้นที่ให้บริการ</h2>
+  <p>{SITE.serviceAreaLabel}</p>
+  <p>
+    โปรดทราบว่าเราไม่ได้เผยแพร่ที่อยู่หน้าร้านในหน้านี้ หากไม่มีข้อมูลที่ยืนยันได้
+    และบริการนัดรับจะขึ้นกับคิว ระยะทาง และเงื่อนไขในแต่ละครั้ง
+  </p>
+  <h2>ข้อมูลที่ควรส่งมา</h2>
+  <ol>
+    <li>รูปด้านหน้า ด้านหลัง และตำหนิ</li>
+    <li>รุ่น สเปก อาการ</li>
+    <li>อุปกรณ์ที่มี</li>
+    <li>พื้นที่ปัจจุบันในโคราช</li>
+    <li>จำนวนสินค้า</li>
+  </ol>
+  <p class="disclaimer">{SITE.priceDisclaimer}</p>
+</TrustPageLayout>

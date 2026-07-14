@@ -1,0 +1,96 @@
+---
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+import { SITE } from "../data/site";
+
+interface Props {
+  h1: string;
+  lead: string;
+  illustration?: string;
+  showPhone?: boolean;
+}
+
+const {
+  h1,
+  lead,
+  illustration = "devices",
+  showPhone = true,
+} = Astro.props;
+---
+
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="hero__brand">{SITE.brand}</p>
+      <h1>{h1}</h1>
+      <p class="hero__lead">{lead}</p>
+      <div class="cta-row">
+        <PrimaryLineCTA label="ส่งรูปประเมินผ่าน LINE" event="hero_line_click" />
+        {
+          showPhone && (
+            <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click">
+              โทร {SITE.phoneDisplay}
+            </a>
+          )
+        }
+      </div>
+      <p class="hero__note">{SITE.priceDisclaimer}</p>
+    </div>
+    <div class="hero__art" aria-hidden="true">
+      <slot name="illustration" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: var(--space-6) 0 var(--space-7);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.55), transparent),
+      radial-gradient(circle at 80% 20%, rgba(255, 107, 107, 0.12), transparent 40%);
+  }
+
+  .hero__grid {
+    display: grid;
+    gap: var(--space-6);
+    align-items: center;
+  }
+
+  @media (min-width: 960px) {
+    .hero__grid {
+      grid-template-columns: 1.15fr 0.85fr;
+    }
+  }
+
+  .hero__brand {
+    margin: 0 0 var(--space-2);
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 800;
+    color: var(--color-primary-dark);
+    letter-spacing: -0.03em;
+  }
+
+  .hero h1 {
+    margin: 0 0 var(--space-4);
+    font-size: var(--font-size-3xl);
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    max-width: 18ch;
+  }
+
+  .hero__lead {
+    margin: 0 0 var(--space-5);
+    color: var(--color-text-muted);
+    max-width: 36rem;
+  }
+
+  .hero__note {
+    margin: var(--space-4) 0 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+
+  .hero__art {
+    display: grid;
+    place-items: center;
+  }
+</style>

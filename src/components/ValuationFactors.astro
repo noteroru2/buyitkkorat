@@ -1,0 +1,47 @@
+---
+const factors = [
+  "รุ่นและปีการผลิต",
+  "สเปกหลัก เช่น ความจุ RAM SSD GPU",
+  "สภาพบอดี้ จอ ปุ่ม และพอร์ต",
+  "อุปกรณ์แท้/อะแดปเตอร์/กล่อง",
+  "ประวัติซ่อมและอาการปัจจุบัน",
+  "สถานะบัญชี iCloud/Google",
+  "อุปสงค์และราคาตลาดมือสอง",
+];
+---
+
+<section class="section">
+  <div class="container">
+    <h2 class="section__title">ปัจจัยที่ใช้ประเมินราคา</h2>
+    <p class="section__lead">
+      เราพิจารณาหลายองค์ประกอบร่วมกัน ไม่ได้สรุปจากรุ่นอย่างเดียว
+    </p>
+    <ul class="factors">
+      {factors.map((factor) => <li>{factor}</li>)}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .factors {
+    display: grid;
+    gap: var(--space-3);
+    grid-template-columns: 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    .factors {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .factors li {
+    background: var(--color-mint);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    font-weight: 600;
+  }
+</style>

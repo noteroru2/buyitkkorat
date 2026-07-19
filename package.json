@@ -21,6 +21,8 @@
     "audit:report": "tsx scripts/generate-seo-deliverables.ts",
     "audit:content-image": "tsx scripts/generate-content-image-audit.ts",
     "audit:batch-2-1": "tsx scripts/generate-batch-2-1-audit.ts",
+    "audit:content-hygiene": "tsx scripts/audit-content-hygiene.ts",
+    "audit:content-hygiene:prod": "tsx scripts/audit-content-hygiene.ts --production",
     "qa:playwright": "tsx scripts/qa-playwright.ts",
     "validate:prod": "tsx scripts/validate-production-full.ts",
     "smoke:prod": "tsx scripts/production-smoke.ts"

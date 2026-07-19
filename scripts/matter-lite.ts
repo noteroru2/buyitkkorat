@@ -1,12 +1,13 @@
 /** Minimal YAML frontmatter parser for markdown content files */
 export default function matter(raw: string): { data: Record<string, unknown>; content: string } {
-  if (!raw.startsWith("---")) {
-    return { data: {}, content: raw };
+  const source = raw.replace(/^\uFEFF/, "");
+  if (!source.startsWith("---")) {
+    return { data: {}, content: source };
   }
-  const end = raw.indexOf("\n---", 3);
-  if (end === -1) return { data: {}, content: raw };
-  const fm = raw.slice(4, end).trim();
-  const content = raw.slice(end + 4).replace(/^\s*/, "");
+  const end = source.indexOf("\n---", 3);
+  if (end === -1) return { data: {}, content: source };
+  const fm = source.slice(4, end).trim();
+  const content = source.slice(end + 4).replace(/^\s*/, "");
   const data: Record<string, unknown> = {};
   const lines = fm.split(/\r?\n/);
   let i = 0;

@@ -16,6 +16,7 @@ import {
   serviceSchema,
   webpageSchema,
 } from "../utils/schema";
+import { PILOT_IMAGES, type PilotImageKey } from "../data/pilotImages";
 
 export async function getStaticPaths() {
   const services = await getCollection("services");
@@ -31,6 +32,7 @@ const index = await getAllContentIndex();
 const related = resolveRelated(index, entry.data.relatedPages);
 const relatedServices = related.filter((item) => !item.href.startsWith("/บทความ/"));
 const relatedArticles = related.filter((item) => item.href.startsWith("/บทความ/"));
+const pilotImage = entry.data.pilotImage ? PILOT_IMAGES[entry.data.pilotImage as PilotImageKey] : undefined;
 
 const url = absoluteUrl(`/${entry.data.slug}`);
 const breadcrumbs = [
@@ -72,6 +74,7 @@ const schema = buildGraph([
   faqs={entry.data.faq}
   relatedServices={relatedServices}
   relatedArticles={relatedArticles}
+  pilotImage={pilotImage}
 >
   <Content />
 </ServicePageLayout>

@@ -41,6 +41,7 @@ const services = defineCollection({
     ...baseFields,
     productFocus: z.string().optional(),
     illustration: z.string().optional(),
+    pilotImage: z.enum(["evaluation-workspace", "bulk-sorting-workspace"]).optional(),
   }),
 });
 

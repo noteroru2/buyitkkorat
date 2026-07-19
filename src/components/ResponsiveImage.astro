@@ -1,29 +1,82 @@
 ---
+import { getImage } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+type OutputFormat = "avif" | "webp";
+
 interface Props {
-  src: string;
+  src: ImageMetadata;
   alt: string;
+  caption?: string;
   width: number;
   height: number;
+  widths?: number[];
+  sizes: string;
+  formats?: OutputFormat[];
   loading?: "eager" | "lazy";
+  fetchpriority?: "high" | "low" | "auto";
+  position?: string;
   class?: string;
+  slotId: string;
 }
 
 const {
   src,
   alt,
+  caption,
   width,
   height,
+  widths = [480, 768, 960, 1200],
+  sizes,
+  formats = ["avif", "webp"],
   loading = "lazy",
+  fetchpriority = "auto",
+  position = "center",
   class: className = "",
+  slotId,
 } = Astro.props;
+
+if (!slotId) throw new Error("ResponsiveImage requires slotId for auditability.");
+if (!alt.trim()) throw new Error(`ResponsiveImage ${slotId} requires descriptive alt text.`);
+if (fetchpriority === "high" && loading === "lazy") throw new Error(`ResponsiveImage ${slotId} cannot combine high priority with lazy loading.`);
+
+const safeWidths = [...new Set(widths.filter((value) => Number.isInteger(value) && value > 0 && value <= src.width))].sort((a, b) => a - b);
+if (!safeWidths.length) safeWidths.push(Math.min(width, src.width));
+const ratio = width / height;
+const sources = await Promise.all(formats.map(async (format) => {
+  const images = await Promise.all(safeWidths.map((candidate) => getImage({
+    src,
+    width: candidate,
+    height: Math.max(1, Math.round(candidate / ratio)),
+    format,
+    fit: "cover",
+    position,
+  })));
+  return { format, srcset: images.map((image, index) => `${image.src} ${safeWidths[index]}w`).join(", ") };
+}));
+const fallback = await getImage({ src, width: Math.min(width, src.width), height, format: "webp", fit: "cover", position });
 ---
 
-<img
-  class={className}
-  src={src}
-  alt={alt}
-  width={width}
-  height={height}
-  loading={loading}
-  decoding="async"
-/>
+<figure class:list={["responsive-image", className]} data-image-slot={slotId}>
+  <picture>
+    {sources.map((source) => <source type={`image/${source.format}`} srcset={source.srcset} sizes={sizes} />)}
+    <img
+      src={fallback.src}
+      alt={alt}
+      width={width}
+      height={height}
+      loading={loading}
+      fetchpriority={fetchpriority}
+      decoding="async"
+      style={`object-position:${position}`}
+    />
+  </picture>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>
+
+<style>
+  .responsive-image { margin: 0; }
+  .responsive-image picture { display: block; aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--radius-lg); background: var(--color-surface-alt); }
+  .responsive-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .responsive-image figcaption { margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: 1.6; }
+</style>

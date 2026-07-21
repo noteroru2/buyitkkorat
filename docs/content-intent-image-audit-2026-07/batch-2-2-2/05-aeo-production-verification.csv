@@ -1,0 +1,4 @@
+route,answer_first,required_inputs,conditional_price,cta,h1_count,metadata_stable,schema_valid,result
+/รับซื้อสินค้าไอทียกล็อต,true,true,true,true,1,true,true,PASS
+/รับซื้อโทรศัพท์จอแตก-โคราช,true,true,true,true,1,true,true,PASS
+/รับซื้อโน๊ตบุ๊คจอแตก-โคราช,true,true,true,true,1,true,true,PASS

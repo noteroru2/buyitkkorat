@@ -1,0 +1,3 @@
+route,picture,avif,webp,fallback,srcset,sizes,dimensions,loading,decoding,alt,caption,disclosure,http_status,privacy,result
+/วิธีประเมินราคา,true,true,true,true,true,true,true,lazy,async,present,present,visible,200,no personal data observed,PASS
+/รับซื้อสินค้าไอทียกล็อต,true,true,true,true,true,true,true,lazy,async,present,present,visible,200,no personal data observed,PASS

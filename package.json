@@ -19,6 +19,7 @@
     "audit:schema": "tsx scripts/audit-schema.ts",
     "audit:batch1": "tsx scripts/audit-batch1-protection.ts",
     "audit:batch2": "tsx scripts/audit-batch2-seo.ts",
+    "audit:batch3": "tsx scripts/audit-batch3-content-authority.ts",
     "audit:security-headers": "tsx scripts/audit-security-headers.ts",
     "audit:all": "tsx scripts/audit-all.ts",
     "audit:report": "tsx scripts/generate-seo-deliverables.ts",

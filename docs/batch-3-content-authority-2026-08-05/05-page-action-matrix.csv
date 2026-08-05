@@ -1,0 +1,19 @@
+﻿url,page_type,primary_intent,content_action,priority,status
+/รับซื้อสินค้าไอที,hub,transactional,IMPROVE,P1,done
+/รับซื้อคอมพิวเตอร์-โคราช,product,transactional,EXPAND,P1,done
+/รับซื้อโน๊ตบุ๊ค-โคราช,product,transactional,EXPAND,P1,done
+/รับซื้อ-macbook-โคราช,product,transactional,EXPAND,P1,done
+/รับซื้อ-iphone-โคราช,product,transactional,EXPAND,P1,done
+/รับซื้อโทรศัพท์มือถือ-โคราช,product,transactional,IMPROVE,P1,done
+/รับซื้อกล้อง-โคราช,product,transactional,REWRITE,P1,done
+/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช,product,transactional,REWRITE,P1,done
+/บทความ/วิธีเช็กสุขภาพแบตเตอรี่ก่อนขายมือถือและโน้ตบุ๊ก,article,informational,NEW PAGE,P1,done
+/บทความ/cycle-count-และ-activation-lock-ก่อนขาย-macbook,article,commercial+prep,NEW PAGE,P1,done
+/บทความ/shutter-count-คืออะไรก่อนขายกล้องดิจิทัล,article,informational,NEW PAGE,P1,done
+/บทความ/ราคาประเมินจากรูปกับราคาหลังตรวจต่างกันอย่างไร,article,commercial investigation,NEW PAGE,P1,done
+/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง,article,commercial,IMPROVE,P2,done
+/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร,article,prep,IMPROVE,P2,done
+/บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน,article,prep,IMPROVE,P2,done
+/บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad,article,prep,IMPROVE,P2,done
+/บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง,article,prep,IMPROVE,P2,done
+/พื้นที่/*,area,local,KEEP,P3,no amphoe expansion

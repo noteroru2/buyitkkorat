@@ -4,6 +4,7 @@ import Breadcrumbs from "../components/Breadcrumbs.astro";
 import RelatedServices from "../components/RelatedServices.astro";
 import RelatedArticles from "../components/RelatedArticles.astro";
 import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import { SITE, STORE_LOCATION } from "../data/site";
 import type { BreadcrumbItem } from "../utils/seo";
 
 interface Related {
@@ -27,6 +28,12 @@ interface Props {
 }
 
 const props = Astro.props;
+const publishedLabel = props.publishedDate
+  ? new Date(props.publishedDate).toLocaleDateString("th-TH")
+  : null;
+const updatedLabel = props.updatedDate
+  ? new Date(props.updatedDate).toLocaleDateString("th-TH")
+  : null;
 ---
 
 <BaseLayout
@@ -41,13 +48,15 @@ const props = Astro.props;
   <div class="container" style="padding-top: var(--space-5)">
     <Breadcrumbs items={props.breadcrumbs} />
     <h1 style="max-width: 20ch">{props.h1}</h1>
-    {
-      props.updatedDate && (
-        <p style="color: var(--color-text-muted); font-size: var(--font-size-sm)">
-          อัปเดต: {new Date(props.updatedDate).toLocaleDateString("th-TH")}
-        </p>
-      )
-    }
+    <p style="color: var(--color-text-muted); font-size: var(--font-size-sm); max-width: 62ch">
+      เผยแพร่โดย {STORE_LOCATION.tradeName} ({SITE.brand})
+      {publishedLabel && <> · เผยแพร่ {publishedLabel}</>}
+      {updatedLabel && <> · อัปเดต {updatedLabel}</>}
+    </p>
+    <p style="color: var(--color-text-muted); font-size: var(--font-size-sm); max-width: 62ch">
+      เนื้อหาอธิบายขั้นตอนและปัจจัยที่ใช้ในการประเมินสินค้าไอทีมือสอง
+      ไม่ใช่การรับประกันราคาสุดท้าย {SITE.priceDisclaimer}
+    </p>
   </div>
   <article class="section">
     <div class="container prose main-content">

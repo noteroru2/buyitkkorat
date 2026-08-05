@@ -37,12 +37,19 @@ export async function getAllContentIndex() {
   return map;
 }
 
+/** Normalize relatedPaths so slash-less slugs still resolve. */
+export function normalizeContentPath(path: string): string {
+  const trimmed = path.trim();
+  if (!trimmed) return trimmed;
+  return trimmed.startsWith("/") ? trimmed : `/${trimmed}`;
+}
+
 export function resolveRelated(
   map: Map<string, { title: string; href: string; excerpt?: string }>,
   paths: string[],
 ) {
   return paths
-    .map((path) => map.get(path))
+    .map((path) => map.get(normalizeContentPath(path)))
     .filter((item): item is { title: string; href: string; excerpt?: string } => Boolean(item));
 }
 

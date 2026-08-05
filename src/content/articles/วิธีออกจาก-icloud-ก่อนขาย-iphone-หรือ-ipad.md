@@ -7,17 +7,18 @@ category: "guide"
 intent: "article"
 excerpt: "ออกจาก iCloud และปิด Find My ก่อนขาย iPhone หรือ iPad อย่างถูกต้อง เพื่อปกป้องข้อมูลและให้ผู้ซื้อใช้งานต่อได้"
 publishedDate: 2026-01-15
-updatedDate: 2026-07-14
+updatedDate: 2026-08-05
 featured: true
 indexable: true
 ogImage: "/og/default.png"
 relatedPages:
   - "/รับซื้อ-iphone-โคราช"
+  - "/รับซื้อ-macbook-โคราช"
   - "/รับซื้อสินค้าไอที"
   - "/ส่งสินค้าไอทีมาประเมิน"
+  - "/บทความ/cycle-count-และ-activation-lock-ก่อนขาย-macbook"
   - "/บทความ/วิธีออกจากบัญชี-google-ก่อนขายโทรศัพท์-android"
-  - "/บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย"
-  - "/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง"
+  - "/บทความ/วิธีเช็กสุขภาพแบตเตอรี่ก่อนขายมือถือและโน้ตบุ๊ก"
 serviceArea: "นครราชสีมา"
 author: "WINNER IT"
 reviewer: "WINNER IT"

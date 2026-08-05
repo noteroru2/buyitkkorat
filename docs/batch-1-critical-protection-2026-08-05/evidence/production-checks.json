@@ -1,0 +1,18 @@
+﻿{
+    "checkedAt":  "2026-08-05T11:23:53.8943210Z",
+    "originMain":  "55b176ee91859e9ffbc73bc1a97f7e420c9c05e2",
+    "localHead":  "55b176ee91859e9ffbc73bc1a97f7e420c9c05e2",
+    "productionHeaders":  {
+                              "x-vercel-id":  "sin1::zmsqb-1785929032869-23e8d2305d62",
+                              "x-content-type-options":  "nosniff",
+                              "content-security-policy-report-only":  "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 https://www.googletagmanager.com https://www.google-analytics.com; style-src \u0027self\u0027 \u0027unsafe-inline\u0027; img-src \u0027self\u0027 data: https:; font-src \u0027self\u0027 data:; connect-src \u0027self\u0027 https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-ancestors \u0027self\u0027; base-uri \u0027self\u0027; form-action \u0027self\u0027",
+                              "x-vercel-cache":  "HIT",
+                              "strict-transport-security":  "max-age=63072000"
+                          },
+    "homepageHasCookieBanner":  true,
+    "homepageHasLocalBusiness":  true,
+    "homepageHasGtagJs":  false,
+    "homepageFacebookDotComCount":  0,
+    "sitemapUrlCount":  89,
+    "cookiePolicyStatus":  200
+}

@@ -1,0 +1,118 @@
+---
+import MapsCTA from "./MapsCTA.astro";
+import FacebookCTA from "./FacebookCTA.astro";
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+import {
+  CONTACT_CHANNELS,
+  SERVICE_AREA,
+  SITE,
+  STORE_LOCATION,
+  formatStoreFullAddress,
+} from "../data/site";
+
+interface Props {
+  compact?: boolean;
+  showServiceArea?: boolean;
+  ctaPrefix?: string;
+}
+
+const { compact = false, showServiceArea = true, ctaPrefix = "identity" } = Astro.props;
+const fullAddress = formatStoreFullAddress();
+---
+
+<section
+  class:list={["store-identity", compact && "store-identity--compact"]}
+  aria-labelledby="store-identity-title"
+  data-component="StoreIdentityCard"
+>
+  <div class="container">
+    <h2 id="store-identity-title">ตรวจสอบตัวตนร้าน</h2>
+    <p class="store-identity__lead">
+      <strong>{STORE_LOCATION.tradeName}</strong> ภายใต้แบรนด์ {SITE.brand} · {SITE.legalName}
+    </p>
+    <dl class="store-identity__facts">
+      <div>
+        <dt>หน้าร้านจริง</dt>
+        <dd>จังหวัด{STORE_LOCATION.province}</dd>
+      </div>
+      <div>
+        <dt>ที่อยู่</dt>
+        <dd>{fullAddress}</dd>
+      </div>
+      <div>
+        <dt>เวลาเปิด</dt>
+        <dd>{STORE_LOCATION.openingHoursText}</dd>
+      </div>
+      {
+        showServiceArea && (
+          <div>
+            <dt>พื้นที่ให้บริการ</dt>
+            <dd>{SERVICE_AREA.label} — ไม่ใช่สาขาหรือหน้าร้านประจำ</dd>
+          </div>
+        )
+      }
+    </dl>
+    <div class="store-identity__actions">
+      <PrimaryLineCTA label={`แอด LINE ${SITE.lineId}`} event="line_click" />
+      <a
+        class="btn btn--phone"
+        href={`tel:${SITE.phoneTel}`}
+        data-event="phone_click"
+        data-cta={`${ctaPrefix}_phone`}
+      >
+        โทร {SITE.phoneDisplay}
+      </a>
+      {CONTACT_CHANNELS.facebookUrl && <FacebookCTA />}
+      {CONTACT_CHANNELS.mapsUrl && <MapsCTA cta={`${ctaPrefix}_maps`} />}
+      <a class="btn btn--ghost" href="/เกี่ยวกับเรา">เกี่ยวกับเรา</a>
+      <a class="btn btn--ghost" href="/ติดต่อ">หน้าติดต่อ</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .store-identity {
+    padding: var(--space-6) 0;
+    background: var(--color-surface-alt);
+    border-block: 1px solid var(--color-border);
+  }
+  .store-identity--compact {
+    padding: var(--space-5) 0;
+  }
+  .store-identity__lead {
+    max-width: 42rem;
+    color: var(--color-text-muted);
+  }
+  .store-identity__facts {
+    display: grid;
+    gap: var(--space-3);
+    margin: var(--space-4) 0;
+    padding: 0;
+  }
+  @media (min-width: 720px) {
+    .store-identity__facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .store-identity__facts div {
+    margin: 0;
+    padding: var(--space-3);
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+  .store-identity__facts dt {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-1);
+  }
+  .store-identity__facts dd {
+    margin: 0;
+    font-weight: 600;
+  }
+  .store-identity__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+</style>

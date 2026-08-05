@@ -1,0 +1,51 @@
+---
+interface Props {
+  heading?: string;
+}
+
+const { heading = "ความเป็นส่วนตัวและความปลอดภัยของข้อมูล" } = Astro.props;
+---
+
+<aside class="privacy-notice" aria-labelledby="privacy-notice-title" data-component="PrivacyNotice">
+  <h2 id="privacy-notice-title">{heading}</h2>
+  <ul>
+    <li>อย่าส่งรหัสผ่านบัญชี หรือรหัสปลดล็อกผ่านหน้าเว็บไซต์</li>
+    <li>อย่าโพสต์ Serial number หรือ IMEI ในช่องทางสาธารณะ</li>
+    <li>สำรองข้อมูลก่อนลบหรือรีเซ็ตเครื่อง</li>
+    <li>ออกจากบัญชีส่วนตัวและปิด Find My / Activation Lock ก่อนส่งมอบ</li>
+    <li>ช่องทาง LINE และ Facebook อยู่ภายใต้นโยบายของแพลตฟอร์มนั้น</li>
+  </ul>
+  <p>
+    อ่านเพิ่มที่
+    <a href="/นโยบายความเป็นส่วนตัว">นโยบายความเป็นส่วนตัว</a>
+    และ
+    <a href="/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ">นโยบายรับซื้อสินค้า</a>
+  </p>
+</aside>
+
+<style>
+  .privacy-notice {
+    margin: var(--space-5) 0;
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-white);
+    max-width: 48rem;
+  }
+  .privacy-notice h2 {
+    margin: 0 0 var(--space-3);
+    font-size: var(--font-size-lg);
+  }
+  .privacy-notice ul {
+    margin: 0 0 var(--space-3);
+    padding-left: 1.25rem;
+  }
+  .privacy-notice li + li {
+    margin-top: var(--space-2);
+  }
+  .privacy-notice p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+</style>

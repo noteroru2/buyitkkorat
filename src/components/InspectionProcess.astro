@@ -1,0 +1,44 @@
+---
+import { SITE } from "../data/site";
+
+interface Props {
+  heading?: string;
+}
+
+const {
+  heading = "ขั้นตอนตรวจสินค้าเมื่อรับซื้อ",
+} = Astro.props;
+
+const steps = [
+  "รับข้อมูลรุ่น สเปก สภาพ และรูปเพื่อประเมินเบื้องต้น",
+  "นัดหมายหรือรับมอบสินค้าตามช่องทางที่ตกลง",
+  "ตรวจสภาพภายนอก พอร์ต หน้าจอ และการทำงาน",
+  "ยืนยันราคาสุดท้ายหลังตรวจของจริงก่อนจบรายการ",
+];
+---
+
+<section
+  class="inspection-process"
+  aria-labelledby="inspection-process-title"
+  data-component="InspectionProcess"
+>
+  <h2 id="inspection-process-title">{heading}</h2>
+  <ol>
+    {steps.map((step) => <li>{step}</li>)}
+  </ol>
+  <p class="disclaimer">{SITE.priceDisclaimer}</p>
+</section>
+
+<style>
+  .inspection-process {
+    margin: var(--space-5) 0;
+  }
+  .inspection-process ol {
+    margin: var(--space-3) 0;
+    padding-left: 1.25rem;
+    max-width: 40rem;
+  }
+  .inspection-process li + li {
+    margin-top: var(--space-2);
+  }
+</style>

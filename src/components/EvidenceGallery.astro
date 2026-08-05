@@ -1,0 +1,64 @@
+---
+import { getPublishablePhotoEvidence } from "../data/evidence";
+
+/**
+ * Renders only verified first-party photos.
+ * Currently empty until store photography is supplied and verified.
+ */
+const photos = getPublishablePhotoEvidence();
+---
+
+{
+  photos.length > 0 && (
+    <section
+      class="evidence-gallery section"
+      aria-labelledby="evidence-gallery-title"
+      data-component="EvidenceGallery"
+    >
+      <div class="container">
+        <h2 id="evidence-gallery-title">ภาพหน้าร้านและพื้นที่ให้บริการ</h2>
+        <p class="section__lead">ภาพที่ยืนยันแล้วจากร้านอำพล เทรดดิ้ง</p>
+        <ul class="evidence-gallery__grid">
+          {photos.map((item) => (
+            <li>
+              <figure>
+                <img src={item.asset} alt={item.alt ?? item.title} loading="lazy" width="800" height="600" />
+                {item.caption && <figcaption>{item.caption}</figcaption>}
+              </figure>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .evidence-gallery__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .evidence-gallery__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .evidence-gallery figure {
+    margin: 0;
+  }
+  .evidence-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+  }
+  .evidence-gallery figcaption {
+    margin-top: var(--space-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+  }
+</style>

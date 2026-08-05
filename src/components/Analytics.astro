@@ -68,6 +68,8 @@ const enabled = ANALYTICS.enabled;
       valuation_submit: { event: "valuation_submit", method: "form" },
       service_cta_click: { event: "contact_click", method: "line" },
       contact_click: { event: "contact_click", method: "contact" },
+      evidence_view: { event: "evidence_view", method: "evidence" },
+      service_process_view: { event: "service_process_view", method: "process" },
     };
     var ALLOWED_PARAMS = {
       page_path: true,
@@ -75,6 +77,8 @@ const enabled = ANALYTICS.enabled;
       cta_location: true,
       contact_method: true,
       service_category: true,
+      evidence_type: true,
+      component_name: true,
     };
     var BLOCKED_PARAM = /phone|name|message|serial|address|email|line_id|image/i;
     var lastKey = "";

@@ -1,0 +1,35 @@
+---
+import { SERVICE_AREA, STORE_LOCATION } from "../data/site";
+
+interface Props {
+  heading?: string;
+}
+
+const { heading = "ลูกค้าในนครราชสีมาใช้บริการอย่างไร" } = Astro.props;
+---
+
+<section class="service-area-notice section--tight" aria-labelledby="service-area-notice-title" data-component="ServiceAreaNotice">
+  <div class="container">
+    <h2 id="service-area-notice-title">{heading}</h2>
+    <p>{SERVICE_AREA.wording}</p>
+    <ul>
+      <li>ส่งรุ่น สเปก สภาพ และรูปสินค้าเพื่อประเมินเบื้องต้นผ่าน LINE หรือโทร</li>
+      <li>สอบถามการนัดรับหรือการจัดส่งตามเงื่อนไขจริงในแต่ละครั้ง</li>
+      <li>
+        หน้าร้านจริงอยู่จังหวัด{STORE_LOCATION.province} — ดูแผนที่และที่อยู่ในหน้า
+        <a href="/ติดต่อ">ติดต่อ</a> หรือ <a href="/เกี่ยวกับเรา">เกี่ยวกับเรา</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  .service-area-notice ul {
+    margin: var(--space-3) 0 0;
+    padding-left: 1.25rem;
+    max-width: 48rem;
+  }
+  .service-area-notice li + li {
+    margin-top: var(--space-2);
+  }
+</style>

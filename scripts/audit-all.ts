@@ -13,6 +13,7 @@ const audits = [
   "audit-batch1-protection.ts",
   "audit-batch2-seo.ts",
   "audit-batch3-content-authority.ts",
+  "audit-batch4-trust.ts",
 ];
 
 let failed = 0;

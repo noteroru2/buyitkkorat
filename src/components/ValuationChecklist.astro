@@ -1,0 +1,168 @@
+---
+import { PREPARE_CHECKLIST, SITE } from "../data/site";
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+import FacebookCTA from "./FacebookCTA.astro";
+import PrivacyNotice from "./PrivacyNotice.astro";
+
+interface Props {
+  showPrivacy?: boolean;
+  id?: string;
+}
+
+const { showPrivacy = true, id = "valuation-checklist" } = Astro.props;
+
+const categories = [
+  {
+    id: "phone",
+    label: "โทรศัพท์ / iPhone / แท็บเล็ต",
+    hints: [
+      "ยี่ห้อ รุ่น ความจุ สี",
+      "สภาพจอและตัวเครื่อง",
+      "สุขภาพแบตเตอรี่ถ้าทราบ",
+      "สถานะ iCloud / Google account",
+      "รูปด้านหน้า ด้านหลัง จอเปิด และตำหนิ",
+    ],
+    href: "/รับซื้อโทรศัพท์มือถือ-โคราช",
+  },
+  {
+    id: "notebook",
+    label: "โน้ตบุ๊ก / MacBook",
+    hints: [
+      "ยี่ห้อ รุ่น CPU RAM Storage",
+      "สภาพจอ คีย์บอร์ด แบต",
+      "สถานะบัญชีผู้ใช้ / Activation Lock",
+      "รูปเครื่อง สเปก และที่ชาร์จถ้ามี",
+    ],
+    href: "/รับซื้อโน๊ตบุ๊ค-โคราช",
+  },
+  {
+    id: "computer",
+    label: "คอมพิวเตอร์ / พาร์ท",
+    hints: [
+      "ประเภทเครื่องหรือรายการพาร์ท",
+      "CPU GPU RAM Storage",
+      "รูปเคส ภายในเครื่อง หรือชิ้นส่วน",
+      "แจ้งอาการเสียถ้ามี",
+    ],
+    href: "/รับซื้อคอมพิวเตอร์-โคราช",
+  },
+  {
+    id: "camera",
+    label: "กล้อง / เลนส์",
+    hints: [
+      "ยี่ห้อ รุ่น",
+      "Shutter count ถ้าทราบ",
+      "เลนส์ที่ขายพร้อมหรือแยก",
+      "รูปตัวกล้อง mount และตำหนิ",
+    ],
+    href: "/รับซื้อกล้อง-โคราช",
+  },
+];
+---
+
+<section
+  class="valuation-checklist"
+  id={id}
+  aria-labelledby={`${id}-title`}
+  data-component="ValuationChecklist"
+>
+  <h2 id={`${id}-title`}>เตรียมข้อมูลก่อนส่งประเมิน</h2>
+  <p>
+    เลือกประเภทสินค้าเพื่อดูรายการที่ควรเตรียม แล้วส่งข้อมูลผ่าน LINE หรือโทร
+    <strong>ไม่มีแบบฟอร์มส่งข้อมูลบนเว็บไซต์</strong>
+    และไม่มีสถานะส่งสำเร็จบนหน้านี้
+  </p>
+
+  <h3 class="valuation-checklist__sub">ข้อมูลพื้นฐานที่ควรมีทุกประเภท</h3>
+  <ul class="valuation-checklist__base">
+    {PREPARE_CHECKLIST.map((item) => <li>{item}</li>)}
+  </ul>
+
+  <div class="valuation-checklist__cats">
+    {
+      categories.map((cat) => (
+        <details class="valuation-checklist__details">
+          <summary data-event="valuation_start" data-cta={`checklist_${cat.id}`}>
+            {cat.label}
+          </summary>
+          <ul>
+            {cat.hints.map((hint) => (
+              <li>{hint}</li>
+            ))}
+          </ul>
+          <p>
+            <a href={cat.href}>ดูหน้าบริการที่เกี่ยวข้อง</a>
+          </p>
+        </details>
+      ))
+    }
+  </div>
+
+  <p class="disclaimer">{SITE.priceDisclaimer}</p>
+
+  <div class="valuation-checklist__actions">
+    <PrimaryLineCTA label="ส่งรุ่นและรูปผ่าน LINE" event="valuation_start" />
+    <a
+      class="btn btn--phone"
+      href={`tel:${SITE.phoneTel}`}
+      data-event="phone_click"
+      data-cta="valuation_phone"
+    >
+      โทร {SITE.phoneDisplay}
+    </a>
+    <FacebookCTA />
+    <a class="btn btn--ghost" href="/ติดต่อ">ดูช่องทางติดต่อทั้งหมด</a>
+  </div>
+
+  {showPrivacy && <PrivacyNotice heading="ก่อนส่งข้อมูล โปรดระวัง" />}
+</section>
+
+<style>
+  .valuation-checklist {
+    margin: var(--space-6) 0;
+    padding: var(--space-5);
+    background: var(--color-surface-alt);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+  }
+  .valuation-checklist__sub {
+    margin: var(--space-4) 0 var(--space-2);
+    font-size: var(--font-size-base);
+  }
+  .valuation-checklist__base {
+    margin: 0 0 var(--space-4);
+    padding-left: 1.25rem;
+  }
+  .valuation-checklist__cats {
+    display: grid;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+  .valuation-checklist__details {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-3) var(--space-4);
+  }
+  .valuation-checklist__details summary {
+    cursor: pointer;
+    font-weight: 700;
+    min-height: var(--btn-min-height);
+    display: flex;
+    align-items: center;
+  }
+  .valuation-checklist__details summary:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+  }
+  .valuation-checklist__details ul {
+    margin: var(--space-3) 0;
+    padding-left: 1.25rem;
+  }
+  .valuation-checklist__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin: var(--space-4) 0;
+  }
+</style>

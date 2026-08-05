@@ -3,11 +3,14 @@ import TrustPageLayout from "../layouts/TrustPageLayout.astro";
 import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
 import FacebookCTA from "../components/FacebookCTA.astro";
 import MapsCTA from "../components/MapsCTA.astro";
+import ServiceAreaNotice from "../components/ServiceAreaNotice.astro";
+import InspectionProcess from "../components/InspectionProcess.astro";
+import PrivacyNotice from "../components/PrivacyNotice.astro";
+import EvidenceGallery from "../components/EvidenceGallery.astro";
 import { absoluteUrl } from "../utils/seo";
 import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
 import {
   CONTACT_CHANNELS,
-  SERVICE_AREA,
   SITE,
   STORE_LOCATION,
   formatStoreFullAddress,
@@ -47,33 +50,46 @@ const schema = buildGraph([
     ให้บริการรับซื้อสินค้าไอทีมือสองจากบุคคลทั่วไป ร้านค้า สำนักงาน บริษัท และหน่วยงาน
   </p>
 
+  <h2>ประเภทสินค้าที่รับประเมิน</h2>
+  <p>
+    สอบถามได้ทั้งโทรศัพท์ แท็บเล็ต โน้ตบุ๊ก MacBook คอมพิวเตอร์ พาร์ท กล้อง เครื่องเกม
+    และอุปกรณ์สำนักงาน ตามสภาพและความต้องการตลาดในแต่ละช่วง
+    ไม่ได้รับประกันว่ารับทุกรุ่นทุกสภาพ
+  </p>
+  <p>
+    ดูหมวดบริการที่
+    <a href="/รับซื้อสินค้าไอที">รับซื้อสินค้าไอที</a>
+  </p>
+
   <h2>หน้าร้านจริงอยู่ที่ไหน</h2>
   <p>
     หน้าร้านจริงของเราอยู่ที่จังหวัด<strong>{STORE_LOCATION.province}</strong>
   </p>
-  <p>
-    ที่อยู่: {fullAddress}
-  </p>
+  <p>ที่อยู่: {fullAddress}</p>
   <p>เวลาเปิดทำการ: {STORE_LOCATION.openingHoursText}</p>
   <p>
     <MapsCTA cta="about_maps" />
   </p>
 
-  <h2>บริการลูกค้าในจังหวัดนครราชสีมา</h2>
-  <p>{SERVICE_AREA.wording}</p>
+  <ServiceAreaNotice heading="บริการลูกค้าในจังหวัดนครราชสีมา" />
   <p>
     ลูกค้าในโคราชสามารถส่งรุ่น รูป สภาพ และรายละเอียดเพื่อประเมินราคาเบื้องต้น
     จากนั้นสอบถามการนัดรับตามพื้นที่ คิว และระยะทาง หรือเลือกส่งสินค้ามาตรวจสอบตามเงื่อนไข
   </p>
 
-  <h2>ขั้นตอนประเมินราคาและนัดรับ</h2>
-  <ol>
-    <li>ส่งยี่ห้อ รุ่น สเปก สภาพ ตำหนิ อุปกรณ์ และรูปสินค้า</li>
-    <li>รับการประเมินเบื้องต้นผ่านช่องทางติดต่อ</li>
-    <li>ตกลงวิธีส่งมอบ เช่น นัดรับ หรือจัดส่ง</li>
-    <li>ตรวจสอบสินค้าจริงแล้วยืนยันราคาสุดท้ายก่อนจบรายการ</li>
-  </ol>
+  <InspectionProcess />
+
+  <h2>หลักการประเมินราคา</h2>
+  <ul>
+    <li>ประเมินเบื้องต้นจากรุ่น สเปก สภาพ อุปกรณ์ และรูปที่ส่งมา</li>
+    <li>ราคาสุดท้ายยืนยันหลังตรวจสินค้าจริง</li>
+    <li>ไม่อ้างว่าให้ราคาสูงที่สุดหรือแพงกว่าทุกร้าน</li>
+  </ul>
   <p class="disclaimer">{SITE.priceDisclaimer}</p>
+
+  <PrivacyNotice />
+
+  <EvidenceGallery />
 
   <h2>วิธีตรวจสอบและติดต่อร้าน</h2>
   <ul>
@@ -108,6 +124,9 @@ const schema = buildGraph([
     <li>
       หน้าติดต่อ: <a href="/ติดต่อ">รายละเอียดช่องทางติดต่อ</a>
     </li>
+    <li>
+      คำถามที่พบบ่อย: <a href="/คำถามที่พบบ่อย">FAQ</a>
+    </li>
   </ul>
 
   <h2>สิ่งที่เราไม่ได้อ้าง</h2>
@@ -115,6 +134,7 @@ const schema = buildGraph([
     <li>ไม่อ้างว่ามีสาขา หน้าร้าน หรือสำนักงานประจำในจังหวัดนครราชสีมา</li>
     <li>ไม่สร้างรีวิว จำนวนลูกค้า หรือรางวัลที่ไม่มีอยู่จริง</li>
     <li>ไม่รับซื้อสินค้าที่ยืนยันกรรมสิทธิ์ไม่ได้ หรือมีเหตุสงสัยว่าได้มาโดยมิชอบ</li>
+    <li>ไม่ขอรหัสผ่านบัญชีผ่านหน้าเว็บไซต์</li>
   </ul>
 
   <div class="cta-row">

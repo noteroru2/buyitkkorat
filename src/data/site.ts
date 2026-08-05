@@ -194,6 +194,8 @@ export const ANALYTICS_EVENTS = [
   "valuation_start",
   "valuation_submit",
   "contact_click",
+  "evidence_view",
+  "service_process_view",
 ] as const;
 
 export type AnalyticsEvent = (typeof ANALYTICS_EVENTS)[number];

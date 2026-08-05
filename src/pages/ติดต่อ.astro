@@ -3,7 +3,9 @@ import TrustPageLayout from "../layouts/TrustPageLayout.astro";
 import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
 import FacebookCTA from "../components/FacebookCTA.astro";
 import MapsCTA from "../components/MapsCTA.astro";
-import ValuationFoundation from "../components/ValuationFoundation.astro";
+import ValuationChecklist from "../components/ValuationChecklist.astro";
+import ServiceAreaNotice from "../components/ServiceAreaNotice.astro";
+import PrivacyNotice from "../components/PrivacyNotice.astro";
 import { absoluteUrl } from "../utils/seo";
 import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
 import {
@@ -42,81 +44,109 @@ const schema = buildGraph([
   schema={schema}
   updatedDate={new Date("2026-08-05")}
 >
-  <h2>หน้าร้านอุบลราชธานี</h2>
   <p>
     <strong>{STORE_LOCATION.tradeName}</strong> ({SITE.brand}) · {SITE.legalName}
   </p>
-  <p>{fullAddress}</p>
-  <p>เปิด{STORE_LOCATION.openingHoursText}</p>
-  <div class="cta-row">
-    <MapsCTA cta="contact_maps" />
-    <PrimaryLineCTA label="แอด LINE @buyhub" event="line_click" />
-    <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="contact_phone">
-      โทร {SITE.phoneDisplay}
-    </a>
-    <FacebookCTA />
-  </div>
 
-  <h2>ช่องทางติดต่อ</h2>
-  <ul>
-    <li>
-      โทรศัพท์:
-      <a href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="contact_phone_list">{SITE.phoneDisplay}</a>
-    </li>
-    <li>
-      LINE Official:
-      <a href={SITE.lineUrl} target="_blank" rel="noopener noreferrer" data-event="line_click" data-cta="contact_line">
-        {SITE.lineId}
+  <section aria-labelledby="contact-eval-title">
+    <h2 id="contact-eval-title">ต้องการประเมินราคา</h2>
+    <p>
+      เตรียมยี่ห้อ รุ่น สเปก สภาพ ตำหนิ อุปกรณ์ ประกัน จังหวัด และรูปสินค้า
+      แล้วส่งผ่าน LINE เป็นช่องทางหลัก หรือโทร / Facebook เป็นช่องทางรอง
+    </p>
+    <div class="cta-row">
+      <PrimaryLineCTA label="ส่งข้อมูลประเมินผ่าน LINE" event="valuation_start" />
+      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="contact_phone">
+        โทร {SITE.phoneDisplay}
       </a>
-    </li>
-    {
-      CONTACT_CHANNELS.facebookUrl && (
-        <li>
-          Facebook:
-          <a
-            href={CONTACT_CHANNELS.facebookUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-event="facebook_click"
-            data-cta="contact_facebook"
-          >
-            เปิดเพจ Facebook
-          </a>
-        </li>
-      )
-    }
-    {
-      CONTACT_CHANNELS.mapsUrl && (
-        <li>
-          Google Maps:
-          <a
-            href={CONTACT_CHANNELS.mapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-event="maps_click"
-            data-cta="contact_maps_list"
-          >
-            ดูเส้นทางหน้าร้านอุบลราชธานี
-          </a>
-        </li>
-      )
-    }
-  </ul>
+      <FacebookCTA />
+    </div>
+    <ValuationChecklist showPrivacy={false} id="contact-valuation" />
+  </section>
 
-  <h2>ลูกค้าในจังหวัดนครราชสีมา</h2>
-  <p>{SERVICE_AREA.wording}</p>
-  <p>
-    สามารถส่งรุ่น สเปก สภาพ ตำหนิ อุปกรณ์ ประกัน จังหวัด และรูปสินค้าเพื่อประเมินราคาเบื้องต้น
-    และสอบถามการนัดรับหรือวิธีจัดส่งตามเงื่อนไขจริงในแต่ละครั้ง
-    โปรดอย่าเข้าใจว่ามีหน้าร้านหรือสาขาประจำในจังหวัดนครราชสีมา
-  </p>
-  <p>พื้นที่ให้บริการ: {SERVICE_AREA.label}</p>
+  <section aria-labelledby="contact-store-title">
+    <h2 id="contact-store-title">ต้องการมาหน้าร้าน</h2>
+    <p>หน้าร้านจริงอยู่จังหวัด{STORE_LOCATION.province}</p>
+    <p>{fullAddress}</p>
+    <p>เปิด{STORE_LOCATION.openingHoursText}</p>
+    <p>แนะนำให้ติดต่อผ่าน LINE หรือโทรก่อนเดินทาง เพื่อยืนยันช่วงเวลาและความพร้อมในการตรวจสินค้า</p>
+    <div class="cta-row">
+      <MapsCTA cta="contact_maps" />
+      <PrimaryLineCTA label="สอบถามก่อนเดินทาง" event="line_click" />
+      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="contact_store_phone">
+        โทร {SITE.phoneDisplay}
+      </a>
+    </div>
+  </section>
 
-  <ValuationFoundation />
+  <section aria-labelledby="contact-korat-title">
+    <h2 id="contact-korat-title">ลูกค้าในจังหวัดนครราชสีมา</h2>
+    <ServiceAreaNotice heading="รูปแบบบริการในโคราช" />
+    <p>
+      ส่งข้อมูลประเมินก่อน แล้วสอบถามการนัดรับหรือการจัดส่งตามเงื่อนไข
+      ไม่มีหน้าร้านหรือสาขาประจำในจังหวัดนครราชสีมา
+    </p>
+    <p>พื้นที่ให้บริการ: {SERVICE_AREA.label}</p>
+    <p>
+      อ่านภาพรวมพื้นที่ที่
+      <a href="/พื้นที่/เมืองนครราชสีมา">เมืองนครราชสีมา</a>
+    </p>
+  </section>
+
+  <section aria-labelledby="contact-channels-title">
+    <h2 id="contact-channels-title">ช่องทางติดต่อทั้งหมด</h2>
+    <ul>
+      <li>
+        โทรศัพท์:
+        <a href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="contact_phone_list">{SITE.phoneDisplay}</a>
+      </li>
+      <li>
+        LINE Official:
+        <a href={SITE.lineUrl} target="_blank" rel="noopener noreferrer" data-event="line_click" data-cta="contact_line">
+          {SITE.lineId}
+        </a>
+      </li>
+      {
+        CONTACT_CHANNELS.facebookUrl && (
+          <li>
+            Facebook:
+            <a
+              href={CONTACT_CHANNELS.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-event="facebook_click"
+              data-cta="contact_facebook"
+            >
+              เปิดเพจ Facebook
+            </a>
+          </li>
+        )
+      }
+      {
+        CONTACT_CHANNELS.mapsUrl && (
+          <li>
+            Google Maps:
+            <a
+              href={CONTACT_CHANNELS.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-event="maps_click"
+              data-cta="contact_maps_list"
+            >
+              ดูเส้นทางหน้าร้านอุบลราชธานี
+            </a>
+          </li>
+        )
+      }
+    </ul>
+  </section>
+
+  <PrivacyNotice heading="ความเป็นส่วนตัวเมื่อติดต่อประเมิน" />
 
   <p class="disclaimer">{SITE.priceDisclaimer}</p>
   <p>
     อ่านเพิ่มเติมเกี่ยวกับร้านได้ที่หน้า <a href="/เกี่ยวกับเรา">เกี่ยวกับเรา</a>
+    หรือ <a href="/คำถามที่พบบ่อย">คำถามที่พบบ่อย</a>
   </p>
 </TrustPageLayout>
 
@@ -125,6 +155,9 @@ const schema = buildGraph([
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-3);
-    margin: var(--space-4) 0 var(--space-6);
+    margin: var(--space-4) 0 var(--space-5);
+  }
+  section + section {
+    margin-top: var(--space-6);
   }
 </style>

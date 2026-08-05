@@ -4,6 +4,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroSection from "../components/HeroSection.astro";
 import CuteDeviceIllustration from "../components/CuteDeviceIllustration.astro";
 import TrustStrip from "../components/TrustStrip.astro";
+import StoreIdentityCard from "../components/StoreIdentityCard.astro";
+import ServiceAreaNotice from "../components/ServiceAreaNotice.astro";
+import ValuationChecklist from "../components/ValuationChecklist.astro";
+import EvidenceGallery from "../components/EvidenceGallery.astro";
 import ServiceCategoryGrid from "../components/ServiceCategoryGrid.astro";
 import WhatToPrepare from "../components/WhatToPrepare.astro";
 import SellingProcess from "../components/SellingProcess.astro";
@@ -12,6 +16,7 @@ import BusinessBulkSection from "../components/BusinessBulkSection.astro";
 import ValuationFactors from "../components/ValuationFactors.astro";
 import ServiceAreaGrid from "../components/ServiceAreaGrid.astro";
 import SafetyNotice from "../components/SafetyNotice.astro";
+import PrivacyNotice from "../components/PrivacyNotice.astro";
 import RelatedArticles from "../components/RelatedArticles.astro";
 import FAQSection from "../components/FAQSection.astro";
 import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
@@ -41,23 +46,23 @@ const faqs = [
       "สอบถามได้ทั้งโทรศัพท์ แท็บเล็ต โน๊ตบุ๊ค คอมพิวเตอร์ การ์ดจอ กล้อง เครื่องเกม และอุปกรณ์สำนักงาน ส่งรุ่นและสภาพผ่าน LINE เพื่อยืนยันก่อน",
   },
   {
-    question: "ต้องมีหน้าร้านในโคราชไหม",
+    question: "มีหน้าร้านในโคราชหรือไม่",
     answer:
-      "บริการเป็นแบบประเมินผ่าน LINE และนัดหมายตามพื้นที่ ไม่ได้อ้างว่ามีสาขาหน้าร้านในจังหวัดนครราชสีมา",
+      "ไม่มีหน้าร้านหรือสาขาประจำในจังหวัดนครราชสีมา หน้าร้านจริงอยู่จังหวัดอุบลราชธานี ลูกค้าในโคราชใช้บริการประเมิน นัดรับ หรือจัดส่งตามเงื่อนไข",
   },
   {
     question: "ราคาประเมินจากรูปยืนยันได้เลยหรือไม่",
     answer: SITE.priceDisclaimer,
   },
   {
+    question: "ต้องส่งข้อมูลอะไรเพื่อประเมิน",
+    answer:
+      "ยี่ห้อ รุ่น สเปก สภาพ ตำหนิ อุปกรณ์ ประกัน จังหวัด และรูปสินค้า ดูรายการในส่วนเตรียมข้อมูลก่อนส่งประเมิน",
+  },
+  {
     question: "นัดรับถึงที่ใช้เวลานานแค่ไหน",
     answer:
       "ขึ้นกับคิว ระยะทาง และจำนวนสินค้า กรุณาสอบถามช่วงเวลาผ่าน LINE @buyhub",
-  },
-  {
-    question: "ขายหลายเครื่องหรือยกล็อตได้ไหม",
-    answer:
-      "ได้ แนะนำให้ส่งรายการรุ่น จำนวน Serial และรูปตัวอย่างมาประเมินก่อนนัดหมาย",
   },
   {
     question: "สินค้าติด iCloud หรือบัญชี Google รับไหม",
@@ -71,7 +76,8 @@ const schema = buildGraph([
     url: absoluteUrl("/"),
     name: "รับซื้อสินค้าไอทีโคราช ประเมินเบื้องต้นผ่าน LINE",
     description:
-      "WINNER IT รับซื้อสินค้าไอทีมือสองในโคราช ประเมินผ่าน LINE @buyhub นัดรับตามเงื่อนไขพื้นที่",
+      "ร้านอำพล เทรดดิ้ง (WINNER IT) รับซื้อสินค้าไอทีมือสอง ประเมินผ่าน LINE @buyhub หน้าร้านอุบลราชธานี ให้บริการลูกค้าในนครราชสีมา",
+    dateModified: "2026-08-05",
   }),
   faqSchema(faqs, absoluteUrl("/")),
 ]);
@@ -79,19 +85,30 @@ const schema = buildGraph([
 
 <BaseLayout
   title="รับซื้อสินค้าไอทีโคราช ประเมินเบื้องต้นผ่าน LINE | WINNER IT"
-  description="รับซื้อสินค้าไอทีมือสองในนครราชสีมา ประเมินผ่าน LINE @buyhub นัดรับตามคิวและระยะทาง ราคาสุดท้ายยืนยันหลังตรวจของจริง"
+  description="ร้านอำพล เทรดดิ้ง รับซื้อสินค้าไอทีมือสอง ประเมินผ่าน LINE @buyhub หน้าร้านอุบลราชธานี ให้บริการลูกค้าในนครราชสีมา นัดรับตามเงื่อนไข"
   canonical="/"
   schema={schema}
-  updatedDate={new Date("2026-07-14")}
+  updatedDate={new Date("2026-08-05")}
 >
   <HeroSection
     h1="รับซื้อสินค้าไอทีโคราช ประเมินเบื้องต้นผ่าน LINE"
-    lead="WINNER IT รับซื้อโทรศัพท์ โน๊ตบุ๊ค คอมพิวเตอร์ และอุปกรณ์ไอทีในจังหวัดนครราชสีมา ส่งรูปประเมินผ่าน LINE @buyhub แล้วนัดหมายตามพื้นที่ คิว และระยะทาง"
+    lead="ร้านอำพล เทรดดิ้ง (WINNER IT) รับซื้อโทรศัพท์ โน๊ตบุ๊ค คอมพิวเตอร์ และอุปกรณ์ไอที ส่งรูปประเมินผ่าน LINE @buyhub หน้าร้านจริงอยู่จังหวัดอุบลราชธานี ให้บริการลูกค้าในนครราชสีมาแบบนัดรับหรือจัดส่งตามเงื่อนไข"
   >
     <CuteDeviceIllustration slot="illustration" type="devices" title="อุปกรณ์ไอทีมือสอง" />
   </HeroSection>
 
   <TrustStrip />
+  <StoreIdentityCard ctaPrefix="home_identity" />
+  <ServiceAreaNotice />
+
+  <section class="section" aria-label="เตรียมส่งประเมินราคา">
+    <div class="container">
+      <ValuationChecklist showPrivacy={false} id="home-valuation" />
+      <PrivacyNotice />
+    </div>
+  </section>
+
+  <EvidenceGallery />
 
   <ServiceCategoryGrid
     items={[
@@ -181,6 +198,7 @@ const schema = buildGraph([
       <div class="cta-row">
         <a class="btn btn--ghost" href="/บทความ/วิธีลบข้อมูลก่อนขายคอมพิวเตอร์">วิธีลบข้อมูลคอมพิวเตอร์</a>
         <a class="btn btn--ghost" href="/บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad">ออกจาก iCloud</a>
+        <a class="btn btn--ghost" href="/คำถามที่พบบ่อย">คำถามที่พบบ่อย</a>
       </div>
     </div>
   </section>
@@ -240,9 +258,10 @@ const schema = buildGraph([
 
   <section class="section">
     <div class="container" style="text-align:center">
-      <h2 class="section__title">เริ่มขายวันนี้ ส่งรูปมาที่ LINE {SITE.lineId}</h2>
+      <h2 class="section__title">ส่งรุ่นและรูปสินค้าเพื่อประเมินเบื้องต้น</h2>
       <p class="section__lead" style="margin-inline:auto">
-        ทีม WINNER IT พร้อมประเมินเบื้องต้นและแจ้งแนวทางการนัดหมายในโคราช
+        ติดต่อผ่าน LINE {SITE.lineId} หรือโทร {SITE.phoneDisplay} · ดูข้อมูลร้านที่
+        <a href="/เกี่ยวกับเรา">เกี่ยวกับเรา</a>
       </p>
       <PrimaryLineCTA label="แอด LINE @buyhub" event="service_cta_click" />
       <p class="disclaimer" style="margin-top:var(--space-4);display:inline-block;text-align:left">

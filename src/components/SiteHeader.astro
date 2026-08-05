@@ -1,5 +1,5 @@
 ---
-import { MAIN_NAV, SITE } from "../data/site";
+import { CONTACT_CHANNELS, MAIN_NAV, SITE } from "../data/site";
 import PrimaryLineCTA from "./PrimaryLineCTA.astro";
 ---
 
@@ -26,9 +26,23 @@ import PrimaryLineCTA from "./PrimaryLineCTA.astro";
     </nav>
 
     <div class="header__actions">
-      <a class="header__phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click">
+      <a class="header__phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="header_phone">
         {SITE.phoneDisplay}
       </a>
+      {
+        CONTACT_CHANNELS.facebookUrl && (
+          <a
+            class="header__facebook"
+            href={CONTACT_CHANNELS.facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-event="facebook_click"
+            data-cta="header_facebook"
+          >
+            Facebook
+          </a>
+        )
+      }
       <PrimaryLineCTA label="LINE ประเมิน" event="line_click" class="header__line" />
       <button
         class="header__menu-btn"
@@ -126,7 +140,8 @@ import PrimaryLineCTA from "./PrimaryLineCTA.astro";
     gap: var(--space-2);
   }
 
-  .header__phone {
+  .header__phone,
+  .header__facebook {
     display: none;
     text-decoration: none;
     color: var(--color-text);
@@ -165,8 +180,10 @@ import PrimaryLineCTA from "./PrimaryLineCTA.astro";
     }
 
     .header__phone,
+    .header__facebook,
     .header__line {
       display: inline-flex;
+      align-items: center;
     }
 
     .header__menu-btn {

@@ -1,16 +1,17 @@
 import {
-  SITE,
   ensureDist,
   fileToRoute,
   loadHtml,
   printIssues,
   walkHtml,
   type Issue,
+  SITE,
 } from "./audit-lib";
+import { STORE_LOCATION } from "../src/data/site";
 
 ensureDist();
 const issues: Issue[] = [];
-const FORBIDDEN_TYPES = ["AggregateRating", "Review", "LocalBusiness"];
+const FORBIDDEN_TYPES = ["AggregateRating", "Review"];
 
 for (const file of walkHtml()) {
   const route = fileToRoute(file);
@@ -39,9 +40,6 @@ for (const file of walkHtml()) {
 
     const root = parsed as Record<string, unknown>;
     if (root && typeof root === "object" && !Array.isArray(root)) {
-      if (root["@context"] !== "https://schema.org" && !root["@graph"]) {
-        // graph wrapper expected
-      }
       if (root["@graph"] && root["@context"] !== "https://schema.org") {
         issues.push({ level: "critical", type: "schema-context", message: "missing @context", file: route });
       }
@@ -56,19 +54,55 @@ for (const file of walkHtml()) {
     }
     for (const bad of FORBIDDEN_TYPES) {
       if (serialized.includes(`"@type":"${bad}"`) || serialized.includes(`"@type": "${bad}"`)) {
-        // LocalBusiness alone might appear in text? check structured
-        if (bad === "LocalBusiness" && serialized.includes("streetAddress")) {
-          issues.push({ level: "critical", type: "schema-forbidden", message: bad, file: route });
-        } else if (bad !== "LocalBusiness") {
-          issues.push({ level: "critical", type: "schema-forbidden", message: bad, file: route });
-        }
+        issues.push({ level: "critical", type: "schema-forbidden", message: bad, file: route });
       }
     }
-    if (/"streetAddress"|"postalCode"|"geo"|"openingHours"/.test(serialized)) {
-      issues.push({ level: "critical", type: "schema-address", message: "address/geo/hours present", file: route });
+
+    for (const node of nodes) {
+      if (!node || typeof node !== "object") continue;
+      const n = node as Record<string, unknown>;
+      const type = n["@type"];
+      if (type === "LocalBusiness" || type === "Store") {
+        const address = n.address as Record<string, string> | undefined;
+        const locality = `${address?.addressLocality ?? ""} ${address?.addressRegion ?? ""} ${address?.streetAddress ?? ""}`;
+        if (/นครราชสีมา|โคราช/.test(locality)) {
+          issues.push({
+            level: "critical",
+            type: "schema-korat-localbusiness",
+            message: "LocalBusiness address must not be Korat",
+            file: route,
+          });
+        }
+        if (address?.addressRegion && address.addressRegion !== STORE_LOCATION.province) {
+          issues.push({
+            level: "critical",
+            type: "schema-store-mismatch",
+            message: `LocalBusiness region ${address.addressRegion} != entity ${STORE_LOCATION.province}`,
+            file: route,
+          });
+        }
+        if (address?.streetAddress && address.streetAddress !== STORE_LOCATION.streetAddress) {
+          issues.push({
+            level: "critical",
+            type: "schema-address-mismatch",
+            message: "streetAddress does not match STORE_LOCATION",
+            file: route,
+          });
+        }
+        if (!STORE_LOCATION.streetAddress && address?.streetAddress) {
+          issues.push({
+            level: "critical",
+            type: "schema-address",
+            message: "streetAddress present without verified entity value",
+            file: route,
+          });
+        }
+      }
+      if (!n["@type"]) {
+        issues.push({ level: "warning", type: "schema-type", message: "node missing @type", file: route });
+      }
     }
 
-    // FAQ alignment
     const faqNode = nodes.find(
       (n) => n && typeof n === "object" && (n as { "@type"?: string })["@type"] === "FAQPage",
     ) as { mainEntity?: { name?: string }[] } | undefined;
@@ -86,14 +120,6 @@ for (const file of walkHtml()) {
             file: route,
           });
         }
-      }
-    }
-
-    for (const node of nodes) {
-      if (!node || typeof node !== "object") continue;
-      const n = node as Record<string, unknown>;
-      if (!n["@type"]) {
-        issues.push({ level: "warning", type: "schema-type", message: "node missing @type", file: route });
       }
     }
   });

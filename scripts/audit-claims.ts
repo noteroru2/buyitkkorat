@@ -52,7 +52,7 @@ for (const file of files) {
       const window = text.slice(Math.max(0, idx - 60), idx + claim.length + 60);
       const negated =
         /ไม่\s*$/.test(before) ||
-        /ไม่(มี|ได้|รับ|อ้าง|ใช่|ยืนยัน)|ห้าม|ไม่อ้าง|ไม่ได้อ้าง|ไม่ได้รับประกัน|หรือไม่|ไหม\?|ไม่บริการ|ไม่เปิด/.test(window);
+        /ไม่(มี|ได้|รับ|อ้าง|ใช่|ยืนยัน)|ห้าม|ไม่อ้าง|ไม่ได้อ้าง|ไม่ได้รับประกัน|หรือไม่|ไหม\?|ไม่บริการ|ไม่เปิด|ไม่ใช่/.test(window);
       if (negated) continue;
       issues.push({
         level: "critical",

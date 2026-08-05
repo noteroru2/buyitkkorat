@@ -1,0 +1,39 @@
+---
+import { CONTACT_CHANNELS } from "../data/site";
+
+interface Props {
+  label?: string;
+  class?: string;
+}
+
+const { label = "Facebook", class: className = "" } = Astro.props;
+const href = CONTACT_CHANNELS.facebookUrl;
+---
+
+{
+  href ? (
+    <a
+      class={`btn btn--facebook ${className}`.trim()}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-event="facebook_click"
+      data-cta="facebook"
+    >
+      <span>{label}</span>
+    </a>
+  ) : null
+}
+
+<style>
+  .btn--facebook {
+    background: #1877f2;
+    color: #fff;
+    border-color: #1877f2;
+  }
+  .btn--facebook:hover {
+    background: #0f5dc8;
+    border-color: #0f5dc8;
+    color: #fff;
+  }
+</style>

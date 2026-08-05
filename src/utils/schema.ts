@@ -1,21 +1,80 @@
-import { SITE } from "../data/site";
+import { CONTACT_CHANNELS, SERVICE_AREA, SITE, STORE_LOCATION } from "../data/site";
 import { absoluteUrl, type BreadcrumbItem } from "./seo";
 
 type FaqItem = { question: string; answer: string };
+
+function sameAsLinks(): string[] {
+  const links: string[] = [CONTACT_CHANNELS.lineUrl];
+  if (CONTACT_CHANNELS.facebookUrl) links.push(CONTACT_CHANNELS.facebookUrl);
+  if (CONTACT_CHANNELS.googleBusinessUrl) links.push(CONTACT_CHANNELS.googleBusinessUrl);
+  if (CONTACT_CHANNELS.mapsUrl) links.push(CONTACT_CHANNELS.mapsUrl);
+  return links;
+}
 
 export function organizationSchema() {
   return {
     "@type": "Organization",
     "@id": SITE.organizationId,
     name: SITE.brand,
+    alternateName: [SITE.tradeName, SITE.name],
     legalName: SITE.legalName,
     url: SITE.url,
     telephone: SITE.phoneTel,
+    sameAs: sameAsLinks(),
+    location: { "@id": SITE.localBusinessId },
+    areaServed: [
+      {
+        "@type": "AdministrativeArea",
+        name: `จังหวัด${STORE_LOCATION.province}`,
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: `จังหวัด${SERVICE_AREA.primaryProvince}`,
+      },
+    ],
+  };
+}
+
+/** LocalBusiness for Ubon storefront only — never Korat address */
+export function localBusinessSchema() {
+  const address: Record<string, string> = {
+    "@type": "PostalAddress",
+    addressLocality: STORE_LOCATION.province,
+    addressRegion: STORE_LOCATION.province,
+    addressCountry: STORE_LOCATION.country,
+  };
+
+  if (STORE_LOCATION.streetAddress) {
+    address.streetAddress = STORE_LOCATION.streetAddress;
+  }
+  if (STORE_LOCATION.postalCode) {
+    address.postalCode = STORE_LOCATION.postalCode;
+  }
+
+  const node: Record<string, unknown> = {
+    "@type": "LocalBusiness",
+    "@id": SITE.localBusinessId,
+    name: STORE_LOCATION.tradeName,
+    alternateName: STORE_LOCATION.brandName,
+    legalName: STORE_LOCATION.legalName,
+    url: SITE.url,
+    telephone: SITE.phoneTel,
+    address,
+    parentOrganization: { "@id": SITE.organizationId },
     areaServed: {
       "@type": "AdministrativeArea",
-      name: "จังหวัดนครราชสีมา",
+      name: `จังหวัด${SERVICE_AREA.primaryProvince}`,
     },
   };
+
+  if (STORE_LOCATION.mapsUrl) {
+    node.hasMap = STORE_LOCATION.mapsUrl;
+  }
+  if (STORE_LOCATION.openingHoursText) {
+    node.openingHours = STORE_LOCATION.openingHoursText;
+  }
+
+  return node;
 }
 
 export function websiteSchema() {
@@ -63,7 +122,7 @@ export function serviceSchema(opts: {
     provider: { "@id": SITE.organizationId },
     areaServed: {
       "@type": "AdministrativeArea",
-      name: "จังหวัดนครราชสีมา",
+      name: `จังหวัด${SERVICE_AREA.primaryProvince}`,
     },
   };
 }
@@ -124,6 +183,6 @@ export function articleSchema(opts: {
 export function buildGraph(nodes: Record<string, unknown>[]) {
   return {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema(), websiteSchema(), ...nodes],
+    "@graph": [organizationSchema(), localBusinessSchema(), websiteSchema(), ...nodes],
   };
 }

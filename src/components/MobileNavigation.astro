@@ -1,6 +1,7 @@
 ---
 import { MAIN_NAV, SITE } from "../data/site";
 import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+import FacebookCTA from "./FacebookCTA.astro";
 ---
 
 <div id="mobile-navigation" class="mobile-nav" hidden data-mobile-nav>
@@ -34,7 +35,10 @@ import PrimaryLineCTA from "./PrimaryLineCTA.astro";
     </nav>
     <div class="mobile-nav__cta">
       <PrimaryLineCTA label={`แอด LINE ${SITE.lineId}`} />
-      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`}>โทร {SITE.phoneDisplay}</a>
+      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="mobile_nav_phone">
+        โทร {SITE.phoneDisplay}
+      </a>
+      <FacebookCTA />
     </div>
   </div>
 </div>

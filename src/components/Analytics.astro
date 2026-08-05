@@ -1,0 +1,159 @@
+---
+import { ANALYTICS } from "../data/site";
+
+const measurementId = ANALYTICS.gaMeasurementId;
+const enabled = ANALYTICS.enabled;
+---
+
+{
+  enabled && (
+    <>
+      <script is:inline define:vars={{ measurementId }}>
+        window.__WINNER_GA_ID__ = measurementId;
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+        gtag("consent", "default", {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          wait_for_update: 500,
+        });
+        gtag("js", new Date());
+        gtag("config", measurementId, {
+          anonymize_ip: true,
+          send_page_view: false,
+        });
+      </script>
+      <script is:inline>
+        (function () {
+          var loaded = false;
+          function loadGa() {
+            if (loaded || !window.__WINNER_GA_ID__) return;
+            if (!window.__WINNER_CONSENT__ || !window.__WINNER_CONSENT__.analytics) return;
+            loaded = true;
+            var s = document.createElement("script");
+            s.async = true;
+            s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(window.__WINNER_GA_ID__);
+            document.head.appendChild(s);
+            if (typeof window.gtag === "function") {
+              window.gtag("event", "page_view", {
+                page_path: location.pathname,
+              });
+            }
+          }
+          window.addEventListener("winner_analytics_ready", loadGa);
+          if (window.__WINNER_CONSENT__ && window.__WINNER_CONSENT__.analytics) {
+            loadGa();
+          }
+        })();
+      </script>
+    </>
+  )
+}
+
+<script is:inline>
+  (function () {
+    var ALLOWED = {
+      phone_click: { event: "phone_click", method: "phone" },
+      line_click: { event: "line_click", method: "line" },
+      sticky_line_click: { event: "line_click", method: "line" },
+      hero_line_click: { event: "line_click", method: "line" },
+      facebook_click: { event: "facebook_click", method: "facebook" },
+      maps_click: { event: "maps_click", method: "maps" },
+      valuation_start: { event: "valuation_start", method: "line" },
+      valuation_submit: { event: "valuation_submit", method: "form" },
+      service_cta_click: { event: "contact_click", method: "line" },
+      contact_click: { event: "contact_click", method: "contact" },
+    };
+    var ALLOWED_PARAMS = {
+      page_path: true,
+      page_type: true,
+      cta_location: true,
+      contact_method: true,
+      service_category: true,
+    };
+    var BLOCKED_PARAM = /phone|name|message|serial|address|email|line_id|image/i;
+    var lastKey = "";
+    var lastAt = 0;
+
+    function pageTypeFromPath(path) {
+      if (path === "/") return "home";
+      if (path.indexOf("/บทความ") === 0) return "article";
+      if (path.indexOf("/พื้นที่") === 0) return "area";
+      if (path.indexOf("/ติดต่อ") === 0) return "contact";
+      if (path.indexOf("/เกี่ยวกับ") === 0) return "about";
+      return "service";
+    }
+
+    function sanitizeParams(input) {
+      var out = {};
+      if (!input || typeof input !== "object") return out;
+      Object.keys(input).forEach(function (key) {
+        if (!ALLOWED_PARAMS[key]) return;
+        if (BLOCKED_PARAM.test(key)) return;
+        var value = input[key];
+        if (typeof value !== "string" && typeof value !== "number" && typeof value !== "boolean") return;
+        var asString = String(value);
+        if (asString.length > 120) return;
+        if (/(\+?\d[\d\s-]{7,})|@/.test(asString) && key !== "page_path" && key !== "page_type") return;
+        out[key] = value;
+      });
+      return out;
+    }
+
+    function track(rawName, extra) {
+      var mapped = ALLOWED[rawName];
+      if (!mapped) return;
+      var params = sanitizeParams(
+        Object.assign(
+          {
+            page_path: location.pathname,
+            page_type: pageTypeFromPath(location.pathname),
+            cta_location: (extra && extra.cta_location) || "unknown",
+            contact_method: mapped.method,
+          },
+          extra || {},
+        ),
+      );
+      var dedupeKey = mapped.event + "|" + params.cta_location + "|" + params.page_path;
+      var now = Date.now();
+      if (dedupeKey === lastKey && now - lastAt < 400) return;
+      lastKey = dedupeKey;
+      lastAt = now;
+
+      window.dispatchEvent(
+        new CustomEvent("winner_cta", {
+          detail: {
+            event: mapped.event,
+            rawEvent: rawName,
+            params: params,
+          },
+        }),
+      );
+
+      if (typeof window.gtag === "function" && window.__WINNER_CONSENT__ && window.__WINNER_CONSENT__.analytics) {
+        window.gtag("event", mapped.event, params);
+      }
+    }
+
+    document.addEventListener(
+      "click",
+      function (event) {
+        var target = event.target;
+        if (!(target instanceof Element)) return;
+        var el = target.closest("[data-event]");
+        if (!el) return;
+        var name = el.getAttribute("data-event");
+        if (!name) return;
+        track(name, {
+          cta_location: el.getAttribute("data-cta") || el.getAttribute("data-event") || "unknown",
+        });
+      },
+      true,
+    );
+  })();
+</script>

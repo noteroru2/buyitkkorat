@@ -1,0 +1,16 @@
+/// <reference types="astro/client" />
+
+interface ImportMetaEnv {
+  readonly PUBLIC_GA_MEASUREMENT_ID?: string;
+  readonly PUBLIC_GSC_VERIFICATION?: string;
+  readonly PUBLIC_FACEBOOK_URL?: string;
+  readonly PUBLIC_GOOGLE_MAPS_URL?: string;
+  readonly PUBLIC_GBP_URL?: string;
+  readonly PUBLIC_STORE_STREET_ADDRESS?: string;
+  readonly PUBLIC_STORE_POSTAL_CODE?: string;
+  readonly PUBLIC_STORE_HOURS?: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}

@@ -1,23 +1,69 @@
 ---
-import { FOOTER_LINKS, SITE } from "../data/site";
+import { CONTACT_CHANNELS, FOOTER_LINKS, SERVICE_AREA, SITE, STORE_LOCATION } from "../data/site";
+import FacebookCTA from "./FacebookCTA.astro";
 ---
 
 <footer class="footer">
   <div class="container footer__grid">
     <div>
       <p class="footer__brand">{SITE.brand}</p>
-      <p class="footer__legal">ดำเนินงานโดย {SITE.legalName}</p>
+      <p class="footer__legal">{SITE.tradeName} · ดำเนินงานโดย {SITE.legalName}</p>
+      <p class="footer__area">
+        หน้าร้านจริง: จังหวัด{STORE_LOCATION.province}
+      </p>
+      <p class="footer__area">พื้นที่ให้บริการ: {SERVICE_AREA.label}</p>
+      <p class="footer__note">{SERVICE_AREA.wording}</p>
       <p>
         โทร:
-        <a href={`tel:${SITE.phoneTel}`} data-event="phone_click">{SITE.phoneDisplay}</a>
+        <a href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="footer_phone">{SITE.phoneDisplay}</a>
       </p>
       <p>
         LINE:
-        <a href={SITE.lineUrl} target="_blank" rel="noopener noreferrer" data-event="line_click">
+        <a
+          href={SITE.lineUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-event="line_click"
+          data-cta="footer_line"
+        >
           {SITE.lineId}
         </a>
       </p>
-      <p class="footer__area">พื้นที่ให้บริการ: {SITE.serviceAreaLabel}</p>
+      {
+        CONTACT_CHANNELS.facebookUrl && (
+          <p>
+            Facebook:{" "}
+            <a
+              href={CONTACT_CHANNELS.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-event="facebook_click"
+              data-cta="footer_facebook"
+            >
+              เพจ Facebook
+            </a>
+          </p>
+        )
+      }
+      {
+        CONTACT_CHANNELS.mapsUrl && (
+          <p>
+            Maps:{" "}
+            <a
+              href={CONTACT_CHANNELS.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-event="maps_click"
+              data-cta="footer_maps"
+            >
+              Google Maps
+            </a>
+          </p>
+        )
+      }
+      <div class="footer__cta">
+        <FacebookCTA label="Facebook" />
+      </div>
     </div>
     <nav aria-label="ลิงก์ท้ายหน้า">
       <ul class="footer__links">
@@ -66,8 +112,18 @@ import { FOOTER_LINKS, SITE } from "../data/site";
   }
 
   .footer__legal,
-  .footer__area {
+  .footer__area,
+  .footer__note {
     color: #c7d0df;
+  }
+
+  .footer__note {
+    font-size: var(--font-size-sm);
+    max-width: 36rem;
+  }
+
+  .footer__cta {
+    margin-top: var(--space-3);
   }
 
   .footer__links {

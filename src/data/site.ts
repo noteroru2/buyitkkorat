@@ -1,21 +1,86 @@
-export const SITE = {
-  name: "รับซื้อไอทีโคราช.com",
-  brand: "WINNER IT",
-  legalName: "บริษัท อำพล เทรดดิ้ง จำกัด",
-  url: "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com",
-  urlThai: "https://รับซื้อไอทีโคราช.com",
+/**
+ * Central business entity + public site configuration.
+ * Optional NAP / social / analytics values come only from PUBLIC_* env vars.
+ * Never invent street address, Maps, Facebook, or GA IDs.
+ */
+
+function env(name: keyof ImportMetaEnv): string {
+  const metaEnv = import.meta.env as ImportMetaEnv | undefined;
+  const value = metaEnv?.[name];
+  return typeof value === "string" ? value.trim() : "";
+}
+
+/** Verified from site config / production usage */
+export const CONTACT_CHANNELS = {
   phoneDisplay: "095-547-9408",
   phoneTel: "+66955479408",
   lineId: "@buyhub",
   lineUrl: "https://line.me/R/ti/p/@buyhub",
-  serviceAreaLabel: "จังหวัดนครราชสีมาและพื้นที่ตามเงื่อนไขการนัดหมาย",
+  /** Set PUBLIC_FACEBOOK_URL in env to enable Facebook CTA */
+  facebookUrl: env("PUBLIC_FACEBOOK_URL"),
+  /** Set PUBLIC_GOOGLE_MAPS_URL when verified */
+  mapsUrl: env("PUBLIC_GOOGLE_MAPS_URL"),
+  /** Set PUBLIC_GBP_URL when verified */
+  googleBusinessUrl: env("PUBLIC_GBP_URL"),
+} as const;
+
+/**
+ * Physical storefront — province confirmed by business brief for this site.
+ * Street, postal, hours, maps remain empty until verified via env.
+ */
+export const STORE_LOCATION = {
+  tradeName: "ร้านอำพล เทรดดิ้ง",
+  brandName: "WINNER IT",
+  legalName: "บริษัท อำพล เทรดดิ้ง จำกัด",
+  province: "อุบลราชธานี",
+  country: "TH",
+  streetAddress: env("PUBLIC_STORE_STREET_ADDRESS"),
+  postalCode: env("PUBLIC_STORE_POSTAL_CODE"),
+  openingHoursText: env("PUBLIC_STORE_HOURS"),
+  mapsUrl: CONTACT_CHANNELS.mapsUrl,
+  hasVerifiedStreetAddress: Boolean(env("PUBLIC_STORE_STREET_ADDRESS")),
+} as const;
+
+/** Korat is a service area, not a branch/office */
+export const SERVICE_AREA = {
+  primaryProvince: "นครราชสีมา",
+  primaryAlias: "โคราช",
+  label: "จังหวัดนครราชสีมาและพื้นที่ตามเงื่อนไขการนัดหมาย",
+  isPhysicalBranch: false,
+  wording:
+    "จังหวัดนครราชสีมาเป็นพื้นที่ให้บริการประเมินราคา นัดรับสินค้า หรือรับผ่านการจัดส่งตามเงื่อนไข ไม่ใช่สาขาหรือสำนักงานประจำ",
+} as const;
+
+export const ANALYTICS = {
+  gaMeasurementId: env("PUBLIC_GA_MEASUREMENT_ID"),
+  gscVerification: env("PUBLIC_GSC_VERIFICATION"),
+  enabled: Boolean(env("PUBLIC_GA_MEASUREMENT_ID")),
+} as const;
+
+export const SITE = {
+  name: "รับซื้อไอทีโคราช.com",
+  brand: STORE_LOCATION.brandName,
+  tradeName: STORE_LOCATION.tradeName,
+  legalName: STORE_LOCATION.legalName,
+  url: "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com",
+  urlThai: "https://รับซื้อไอทีโคราช.com",
+  phoneDisplay: CONTACT_CHANNELS.phoneDisplay,
+  phoneTel: CONTACT_CHANNELS.phoneTel,
+  lineId: CONTACT_CHANNELS.lineId,
+  lineUrl: CONTACT_CHANNELS.lineUrl,
+  facebookUrl: CONTACT_CHANNELS.facebookUrl,
+  mapsUrl: CONTACT_CHANNELS.mapsUrl,
+  serviceAreaLabel: SERVICE_AREA.label,
   organizationId: "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/#organization",
+  localBusinessId: "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/#localbusiness",
   websiteId: "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/#website",
   defaultOgImage: "/og/default.png",
   locale: "th_TH",
   language: "th",
   priceDisclaimer:
     "ราคาประเมินเบื้องต้นจากรูปและข้อมูลอาจเปลี่ยนแปลงได้หลังตรวจสอบสินค้าจริง",
+  storeProvince: STORE_LOCATION.province,
+  analytics: ANALYTICS,
 } as const;
 
 export const FORBIDDEN_CLAIMS = [
@@ -34,6 +99,10 @@ export const FORBIDDEN_CLAIMS = [
   "ถึงที่ทันที",
   "มีทีมทุกอำเภอ",
   "มีสาขาในโคราช",
+  "สาขาโคราช",
+  "หน้าร้านโคราช",
+  "สำนักงานโคราช",
+  "มีสาขาทั่วประเทศ",
   "ได้ราคาตามที่แจ้งแน่นอน",
 ] as const;
 
@@ -80,6 +149,7 @@ export const FOOTER_LINKS = [
   { label: "เกี่ยวกับเรา", href: "/เกี่ยวกับเรา" },
   { label: "ติดต่อ", href: "/ติดต่อ" },
   { label: "นโยบายความเป็นส่วนตัว", href: "/นโยบายความเป็นส่วนตัว" },
+  { label: "นโยบายคุกกี้", href: "/นโยบายคุกกี้" },
   { label: "ข้อกำหนดการใช้บริการ", href: "/ข้อกำหนดการใช้บริการ" },
   {
     label: "นโยบายรับซื้อสินค้า",
@@ -88,12 +158,25 @@ export const FOOTER_LINKS = [
 ] as const;
 
 export const PREPARE_CHECKLIST = [
-  "รูปด้านหน้า",
-  "รูปด้านหลัง",
-  "รูปตำหนิหรือจุดที่ชำรุด",
-  "รุ่นและสเปกเท่าที่ทราบ",
+  "ยี่ห้อและรุ่น",
+  "สเปกหรือรายละเอียดที่ทราบ",
+  "สภาพการใช้งานและตำหนิ",
   "อุปกรณ์ที่แถมมา",
-  "อาการเสียหรือประวัติซ่อม",
-  "พื้นที่ปัจจุบันในโคราช",
+  "สถานะประกัน (ถ้าทราบ)",
+  "รูปด้านหน้า ด้านหลัง และจุดตำหนิ",
+  "จังหวัดหรืออำเภอปัจจุบัน",
   "จำนวนสินค้าที่ต้องการขาย",
 ] as const;
+
+/** Event names allowed for analytics (no PII params) */
+export const ANALYTICS_EVENTS = [
+  "phone_click",
+  "line_click",
+  "facebook_click",
+  "maps_click",
+  "valuation_start",
+  "valuation_submit",
+  "contact_click",
+] as const;
+
+export type AnalyticsEvent = (typeof ANALYTICS_EVENTS)[number];

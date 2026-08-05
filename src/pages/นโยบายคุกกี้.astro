@@ -1,0 +1,90 @@
+---
+import TrustPageLayout from "../layouts/TrustPageLayout.astro";
+import { absoluteUrl } from "../utils/seo";
+import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
+import { ANALYTICS, SITE } from "../data/site";
+
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  { name: "นโยบายคุกกี้", href: "/นโยบายคุกกี้" },
+];
+const url = absoluteUrl("/นโยบายคุกกี้");
+const description =
+  "นโยบายคุกกี้ของรับซื้อไอทีโคราช.com อธิบายคุกกี้ที่จำเป็นและการวัดผลเว็บไซต์เมื่อคุณยินยอม";
+const schema = buildGraph([
+  webpageSchema({
+    type: "WebPage",
+    url,
+    name: "นโยบายคุกกี้",
+    description,
+    dateModified: "2026-08-05",
+  }),
+  breadcrumbSchema(breadcrumbs),
+]);
+---
+
+<TrustPageLayout
+  title="นโยบายคุกกี้ | WINNER IT"
+  description={description}
+  h1="นโยบายคุกกี้"
+  breadcrumbs={breadcrumbs}
+  canonical="/นโยบายคุกกี้"
+  schema={schema}
+  updatedDate={new Date("2026-08-05")}
+>
+  <p>
+    เว็บไซต์ {SITE.name} ใช้คุกกี้และเทคโนโลยีที่คล้ายกันเพื่อให้เว็บไซต์ทำงานได้
+    และเพื่อวัดผลการใช้งานเมื่อคุณยินยอม
+  </p>
+
+  <h2>คุกกี้ที่จำเป็น</h2>
+  <p>
+    ใช้บันทึกตัวเลือกความยินยอมคุกกี้ของคุณในเบราว์เซอร์
+    เพื่อไม่ให้ถามซ้ำทุกครั้ง และไม่ใช้เพื่อโฆษณา
+  </p>
+
+  <h2>คุกกี้และการวัดผล (Analytics)</h2>
+  {
+    ANALYTICS.enabled ? (
+      <p>
+        เมื่อคุณกดยอมรับ เราอาจใช้ Google Analytics 4 เพื่อดูสถิติการใช้งานหน้าเว็บ
+        และการคลิกช่องทางติดต่อแบบไม่ระบุตัวตน เช่น การคลิกโทร หรือ LINE
+        โดยไม่ส่งชื่อ เบอร์โทร ข้อความสินค้า หรือรูปสินค้าเข้า Analytics
+      </p>
+    ) : (
+      <p>
+        ขณะนี้ยังไม่ได้เปิดใช้ Google Analytics บนสภาพแวดล้อมนี้
+        หากเปิดใช้ในอนาคต จะโหลดเฉพาะหลังคุณยินยอมผ่านแบนเนอร์คุกกี้เท่านั้น
+      </p>
+    )
+  }
+
+  <h2>โฆษณา</h2>
+  <p>
+    เว็บไซต์นี้ไม่ได้ตั้งใจใช้คุกกี้โฆษณาเป็นค่าเริ่มต้น
+    ค่าที่เกี่ยวกับโฆษณาในระบบความยินยอมจะถูกตั้งเป็นปฏิเสธ
+  </p>
+
+  <h2>จัดการความยินยอม</h2>
+  <p>
+    คุณสามารถยอมรับหรือปฏิเสธคุกกี้ไม่จำเป็นผ่านแบนเนอร์บนเว็บไซต์
+    และเปลี่ยนใจได้ภายหลังด้วยปุ่ม “ตั้งค่าคุกกี้” ที่ท้ายหน้า
+  </p>
+  <p>
+    <button type="button" class="btn btn--ghost" id="cookie-prefs-open" data-cookie-prefs>
+      เปิดการตั้งค่าคุกกี้
+    </button>
+  </p>
+
+  <h2>ข้อมูลเพิ่มเติม</h2>
+  <p>
+    อ่าน <a href="/นโยบายความเป็นส่วนตัว">นโยบายความเป็นส่วนตัว</a>
+    หรือ <a href="/ติดต่อ">ติดต่อเรา</a> หากมีคำถาม
+  </p>
+</TrustPageLayout>
+
+<script>
+  document.getElementById("cookie-prefs-open")?.addEventListener("click", () => {
+    window.dispatchEvent(new CustomEvent("winner_cookie_prefs"));
+  });
+</script>

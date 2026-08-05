@@ -1,56 +1,148 @@
 ---
 import TrustPageLayout from "../layouts/TrustPageLayout.astro";
+import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import FacebookCTA from "../components/FacebookCTA.astro";
 import { absoluteUrl } from "../utils/seo";
 import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
-import { SITE } from "../data/site";
+import { CONTACT_CHANNELS, SERVICE_AREA, SITE, STORE_LOCATION } from "../data/site";
 
 const breadcrumbs = [
   { name: "หน้าแรก", href: "/" },
   { name: "เกี่ยวกับเรา", href: "/เกี่ยวกับเรา" },
 ];
 const url = absoluteUrl("/เกี่ยวกับเรา");
+const description =
+  "ร้านอำพล เทรดดิ้ง (WINNER IT) มีหน้าร้านจริงที่จังหวัดอุบลราชธานี และให้บริการรับซื้อสินค้าไอทีลูกค้าในนครราชสีมาผ่านการประเมิน นัดรับ หรือจัดส่ง";
 const schema = buildGraph([
   webpageSchema({
     type: "AboutPage",
     url,
-    name: "เกี่ยวกับ WINNER IT",
-    description: "WINNER IT ดำเนินงานโดย บริษัท อำพล เทรดดิ้ง จำกัด รับซื้อสินค้าไอทีในโคราช",
+    name: "เกี่ยวกับร้านอำพล เทรดดิ้ง (WINNER IT)",
+    description,
+    dateModified: "2026-08-05",
   }),
   breadcrumbSchema(breadcrumbs),
 ]);
 ---
 
 <TrustPageLayout
-  title="เกี่ยวกับเรา | WINNER IT"
-  description="WINNER IT ดำเนินงานโดย บริษัท อำพล เทรดดิ้ง จำกัด ให้บริการรับซื้อสินค้าไอทีในจังหวัดนครราชสีมาผ่าน LINE @buyhub"
-  h1="เกี่ยวกับ WINNER IT"
+  title="เกี่ยวกับเรา | ร้านอำพล เทรดดิ้ง · WINNER IT"
+  description={description}
+  h1="เกี่ยวกับร้านอำพล เทรดดิ้ง"
   breadcrumbs={breadcrumbs}
   canonical="/เกี่ยวกับเรา"
   schema={schema}
-  updatedDate={new Date("2026-07-14")}
+  updatedDate={new Date("2026-08-05")}
 >
   <p>
-    <strong>WINNER IT ดำเนินงานโดย บริษัท อำพล เทรดดิ้ง จำกัด</strong>
+    <strong>{STORE_LOCATION.tradeName}</strong> ดำเนินงานภายใต้แบรนด์
+    <strong>{SITE.brand}</strong> โดย {SITE.legalName}
+    ให้บริการรับซื้อสินค้าไอทีมือสองจากบุคคลทั่วไป ร้านค้า สำนักงาน บริษัท และหน่วยงาน
   </p>
+
+  <h2>หน้าร้านจริงอยู่ที่ไหน</h2>
   <p>
-    เราให้บริการรับซื้อสินค้าไอทีมือสองจากบุคคลทั่วไป ร้านค้า สำนักงาน บริษัท และหน่วยงาน
-    โดยเน้นพื้นที่จังหวัดนครราชสีมาหรือโคราช ตามเงื่อนไขการนัดหมาย
+    หน้าร้านจริงของเราอยู่ที่จังหวัด<strong>{STORE_LOCATION.province}</strong>
+    {
+      STORE_LOCATION.streetAddress ? (
+        <>
+          {" "}
+          ที่อยู่: {STORE_LOCATION.streetAddress}
+          {STORE_LOCATION.postalCode ? ` ${STORE_LOCATION.postalCode}` : ""}
+        </>
+      ) : (
+        <> รายละเอียดเลขที่และแผนที่เพิ่มเติมจะเผยแพร่เมื่อยืนยันข้อมูลครบถ้วน</>
+      )
+    }
   </p>
-  <h2>วิธีทำงานของเรา</h2>
+  {
+    STORE_LOCATION.openingHoursText && (
+      <p>เวลาเปิดทำการ: {STORE_LOCATION.openingHoursText}</p>
+    )
+  }
+  {
+    CONTACT_CHANNELS.mapsUrl && (
+      <p>
+        <a
+          href={CONTACT_CHANNELS.mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-event="maps_click"
+          data-cta="maps"
+        >
+          เปิด Google Maps
+        </a>
+      </p>
+    )
+  }
+
+  <h2>บริการลูกค้าในจังหวัดนครราชสีมา</h2>
+  <p>{SERVICE_AREA.wording}</p>
   <p>
-    ลูกค้าส่งรุ่น รูป สภาพ และรายละเอียดผ่าน LINE {SITE.lineId} เพื่อรับการประเมินเบื้องต้น
-    จากนั้นจึงคุยเรื่องนัดรับตามพื้นที่ คิว และระยะทาง หรือเลือกส่งสินค้ามาตรวจสอบ
+    ลูกค้าในโคราชสามารถส่งรุ่น รูป สภาพ และรายละเอียดเพื่อประเมินราคาเบื้องต้น
+    จากนั้นสอบถามการนัดรับตามพื้นที่ คิว และระยะทาง หรือเลือกส่งสินค้ามาตรวจสอบตามเงื่อนไข
   </p>
+
+  <h2>ขั้นตอนประเมินราคาและนัดรับ</h2>
+  <ol>
+    <li>ส่งยี่ห้อ รุ่น สเปก สภาพ ตำหนิ อุปกรณ์ และรูปสินค้า</li>
+    <li>รับการประเมินเบื้องต้นผ่านช่องทางติดต่อ</li>
+    <li>ตกลงวิธีส่งมอบ เช่น นัดรับ หรือจัดส่ง</li>
+    <li>ตรวจสอบสินค้าจริงแล้วยืนยันราคาสุดท้ายก่อนจบรายการ</li>
+  </ol>
   <p class="disclaimer">{SITE.priceDisclaimer}</p>
+
+  <h2>วิธีตรวจสอบและติดต่อร้าน</h2>
+  <ul>
+    <li>ชื่อนิติบุคคล: {SITE.legalName}</li>
+    <li>แบรนด์: {SITE.brand} · ชื่อร้าน: {SITE.tradeName}</li>
+    <li>
+      LINE: <a href={SITE.lineUrl} target="_blank" rel="noopener noreferrer" data-event="line_click">{SITE.lineId}</a>
+    </li>
+    <li>
+      โทร: <a href={`tel:${SITE.phoneTel}`} data-event="phone_click">{SITE.phoneDisplay}</a>
+    </li>
+    {
+      CONTACT_CHANNELS.facebookUrl && (
+        <li>
+          Facebook:{" "}
+          <a
+            href={CONTACT_CHANNELS.facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-event="facebook_click"
+          >
+            เพจ Facebook
+          </a>
+        </li>
+      )
+    }
+    <li>
+      หน้าติดต่อ: <a href="/ติดต่อ">รายละเอียดช่องทางติดต่อ</a>
+    </li>
+  </ul>
+
   <h2>สิ่งที่เราไม่ได้อ้าง</h2>
   <ul>
-    <li>ไม่ได้อ้างว่ามีหน้าร้านหรือสาขาในโคราชหากไม่มีข้อมูลยืนยัน</li>
+    <li>ไม่อ้างว่ามีสาขา หน้าร้าน หรือสำนักงานประจำในจังหวัดนครราชสีมา</li>
     <li>ไม่สร้างรีวิว จำนวนลูกค้า หรือรางวัลที่ไม่มีอยู่จริง</li>
     <li>ไม่รับซื้อสินค้าที่ยืนยันกรรมสิทธิ์ไม่ได้ หรือมีเหตุสงสัยว่าได้มาโดยมิชอบ</li>
   </ul>
-  <h2>ช่องทางติดต่อ</h2>
-  <ul>
-    <li>LINE: <a href={SITE.lineUrl}>{SITE.lineId}</a></li>
-    <li>โทร: <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a></li>
-  </ul>
+
+  <div class="cta-row">
+    <PrimaryLineCTA label="แอด LINE เพื่อประเมินราคา" event="line_click" />
+    <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="phone">
+      โทร {SITE.phoneDisplay}
+    </a>
+    <FacebookCTA />
+  </div>
 </TrustPageLayout>
+
+<style>
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+  }
+</style>

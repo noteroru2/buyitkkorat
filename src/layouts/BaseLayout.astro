@@ -1,6 +1,8 @@
 ---
 import SeoHead from "../components/SeoHead.astro";
 import JsonLd from "../components/JsonLd.astro";
+import Analytics from "../components/Analytics.astro";
+import CookieConsent from "../components/CookieConsent.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import MobileNavigation from "../components/MobileNavigation.astro";
 import SiteFooter from "../components/SiteFooter.astro";
@@ -43,28 +45,11 @@ const {
       updatedDate={updatedDate}
     />
     {schema && <JsonLd data={schema} />}
-    <script is:inline>
-      document.addEventListener("click", (event) => {
-        const target = event.target;
-        if (!(target instanceof Element)) return;
-        const el = target.closest("[data-event]");
-        if (!el) return;
-        const name = el.getAttribute("data-event");
-        if (!name) return;
-        window.dispatchEvent(
-          new CustomEvent("winner_cta", {
-            detail: {
-              event: name,
-              cta: el.getAttribute("data-cta"),
-              href: el.getAttribute("href"),
-            },
-          }),
-        );
-      });
-    </script>
+    <Analytics />
   </head>
   <body>
     <a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+    <CookieConsent />
     <SiteHeader />
     <MobileNavigation />
     <main id="main" class="site-main">

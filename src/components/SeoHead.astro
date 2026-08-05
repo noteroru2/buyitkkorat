@@ -55,4 +55,9 @@ const robots = noindex ? "noindex, nofollow" : "index, follow";
 {updatedDate && (
   <meta property="article:modified_time" content={new Date(updatedDate).toISOString()} />
 )}
+{
+  SITE.analytics.gscVerification && (
+    <meta name="google-site-verification" content={SITE.analytics.gscVerification} />
+  )
+}
 <meta name="generator" content={Astro.generator} />

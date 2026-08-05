@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/",
+    "status": 200,
+    "location": null,
+    "headers": {
+      "strict-transport-security": "max-age=63072000",
+      "content-security-policy": null,
+      "x-frame-options": null,
+      "x-content-type-options": null,
+      "referrer-policy": null,
+      "permissions-policy": null,
+      "x-robots-tag": null,
+      "cache-control": "public, max-age=0, must-revalidate",
+      "server": "Vercel"
+    }
+  },
+  {
+    "url": "http://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/",
+    "status": 308,
+    "location": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/",
+    "headers": {
+      "strict-transport-security": null,
+      "content-security-policy": null,
+      "x-frame-options": null,
+      "x-content-type-options": null,
+      "referrer-policy": null,
+      "permissions-policy": null,
+      "x-robots-tag": null,
+      "cache-control": null,
+      "server": "Vercel"
+    }
+  },
+  {
+    "url": "https://www.xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/",
+    "status": 301,
+    "location": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/",
+    "headers": {
+      "strict-transport-security": "max-age=63072000",
+      "content-security-policy": null,
+      "x-frame-options": null,
+      "x-content-type-options": null,
+      "referrer-policy": null,
+      "permissions-policy": null,
+      "x-robots-tag": null,
+      "cache-control": "public, max-age=0, must-revalidate",
+      "server": "Vercel"
+    }
+  }
+]

@@ -1,0 +1,51 @@
+---
+import { PREPARE_CHECKLIST, SITE } from "../data/site";
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+---
+
+<section class="valuation-foundation" aria-labelledby="valuation-foundation-title">
+  <h2 id="valuation-foundation-title">เตรียมข้อมูลก่อนประเมินราคา</h2>
+  <p>
+    ขณะนี้การส่งประเมินทำผ่านช่องทางติดต่อจริง (LINE หรือโทร)
+    ไม่มีแบบฟอร์มส่งข้อมูลบนเว็บไซต์เพื่อป้องกันการส่งไปยังปลายทางที่ไม่พร้อมรับข้อมูล
+  </p>
+  <ol class="valuation-foundation__list">
+    {PREPARE_CHECKLIST.map((item) => <li>{item}</li>)}
+  </ol>
+  <div class="valuation-foundation__actions">
+    <PrimaryLineCTA
+      label="เริ่มส่งข้อมูลประเมินผ่าน LINE"
+      event="valuation_start"
+    />
+    <a
+      class="btn btn--phone"
+      href={`tel:${SITE.phoneTel}`}
+      data-event="phone_click"
+      data-cta="phone"
+    >
+      โทร {SITE.phoneDisplay}
+    </a>
+  </div>
+  <p class="disclaimer">{SITE.priceDisclaimer}</p>
+</section>
+
+<style>
+  .valuation-foundation {
+    margin: var(--space-6) 0;
+    padding: var(--space-5);
+    background: var(--color-surface-alt);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+  }
+  .valuation-foundation__list {
+    display: grid;
+    gap: var(--space-2);
+    margin: var(--space-4) 0;
+    padding-left: 1.25rem;
+  }
+  .valuation-foundation__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+</style>

@@ -1,61 +1,168 @@
 ---
 import TrustPageLayout from "../layouts/TrustPageLayout.astro";
 import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import FacebookCTA from "../components/FacebookCTA.astro";
+import ValuationFoundation from "../components/ValuationFoundation.astro";
 import { absoluteUrl } from "../utils/seo";
 import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
-import { SITE } from "../data/site";
+import { CONTACT_CHANNELS, SERVICE_AREA, SITE, STORE_LOCATION } from "../data/site";
 
 const breadcrumbs = [
   { name: "หน้าแรก", href: "/" },
   { name: "ติดต่อ", href: "/ติดต่อ" },
 ];
 const url = absoluteUrl("/ติดต่อ");
+const description =
+  "ติดต่อร้านอำพล เทรดดิ้ง (WINNER IT) เพื่อประเมินสินค้าไอที หน้าร้านจริงจังหวัดอุบลราชธานี บริการลูกค้าในนครราชสีมาผ่าน LINE และโทรศัพท์";
 const schema = buildGraph([
   webpageSchema({
     type: "ContactPage",
     url,
-    name: "ติดต่อ WINNER IT",
-    description: "ติดต่อประเมินสินค้าไอทีผ่าน LINE @buyhub หรือโทร 095-547-9408",
+    name: "ติดต่อร้านอำพล เทรดดิ้ง (WINNER IT)",
+    description,
+    dateModified: "2026-08-05",
   }),
   breadcrumbSchema(breadcrumbs),
 ]);
 ---
 
 <TrustPageLayout
-  title="ติดต่อเรา | WINNER IT รับซื้อไอทีโคราช"
-  description="ติดต่อ WINNER IT เพื่อประเมินสินค้าไอทีในโคราช ผ่าน LINE @buyhub หรือโทร 095-547-9408"
-  h1="ติดต่อ WINNER IT"
+  title="ติดต่อเรา | ร้านอำพล เทรดดิ้ง · WINNER IT"
+  description={description}
+  h1="ติดต่อร้านอำพล เทรดดิ้ง"
   breadcrumbs={breadcrumbs}
   canonical="/ติดต่อ"
   schema={schema}
-  updatedDate={new Date("2026-07-14")}
+  updatedDate={new Date("2026-08-05")}
 >
+  <h2>หน้าร้านจริง</h2>
   <p>
-    ช่องทางหลักสำหรับการส่งรูปและรายละเอียดสินค้าคือ LINE {SITE.lineId}
-    หากต้องการพูดคุยเพิ่มเติม สามารถโทรหาเราได้ตามเบอร์ด้านล่าง
+    <strong>{STORE_LOCATION.tradeName}</strong> ({SITE.brand}) · {SITE.legalName}
   </p>
-  <h2>LINE Official</h2>
   <p>
-    แอดไลน์: <a href={SITE.lineUrl}>{SITE.lineId}</a>
+    จังหวัด<strong>{STORE_LOCATION.province}</strong>
+    {
+      STORE_LOCATION.streetAddress ? (
+        <>
+          <br />
+          ที่อยู่: {STORE_LOCATION.streetAddress}
+          {STORE_LOCATION.postalCode ? ` ${STORE_LOCATION.postalCode}` : ""}
+        </>
+      ) : (
+        <>
+          <br />
+          <span class="muted">เลขที่บ้านและแผนที่ละเอียด: รอข้อมูลที่ยืนยันแล้วก่อนเผยแพร่</span>
+        </>
+      )
+    }
   </p>
-  <PrimaryLineCTA label="แอด LINE @buyhub" />
-  <h2>โทรศัพท์</h2>
+  {
+    STORE_LOCATION.openingHoursText ? (
+      <p>เวลาเปิดทำการ: {STORE_LOCATION.openingHoursText}</p>
+    ) : (
+      <p class="muted">เวลาเปิดทำการ: รอข้อมูลที่ยืนยันแล้วก่อนเผยแพร่</p>
+    )
+  }
+  {
+    CONTACT_CHANNELS.mapsUrl && (
+      <p>
+        <a
+          class="btn btn--ghost"
+          href={CONTACT_CHANNELS.mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-event="maps_click"
+          data-cta="maps"
+        >
+          เปิด Google Maps
+        </a>
+      </p>
+    )
+  }
+
+  <h2>ช่องทางติดต่อ</h2>
+  <ul>
+    <li>
+      โทรศัพท์:
+      <a href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="phone">{SITE.phoneDisplay}</a>
+    </li>
+    <li>
+      LINE Official:
+      <a href={SITE.lineUrl} target="_blank" rel="noopener noreferrer" data-event="line_click" data-cta="line">
+        {SITE.lineId}
+      </a>
+    </li>
+    {
+      CONTACT_CHANNELS.facebookUrl ? (
+        <li>
+          Facebook:
+          <a
+            href={CONTACT_CHANNELS.facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-event="facebook_click"
+            data-cta="facebook"
+          >
+            เปิดเพจ Facebook
+          </a>
+        </li>
+      ) : (
+        <li class="muted">Facebook: รอ URL เพจที่ยืนยันแล้วก่อนแสดงปุ่ม</li>
+      )
+    }
+    {
+      CONTACT_CHANNELS.mapsUrl ? (
+        <li>
+          Google Maps:
+          <a
+            href={CONTACT_CHANNELS.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-event="maps_click"
+            data-cta="maps"
+          >
+            เปิดแผนที่
+          </a>
+        </li>
+      ) : (
+        <li class="muted">Google Maps: รอ URL ที่ยืนยันแล้วก่อนแสดง</li>
+      )
+    }
+  </ul>
+
+  <div class="cta-row">
+    <PrimaryLineCTA label="แอด LINE @buyhub" event="line_click" />
+    <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="phone">
+      โทร {SITE.phoneDisplay}
+    </a>
+    <FacebookCTA />
+  </div>
+
+  <h2>ลูกค้าในจังหวัดนครราชสีมา</h2>
+  <p>{SERVICE_AREA.wording}</p>
   <p>
-    <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a>
+    สามารถส่งรายละเอียดและรูปสินค้าเพื่อประเมินราคาเบื้องต้น
+    และสอบถามการนัดรับหรือวิธีจัดส่งตามเงื่อนไขจริงในแต่ละครั้ง
+    โปรดอย่าเข้าใจว่ามีหน้าร้านหรือสาขาประจำในจังหวัดนครราชสีมา
   </p>
-  <h2>พื้นที่ให้บริการ</h2>
-  <p>{SITE.serviceAreaLabel}</p>
-  <p>
-    โปรดทราบว่าเราไม่ได้เผยแพร่ที่อยู่หน้าร้านในหน้านี้ หากไม่มีข้อมูลที่ยืนยันได้
-    และบริการนัดรับจะขึ้นกับคิว ระยะทาง และเงื่อนไขในแต่ละครั้ง
-  </p>
-  <h2>ข้อมูลที่ควรส่งมา</h2>
-  <ol>
-    <li>รูปด้านหน้า ด้านหลัง และตำหนิ</li>
-    <li>รุ่น สเปก อาการ</li>
-    <li>อุปกรณ์ที่มี</li>
-    <li>พื้นที่ปัจจุบันในโคราช</li>
-    <li>จำนวนสินค้า</li>
-  </ol>
+  <p>พื้นที่ให้บริการ: {SERVICE_AREA.label}</p>
+
+  <ValuationFoundation />
+
   <p class="disclaimer">{SITE.priceDisclaimer}</p>
+  <p>
+    อ่านเพิ่มเติมเกี่ยวกับร้านได้ที่หน้า <a href="/เกี่ยวกับเรา">เกี่ยวกับเรา</a>
+  </p>
 </TrustPageLayout>
+
+<style>
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin: var(--space-4) 0 var(--space-6);
+  }
+  .muted {
+    color: var(--color-text-muted);
+  }
+</style>

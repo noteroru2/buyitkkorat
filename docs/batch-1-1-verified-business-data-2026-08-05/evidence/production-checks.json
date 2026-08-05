@@ -1,0 +1,31 @@
+﻿{
+    "checkedAt":  "2026-08-05T11:38:20.8376562Z",
+    "implementationCommit":  "daebafcc0b62ea6e71babc58952030d95c1128d1",
+    "originMain":  "daebafcc0b62ea6e71babc58952030d95c1128d1",
+    "productionHeaders":  {
+                              "x-vercel-id":  "sin1::pprcp-1785929899587-803c82366ab9",
+                              "permissions-policy":  "camera=(), microphone=(), geolocation=(), payment=()",
+                              "referrer-policy":  "strict-origin-when-cross-origin",
+                              "content-security-policy-report-only":  "default-src \u0027self\u0027; script-src \u0027self\u0027 \u0027unsafe-inline\u0027 https://www.googletagmanager.com https://www.google-analytics.com; style-src \u0027self\u0027 \u0027unsafe-inline\u0027; img-src \u0027self\u0027 data: https:; font-src \u0027self\u0027 data:; connect-src \u0027self\u0027 https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-ancestors \u0027self\u0027; base-uri \u0027self\u0027; form-action \u0027self\u0027",
+                              "strict-transport-security":  "max-age=63072000",
+                              "x-vercel-cache":  "HIT",
+                              "x-frame-options":  "SAMEORIGIN",
+                              "x-content-type-options":  "nosniff"
+                          },
+    "aboutHasFullAddress":  true,
+    "aboutHasHours":  true,
+    "aboutHasMaps":  true,
+    "aboutHasFacebook":  true,
+    "contactHasFullAddress":  true,
+    "schemaHasStreet":  true,
+    "schemaHasPostal":  true,
+    "schemaHasOpeningHours":  true,
+    "schemaHasMap":  true,
+    "schemaHasFacebookSameAs":  true,
+    "homepageGtagJs":  false,
+    "homepageGscMeta":  false,
+    "cookiePolicyStatus":  200,
+    "sitemapUrlCount":  89,
+    "facebookOnHome":  5,
+    "mapsOnHome":  2
+}

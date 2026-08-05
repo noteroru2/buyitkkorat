@@ -1,0 +1,91 @@
+﻿{
+    "checkedAt":  "2026-08-05T12:54:12.5991824Z",
+    "implementationCommit":  "5035c5f7ff5f117583ca9d10264b0abf47446423",
+    "originMain":  "5035c5f7ff5f117583ca9d10264b0abf47446423",
+    "pages":  [
+                  {
+                      "path":  "/บทความ/วิธีเช็กสุขภาพแบตเตอรี่ก่อนขายมือถือและโน้ตบุ๊ก",
+                      "status":  200,
+                      "len":  35539,
+                      "vercelId":  "sin1::h2vw2-1785934448013-d6797715c10f",
+                      "cache":  "MISS",
+                      "hasAttribution":  true,
+                      "hasUbon":  true,
+                      "hasDisclaimer":  true,
+                      "hasInspection":  false,
+                      "sitemapLocs":  null
+                  },
+                  {
+                      "path":  "/บทความ/cycle-count-และ-activation-lock-ก่อนขาย-macbook",
+                      "status":  200,
+                      "len":  34811,
+                      "vercelId":  "sin1::v44gq-1785934448662-15fbb02b2445",
+                      "cache":  "MISS",
+                      "hasAttribution":  true,
+                      "hasUbon":  true,
+                      "hasDisclaimer":  true,
+                      "hasInspection":  false,
+                      "sitemapLocs":  null
+                  },
+                  {
+                      "path":  "/บทความ/shutter-count-คืออะไรก่อนขายกล้องดิจิทัล",
+                      "status":  200,
+                      "len":  34975,
+                      "vercelId":  "sin1::v4h6z-1785934449337-7234acb9099c",
+                      "cache":  "MISS",
+                      "hasAttribution":  true,
+                      "hasUbon":  true,
+                      "hasDisclaimer":  true,
+                      "hasInspection":  false,
+                      "sitemapLocs":  null
+                  },
+                  {
+                      "path":  "/บทความ/ราคาประเมินจากรูปกับราคาหลังตรวจต่างกันอย่างไร",
+                      "status":  200,
+                      "len":  33664,
+                      "vercelId":  "sin1::sfxgg-1785934450002-7af47e31979d",
+                      "cache":  "MISS",
+                      "hasAttribution":  true,
+                      "hasUbon":  true,
+                      "hasDisclaimer":  true,
+                      "hasInspection":  false,
+                      "sitemapLocs":  null
+                  },
+                  {
+                      "path":  "/รับซื้อกล้อง-โคราช",
+                      "status":  200,
+                      "len":  57419,
+                      "vercelId":  "sin1::28sqg-1785934450667-2fe7a26ca5b9",
+                      "cache":  "MISS",
+                      "hasAttribution":  false,
+                      "hasUbon":  true,
+                      "hasDisclaimer":  true,
+                      "hasInspection":  true,
+                      "sitemapLocs":  null
+                  },
+                  {
+                      "path":  "/รับซื้อคอมพิวเตอร์-โคราช",
+                      "status":  200,
+                      "len":  57286,
+                      "vercelId":  "sin1::lrlks-1785934451089-9823cf0b9eb4",
+                      "cache":  "MISS",
+                      "hasAttribution":  false,
+                      "hasUbon":  true,
+                      "hasDisclaimer":  true,
+                      "hasInspection":  true,
+                      "sitemapLocs":  null
+                  },
+                  {
+                      "path":  "/sitemap-0.xml",
+                      "status":  200,
+                      "len":  26495,
+                      "vercelId":  "sin1::28sqg-1785934451495-9bb77186f15c",
+                      "cache":  "MISS",
+                      "hasAttribution":  false,
+                      "hasUbon":  false,
+                      "hasDisclaimer":  false,
+                      "hasInspection":  false,
+                      "sitemapLocs":  93
+                  }
+              ]
+}

@@ -5,7 +5,7 @@
 
 ## Final verdict
 
-`PASS WITH WARNING — PRODUCTION CONTENT VERIFIED, DEPLOYMENT SHA NOT ATTESTED` (filled after deploy)
+`PASS WITH WARNING — PRODUCTION CONTENT VERIFIED, DEPLOYMENT SHA NOT ATTESTED` (verified on production)
 
 ## Delivered
 
@@ -25,3 +25,4 @@
 | Final routes | 94 |
 | New routes | 4 |
 | Sitemap URLs | 93 |
+

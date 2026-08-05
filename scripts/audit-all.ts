@@ -11,6 +11,7 @@ const audits = [
   "audit-images.ts",
   "audit-schema.ts",
   "audit-batch1-protection.ts",
+  "audit-batch2-seo.ts",
 ];
 
 let failed = 0;

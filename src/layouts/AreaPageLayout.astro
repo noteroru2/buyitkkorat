@@ -52,8 +52,18 @@ const props = Astro.props;
     <p style="color: var(--color-text-muted); max-width: 40rem">{props.lead}</p>
     <div class="cta-row" style="margin: var(--space-4) 0">
       <PrimaryLineCTA label="สอบถามคิวนัดรับในโคราช" event="hero_line_click" />
-      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`}>โทร {SITE.phoneDisplay}</a>
+      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="area_phone">
+        โทร {SITE.phoneDisplay}
+      </a>
     </div>
+    <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); max-width: 40rem">
+      พื้นที่บริการในนครราชสีมา · หน้าร้านจริงอยู่จังหวัดอุบลราชธานี ·
+      <a href="/พื้นที่/เมืองนครราชสีมา">ศูนย์พื้นที่จังหวัด</a>
+      ·
+      <a href="/เกี่ยวกับเรา">เกี่ยวกับร้าน</a>
+      ·
+      <a href="/ติดต่อ">ติดต่อ</a>
+    </p>
   </div>
   <article class="section">
     <div class="container prose main-content">

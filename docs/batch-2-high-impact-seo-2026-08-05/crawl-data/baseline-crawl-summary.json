@@ -1,0 +1,125 @@
+{
+  "crawledAt": "2026-08-05T10:17:01.847Z",
+  "base": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com",
+  "pageCount": 89,
+  "status200": 88,
+  "status404": 1,
+  "sitemapUrlCount": 88,
+  "orphanCount": 0,
+  "orphans": [],
+  "thinCount": 14,
+  "thin": [
+    {
+      "path": "/บทความ/ssd-และข้อมูลส่วนตัวควรจัดการอย่างไรก่อนขาย",
+      "wordCount": 282
+    },
+    {
+      "path": "/บทความ/กล่องและอุปกรณ์มีผลต่อราคามือสองหรือไม่",
+      "wordCount": 336
+    },
+    {
+      "path": "/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร",
+      "wordCount": 356
+    },
+    {
+      "path": "/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร",
+      "wordCount": 328
+    },
+    {
+      "path": "/บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง",
+      "wordCount": 316
+    },
+    {
+      "path": "/บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน",
+      "wordCount": 265
+    },
+    {
+      "path": "/บทความ/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว",
+      "wordCount": 376
+    },
+    {
+      "path": "/บทความ/วิธีออกจากบัญชี-google-ก่อนขายโทรศัพท์-android",
+      "wordCount": 326
+    },
+    {
+      "path": "/บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร",
+      "wordCount": 316
+    },
+    {
+      "path": "/บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย",
+      "wordCount": 345
+    },
+    {
+      "path": "/พื้นที่/ด่านขุนทด",
+      "wordCount": 371
+    },
+    {
+      "path": "/พื้นที่/บัวใหญ่",
+      "wordCount": 375
+    },
+    {
+      "path": "/พื้นที่/พิมาย",
+      "wordCount": 386
+    },
+    {
+      "path": "/พื้นที่/โนนสูง",
+      "wordCount": 358
+    }
+  ],
+  "dupTitleCount": 0,
+  "dupDescCount": 0,
+  "hasGA": true,
+  "hasFB": false,
+  "hasMaps": false,
+  "headerChecks": [
+    {
+      "url": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/",
+      "status": 200,
+      "location": null,
+      "headers": {
+        "strict-transport-security": "max-age=63072000",
+        "content-security-policy": null,
+        "x-frame-options": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-robots-tag": null,
+        "cache-control": "public, max-age=0, must-revalidate",
+        "server": "Vercel"
+      }
+    },
+    {
+      "url": "http://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/",
+      "status": 308,
+      "location": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/",
+      "headers": {
+        "strict-transport-security": null,
+        "content-security-policy": null,
+        "x-frame-options": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-robots-tag": null,
+        "cache-control": null,
+        "server": "Vercel"
+      }
+    },
+    {
+      "url": "https://www.xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/",
+      "status": 301,
+      "location": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/",
+      "headers": {
+        "strict-transport-security": "max-age=63072000",
+        "content-security-policy": null,
+        "x-frame-options": null,
+        "x-content-type-options": null,
+        "referrer-policy": null,
+        "permissions-policy": null,
+        "x-robots-tag": null,
+        "cache-control": "public, max-age=0, must-revalidate",
+        "server": "Vercel"
+      }
+    }
+  ],
+  "robots": "User-agent: *\nAllow: /\n\nSitemap: https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/sitemap-index.xml\n"
+}

@@ -1,0 +1,24 @@
+url,page_type,old_word_count_approx,action,priority,notes
+"/บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน",article,265,Rewrite,P1,GPU pricing factors
+"/บทความ/ssd-และข้อมูลส่วนตัวควรจัดการอย่างไรก่อนขาย",article,282,Improve,P1,SSD/privacy before sell
+"/บทความ/กล่องและอุปกรณ์มีผลต่อราคามือสองหรือไม่",article,336,Improve,P2,Accessories pricing
+"/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร",article,356,Improve,P1,Bulk list prep
+"/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร",article,328,Improve,P1,Company docs
+"/บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง",article,316,Improve,P2,Camera tips
+"/บทความ/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว",article,376,Improve,P1,Photo tips CRO
+"/บทความ/วิธีออกจากบัญชี-google-ก่อนขายโทรศัพท์-android",article,326,Improve,P1,Android account exit
+"/บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร",article,316,Improve,P1,Won't power on
+"/บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย",article,345,Improve,P1,Shipping safety
+"/พื้นที่/ด่านขุนทด",area,371,Improve,P2,Unique west logistics + hub
+"/พื้นที่/บัวใหญ่",area,375,Improve,P2,North logistics + hub
+"/พื้นที่/พิมาย",area,386,Improve,P2,South tourism flavor + hub
+"/พื้นที่/โนนสูง",area,358,Improve,P2,East residential + hub
+"/คำถามที่พบบ่อย",faq,219,Rewrite,P1,AEO hub + Ubon facts
+"/พื้นที่/เมืองนครราชสีมา",area_hub,~864,Improve,P1,Ubon NAP + spokes
+"/รับซื้อสินค้าไอที",service_hub,—,Improve,P1,Intent links + store clarity
+"/รับซื้อคอมพิวเตอร์-โคราช",service,—,Improve,P1,RelatedPages + FAQ
+"/รับซื้อโน๊ตบุ๊ค-โคราช",service,—,Improve,P1,MacBook split + articles
+"/รับซื้อ-macbook-โคราช",service,—,Improve,P2,RelatedPages
+"/รับซื้อ-iphone-โคราช",service,—,Improve,P2,RelatedPages
+"/นโยบายคุกกี้",utility,—,Keep,P3,VALID SHORT PAGE
+"/404",utility,—,Keep,P3,VALID SHORT PAGE

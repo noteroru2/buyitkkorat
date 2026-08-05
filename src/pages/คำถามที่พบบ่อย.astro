@@ -1,41 +1,65 @@
 ---
 import TrustPageLayout from "../layouts/TrustPageLayout.astro";
+import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import FacebookCTA from "../components/FacebookCTA.astro";
+import MapsCTA from "../components/MapsCTA.astro";
 import { absoluteUrl } from "../utils/seo";
 import { buildGraph, webpageSchema, breadcrumbSchema, faqSchema } from "../utils/schema";
-import { SITE } from "../data/site";
+import { SERVICE_AREA, SITE, STORE_LOCATION, formatStoreFullAddress } from "../data/site";
+
+const fullAddress = formatStoreFullAddress();
 
 const faqs = [
   {
-    question: "เริ่มต้นขายสินค้าไอทีอย่างไร",
-    answer: `แอด LINE ${SITE.lineId} แล้วส่งรูป รุ่น สภาพ อุปกรณ์ พื้นที่ และจำนวนชิ้นเพื่อประเมินเบื้องต้น`,
+    question: "ต้องส่งข้อมูลอะไรเพื่อประเมินราคา",
+    answer:
+      "ส่งยี่ห้อ รุ่น สเปก สภาพ ตำหนิ อุปกรณ์ ประกัน (ถ้าทราบ) จังหวัดหรืออำเภอ และรูปสินค้าด้านหน้า ด้านหลัง และจุดตำหนิ ผ่าน LINE @buyhub หรือโทร 095-547-9408",
   },
   {
-    question: "ราคาสุดท้ายยืนยันเมื่อไหร่",
-    answer: `${SITE.priceDisclaimer} ราคาสุดท้ายยืนยันหลังตรวจสอบสินค้าจริง`,
+    question: "ไม่มีกล่องขายได้หรือไม่",
+    answer:
+      "สอบถามได้เป็นรายชิ้น สินค้าไม่มีกล่องหรืออุปกรณ์ครบอาจประเมินได้ แต่ราคาอาจต่างจากชุดที่มีอุปกรณ์ครบ",
   },
   {
-    question: "มีบริการรับถึงที่ในโคราชไหม",
-    answer: "มีตามเงื่อนไขการนัดหมาย พื้นที่ คิว และระยะทาง ไม่ได้รับประกันว่าถึงที่ได้ทันทีทุกกรณี",
+    question: "เครื่องมีตำหนิหรือเสียยังประเมินได้หรือไม่",
+    answer:
+      "ยังส่งประเมินได้หลายกรณี ควรแจ้งอาการให้ชัด เช่น จอแตก เปิดไม่ติด ชาร์จไม่เข้า เพื่อให้ประเมินเบื้องต้นได้ตรงขึ้น",
   },
   {
-    question: "ส่งสินค้ามาประเมินเองได้ไหม",
-    answer: "ได้ ตามรายละเอียดที่แจ้งผ่าน LINE ควรแพ็กให้ปลอดภัยและลบข้อมูลส่วนตัวก่อนส่ง",
+    question: "ราคาประเมินขึ้นอยู่กับอะไร",
+    answer:
+      "ขึ้นกับรุ่น สเปก สภาพ อุปกรณ์ ประกัน ความต้องการตลาด และผลตรวจของจริง ราคาจากรูปเป็นราคาเบื้องต้นเท่านั้น",
   },
   {
-    question: "รับซื้อสินค้าองค์กรหรือยกล็อตไหม",
-    answer: "ได้ โดยส่งรายการสินทรัพย์และรูปตัวอย่างมาประเมินก่อนนัดหมาย",
+    question: "อยู่โคราชต้องนำสินค้าไปที่ไหน",
+    answer: `${SERVICE_AREA.wording} ลูกค้าในนครราชสีมาเริ่มจากส่งข้อมูลประเมินผ่าน LINE แล้วสอบถามนัดรับหรือจัดส่งตามเงื่อนไข ไม่ต้องเข้าใจว่าต้องเดินเข้าสาขาในโคราช`,
   },
   {
-    question: "สินค้าไม่มีกล่องรับไหม",
-    answer: "สอบถามได้เป็นรายชิ้น ราคาอาจต่างจากชุดที่มีอุปกรณ์ครบ",
+    question: "มีหน้าร้านในโคราชหรือไม่",
+    answer: `ไม่มีหน้าร้านหรือสาขาประจำในจังหวัดนครราชสีมา หน้าร้านจริงอยู่ที่จังหวัด${STORE_LOCATION.province} ที่อยู่ ${fullAddress} เปิด${STORE_LOCATION.openingHoursText}`,
   },
   {
-    question: "ต้องออกจาก iCloud หรือ Google ก่อนไหม",
-    answer: "ต้องเตรียมปลดบัญชีให้พร้อม หากปลดไม่ได้และยืนยันเจ้าของไม่ได้ จะไม่รับซื้อ",
+    question: "ส่งสินค้าทางขนส่งได้หรือไม่",
+    answer:
+      "ได้ตามเงื่อนไขที่ตกลงผ่าน LINE ควรแพ็กให้ปลอดภัย ลบข้อมูลส่วนตัว และแจ้งเลขพัสดุ อ่านเพิ่มที่หน้า ส่งสินค้าไอทีมาประเมิน",
   },
   {
-    question: "มีหน้าร้านประจำในจังหวัดนครราชสีมาหรือไม่",
-    answer: "หน้านี้ไม่ได้อ้างว่ามีสาขา หากไม่มีข้อมูลยืนยัน โปรดใช้ช่องทาง LINE และโทรศัพท์เพื่อสอบถามบริการ",
+    question: "ต้องลบข้อมูลก่อนขายอย่างไร",
+    answer:
+      "สำรองข้อมูลแล้วรีเซ็ตเครื่อง ออกจาก iCloud หรือบัญชี Google ตามประเภทเครื่อง หากปลดบัญชีไม่ได้และยืนยันเจ้าของไม่ได้ จะไม่รับซื้อ",
+  },
+  {
+    question: "นัดรับได้ทุกพื้นที่หรือไม่",
+    answer:
+      "นัดรับขึ้นกับคิว ระยะทาง และเงื่อนไขในแต่ละครั้ง ไม่ได้รับประกันว่าถึงที่ได้ทันทีทุกจุดในทุกอำเภอ",
+  },
+  {
+    question: "ราคาที่ประเมินจากรูปเป็นราคาสุดท้ายหรือไม่",
+    answer: SITE.priceDisclaimer,
+  },
+  {
+    question: "หน้าร้านอุบลเปิดวันไหน ติดต่อช่องทางไหน",
+    answer: `เปิด${STORE_LOCATION.openingHoursText} ติดต่อ LINE ${SITE.lineId} โทร ${SITE.phoneDisplay} หรือ Facebook ตามหน้าติดต่อ`,
   },
 ];
 
@@ -44,11 +68,14 @@ const breadcrumbs = [
   { name: "คำถามที่พบบ่อย", href: "/คำถามที่พบบ่อย" },
 ];
 const url = absoluteUrl("/คำถามที่พบบ่อย");
+const description =
+  "FAQ รับซื้อสินค้าไอที ร้านอำพล เทรดดิ้ง — ประเมินราคา นัดรับในนครราชสีมา ส่งขนส่ง และหน้าร้านจริงที่อุบลราชธานี";
 const schema = buildGraph([
   webpageSchema({
     url,
     name: "คำถามที่พบบ่อย",
-    description: "FAQ บริการรับซื้อสินค้าไอทีโคราชของ WINNER IT",
+    description,
+    dateModified: "2026-08-05",
   }),
   breadcrumbSchema(breadcrumbs),
   faqSchema(faqs, url),
@@ -56,15 +83,28 @@ const schema = buildGraph([
 ---
 
 <TrustPageLayout
-  title="คำถามที่พบบ่อย | WINNER IT"
-  description="รวมคำถามที่พบบ่อยเกี่ยวกับการประเมิน รับซื้อ นัดรับ และจัดส่งสินค้าไอทีในโคราช"
+  title="คำถามที่พบบ่อย | ร้านอำพล เทรดดิ้ง · WINNER IT"
+  description={description}
   h1="คำถามที่พบบ่อย"
   breadcrumbs={breadcrumbs}
   canonical="/คำถามที่พบบ่อย"
   schema={schema}
-  updatedDate={new Date("2026-07-14")}
+  updatedDate={new Date("2026-08-05")}
 >
-  <p>รวมคำตอบสั้น ๆ สำหรับผู้ที่อยากขายสินค้าไอทีในจังหวัดนครราชสีมา</p>
+  <p>
+    รวมคำตอบสั้น ๆ สำหรับผู้ที่ต้องการขายสินค้าไอที โดยเฉพาะลูกค้าในจังหวัดนครราชสีมา
+    และผู้ที่ต้องการยืนยันข้อมูลหน้าร้านจริงที่จังหวัด{STORE_LOCATION.province}
+  </p>
+
+  <h2>สรุปสั้นก่อนอ่าน FAQ</h2>
+  <ul>
+    <li>
+      หน้าร้านจริง: {fullAddress} เปิด{STORE_LOCATION.openingHoursText}
+    </li>
+    <li>{SERVICE_AREA.wording}</li>
+    <li>เริ่มประเมินผ่าน LINE {SITE.lineId} หรือโทร {SITE.phoneDisplay}</li>
+  </ul>
+
   <div class="faq-embed">
     {
       faqs.map((item) => (
@@ -74,6 +114,25 @@ const schema = buildGraph([
         </details>
       ))
     }
+  </div>
+
+  <h2>หน้าที่เกี่ยวข้อง</h2>
+  <ul>
+    <li><a href="/วิธีประเมินราคา">วิธีประเมินราคา</a></li>
+    <li><a href="/วิธีขายสินค้า">วิธีขายสินค้า</a></li>
+    <li><a href="/พื้นที่/เมืองนครราชสีมา">พื้นที่บริการเมืองนครราชสีมา</a></li>
+    <li><a href="/รับซื้อสินค้าไอที">รับซื้อสินค้าไอที</a></li>
+    <li><a href="/เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
+    <li><a href="/ติดต่อ">ติดต่อ</a></li>
+  </ul>
+
+  <div class="cta-row">
+    <PrimaryLineCTA label="แอด LINE เพื่อถามเพิ่ม" event="line_click" />
+    <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="faq_phone">
+      โทร {SITE.phoneDisplay}
+    </a>
+    <FacebookCTA />
+    <MapsCTA cta="faq_maps" />
   </div>
 </TrustPageLayout>
 
@@ -95,5 +154,11 @@ const schema = buildGraph([
     align-items: center;
     font-weight: 600;
     cursor: pointer;
+  }
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-6);
   }
 </style>

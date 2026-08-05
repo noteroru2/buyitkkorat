@@ -7,7 +7,7 @@ category: "apple"
 intent: "product"
 excerpt: "บริการรับซื้อ MacBook มือสองในโคราช ตรวจชิป ความจุ สภาพจอ แบตเตอรี่ และ Activation Lock ก่อนสรุปราคา"
 publishedDate: 2026-01-15
-updatedDate: 2026-07-14
+updatedDate: 2026-08-05
 featured: false
 indexable: true
 ogImage: "/og/default.png"
@@ -17,6 +17,9 @@ relatedPages:
   - "/รับซื้อ-ipad-โคราช"
   - "/รับซื้อ-imac-mac-mini-โคราช"
   - "/บริการรับซื้อถึงที่โคราช"
+  - "/พื้นที่/เมืองนครราชสีมา"
+  - "/บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad"
+  - "/คำถามที่พบบ่อย"
 serviceArea: "นครราชสีมา"
 faq:
   - question: "MacBook แบตเสื่อมรับซื้อได้ไหม"

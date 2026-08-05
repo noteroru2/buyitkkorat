@@ -3,9 +3,12 @@
 **Date:** 2026-08-05  
 **Baseline HEAD:** `fba8a600be652765d2ad2408a1fb3ef8cebdbe93`
 
-## Final verdict (pre-deploy)
+## Final verdict
 
-Local: Build 90 / check 0 errors / audit:all PASS including `audit:batch2-seo`
+`PASS WITH WARNING — PRODUCTION CONTENT VERIFIED, DEPLOYMENT SHA NOT ATTESTED`
+
+Local: Build 90 / check 0 errors / audit:all PASS including `audit:batch2-seo`  
+Production: Batch 2 markers verified on live HTML (FAQ/city hub/spokes/service hub)
 
 ## Scope delivered
 

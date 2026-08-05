@@ -1,0 +1,106 @@
+﻿{
+    "checkedAt":  "2026-08-05T11:59:15.7977814Z",
+    "implementationCommit":  "3e924f03a1682ab2605922d389e0ce663a4bad37",
+    "originMain":  "3e924f03a1682ab2605922d389e0ce663a4bad37",
+    "forbiddenBranchPhrase":  false,
+    "pages":  [
+                  {
+                      "name":  "faq",
+                      "status":  200,
+                      "len":  33666,
+                      "vercelId":  "sin1::78j5w-1785931155180-111ec09e1718",
+                      "vercelCache":  "HIT",
+                      "securityHsts":  true,
+                      "cspReportOnly":  true,
+                      "needles":  {
+                                      "ไม่ใช่สาขา":  true,
+                                      "740/8":  true,
+                                      "ร้านอำพล เทรดดิ้ง":  true,
+                                      "มีหน้าร้านในโคราชหรือไม่":  true
+                                  },
+                      "hasTwitterCard":  true,
+                      "hasOgTitle":  true,
+                      "forbiddenBranchClaim":  true,
+                      "sha256_16":  "E7E19FA9872B9005"
+                  },
+                  {
+                      "name":  "city",
+                      "status":  200,
+                      "len":  43084,
+                      "vercelId":  "sin1::xqzq2-1785931155550-48ff0f3b70d9",
+                      "vercelCache":  "HIT",
+                      "securityHsts":  true,
+                      "cspReportOnly":  true,
+                      "needles":  {
+                                      "บัวใหญ่":  true,
+                                      "ด่านขุนทด":  true,
+                                      "พื้นที่ให้บริการ":  true,
+                                      "740/8":  true,
+                                      "โนนสูง":  true,
+                                      "พิมาย":  true
+                                  },
+                      "hasTwitterCard":  true,
+                      "hasOgTitle":  true,
+                      "forbiddenBranchClaim":  false,
+                      "sha256_16":  "77055C2E71B1C897"
+                  },
+                  {
+                      "name":  "amphoe",
+                      "status":  200,
+                      "len":  41748,
+                      "vercelId":  "sin1::s6jgn-1785931155637-5464c872ff87",
+                      "vercelCache":  "HIT",
+                      "securityHsts":  true,
+                      "cspReportOnly":  true,
+                      "needles":  {
+                                      "อุบลราชธานี":  true,
+                                      "740/8":  true,
+                                      "เมืองนครราชสีมา":  true
+                                  },
+                      "hasTwitterCard":  true,
+                      "hasOgTitle":  true,
+                      "forbiddenBranchClaim":  false,
+                      "sha256_16":  "1445EA61364A1DE9"
+                  },
+                  {
+                      "name":  "service",
+                      "status":  200,
+                      "len":  47071,
+                      "vercelId":  "sin1::kkbhl-1785931155972-e24b76f9ab41",
+                      "vercelCache":  "HIT",
+                      "securityHsts":  true,
+                      "cspReportOnly":  true,
+                      "needles":  {
+                                      "คำถามที่พบบ่อย":  true,
+                                      "อุบลราชธานี":  true,
+                                      "เมืองนครราชสีมา":  true
+                                  },
+                      "hasTwitterCard":  true,
+                      "hasOgTitle":  true,
+                      "forbiddenBranchClaim":  false,
+                      "sha256_16":  "02B7640B84057E39"
+                  },
+                  {
+                      "name":  "home",
+                      "status":  200,
+                      "len":  52295,
+                      "vercelId":  "sin1::rbfqh-1785931156059-63476226dea6",
+                      "vercelCache":  "HIT",
+                      "securityHsts":  true,
+                      "cspReportOnly":  true,
+                      "needles":  {
+                                      "twitter:card":  true,
+                                      "krv97o14jPTRrnpW8":  true,
+                                      "Amphontrading":  true
+                                  },
+                      "hasTwitterCard":  true,
+                      "hasOgTitle":  true,
+                      "forbiddenBranchClaim":  true,
+                      "sha256_16":  "A5C03BDD06F614C4"
+                  }
+              ],
+    "sitemapUrlCount":  89,
+    "sitemapStatus":  200,
+    "localFaqBytes":  46226,
+    "forbiddenBranchNote":  "Matches are negation only (ไม่ใช่สาขาโคราช / ไม่มีสาขา). No affirmative branch claim."
+}

@@ -4,7 +4,9 @@
 
 ## Verdict
 
-`PASS WITH WARNING — PRODUCTION CONTENT VERIFIED, DEPLOYMENT SHA NOT ATTESTED` (after deploy)
+`PASS WITH WARNING — PRODUCTION CONTENT VERIFIED, DEPLOYMENT SHA NOT ATTESTED`
+
+Production markers verified on Home/About/Contact.
 
 ## Delivered
 

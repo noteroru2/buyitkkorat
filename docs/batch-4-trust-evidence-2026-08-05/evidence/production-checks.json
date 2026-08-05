@@ -1,0 +1,53 @@
+﻿{
+    "checkedAt":  "2026-08-05T13:54:03.6305711Z",
+    "implementationCommit":  "5df40c89678f0c1383bf5d96f60aba7aac2116a1",
+    "originMain":  "5df40c89678f0c1383bf5d96f60aba7aac2116a1",
+    "sitemapLocs":  93,
+    "pages":  [
+                  {
+                      "name":  "home",
+                      "status":  200,
+                      "len":  62085,
+                      "vercelId":  "sin1::9gmvx-1785938040174-b0a220a62d9a",
+                      "cache":  "MISS",
+                      "hasIdentity":  true,
+                      "hasChecklist":  true,
+                      "hasPrivacy":  true,
+                      "hasUbon":  true,
+                      "hasMaps":  true,
+                      "hasFB":  true,
+                      "hasForm":  false,
+                      "hasReviewSchema":  false
+                  },
+                  {
+                      "name":  "about",
+                      "status":  200,
+                      "len":  34215,
+                      "vercelId":  "sin1::xqzq2-1785938040886-96598db248e1",
+                      "cache":  "MISS",
+                      "hasIdentity":  false,
+                      "hasChecklist":  false,
+                      "hasPrivacy":  true,
+                      "hasUbon":  true,
+                      "hasMaps":  true,
+                      "hasFB":  true,
+                      "hasForm":  false,
+                      "hasReviewSchema":  false
+                  },
+                  {
+                      "name":  "contact",
+                      "status":  200,
+                      "len":  38856,
+                      "vercelId":  "sin1::bhllp-1785938041504-636e74090506",
+                      "cache":  "MISS",
+                      "hasIdentity":  false,
+                      "hasChecklist":  true,
+                      "hasPrivacy":  true,
+                      "hasUbon":  true,
+                      "hasMaps":  true,
+                      "hasFB":  true,
+                      "hasForm":  false,
+                      "hasReviewSchema":  false
+                  }
+              ]
+}

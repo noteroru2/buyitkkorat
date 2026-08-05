@@ -1,6 +1,9 @@
 ---
-import { CONTACT_CHANNELS, FOOTER_LINKS, SERVICE_AREA, SITE, STORE_LOCATION } from "../data/site";
+import { CONTACT_CHANNELS, FOOTER_LINKS, SERVICE_AREA, SITE, STORE_LOCATION, formatStoreFullAddress } from "../data/site";
 import FacebookCTA from "./FacebookCTA.astro";
+import MapsCTA from "./MapsCTA.astro";
+
+const fullAddress = formatStoreFullAddress();
 ---
 
 <footer class="footer">
@@ -8,9 +11,8 @@ import FacebookCTA from "./FacebookCTA.astro";
     <div>
       <p class="footer__brand">{SITE.brand}</p>
       <p class="footer__legal">{SITE.tradeName} · ดำเนินงานโดย {SITE.legalName}</p>
-      <p class="footer__area">
-        หน้าร้านจริง: จังหวัด{STORE_LOCATION.province}
-      </p>
+      <p class="footer__area">หน้าร้านจริง: {fullAddress}</p>
+      <p class="footer__area">เปิด{STORE_LOCATION.openingHoursText}</p>
       <p class="footer__area">พื้นที่ให้บริการ: {SERVICE_AREA.label}</p>
       <p class="footer__note">{SERVICE_AREA.wording}</p>
       <p>
@@ -45,23 +47,8 @@ import FacebookCTA from "./FacebookCTA.astro";
           </p>
         )
       }
-      {
-        CONTACT_CHANNELS.mapsUrl && (
-          <p>
-            Maps:{" "}
-            <a
-              href={CONTACT_CHANNELS.mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-event="maps_click"
-              data-cta="footer_maps"
-            >
-              Google Maps
-            </a>
-          </p>
-        )
-      }
       <div class="footer__cta">
+        <MapsCTA cta="footer_maps" />
         <FacebookCTA label="Facebook" />
       </div>
     </div>
@@ -124,6 +111,9 @@ import FacebookCTA from "./FacebookCTA.astro";
 
   .footer__cta {
     margin-top: var(--space-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
   }
 
   .footer__links {

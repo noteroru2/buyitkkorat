@@ -2,18 +2,25 @@
 import TrustPageLayout from "../layouts/TrustPageLayout.astro";
 import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
 import FacebookCTA from "../components/FacebookCTA.astro";
+import MapsCTA from "../components/MapsCTA.astro";
 import ValuationFoundation from "../components/ValuationFoundation.astro";
 import { absoluteUrl } from "../utils/seo";
 import { buildGraph, webpageSchema, breadcrumbSchema } from "../utils/schema";
-import { CONTACT_CHANNELS, SERVICE_AREA, SITE, STORE_LOCATION } from "../data/site";
+import {
+  CONTACT_CHANNELS,
+  SERVICE_AREA,
+  SITE,
+  STORE_LOCATION,
+  formatStoreFullAddress,
+} from "../data/site";
 
+const fullAddress = formatStoreFullAddress();
 const breadcrumbs = [
   { name: "หน้าแรก", href: "/" },
   { name: "ติดต่อ", href: "/ติดต่อ" },
 ];
 const url = absoluteUrl("/ติดต่อ");
-const description =
-  "ติดต่อร้านอำพล เทรดดิ้ง (WINNER IT) เพื่อประเมินสินค้าไอที หน้าร้านจริงจังหวัดอุบลราชธานี บริการลูกค้าในนครราชสีมาผ่าน LINE และโทรศัพท์";
+const description = `ติดต่อร้านอำพล เทรดดิ้ง ที่${fullAddress} เปิด${STORE_LOCATION.openingHoursText} ประเมินสินค้าไอทีผ่าน LINE และโทรศัพท์ บริการลูกค้าในนครราชสีมา`;
 const schema = buildGraph([
   webpageSchema({
     type: "ContactPage",
@@ -35,65 +42,35 @@ const schema = buildGraph([
   schema={schema}
   updatedDate={new Date("2026-08-05")}
 >
-  <h2>หน้าร้านจริง</h2>
+  <h2>หน้าร้านอุบลราชธานี</h2>
   <p>
     <strong>{STORE_LOCATION.tradeName}</strong> ({SITE.brand}) · {SITE.legalName}
   </p>
-  <p>
-    จังหวัด<strong>{STORE_LOCATION.province}</strong>
-    {
-      STORE_LOCATION.streetAddress ? (
-        <>
-          <br />
-          ที่อยู่: {STORE_LOCATION.streetAddress}
-          {STORE_LOCATION.postalCode ? ` ${STORE_LOCATION.postalCode}` : ""}
-        </>
-      ) : (
-        <>
-          <br />
-          <span class="muted">เลขที่บ้านและแผนที่ละเอียด: รอข้อมูลที่ยืนยันแล้วก่อนเผยแพร่</span>
-        </>
-      )
-    }
-  </p>
-  {
-    STORE_LOCATION.openingHoursText ? (
-      <p>เวลาเปิดทำการ: {STORE_LOCATION.openingHoursText}</p>
-    ) : (
-      <p class="muted">เวลาเปิดทำการ: รอข้อมูลที่ยืนยันแล้วก่อนเผยแพร่</p>
-    )
-  }
-  {
-    CONTACT_CHANNELS.mapsUrl && (
-      <p>
-        <a
-          class="btn btn--ghost"
-          href={CONTACT_CHANNELS.mapsUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-event="maps_click"
-          data-cta="maps"
-        >
-          เปิด Google Maps
-        </a>
-      </p>
-    )
-  }
+  <p>{fullAddress}</p>
+  <p>เปิด{STORE_LOCATION.openingHoursText}</p>
+  <div class="cta-row">
+    <MapsCTA cta="contact_maps" />
+    <PrimaryLineCTA label="แอด LINE @buyhub" event="line_click" />
+    <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="contact_phone">
+      โทร {SITE.phoneDisplay}
+    </a>
+    <FacebookCTA />
+  </div>
 
   <h2>ช่องทางติดต่อ</h2>
   <ul>
     <li>
       โทรศัพท์:
-      <a href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="phone">{SITE.phoneDisplay}</a>
+      <a href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="contact_phone_list">{SITE.phoneDisplay}</a>
     </li>
     <li>
       LINE Official:
-      <a href={SITE.lineUrl} target="_blank" rel="noopener noreferrer" data-event="line_click" data-cta="line">
+      <a href={SITE.lineUrl} target="_blank" rel="noopener noreferrer" data-event="line_click" data-cta="contact_line">
         {SITE.lineId}
       </a>
     </li>
     {
-      CONTACT_CHANNELS.facebookUrl ? (
+      CONTACT_CHANNELS.facebookUrl && (
         <li>
           Facebook:
           <a
@@ -101,17 +78,15 @@ const schema = buildGraph([
             target="_blank"
             rel="noopener noreferrer"
             data-event="facebook_click"
-            data-cta="facebook"
+            data-cta="contact_facebook"
           >
             เปิดเพจ Facebook
           </a>
         </li>
-      ) : (
-        <li class="muted">Facebook: รอ URL เพจที่ยืนยันแล้วก่อนแสดงปุ่ม</li>
       )
     }
     {
-      CONTACT_CHANNELS.mapsUrl ? (
+      CONTACT_CHANNELS.mapsUrl && (
         <li>
           Google Maps:
           <a
@@ -119,29 +94,19 @@ const schema = buildGraph([
             target="_blank"
             rel="noopener noreferrer"
             data-event="maps_click"
-            data-cta="maps"
+            data-cta="contact_maps_list"
           >
-            เปิดแผนที่
+            ดูเส้นทางหน้าร้านอุบลราชธานี
           </a>
         </li>
-      ) : (
-        <li class="muted">Google Maps: รอ URL ที่ยืนยันแล้วก่อนแสดง</li>
       )
     }
   </ul>
 
-  <div class="cta-row">
-    <PrimaryLineCTA label="แอด LINE @buyhub" event="line_click" />
-    <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="phone">
-      โทร {SITE.phoneDisplay}
-    </a>
-    <FacebookCTA />
-  </div>
-
   <h2>ลูกค้าในจังหวัดนครราชสีมา</h2>
   <p>{SERVICE_AREA.wording}</p>
   <p>
-    สามารถส่งรายละเอียดและรูปสินค้าเพื่อประเมินราคาเบื้องต้น
+    สามารถส่งรุ่น สเปก สภาพ ตำหนิ อุปกรณ์ ประกัน จังหวัด และรูปสินค้าเพื่อประเมินราคาเบื้องต้น
     และสอบถามการนัดรับหรือวิธีจัดส่งตามเงื่อนไขจริงในแต่ละครั้ง
     โปรดอย่าเข้าใจว่ามีหน้าร้านหรือสาขาประจำในจังหวัดนครราชสีมา
   </p>
@@ -161,8 +126,5 @@ const schema = buildGraph([
     flex-wrap: wrap;
     gap: var(--space-3);
     margin: var(--space-4) 0 var(--space-6);
-  }
-  .muted {
-    color: var(--color-text-muted);
   }
 </style>

@@ -1,7 +1,7 @@
 /**
  * Central business entity + public site configuration.
- * Optional NAP / social / analytics values come only from PUBLIC_* env vars.
- * Never invent street address, Maps, Facebook, or GA IDs.
+ * Verified storefront / Maps / Facebook are defaults; PUBLIC_* env may override.
+ * Never invent GA4 or GSC tokens.
  */
 
 function env(name: keyof ImportMetaEnv): string {
@@ -10,36 +10,51 @@ function env(name: keyof ImportMetaEnv): string {
   return typeof value === "string" ? value.trim() : "";
 }
 
-/** Verified from site config / production usage */
+function envOr(name: keyof ImportMetaEnv, fallback: string): string {
+  return env(name) || fallback;
+}
+
+/** Verified contact channels — phone/LINE fixed; FB/Maps verified with env override */
 export const CONTACT_CHANNELS = {
   phoneDisplay: "095-547-9408",
   phoneTel: "+66955479408",
   lineId: "@buyhub",
   lineUrl: "https://line.me/R/ti/p/@buyhub",
-  /** Set PUBLIC_FACEBOOK_URL in env to enable Facebook CTA */
-  facebookUrl: env("PUBLIC_FACEBOOK_URL"),
-  /** Set PUBLIC_GOOGLE_MAPS_URL when verified */
-  mapsUrl: env("PUBLIC_GOOGLE_MAPS_URL"),
-  /** Set PUBLIC_GBP_URL when verified */
+  facebookUrl: envOr("PUBLIC_FACEBOOK_URL", "https://www.facebook.com/Amphontrading"),
+  mapsUrl: envOr("PUBLIC_GOOGLE_MAPS_URL", "https://maps.app.goo.gl/krv97o14jPTRrnpW8"),
+  /** GBP still unverified — env only */
   googleBusinessUrl: env("PUBLIC_GBP_URL"),
 } as const;
 
 /**
- * Physical storefront — province confirmed by business brief for this site.
- * Street, postal, hours, maps remain empty until verified via env.
+ * Physical storefront — verified Ubon NAP (Batch 1.1).
+ * Env vars may override; empty env uses verified defaults.
  */
 export const STORE_LOCATION = {
   tradeName: "ร้านอำพล เทรดดิ้ง",
   brandName: "WINNER IT",
   legalName: "บริษัท อำพล เทรดดิ้ง จำกัด",
-  province: "อุบลราชธานี",
-  country: "TH",
-  streetAddress: env("PUBLIC_STORE_STREET_ADDRESS"),
-  postalCode: env("PUBLIC_STORE_POSTAL_CODE"),
-  openingHoursText: env("PUBLIC_STORE_HOURS"),
+  streetAddress: envOr("PUBLIC_STORE_STREET_ADDRESS", "740/8 ถนนชยางกูร"),
+  subdistrict: envOr("PUBLIC_STORE_SUBDISTRICT", "ในเมือง"),
+  district: envOr("PUBLIC_STORE_DISTRICT", "เมืองอุบลราชธานี"),
+  province: envOr("PUBLIC_STORE_PROVINCE", "อุบลราชธานี"),
+  postalCode: envOr("PUBLIC_STORE_POSTAL_CODE", "34000"),
+  country: envOr("PUBLIC_STORE_COUNTRY", "TH"),
+  /** Human-readable hours on pages */
+  openingHoursText: envOr("PUBLIC_STORE_HOURS_TEXT", "ทุกวัน 09:00–21:00"),
+  /** Schema.org openingHours string */
+  openingHoursSchema: envOr("PUBLIC_STORE_OPENING_HOURS", "Mo-Su 09:00-21:00"),
   mapsUrl: CONTACT_CHANNELS.mapsUrl,
-  hasVerifiedStreetAddress: Boolean(env("PUBLIC_STORE_STREET_ADDRESS")),
+  /** Schema addressLocality per Batch 1.1 brief */
+  addressLocality: "ตำบลในเมือง อำเภอเมืองอุบลราชธานี",
+  hasVerifiedStreetAddress: true,
 } as const;
+
+export function formatStoreFullAddress(
+  store: typeof STORE_LOCATION = STORE_LOCATION,
+): string {
+  return `${store.streetAddress} ตำบล${store.subdistrict} อำเภอ${store.district} จังหวัด${store.province} ${store.postalCode}`;
+}
 
 /** Korat is a service area, not a branch/office */
 export const SERVICE_AREA = {
@@ -80,6 +95,7 @@ export const SITE = {
   priceDisclaimer:
     "ราคาประเมินเบื้องต้นจากรูปและข้อมูลอาจเปลี่ยนแปลงได้หลังตรวจสอบสินค้าจริง",
   storeProvince: STORE_LOCATION.province,
+  storeFullAddress: formatStoreFullAddress(STORE_LOCATION),
   analytics: ANALYTICS,
 } as const;
 
@@ -98,6 +114,7 @@ export const FORBIDDEN_CLAIMS = [
   "เปิด 24 ชั่วโมง",
   "ถึงที่ทันที",
   "มีทีมทุกอำเภอ",
+  "มีทีมงานประจำทุกจังหวัด",
   "มีสาขาในโคราช",
   "สาขาโคราช",
   "หน้าร้านโคราช",

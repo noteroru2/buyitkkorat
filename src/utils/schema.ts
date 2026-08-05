@@ -7,7 +7,6 @@ function sameAsLinks(): string[] {
   const links: string[] = [CONTACT_CHANNELS.lineUrl];
   if (CONTACT_CHANNELS.facebookUrl) links.push(CONTACT_CHANNELS.facebookUrl);
   if (CONTACT_CHANNELS.googleBusinessUrl) links.push(CONTACT_CHANNELS.googleBusinessUrl);
-  if (CONTACT_CHANNELS.mapsUrl) links.push(CONTACT_CHANNELS.mapsUrl);
   return links;
 }
 
@@ -39,19 +38,14 @@ export function organizationSchema() {
 export function localBusinessSchema() {
   const address: Record<string, string> = {
     "@type": "PostalAddress",
-    addressLocality: STORE_LOCATION.province,
+    streetAddress: STORE_LOCATION.streetAddress,
+    addressLocality: STORE_LOCATION.addressLocality,
     addressRegion: STORE_LOCATION.province,
+    postalCode: STORE_LOCATION.postalCode,
     addressCountry: STORE_LOCATION.country,
   };
 
-  if (STORE_LOCATION.streetAddress) {
-    address.streetAddress = STORE_LOCATION.streetAddress;
-  }
-  if (STORE_LOCATION.postalCode) {
-    address.postalCode = STORE_LOCATION.postalCode;
-  }
-
-  const node: Record<string, unknown> = {
+  return {
     "@type": "LocalBusiness",
     "@id": SITE.localBusinessId,
     name: STORE_LOCATION.tradeName,
@@ -60,21 +54,28 @@ export function localBusinessSchema() {
     url: SITE.url,
     telephone: SITE.phoneTel,
     address,
+    hasMap: STORE_LOCATION.mapsUrl,
+    openingHours: STORE_LOCATION.openingHoursSchema,
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "09:00",
+      closes: "21:00",
+    },
     parentOrganization: { "@id": SITE.organizationId },
     areaServed: {
       "@type": "AdministrativeArea",
       name: `จังหวัด${SERVICE_AREA.primaryProvince}`,
     },
   };
-
-  if (STORE_LOCATION.mapsUrl) {
-    node.hasMap = STORE_LOCATION.mapsUrl;
-  }
-  if (STORE_LOCATION.openingHoursText) {
-    node.openingHours = STORE_LOCATION.openingHoursText;
-  }
-
-  return node;
 }
 
 export function websiteSchema() {

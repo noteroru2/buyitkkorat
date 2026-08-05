@@ -1,0 +1,31 @@
+---
+import { CONTACT_CHANNELS } from "../data/site";
+
+interface Props {
+  label?: string;
+  class?: string;
+  cta?: string;
+}
+
+const {
+  label = "ดูเส้นทางหน้าร้านอุบลราชธานี",
+  class: className = "",
+  cta = "maps",
+} = Astro.props;
+const href = CONTACT_CHANNELS.mapsUrl;
+---
+
+{
+  href ? (
+    <a
+      class={`btn btn--ghost ${className}`.trim()}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-event="maps_click"
+      data-cta={cta}
+    >
+      <span>{label}</span>
+    </a>
+  ) : null
+}

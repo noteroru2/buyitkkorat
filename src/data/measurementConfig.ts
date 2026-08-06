@@ -65,6 +65,16 @@ export const DEPLOYMENT_TIMELINE: DeploymentRecord[] = [
     measurementStartDate: "2026-08-05",
     earliestEvaluationDate: "2026-08-19",
   },
+  {
+    batch: "batch-5",
+    implementationCommit: "99f2333",
+    finalMainSha: "99f2333",
+    firstObservedProductionAt: "2026-08-06",
+    attestation: "CONTENT_VERIFIED_SHA_NOT_ATTESTED",
+    pagesChangedSummary: "Measurement gates, lead fail-closed, GSC import pipeline",
+    measurementStartDate: "2026-08-06",
+    earliestEvaluationDate: "2026-08-20",
+  },
 ];
 
 /** Analysis defaults — not hard SEO standards */

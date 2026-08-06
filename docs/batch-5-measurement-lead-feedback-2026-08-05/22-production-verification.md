@@ -1,19 +1,38 @@
 # 22 — Production Verification
 
-Filled after push/deploy. Pre-Batch-5 baseline: content matched Batch 4 markers; GA/GSC absent.
+Checked after push of `99f2333` (2026-08-06).
 
-## Targets
+## Targets verified
 
-Home, Contact, Valuation checklist, About, Service hub, money pages sample, articles sample, Korat hub, Cookie/Privacy policy, Sitemap, robots.txt, 404.
+| Page | Status | Notes |
+|------|--------|-------|
+| Home | 200 | Consent UI; no gtag; leadGate+content_cluster live |
+| Contact | 200 | No form / no fake success |
+| About | 200 | |
+| Korat hub `/พื้นที่/เมืองนครราชสีมา/` | 200 | |
+| `/วิธีประเมินราคา/` | 200 | |
+| Cookie / Privacy policy | 200 | |
+| robots.txt | 200 | Declares sitemap-index.xml |
+| sitemap-0.xml | 200 | 93 locs |
+| Sample `x-vercel-id` | sin1::… | SHA not attested |
 
-## Checks
+## Measurement runtime
 
-HTTP status, canonical, indexability, consent runtime, GA presence/absence, CTA destinations, PII protection, GSC meta, security headers, CSP, lead state (no form), broken links/assets, console, fingerprints, `x-vercel-id`.
+| Check | Result |
+|-------|--------|
+| GA Measurement ID | MISSING |
+| gtag.js | Absent |
+| GSC meta | Absent |
+| `__WINNER_LEAD_SUBMIT_OK__` gate in HTML | Present |
+| Fake form / success | Absent |
+| Security headers (HSTS, XCTO, CSP-RO, Referrer, Permissions, XFO) | Present |
 
-## Verdict template
+## Screenshots
 
-If content matches main but SHA unknown:
+`screenshots/*.png` — desktop/mobile consent, contact, checklist, cookie policy.
+
+## Verdict
 
 `PASS WITH WARNING — PRODUCTION CONTENT VERIFIED, DEPLOYMENT SHA NOT ATTESTED`
 
-Evidence JSON: `evidence/production-checks.json`
+Evidence: `evidence/production-checks.json`

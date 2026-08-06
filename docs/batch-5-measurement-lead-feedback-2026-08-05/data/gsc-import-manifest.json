@@ -1,0 +1,6 @@
+{
+  "status": "NO_DATA_IMPORTED",
+  "checkedAt": "2026-08-06T00:00:00.000Z",
+  "note": "No --input provided. Place GSC CSV exports and re-run.",
+  "queryPageJoin": "FORBIDDEN_WITHOUT_NATIVE_QUERY_PAGE_EXPORT"
+}

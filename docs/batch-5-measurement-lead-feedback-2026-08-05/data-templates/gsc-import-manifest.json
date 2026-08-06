@@ -1,0 +1,5 @@
+{
+  "status": "NO_DATA_IMPORTED",
+  "note": "Template only. Run npm run import:gsc with real GSC CSV exports.",
+  "queryPageJoin": "FORBIDDEN_WITHOUT_NATIVE_QUERY_PAGE_EXPORT"
+}

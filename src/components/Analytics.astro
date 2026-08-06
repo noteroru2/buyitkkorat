@@ -79,8 +79,10 @@ const enabled = ANALYTICS.enabled;
       service_category: true,
       evidence_type: true,
       component_name: true,
+      content_cluster: true,
+      link_destination_type: true,
     };
-    var BLOCKED_PARAM = /phone|name|message|serial|address|email|line_id|image/i;
+    var BLOCKED_PARAM = /phone|name|message|serial|imei|address|email|line_id|image|password|model_text/i;
     var lastKey = "";
     var lastAt = 0;
 
@@ -112,6 +114,11 @@ const enabled = ANALYTICS.enabled;
     function track(rawName, extra) {
       var mapped = ALLOWED[rawName];
       if (!mapped) return;
+      // valuation_submit only after verified backend success flag (never from CTA clicks alone)
+      if (rawName === "valuation_submit") {
+        if (!window.__WINNER_LEAD_SUBMIT_OK__) return;
+        window.__WINNER_LEAD_SUBMIT_OK__ = false;
+      }
       var params = sanitizeParams(
         Object.assign(
           {

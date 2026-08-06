@@ -1,0 +1,7 @@
+blocker_id,severity,category,owner_dependency,recommendation,priority,verification_status
+B5-GA4-ID,High,Measurement,Owner Vercel env,Provide PUBLIC_GA_MEASUREMENT_ID,P0,BLOCKED
+B5-GA4-ADMIN,Medium,Measurement,Owner GA4 Admin,Configure Key events for primary,P1,BLOCKED
+B5-GSC-TOKEN,High,Search,Owner GSC,Provide token and verify property,P0,BLOCKED
+B5-LEAD-BACKEND,High,Lead,Owner backend,Verified endpoint before form,P0,BLOCKED
+B5-DEPLOY-SHA,Low,Ops,Owner Vercel,Attest deployment SHA,P2,PARTIALLY CLOSED
+B5-DATA-ACCUMULATION,Medium,Search,Owner exports,Import GSC/GA4 after live,P1,BLOCKED

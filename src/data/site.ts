@@ -4,6 +4,8 @@
  * Never invent GA4 or GSC tokens.
  */
 
+import { isValidGa4MeasurementId, normalizeGa4MeasurementId } from "../utils/measurement";
+
 function env(name: keyof ImportMetaEnv): string {
   const metaEnv = import.meta.env as ImportMetaEnv | undefined;
   const value = metaEnv?.[name];
@@ -67,9 +69,12 @@ export const SERVICE_AREA = {
 } as const;
 
 export const ANALYTICS = {
-  gaMeasurementId: env("PUBLIC_GA_MEASUREMENT_ID"),
+  gaMeasurementId: normalizeGa4MeasurementId(env("PUBLIC_GA_MEASUREMENT_ID")),
   gscVerification: env("PUBLIC_GSC_VERIFICATION"),
-  enabled: Boolean(env("PUBLIC_GA_MEASUREMENT_ID")),
+  /** True only when a syntactically valid GA4 Measurement ID is present */
+  enabled: isValidGa4MeasurementId(env("PUBLIC_GA_MEASUREMENT_ID")),
+  /** Lead form backend — reserved; never invent endpoints */
+  leadEndpointConfigured: Boolean(env("PUBLIC_LEAD_ENDPOINT")),
 } as const;
 
 export const SITE = {

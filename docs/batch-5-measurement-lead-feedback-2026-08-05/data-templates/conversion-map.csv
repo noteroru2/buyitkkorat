@@ -1,0 +1,8 @@
+event,tier,primary_secondary,consent_required,notes,verification_status
+line_click,primary,primary,true,Primary lead-intent,CODE READY
+phone_click,primary,primary,true,Primary lead-intent,CODE READY
+facebook_click,primary,primary,true,Primary lead-intent,CODE READY
+maps_click,secondary,secondary,true,Visit intent,CODE READY
+valuation_start,secondary,secondary,true,Prep intent,CODE READY
+contact_click,secondary,secondary,true,Contact intent,CODE READY
+valuation_submit,future_backend,primary_when_backend,true,Server success only,BLOCKED BACKEND

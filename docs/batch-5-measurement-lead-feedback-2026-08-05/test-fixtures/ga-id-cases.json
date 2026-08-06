@@ -1,0 +1,5 @@
+{
+  "valid": ["G-ABCDEF12", "G-1234567890"],
+  "invalid": ["", "G-XXX", "G-EXAMPLE", "UA-123-1", "placeholder", "your_id"],
+  "note": "Fixtures for documentation only — never use on Production"
+}

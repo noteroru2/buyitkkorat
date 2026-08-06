@@ -15,6 +15,8 @@ interface ImportMetaEnv {
   readonly PUBLIC_STORE_HOURS_TEXT?: string;
   readonly PUBLIC_STORE_OPENING_HOURS?: string;
   readonly PUBLIC_STORE_HOURS?: string;
+  /** Future lead capture endpoint — leave blank until verified backend exists */
+  readonly PUBLIC_LEAD_ENDPOINT?: string;
 }
 
 interface ImportMeta {

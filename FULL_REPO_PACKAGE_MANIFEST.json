@@ -1,0 +1,3774 @@
+{
+  "package": "buyitkkorat-full-merged-round1",
+  "base": "uploaded real repository buyitkkorat-main(1).zip",
+  "merge": "Architecture Batch 0-10 + Expansion Round 1 + Production/Observation Gate",
+  "final_state": {
+    "live_routes": 99,
+    "indexable_routes": 98,
+    "noindex_routes": 1,
+    "content_files": 88,
+    "round1_released_brand_series": 4,
+    "round2_locked": true,
+    "validators": "PASS",
+    "astro_build_attested_in_sandbox": false,
+    "build_attestation_reason": "npm registry access/cache unavailable in sandbox"
+  },
+  "file_count": 752,
+  "files": [
+    {
+      "path": ".env.example",
+      "size": 873,
+      "sha256": "cc0e62dc5a324c8b3a0268fd3d36645d90b3184e231215ce6222d75578c279ea"
+    },
+    {
+      "path": ".gitignore",
+      "size": 328,
+      "sha256": "c9c56076880f891464459028e3e325884bcde463185e5b81047b7d55489ac9dc"
+    },
+    {
+      "path": ".vscode/extensions.json",
+      "size": 87,
+      "sha256": "cc8f4bcdc3c31be539aa67fbdacaaac4c9fcccb55b02048acf02f56e623ef682"
+    },
+    {
+      "path": "AGENTS.md",
+      "size": 874,
+      "sha256": "258e71559ecd267cdca0f9751feb80e3249b79fd4b67e534247788cfdb4522c4"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_0.md",
+      "size": 411,
+      "sha256": "a913e73b59d44a6850930335cf1f5206326d59c5ec49f55c5a0ad1567c649b9e"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_1.md",
+      "size": 684,
+      "sha256": "b38c9bf75644e1ae3e8336fa3898c6599af3a98e887f23011793b9af69ac447b"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_10.md",
+      "size": 1861,
+      "sha256": "d575f7ca29890bdb4f6c917c23b1d0a45d03dd75ebaa7aba1f455b99bbf647f0"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_2.md",
+      "size": 2031,
+      "sha256": "3d1d52c282dfbd1cc3b697973e89cc22759b4bcea2a03c4e1545c75594367d5a"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_3.md",
+      "size": 1211,
+      "sha256": "a93a4251b87fe39030b9995d83e61caaef7a69eb80b8d2e69e20e4eac661b727"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_4.md",
+      "size": 844,
+      "sha256": "40e85dad5b3f1701c8afe42e39388edf69bec90819e9e69a61d15cb83a00f8d2"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_5.md",
+      "size": 1716,
+      "sha256": "ceba34009cb23d4679b1a42beadc61d853fa4419424db1f007d28c214140e2dc"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_6.md",
+      "size": 1173,
+      "sha256": "4c605af57c2a8b3f14a192668119389256236a5a8a898037556e61ee44237fad"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_7.md",
+      "size": 1625,
+      "sha256": "23178ba2ae780670c1da69e4167bb1b05367229793371115855d3b39fd528211"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_8.md",
+      "size": 2587,
+      "sha256": "1f816514333ffe40dfa50a3244ec21fa83c0ca50fc6184d473c1a4b7fe4539f1"
+    },
+    {
+      "path": "APPLY_ARCHITECTURE_BATCH_9.md",
+      "size": 2970,
+      "sha256": "82473c2a6ac1aae516b71d3e51ecb06fb3b6f3ddbe47f3d449264f48fa571bac"
+    },
+    {
+      "path": "APPLY_EXPANSION_RELEASE_ROUND_1.md",
+      "size": 1304,
+      "sha256": "3f164d990668b6c366e93a9c08ea849d4dc8959d0687365755951cb6f1e30344"
+    },
+    {
+      "path": "APPLY_EXPANSION_ROUND_1_PRODUCTION_OBSERVATION_GATE.md",
+      "size": 1677,
+      "sha256": "ebedc109c94a081bfdc021db6d7afd39b7c10174ce0040b7779725db02c8a685"
+    },
+    {
+      "path": "CLAUDE.md",
+      "size": 874,
+      "sha256": "258e71559ecd267cdca0f9751feb80e3249b79fd4b67e534247788cfdb4522c4"
+    },
+    {
+      "path": "README.md",
+      "size": 1604,
+      "sha256": "9d5901b9a7c76174e6372535975a00056ecfb6a057c5101c64199e894e56aad3"
+    },
+    {
+      "path": "REAL_REPO_MERGE_REPORT.md",
+      "size": 3193,
+      "sha256": "3ac48430a82cae8c3c9b2b518b6202bd994b4a4ac8af78acf2faf3e0a19d3b1d"
+    },
+    {
+      "path": "astro.config.mjs",
+      "size": 384,
+      "sha256": "e567b13d2c701240134af2fa01f9290badd3d7ff6f9c304100a6c6039bdc24b4"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-0.md",
+      "size": 4641,
+      "sha256": "fc7a8e3e5b2dd4a69776ed4dc2b349d1e2cad136c9fcb049223bfa53ec364e99"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-1.md",
+      "size": 5334,
+      "sha256": "49c3479a33b837fddeffe9c70fce3f7151533032377c2be27a5ea87b0c995dfc"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-10.md",
+      "size": 3340,
+      "sha256": "4c386867040f90bf3239d81fa52304a2080fbcb88e3740ffa28c511fb5327e33"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-2.md",
+      "size": 1940,
+      "sha256": "33905b44897cf43c992b4f811e1779e17a4a69041b09df7ef419d4a426769857"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-3.md",
+      "size": 2331,
+      "sha256": "9c863792d2170b0cf273430b9a0f12da3035cb9eed643735f4febee8c384e41b"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-4.md",
+      "size": 2488,
+      "sha256": "c798d87b0a86bb35d8ef38bcc9a856b9b22ea155ec8ee875949494c363e7f245"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-5.md",
+      "size": 2102,
+      "sha256": "762ccf732d891d0558323fa43aba38feb81fdfeeca022c45da411378d719abaf"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-6.md",
+      "size": 3944,
+      "sha256": "58741f065a9b5be772304306316cfb9d778b9335dbb0907aac3b474c7b4efb7e"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-7.md",
+      "size": 3868,
+      "sha256": "4452590a76185ef4d1f54c0cd59b08c8ca9d44ad544f4accfc41441b36b85c91"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-8.md",
+      "size": 3535,
+      "sha256": "0abf06fae18b9a5543c44e4ae58c0b127a97d17f8bbba99216696ec62e3c7863"
+    },
+    {
+      "path": "docs/architecture/ARCHITECTURE-BATCH-9.md",
+      "size": 3893,
+      "sha256": "dbd12d6c0d4d2f0358c14b83d677d838d570d503dc87dc448f2440850581bc63"
+    },
+    {
+      "path": "docs/architecture/EXPANSION-RELEASE-ROUND-1.md",
+      "size": 3153,
+      "sha256": "bf60dbabd7809484dbb82c9a99135b94b65814b2770ed3e11edf019dfd84702d"
+    },
+    {
+      "path": "docs/architecture/EXPANSION-ROUND-1-PRODUCTION-OBSERVATION-GATE.md",
+      "size": 3352,
+      "sha256": "c7958f63c2f5e17c06b457a1ce522f38e8447cb0ea68c8614a8f85eb9191a42f"
+    },
+    {
+      "path": "docs/architecture/REAL-REPO-MERGE-VALIDATION.txt",
+      "size": 5099,
+      "sha256": "11e2ab6ef5c5c8bbf82e817931779a1b47963c69b8757a742a40b6c1d746a151"
+    },
+    {
+      "path": "docs/architecture/architecture-quality-gate-report.json",
+      "size": 1886,
+      "sha256": "4d95fd0ed5645ea3d032283ac34bbcc5572aaacfd4aea9c9d5b56f14b4610a69"
+    },
+    {
+      "path": "docs/architecture/batch1-self-test.txt",
+      "size": 760,
+      "sha256": "2a9a3e20b4c7de6c51c664512afe1e09500ee87f93c5a690e13731ff23d88faf"
+    },
+    {
+      "path": "docs/architecture/batch10-cumulative-validation.txt",
+      "size": 4236,
+      "sha256": "74f0dd243d68aee6b8982fa38b8a98309206164456b734c0b07cdb19c5534d5e"
+    },
+    {
+      "path": "docs/architecture/batch10-release-report.json",
+      "size": 512,
+      "sha256": "35f844846aaa5ee9fccc8115d28198ebb46fa53c033349fee1f86d5ae20491bf"
+    },
+    {
+      "path": "docs/architecture/batch10-self-test.txt",
+      "size": 2332,
+      "sha256": "51e8580b78e98c833384b3dd00fc997c8781163f853cd40d87b82ac991043917"
+    },
+    {
+      "path": "docs/architecture/batch2-self-test.txt",
+      "size": 872,
+      "sha256": "b462d726a340077d892bde89b650f81734366b42c40a1eb4eeead7145ee045b8"
+    },
+    {
+      "path": "docs/architecture/batch3-self-test.txt",
+      "size": 1502,
+      "sha256": "60f4a879424594aa1a1e2eb15d28a7b0502b832a7f927ada9f208eaa02139a5f"
+    },
+    {
+      "path": "docs/architecture/batch4-self-test.txt",
+      "size": 214,
+      "sha256": "7c8b100c66eba639a8783d6ae31924b6e8af5c1965ffa4e116f971acfc2b721a"
+    },
+    {
+      "path": "docs/architecture/batch5-self-test.txt",
+      "size": 2167,
+      "sha256": "77fbee2d387204049a405d7c4a15468f815d557f97e5ca999b6710d1e5ac096b"
+    },
+    {
+      "path": "docs/architecture/batch6-self-test.txt",
+      "size": 2506,
+      "sha256": "dd873a15eff5e9bf2c8317a95a3e961b84362e3f4806059f9ce8a54967bd1f49"
+    },
+    {
+      "path": "docs/architecture/batch7-release-report.txt",
+      "size": 331,
+      "sha256": "c446931f330e0040c07f87eebf0ac48cbf90a68852908e62bb4e7830077ae5b8"
+    },
+    {
+      "path": "docs/architecture/batch7-self-test.txt",
+      "size": 969,
+      "sha256": "e3550e7c0c1f5a98b7d399f0f10973e7cc821788a7d698aa762dda54d1b6540c"
+    },
+    {
+      "path": "docs/architecture/batch8-cumulative-validation.txt",
+      "size": 3446,
+      "sha256": "0551f017fc144e8a8d1904ff58def47bdc0392a6dc779e1ba6d196c223075bea"
+    },
+    {
+      "path": "docs/architecture/batch8-self-test.txt",
+      "size": 1447,
+      "sha256": "7dabade2838a2d81e957abf1fe84dd71d410a10a1ca40a229ad378a6a42075f4"
+    },
+    {
+      "path": "docs/architecture/batch9-cumulative-validation.txt",
+      "size": 3943,
+      "sha256": "e709cd037fcc98f7213f265d46d563115924d940e4c2228b11899236b1964abd"
+    },
+    {
+      "path": "docs/architecture/batch9-self-test.txt",
+      "size": 2080,
+      "sha256": "b529a6d4ccde1b925dac6f53b7a09a55eeb3db7c8cb940a4a6b2c1f754cd3367"
+    },
+    {
+      "path": "docs/architecture/brand-series-candidate-matrix.csv",
+      "size": 9193,
+      "sha256": "ea7f735e9709e5f51e4d196a667b6baae23e4fa148a1a2bce3cf20e59cfc3b82"
+    },
+    {
+      "path": "docs/architecture/breadcrumb-ownership-matrix.csv",
+      "size": 24157,
+      "sha256": "13fdd85543fc2cfe7eaa9bc5a75b88ec77b0944f424d1f4463c148ae79f0d3b1"
+    },
+    {
+      "path": "docs/architecture/cannibalization-triage-matrix.csv",
+      "size": 11716,
+      "sha256": "43b4a682763d0c50e0b285375cfade4e7b70d2ab2b752fe885bc7f4ae9b5da13"
+    },
+    {
+      "path": "docs/architecture/core-hub-release-matrix.csv",
+      "size": 21643,
+      "sha256": "ceb93bc4c7f5975a2329d6c797a34bfcc2ab3de988f1ad49fddcf21234cc2c1f"
+    },
+    {
+      "path": "docs/architecture/expansion-release-gates.csv",
+      "size": 1657,
+      "sha256": "5ba63ea21dea3de598ebb4fd8ec49f1cd4dde91cdc8de3548adc09acc9d60ac2"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-changed-files.json",
+      "size": 2027,
+      "sha256": "71debf8b7f71372c948ed8e9730fe7bb58bff34c202274171343db246fa91767"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-cumulative-validation.txt",
+      "size": 5065,
+      "sha256": "974f1e719c756e201ad2567652afe9de83335c8f7bc66fdf5e4181b96678a392"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-evidence.json",
+      "size": 2179,
+      "sha256": "219aeacb929761aa2f2e5df6718a2732ec2458e31e1a2be8e2467990cb4522d4"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-final-validation.txt",
+      "size": 4640,
+      "sha256": "92aba7149af139e0416d192e5613f08e7709fbb626a7e1b41b9285206934496c"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-predeploy-report.json",
+      "size": 1010,
+      "sha256": "1e5c6eb7d6acff7837813c0356d9a2e1625cf793fd192892409c6f2798b60c58"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-production-gate-changed-files.json",
+      "size": 1037,
+      "sha256": "9a794c2da7a991a1c79b55a64e17d4c6d7f263e5748d3e2be6fa93cac70cf3f8"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-production-gate-release-report.json",
+      "size": 401,
+      "sha256": "43cc934a27653c3b53beb899ce2e214a2ead92746bb5228db043b9bcf9afcbc5"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-production-gate-self-test.txt",
+      "size": 1794,
+      "sha256": "d3fd89189b655ed4f08ff23608d645694a60b78511bad7a40a76e5f458f7555d"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-release-matrix.csv",
+      "size": 1014,
+      "sha256": "1bf39ce8caff6fc2f8778880a06b4e252cb6d7475f0695eefef7078210adcbf7"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-release-report.json",
+      "size": 833,
+      "sha256": "1ab2cb64d635739ba4bc84f53658d97a2ed10eead5ecdbdfb01e115ceafee2e1"
+    },
+    {
+      "path": "docs/architecture/expansion-round-1-self-test.txt",
+      "size": 5651,
+      "sha256": "9388d4af4d098bad8f12a830a51736a9dddcf6597806eee3e4e931a045a67391"
+    },
+    {
+      "path": "docs/architecture/guide-authority-matrix.csv",
+      "size": 8365,
+      "sha256": "c8765e8cea8426a64a6d6f528812829a3e9c648d8cd187d8cb4ad6aba07c96f9"
+    },
+    {
+      "path": "docs/architecture/guide-cluster-matrix.csv",
+      "size": 4100,
+      "sha256": "977642df4a913482c6b8af98f945309f2a434e83503c8f9b0818a0126af2d208"
+    },
+    {
+      "path": "docs/architecture/guide-expansion-candidates.csv",
+      "size": 5020,
+      "sha256": "7ab154dbeae673efa67a89a288ed5483993c2a4581131f8c811e1b3cb49157df"
+    },
+    {
+      "path": "docs/architecture/indexable-canonical-paths.txt",
+      "size": 6566,
+      "sha256": "905091fc1030527c0a6f54bf9ff2950ec7fecbfa415965313a7bbb04aec88f39"
+    },
+    {
+      "path": "docs/architecture/internal-link-projection.csv",
+      "size": 13267,
+      "sha256": "763f5afe5c2b160e2ddb53737740868d0cb9317849b933c3499c653afeef5a44"
+    },
+    {
+      "path": "docs/architecture/live-expansion-anchors.csv",
+      "size": 1824,
+      "sha256": "3c675020a835777cbf50b8374712477168150c6885770c24aca98f44f81263d3"
+    },
+    {
+      "path": "docs/architecture/local-area-release-matrix.csv",
+      "size": 5578,
+      "sha256": "3f14f57c7f77c13b6bc126f3af42765450c75dc433503615fea2d226f56fa83c"
+    },
+    {
+      "path": "docs/architecture/navigation-surface-matrix.csv",
+      "size": 9034,
+      "sha256": "8d70d87899a7d46db66f7d4b0fc4ac96391c13dd76608ffcbb24b150d324bd52"
+    },
+    {
+      "path": "docs/architecture/orphan-recovery-matrix.csv",
+      "size": 1695,
+      "sha256": "404100ccd2f62c53bb0a42ea30d53400596cab0ea6954fa13f35c05e238c7eb4"
+    },
+    {
+      "path": "docs/architecture/parent-migration-queue.csv",
+      "size": 9744,
+      "sha256": "617f5a26af604a942579148eb7e13185a5cdc599c974cdc82ff5c8adf0083414"
+    },
+    {
+      "path": "docs/architecture/production-quality-gate-checklist.csv",
+      "size": 786,
+      "sha256": "ff9e41ef4d71ee442f2c7b275726e31244f78f4d1d0ee13a32c3ce7d48342ba5"
+    },
+    {
+      "path": "docs/architecture/runtime-related-link-matrix.csv",
+      "size": 41097,
+      "sha256": "36812a3312b5b2c22f2f6828af441e0ce2f1f6b457ace1eadc4ecf257c64fd5a"
+    },
+    {
+      "path": "docs/architecture/seo-index-control-matrix.csv",
+      "size": 21289,
+      "sha256": "7e7c29cd6af47e055a280a9e1786fb8345b31c1a04ad37ba82264b7894b8da65"
+    },
+    {
+      "path": "docs/architecture/sitemap-architecture.xml",
+      "size": 27823,
+      "sha256": "ddabeb20e9b0bf10d08c37e6f2ca9a4f9c02ab2c5f3aba7b0a9a6479cdfe4f65"
+    },
+    {
+      "path": "docs/architecture/synthetic-build-crawl-selftest.json",
+      "size": 149024,
+      "sha256": "cc2ef83e47bb0c7fdd867bdaaa472e51e533a92b9163532d2c8d89e3a272c982"
+    },
+    {
+      "path": "docs/architecture/synthetic-production-verification-selftest.json",
+      "size": 3460,
+      "sha256": "1671ed96a912f69ea9ef46935c1018873e92867237bcfb6ecae67bc55933ffec"
+    },
+    {
+      "path": "docs/architecture/url-ownership-baseline.csv",
+      "size": 34728,
+      "sha256": "4d962ceb413af086d27c049f566860306e32ba51295a466919a62f9b1be6d585"
+    },
+    {
+      "path": "docs/audits/content-summary.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "docs/audits/production-smoke.json",
+      "size": 13892,
+      "sha256": "c9a94c0fea183023e956e1c2e1498d7c7d00c5408b9b5fc5a153a2c4f76d8cf1"
+    },
+    {
+      "path": "docs/audits/screenshots/area-city-390.png",
+      "size": 153280,
+      "sha256": "057e23a3e29dcb818ec2c4cca004dc23e2496ad315101acbe92e303cf7197e4e"
+    },
+    {
+      "path": "docs/audits/screenshots/area-pakchong-390.png",
+      "size": 152052,
+      "sha256": "2669ff8199ce4f5acecfc60674d09cdae1b33cc94d52301d7b9d2b6ba7425de9"
+    },
+    {
+      "path": "docs/audits/screenshots/article-390.png",
+      "size": 176495,
+      "sha256": "c60030a6f4f35207ae7732675bde043f164762b351bdd793c3d391745b3ac727"
+    },
+    {
+      "path": "docs/audits/screenshots/bulk-390.png",
+      "size": 165832,
+      "sha256": "cfd68308a5a896d00ee086680256e7f640d2cef96598879b0b96c204c1bce130"
+    },
+    {
+      "path": "docs/audits/screenshots/camera-390.png",
+      "size": 164636,
+      "sha256": "ca850a08a601d8a485f67e357879c327b29cd6fcdd05da841f3332ea964db00a"
+    },
+    {
+      "path": "docs/audits/screenshots/computer-390.png",
+      "size": 180045,
+      "sha256": "a442ae9eda1c174473ba56194a86066fbb4f73f2efe06ab6581fb3eec01b3831"
+    },
+    {
+      "path": "docs/audits/screenshots/contact-390.png",
+      "size": 147552,
+      "sha256": "8882022538a9ab79981678ce316667a2abbc55e55689fed7c5a0e170e62c2362"
+    },
+    {
+      "path": "docs/audits/screenshots/gpu-390.png",
+      "size": 165760,
+      "sha256": "1008768d60a11e3102cbaea2ce0d415f37c9aa5626d35be1a6b65d8d3a9e9622"
+    },
+    {
+      "path": "docs/audits/screenshots/home-1440.png",
+      "size": 482071,
+      "sha256": "a2aa3d84f531b8e4218d6daab4bdbe794d1afd94352f00282e1795f3a8b197b7"
+    },
+    {
+      "path": "docs/audits/screenshots/home-390.png",
+      "size": 184398,
+      "sha256": "b721ed2fc03956c72f4be8dcce4a8bd24a0545df988419a56c068a2415b90946"
+    },
+    {
+      "path": "docs/audits/screenshots/hub-390.png",
+      "size": 158738,
+      "sha256": "295d522bcf11e7843f68098c886b2e6c31921a19056ebb58888d08888ca4c90b"
+    },
+    {
+      "path": "docs/audits/screenshots/iphone-390.png",
+      "size": 179112,
+      "sha256": "d8c8eb7746507b0f4875a9dbb72110bf2d02012cdf47811e19ac696c84d69693"
+    },
+    {
+      "path": "docs/audits/screenshots/notebook-390.png",
+      "size": 177525,
+      "sha256": "2628dabd448f2b88a1fbbfe33121311f7f61858b6378a5d8647114bce488f528"
+    },
+    {
+      "path": "docs/audits/screenshots/notfound-390.png",
+      "size": 100711,
+      "sha256": "5c70a40ddedb21874feb3e3e2f23838a54ea89d6cb40e7d2e40176e0043ae4a0"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/00-summary.md",
+      "size": 1147,
+      "sha256": "875687f7720b3ded310880756b1d3d635b965b3b88584736464868f448211657"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/01-business-data.md",
+      "size": 768,
+      "sha256": "dde6ac1bc9beaa5e19cc4b43af41826640ba9e21734583afc43d421685720f6a"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/02-entity-and-schema.md",
+      "size": 905,
+      "sha256": "7e4ea84b7a756497d22a292542b9c37cbece33c7be593c818799e65f3253d8a3"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/03-maps-facebook.md",
+      "size": 720,
+      "sha256": "c589254032005562081cbabca6db92e16fe391c29277f340e23d32707cc85665"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/04-tests.md",
+      "size": 591,
+      "sha256": "7d5fce3b2c97835de055df7c5be77a96c2bdd6b7411730ea09e165bbadc1de68"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/05-production-verification.md",
+      "size": 757,
+      "sha256": "1c8997195ffd9a6b102e7017eb6099053ed3f291bcddf460d96da237b37a208d"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/06-findings-update.md",
+      "size": 804,
+      "sha256": "841813bf2477eb8cb50a71ff26e460c2d24aa1a5951ad4ede29e80edaf8d579c"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/07-open-blockers.md",
+      "size": 487,
+      "sha256": "236fa5aeaf78166785232df0e3cb672dc6c2961338d2067eb3f91c49fa46b58c"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/evidence/production-checks.json",
+      "size": 1857,
+      "sha256": "61683b029f6f9fc4fd10bf02c7f368e41bcbfb6c8048d9167d19a93bbcfcee0b"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/about-1440.png",
+      "size": 371894,
+      "sha256": "cc552cc4e6e316e7c3e8ef72c72892a831ac2ac78a7539cc0fd5360780f38aef"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/about-390.png",
+      "size": 155840,
+      "sha256": "805f7e7e2900e6e0a65f8b3588d82082e644d42d1477ba999508a853f3e915c7"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/area-1440.png",
+      "size": 448963,
+      "sha256": "860da2a92554df310186bff157ecf272187bae23f22bbc9a91bc06315e26ad0f"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/area-390.png",
+      "size": 133638,
+      "sha256": "d8c5d84080e23d0f75deccfa54db35aeba09303bdecea9e1359303d11285a770"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/contact-1440.png",
+      "size": 358249,
+      "sha256": "9cf3e759c871b8c4b9af424dfbfc04f071ceead44fd37c271f54a1c1987303b2"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/contact-390.png",
+      "size": 147050,
+      "sha256": "bab5e9298cea183e5fcefc6c5a3e957dba02ebb10568cb7abb575e984f9b5cf4"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/contact-cta-390.png",
+      "size": 385575,
+      "sha256": "ed291c51b540e36c41dd4e19ad499b0800b34f855b3dad705d6ea43ed1dc63eb"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/cookie-1440.png",
+      "size": 303469,
+      "sha256": "3b2d76155c2dad2b17570029cafde89bb42eb4d7c8ba8423e61d5f5641d89a5c"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/cookie-390.png",
+      "size": 153822,
+      "sha256": "09b0705a1996b525c2ec5a0a7abeee625ddffaed8d0cbcda882639748fcdfa33"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/footer-facebook-maps-1440.png",
+      "size": 65146,
+      "sha256": "f54bf788380b0b82e32aaca19441f8259c13e190482a83312cbbd55d45e6b05b"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/home-1440.png",
+      "size": 441711,
+      "sha256": "58d716de77bc337b5aa393c3627fb963a4c427aa94593d586af9340dcf277bb7"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/home-390.png",
+      "size": 175347,
+      "sha256": "9ec0f2cd4cc456cfa0380f9032a43d533dd7ebd8659fba4530f5a670ca91e9a0"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/home-cookie-banner-390.png",
+      "size": 175346,
+      "sha256": "26b085ade4968180c3202d502128f97cb4f54798000b914c97c015c0ca2ec8f1"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/hub-1440.png",
+      "size": 490562,
+      "sha256": "e77534baaecb7fda2da315f8af98602c0dac88fad679f633e4d69938f98bb76b"
+    },
+    {
+      "path": "docs/batch-1-1-verified-business-data-2026-08-05/screenshots/hub-390.png",
+      "size": 156697,
+      "sha256": "68373bd917491c9bcbe014c02189b57e3ea78c431c63142fe0c470440856e38b"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/00-summary.md",
+      "size": 1813,
+      "sha256": "0e08953a7ffaa6791541b4b6f5f5842c909a7ee48bf94f0d049c61695c6a177d"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/01-business-entity.md",
+      "size": 1680,
+      "sha256": "6c5b1e9ca26faf957b20dbca7c4c7ceaa70d68a6009aa278e630b85388a1bb10"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/02-about-contact-changes.md",
+      "size": 925,
+      "sha256": "12808f4f45438801616b847431c74f07236959f11dbaface16c9fe8d9fb2bb17"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/03-structured-data.md",
+      "size": 833,
+      "sha256": "bdedd4ecc4a70bc702f58bd05ec67feedd77abceef87e5e06fea50a1af77569a"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/04-analytics-events.md",
+      "size": 1192,
+      "sha256": "08f7c383c425b26f40e24aab37742eab9268e772ccaa90d67c90f0917621574f"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/05-consent-and-cookies.md",
+      "size": 596,
+      "sha256": "bcf935f662de2d558637d6bfc4b345a660c4a9fa979917c56b875b240597139a"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/06-facebook-cta.md",
+      "size": 471,
+      "sha256": "6db53cf767f9b462a0e2608ab0e061e0740ccd072f88a4cca38e231500da8035"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/07-valuation-form.md",
+      "size": 407,
+      "sha256": "fad234488e0080d06e8c3f2ae254bcf1eef496d874a0d349c1502c7c45ff6eac"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/08-security-headers.md",
+      "size": 763,
+      "sha256": "5eb94387a507e00b485ef013cfd2db076b4fe67456c5b02b38363251b40f0230"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/09-gsc-status.md",
+      "size": 375,
+      "sha256": "3de8eaed0b883888d06e434b92bc4d46f3efb81896f3760334f7a7aef54edfd8"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/10-tests.md",
+      "size": 856,
+      "sha256": "7e980c615359e750202b0ecbd01481387abbcae4f88f3ba4e8bfb9a6e48a7bef"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/11-production-verification.md",
+      "size": 1136,
+      "sha256": "e511436a83445244d6e761dacb306c9c4b20f1fba9f293497a75c32b3e11f9de"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/12-open-blockers.md",
+      "size": 642,
+      "sha256": "32fed8d92a2e598823bcdb9d6956697d19c19efb7c77359b11faf643940ee8b1"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/evidence/production-checks.json",
+      "size": 1311,
+      "sha256": "ca13395c8b75005488f49905e0d44689cdef184b510740af75aca0fb5414be6c"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/about-1440.png",
+      "size": 365707,
+      "sha256": "721b627ca7cf62068657bfe1fe00b98a1a64d254ba2dbae531c1d2233ab94d5d"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/about-390.png",
+      "size": 154646,
+      "sha256": "99e129f4fc0118bcda589b234c5774e5d2bb86429bf909addce6f3dc74ea5b24"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/area-1440.png",
+      "size": 447506,
+      "sha256": "7becdcb7df49294c51138ad916a62b553b20e912c95aac31b2fe7362884517d4"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/area-390.png",
+      "size": 134446,
+      "sha256": "ad39d1c4f0a8c0c2de926f93c97bd07e00be9c54dbf9e242003f938cde9b2179"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/contact-1440.png",
+      "size": 358297,
+      "sha256": "e892b31426942a414623d7be5baf13e383f8831f930086ddc783249fb437fe01"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/contact-390.png",
+      "size": 144739,
+      "sha256": "ddb0fa0ab8023e4ff4fe54a409c6fd0b1bd84c4ca1d95ffc8bf7e39019780612"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/cookie-1440.png",
+      "size": 293230,
+      "sha256": "481ac1d704ef32bd6ebbf5a9a20f9ca57370a35fd407643fd54f36315bac5523"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/cookie-390.png",
+      "size": 152749,
+      "sha256": "cde42e66620209433b665a8a2c8b5cbd062313a2d0c57f70c8df29be66b01a2e"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/home-1440.png",
+      "size": 440888,
+      "sha256": "57573d0c885594be32631179acfe723c17b45d7b92d624c5eee137e4f577f34a"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/home-390.png",
+      "size": 175339,
+      "sha256": "2c7be97afd1a7dfb067029b105a2075684cd0df245b09d003f6c15106decdbfc"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/home-cookie-banner-390.png",
+      "size": 175338,
+      "sha256": "0c00a6545b201d5d227438e226389e591db2d55f454e93d1262b3d6c688d524b"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/home-cookie-denied-390.png",
+      "size": 185724,
+      "sha256": "4777b2a3081650eaa5800fb77e7670fa178f305a2684b11d9fb4ae79168d2490"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/hub-1440.png",
+      "size": 489423,
+      "sha256": "31aabe1d470afb2256f94a43e07ecbae859d54dbe31f3e99dfad6b15c8d8b05a"
+    },
+    {
+      "path": "docs/batch-1-critical-protection-2026-08-05/screenshots/hub-390.png",
+      "size": 156562,
+      "sha256": "e0595557708f0c3e43ee3eb16aa51e83cf9260e5862b31586f9bde096343d1fc"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/00-summary.md",
+      "size": 1333,
+      "sha256": "51190aba76ac37e87b3b65c543631a6be47d4af32b7381c27e65d2958ab43a29"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/01-baseline.md",
+      "size": 425,
+      "sha256": "b8b952a2622f80a254d401df35c1dd3c48783ed927768d87e1aa2e0d5486b311"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/02-search-intent-map.md",
+      "size": 2924,
+      "sha256": "43d9ddafd11ebdd005e3494e7e281897110ee84b0ef50e89eca6db999e7cab0e"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/03-thin-page-analysis.md",
+      "size": 1285,
+      "sha256": "2f16ffb84bb12340e8525ca4a8ce42b202c24bf272d737f2338a97fbb2bc5472"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/04-page-action-matrix.csv",
+      "size": 3095,
+      "sha256": "a8ef263ed2501cd37b1e25c5b570a17d8efdc9c2c5bb2c3e8304f5bbf0880c2c"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/05-content-remediation.md",
+      "size": 743,
+      "sha256": "df6aab60dc04c12af1451f16dfa1495ee9cce70c6b2d63420aec402107cc0e6b"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/06-internal-linking.md",
+      "size": 1027,
+      "sha256": "32595f69b258b6d08fb3fec0f0a766ddd3aedf7784558503796b00700e454f04"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/07-metadata.md",
+      "size": 324,
+      "sha256": "32df21f4c65307af6d4a2e4d83f93da216de8baefb949ed409b5582fd5167521"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/08-structured-data.md",
+      "size": 360,
+      "sha256": "74e0eb5dcd53a4edc2b2c5052713acf9ad3d0101935d2c8694a5238d5b64bd4d"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/09-aeo-faq.md",
+      "size": 490,
+      "sha256": "c246a4dad751dbced6f408cc0927b653b9a3bee66231f2ff77d2f63c6bbc3595"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/10-content-hygiene.md",
+      "size": 397,
+      "sha256": "605d27be213333bdc99f3d82a3519e1e8715e4504335d98412583d00b3f868cf"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/11-images.md",
+      "size": 194,
+      "sha256": "ab0735c33bec03f942e338247f931fa9dd997ba0858ec116e537c1432332c479"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/12-sitemap-indexation.md",
+      "size": 264,
+      "sha256": "e6fbdd09b9ceb9b5fe1dbb63dffe5ca538c0b1740d7ee1cdc0ab06e5452f7f60"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/13-performance-guardrail.md",
+      "size": 252,
+      "sha256": "46d4b905107190adf13f2761bd0da6d49b553708732b97286bfe00e40e71ded5"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/14-tests.md",
+      "size": 324,
+      "sha256": "acec8155c61aed925cce464a608a98a9e97cff1ae392e77679bb61da63f86062"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/15-production-verification.md",
+      "size": 1412,
+      "sha256": "b5a875be37f0ddbc93fd0bde060c562c9b3f2d7e4f26f81ad09a3a99e7059be9"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/16-findings-update.md",
+      "size": 917,
+      "sha256": "5e8cf7ac68e19c50171c1b9d64f72c10eeaac2ed87863fc17acb085ff169822a"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/17-open-blockers.md",
+      "size": 428,
+      "sha256": "7a52f6c3ca1a839ce46d7f0ec042d063b770192bfee2b9b678255a7ee46d072a"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/crawl-data/baseline-crawl-summary.json",
+      "size": 4384,
+      "sha256": "a6b96b03bf3737da4199b5aef1b17b8dea3abcaf8a0cb67d1365476a65199eb0"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/evidence/prod-E0_B8_84_E0_B8_B3_E0_B8_96_E0_B8_B2_E0_B8_A1_E0_B8_97_E0_B8_B5_E0_B9_88_E0_B8_9E_E0_B8_9A_E0_B8_9A_E0_B9_88_E0_B8_AD_E0_B8_A2-headers.txt",
+      "size": 1161,
+      "sha256": "9afbf33d38502bc064fe60cdcaf53c7af6f817d4e842ba4af5072bc5f1027f86"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/evidence/prod-home-headers.txt",
+      "size": 1064,
+      "sha256": "55545dd480b3ccb2f8974a1964f7aacefdbe0a48f2e489b239aceaf6cc1d802f"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/evidence/prod-probe-round1.json",
+      "size": 2796,
+      "sha256": "a1c18ca469bd59e61e2bf5ec2fb947ccc7b23cd598ff69022a3198310bbe1e1b"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/evidence/prod-robots_txt-headers.txt",
+      "size": 1085,
+      "sha256": "0320509aa252a7d2cbd732efa81506c8a2c168c7d15c4de86272cdedbcbc657d"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/evidence/prod-sitemap_index_xml-headers.txt",
+      "size": 1083,
+      "sha256": "04dc5616a8e6f3ce23da30b953ffe4aa6b5085c1be2ede4221108a84115dd7ff"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/evidence/production-checks.json",
+      "size": 5173,
+      "sha256": "d004753c5ebaedbd7a261e147d71ad8d8cdf68d032e0a59e62bf525fc49b1e2c"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/evidence/sakha-context.txt",
+      "size": 4048,
+      "sha256": "5ae9bb41c68ccc2b1b1b25bf85ecac9ef0b4eb29f9fea58089157c9ca3df216a"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-about.png",
+      "size": 371894,
+      "sha256": "cc552cc4e6e316e7c3e8ef72c72892a831ac2ac78a7539cc0fd5360780f38aef"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-amphoe-buayai.png",
+      "size": 451072,
+      "sha256": "f59476084b9a45471221cb534a10f7074d2a18bdcbb65cef985f9ce0a8832e8d"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-amphoe-dankhuntod.png",
+      "size": 451425,
+      "sha256": "cf4c972a3d527b2bce1f63f70b840b37008fba55a33b4a03b8ab47d911c04e5b"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-computer.png",
+      "size": 512467,
+      "sha256": "07807551b745790217206c6f1cdb90f9196991d75891e0298e7d6012e1e8dc8c"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-contact.png",
+      "size": 358249,
+      "sha256": "9cf3e759c871b8c4b9af424dfbfc04f071ceead44fd37c271f54a1c1987303b2"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-faq.png",
+      "size": 342833,
+      "sha256": "ee6fbda53023f74ab89cc002c02c6cf745be2a0451b3a9971c6b7d8a3a767506"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-home.png",
+      "size": 441608,
+      "sha256": "9cd7d80554c91a678b82dc723ab3c3f534f77ec68c25ca2f3b3d76a557154a34"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-iphone.png",
+      "size": 513627,
+      "sha256": "834e0d89edcd1640678f2cc81715738048d78f6ead4ff3f0b8d9e2ee92f61074"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-korat-hub.png",
+      "size": 453169,
+      "sha256": "bf775884b79201ca0982431ce88b162ea70f8e1d284475fc96099c8759074acc"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-notebook.png",
+      "size": 503683,
+      "sha256": "c5be9b9af4405a70d680d8d027ceeb60e300f1029006e1e0d2f10872e0cfc745"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/desktop-service-hub.png",
+      "size": 494302,
+      "sha256": "5a420ac91855ffda8043f77175a7aa3dd9c58e066648a35bba23f884e323d846"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/mobile-computer.png",
+      "size": 172236,
+      "sha256": "246b15bece255a37114c65f93858d88ef722f53dd0dc59157d1e0076bd92943f"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/mobile-cookie-preference.png",
+      "size": 175346,
+      "sha256": "8f63aaaf001f9b29716ad3c71992fb84aff51770e27c7ea978da4241c4b88856"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/mobile-cta.png",
+      "size": 385575,
+      "sha256": "ed291c51b540e36c41dd4e19ad499b0800b34f855b3dad705d6ea43ed1dc63eb"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/mobile-faq.png",
+      "size": 159145,
+      "sha256": "2ea3362452f0986b068b64b6b51511c052e7c33e5d48765d05f749a150e4bf22"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/mobile-home.png",
+      "size": 175346,
+      "sha256": "8f63aaaf001f9b29716ad3c71992fb84aff51770e27c7ea978da4241c4b88856"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/mobile-iphone.png",
+      "size": 171311,
+      "sha256": "dc8c5c4604b1a70f709dc3ad06c97733f2967a835fea0327cb9265c344eec7ea"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/mobile-korat-hub.png",
+      "size": 140685,
+      "sha256": "664e9beb11bf65e3ae808ba8c3c1677207c79dce0de65561045dc0a465a2ef39"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/mobile-menu.png",
+      "size": 168599,
+      "sha256": "d79719c189e0ef851aba9e79a367bff64c834941b6d1818fa2c984c7ec3cba9b"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/mobile-notebook.png",
+      "size": 169001,
+      "sha256": "07b2004f89f57e047333decf10018fad8fbd7052b332a865da674bc8209cdafe"
+    },
+    {
+      "path": "docs/batch-2-high-impact-seo-2026-08-05/screenshots/mobile-service-hub.png",
+      "size": 156446,
+      "sha256": "b4777a6d8fa6aa31e27aa85f8ef2e764c5307b5da6af1d9945a7f9f19d2fe1a5"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/00-summary.md",
+      "size": 876,
+      "sha256": "ea89a03de1a14733b0f55a5ddc49a0df53357c7f5e45a34c9f9e9a34791d69c7"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/01-repository-baseline.md",
+      "size": 380,
+      "sha256": "84d37c81ea56a21b781ad4ef857bf28bd2a237a4d5352f025fd064cd59ea64a5"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/02-commercial-intent-inventory.md",
+      "size": 1063,
+      "sha256": "98dc25bfd37063da0ff6cdc1ca5a995ddeaa3b24d36c9d06ca43642d0fb66d1f"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/03-content-gap-matrix.md",
+      "size": 729,
+      "sha256": "2e4a9517da5071dd27474bca4b07be74234979290a65713212e7883f380fb1c6"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/04-primary-page-selection.md",
+      "size": 917,
+      "sha256": "8ca7bebfb2e70ec1d8aa252763c05911af3c8d41a178e594ac9155dd2f2fcd1a"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/05-page-action-matrix.csv",
+      "size": 2371,
+      "sha256": "78ac18f4da723d364c9ce3815d60ca0dd2a8a387a36aa66169a0e134147e85f1"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/06-commercial-page-remediation.md",
+      "size": 318,
+      "sha256": "0931d8d4bdefc9505294209958f34dd2f9ee0a21c10e2987ea5538a6b6974435"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/07-content-clusters.md",
+      "size": 677,
+      "sha256": "29060b9842f1d67935b9b49dd10de16d9f943534ec5449ad08cb098e20b053aa"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/08-new-page-decisions.md",
+      "size": 748,
+      "sha256": "e037f6d4093261794f4ec2ae4da12b4c26303fc603df3043a8cbd9b2f05a6678"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/09-first-party-evidence.md",
+      "size": 392,
+      "sha256": "c604c5abeada113256ded486b5a90d440167980b3bc458fffb3e3b391da1e2aa"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/10-pricing-content-policy.md",
+      "size": 239,
+      "sha256": "8d117f8b5a22e5d533a1e3094045d185462c439812372167bdc5cb0556837347"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/11-author-and-freshness.md",
+      "size": 271,
+      "sha256": "977c70174c772d9ec2c7c142b4cb2b2f3de3b39215fee738ffddec535e016fed"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/12-aeo-geo.md",
+      "size": 260,
+      "sha256": "2076b71fad4bb0f78402c580a8725ba63b51ec12dbc49c27ed4601b9ec4dfd73"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/13-internal-linking.md",
+      "size": 236,
+      "sha256": "86d5cd4c289f31cc35511c3c2fe91ef571fbd5a051dbf1787e1ec3c0b6224f51"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/14-content-hygiene.md",
+      "size": 129,
+      "sha256": "dc1adcf6548abe89c209efa82fe8eb9916013146bf558c758fe5fd281e806d9e"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/15-structured-data.md",
+      "size": 156,
+      "sha256": "81fdc75940ff22f530971fe685d1743d48e66c125bb4e99d6d8637d6b8a1b818"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/16-conversion-path.md",
+      "size": 137,
+      "sha256": "d2f4a3898b624bbaef34053f01c4de0db3673d5acaa9b819b627f5348ea4edc6"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/17-performance-guardrails.md",
+      "size": 102,
+      "sha256": "9546aa0c3b5b33487091be77362ce7587ccb8fcd597abb99cbd8ad1612edfe6e"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/18-tests.md",
+      "size": 137,
+      "sha256": "a0f16b6257bcfe9cb765966d73024c7899857c019d63f807bb7b1177d3bde144"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/19-production-verification.md",
+      "size": 765,
+      "sha256": "e75822fad3f5bd27c7b05cd22fed5c23bc546a87c2d5c3ac94e10b35c8116fe2"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/20-findings-update.md",
+      "size": 389,
+      "sha256": "9a36113f3376ceb4fb533ab78d8eacb509cbc598ec83f390c44369190fa1ab01"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/21-open-blockers.md",
+      "size": 189,
+      "sha256": "9711cd67da0ae9fc70c973f5c71d9e8367b67893b423c8d7be59daf5d4d24603"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/evidence/production-checks.json",
+      "size": 4318,
+      "sha256": "066f99b35915a8fbfd25bb63dc5eaa575b13f9101f692dacaaa231fc0a4e75fc"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-about.png",
+      "size": 371894,
+      "sha256": "cc552cc4e6e316e7c3e8ef72c72892a831ac2ac78a7539cc0fd5360780f38aef"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-article-battery.png",
+      "size": 466659,
+      "sha256": "f6923b5b1a9726379386ae37b7583502d754a7becb94ae30f322a68c9407001f"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-article-cycle.png",
+      "size": 452738,
+      "sha256": "1574d6170cae64c1393e692644b8b77d48401733d263fb4cdce61c2345eb938c"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-article-quote.png",
+      "size": 445699,
+      "sha256": "28162074e42e2d3c7db213ddbde9f2fd91f0763c26d9d76f24d02be113eb077f"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-camera.png",
+      "size": 513023,
+      "sha256": "f0a75851b033bddea03abb5df1e29343bd66a587d7a839bf45c45eb94819414a"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-computer.png",
+      "size": 514555,
+      "sha256": "fe8a98b035ca986124fc69f795ffe4d13894291539119b53f31b2c2945da932e"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-contact.png",
+      "size": 358249,
+      "sha256": "9cf3e759c871b8c4b9af424dfbfc04f071ceead44fd37c271f54a1c1987303b2"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-faq.png",
+      "size": 342833,
+      "sha256": "ee6fbda53023f74ab89cc002c02c6cf745be2a0451b3a9971c6b7d8a3a767506"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-home.png",
+      "size": 441711,
+      "sha256": "58d716de77bc337b5aa393c3627fb963a4c427aa94593d586af9340dcf277bb7"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-iphone.png",
+      "size": 514407,
+      "sha256": "70566b5402d275455406c5d63b19eb837aee1fb10110eb7738970f8b4c7c5868"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-korat-hub.png",
+      "size": 453169,
+      "sha256": "bf775884b79201ca0982431ce88b162ea70f8e1d284475fc96099c8759074acc"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-macbook.png",
+      "size": 508408,
+      "sha256": "eb55457f7b5dcdbb5a49b5cb82553f0f095cff17db3d7d8ddb5a8400c1ff3856"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-notebook.png",
+      "size": 503190,
+      "sha256": "e947fe84a921e1ec75913db9a8aee1c6705762a2b4cfdc655fbf03e364feb274"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/desktop-service-hub.png",
+      "size": 495680,
+      "sha256": "1ce4149f98479d2a114b7f0f6c508a1f0eddbbfeae94b622bfdb3cfaa0abb081"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-article-battery.png",
+      "size": 155699,
+      "sha256": "a6c1059ea6da25966f31163539c5fbef9f4ab5c846535c2cb4ca539b84860a15"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-article-quote.png",
+      "size": 155608,
+      "sha256": "bc0a61e7bccd3ca737fac2c375b5a68c233cd8fdf23a589ac496037f64042670"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-article-shutter.png",
+      "size": 160263,
+      "sha256": "51c8db912d3d13325fcfb4b8c8e0768d73233fde01d06cdedc15c6181abd20b7"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-computer.png",
+      "size": 172345,
+      "sha256": "6c5d7ede21978f21f41d60361bd66b41e9c1f2333c8995136317e388fb3cfc67"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-cookie.png",
+      "size": 175346,
+      "sha256": "8f63aaaf001f9b29716ad3c71992fb84aff51770e27c7ea978da4241c4b88856"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-cta-related.png",
+      "size": 132378,
+      "sha256": "15f2b631f274d7551e733370831bc7f8c07ab08a1b13fbf8489314d45c8e7dea"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-faq.png",
+      "size": 159145,
+      "sha256": "2ea3362452f0986b068b64b6b51511c052e7c33e5d48765d05f749a150e4bf22"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-home.png",
+      "size": 175347,
+      "sha256": "9ec0f2cd4cc456cfa0380f9032a43d533dd7ebd8659fba4530f5a670ca91e9a0"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-iphone.png",
+      "size": 170836,
+      "sha256": "2b19e56a158d4a0a657966f6e8b6887da85d870eeaef38318040b6228eb0a188"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-macbook.png",
+      "size": 170496,
+      "sha256": "d0df11d1106cd20d82ae04cece718e2f0c5095fc6bf0a42814f20c3163ded974"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-menu.png",
+      "size": 168694,
+      "sha256": "a5de2e458995b072824a4686b194618e4cdbd7058fc386ded22fb5bcdc1f2d69"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-notebook.png",
+      "size": 169253,
+      "sha256": "18e2b0fff377bcce9dee051a0c3b9fd2f947f3fc20a0e6a1e641c8e19b712d05"
+    },
+    {
+      "path": "docs/batch-3-content-authority-2026-08-05/screenshots/mobile-service-hub.png",
+      "size": 156430,
+      "sha256": "8aa3a676f2f83799ce7f7c96319e1248397006aec156630eb72887290a106fa2"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/00-summary.md",
+      "size": 789,
+      "sha256": "ebfc079ba0ee650e43e01f56b32cd0060c1c7603384908b613dd88357d165bf6"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/01-repository-baseline.md",
+      "size": 285,
+      "sha256": "82871f86dafa6b0ef5e098bd2001318949e3e1c53669329951b4bc3aed2c5fd1"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/02-first-party-evidence-inventory.md",
+      "size": 621,
+      "sha256": "6b183208973a9ab8dbf33b436ddef587f6387030bf83efd71df13c51128463a6"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/03-evidence-governance.md",
+      "size": 361,
+      "sha256": "1c7127783f77d8e6fbadd7d8db2f79aed974dd754a808d186d4f557deadc7553"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/04-evidence-needed.md",
+      "size": 2032,
+      "sha256": "5d3907584234cec92cf545f97060d7bc49bab1f75d4dc57683ef0ee15d0200a5"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/05-homepage-trust.md",
+      "size": 269,
+      "sha256": "5b8ed1940c036e0f606e972f45a83d313a8b4c290433125228077df80dc90651"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/06-about-contact.md",
+      "size": 192,
+      "sha256": "1631051bd581fe3b7b10f17f4f898fca29d754c92ea5ffcead9d4eb30daa3867"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/07-valuation-experience.md",
+      "size": 185,
+      "sha256": "e5cf117cc677ee4efee1855e1209153ade2486dce53deea90984fc2eeb1b2a85"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/08-conversion-journeys.md",
+      "size": 424,
+      "sha256": "2e581640926f2ba85ca7f52120fb920e4598a5855450749d924d2946e3a1cec7"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/09-accessibility.md",
+      "size": 377,
+      "sha256": "5ad7618f2c13139912411c87a5554938cf9d3e92f6d7fe500fa2dd00beced7c7"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/10-privacy-and-safety-copy.md",
+      "size": 163,
+      "sha256": "f2fdcb30f7aa02d7bfa90c6c9c32af955c7cb308d3a297b64ddb4a707a191ac1"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/11-schema-and-entity.md",
+      "size": 162,
+      "sha256": "6ef77ebce9a0452152bb7147e0b98a0ec84f6aae59050c2a826a0e035a139034"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/12-analytics-readiness.md",
+      "size": 257,
+      "sha256": "c6facb21aaaf660bafa2dbdbdb16ae9fddaa09e8c151c13fcecd003b57e637e1"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/13-performance-guardrails.md",
+      "size": 164,
+      "sha256": "19d9c387e5842d5823a24eec45e39a6b68845f09425d5656dc5a6c844cd83636"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/14-tests.md",
+      "size": 77,
+      "sha256": "175a386ff8c90f0e2d85958b1bcb4fdc64a9f7b8ecb0d12677de1f769a05afb9"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/15-page-action-matrix.csv",
+      "size": 567,
+      "sha256": "6adaad099edc7084784db00943dfaeb30bd7fbd6eb3f19d16d049506acad743a"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/16-production-verification.md",
+      "size": 694,
+      "sha256": "1a3468aa9d7dd3bea2b0a336a4065b6ab60daedd9d4daa7a4e635b41db4540f0"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/17-findings-update.md",
+      "size": 264,
+      "sha256": "2e6fbe4c1cf6d7dc9188280fd35768ef322fffcff5ca7e1dd1bed8307964592c"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/18-open-blockers.md",
+      "size": 188,
+      "sha256": "f64c3fffbed4c8841deec99148b8330b81c0dd48027d9151eb42a4eca80715f0"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/asset-inventory/assets.csv",
+      "size": 351,
+      "sha256": "a594aacf9ac45a922b17437cec16ef20dad150a5a4909462d6c0d1282a8a8cd0"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/evidence/production-checks.json",
+      "size": 2088,
+      "sha256": "2e425adbca662c927fcec8c52362139fdb642ab3a27b432e14865adf8f823bd4"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/evidence-needed.md",
+      "size": 2032,
+      "sha256": "5d3907584234cec92cf545f97060d7bc49bab1f75d4dc57683ef0ee15d0200a5"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-about.png",
+      "size": 413950,
+      "sha256": "8bc4a2cd6b3ad0ff86d36362579ffe37002d16809f48a1ca3be3e8709c617071"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-camera.png",
+      "size": 518861,
+      "sha256": "c99916261eb0864637abbe33946c8d6a4bcdb5b10182179313a78aab229aa28a"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-computer.png",
+      "size": 520166,
+      "sha256": "6a04952eebc27b2e1a3b029d11ddebe3b0b2fa519a6cd21c06f53c7a0a42d6e8"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-contact.png",
+      "size": 351517,
+      "sha256": "b990602ce22b635522f6659b2da267f3e5f29b6c915ea4a3ea35f5f0a462b4cb"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-faq.png",
+      "size": 342833,
+      "sha256": "ee6fbda53023f74ab89cc002c02c6cf745be2a0451b3a9971c6b7d8a3a767506"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-home-trust.png",
+      "size": 196405,
+      "sha256": "306b9843f6a25efb128b11348edc6a9ca723c4702aa7e3ada0aaaf58a439ff0e"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-home.png",
+      "size": 444324,
+      "sha256": "ad15b52c45464e690fbd6576af288dc7b900dfe0b1833483420f5ad2e6817d57"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-iphone.png",
+      "size": 519660,
+      "sha256": "09392ffcbfab0568446a0bd17956853dbae9a14567448c84a84908d1bb6cd380"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-korat-hub.png",
+      "size": 453169,
+      "sha256": "bf775884b79201ca0982431ce88b162ea70f8e1d284475fc96099c8759074acc"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-macbook.png",
+      "size": 514024,
+      "sha256": "304efff5f4811c929bfa0b0a928d2f7861f45e9f7ce07a14e3d4384d87fb053b"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-notebook.png",
+      "size": 508733,
+      "sha256": "63b7337427af9cf8924ca5c9936b84542851dd271428a429b092ce0a8223dce7"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/desktop-service-hub.png",
+      "size": 501225,
+      "sha256": "24a8b868da811d942cc0ab6cd5dd5b894f4ba1b071a9b457a64647fadcd87962"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-about.png",
+      "size": 159746,
+      "sha256": "fe13c274452e963dffe1240fc725df391e0684ab986d31804c04c5f72028971e"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-computer.png",
+      "size": 174877,
+      "sha256": "f46f101f3d075e72561ea099ad2fd05b80542f8c06b64fc648be804780697347"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-contact.png",
+      "size": 142119,
+      "sha256": "a60fd277aeb8aaada2e6856f64c02f745ede106925e821a405c5fb521ab4e143"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-cookie.png",
+      "size": 183133,
+      "sha256": "fdc3f16d7ff9d6d5193a83d2408c4edc801347ce1f0ea4a1675125b78e465266"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-faq.png",
+      "size": 159145,
+      "sha256": "2ea3362452f0986b068b64b6b51511c052e7c33e5d48765d05f749a150e4bf22"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-home.png",
+      "size": 183139,
+      "sha256": "37e70f8ef5179d132225b67a7184d50336fc5b08dd5b40fb83ac56d4a37dbf11"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-iphone.png",
+      "size": 173201,
+      "sha256": "c70da22b2dbaf674b6a1afe13a49815648c06502dbde5908350ba80b9c9eb3ef"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-korat-hub.png",
+      "size": 140685,
+      "sha256": "664e9beb11bf65e3ae808ba8c3c1677207c79dce0de65561045dc0a465a2ef39"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-macbook.png",
+      "size": 173038,
+      "sha256": "7f37532f42b0696604dd71c3eb822490b221a794e8c8c303e5933622e475b7b1"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-notebook.png",
+      "size": 171790,
+      "sha256": "474c7a5da9b734d761fbdc3a35191993b36e43a41066fa3808873a6861d2a057"
+    },
+    {
+      "path": "docs/batch-4-trust-evidence-2026-08-05/screenshots/mobile-valuation-checklist.png",
+      "size": 142419,
+      "sha256": "7fc0f96ea3dc71b4d9030068dde7b88277db988d79ee298ae46e3c3abb899cea"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/00-summary.md",
+      "size": 2194,
+      "sha256": "e593b6c7ff1ff9be13808a97868cdda8931fa1d24b2e8100ea452d9c82e04d2c"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/01-repository-baseline.md",
+      "size": 2007,
+      "sha256": "81656407dd2cda0115f6421fcf9d8a1e13e9a2f63f4ec7e36c476044c275080d"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/02-environment-status.md",
+      "size": 1415,
+      "sha256": "59b681c977f7603d8257ca61731c6bd105d3326597b363c24d79b34ecd7499ec"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/03-ga4-activation.md",
+      "size": 1073,
+      "sha256": "ea18c0d17bf3f53013154151679562c6030b95d12f8e07af2786234152b77271"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/04-consent-validation.md",
+      "size": 1381,
+      "sha256": "4b3ec5ab26e9c9b6d4ac5e94a139a88ff38a410df51ab64e5295b496349015a0"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/05-measurement-plan.md",
+      "size": 2078,
+      "sha256": "f8541ad1517372a9e58eb4e388513e55fa37f46f8cd602dc71f4ee0a9ca66fbb"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/06-event-taxonomy.md",
+      "size": 1775,
+      "sha256": "9ba827d11ccde3331d348303defbff5a3dc359b4ba000552f450a95888511636"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/07-conversion-configuration.md",
+      "size": 858,
+      "sha256": "33b795e6c3b3e61c0ee41d014aeb36f63db098f8e318d2ba55d36fee96a1e144"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/08-attribution.md",
+      "size": 897,
+      "sha256": "38cb9b87280038457930d42ffc5f440ad1a12f28fc7b2dccf0ba8c1849d4ab15"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/09-lead-capture-audit.md",
+      "size": 1193,
+      "sha256": "f1f58f50f95e5c728437c003c5dddbc2824cdf4671245745c54607f466f4656c"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/10-lead-architecture.md",
+      "size": 1533,
+      "sha256": "443dd6f5f86356848673c5a90afb2dea7981b92da91598299815fca31aaf8375"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/11-file-upload-security.md",
+      "size": 957,
+      "sha256": "b8202d77542dc1336c80b2d02b040063232c3b2d5df2b61a5a6ff1d19394e236"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/12-gsc-activation.md",
+      "size": 977,
+      "sha256": "972d38a2230fceca310e30e698e9ad4b413a17da6bb22d54e9610ea3624b227e"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/13-gsc-import-pipeline.md",
+      "size": 963,
+      "sha256": "d26be10edc6cdb906b57439a361b4cead19e3ae453abec5d729bb3b8f26f8663"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/14-deployment-timeline.md",
+      "size": 1318,
+      "sha256": "0baa07c98b585c22d81af30d468ab1c1086fb75a08badabaa1dfbcf3b1ade5c7"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/15-search-opportunity-scoring.md",
+      "size": 1102,
+      "sha256": "9b93564e6d5d8b4b18f2cb66b5262ecd8d7f983a65f306e4675e518e251aea30"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/16-feedback-loop.md",
+      "size": 914,
+      "sha256": "6df678c9d41572bd44e99b7d738f7299c3771fd2ee05b1156c918166ff57d8b4"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/17-dashboard-data.md",
+      "size": 959,
+      "sha256": "fbb5e1ae7e52505aa5fb388889aa70925103de86ba8914cae16afb697f1d6f0a"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/18-analytics-qa.md",
+      "size": 975,
+      "sha256": "abeb8f3d49405020de4a42862ec23c5a162cc7aaf802745c44eb39ffc6599d44"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/19-security-privacy.md",
+      "size": 667,
+      "sha256": "0ff4064d5494602c21da6fe14ea00d8a3c44af51572e02ca67d45b8fae4dc9c5"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/20-performance-guardrails.md",
+      "size": 515,
+      "sha256": "22f7f808e2c5558b42d3b97d64ccb27339619fbb2234bd90ef75521d0c1a8415"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/21-tests.md",
+      "size": 782,
+      "sha256": "4936511fe1a045f9917a2e0e6be76b4b73ece3aaeaeaaaac9846b0a864784e55"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/22-production-verification.md",
+      "size": 1163,
+      "sha256": "436f4118bf6724864f775501ea2ca62bae7c6aca6c596c763b48fa49e5fa4915"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/23-findings-update.md",
+      "size": 1261,
+      "sha256": "0ca255b4bb145525541e659e93cc6c50dd09fffecf4a79fdbb5bc3093ea6eeba"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/24-open-blockers.md",
+      "size": 916,
+      "sha256": "46d338ad3419cd4975ebf822f6474f4e5ac9f94ac6e07665d5c41b4be829d06a"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data/gsc-data-quality-report.md",
+      "size": 120,
+      "sha256": "dd70eea04ac86e383a32df88c402d5da70465829efb4f9ce48355b60cd8f053a"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data/gsc-import-manifest.json",
+      "size": 211,
+      "sha256": "c41dc0d78f4ff9e4e20ed9e2b60e421de691291f89cc25ebd4d29a5d504be6b5"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data-templates/conversion-map.csv",
+      "size": 549,
+      "sha256": "44c1b17799a04a35422c115ea6b28f8d5a484963a31346062dd158ead96546a5"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data-templates/deployment-timeline.csv",
+      "size": 986,
+      "sha256": "8e7a3bb02b968f9bebd30efa7434f8f37a7c1e1bae66783e67875f27b2a4c37b"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data-templates/gsc-import-manifest.json",
+      "size": 178,
+      "sha256": "2877da537e30d4e707b49d0e31e7a4c4852ca0afc92956b27f29d1af3dfd74e7"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data-templates/gsc-page-opportunities.csv",
+      "size": 239,
+      "sha256": "903111808fff5d3151e8f727deb5711a4342fe37c3ec964b14fb428dd1637ed2"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data-templates/gsc-query-opportunities.csv",
+      "size": 239,
+      "sha256": "903111808fff5d3151e8f727deb5711a4342fe37c3ec964b14fb428dd1637ed2"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data-templates/measurement-events.csv",
+      "size": 236,
+      "sha256": "ee6b231c790c91f20277a24f0386983a12f1719bf8ece96109399acb28ef8991"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data-templates/open-measurement-blockers.csv",
+      "size": 594,
+      "sha256": "517451729f7b448a485319f2b37fe09dc38cefd4a2e245be9fc026c41ec0b7f9"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data-templates/page-intent-map.csv",
+      "size": 173,
+      "sha256": "6d2278fda1aa2e3fa32e54e80fe257da2b2dda3ccc03a1ecb62f01413404bd77"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/data-templates/search-conversion-priorities.csv",
+      "size": 236,
+      "sha256": "d00a54a4f9c436bd1e7f5ea722bac7856f8146db3650af41bc6e1e0e09f33e72"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/evidence/production-checks.json",
+      "size": 2552,
+      "sha256": "658d94f3eb1b76053c7735d2dcc7d9f0c001a6a429cccd346b1d57a8d4b99356"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/README.md",
+      "size": 381,
+      "sha256": "fe3192450e72e357f17c623152dde5d8e3b43529d25e56ae1111add66f7afd0b"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/desktop-contact.png",
+      "size": 359939,
+      "sha256": "676202fd429c2256f949a283559a25eab0f7f0193014262cf981d6fe85873688"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/desktop-cookie-preferences.png",
+      "size": 326550,
+      "sha256": "b4167cebf75ada3a9b3573827e3f89390b0970447a89a568697880a384039fa8"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/desktop-home-after-accept.png",
+      "size": 434342,
+      "sha256": "676e74f0437ace97b57731abdf239f53c9fdec3509478936551dae0d80bf92f2"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/desktop-home-before-consent.png",
+      "size": 444314,
+      "sha256": "37c3c2b13fcf0bed44055f74393d91a8c5fcb772a72e920f6e73c8d5eac4d715"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/desktop-valuation-checklist.png",
+      "size": 81909,
+      "sha256": "6be3aabe141f2c8f5575cc890d55088ce1fb30ca9d591b9eba2dd4d6612705e5"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/mobile-contact.png",
+      "size": 675287,
+      "sha256": "eb7db65d8d948a523916efd4f3557f39c4a757c15cc1dfa32adba515eddd20eb"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/mobile-cookie-preferences.png",
+      "size": 728677,
+      "sha256": "c2fbc52d419af25cfeaedcaf19e01c44bf3a915f8888d3c2b3e4950e8b84d790"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/mobile-home-after-consent.png",
+      "size": 885412,
+      "sha256": "c553158100bca84245f23bf0723e3c581d8817f26b7b89b1c953f281ff2f4e97"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/mobile-home-before-consent.png",
+      "size": 788937,
+      "sha256": "54ed318877b3f5faed0a3b418bc9158b488cbd08fcc64b7fdf5e5f46eb4f6fc4"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/mobile-sticky-cta.png",
+      "size": 885412,
+      "sha256": "c553158100bca84245f23bf0723e3c581d8817f26b7b89b1c953f281ff2f4e97"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/screenshots/mobile-valuation-checklist.png",
+      "size": 209051,
+      "sha256": "3c5f29a036b065048a4825aa5eb9f3c1c171177a021f6a7b3cd57569cd080549"
+    },
+    {
+      "path": "docs/batch-5-measurement-lead-feedback-2026-08-05/test-fixtures/ga-id-cases.json",
+      "size": 198,
+      "sha256": "66a7b68f3a71f8e6b28635d19e136a63ba0d66f47d873c935750b289da51ea4e"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/00-executive-summary.md",
+      "size": 1297,
+      "sha256": "1d37ec2f1e52155f545d69f3fcfd233ba086c50e5b10511b5343d96b4e0c4b43"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/01-content-inventory.csv",
+      "size": 225951,
+      "sha256": "74143d70c516f1a903ce74de82f444a84cfb50fdbe055f65f06fcd5741e39665"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/02-search-intent-map.csv",
+      "size": 67466,
+      "sha256": "e82086c69129a5366b9c86c503d80f3e30e6f88fcbb626f51685ba0450b2a356"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/03-content-quality-audit.csv",
+      "size": 33104,
+      "sha256": "758bb9f5e6d7451c7753abd053699d2ea52089d6d8d400fe0d4c3f1a64312c35"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/04-keyword-coverage.md",
+      "size": 1403,
+      "sha256": "e9a236d6c5863150dbd207ac7f11afacfc4f4e8ae0e1cf165f67bd8b6cdf8455"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/05-product-content-audit.md",
+      "size": 1208,
+      "sha256": "be5553807fe0ad7484f85012607d54c1a9b7748b0f0f09b71d0e55e0a34c62ea"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/06-b2b-content-audit.md",
+      "size": 698,
+      "sha256": "f287afaa10da30bd7016ed85ec2dc0d3f3e76f5042db6160ff091df64fc73288"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/07-location-content-audit.md",
+      "size": 1004,
+      "sha256": "f5ec4ac700b2905b26edba1f6fb3fa82637b85c2299408afde14a6ef95cc88af"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/08-aeo-readiness.csv",
+      "size": 55818,
+      "sha256": "7eb887ce408a06ecb13d4dddc7bb1853c66dec63b64781570d63614c98272f97"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/09-geo-entity-trust-audit.md",
+      "size": 1010,
+      "sha256": "661374945c1360c76a5c01431649c8bff47dff80fe6abd0cde94309eee8af537"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/10-source-image-inventory.csv",
+      "size": 264444,
+      "sha256": "44da42549d728d8a5f79cbedf07b50f99f3f78fefcc8f070114f066c97f35a93"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/11-image-safety-audit.csv",
+      "size": 165555,
+      "sha256": "c98d8e3fbc56d4e8f167635a1f304411a559cc5ee3c26b2b992f1e49732ce614"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/12-cross-site-image-map.csv",
+      "size": 10858,
+      "sha256": "e57a5dd44dc44f248796e19e9b7f8fdf19ccaa2b90bcea94eaba2e89b345869d"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/13-image-migration-plan.md",
+      "size": 1476,
+      "sha256": "9b1001a1fc7dcb73f3bf1763403ace7eade276097aac4440e5263bda21e8c9fe"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/14-content-improvement-roadmap.md",
+      "size": 729,
+      "sha256": "536e77cc9c8eb5dbda0c1b39ecb03068f6fa06e422b55c40e1ad0be7a8e95368"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/15-implementation-log.md",
+      "size": 642,
+      "sha256": "4608e8838249726421fe6d471d2625007d4637e8321e1ea1b41193e847de7566"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/16-qa-report.md",
+      "size": 2583,
+      "sha256": "7ff7efceb9db04a513096ae1d4ffc9f443a2e964ca908f5435d9d46dd37a94d9"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/17-decision-register.md",
+      "size": 629,
+      "sha256": "f2da6b4ed912d41b2c4d9144d88ff6e644cc11c46442ce802d197c0ec6ab11c2"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/00-executive-summary.md",
+      "size": 776,
+      "sha256": "aa4a40607ab6e635a87874ac95a577654832ff4ff753ea71aa13f263fc0bed0f"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/01-aeo-gap-triage.csv",
+      "size": 14300,
+      "sha256": "3e608581599654090ef954b9606dde905a27d7cdee1e6e376c43ef0132f5f8c6"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/02-image-provenance-manifest.csv",
+      "size": 4942,
+      "sha256": "0216d721970d95ecbb000ee86c66d32c070d680ebc9ee3b91781a1bc0287f773"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/03-pilot-image-shortlist.csv",
+      "size": 2664,
+      "sha256": "dfc7c0e8dbd6d78ee1138d9b0096418e22f0d9f1c9569c3327fe10a309cd8c9b"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/04-asset-migration-map.csv",
+      "size": 2405,
+      "sha256": "c6693eaf3f8f892858f184206a58b120d8d74477babe5751d1f9be78cf7961c7"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/05-aeo-pilot-log.md",
+      "size": 820,
+      "sha256": "24b342e3c4fe20fc0b09f108dc680280f6a0f0efc78f92a4b5558e98178b1b3a"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/06-image-implementation-log.md",
+      "size": 904,
+      "sha256": "12a87e47ae90c91d051323f374254f3b89302ebf7d1447804aa17e1d1c88d1a7"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/07-browser-visual-review.md",
+      "size": 607,
+      "sha256": "6eab5dd18fef42d99edc60d2b3bd5b400bf8614aaaf500cc3c77405f0dd58c48"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/08-qa-report.md",
+      "size": 537,
+      "sha256": "046fb7cd0d65e86efe288d9db871794db86b18ce0ae4d3b3a6a2059de54ff679"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/09-decision-register.md",
+      "size": 471,
+      "sha256": "1eadae12dc66d154a6abcdd0f5cd548e86fab2aa86ce3f1882078c49e962bdf4"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/screenshots/bulk-1440.png",
+      "size": 105256,
+      "sha256": "926074174af5c68dae460c2402523de5f1fb17ea333c75f076a8d67a95e1cea6"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/screenshots/bulk-360.png",
+      "size": 43976,
+      "sha256": "1aaa880f1480cba5f337e221f20f806644c9f19118f36cda3838b58b87c21679"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/screenshots/bulk-390.png",
+      "size": 48173,
+      "sha256": "4ee905e1544f82600d5fe02d5aa5c9071c300e84daeedddeb01d5601f753ea88"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/screenshots/bulk-768.png",
+      "size": 85196,
+      "sha256": "3e6eca0db56925dacce68e0ddbf63cd69f320106eda88083216c26c1978b6dfe"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/screenshots/evaluation-1440.png",
+      "size": 99110,
+      "sha256": "1d6871a25b18e9f420b26ac213752ef49f378c5953fe692d47332fde3bc0bca5"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/screenshots/evaluation-360.png",
+      "size": 47788,
+      "sha256": "57b68c03f82b004d1077dde608263add1e752025ba1a7636dd8cc3b9a880f326"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/screenshots/evaluation-390.png",
+      "size": 50798,
+      "sha256": "0f10e66e7c5299cf5215badf50bb7ae1586cb1531447c04d7b7bfcc82db7e861"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-1/screenshots/evaluation-768.png",
+      "size": 73675,
+      "sha256": "a6a311aeeedfbc0481b01dfd73a124b54f21d78860bcd95f8fa4c650ef389fa1"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/00-executive-summary.md",
+      "size": 851,
+      "sha256": "bd1794532420e7c88977f9be4bd8a600034b2dffeff2c46b66e253c80c953d8d"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/01-release-identity.md",
+      "size": 690,
+      "sha256": "e5dc4f14900c8b335ced63fb55135d65fcedb0be7a0726d2c1968320f77a5399"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/02-responsive-image-regression.csv",
+      "size": 1202,
+      "sha256": "cf9de2c00746dfb8bde512417ea1522113df44a13998401d6152ef5abd620655"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/03-production-route-validation.csv",
+      "size": 14912,
+      "sha256": "7fb5851ee8e6c95e57cdae4e36ca18a5f84163cc3c5a3a9a9694ef6e11b72def"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/04-production-image-validation.csv",
+      "size": 4191,
+      "sha256": "23904f8451576ee3b064670c390f3e46f46b4325098e321a0b259f0c0976d2b2"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/05-pilot-page-validation.md",
+      "size": 1178,
+      "sha256": "31112b949cf9f7581a15ad08dda9d6e4742354c1f8e7bd4e107672d3d21e8384"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/06-aeo-production-validation.md",
+      "size": 1116,
+      "sha256": "fc654cf72a7b97d2c6beaa4112ba16d02b85116b63979e47c534240176c68311"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/07-browser-visual-review.md",
+      "size": 852,
+      "sha256": "0efcbadbaad3a2fd0845f99155ad64e1726660d547e548874f0b4aea9cfe6bb6"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/08-qa-report.md",
+      "size": 676,
+      "sha256": "dde5f43cedd13f5860811fb3a7a97d63f880c7049413403bfdb2a0764673d279"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/09-rollback-readiness.md",
+      "size": 519,
+      "sha256": "0642bd8bf03dac7142f34fed1c003e4075e19968dd80af591a27349d265fe93b"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/10-release-and-production-validation.md",
+      "size": 1502,
+      "sha256": "65d364a79c96ac0d34afe7bf4d29c8ffdf537d69533a833bf31c5eb56acbd926"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2/11-batch-2-2-1-release-and-production-validation.md",
+      "size": 6097,
+      "sha256": "7b68ec9de2aee296abfeabe68ed21262e5188691f6a3d9c1d067025abbcea222"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/00-executive-summary.md",
+      "size": 829,
+      "sha256": "b4283cb9f23a7c7d7ff0fd30783bd9a46fb9d85dbf5e43a7c669bea2b65c199a"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/01-release-identity.md",
+      "size": 1328,
+      "sha256": "b2edbdb45d16c27ee15757b53f746b7328dea95c7273faa8ab92bbb8f0a36c41"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/02-production-route-verification.csv",
+      "size": 11603,
+      "sha256": "4507c1c8695226a09561184f8f002095a8b6feec728d9e5982294e4f51bcb780"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/03-content-hygiene-production-audit.csv",
+      "size": 102,
+      "sha256": "437c5b406f327f63702e966e3b27c795eaab5da244ef351a7bd7f86f88ae2ea9"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/04-hotfix-page-validation.md",
+      "size": 805,
+      "sha256": "d410e4dc77d6afe33fe89446567fb6d2753b63ee115f8ad9486a18a7458231f7"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/05-aeo-production-verification.csv",
+      "size": 440,
+      "sha256": "16d4b9ab6c5f9de8f558c8f9484744d17395375e5208eeac52916987eb33420d"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/06-responsive-image-production-audit.csv",
+      "size": 452,
+      "sha256": "4bce00431382126eb7c5f247d570abbbb7af4e164024d4d5b392e0ca0dea1e6d"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/07-browser-visual-review.md",
+      "size": 971,
+      "sha256": "bb07ab5bd8b78465614a9be72fc0d5af55344d8f14f1e7b65fbe50d597fa96e3"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/08-seo-regression-report.md",
+      "size": 513,
+      "sha256": "35b1967a4696b1ce3e74cf89b827a45aa3e2449cba501ef6aac9d1ccae13a170"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/09-editorial-spot-review.md",
+      "size": 731,
+      "sha256": "40c3bdd5ff7238c87c281196b769278e9a130321dadc3d903b18e39c024b9487"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/10-performance-observation.md",
+      "size": 566,
+      "sha256": "676c096a4fbdbce2db86cada40300e3ea8e062ff0f0980d63e7d7b29c8e2b6cb"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/11-gsc-conversion-readiness.md",
+      "size": 540,
+      "sha256": "ccd8d4c71ec12a89844acecd42dd202049a09f94329b062913776b3be4e39dfb"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/12-qa-report.md",
+      "size": 420,
+      "sha256": "1ab14e0b31c8de8df8681c8e3c69864876c22db62363ea0ff05b246597db87ac"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/13-release-closure.md",
+      "size": 579,
+      "sha256": "4e88eace2e3fd25399e071f504f2cb73f680df29876c1ab7e7ac1456d1610b87"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/screenshots/aeo-phone-1440.png",
+      "size": 75710,
+      "sha256": "d3031f5e06e971b99d02e551e2eb60e4ab77bd3ef75f972c2d646b423fc11c8e"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/screenshots/aeo-phone-390.png",
+      "size": 43814,
+      "sha256": "c0680f9afeae4a3333c835c706cd488e3a83641972f4815e9c0d13dc44671b76"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/screenshots/bulk-1440.png",
+      "size": 107337,
+      "sha256": "620ee4c0c2dc3495a0dd4a09a1564d38495b863e11c428d89141e334b965a449"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/screenshots/bulk-390.png",
+      "size": 42296,
+      "sha256": "419960c7c23baede923a9462316a39cddc175984bfbe024e37b722bd71851d79"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/screenshots/evaluation-1440.png",
+      "size": 95004,
+      "sha256": "a95e0172ec0b7ed502f9cab6eec1cf8e2f53f8712393e449f4d291348a04b9d8"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/screenshots/evaluation-390.png",
+      "size": 38167,
+      "sha256": "cae9494ce4b7645be27f69f66e6161fe7dc6de80ab30432e8c2ec5108a484be4"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/screenshots/homepage-1440.png",
+      "size": 90726,
+      "sha256": "88e05bbc6979b91e78a25eb5f650905fce11ace8b49438fb0364a7803927e8e6"
+    },
+    {
+      "path": "docs/content-intent-image-audit-2026-07/batch-2-2-2/screenshots/homepage-390.png",
+      "size": 44890,
+      "sha256": "2219cc23458d809c1afcd8edd0e52f2ba68faefcebba831c0e65392d9a8ae239"
+    },
+    {
+      "path": "docs/content-inventory.md",
+      "size": 7675,
+      "sha256": "8545726d21a9f4dc6007020cab74d5f10b35d66b506f37363cbb1aa6e870281f"
+    },
+    {
+      "path": "docs/final-launch-report.md",
+      "size": 4284,
+      "sha256": "c8c28d44867df5437bdbe7db26f704ed2a8190ec4e006a02e0a4770ed8301899"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/00-executive-summary.md",
+      "size": 8970,
+      "sha256": "e317cc8ae9bbae77966c72eb7fdbbbc467267921b1e6649f349693600d2d6938"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/01-production-and-deployment.md",
+      "size": 2923,
+      "sha256": "44b2ad1f75f2b04ce1106b1bf9341dd660041254d89c001c9c8452c4cd832b13"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/02-technical-seo.md",
+      "size": 2602,
+      "sha256": "7966e79075c9fbad37f21173f0a288635270f4a57f38df2c2c35c53f24fd29f1"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/03-indexability-and-sitemaps.md",
+      "size": 1987,
+      "sha256": "7de5e514daf2bb118a473d984027d5b8cebd1d32412d024299c46ee315a37384"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/04-onpage-and-content-quality.md",
+      "size": 3554,
+      "sha256": "66970c5e2ae7d9892f654538b3d69999c97d741566041e4042c82b773f6c93f8"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/05-content-gap.md",
+      "size": 4364,
+      "sha256": "ad7ec059193154c2cca27153bcebdc2544591844ea6fc4cfeed7b36f3542e7c9"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/06-internal-linking.md",
+      "size": 3070,
+      "sha256": "c6bfdce007a49536bdefecaf9e9814e852f5ef12288dc3fb9da4287e20ebe9a0"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/07-local-seo.md",
+      "size": 2807,
+      "sha256": "89e050ed552afeb7643f792e7dc19a9fbd7d36160a59b8c961ad9fb4979bad6b"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/08-aeo-geo-eeat.md",
+      "size": 2611,
+      "sha256": "0e6c975659eab5d51e1001c18f8df3cf379bb5e5bf4756146d3cc996f8926a6d"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/09-ux-cro-accessibility.md",
+      "size": 2298,
+      "sha256": "0b09af769b7f4195dc829242f6c966c1cbbe7a1ffdfa1af207eb532bbacb0265"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/10-analytics-tracking.md",
+      "size": 1885,
+      "sha256": "4e4c3588220eab908fe732f11350807e8f04ee20ee48aa8d4bc58a442bbe8558"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/11-performance-core-web-vitals.md",
+      "size": 1541,
+      "sha256": "d105a4de3940d3aa42ce72abc788ffb40c9a8df99e3c1c694f1ef9a3768be62c"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/12-security-privacy.md",
+      "size": 1460,
+      "sha256": "6ac20cdedda41de809b925e7404752c8cbb9c0579bacb3f96971d7df89f1aca6"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/13-competitor-gap.md",
+      "size": 2387,
+      "sha256": "0bdf3942920c1ad0a57e6f421adcd5919c50dfc2c881ad1b15fc3e63d7bdc287"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/14-page-action-matrix.csv",
+      "size": 22289,
+      "sha256": "00153da206202e97958c6b37700d6490f5f2d4ad758140c02d5e27c09fc7731f"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/15-findings.csv",
+      "size": 9779,
+      "sha256": "df950297809a017acdb1bc7a0570fa54abe5957e3990c1f7b933741da6837b52"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/16-recommended-roadmap.md",
+      "size": 3175,
+      "sha256": "da3327a834fdb822a339dcfe2344a929c8a619de09e296f740360dd4fcc885c8"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/17-audit-evidence.md",
+      "size": 2419,
+      "sha256": "8ad9815356bc9ab9694dc76d39cc5641070f2fefbacb8c689b525f349f430b07"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/crawl-data/crawl-summary.json",
+      "size": 4384,
+      "sha256": "a6b96b03bf3737da4199b5aef1b17b8dea3abcaf8a0cb67d1365476a65199eb0"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/crawl-data/headers.json",
+      "size": 1460,
+      "sha256": "a7853b7b2fac6dfca9dc9c7b002d2ff957928adcc5290528f9fe8be8c8b7535b"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/crawl-data/pages.json",
+      "size": 219749,
+      "sha256": "4a0d8e1c57f54369fc14c8c3e6e5e4b9ce3c82221a1b0a206e47080368566fce"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/crawl-data/robots.txt",
+      "size": 94,
+      "sha256": "5cdd059f1aed223ff3e8b701f51a18ba71e5ee20b79afd0a01a12ae572531d16"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/crawl-data/sitemap-urls.json",
+      "size": 22890,
+      "sha256": "cd0147fa7cce6b80bc2fdcb14db2e5833c2711551da9e53e3c2db6728c13e044"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/crawl-data/url-inventory.csv",
+      "size": 50405,
+      "sha256": "1ffcdf4347c52f0738cd8e0fd7da18db9b5c5aa1ffa849f8b926028678234417"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/404-1440.png",
+      "size": 173464,
+      "sha256": "ea8ed87fe6fa87bae950fc527e28add537eff5887f4accadbe863f551eef2a27"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/404-390.png",
+      "size": 100711,
+      "sha256": "5c70a40ddedb21874feb3e3e2f23838a54ea89d6cb40e7d2e40176e0043ae4a0"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/about-1440.png",
+      "size": 285787,
+      "sha256": "b947858ae3a4a028ee6f296ca06ce3604b3494ed8135329bee0bbe9e25c5fd0b"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/about-390.png",
+      "size": 157159,
+      "sha256": "df09ca990b5c484fc5fa009066e208bfbbbc1d6c7142c097f11ab4c8b6080122"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/area-1440.png",
+      "size": 494251,
+      "sha256": "97c0e2f3536fff021e95ed3e16861b4d4ab7e996daac4f70be44821e56e8bc7b"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/area-390.png",
+      "size": 153280,
+      "sha256": "057e23a3e29dcb818ec2c4cca004dc23e2496ad315101acbe92e303cf7197e4e"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/article-1440.png",
+      "size": 451508,
+      "sha256": "a9de1e98597e25026dd0567c6432dfa9f05465099b2c79f655178f6635db4191"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/article-390.png",
+      "size": 176495,
+      "sha256": "c60030a6f4f35207ae7732675bde043f164762b351bdd793c3d391745b3ac727"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/contact-1440.png",
+      "size": 297502,
+      "sha256": "c7383342675f51b7dc614a8354f939d6de1030a6061a871c0cb8bd32a032061d"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/contact-390.png",
+      "size": 147552,
+      "sha256": "8882022538a9ab79981678ce316667a2abbc55e55689fed7c5a0e170e62c2362"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/home-1440.png",
+      "size": 476703,
+      "sha256": "6e47cdd7b89384ef14ec6b24d02a89fe0012b98ea10f3b1e77a97e794f787fd0"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/home-390.png",
+      "size": 184528,
+      "sha256": "6fc8cf9929650b32f829173afa7525529953c254d0d4e2f605404031cc1e78ea"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/hub-1440.png",
+      "size": 536898,
+      "sha256": "5ef005fc64ac00aebfc8c2c90650ea11d3960c7063c46ef103c87bdefec845ad"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/hub-390.png",
+      "size": 158714,
+      "sha256": "5c6a46ce1c0b90f7817690121bd2cccb2cbc1e9a4fba15c55c229e22fe8c5ff6"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/iphone-1440.png",
+      "size": 560310,
+      "sha256": "86cd262b3e07f38c2ab06649adba495ee056eec5ed826fd5dbe12dd859fe16a2"
+    },
+    {
+      "path": "docs/full-website-gap-audit-2026-08-05/screenshots/iphone-390.png",
+      "size": 178941,
+      "sha256": "da6506a43502d8120d726303026d1287b202cb57e48c1e151e8b84e14efdc17d"
+    },
+    {
+      "path": "docs/project-plan.md",
+      "size": 4345,
+      "sha256": "91690fd3f5a42b8a285cdae06334184748a7c4c1790057f9ee28d256d42210ba"
+    },
+    {
+      "path": "docs/seo-architecture.md",
+      "size": 3284,
+      "sha256": "d598bba65ac917114333c6594d35deb970b6dfb7f3ad4d4e9bb39e292694bd4b"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/00-executive-summary.md",
+      "size": 712,
+      "sha256": "471c109d55b2f9257b4fd6fa258a6414b66153f5d8226ccfcc17a9f4fcd67f95"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/01-repository-inventory.md",
+      "size": 393,
+      "sha256": "326171c79c37b8ecef47cf116d2401c54dfc17fdbc45ac6a133597cc76ae58fe"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/02-route-inventory.csv",
+      "size": 135395,
+      "sha256": "52c9396bd4a28555fb46007a2e053834ae9e52cfdb387c0d6c8c0b52b49b42e2"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/03-technical-seo-audit.md",
+      "size": 708,
+      "sha256": "b5e941762d3a24f1ca476f83ca1223fe1fe0afd26027fa8e0bebd86f3918af22"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/04-keyword-universe.md",
+      "size": 1226,
+      "sha256": "33dadfff2c44d7b4cc8fa9f81ba3001fe067b19c0efa876d54ca576000e30a32"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/05-keyword-to-url-map.csv",
+      "size": 103914,
+      "sha256": "89c79d6e26f00e7990ebeaabdc31c1090cd368ea4f57fce7d2b8718a5f3184b5"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/06-cannibalization-map.csv",
+      "size": 107986,
+      "sha256": "5e8a8559cad08697fa867999a3a66bc1848ad8052faa2792c679a24e66b90ff5"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/07-content-gap-roadmap.md",
+      "size": 871,
+      "sha256": "fd6f3b48dfefdcae64c6479aa00df9394c38bc53925baf4eb37076352cdf3122"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/08-location-page-audit.md",
+      "size": 779,
+      "sha256": "a02f549f557c929360067b7afb5fe32158004380d2bd76f1488f223da430e906"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/08a-location-uniqueness-matrix.csv",
+      "size": 4151,
+      "sha256": "b828fab8dac0c0c4cb01c4ebc0b47e5d04a1bf2fd8f9519698f3e3a1cfba28be"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/09-brand-model-strategy.md",
+      "size": 410,
+      "sha256": "699f79dce5110db7086be38a5d3c3a6f464b6232da79a6ee2ef0fbc9d35e2acf"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/10-entity-schema-audit.md",
+      "size": 43471,
+      "sha256": "0d895b68452bfba35c202501b64153c99c3eef9867b20d739e425ecfe1d8f261"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/11-internal-link-map.md",
+      "size": 10087,
+      "sha256": "bfc326839d78370b404ecd2f027be7b70c3351b95100351e4050fa01c9e64355"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/12-aeo-geo-audit.md",
+      "size": 474,
+      "sha256": "f3d835df188ad412ca8ff709c03df1fd2597d4a4f354a490c90e8cca399effa1"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/13-implementation-log.md",
+      "size": 726,
+      "sha256": "29a83cd11c12d877fd352bbce55b720c14ccd2ea1d6da5b445c8fd82c961cd6d"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/14-qa-report.md",
+      "size": 419,
+      "sha256": "6bc3dd8403bac5af680e843ee11cccac448777e8641b16c0e63f3c87ff62b628"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/15-redirect-map.csv",
+      "size": 100,
+      "sha256": "e6038f6990f5190ad6001fc9dc36fd3d3f7c4a8ab0f65f3e7eb8f73f5e009dec"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/16-90-day-roadmap.md",
+      "size": 1193,
+      "sha256": "5510d5ac3641ac0bf948b0c1633df93c3aaabb502fda78aea5d63f1383e01ca8"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/17-gsc-baseline-template.csv",
+      "size": 274,
+      "sha256": "c2f57fac8f13f38e0a1166931c29cc09d9d3b5890532a1b0c0a7d1141e2b749f"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/18-post-deploy-monitoring.md",
+      "size": 758,
+      "sha256": "7e3001b5b588ab7039eb0ed5b43e841d3ff83204baef8f383c7e750dd0ce1e4e"
+    },
+    {
+      "path": "docs/seo-audit-2026-07-19/19-release-and-production-validation.md",
+      "size": 5683,
+      "sha256": "6e30de5a95b8204657ea4ca6e93a9175ddd14f1dcc514df7f499b0e9365d39a2"
+    },
+    {
+      "path": "package-lock.json",
+      "size": 203910,
+      "sha256": "a9dbe52b0b5dac29de82b9dbe9660eb5af397511939e196eb1644673c27dabc2"
+    },
+    {
+      "path": "package.json",
+      "size": 2175,
+      "sha256": "cd5eb4d5752432be0bbe3b3b939ce0850b3f15e1828c5528249e15d96e524f0c"
+    },
+    {
+      "path": "public/favicon.ico",
+      "size": 655,
+      "sha256": "09d2ac08d8cca9b6e1f90221f345a8c4dd0371c64a0dc52b6f96fc589b1e3d67"
+    },
+    {
+      "path": "public/favicon.svg",
+      "size": 245,
+      "sha256": "01886821214c8f328bb512a0b7f3c592027421dd2e4113507d00b825e235b81c"
+    },
+    {
+      "path": "public/icons/apple-touch-icon.png",
+      "size": 908,
+      "sha256": "b8fd446914e11ad6707fa519aff4753237b5115966841280ec660016c3b0cb17"
+    },
+    {
+      "path": "public/icons/icon-192.png",
+      "size": 962,
+      "sha256": "c789e6437bbfe10324e3501ac4fab52e646e98c40acd34c07c7250616ba827c7"
+    },
+    {
+      "path": "public/og/default.png",
+      "size": 5610,
+      "sha256": "92be73a1a940675a13efc39b514cbae863d6b3168e63944f81c6e14375b4fde2"
+    },
+    {
+      "path": "public/robots.txt",
+      "size": 94,
+      "sha256": "5cdd059f1aed223ff3e8b701f51a18ba71e5ee20b79afd0a01a12ae572531d16"
+    },
+    {
+      "path": "public/site.webmanifest",
+      "size": 574,
+      "sha256": "acc9881eacd94796f774c412aed163d5884474e08fd126e4e09ad068bef09e7a"
+    },
+    {
+      "path": "scripts/apply-core-hub-architecture.mjs",
+      "size": 5258,
+      "sha256": "94c4dcd692767efb537d60890a7357d96b07a6fbb806fe5c276c58007330119f"
+    },
+    {
+      "path": "scripts/apply-guide-authority-runtime.mjs",
+      "size": 5806,
+      "sha256": "fb5d303002da51835060c49d29c1005a777a72c59cf36352f1accef01fdca3f7"
+    },
+    {
+      "path": "scripts/apply-navigation-architecture.mjs",
+      "size": 6593,
+      "sha256": "b7080cd3f827e35b3098edd6967c8f48aaa1d1d54b171e88ab9bb30692f84218"
+    },
+    {
+      "path": "scripts/apply-parent-child-runtime.mjs",
+      "size": 7041,
+      "sha256": "5e87da4e8b277ef53b1c3ec81e6dd30d99a595a34f52e542c378dfb1325ceb55"
+    },
+    {
+      "path": "scripts/apply-seo-index-control.mjs",
+      "size": 6707,
+      "sha256": "4050aa48a4c3446dfbc42eee932d75dde2a41b5708058fa5b6c50d1fe112513f"
+    },
+    {
+      "path": "scripts/audit-all.ts",
+      "size": 893,
+      "sha256": "5027601c9596e07c3f74a0837e568a4adda7eda97f86bf1a9996510e46876d5a"
+    },
+    {
+      "path": "scripts/audit-batch1-protection.ts",
+      "size": 9232,
+      "sha256": "2a638ba418c77398b7f8e2ccb7b19277366f73f8a2c9ce87a13600d09455c043"
+    },
+    {
+      "path": "scripts/audit-batch2-seo.ts",
+      "size": 6957,
+      "sha256": "5ec95090403515778d7568b81633e4d49cabdd32ba847d3d79509a6435424e94"
+    },
+    {
+      "path": "scripts/audit-batch3-content-authority.ts",
+      "size": 5509,
+      "sha256": "0fccb19593b39b47ac44c1d0fcfdd0c5031a83c7b5273a008d6604414fb00c5c"
+    },
+    {
+      "path": "scripts/audit-batch4-trust.ts",
+      "size": 5533,
+      "sha256": "083042cc02fba6673b07ba724f78a77f0353aaaf877015d0ca592bc8fbe77631"
+    },
+    {
+      "path": "scripts/audit-batch5-measurement.ts",
+      "size": 4633,
+      "sha256": "bef5b613d5d41ed935e06c450edab5e9c83737ef56c2f92c6de65b6183dff673"
+    },
+    {
+      "path": "scripts/audit-claims.ts",
+      "size": 2397,
+      "sha256": "d8116fc3fc6f5c92fb23240a380ea620628f8b4c4aa35c1366fe614930a0bf80"
+    },
+    {
+      "path": "scripts/audit-content-hygiene.ts",
+      "size": 4303,
+      "sha256": "69410c4353aaf1e217d939b778d68b9f716ee27cd68adbd86b5a328a3880f335"
+    },
+    {
+      "path": "scripts/audit-content.ts",
+      "size": 2937,
+      "sha256": "eeaea121cfdd9c6f85eee939c0b99c10bc3ea15298d9ff85de6b1773da9b2f6d"
+    },
+    {
+      "path": "scripts/audit-images.ts",
+      "size": 1660,
+      "sha256": "57eec832d0104fc9c36f20bc9c5a802344a314ddd5d5bf1980798403e3a3f9ee"
+    },
+    {
+      "path": "scripts/audit-lib.ts",
+      "size": 3625,
+      "sha256": "fa131e149d9c89c388f02f777ac0c9b024a471b259d883f0c31f6f4a0f90ce90"
+    },
+    {
+      "path": "scripts/audit-links.ts",
+      "size": 2238,
+      "sha256": "69328458e313c39e0a27dd159edce4cfa3503195abf35341c9c559f3a7b9bacd"
+    },
+    {
+      "path": "scripts/audit-production-build-architecture.mjs",
+      "size": 7938,
+      "sha256": "bfe7e5591512d8ff4c4ad7265bcc02c2b87b099782632e0cf86e013b95141e0c"
+    },
+    {
+      "path": "scripts/audit-schema.ts",
+      "size": 4730,
+      "sha256": "0cc4df61a3c596efb0aae42cddc1ea0579b24003ef192c00ed2f76cb811b92f0"
+    },
+    {
+      "path": "scripts/audit-security-headers.ts",
+      "size": 2143,
+      "sha256": "187a8c595f9395d6ad60e8c9b6a9401b0df2bf92e5c611c1f0946446d4976884"
+    },
+    {
+      "path": "scripts/audit-seo.ts",
+      "size": 5844,
+      "sha256": "66cf2a3b0b29b2decb11dfdc507fce2bf4f5c3253ec68a168e9e6c4d31cc9f0f"
+    },
+    {
+      "path": "scripts/batch1-1-screenshots.ts",
+      "size": 2123,
+      "sha256": "904128e0905314b7dd98e6faa1040ae1ed5e2c0371c5ce3112a783d9f162e25f"
+    },
+    {
+      "path": "scripts/batch1-screenshots.ts",
+      "size": 1847,
+      "sha256": "efc53fd5ee5cd2930488bc3fb472569a4a178049c21520f5d222d012b66fa878"
+    },
+    {
+      "path": "scripts/batch2-screenshots.ts",
+      "size": 3417,
+      "sha256": "d17b9bfaccc41438db0510dbb8ab7f00a515e17cd4534b362bdee288dfc920b6"
+    },
+    {
+      "path": "scripts/batch3-screenshots.ts",
+      "size": 4470,
+      "sha256": "c8e2640e41f7e4203717bfdca71d529de99d165a2cde0f4a1c2ca259c22350c7"
+    },
+    {
+      "path": "scripts/batch4-screenshots.ts",
+      "size": 3377,
+      "sha256": "49782b5df2942378b2fa68a73a70732505eaf58e0cb2143703fbeb99fefdf8b0"
+    },
+    {
+      "path": "scripts/count-service-words.mjs",
+      "size": 1184,
+      "sha256": "b30aa9ac9035e7a4a7ce674e4ee98ffbc60d61a1954efa79f76c60d0ca9d303b"
+    },
+    {
+      "path": "scripts/evaluate-cannibalization-gsc.mjs",
+      "size": 5364,
+      "sha256": "e6d20e7ae88c7076078ce4aaca22210bb4f88545e0fffb0e61a0945c548883bc"
+    },
+    {
+      "path": "scripts/evaluate-expansion-round-1-gsc.mjs",
+      "size": 5565,
+      "sha256": "42ee2c6ebd2d782909a4f1967e8921727edf2f4786f8289419aa815a9c7e55c9"
+    },
+    {
+      "path": "scripts/evaluate-expansion-round-1-observation.mjs",
+      "size": 5438,
+      "sha256": "985253863b5a3aad33a43a742442d83fad0d754112911344971bc673bac690c3"
+    },
+    {
+      "path": "scripts/finalize-expansion-readiness.mjs",
+      "size": 3668,
+      "sha256": "96449964d2a865a42a4fc90d0eb65016d376b477a6b24e255719dfcf79e1ed53"
+    },
+    {
+      "path": "scripts/gap-audit-analyze.ts",
+      "size": 1683,
+      "sha256": "c0c394bd06d061979e47e328884a70611c0b95791841d8081e51ace008507d1f"
+    },
+    {
+      "path": "scripts/gap-audit-crawl.ts",
+      "size": 8346,
+      "sha256": "dbade326f76de061f14078c3a7df36eb9bbc90383eddb657c48677d54b60c9c8"
+    },
+    {
+      "path": "scripts/gap-audit-export-inventory.ts",
+      "size": 1178,
+      "sha256": "86c2b0dccfd13de9209dbaf740133602d52c38d1f8d01e51abda8c38312db276"
+    },
+    {
+      "path": "scripts/gap-audit-screenshots.ts",
+      "size": 1494,
+      "sha256": "aabf1dbcf4f1e2f45586a60006ff7cb47926f4188e30c95e8c8a8394cd05b24a"
+    },
+    {
+      "path": "scripts/gap-audit-write-csvs.ts",
+      "size": 16869,
+      "sha256": "383ff9436b7aa3580a7ef87936778b716523de17c912f1900d236a315914abad"
+    },
+    {
+      "path": "scripts/generate-all-services.mjs",
+      "size": 12672,
+      "sha256": "c15c0326b1dceaaaa88cb04835172cf45b2cc6f8e59f8a139954f0024b5c2271"
+    },
+    {
+      "path": "scripts/generate-architecture-sitemap.mjs",
+      "size": 3483,
+      "sha256": "29e102bc3cdb2cf2e5dca68a9d44dddb2cc221e73bf0684294669d6cf37d7db3"
+    },
+    {
+      "path": "scripts/generate-batch-2-1-audit.ts",
+      "size": 22139,
+      "sha256": "cb9dd312f9400a2787c57b7c017017aca105f8528d3d9f1d9795339ce97425f6"
+    },
+    {
+      "path": "scripts/generate-batch-2-2-2-report.ts",
+      "size": 15958,
+      "sha256": "85afc566524dd21027147111193168232749cce56319ed3fa61eb4c3a5df9d02"
+    },
+    {
+      "path": "scripts/generate-batch-2-2-report.ts",
+      "size": 19072,
+      "sha256": "738c321e49bc04cb57af888de1902a380ae68a710d0fd42486c580630ae98e12"
+    },
+    {
+      "path": "scripts/generate-content-image-audit.ts",
+      "size": 38879,
+      "sha256": "85b93563c7415a9a85e7199f9eadd64c88ede0d851629ff0a7edaf39b39c4b08"
+    },
+    {
+      "path": "scripts/generate-seo-deliverables.ts",
+      "size": 37342,
+      "sha256": "a0939838cc6bbd21c31c072caa47b7413084bb2f3bb48b5642aa68f74ad2de1e"
+    },
+    {
+      "path": "scripts/generate-services.mjs",
+      "size": 19803,
+      "sha256": "011d385b01bfffdac393597d5447c9b0513a33062cf993f114ec079d3987ccdc"
+    },
+    {
+      "path": "scripts/import-gsc-export.ts",
+      "size": 5210,
+      "sha256": "322e807c7f56987f62702534d111f2191086632cf5f5f0ea327d52481e9c98f3"
+    },
+    {
+      "path": "scripts/matter-lite.ts",
+      "size": 2374,
+      "sha256": "6943674a8a3285f76748080bf4357157c0e18e0bd87bbb22d5c7538d151d62c4"
+    },
+    {
+      "path": "scripts/page-helpers.mjs",
+      "size": 4291,
+      "sha256": "c8bad6159d8b3cad4a347a4aae46d33eb4538d7354df49afd099e8977f4729a5"
+    },
+    {
+      "path": "scripts/pages/apple.mjs",
+      "size": 51326,
+      "sha256": "f873e2cd80882c98071b7f403007c7dd731603badceb7033d5c6331b811f00cc"
+    },
+    {
+      "path": "scripts/pages/computer.mjs",
+      "size": 58685,
+      "sha256": "6aa789b7e46512d3ec1ce574261ccd1cb863229791e908969648aa90d9d6811c"
+    },
+    {
+      "path": "scripts/pages/mobile.mjs",
+      "size": 54721,
+      "sha256": "df59c7f573765c72af5f422bd0eb458a03fddd9b85b7e63def01b24cf9ad461f"
+    },
+    {
+      "path": "scripts/predeploy-expansion-round-1.mjs",
+      "size": 4241,
+      "sha256": "56a0ecda0e6fedda662215cabe97cd4f6fccd35fb99f0df2a17b7a19784b1fdb"
+    },
+    {
+      "path": "scripts/production-smoke.ts",
+      "size": 3087,
+      "sha256": "c784950bce74621a8d1093a3c4935f4ec1f451111555c4ebedb4a1cb547ff1b4"
+    },
+    {
+      "path": "scripts/qa-playwright.ts",
+      "size": 4264,
+      "sha256": "eb4639d86d99d3aa7c359e014a62272ad1b2f007ac9e88cc86dc4a41f074c756"
+    },
+    {
+      "path": "scripts/run-architecture-quality-gate.mjs",
+      "size": 4068,
+      "sha256": "6d031bbb3628fe8226588f13109b7a4a9f09f2274e9015312992def91cf535c9"
+    },
+    {
+      "path": "scripts/score-expansion-readiness.mjs",
+      "size": 3983,
+      "sha256": "dd1b636da1c7b02fea0dbf2383e055873e3289893f93cf04b93bc9f14cbd4c84"
+    },
+    {
+      "path": "scripts/score-guide-expansion-readiness.mjs",
+      "size": 4122,
+      "sha256": "6761e34d26eac9223f7b1f78748861cee7f8e7f876fe638db94a4454dc2aea43"
+    },
+    {
+      "path": "scripts/service-content-lib.mjs",
+      "size": 19527,
+      "sha256": "831b5bfeab58242dd3fe20c5cf12adb065e6e916ba353aa52160e6d445c2ccda"
+    },
+    {
+      "path": "scripts/service-pages-camera.mjs",
+      "size": 19346,
+      "sha256": "186299d741f9871d3976334b009133db0376ab1755383d83f68a884dfb9d638d"
+    },
+    {
+      "path": "scripts/service-pages-condition.mjs",
+      "size": 24838,
+      "sha256": "e179bbca2618b0280e2e40030e92babcdbfe8e09d5dc82b1042cbafd0480b4d4"
+    },
+    {
+      "path": "scripts/service-pages-core.mjs",
+      "size": 26490,
+      "sha256": "19870b6f1781de7f16d631b1e15a82d7902342a97167c9132bf41b19ad318b74"
+    },
+    {
+      "path": "scripts/service-pages-data.mjs",
+      "size": 225,
+      "sha256": "c0c1cda9bd07c800745d6b6771d88fc2dc82f34365474b12cbb1b0f95c784efa"
+    },
+    {
+      "path": "scripts/service-pages-org.mjs",
+      "size": 13720,
+      "sha256": "6de8dedc44a2699c028b79386bcc1794f5d4917be34966fedb7ad689e63f8054"
+    },
+    {
+      "path": "scripts/service-pages-parts.mjs",
+      "size": 41086,
+      "sha256": "bb7cfdc2af3cb42ac58642fda4e1d739212848561c7911e7b4266e1d581592d1"
+    },
+    {
+      "path": "scripts/validate-architecture-quality-gate.mjs",
+      "size": 4117,
+      "sha256": "c0d06326fe29abafe9f7ac240948f168e4bafda2ada1df25f6f00fc9eff94fb8"
+    },
+    {
+      "path": "scripts/validate-brand-model-series-foundation.mjs",
+      "size": 6850,
+      "sha256": "6fc270e28c2c3dc3fca1e7ff08ccd8eb837e008ed7aebc187c095317fb21d359"
+    },
+    {
+      "path": "scripts/validate-cannibalization-triage.mjs",
+      "size": 3626,
+      "sha256": "d7ce0a9423ee0d0816489128709a31da5c042ad9034d37423f58362e2f82b0ef"
+    },
+    {
+      "path": "scripts/validate-core-hub-architecture.mjs",
+      "size": 4771,
+      "sha256": "99a310f9fb2f8b9a7a1dd600b25ca606d58ffb73330af6319f3827f3048a9035"
+    },
+    {
+      "path": "scripts/validate-expansion-release-round-1.mjs",
+      "size": 6989,
+      "sha256": "862e2708584caaace4c58582004b674aae610b20ecee810fb90370523e2f1fa5"
+    },
+    {
+      "path": "scripts/validate-expansion-round-1-production-gate.mjs",
+      "size": 3128,
+      "sha256": "f0117f0b217bffe6c82d2377c552b4afb4c26013016916fb3c3e2336f74e19c7"
+    },
+    {
+      "path": "scripts/validate-guide-authority-architecture.mjs",
+      "size": 8279,
+      "sha256": "c19e69b8a7de4d2a02dc191e7cb8fc3ad2a5d67184ff9636c31777510ff491eb"
+    },
+    {
+      "path": "scripts/validate-internal-link-graph.mjs",
+      "size": 8346,
+      "sha256": "f0eaeafe49cb4f868d55f471f174089fb97a024204bf97bc4a23ceba2d66cc8b"
+    },
+    {
+      "path": "scripts/validate-local-area-architecture.mjs",
+      "size": 8221,
+      "sha256": "9f7d1188f39018e64f64af300b84758bbc9005119e1a17a14f02c5332f62db5f"
+    },
+    {
+      "path": "scripts/validate-navigation-architecture.mjs",
+      "size": 8487,
+      "sha256": "411342d0144f4d56e82c830c65503a05ed2ff25d916e800825094bec81eb2df8"
+    },
+    {
+      "path": "scripts/validate-parent-child-runtime.mjs",
+      "size": 6385,
+      "sha256": "e915c70a8622e9b8b7640824433846241cf6a85f6b4f5b9c73a447b34bb9285f"
+    },
+    {
+      "path": "scripts/validate-production-full.ts",
+      "size": 5719,
+      "sha256": "4cb92ecf36273059c2fbdd5d13102858f513104ccb0c23e61059c46f826632d7"
+    },
+    {
+      "path": "scripts/validate-seo-index-control.mjs",
+      "size": 8909,
+      "sha256": "06b6011c8b5f494e785bfcf066e11910f0f3a6fc616286a532ee6545bc0d272f"
+    },
+    {
+      "path": "scripts/validate-site-architecture.mjs",
+      "size": 4605,
+      "sha256": "39cda017cb78d1755e09e57566674318d500b7c8673202fc05aa2902d5e1d1c0"
+    },
+    {
+      "path": "scripts/verify-expansion-round-1-production.mjs",
+      "size": 7104,
+      "sha256": "8e0bddbbc97dae76848f2b96ee4bcd139af264a66801d17336af0572eeaa6829"
+    },
+    {
+      "path": "src/assets/images/illustrations/ai/workspace/bulk-it-sorting-process-ai.webp",
+      "size": 131946,
+      "sha256": "acb3ae04bb2a8b3434b48b2ae1644fa7e09a180e56491ab61c60548c40b5427c"
+    },
+    {
+      "path": "src/assets/images/illustrations/ai/workspace/it-device-evaluation-workspace-ai.webp",
+      "size": 92594,
+      "sha256": "6bf12dbeaf35949ab4714f1a875420699e709d09127bb04d18ec1658582b0838"
+    },
+    {
+      "path": "src/components/Analytics.astro",
+      "size": 5904,
+      "sha256": "f808d8b989067682f118bb98306c4176df0fbc3da5158f4c1c0c4c177f818ed7"
+    },
+    {
+      "path": "src/components/Breadcrumbs.astro",
+      "size": 1136,
+      "sha256": "5f035e4d0a1d5781ec5261a79957380624c99616edef806e2a53be768c3111b4"
+    },
+    {
+      "path": "src/components/BusinessBulkSection.astro",
+      "size": 1896,
+      "sha256": "21346e68e0d40f1ca02c7f52507963baa61784cffc6b717b6618cd7401123d19"
+    },
+    {
+      "path": "src/components/CookieConsent.astro",
+      "size": 5507,
+      "sha256": "3c2e9bcf1d4f72c52b810752b5a278199a0210a7467c5d6af0540bad73c082e0"
+    },
+    {
+      "path": "src/components/CuteDeviceIllustration.astro",
+      "size": 5921,
+      "sha256": "d589e2f1c2a048799c2ba1a2826bcde84f39127b929d45c3bfd74c873f224833"
+    },
+    {
+      "path": "src/components/EvidenceGallery.astro",
+      "size": 1768,
+      "sha256": "e8e00a7b929b501c78e29da3e0f597382dbdad96ef2677746fe0160a4255504c"
+    },
+    {
+      "path": "src/components/FAQSection.astro",
+      "size": 1289,
+      "sha256": "42e5ce95d3eb611438695ad891fa6f4da31bd4731f157fc2cf8068297b529e4e"
+    },
+    {
+      "path": "src/components/FacebookCTA.astro",
+      "size": 695,
+      "sha256": "1d6d1f5b35e15809e0d7d7566caae80af804f5c80882cbf62a51497288fa8cc2"
+    },
+    {
+      "path": "src/components/HeroSection.astro",
+      "size": 2135,
+      "sha256": "bafe1542d5a7419d4c4597eabe5e91d3b82c6bf3e7695fabcc012f9f0c6c3902"
+    },
+    {
+      "path": "src/components/InspectionProcess.astro",
+      "size": 1317,
+      "sha256": "1aa72b04f3a9588ac64eb13c7c2e70a1ce4186c17c0588b214635c63d2a447ae"
+    },
+    {
+      "path": "src/components/JsonLd.astro",
+      "size": 235,
+      "sha256": "d7efb3ba289ed10615e86a842ee14529cd8712fe4b3dbcd64514a84c80c39270"
+    },
+    {
+      "path": "src/components/MapsCTA.astro",
+      "size": 584,
+      "sha256": "a0ec3233d9dc4587a036cbc6b700e3393ee91d94d2addd6a542f44f6bca3bb52"
+    },
+    {
+      "path": "src/components/MobileNavigation.astro",
+      "size": 3771,
+      "sha256": "73726465d1f79b3ac9c88b6011e5205dd24b9913043d59247301713d37b9033d"
+    },
+    {
+      "path": "src/components/PrimaryLineCTA.astro",
+      "size": 838,
+      "sha256": "653ca4f35b6377a7eda9aa7f119fa510c4217615305115203591b0a1d90b5e26"
+    },
+    {
+      "path": "src/components/PrivacyNotice.astro",
+      "size": 2083,
+      "sha256": "c54c2993519aabdf028d39cf791787a90e4e0b92118f5fb68f0f6a3ae88506f3"
+    },
+    {
+      "path": "src/components/ProductTypeGrid.astro",
+      "size": 718,
+      "sha256": "f9083734fc036971be7348ef83143a102306b8a47de2b15bb8788d404e376ee8"
+    },
+    {
+      "path": "src/components/RelatedArticles.astro",
+      "size": 773,
+      "sha256": "3d952bb41d8b010f6746aee2237a3135cef3f4f5ed9b344d5bcfa80ca5b41042"
+    },
+    {
+      "path": "src/components/RelatedServices.astro",
+      "size": 1186,
+      "sha256": "9f669c7c382488cf0ec61ecf0c868b2cc5aa88da4c8c2d4c060d3c44d511f233"
+    },
+    {
+      "path": "src/components/ResponsiveImage.astro",
+      "size": 2719,
+      "sha256": "eefeb01f4621213af96fdeaaf846fafa9e74256150669b065628b3f14e009f8a"
+    },
+    {
+      "path": "src/components/SafetyNotice.astro",
+      "size": 1852,
+      "sha256": "81a7bff5a27546f11b1e44c0b2549f3bdf8a6ba19e56cd83abb14222f4b9e99d"
+    },
+    {
+      "path": "src/components/SellingProcess.astro",
+      "size": 2486,
+      "sha256": "c0fa5043c743c61066f831cc4a76d1e671a6250a7070b8ada314b1d5699a8891"
+    },
+    {
+      "path": "src/components/SeoHead.astro",
+      "size": 2193,
+      "sha256": "a6f17a113762d7bb14e7dbe62b4e1af4b2d73104f4484d26dba3f604acfce4bf"
+    },
+    {
+      "path": "src/components/ServiceAreaGrid.astro",
+      "size": 999,
+      "sha256": "6fa51bfba7b9ffa1ad97af3892ad7501031c27df883fc34d9960b361743de6cc"
+    },
+    {
+      "path": "src/components/ServiceAreaNotice.astro",
+      "size": 1486,
+      "sha256": "364f4c49ce0f70902229213cb492c2592fdf6d2152267468ef2c873eeec960d0"
+    },
+    {
+      "path": "src/components/ServiceCategoryGrid.astro",
+      "size": 1102,
+      "sha256": "8175dbec23dfeee29c0eccc11c9987ac93129a4355993dbbf2e8d277987ca634"
+    },
+    {
+      "path": "src/components/SiteFooter.astro",
+      "size": 3387,
+      "sha256": "08f1cba53d559e0429b65da3e1e6f9c00aef828e02634c0edfdd53d1a6e0bf4c"
+    },
+    {
+      "path": "src/components/SiteHeader.astro",
+      "size": 4307,
+      "sha256": "865cb5197d03e46af8f5fbd4ac1c3f23ed7eae64a8db9b5332ca5b8f18bd9425"
+    },
+    {
+      "path": "src/components/StickyMobileCTA.astro",
+      "size": 1118,
+      "sha256": "c6934fe1e8ad4f30e8f82fd59d7f86b4a0dbf8d00431346607bba6dc6f43fb87"
+    },
+    {
+      "path": "src/components/StoreIdentityCard.astro",
+      "size": 3400,
+      "sha256": "4e87ca017d7a4019ad27d7dd1f92f92ad008552e44aea30999793cf42f6de674"
+    },
+    {
+      "path": "src/components/TrustStrip.astro",
+      "size": 1985,
+      "sha256": "cfd5a6d8d59f09d5a64748b9a6ddd6ceeb13bd7d6d31fa837765e7780f60660c"
+    },
+    {
+      "path": "src/components/ValuationChecklist.astro",
+      "size": 5748,
+      "sha256": "32c3a2931ba6424495136a3fb26bacb718f3bdb70c7e670aa55006ca71f237e2"
+    },
+    {
+      "path": "src/components/ValuationFactors.astro",
+      "size": 1428,
+      "sha256": "8c69abce8d53cd71b87cbd2b15953ae7b644c8285e419dd143e4681cf221155c"
+    },
+    {
+      "path": "src/components/ValuationFoundation.astro",
+      "size": 294,
+      "sha256": "a71962fd3efa6e2dc3ef2785301cbd1df2a226ae970227ab6226a1fddf73b7d8"
+    },
+    {
+      "path": "src/components/WhatToPrepare.astro",
+      "size": 1435,
+      "sha256": "315c3e121cfc0b9694635735cd719174ac0b8bf395adc419339743f38022cc07"
+    },
+    {
+      "path": "src/components/architecture/ArchitectureBreadcrumbs.astro",
+      "size": 1346,
+      "sha256": "d278c1968f8850dfae54764996eedf7be162d43d43dc14d30637bef5008a1c8b"
+    },
+    {
+      "path": "src/components/architecture/ArchitectureDiscoveryNav.astro",
+      "size": 2232,
+      "sha256": "e35bce9ef5ecab628ea45f27a9de41af81733d4b5b1e01bc91d0e92a3fa94cb9"
+    },
+    {
+      "path": "src/components/architecture/ArchitectureFooter.astro",
+      "size": 2234,
+      "sha256": "77b047a74604bf88cd1fe194fc4fce74a2259f876d9df7d4583fd45f626cd110"
+    },
+    {
+      "path": "src/components/architecture/ArchitectureHeader.astro",
+      "size": 3754,
+      "sha256": "019c0bc580764f1ab33f25d25cb97fe1fd80dabd6d4af13de58dc540b30911d7"
+    },
+    {
+      "path": "src/components/architecture/ArchitectureRelatedServices.astro",
+      "size": 2103,
+      "sha256": "9536539e0fcaf55bcbd82f1654dabcafa3d446b88b18c1ab8359e27768f72b5e"
+    },
+    {
+      "path": "src/components/architecture/ArchitectureSeoControl.astro",
+      "size": 1175,
+      "sha256": "82e5d17c732bb15730ec0f7e13d0d9d5c29b803018cd2abce13ef080acba8f3c"
+    },
+    {
+      "path": "src/config/architecture-expansion-readiness.json",
+      "size": 3801,
+      "sha256": "ff468a5beb87befc10bf1efafbb39c5c980accbaa46746dc5e92c9b83ab784c6"
+    },
+    {
+      "path": "src/config/architecture-expansion-readiness.ts",
+      "size": 1476,
+      "sha256": "94fb49262aa14978eb0c19eec40c169641d651970229adb3fc13efc9e9e52e4c"
+    },
+    {
+      "path": "src/config/brand-model-series-foundation.json",
+      "size": 30826,
+      "sha256": "d2d5012913907e30c0c1e24121088eda10becf8a0a0a54ed50b165f20a846307"
+    },
+    {
+      "path": "src/config/brand-model-series-foundation.ts",
+      "size": 1723,
+      "sha256": "3eb2df41bb1589e529b55f2849f9697febc70020ab96b240a21dd1890855b9df"
+    },
+    {
+      "path": "src/config/cannibalization-policy.ts",
+      "size": 1099,
+      "sha256": "2c32ff21adf9737825dd6db1290fc1cf6b2555ab66d24659228ca5afd519ca2a"
+    },
+    {
+      "path": "src/config/cannibalization-triage.json",
+      "size": 16066,
+      "sha256": "f56777b6039d4dbd1888d66c30f4e935480e7e8508f063eaf3492559f368ebdc"
+    },
+    {
+      "path": "src/config/core-hub-architecture.ts",
+      "size": 2381,
+      "sha256": "2a2139d86b4922a1cc48958a7da4ed7eb108f8d9eb56ca71a3e1730844a96e13"
+    },
+    {
+      "path": "src/config/core-hub-release.json",
+      "size": 20728,
+      "sha256": "7203b137676de14caa0b8ad2a32db448a06c88e3c125fd19da2580def39e7cac"
+    },
+    {
+      "path": "src/config/expansion-release-round-1.json",
+      "size": 3685,
+      "sha256": "03e4804239751d710b463528b7e21f3123e02b06ba3f9e0989ff073841ab02ca"
+    },
+    {
+      "path": "src/config/expansion-round-1-production-gate.json",
+      "size": 4766,
+      "sha256": "1aa544c6a8d0905fb2a42e1449ce7d05e7f6c21600fb054c3c220e567393544b"
+    },
+    {
+      "path": "src/config/guide-authority-architecture.json",
+      "size": 28354,
+      "sha256": "e95267082481cac607841addb4acafbad4f397aa293b55e71af4d84f353a92f8"
+    },
+    {
+      "path": "src/config/guide-authority-architecture.ts",
+      "size": 1668,
+      "sha256": "456bcd1f1cf365cc59248bb522f803f315f6a29721da53561f89145d0724a397"
+    },
+    {
+      "path": "src/config/internal-link-recovery.json",
+      "size": 9762,
+      "sha256": "82854c12a372ba35fb12fa3d1d29eb0187fd3a229ec7dd2baadb712e55b3f7a7"
+    },
+    {
+      "path": "src/config/local-area-release.json",
+      "size": 8153,
+      "sha256": "39fd4b9cfc3899d2a4d11a5680883ec31495c6dfd3d3cf99e45e5b089a58d0d8"
+    },
+    {
+      "path": "src/config/navigation-architecture.json",
+      "size": 14013,
+      "sha256": "66c26b6229569fda6549dd03c7936d3b0670b2a2863951dab49b982405ca94a6"
+    },
+    {
+      "path": "src/config/navigation-architecture.ts",
+      "size": 1466,
+      "sha256": "81e47d944808fb9b00ae8b564d45a23e85157e718f6ae9c18da2dddd020ad2d8"
+    },
+    {
+      "path": "src/config/runtime-architecture.ts",
+      "size": 9217,
+      "sha256": "b75a684a7d8dfbf97d7ef01f04c58a9387d689b0dcc40123344b019a51930743"
+    },
+    {
+      "path": "src/config/seo-index-control.json",
+      "size": 48909,
+      "sha256": "483893d08b3cbd20f50388ca81931f3cc97ef448cf9d15a230c55af73d28c485"
+    },
+    {
+      "path": "src/config/seo-index-control.ts",
+      "size": 4517,
+      "sha256": "75a7630bfd4cbfbeca1bada22b9c500465fe3ed1c84f77f42d5c7c8d5e315bc2"
+    },
+    {
+      "path": "src/config/site-architecture.json",
+      "size": 81631,
+      "sha256": "0907020ac36a6562c795edee97b1b9a12ec094a08d640a68dfd6449cf5f3336a"
+    },
+    {
+      "path": "src/config/site-architecture.ts",
+      "size": 2422,
+      "sha256": "a1976d375507d66b9805c0a642c8a6ebed33839859f749cc93629b6211aa58c2"
+    },
+    {
+      "path": "src/content/areas/ด่านขุนทด.md",
+      "size": 18705,
+      "sha256": "58087f375d8268bf1ac2ff18487f01a44cf621b541be60b69e7425364981b6ff"
+    },
+    {
+      "path": "src/content/areas/บัวใหญ่.md",
+      "size": 18631,
+      "sha256": "115e91d7d85c8f64b61183540d094a4f168254dd4b3de39519b153fdd1a618e0"
+    },
+    {
+      "path": "src/content/areas/ปักธงชัย.md",
+      "size": 10923,
+      "sha256": "fac4befa68edb08daf33ed12eac3b870bc9ff851d9ed320ce5bb14df7f85d2ac"
+    },
+    {
+      "path": "src/content/areas/ปากช่อง.md",
+      "size": 13671,
+      "sha256": "800daa64a23940853c8288dd3e7efca1ea9e5d6c4096a523846b2d6d7f18d005"
+    },
+    {
+      "path": "src/content/areas/พิมาย.md",
+      "size": 18086,
+      "sha256": "7427d1c156787c08a07e91e76dded6566d4851649ba84dda8ed024ad1348f2ec"
+    },
+    {
+      "path": "src/content/areas/มหาวิทยาลัยเทคโนโลยีสุรนารี.md",
+      "size": 11961,
+      "sha256": "2e9116f4a25ca8773434c7f0d485f9cd5bb01dfbb964b03743106830132dd3ed"
+    },
+    {
+      "path": "src/content/areas/สีคิ้ว.md",
+      "size": 12415,
+      "sha256": "0e24b4fb9786abf1dcde86a5eb4afdf19a04c4953481b2c7565fff617e5b547c"
+    },
+    {
+      "path": "src/content/areas/สูงเนิน.md",
+      "size": 11641,
+      "sha256": "f85b5934d1b8c7f872554436cb501222aece541109c286a1b66d0cde74def011"
+    },
+    {
+      "path": "src/content/areas/เมืองนครราชสีมา.md",
+      "size": 20361,
+      "sha256": "26e7d5cf801a7585b1acd6ae69a60cc82d77a3188799e91bcfd225026736d03c"
+    },
+    {
+      "path": "src/content/areas/โชคชัย.md",
+      "size": 10178,
+      "sha256": "da934c1b2b096f2cb5ed3d7ccd2038410a703f80a9e9ac3f4b4fd0fde6cfab83"
+    },
+    {
+      "path": "src/content/areas/โนนสูง.md",
+      "size": 17814,
+      "sha256": "3b88aa191dbe45d63aac41b2990b5387fc2cea4b5aae9b354ec9a4fd0c025261"
+    },
+    {
+      "path": "src/content/articles/cycle-count-และ-activation-lock-ก่อนขาย-macbook.md",
+      "size": 12623,
+      "sha256": "a50567542e03efde42f03d7b4074cfae94f4bf8d7ad5b783e7fcf16bc881f270"
+    },
+    {
+      "path": "src/content/articles/shutter-count-คืออะไรก่อนขายกล้องดิจิทัล.md",
+      "size": 13918,
+      "sha256": "d88c2a93f1b0753823ddbf553f275d90e9b94ab93b49b40782e5c113519ec10a"
+    },
+    {
+      "path": "src/content/articles/ssd-และข้อมูลส่วนตัวควรจัดการอย่างไรก่อนขาย.md",
+      "size": 10657,
+      "sha256": "f7ae178bc63cd46d6b20434fc85578c0d4fd132ae8a371b871021c6d552cb0c5"
+    },
+    {
+      "path": "src/content/articles/กล่องและอุปกรณ์มีผลต่อราคามือสองหรือไม่.md",
+      "size": 10297,
+      "sha256": "410fd87a5560305c2c73ea34a1766c9a13de8ec860edb457cbbfecd34e2683a9"
+    },
+    {
+      "path": "src/content/articles/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร.md",
+      "size": 11550,
+      "sha256": "1b81fc678c2c3bcefdda54937aa146e586b7003058a3db5e5a3b1c73c7c4b426"
+    },
+    {
+      "path": "src/content/articles/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร.md",
+      "size": 11256,
+      "sha256": "f236e1e989a81ad6a7e250a28e8c2b3e23bde4509914bd6b4cf2b7affdf76f4c"
+    },
+    {
+      "path": "src/content/articles/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง.md",
+      "size": 9759,
+      "sha256": "e63ca22b4e0894d9875fc3e682da7ada2877bdbc772192ce3671812ec5678749"
+    },
+    {
+      "path": "src/content/articles/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน.md",
+      "size": 12246,
+      "sha256": "a111b5c950e44ccff47db330a0b674278befd52d59f8ffc28c4ea2e407d00002"
+    },
+    {
+      "path": "src/content/articles/ราคาประเมินจากรูปกับราคาหลังตรวจต่างกันอย่างไร.md",
+      "size": 12826,
+      "sha256": "f01a90a862d917cd84fc522db52a33ffa1820b8e0675d26ea44f45c3f2ceab3b"
+    },
+    {
+      "path": "src/content/articles/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว.md",
+      "size": 9469,
+      "sha256": "06ac5f025a1514d2408269b3727b8498950fbc9f14468d52445d36f1254a47c7"
+    },
+    {
+      "path": "src/content/articles/วิธีลบข้อมูลก่อนขายคอมพิวเตอร์.md",
+      "size": 7968,
+      "sha256": "6d20b34424b9e7c394dbcd1b8dab87e238dc588b19377f4da885cacb7c0b604f"
+    },
+    {
+      "path": "src/content/articles/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad.md",
+      "size": 7324,
+      "sha256": "f3a534ea45c27eaf37f8122ced784acd2145c7b25cb5216838e80345e7ee5f8e"
+    },
+    {
+      "path": "src/content/articles/วิธีออกจากบัญชี-google-ก่อนขายโทรศัพท์-android.md",
+      "size": 9124,
+      "sha256": "92c70deac6c04e113c0a77c2da3af9a314c6b125ebd019bde37fe93c00e09af9"
+    },
+    {
+      "path": "src/content/articles/วิธีเช็กสุขภาพแบตเตอรี่ก่อนขายมือถือและโน้ตบุ๊ก.md",
+      "size": 13775,
+      "sha256": "000271fa2b128b5260e39e03ff786a82b2a8bb4f0755403b9b87679fc6d0a8c4"
+    },
+    {
+      "path": "src/content/articles/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน.md",
+      "size": 7369,
+      "sha256": "d9db31bbe382d34ddf32d817c2acec1757b3257f741c42ed9a6c6c7bfc589ed4"
+    },
+    {
+      "path": "src/content/articles/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร.md",
+      "size": 10267,
+      "sha256": "e3bee15f5b80a0277fa8d4fe92aeb713bdc4b2892470b0c4bcd9c31b1792df15"
+    },
+    {
+      "path": "src/content/articles/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย.md",
+      "size": 10066,
+      "sha256": "d377a25401f35cfdfd64a3d409649bbb9ec92a4a1a6f928492b9e93258cd50a6"
+    },
+    {
+      "path": "src/content/articles/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง.md",
+      "size": 11197,
+      "sha256": "aa61b5c95d85d9f4e129bb669c4e5d68955ea61cb0e283b298e81351cf626aa9"
+    },
+    {
+      "path": "src/content/articles/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร.md",
+      "size": 9161,
+      "sha256": "2efa4eab951ed77bff0bc730abaec308c17f0d539a7e4e0da8ce5ae7f95a9394"
+    },
+    {
+      "path": "src/content/services/ขายคอมหลายเครื่อง-โคราช.md",
+      "size": 17301,
+      "sha256": "44670b6eadfd9a807d5c2481caead0c6a7149a742c7a3ede2a4a818e3925687d"
+    },
+    {
+      "path": "src/content/services/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช.md",
+      "size": 17221,
+      "sha256": "703fa26ec06879ecba3a8232c8f8aeefc019106dc0298c3b8df450e7d225ec0d"
+    },
+    {
+      "path": "src/content/services/บริการรับซื้อถึงที่โคราช.md",
+      "size": 19081,
+      "sha256": "b9ef7184d28095c3c45c758c30bbc9fc997928fad63ba09021f3d62d2d53dd6c"
+    },
+    {
+      "path": "src/content/services/บริษัทปิดกิจการขายอุปกรณ์ไอที.md",
+      "size": 17621,
+      "sha256": "20ede8a2e20d0c36b99d407d5ac87518fe9b6a4c6c7d01c1dae8dd2e5097ad90"
+    },
+    {
+      "path": "src/content/services/รับซื้อ-apple-watch-โคราช.md",
+      "size": 30272,
+      "sha256": "44dd7f5343c8e15cb706f5668e4df02258908bb3ddf5c5454595e0c4f14841bc"
+    },
+    {
+      "path": "src/content/services/รับซื้อ-cpu-โคราช.md",
+      "size": 21528,
+      "sha256": "9d7c8701ba95ca6e671fa6cee53e78642dc55f07b155a6467e7f57f3a5512471"
+    },
+    {
+      "path": "src/content/services/รับซื้อ-imac-mac-mini-โคราช.md",
+      "size": 30728,
+      "sha256": "ac4f4b6acce32cf335d460c7d4341407547a5f7a6ca22ebc96564e7df89aaa46"
+    },
+    {
+      "path": "src/content/services/รับซื้อ-ipad-โคราช.md",
+      "size": 32455,
+      "sha256": "520a1ecbd6c4c0e165fceadbb7305a45464b2ba0e89ef7a15b816256ead1b3ac"
+    },
+    {
+      "path": "src/content/services/รับซื้อ-iphone-โคราช.md",
+      "size": 35194,
+      "sha256": "a39c0fc1a42fa8dd5ff77557e8d573f5bf66269bb41e8156249f12f39a5d475d"
+    },
+    {
+      "path": "src/content/services/รับซื้อ-macbook-โคราช.md",
+      "size": 33772,
+      "sha256": "c66a9ee58669a7bb27da2ce873d97bd1d2d5f5fb90b5db4b0a3d0c8e4d5863e6"
+    },
+    {
+      "path": "src/content/services/รับซื้อ-nintendo-switch-โคราช.md",
+      "size": 17121,
+      "sha256": "afbff14724a5d3135882ff91214c6d8e849a3c82d77a632cc04b05f600f63f95"
+    },
+    {
+      "path": "src/content/services/รับซื้อ-playstation-โคราช.md",
+      "size": 17644,
+      "sha256": "3ef6aceb372db3a6793409c4dc4c4baa95cec2afde5105b1f836482f4178b7e6"
+    },
+    {
+      "path": "src/content/services/รับซื้อ-server-network-โคราช.md",
+      "size": 18030,
+      "sha256": "6909fd33a9003479a8ec83dad833aa204c1045244228d621014193ca1051f3f0"
+    },
+    {
+      "path": "src/content/services/รับซื้อ-ssd-hdd-โคราช.md",
+      "size": 18904,
+      "sha256": "3e039c7fb12b93f39eaf4acc60391473093d368a31e26a3a03ddf2ffd32c1763"
+    },
+    {
+      "path": "src/content/services/รับซื้อกล้อง-โคราช.md",
+      "size": 33107,
+      "sha256": "fd9cf86011f88fbfe8566caed91d62eed6518ff608718249e481f2a802953d93"
+    },
+    {
+      "path": "src/content/services/รับซื้อการ์ดจอ-โคราช.md",
+      "size": 25801,
+      "sha256": "fd6fee6e107cb1b93ed3bc0dea5a6764a5ac334997493f1ac43a22270ae480ff"
+    },
+    {
+      "path": "src/content/services/รับซื้อคอมตั้งโต๊ะ-โคราช.md",
+      "size": 29715,
+      "sha256": "70bbd04645b0bf3ed9f31944b26d27248254afbd03b00ec588e52d5d6aea39fe"
+    },
+    {
+      "path": "src/content/services/รับซื้อคอมบริษัท-โคราช.md",
+      "size": 19745,
+      "sha256": "b8db322a06433c775010328f7da32277d7d11a84d9280bb302d814655855a329"
+    },
+    {
+      "path": "src/content/services/รับซื้อคอมประกอบ-โคราช.md",
+      "size": 29620,
+      "sha256": "6964aa69ef48665cc72d5ec97a28c046dcb8349fc65e7e5bb9391ef127154ede"
+    },
+    {
+      "path": "src/content/services/รับซื้อคอมพิวเตอร์-โคราช.md",
+      "size": 33914,
+      "sha256": "1a8bd29e7959d543f36de311ba13b2266487663e172f56a424147bf5a6b35e31"
+    },
+    {
+      "path": "src/content/services/รับซื้อคอมเกมมิ่ง-โคราช.md",
+      "size": 29788,
+      "sha256": "50a16111e7b354c0c76e50d2d4d94a517b400334cfaecb65b29eb7fbf657ca7d"
+    },
+    {
+      "path": "src/content/services/รับซื้อคอมเก่า-โคราช.md",
+      "size": 17209,
+      "sha256": "2f43c64d5bf6e903b937e08846f99c0afe94e7a2d3bb858d6eb8ae5344fcc836"
+    },
+    {
+      "path": "src/content/services/รับซื้อจอมอนิเตอร์-โคราช.md",
+      "size": 18361,
+      "sha256": "2afdcd1255e6a90715605a0fae74227bf0ae99152fd71b5902f807425788706e"
+    },
+    {
+      "path": "src/content/services/รับซื้อลำโพง-โคราช.md",
+      "size": 17332,
+      "sha256": "b34c1a9e64dfe44132ff0f0e25d2de5286fc2287c240594bfe2f442a7ae0259a"
+    },
+    {
+      "path": "src/content/services/รับซื้อสินค้าไอที.md",
+      "size": 24457,
+      "sha256": "66ae575d9378edd3287794bb061c35e966ed6ff9c971df2db77a94ee2e851da0"
+    },
+    {
+      "path": "src/content/services/รับซื้อสินค้าไอทียกล็อต.md",
+      "size": 17969,
+      "sha256": "b461b18face683b89df64a3c17dd83d36d1c2846cd8dfc40502f67e6fa4fb787"
+    },
+    {
+      "path": "src/content/services/รับซื้อสินค้าไอทีไม่มีอุปกรณ์-โคราช.md",
+      "size": 17348,
+      "sha256": "e40cc6aacf88503dcfc46b4fdc69ad74aee6c40b1870aa55cd096ab496d9140e"
+    },
+    {
+      "path": "src/content/services/รับซื้อสินค้าไอทีไม่ได้ใช้งาน-โคราช.md",
+      "size": 17168,
+      "sha256": "1bc339ea838eb297fef98c6196f86e80c845fe4e483fd7f107589b6668ba762b"
+    },
+    {
+      "path": "src/content/services/รับซื้อหูฟัง-โคราช.md",
+      "size": 17166,
+      "sha256": "be61c92cf4422b0556d78ed81949ad21532f760bf827d6e50b45a8aa591d6a24"
+    },
+    {
+      "path": "src/content/services/รับซื้ออุปกรณ์-pos-โคราช.md",
+      "size": 17182,
+      "sha256": "83b69a1141609631598c1202d9be40ab852dd319c11bf113f0b801cb2f2b2081"
+    },
+    {
+      "path": "src/content/services/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช.md",
+      "size": 33118,
+      "sha256": "deb63ae9dbfe6235ba057e8a14425bc398ddb2502772ca255b2eb2bd78caa365"
+    },
+    {
+      "path": "src/content/services/รับซื้ออุปกรณ์สำนักงาน.md",
+      "size": 17327,
+      "sha256": "c1d166a3abcd87474e46abb0da0cb83d6138ce35cd1cfe3795ccb9702edaa26b"
+    },
+    {
+      "path": "src/content/services/รับซื้อเครื่องปริ้น-โคราช.md",
+      "size": 17213,
+      "sha256": "6a2af00bf1d49b7089293055a2b6c324ce0ef9faa5988888f50659afa3a44de0"
+    },
+    {
+      "path": "src/content/services/รับซื้อเครื่องเกม-โคราช.md",
+      "size": 17383,
+      "sha256": "81eace9c6084625e0858de6e9584678aa007bf2bed5e1c5ddf52a9425572ea46"
+    },
+    {
+      "path": "src/content/services/รับซื้อเมนบอร์ด-โคราช.md",
+      "size": 19255,
+      "sha256": "b7ab538e065f5df1ae149eb79a0bd138e841dca245cb88079d8d4fab49b8f509"
+    },
+    {
+      "path": "src/content/services/รับซื้อเลนส์กล้อง-โคราช.md",
+      "size": 17651,
+      "sha256": "df44bf563d24b80e0ba666adb7b996e090be16fa34ddb56c673fa5e8c6ba779a"
+    },
+    {
+      "path": "src/content/services/รับซื้อเวิร์กสเตชัน-โคราช.md",
+      "size": 30402,
+      "sha256": "b021378c90195c3b501bef4fe7dbbf89f5a62893a9fd146eed9ce29d0c71d3d6"
+    },
+    {
+      "path": "src/content/services/รับซื้อแท็บเล็ต-โคราช.md",
+      "size": 30284,
+      "sha256": "a76bd57ae03db116ff905a4967c52c07b6addba824ac346babbb13bc45c846fb"
+    },
+    {
+      "path": "src/content/services/รับซื้อแรม-โคราช.md",
+      "size": 18620,
+      "sha256": "db5b9fbac6f7a98d7ebf7572fe0dd7ef7712565239b04194bae16768604d07e5"
+    },
+    {
+      "path": "src/content/services/รับซื้อโทรศัพท์-android-โคราช.md",
+      "size": 29452,
+      "sha256": "6d827cfe96ba7a7d363921ddbaafb2233871dcaced952f449353e2941bffc74a"
+    },
+    {
+      "path": "src/content/services/รับซื้อโทรศัพท์-oppo-โคราช.md",
+      "size": 28775,
+      "sha256": "d0db5d118e7b6b910cc47c1362c7e8cb5cbc60bcda21a7d616bb693e557262ef"
+    },
+    {
+      "path": "src/content/services/รับซื้อโทรศัพท์-samsung-โคราช.md",
+      "size": 29313,
+      "sha256": "6a8fa099ca8c10852eab11ff46f599ba0d24755ced2e541711bae61246ff3755"
+    },
+    {
+      "path": "src/content/services/รับซื้อโทรศัพท์-vivo-โคราช.md",
+      "size": 28311,
+      "sha256": "dc4d0f5bd0873612a143c0bc36cc2043cc39995d25b41495d8e9630977d9b563"
+    },
+    {
+      "path": "src/content/services/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช.md",
+      "size": 28535,
+      "sha256": "e53691228fb8b625d3c2ab732b78b893c76b0cf58e801ae87b90c4ad82412c86"
+    },
+    {
+      "path": "src/content/services/รับซื้อโทรศัพท์จอแตก-โคราช.md",
+      "size": 17218,
+      "sha256": "6e9ff65b32e7c0533c3c535f23c41f11e4e491efe53100cd8ca00a4d73139013"
+    },
+    {
+      "path": "src/content/services/รับซื้อโทรศัพท์มือถือ-โคราช.md",
+      "size": 32211,
+      "sha256": "e22f81d0a38e1582e75245c03678e05725dda943a646903b7fbe3b49f898c690"
+    },
+    {
+      "path": "src/content/services/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช.md",
+      "size": 5422,
+      "sha256": "39bc075399d48717c9c6f0a3810003b18930e29676b3f4f5a580806d7653b8fa"
+    },
+    {
+      "path": "src/content/services/รับซื้อโน๊ตบุ๊ค-asus-โคราช.md",
+      "size": 6336,
+      "sha256": "0e856ef8229cbcecdada592af9934d39742cf6fe6e5a9b3daf0799724c0f98b2"
+    },
+    {
+      "path": "src/content/services/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช.md",
+      "size": 5940,
+      "sha256": "fb8b4189b6f9ee35e4a192a7df5cf8b3c9d60a39a4ec629f1c9ec98a94b742b4"
+    },
+    {
+      "path": "src/content/services/รับซื้อโน๊ตบุ๊ค-dell-โคราช.md",
+      "size": 6012,
+      "sha256": "73726e1e85268ccc19f8d45c2e528f7050dac170af9c8443edf704b6e6b59305"
+    },
+    {
+      "path": "src/content/services/รับซื้อโน๊ตบุ๊ค-โคราช.md",
+      "size": 31644,
+      "sha256": "8b1f810ca2869fe3b06e1008bb512c07d5d3b39cbaad1d43984f3d1896d83e7e"
+    },
+    {
+      "path": "src/content/services/รับซื้อโน๊ตบุ๊คจอแตก-โคราช.md",
+      "size": 17515,
+      "sha256": "5dfa6ad69f001abeb750f5da2f787ff66560bb6fd85520caac7ec11ed8cb9816"
+    },
+    {
+      "path": "src/content/services/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช.md",
+      "size": 29910,
+      "sha256": "af7568b33369ac5574f4e8676f9e1141ce462cb56e3942ad8940da41165241f6"
+    },
+    {
+      "path": "src/content/services/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช.md",
+      "size": 17550,
+      "sha256": "5cfae11da1e6f1ff14134b8678e59b4c427893dbf34d9b8a07d116aa72f57b97"
+    },
+    {
+      "path": "src/content/services/รับซื้อโน๊ตบุ๊คเสีย-โคราช.md",
+      "size": 19102,
+      "sha256": "ae6c66f5c7d2c37b5ed18b39d26355c740c69d975ed69af495323334aeca771e"
+    },
+    {
+      "path": "src/content/services/วิธีขายสินค้า.md",
+      "size": 18209,
+      "sha256": "c051be5a41289b8642bf5e020fd6ee719e2ee48f2486f40f258b05c2e0cf3551"
+    },
+    {
+      "path": "src/content/services/วิธีประเมินราคา.md",
+      "size": 18606,
+      "sha256": "677a32f6b046e3eed69de022b787bcbf4ecb60e6179aab9ef9aec901959bf87a"
+    },
+    {
+      "path": "src/content/services/ส่งสินค้าไอทีมาประเมิน.md",
+      "size": 18041,
+      "sha256": "351d3a6495af6d530573efe72c0a87afab8fae45bce64c6cd67ff839189c69e6"
+    },
+    {
+      "path": "src/content.config.ts",
+      "size": 1768,
+      "sha256": "8c127d5f0c5dec8e0c8798b9aad74bfe1c07ff25f229e2fe05dac4851b9a2a0e"
+    },
+    {
+      "path": "src/data/evidence.ts",
+      "size": 6964,
+      "sha256": "e3d40e6af21f0541b1fa43406b4b8d2737e830f2426c624324676ef4ad6bb6e3"
+    },
+    {
+      "path": "src/data/leadCapture.ts",
+      "size": 3600,
+      "sha256": "7a697fa7409ed6de6348632e75b08d868d4381c0455960d072955ecf4b9a0b27"
+    },
+    {
+      "path": "src/data/measurementConfig.ts",
+      "size": 3274,
+      "sha256": "a62946153610a15b94e89420c4b49be5af843a1e639303d6e92b7d066f8d497d"
+    },
+    {
+      "path": "src/data/pilotImages.ts",
+      "size": 2598,
+      "sha256": "be934d6360430bdce16f84006437add379eaefb921053ab0da806c98c2f48d86"
+    },
+    {
+      "path": "src/data/site.ts",
+      "size": 10390,
+      "sha256": "b6203103c1f65ffca465ae6502ace7fd1fae79f2ee727298eb6dd54713b6fedd"
+    },
+    {
+      "path": "src/env.d.ts",
+      "size": 865,
+      "sha256": "7ceda7afec0e69eda690dc6fe819ba61bb750cafe9c18796456660a2bbcfd374"
+    },
+    {
+      "path": "src/layouts/AreaPageLayout.astro",
+      "size": 2931,
+      "sha256": "ff1b982134d4f2abff685fa07edc885c54d21c50e4ae887a2af93486e7031187"
+    },
+    {
+      "path": "src/layouts/ArticleLayout.astro",
+      "size": 2742,
+      "sha256": "328df9c0a5c54a5104c6e4d61e4d96e3f70f7e36bd9708b1547698231ac2f5c0"
+    },
+    {
+      "path": "src/layouts/BaseLayout.astro",
+      "size": 1480,
+      "sha256": "53a0452d0ebff6b97c39e47373c79841b43e6225309fe044727d2295d0e327ff"
+    },
+    {
+      "path": "src/layouts/ServicePageLayout.astro",
+      "size": 3851,
+      "sha256": "00d17ed72e071913882658e10ff92f3b975bc5ac8a564a5cc04589012573f161"
+    },
+    {
+      "path": "src/layouts/TrustPageLayout.astro",
+      "size": 1142,
+      "sha256": "26335213ee7747b551dea9381604d392499976ded717dc1f0a556efbebcb0e34"
+    },
+    {
+      "path": "src/pages/404.astro",
+      "size": 1166,
+      "sha256": "d49fc1a9be8603e91a6632f917af962046b19220dc1b1d41ba8d92f065585b79"
+    },
+    {
+      "path": "src/pages/[slug].astro",
+      "size": 2820,
+      "sha256": "b755df6107a31e81046a1f3973a650e254795cfaebe75e1860a9be73efdbaab6"
+    },
+    {
+      "path": "src/pages/index.astro",
+      "size": 18019,
+      "sha256": "6d19c6d4de8e0f776656cb32ae82a344ecc5ed8d4582ce1e7485abe628f50bd1"
+    },
+    {
+      "path": "src/pages/ข้อกำหนดการใช้บริการ.astro",
+      "size": 2995,
+      "sha256": "e742a31ba7caccd3281b3c78dfa99ef24d6e99699105198cf2b0e1678dc6d6a6"
+    },
+    {
+      "path": "src/pages/คำถามที่พบบ่อย.astro",
+      "size": 9144,
+      "sha256": "8a93cce3312d6c9bafb90e5b26a5b9b5afd7c26d9a9c750e22b88f777bd16a68"
+    },
+    {
+      "path": "src/pages/ติดต่อ.astro",
+      "size": 6991,
+      "sha256": "15ae373832c003b8a1effa47c0618d3dce7537515549b95f8d18d19aa7c7f8c5"
+    },
+    {
+      "path": "src/pages/นโยบายความเป็นส่วนตัว.astro",
+      "size": 3580,
+      "sha256": "ec6ab608272303d004866b7dfb9c1f5b6b9ff0601e83c3f9b4402911652c8191"
+    },
+    {
+      "path": "src/pages/นโยบายคุกกี้.astro",
+      "size": 4583,
+      "sha256": "63384da3027234daf3349fc1de54af19eadd5b108d5d3cf2f0b21e285d26bfbc"
+    },
+    {
+      "path": "src/pages/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ.astro",
+      "size": 3967,
+      "sha256": "941e561704c7c5cb3c2bb7156c38582338c4a0beb10618492489731f19028d4f"
+    },
+    {
+      "path": "src/pages/บทความ/[slug].astro",
+      "size": 2495,
+      "sha256": "dd019882c25dfe9c2f1bf10da60d77c13a1404dae508d4d401af403c75c51418"
+    },
+    {
+      "path": "src/pages/บทความ/index.astro",
+      "size": 2247,
+      "sha256": "6d82ce5ff1fb3fbbc0ed4e65c5708841726edf410435dc9de63d7b31903c63d3"
+    },
+    {
+      "path": "src/pages/พื้นที่/[slug].astro",
+      "size": 2552,
+      "sha256": "0d01e3ac28531ca107f447815b7f037137841c69695465f45330cb11dbe55765"
+    },
+    {
+      "path": "src/pages/พื้นที่/index.astro",
+      "size": 3970,
+      "sha256": "86492f3ffc180384ecdfe7d5578e4cc8764d8b32fbd5ea37c0430afa09b8e1d7"
+    },
+    {
+      "path": "src/pages/เกี่ยวกับเรา.astro",
+      "size": 7522,
+      "sha256": "97d7603658e00132015572f9ab93f349333cfeed646b63dc3da5428ad83e8706"
+    },
+    {
+      "path": "src/styles/global.css",
+      "size": 7797,
+      "sha256": "8886cb20ed2f3012bcae5d328f5502a166490f9eeef380869f2e61b750f43367"
+    },
+    {
+      "path": "src/utils/content.ts",
+      "size": 2029,
+      "sha256": "4dc63110f7a55d92b15e2cd689809ce8b23d4bd4416b4334d85ea8cd7b058e87"
+    },
+    {
+      "path": "src/utils/measurement.ts",
+      "size": 3237,
+      "sha256": "c04612b5b39491d053c02b476535b79fbe83902ae7859b95f9b82ba5dc5f2537"
+    },
+    {
+      "path": "src/utils/schema.ts",
+      "size": 5156,
+      "sha256": "e72eb6b42c3d330f3e5195a3650e289dae7b9047519479944ba3b25825218a20"
+    },
+    {
+      "path": "src/utils/seo.ts",
+      "size": 1210,
+      "sha256": "3947bcd6c84cf0c8e2e10730639db15e001da4a5153be82c49d9a759e26c9298"
+    },
+    {
+      "path": "task.md",
+      "size": 716,
+      "sha256": "aa1f6f31455feb361751859559ca4bcbd3a0e2cad53fea3731a1c2d449960c2f"
+    },
+    {
+      "path": "tsconfig.json",
+      "size": 221,
+      "sha256": "e7c8336d822c834e79ce376db09823ad7c31da07b3338e53fc1ea93ea1b75c53"
+    },
+    {
+      "path": "vercel.json",
+      "size": 1047,
+      "sha256": "b4f6db08a89775f04cdc72d310bca2171912ffb0146c03bc9a0ad6d71f524741"
+    }
+  ]
+}

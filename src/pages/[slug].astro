@@ -1,62 +1,46 @@
 ---
 import { getCollection, render } from "astro:content";
 import ServicePageLayout from "../layouts/ServicePageLayout.astro";
-import {
-  absoluteUrl,
-} from "../utils/seo";
-import {
-  asIllustration,
-  getAllContentIndex,
-  resolveRelated,
-} from "../utils/content";
-import {
-  breadcrumbSchema,
-  buildGraph,
-  faqSchema,
-  serviceSchema,
-  webpageSchema,
-} from "../utils/schema";
+import { absoluteUrl } from "../utils/seo";
+import { asIllustration, getAllContentIndex, resolveRelated } from "../utils/content";
+import { breadcrumbSchema, buildGraph, faqSchema, serviceSchema, webpageSchema } from "../utils/schema";
 import { PILOT_IMAGES, type PilotImageKey } from "../data/pilotImages";
+import { getRuntimeBreadcrumbs, getRuntimeDiscoveryLinks, getRuntimeRelatedLinks } from "../config/runtime-architecture";
 
 export async function getStaticPaths() {
   const services = await getCollection("services");
-  return services.map((entry) => ({
-    params: { slug: entry.data.slug },
-    props: { entry },
-  }));
+  return services.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const index = await getAllContentIndex();
-const related = resolveRelated(index, entry.data.relatedPages);
+const path = `/${entry.data.slug}`;
+const architectureRelated = [
+  ...getRuntimeDiscoveryLinks(path, 16),
+  ...getRuntimeRelatedLinks(path, 6),
+].map((item) => item.url);
+const relatedPaths = [...new Set([...architectureRelated, ...entry.data.relatedPages])];
+const related = resolveRelated(index, relatedPaths);
 const relatedServices = related.filter((item) => !item.href.startsWith("/บทความ/"));
 const relatedArticles = related.filter((item) => item.href.startsWith("/บทความ/"));
 const pilotImage = entry.data.pilotImage ? PILOT_IMAGES[entry.data.pilotImage as PilotImageKey] : undefined;
 
-const url = absoluteUrl(`/${entry.data.slug}`);
-const breadcrumbs = [
-  { name: "หน้าแรก", href: "/" },
-  { name: "บริการ", href: "/รับซื้อสินค้าไอที" },
-  { name: entry.data.h1, href: `/${entry.data.slug}` },
-];
+const url = absoluteUrl(path);
+const runtimeBreadcrumbs = getRuntimeBreadcrumbs(path);
+const breadcrumbs = runtimeBreadcrumbs.length
+  ? runtimeBreadcrumbs.map((item) => ({ name: item.reason === "HOME" ? "หน้าแรก" : item.label, href: item.url }))
+  : [
+      { name: "หน้าแรก", href: "/" },
+      { name: "บริการ", href: "/รับซื้อสินค้าไอที" },
+      { name: entry.data.h1, href: path },
+    ];
 
 const schema = buildGraph([
-  webpageSchema({
-    url,
-    name: entry.data.title,
-    description: entry.data.description,
-    dateModified: entry.data.updatedDate.toISOString(),
-  }),
-  serviceSchema({
-    url,
-    name: entry.data.h1,
-    description: entry.data.description,
-  }),
+  webpageSchema({ url, name: entry.data.title, description: entry.data.description, dateModified: entry.data.updatedDate.toISOString() }),
+  serviceSchema({ url, name: entry.data.h1, description: entry.data.description }),
   breadcrumbSchema(breadcrumbs),
-  ...(entry.data.faq.length
-    ? [faqSchema(entry.data.faq, url)]
-    : []),
+  ...(entry.data.faq.length ? [faqSchema(entry.data.faq, url)] : []),
 ]);
 ---
 
@@ -66,7 +50,7 @@ const schema = buildGraph([
   h1={entry.data.h1}
   lead={entry.data.excerpt}
   breadcrumbs={breadcrumbs}
-  canonical={`/${entry.data.slug}`}
+  canonical={entry.data.canonical ?? path}
   ogImage={entry.data.ogImage}
   updatedDate={entry.data.updatedDate}
   schema={schema}

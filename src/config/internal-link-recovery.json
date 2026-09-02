@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "batch": "ARCHITECTURE BATCH 3 — Internal Link Graph Consolidation & Orphan Recovery",
+    "site": "รับซื้อไอทีโคราช.com",
+    "baseline": "Batch 2 architecture-projected graph",
+    "baselineProjectedZeroInbound": 28,
+    "baselineProjectedInboundLTE1": 31,
+    "policy": "Strengthen contextual discovery without canonical/robots changes. Batch 5 releases the local graph through /พื้นที่; TRUST remains navigation-owned.",
+    "maxHubDiscoveryLinks": 16,
+    "maxRelatedLinks": 6,
+    "guideAuthorityState": "BATCH_7_CURATED",
+    "guideCommercialTargetLimit": 3,
+    "guideRelatedLimit": 3,
+    "globalNavigationState": "BATCH_8",
+    "globalHeaderPrimaryLimit": 6,
+    "globalFooterColumnLimit": 5,
+    "expansionRound1State": "BRAND_SERIES_CONTEXTUAL_BRIDGES",
+    "realRepoGuideCount": 19
+  },
+  "homepageDiscovery": [
+    "/รับซื้อสินค้าไอที",
+    "/รับซื้อโน๊ตบุ๊ค-โคราช",
+    "/รับซื้อคอมพิวเตอร์-โคราช",
+    "/รับซื้อโทรศัพท์มือถือ-โคราช",
+    "/รับซื้อกล้อง-โคราช",
+    "/รับซื้อเครื่องเกม-โคราช",
+    "/รับซื้อสินค้าไอทียกล็อต",
+    "/วิธีขายสินค้า",
+    "/บทความ",
+    "/รับซื้อ-iphone-โคราช",
+    "/รับซื้อ-macbook-โคราช",
+    "/พื้นที่"
+  ],
+  "conversionBridges": {
+    "/บทความ/ssd-และข้อมูลส่วนตัวควรจัดการอย่างไรก่อนขาย": [
+      "/รับซื้อคอมพิวเตอร์-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "/วิธีประเมินราคา"
+    ],
+    "/บทความ/กล่องและอุปกรณ์มีผลต่อราคามือสองหรือไม่": [
+      "/วิธีประเมินราคา",
+      "/รับซื้อสินค้าไอที",
+      "/วิธีขายสินค้า"
+    ],
+    "/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร": [
+      "/ขายคอมหลายเครื่อง-โคราช",
+      "/รับซื้อสินค้าไอทียกล็อต",
+      "/วิธีประเมินราคา"
+    ],
+    "/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร": [
+      "/รับซื้อสินค้าไอทียกล็อต",
+      "/บริษัทปิดกิจการขายอุปกรณ์ไอที",
+      "/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช"
+    ],
+    "/บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง": [
+      "/รับซื้อกล้อง-โคราช",
+      "/รับซื้อเลนส์กล้อง-โคราช",
+      "/วิธีประเมินราคา"
+    ],
+    "/บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน": [
+      "/รับซื้อการ์ดจอ-โคราช",
+      "/รับซื้อคอมพิวเตอร์-โคราช",
+      "/วิธีประเมินราคา"
+    ],
+    "/บทความ/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว": [
+      "/วิธีประเมินราคา",
+      "/ส่งสินค้าไอทีมาประเมิน",
+      "/วิธีขายสินค้า"
+    ],
+    "/บทความ/วิธีลบข้อมูลก่อนขายคอมพิวเตอร์": [
+      "/รับซื้อคอมพิวเตอร์-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "/วิธีขายสินค้า"
+    ],
+    "/บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad": [
+      "/รับซื้อ-iphone-โคราช",
+      "/รับซื้อ-ipad-โคราช",
+      "/วิธีขายสินค้า"
+    ],
+    "/บทความ/วิธีออกจากบัญชี-google-ก่อนขายโทรศัพท์-android": [
+      "/รับซื้อโทรศัพท์-android-โคราช",
+      "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "/วิธีขายสินค้า"
+    ],
+    "/บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน": [
+      "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "/วิธีประเมินราคา",
+      "/ส่งสินค้าไอทีมาประเมิน"
+    ],
+    "/บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร": [
+      "/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช",
+      "/รับซื้อสินค้าไอที",
+      "/วิธีประเมินราคา"
+    ],
+    "/บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย": [
+      "/ส่งสินค้าไอทีมาประเมิน",
+      "/วิธีขายสินค้า",
+      "/รับซื้อสินค้าไอที"
+    ],
+    "/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง": [
+      "/วิธีประเมินราคา",
+      "/รับซื้อสินค้าไอที",
+      "/วิธีขายสินค้า"
+    ],
+    "/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร": [
+      "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "/วิธีขายสินค้า",
+      "/ส่งสินค้าไอทีมาประเมิน"
+    ],
+    "/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช": [
+      "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช"
+    ],
+    "/รับซื้อคอมบริษัท-โคราช": [
+      "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช"
+    ],
+    "/บทความ/cycle-count-และ-activation-lock-ก่อนขาย-macbook": [
+      "/รับซื้อ-macbook-โคราช",
+      "/วิธีขายสินค้า",
+      "/วิธีประเมินราคา"
+    ],
+    "/บทความ/shutter-count-คืออะไรก่อนขายกล้องดิจิทัล": [
+      "/รับซื้อกล้อง-โคราช",
+      "/วิธีประเมินราคา"
+    ],
+    "/บทความ/ราคาประเมินจากรูปกับราคาหลังตรวจต่างกันอย่างไร": [
+      "/วิธีประเมินราคา",
+      "/วิธีขายสินค้า",
+      "/ส่งสินค้าไอทีมาประเมิน"
+    ],
+    "/บทความ/วิธีเช็กสุขภาพแบตเตอรี่ก่อนขายมือถือและโน้ตบุ๊ก": [
+      "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "/วิธีประเมินราคา"
+    ]
+  },
+  "exemptions": {
+    "TRUST": "Navigation/footer-owned; excluded from contextual orphan gate."
+  },
+  "rules": [
+    "Homepage exposes controlled primary discovery seeds only.",
+    "A live hub exposes all of its direct indexable children up to 16 links.",
+    "Sibling recovery is circular/rotating, never fixed-first-6.",
+    "Root-level routes do not use generic sibling linking; explicit hub peers control cross-cluster flow.",
+    "Article conversion bridges point to intent-matched commercial/journey pages before article siblings.",
+    "Virtual Apple parent URLs are never emitted.",
+    "The local authority hub /พื้นที่ exposes all released area children; area pages use bounded explicit related-area links.",
+    "Guide conversion bridges are authoritative from guide-authority-architecture.json.",
+    "Guide-to-guide links stay inside the same virtual topical cluster and are circularly rotated.",
+    "Virtual guide-cluster identifiers are never emitted as href/canonical/breadcrumb URLs.",
+    "Global Header/Footer discover released Hub/Tier-A owners only; unreleased Brand/Series/Guide candidates never enter global navigation.",
+    "Round 1 Series pages require at least two contextual discovery paths before release."
+  ]
+}

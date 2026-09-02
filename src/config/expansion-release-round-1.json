@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "round": "EXPANSION RELEASE ROUND 1",
+    "state": "RELEASED",
+    "baselineLive": 90,
+    "baselineIndexable": 89,
+    "released": 4,
+    "finalLive": 94,
+    "finalIndexable": 93,
+    "releaseCap": 6,
+    "modelsReleased": 0,
+    "guidesReleased": 0,
+    "localReleased": 0,
+    "automaticPublishing": false,
+    "productionGateState": "PREDEPLOY_PENDING_REAL_REPO",
+    "observationState": "LOCKED_UNTIL_PRODUCTION_VERIFIED"
+  },
+  "releasedNodes": [
+    {
+      "candidateId": "brand:notebook:asus",
+      "url": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "label": "รับซื้อโน๊ตบุ๊ค ASUS โคราช",
+      "nodeType": "BRAND",
+      "pageType": "Brand landing page",
+      "cluster": "NOTEBOOK",
+      "tier": "B",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "sourceHint": "src/content/services/รับซื้อโน๊ตบุ๊ค-asus-โคราช.md",
+      "priorityBand": 1,
+      "evidence": [
+        "FIRST_PARTY_ENQUIRY",
+        "MANUFACTURER_IDENTITY_VERIFIED"
+      ]
+    },
+    {
+      "candidateId": "series:notebook:asus:rog",
+      "url": "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+      "label": "รับซื้อ ASUS ROG โคราช",
+      "nodeType": "SERIES",
+      "pageType": "Series landing page",
+      "cluster": "NOTEBOOK",
+      "tier": "B",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "sourceHint": "src/content/services/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช.md",
+      "priorityBand": 1,
+      "evidence": [
+        "FIRST_PARTY_ENQUIRY",
+        "MANUFACTURER_SERIES_VERIFIED"
+      ]
+    },
+    {
+      "candidateId": "brand:notebook:dell",
+      "url": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "label": "รับซื้อโน๊ตบุ๊ค Dell โคราช",
+      "nodeType": "BRAND",
+      "pageType": "Brand landing page",
+      "cluster": "NOTEBOOK",
+      "tier": "B",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "sourceHint": "src/content/services/รับซื้อโน๊ตบุ๊ค-dell-โคราช.md",
+      "priorityBand": 1,
+      "evidence": [
+        "FIRST_PARTY_CORPORATE_ENQUIRY",
+        "MANUFACTURER_IDENTITY_VERIFIED"
+      ]
+    },
+    {
+      "candidateId": "series:notebook:dell:latitude",
+      "url": "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช",
+      "label": "รับซื้อ Dell Latitude โคราช",
+      "nodeType": "SERIES",
+      "pageType": "Series landing page",
+      "cluster": "NOTEBOOK",
+      "tier": "B",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "sourceHint": "src/content/services/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช.md",
+      "priorityBand": 1,
+      "evidence": [
+        "FIRST_PARTY_CORPORATE_ENQUIRY",
+        "DELL_LATITUDE_7440_VERIFIED"
+      ]
+    }
+  ],
+  "observationGate": {
+    "round2State": "LOCKED",
+    "requiredBeforeRound2": [
+      "production build passes with 94 governed routes",
+      "production sitemap contains exactly 93 indexable canonical URLs",
+      "new URLs return HTTP 200 and self-canonical",
+      "new URLs receive parent/child internal links",
+      "GSC/indexation observation completed",
+      "query ownership/cannibalization reviewed before next release"
+    ],
+    "minimumFinalizedGscDays": 7,
+    "recommendedExtendedObservationDays": 14
+  }
+}

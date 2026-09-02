@@ -3,50 +3,36 @@ import { getCollection, render } from "astro:content";
 import ArticleLayout from "../../layouts/ArticleLayout.astro";
 import { absoluteUrl } from "../../utils/seo";
 import { getAllContentIndex, resolveRelated } from "../../utils/content";
-import {
-  articleSchema,
-  breadcrumbSchema,
-  buildGraph,
-  webpageSchema,
-} from "../../utils/schema";
+import { articleSchema, breadcrumbSchema, buildGraph, webpageSchema } from "../../utils/schema";
+import { getRuntimeBreadcrumbs, getRuntimeRelatedLinks } from "../../config/runtime-architecture";
 
 export async function getStaticPaths() {
   const articles = await getCollection("articles");
-  return articles.map((entry) => ({
-    params: { slug: entry.data.slug },
-    props: { entry },
-  }));
+  return articles.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const index = await getAllContentIndex();
-const related = resolveRelated(index, entry.data.relatedPages);
+const path = `/บทความ/${entry.data.slug}`;
+const architectureRelated = getRuntimeRelatedLinks(path, 6).map((item) => item.url);
+const relatedPaths = [...new Set([...architectureRelated, ...entry.data.relatedPages])];
+const related = resolveRelated(index, relatedPaths);
 const relatedServices = related.filter((item) => !item.href.startsWith("/บทความ/"));
 const relatedArticles = related.filter((item) => item.href.startsWith("/บทความ/"));
-const path = `/บทความ/${entry.data.slug}`;
 const url = absoluteUrl(path);
-const breadcrumbs = [
-  { name: "หน้าแรก", href: "/" },
-  { name: "บทความ", href: "/บทความ" },
-  { name: entry.data.h1, href: path },
-];
+const runtimeBreadcrumbs = getRuntimeBreadcrumbs(path);
+const breadcrumbs = runtimeBreadcrumbs.length
+  ? runtimeBreadcrumbs.map((item) => ({ name: item.reason === "HOME" ? "หน้าแรก" : item.label, href: item.url }))
+  : [
+      { name: "หน้าแรก", href: "/" },
+      { name: "บทความ", href: "/บทความ" },
+      { name: entry.data.h1, href: path },
+    ];
 
 const schema = buildGraph([
-  webpageSchema({
-    url,
-    name: entry.data.title,
-    description: entry.data.description,
-    dateModified: entry.data.updatedDate.toISOString(),
-  }),
-  articleSchema({
-    url,
-    headline: entry.data.h1,
-    description: entry.data.description,
-    datePublished: entry.data.publishedDate.toISOString(),
-    dateModified: entry.data.updatedDate.toISOString(),
-    author: entry.data.author,
-  }),
+  webpageSchema({ url, name: entry.data.title, description: entry.data.description, dateModified: entry.data.updatedDate.toISOString() }),
+  articleSchema({ url, headline: entry.data.h1, description: entry.data.description, datePublished: entry.data.publishedDate.toISOString(), dateModified: entry.data.updatedDate.toISOString(), author: entry.data.author }),
   breadcrumbSchema(breadcrumbs),
 ]);
 ---
@@ -56,7 +42,7 @@ const schema = buildGraph([
   description={entry.data.description}
   h1={entry.data.h1}
   breadcrumbs={breadcrumbs}
-  canonical={path}
+  canonical={entry.data.canonical ?? path}
   ogImage={entry.data.ogImage}
   updatedDate={entry.data.updatedDate}
   publishedDate={entry.data.publishedDate}

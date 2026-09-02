@@ -1,0 +1,21 @@
+{
+  "round": "EXPANSION ROUND 1 — Production Release & Observation Gate",
+  "baseline": "Expansion Release Round 1 full overlay",
+  "changedFileCount": 13,
+  "changedFiles": [
+    "APPLY_EXPANSION_ROUND_1_PRODUCTION_OBSERVATION_GATE.md",
+    "docs/architecture/EXPANSION-ROUND-1-PRODUCTION-OBSERVATION-GATE.md",
+    "docs/architecture/architecture-quality-gate-report.json",
+    "docs/architecture/expansion-round-1-predeploy-report.json",
+    "docs/architecture/expansion-round-1-production-gate-changed-files.json",
+    "docs/architecture/expansion-round-1-production-gate-release-report.json",
+    "docs/architecture/expansion-round-1-production-gate-self-test.txt",
+    "scripts/evaluate-expansion-round-1-observation.mjs",
+    "scripts/predeploy-expansion-round-1.mjs",
+    "scripts/validate-expansion-round-1-production-gate.mjs",
+    "scripts/verify-expansion-round-1-production.mjs",
+    "src/config/expansion-release-round-1.json",
+    "src/config/expansion-round-1-production-gate.json"
+  ],
+  "gitPatchApplyCheck": "PASS"
+}

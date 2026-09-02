@@ -3,48 +3,39 @@ import { getCollection, render } from "astro:content";
 import AreaPageLayout from "../../layouts/AreaPageLayout.astro";
 import { absoluteUrl } from "../../utils/seo";
 import { getAllContentIndex, resolveRelated } from "../../utils/content";
-import {
-  breadcrumbSchema,
-  buildGraph,
-  faqSchema,
-  serviceSchema,
-  webpageSchema,
-} from "../../utils/schema";
+import { breadcrumbSchema, buildGraph, faqSchema, serviceSchema, webpageSchema } from "../../utils/schema";
+import { getRuntimeBreadcrumbs, getRuntimeDiscoveryLinks, getRuntimeRelatedLinks } from "../../config/runtime-architecture";
 
 export async function getStaticPaths() {
   const areas = await getCollection("areas");
-  return areas.map((entry) => ({
-    params: { slug: entry.data.slug },
-    props: { entry },
-  }));
+  return areas.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const index = await getAllContentIndex();
-const related = resolveRelated(index, entry.data.relatedPages);
+const path = `/พื้นที่/${entry.data.slug}`;
+const architectureRelated = [
+  ...getRuntimeDiscoveryLinks(path, 16),
+  ...getRuntimeRelatedLinks(path, 6),
+].map((item) => item.url);
+const relatedPaths = [...new Set([...architectureRelated, ...entry.data.relatedPages])];
+const related = resolveRelated(index, relatedPaths);
 const relatedServices = related.filter((item) => !item.href.startsWith("/บทความ/"));
 const relatedArticles = related.filter((item) => item.href.startsWith("/บทความ/"));
-const path = `/พื้นที่/${entry.data.slug}`;
 const url = absoluteUrl(path);
-const breadcrumbs = [
-  { name: "หน้าแรก", href: "/" },
-  { name: "พื้นที่บริการ", href: "/พื้นที่/เมืองนครราชสีมา" },
-  { name: entry.data.areaName, href: path },
-];
+const runtimeBreadcrumbs = getRuntimeBreadcrumbs(path);
+const breadcrumbs = runtimeBreadcrumbs.length
+  ? runtimeBreadcrumbs.map((item) => ({ name: item.reason === "HOME" ? "หน้าแรก" : item.label, href: item.url }))
+  : [
+      { name: "หน้าแรก", href: "/" },
+      { name: "พื้นที่บริการ", href: "/พื้นที่" },
+      { name: entry.data.areaName, href: path },
+    ];
 
 const schema = buildGraph([
-  webpageSchema({
-    url,
-    name: entry.data.title,
-    description: entry.data.description,
-    dateModified: entry.data.updatedDate.toISOString(),
-  }),
-  serviceSchema({
-    url,
-    name: entry.data.h1,
-    description: entry.data.description,
-  }),
+  webpageSchema({ url, name: entry.data.title, description: entry.data.description, dateModified: entry.data.updatedDate.toISOString() }),
+  serviceSchema({ url, name: entry.data.h1, description: entry.data.description }),
   breadcrumbSchema(breadcrumbs),
   ...(entry.data.faq.length ? [faqSchema(entry.data.faq, url)] : []),
 ]);
@@ -56,7 +47,7 @@ const schema = buildGraph([
   h1={entry.data.h1}
   lead={entry.data.excerpt}
   breadcrumbs={breadcrumbs}
-  canonical={path}
+  canonical={entry.data.canonical ?? path}
   ogImage={entry.data.ogImage}
   updatedDate={entry.data.updatedDate}
   schema={schema}

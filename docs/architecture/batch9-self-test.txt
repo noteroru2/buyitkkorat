@@ -1,0 +1,45 @@
+$ node scripts/apply-seo-index-control.mjs --dry-run --layout=src/layouts/Batch9MockLayout.astro --sitemap=public/sitemap.xml
+ARCHITECTURE BATCH 9 — SEO INDEX CONTROL APPLY
+Mode: DRY_RUN
+Files to change: 1
+Layout integration: src/layouts/Batch9MockLayout.astro
+Production sitemap target: public/sitemap.xml
+VERDICT: PASS_WITH_SOURCE_INTEGRATION_WARNING
+WARN: SITEMAP_WRITE_PENDING: public/sitemap.xml does not exist. Run generate-architecture-sitemap.mjs --output=public/sitemap.xml after validation.
+
+$ node scripts/apply-seo-index-control.mjs --layout=src/layouts/Batch9MockLayout.astro --sitemap=public/sitemap.xml
+ARCHITECTURE BATCH 9 — SEO INDEX CONTROL APPLY
+Mode: WRITE
+Files to change: 1
+Layout integration: src/layouts/Batch9MockLayout.astro
+Production sitemap target: public/sitemap.xml
+VERDICT: PASS_WITH_SOURCE_INTEGRATION_WARNING
+WARN: SITEMAP_WRITE_PENDING: public/sitemap.xml does not exist. Run generate-architecture-sitemap.mjs --output=public/sitemap.xml after validation.
+
+$ node scripts/generate-architecture-sitemap.mjs --output=public/sitemap.xml
+Wrote 89 URLs -> public/sitemap.xml
+Origin: https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com
+lastmod/changefreq/priority: OMITTED
+
+$ node scripts/validate-seo-index-control.mjs --layout=src/layouts/Batch9MockLayout.astro
+ARCHITECTURE BATCH 9 — SITEMAP / CANONICAL / SCHEMA / INDEX CONTROL VALIDATION
+Live routes: 90
+Indexable: 89
+Noindex: 1
+Sitemap eligible: 89
+Canonical profiles: 89
+WebPage schema profiles: 89
+Breadcrumb schema profiles: 88
+ItemList schema profiles: 11
+Unreleased candidates with SEO profiles: 0
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/apply-seo-index-control.mjs --layout=src/layouts/Batch9MockLayout.astro --sitemap=public/sitemap.xml
+ARCHITECTURE BATCH 9 — SEO INDEX CONTROL APPLY
+Mode: WRITE
+Files to change: 0
+Layout integration: src/layouts/Batch9MockLayout.astro
+Production sitemap target: public/sitemap.xml
+VERDICT: PASS_WITH_SOURCE_INTEGRATION_WARNING
+WARN: MANAGED_SITEMAP_PRESENT: public/sitemap.xml. Use generate-architecture-sitemap.mjs --replace-managed after validation.

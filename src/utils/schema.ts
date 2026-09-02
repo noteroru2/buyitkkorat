@@ -182,8 +182,16 @@ export function articleSchema(opts: {
 }
 
 export function buildGraph(nodes: Record<string, unknown>[]) {
+  const ownsWebsite = nodes.some((node) =>
+    node["@type"] === "WebPage" && (node.url === SITE.url || node.url === `${SITE.url}/`)
+  );
   return {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema(), localBusinessSchema(), websiteSchema(), ...nodes],
+    "@graph": [
+      organizationSchema(),
+      localBusinessSchema(),
+      ...(ownsWebsite ? [websiteSchema()] : []),
+      ...nodes,
+    ],
   };
 }

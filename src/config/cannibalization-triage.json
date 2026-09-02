@@ -1,0 +1,301 @@
+{
+  "meta": {
+    "batch": "ARCHITECTURE BATCH 4",
+    "site": "รับซื้อไอทีโคราช.com",
+    "baselineRoutes": 89,
+    "baselineIndexable": 88,
+    "policy": "Decision-control only. No URL deletion, merge, redirect, canonical switch, noindex, sitemap removal, or automatic content rewrite.",
+    "gscGate": "Any consolidation action requires query→page evidence and manual approval.",
+    "allowedDecisions": [
+      "KEEP",
+      "DIFFERENTIATE",
+      "HOLD_GSC",
+      "MERGE_CANDIDATE",
+      "REDIRECT_CANDIDATE"
+    ],
+    "automaticExecution": false
+  },
+  "groups": [
+    {
+      "id": "GENERIC_IT_VS_VERTICAL_HUBS",
+      "title": "Generic IT hub vs vertical money hubs",
+      "decision": "DIFFERENTIATE",
+      "owner": "/รับซื้อสินค้าไอที",
+      "urls": [
+        "/รับซื้อสินค้าไอที",
+        "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "/รับซื้อคอมพิวเตอร์-โคราช",
+        "/รับซื้อโทรศัพท์มือถือ-โคราช",
+        "/รับซื้อกล้อง-โคราช",
+        "/รับซื้อเครื่องเกม-โคราช",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ],
+      "risk": "HIGH",
+      "gscRequired": true,
+      "contract": "Generic IT owns broad 'สินค้าไอที' intent and discovery. Each vertical hub owns its device/category intent and must not repeat a generic all-products pitch as its primary body.",
+      "action": "KEEP_ALL_DIFFERENTIATE"
+    },
+    {
+      "id": "COMPUTER_CORE_FAMILY",
+      "title": "Computer hub vs desktop/build/gaming/old/workstation",
+      "decision": "DIFFERENTIATE",
+      "owner": "/รับซื้อคอมพิวเตอร์-โคราช",
+      "urls": [
+        "/รับซื้อคอมพิวเตอร์-โคราช",
+        "/รับซื้อคอมตั้งโต๊ะ-โคราช",
+        "/รับซื้อคอมประกอบ-โคราช",
+        "/รับซื้อคอมเกมมิ่ง-โคราช",
+        "/รับซื้อคอมเก่า-โคราช",
+        "/รับซื้อเวิร์กสเตชัน-โคราช"
+      ],
+      "risk": "HIGH",
+      "gscRequired": true,
+      "contract": "Computer hub owns generic computer intent. Children must own distinct form-factor/use-case/condition intent and lead with attributes unique to that subtype.",
+      "action": "KEEP_ALL_DIFFERENTIATE"
+    },
+    {
+      "id": "COMPUTER_PARTS_FAMILY",
+      "title": "Computer accessories/components cluster",
+      "decision": "KEEP",
+      "owner": "/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช",
+      "urls": [
+        "/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช",
+        "/รับซื้อ-cpu-โคราช",
+        "/รับซื้อ-ssd-hdd-โคราช",
+        "/รับซื้อการ์ดจอ-โคราช",
+        "/รับซื้อเมนบอร์ด-โคราช",
+        "/รับซื้อแรม-โคราช",
+        "/รับซื้อ-server-network-โคราช"
+      ],
+      "risk": "MEDIUM",
+      "gscRequired": true,
+      "contract": "Accessories page is the broad component/category page. CPU/GPU/RAM/storage/mainboard/server pages own exact component intents.",
+      "action": "KEEP_ALL"
+    },
+    {
+      "id": "NOTEBOOK_CONDITION_FAMILY",
+      "title": "Notebook generic/broken/specific-condition pages",
+      "decision": "DIFFERENTIATE",
+      "owner": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "urls": [
+        "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "/รับซื้อโน๊ตบุ๊คเสีย-โคราช",
+        "/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช",
+        "/รับซื้อโน๊ตบุ๊คจอแตก-โคราช",
+        "/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช"
+      ],
+      "risk": "HIGH",
+      "gscRequired": true,
+      "contract": "Notebook hub owns generic sell-notebook intent. 'เสีย' is an umbrella damaged-device intent; open-not-power and broken-screen pages must be symptom-specific; gaming owns device segment rather than damage intent.",
+      "action": "KEEP_ALL_DIFFERENTIATE"
+    },
+    {
+      "id": "MOBILE_CORE_FAMILY",
+      "title": "Mobile hub vs Android and condition pages",
+      "decision": "DIFFERENTIATE",
+      "owner": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "urls": [
+        "/รับซื้อโทรศัพท์มือถือ-โคราช",
+        "/รับซื้อโทรศัพท์-android-โคราช",
+        "/รับซื้อโทรศัพท์จอแตก-โคราช"
+      ],
+      "risk": "HIGH",
+      "gscRequired": true,
+      "contract": "Mobile hub owns broad phone intent. Android owns Android ecosystem intent. Broken-screen owns condition intent across supported phones and must not mimic the generic phone page.",
+      "action": "KEEP_ALL_DIFFERENTIATE"
+    },
+    {
+      "id": "ANDROID_BRAND_FAMILY",
+      "title": "Android hub vs brand pages",
+      "decision": "KEEP",
+      "owner": "/รับซื้อโทรศัพท์-android-โคราช",
+      "urls": [
+        "/รับซื้อโทรศัพท์-android-โคราช",
+        "/รับซื้อโทรศัพท์-samsung-โคราช",
+        "/รับซื้อโทรศัพท์-oppo-โคราช",
+        "/รับซื้อโทรศัพท์-vivo-โคราช",
+        "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช"
+      ],
+      "risk": "MEDIUM",
+      "gscRequired": true,
+      "contract": "Android owns ecosystem/category intent; brand pages own brand-qualified queries and brand-specific valuation factors.",
+      "action": "KEEP_ALL"
+    },
+    {
+      "id": "APPLE_VS_MOBILE",
+      "title": "Apple device pages vs mobile intent",
+      "decision": "HOLD_GSC",
+      "owner": "virtual:apple-hub",
+      "urls": [
+        "/รับซื้อ-iphone-โคราช",
+        "/รับซื้อ-ipad-โคราช",
+        "/รับซื้อ-macbook-โคราช",
+        "/รับซื้อ-apple-watch-โคราช",
+        "/รับซื้อ-imac-mac-mini-โคราช",
+        "/รับซื้อโทรศัพท์มือถือ-โคราช"
+      ],
+      "risk": "HIGH",
+      "gscRequired": true,
+      "contract": "Apple device pages own exact Apple device intents. They are not semantically children of Mobile. Any future Apple hub remains virtual until separately released.",
+      "action": "NO_CONSOLIDATION_WITHOUT_GSC"
+    },
+    {
+      "id": "TABLET_VS_IPAD",
+      "title": "Generic tablet vs iPad",
+      "decision": "DIFFERENTIATE",
+      "owner": "/รับซื้อแท็บเล็ต-โคราช",
+      "urls": [
+        "/รับซื้อแท็บเล็ต-โคราช",
+        "/รับซื้อ-ipad-โคราช"
+      ],
+      "risk": "HIGH",
+      "gscRequired": true,
+      "contract": "Generic tablet owns non-brand/generic tablet intent; iPad owns Apple/iPad-qualified intent. Generic tablet copy should explicitly distinguish Android/other tablets from iPad coverage.",
+      "action": "KEEP_BOTH_DIFFERENTIATE"
+    },
+    {
+      "id": "B2B_BULK_FAMILY",
+      "title": "Bulk/company/office liquidation pages",
+      "decision": "HOLD_GSC",
+      "owner": "/รับซื้อสินค้าไอทียกล็อต",
+      "urls": [
+        "/รับซื้อสินค้าไอทียกล็อต",
+        "/รับซื้อคอมบริษัท-โคราช",
+        "/ขายคอมหลายเครื่อง-โคราช",
+        "/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช",
+        "/บริษัทปิดกิจการขายอุปกรณ์ไอที",
+        "/รับซื้ออุปกรณ์สำนักงาน"
+      ],
+      "risk": "HIGH",
+      "gscRequired": true,
+      "contract": "Bulk hub owns generic multi-unit IT sale. Company-computer, many-computers, office-clearance, business-closure, and office-equipment pages must each own a distinct seller scenario or inventory class.",
+      "action": "DIFFERENTIATE_THEN_REVIEW_GSC"
+    },
+    {
+      "id": "GENERIC_IT_CONDITIONS",
+      "title": "Generic IT condition pages",
+      "decision": "DIFFERENTIATE",
+      "owner": "/รับซื้อสินค้าไอที",
+      "urls": [
+        "/รับซื้อสินค้าไอที",
+        "/รับซื้อสินค้าไอทีไม่มีอุปกรณ์-โคราช",
+        "/รับซื้อสินค้าไอทีไม่ได้ใช้งาน-โคราช"
+      ],
+      "risk": "MEDIUM",
+      "gscRequired": true,
+      "contract": "Generic hub owns category intent. 'ไม่มีอุปกรณ์' owns missing-accessory condition; 'ไม่ได้ใช้งาน' owns unused/idle-device seller scenario.",
+      "action": "KEEP_ALL_DIFFERENTIATE"
+    },
+    {
+      "id": "GAMING_CONSOLE_FAMILY",
+      "title": "Gaming console hub vs platform pages",
+      "decision": "KEEP",
+      "owner": "/รับซื้อเครื่องเกม-โคราช",
+      "urls": [
+        "/รับซื้อเครื่องเกม-โคราช",
+        "/รับซื้อ-playstation-โคราช",
+        "/รับซื้อ-nintendo-switch-โคราช"
+      ],
+      "risk": "LOW",
+      "gscRequired": false,
+      "contract": "Gaming hub owns generic console intent; platform pages own PlayStation and Nintendo Switch qualified queries.",
+      "action": "KEEP_ALL"
+    },
+    {
+      "id": "CAMERA_FAMILY",
+      "title": "Camera vs lens",
+      "decision": "KEEP",
+      "owner": "/รับซื้อกล้อง-โคราช",
+      "urls": [
+        "/รับซื้อกล้อง-โคราช",
+        "/รับซื้อเลนส์กล้อง-โคราช"
+      ],
+      "risk": "LOW",
+      "gscRequired": false,
+      "contract": "Camera page owns camera-body/general camera intent; lens page owns lens-only intent and lens-specific condition/value factors.",
+      "action": "KEEP_BOTH"
+    },
+    {
+      "id": "SELLER_JOURNEY_FAMILY",
+      "title": "Seller journey pages",
+      "decision": "KEEP",
+      "owner": "/วิธีขายสินค้า",
+      "urls": [
+        "/วิธีขายสินค้า",
+        "/วิธีประเมินราคา",
+        "/ส่งสินค้าไอทีมาประเมิน",
+        "/บริการรับซื้อถึงที่โคราช"
+      ],
+      "risk": "LOW",
+      "gscRequired": false,
+      "contract": "Journey hub owns overall process. Valuation, shipping, and onsite pickup own separate process-step intents.",
+      "action": "KEEP_ALL"
+    },
+    {
+      "id": "LOCAL_AREA_FAMILY",
+      "title": "Korat local-area pages",
+      "decision": "HOLD_GSC",
+      "owner": "/พื้นที่",
+      "urls": [
+        "/พื้นที่",
+        "/พื้นที่/เมืองนครราชสีมา",
+        "/พื้นที่/ปากช่อง",
+        "/พื้นที่/ปักธงชัย",
+        "/พื้นที่/สูงเนิน",
+        "/พื้นที่/สีคิ้ว",
+        "/พื้นที่/พิมาย",
+        "/พื้นที่/โชคชัย",
+        "/พื้นที่/โนนสูง",
+        "/พื้นที่/ด่านขุนทด",
+        "/พื้นที่/บัวใหญ่",
+        "/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี"
+      ],
+      "risk": "HIGH",
+      "gscRequired": true,
+      "contract": "The /พื้นที่ hub owns broad Korat/Nakhon Ratchasima area-discovery intent. Each child area owns genuine place-qualified intent and local-specific proof/context. No district is parent of another unrelated district; consolidation still requires GSC plus content-uniqueness review.",
+      "action": "KEEP_HUB_AND_AREAS_REVIEW_GSC_BEFORE_CONSOLIDATION"
+    },
+    {
+      "id": "ARTICLE_SERVICE_INTENT_SPLIT",
+      "title": "Informational guides vs transactional money pages",
+      "decision": "KEEP",
+      "owner": "/บทความ",
+      "urls": [
+        "/บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน",
+        "/รับซื้อการ์ดจอ-โคราช",
+        "/บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง",
+        "/รับซื้อกล้อง-โคราช",
+        "/รับซื้อเลนส์กล้อง-โคราช",
+        "/บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad",
+        "/รับซื้อ-iphone-โคราช",
+        "/รับซื้อ-ipad-โคราช",
+        "/บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน",
+        "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร",
+        "/ขายคอมหลายเครื่อง-โคราช"
+      ],
+      "risk": "MEDIUM",
+      "gscRequired": true,
+      "contract": "Articles own informational/how-to queries; service pages own transactional local sell/buy queries. Article titles/H1s must not become local money-page substitutes.",
+      "action": "KEEP_INTENT_SPLIT"
+    },
+    {
+      "id": "ARTICLE_INTERNAL_OVERLAP",
+      "title": "Potentially overlapping preparation/privacy guides",
+      "decision": "HOLD_GSC",
+      "owner": "/บทความ",
+      "urls": [
+        "/บทความ/ssd-และข้อมูลส่วนตัวควรจัดการอย่างไรก่อนขาย",
+        "/บทความ/วิธีลบข้อมูลก่อนขายคอมพิวเตอร์",
+        "/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร",
+        "/บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน",
+        "/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง",
+        "/บทความ/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว"
+      ],
+      "risk": "MEDIUM",
+      "gscRequired": true,
+      "contract": "Keep preparation, privacy, specification, pricing, and photography guides semantically distinct. Review query overlap before merging any guide pair.",
+      "action": "REVIEW_GSC_BEFORE_CONTENT_CONSOLIDATION"
+    }
+  ]
+}

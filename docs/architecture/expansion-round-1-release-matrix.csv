@@ -1,0 +1,5 @@
+candidateId,nodeType,url,parent,priorityBand,evidence,releaseState
+brand:notebook:asus,BRAND,/รับซื้อโน๊ตบุ๊ค-asus-โคราช,/รับซื้อโน๊ตบุ๊ค-โคราช,1,FIRST_PARTY_ENQUIRY | MANUFACTURER_IDENTITY_VERIFIED,LIVE_INDEX
+series:notebook:asus:rog,SERIES,/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช,/รับซื้อโน๊ตบุ๊ค-asus-โคราช,1,FIRST_PARTY_ENQUIRY | MANUFACTURER_SERIES_VERIFIED,LIVE_INDEX
+brand:notebook:dell,BRAND,/รับซื้อโน๊ตบุ๊ค-dell-โคราช,/รับซื้อโน๊ตบุ๊ค-โคราช,1,FIRST_PARTY_CORPORATE_ENQUIRY | MANUFACTURER_IDENTITY_VERIFIED,LIVE_INDEX
+series:notebook:dell:latitude,SERIES,/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช,/รับซื้อโน๊ตบุ๊ค-dell-โคราช,1,FIRST_PARTY_CORPORATE_ENQUIRY | DELL_LATITUDE_7440_VERIFIED,LIVE_INDEX

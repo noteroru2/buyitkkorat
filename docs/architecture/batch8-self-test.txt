@@ -1,0 +1,42 @@
+$ node scripts/apply-navigation-architecture.mjs --dry-run --layout=src/layouts/Batch8MockLayout.astro
+ARCHITECTURE BATCH 8 — GLOBAL NAVIGATION APPLY
+Mode: DRY_RUN
+Header primary groups: 6
+Footer columns: 5
+Files to change: 1
+Layout integration: src/layouts/Batch8MockLayout.astro
+VERDICT: PASS_WITH_SOURCE_INTEGRATION_WARNING
+
+$ node scripts/apply-navigation-architecture.mjs --layout=src/layouts/Batch8MockLayout.astro
+ARCHITECTURE BATCH 8 — GLOBAL NAVIGATION APPLY
+Mode: WRITE
+Header primary groups: 6
+Footer columns: 5
+Files to change: 1
+Layout integration: src/layouts/Batch8MockLayout.astro
+VERDICT: PASS_WITH_SOURCE_INTEGRATION_WARNING
+
+$ node scripts/validate-navigation-architecture.mjs --layout=src/layouts/Batch8MockLayout.astro
+ARCHITECTURE BATCH 8 — NAVIGATION / HEADER / FOOTER / DISCOVERY VALIDATION
+Live routes: 90
+Indexable: 89
+Header primary groups: 6/6
+Header hrefs (with utility): 31
+Footer columns: 5/5
+Footer hrefs: 30
+Homepage discovery hrefs: 10
+Tier A global-discovery failures: 0
+Unreleased candidate leaks: 0
+Global article-child links: 0
+Global location-child links: 4
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/apply-navigation-architecture.mjs --layout=src/layouts/Batch8MockLayout.astro
+ARCHITECTURE BATCH 8 — GLOBAL NAVIGATION APPLY
+Mode: WRITE
+Header primary groups: 6
+Footer columns: 5
+Files to change: 0
+Layout integration: src/layouts/Batch8MockLayout.astro
+VERDICT: PASS_WITH_SOURCE_INTEGRATION_WARNING

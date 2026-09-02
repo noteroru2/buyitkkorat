@@ -1,0 +1,72 @@
+surface,group,label,href,role
+HEADER,services,รับซื้อสินค้า,/รับซื้อสินค้าไอที,PRIMARY_OWNER
+HEADER,services,รับซื้อโน๊ตบุ๊ค,/รับซื้อโน๊ตบุ๊ค-โคราช,CHILD_DISCOVERY
+HEADER,services,รับซื้อคอมพิวเตอร์,/รับซื้อคอมพิวเตอร์-โคราช,CHILD_DISCOVERY
+HEADER,services,รับซื้อโทรศัพท์มือถือ,/รับซื้อโทรศัพท์มือถือ-โคราช,CHILD_DISCOVERY
+HEADER,services,รับซื้อกล้อง,/รับซื้อกล้อง-โคราช,CHILD_DISCOVERY
+HEADER,services,รับซื้อเครื่องเกม,/รับซื้อเครื่องเกม-โคราช,CHILD_DISCOVERY
+HEADER,apple,รับซื้อ iPhone,/รับซื้อ-iphone-โคราช,CHILD_DISCOVERY
+HEADER,apple,รับซื้อ MacBook,/รับซื้อ-macbook-โคราช,CHILD_DISCOVERY
+HEADER,apple,รับซื้อ iPad,/รับซื้อ-ipad-โคราช,CHILD_DISCOVERY
+HEADER,apple,รับซื้อ Apple Watch,/รับซื้อ-apple-watch-โคราช,CHILD_DISCOVERY
+HEADER,apple,รับซื้อ iMac / Mac mini,/รับซื้อ-imac-mac-mini-โคราช,CHILD_DISCOVERY
+HEADER,business,บริษัท / ยกล็อต,/รับซื้อสินค้าไอทียกล็อต,PRIMARY_OWNER
+HEADER,business,รับซื้อคอมบริษัท,/รับซื้อคอมบริษัท-โคราช,CHILD_DISCOVERY
+HEADER,business,ขายคอมหลายเครื่อง,/ขายคอมหลายเครื่อง-โคราช,CHILD_DISCOVERY
+HEADER,business,ขายไอทียกสำนักงาน,/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช,CHILD_DISCOVERY
+HEADER,business,บริษัทปิดกิจการ,/บริษัทปิดกิจการขายอุปกรณ์ไอที,CHILD_DISCOVERY
+HEADER,business,อุปกรณ์สำนักงาน,/รับซื้ออุปกรณ์สำนักงาน,CHILD_DISCOVERY
+HEADER,areas,พื้นที่บริการ,/พื้นที่,PRIMARY_OWNER
+HEADER,areas,เมืองนครราชสีมา,/พื้นที่/เมืองนครราชสีมา,CHILD_DISCOVERY
+HEADER,areas,มทส.,/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี,CHILD_DISCOVERY
+HEADER,areas,ปากช่อง,/พื้นที่/ปากช่อง,CHILD_DISCOVERY
+HEADER,areas,สีคิ้ว,/พื้นที่/สีคิ้ว,CHILD_DISCOVERY
+HEADER,areas,ดูพื้นที่ทั้งหมด,/พื้นที่,CHILD_DISCOVERY
+HEADER,sell,วิธีขาย,/วิธีขายสินค้า,PRIMARY_OWNER
+HEADER,sell,วิธีประเมินราคา,/วิธีประเมินราคา,CHILD_DISCOVERY
+HEADER,sell,ส่งสินค้ามาประเมิน,/ส่งสินค้าไอทีมาประเมิน,CHILD_DISCOVERY
+HEADER,sell,บริการรับซื้อถึงที่,/บริการรับซื้อถึงที่โคราช,CHILD_DISCOVERY
+HEADER,sell,คำถามที่พบบ่อย,/คำถามที่พบบ่อย,CHILD_DISCOVERY
+HEADER,guides,บทความ,/บทความ,PRIMARY_OWNER
+HEADER_UTILITY,utility,ติดต่อ,/ติดต่อ,UTILITY
+HEADER_UTILITY,utility,ประเมินราคา,/วิธีประเมินราคา,PRIMARY_CTA
+FOOTER,core-services,รับซื้อสินค้าไอที,/รับซื้อสินค้าไอที,BOUNDED_DISCOVERY
+FOOTER,core-services,รับซื้อโน๊ตบุ๊ค,/รับซื้อโน๊ตบุ๊ค-โคราช,BOUNDED_DISCOVERY
+FOOTER,core-services,รับซื้อคอมพิวเตอร์,/รับซื้อคอมพิวเตอร์-โคราช,BOUNDED_DISCOVERY
+FOOTER,core-services,รับซื้อโทรศัพท์มือถือ,/รับซื้อโทรศัพท์มือถือ-โคราช,BOUNDED_DISCOVERY
+FOOTER,core-services,รับซื้อกล้อง,/รับซื้อกล้อง-โคราช,BOUNDED_DISCOVERY
+FOOTER,core-services,รับซื้อเครื่องเกม,/รับซื้อเครื่องเกม-โคราช,BOUNDED_DISCOVERY
+FOOTER,apple-products,รับซื้อ iPhone,/รับซื้อ-iphone-โคราช,BOUNDED_DISCOVERY
+FOOTER,apple-products,รับซื้อ MacBook,/รับซื้อ-macbook-โคราช,BOUNDED_DISCOVERY
+FOOTER,apple-products,รับซื้อ iPad,/รับซื้อ-ipad-โคราช,BOUNDED_DISCOVERY
+FOOTER,apple-products,รับซื้อการ์ดจอ,/รับซื้อการ์ดจอ-โคราช,BOUNDED_DISCOVERY
+FOOTER,apple-products,รับซื้อ RAM,/รับซื้อแรม-โคราช,BOUNDED_DISCOVERY
+FOOTER,apple-products,รับซื้อ SSD / HDD,/รับซื้อ-ssd-hdd-โคราช,BOUNDED_DISCOVERY
+FOOTER,business,รับซื้อสินค้าไอทียกล็อต,/รับซื้อสินค้าไอทียกล็อต,BOUNDED_DISCOVERY
+FOOTER,business,รับซื้อคอมบริษัท,/รับซื้อคอมบริษัท-โคราช,BOUNDED_DISCOVERY
+FOOTER,business,ขายคอมหลายเครื่อง,/ขายคอมหลายเครื่อง-โคราช,BOUNDED_DISCOVERY
+FOOTER,business,ขายไอทียกสำนักงาน,/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช,BOUNDED_DISCOVERY
+FOOTER,business,บริษัทปิดกิจการ,/บริษัทปิดกิจการขายอุปกรณ์ไอที,BOUNDED_DISCOVERY
+FOOTER,business,บริการรับซื้อถึงที่,/บริการรับซื้อถึงที่โคราช,BOUNDED_DISCOVERY
+FOOTER,discovery,พื้นที่ให้บริการ,/พื้นที่,BOUNDED_DISCOVERY
+FOOTER,discovery,เมืองนครราชสีมา,/พื้นที่/เมืองนครราชสีมา,BOUNDED_DISCOVERY
+FOOTER,discovery,วิธีขายสินค้า,/วิธีขายสินค้า,BOUNDED_DISCOVERY
+FOOTER,discovery,วิธีประเมินราคา,/วิธีประเมินราคา,BOUNDED_DISCOVERY
+FOOTER,discovery,ส่งสินค้ามาประเมิน,/ส่งสินค้าไอทีมาประเมิน,BOUNDED_DISCOVERY
+FOOTER,discovery,บทความและคู่มือ,/บทความ,BOUNDED_DISCOVERY
+FOOTER,trust,เกี่ยวกับเรา,/เกี่ยวกับเรา,BOUNDED_DISCOVERY
+FOOTER,trust,ติดต่อ,/ติดต่อ,BOUNDED_DISCOVERY
+FOOTER,trust,คำถามที่พบบ่อย,/คำถามที่พบบ่อย,BOUNDED_DISCOVERY
+FOOTER,trust,นโยบายรับซื้อสินค้า,/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ,BOUNDED_DISCOVERY
+FOOTER,trust,นโยบายความเป็นส่วนตัว,/นโยบายความเป็นส่วนตัว,BOUNDED_DISCOVERY
+FOOTER,trust,ข้อกำหนดการใช้บริการ,/ข้อกำหนดการใช้บริการ,BOUNDED_DISCOVERY
+HOMEPAGE,primaryHubs,,/รับซื้อสินค้าไอที,HUB_DISCOVERY
+HOMEPAGE,primaryHubs,,/รับซื้อโน๊ตบุ๊ค-โคราช,HUB_DISCOVERY
+HOMEPAGE,primaryHubs,,/รับซื้อคอมพิวเตอร์-โคราช,HUB_DISCOVERY
+HOMEPAGE,primaryHubs,,/รับซื้อโทรศัพท์มือถือ-โคราช,HUB_DISCOVERY
+HOMEPAGE,primaryHubs,,/รับซื้อสินค้าไอทียกล็อต,HUB_DISCOVERY
+HOMEPAGE,primaryHubs,,/พื้นที่,HUB_DISCOVERY
+HOMEPAGE,primaryHubs,,/วิธีขายสินค้า,HUB_DISCOVERY
+HOMEPAGE,primaryHubs,,/บทความ,HUB_DISCOVERY
+HOMEPAGE,appleDirectOwners,,/รับซื้อ-iphone-โคราช,DIRECT_OWNER
+HOMEPAGE,appleDirectOwners,,/รับซื้อ-macbook-โคราช,DIRECT_OWNER

@@ -1,0 +1,12 @@
+{
+  "round": "EXPANSION ROUND 1 \u2014 Production Release & Observation Gate",
+  "artifactGateValidation": "PASS",
+  "overlayPredeploy": "HOLD_EXPECTED_NO_REAL_SOURCE_BUILD",
+  "syntheticProductionVerification": "PASS",
+  "observationDateGateSelfTest": {
+    "day6": "WAIT_FOR_MORE_DATA",
+    "day7": "REVIEW_ELIGIBLE"
+  },
+  "realProductionStatus": "NOT_ATTESTED_BY_ARTIFACT",
+  "round2": "LOCKED"
+}

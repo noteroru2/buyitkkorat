@@ -32,7 +32,10 @@
     "audit:content-hygiene:prod": "tsx scripts/audit-content-hygiene.ts --production",
     "qa:playwright": "tsx scripts/qa-playwright.ts",
     "validate:prod": "tsx scripts/validate-production-full.ts",
-    "smoke:prod": "tsx scripts/production-smoke.ts"
+    "smoke:prod": "tsx scripts/production-smoke.ts",
+    "validate:architecture": "node scripts/run-architecture-quality-gate.mjs && node scripts/validate-expansion-round-1-production-gate.mjs",
+    "audit:architecture-build": "node scripts/audit-production-build-architecture.mjs --dist=dist",
+    "predeploy:round1": "node scripts/predeploy-expansion-round-1.mjs --dist=dist"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

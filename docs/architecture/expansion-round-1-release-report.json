@@ -1,0 +1,31 @@
+{
+  "round": "EXPANSION RELEASE ROUND 1",
+  "staticGate": "PASS",
+  "syntheticBuildCrawl": "PASS",
+  "realProductionBuildCrawl": "PENDING",
+  "releasedUrls": [
+    "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+    "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+    "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+    "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช"
+  ],
+  "routeCounts": {
+    "before": {
+      "live": 90,
+      "indexable": 89
+    },
+    "after": {
+      "live": 94,
+      "indexable": 93,
+      "noindex": 1
+    }
+  },
+  "remainingCandidates": {
+    "brand": 8,
+    "series": 40,
+    "model": 0,
+    "guide": 12
+  },
+  "round2": "LOCKED_PENDING_PRODUCTION_AND_GSC_OBSERVATION",
+  "inventedMetrics": false
+}

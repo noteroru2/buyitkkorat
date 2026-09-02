@@ -1,0 +1,31 @@
+ARCHITECTURE BATCH 2 — PARENT/CHILD RUNTIME APPLY
+Mode: DRY_RUN
+Layout: src/layouts/BaseLayout.astro
+Layout change: READY
+Batch 1 managed blocks to retire: 54
+Total files to change: 55
+VERDICT: PASS
+ARCHITECTURE BATCH 2 — PARENT/CHILD RUNTIME APPLY
+Mode: WRITE
+Layout: src/layouts/BaseLayout.astro
+Layout change: READY
+Batch 1 managed blocks to retire: 54
+Total files to change: 55
+VERDICT: PASS
+ARCHITECTURE BATCH 2 — VALIDATION
+Live routes: 89
+Indexable: 88
+Breadcrumb-owned routes: 88
+Deep breadcrumb routes (HOME→PARENT→CURRENT+): 56
+Virtual-parent routes safely flattened: 16
+Runtime layouts detected: 1
+Stale Batch 1 blocks: 0
+Warnings: 0
+VERDICT: PASS
+ARCHITECTURE BATCH 2 — PARENT/CHILD RUNTIME APPLY
+Mode: DRY_RUN
+Layout: src/layouts/BaseLayout.astro
+Layout change: UNCHANGED
+Batch 1 managed blocks to retire: 0
+Total files to change: 0
+VERDICT: PASS

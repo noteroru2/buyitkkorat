@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "round": "EXPANSION ROUND 1 — Production Release & Observation Gate",
+    "site": "รับซื้อไอทีโคราช.com",
+    "productionOrigin": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com",
+    "expectedLiveRoutes": 99,
+    "expectedIndexableRoutes": 98,
+    "expectedNoindexRoutes": 1,
+    "expectedSitemapUrls": 98,
+    "releasedUrls": [
+      "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช"
+    ],
+    "round2Locked": true,
+    "automaticDeploy": false,
+    "automaticRound2": false,
+    "policy": "Round 1 is not considered released until the real repository passes build/crawl and production verifies the four new URLs, canonical/robots/schema/sitemap and parent-child discovery. Round 2 remains locked until finalized GSC observation reaches the review gate."
+  },
+  "states": [
+    "PREDEPLOY_PENDING",
+    "PREDEPLOY_READY",
+    "PRODUCTION_PENDING",
+    "PRODUCTION_VERIFIED",
+    "OBSERVATION_ACTIVE",
+    "WAIT_FOR_FINALIZED_GSC",
+    "ROUND2_REVIEW_ELIGIBLE",
+    "BLOCKED"
+  ],
+  "predeploy": {
+    "required": [
+      "Round 1 validator PASS",
+      "Static Architecture Quality Gate PASS",
+      "real repository build exits 0",
+      "built crawl: 94/94 governed pages",
+      "unreachable indexable = 0",
+      "broken governed links = 0",
+      "max crawl depth <= 4",
+      "sitemap audit = 93",
+      "git working tree reviewed/preserved"
+    ],
+    "productionReleaseAllowedOnlyIf": "PREDEPLOY_READY"
+  },
+  "productionVerification": {
+    "requiredRoutes": [
+      "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช"
+    ],
+    "parentChildChecks": [
+      {
+        "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "children": [
+          "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+          "/รับซื้อโน๊ตบุ๊ค-dell-โคราช"
+        ]
+      },
+      {
+        "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+        "children": [
+          "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช"
+        ]
+      },
+      {
+        "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+        "children": [
+          "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช"
+        ]
+      }
+    ],
+    "routeRequirements": {
+      "httpStatus": 200,
+      "robots": "index,follow",
+      "selfCanonical": true,
+      "breadcrumbListMax": 1
+    },
+    "sitemapRequirements": {
+      "path": "/sitemap-index.xml",
+      "urlCount": 98,
+      "mustContainReleasedUrls": true
+    }
+  },
+  "observation": {
+    "releaseDateSource": "production-verification report",
+    "minimumFinalizedDaysForRound2Review": 7,
+    "recommendedExtendedObservationDays": 14,
+    "gscRequiredColumns": [
+      "date",
+      "query",
+      "page",
+      "clicks",
+      "impressions",
+      "position"
+    ],
+    "ownershipPairs": [
+      {
+        "id": "NOTEBOOK_VS_ASUS",
+        "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "child": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช"
+      },
+      {
+        "id": "ASUS_VS_ROG",
+        "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+        "child": "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช"
+      },
+      {
+        "id": "NOTEBOOK_VS_DELL",
+        "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "child": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช"
+      },
+      {
+        "id": "DELL_VS_LATITUDE",
+        "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+        "child": "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช"
+      }
+    ],
+    "round2ReviewPolicy": "Seven finalized GSC days after verified release makes Round 2 eligible for MANUAL REVIEW only. It does not automatically authorize Round 2. No-data is a valid observation result and must not be replaced by invented metrics.",
+    "destructiveActionPolicy": "No merge, redirect, noindex or canonical switch automatically."
+  }
+}

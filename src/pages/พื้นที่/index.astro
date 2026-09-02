@@ -1,0 +1,66 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import { absoluteUrl } from "../../utils/seo";
+import { breadcrumbSchema, buildGraph, webpageSchema } from "../../utils/schema";
+
+const areas = (await getCollection("areas"))
+  .filter((entry) => entry.data.indexable)
+  .sort((a, b) => a.data.areaName.localeCompare(b.data.areaName, "th"));
+const breadcrumbs = [
+  { name: "หน้าแรก", href: "/" },
+  { name: "พื้นที่ให้บริการ", href: "/พื้นที่" },
+];
+const url = absoluteUrl("/พื้นที่");
+const schema = buildGraph([
+  webpageSchema({
+    url,
+    name: "พื้นที่ให้บริการรับซื้อไอทีในโคราช",
+    description: "รวมพื้นที่ให้บริการประเมินและนัดรับสินค้าไอทีในจังหวัดนครราชสีมาตามเงื่อนไขการนัดหมาย",
+  }),
+  breadcrumbSchema(breadcrumbs),
+  {
+    "@type": "ItemList",
+    "@id": `${url}#areas`,
+    name: "พื้นที่ให้บริการในจังหวัดนครราชสีมา",
+    itemListElement: areas.map((entry, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: entry.data.areaName,
+      url: absoluteUrl(`/พื้นที่/${entry.data.slug}`),
+    })),
+  },
+]);
+---
+
+<BaseLayout
+  title="พื้นที่ให้บริการรับซื้อไอทีในโคราช | WINNER IT"
+  description="รวมพื้นที่ให้บริการรับซื้อโน๊ตบุ๊ค คอมพิวเตอร์ โทรศัพท์ กล้อง และสินค้าไอทีในจังหวัดนครราชสีมา นัดหมายหรือส่งสินค้าประเมินตามเงื่อนไข"
+  canonical="/พื้นที่"
+  schema={schema}
+  updatedDate={new Date("2026-09-02")}
+>
+  <div class="container section">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>พื้นที่ให้บริการรับซื้อไอทีในโคราช</h1>
+    <p class="section__lead">
+      เลือกพื้นที่เพื่อดูข้อมูลบริการและวิธีส่งรายละเอียดประเมินเบื้องต้น จังหวัดนครราชสีมาเป็นพื้นที่ให้บริการตามการนัดหมาย ไม่ใช่สาขาหรือหน้าร้านประจำ
+    </p>
+    <div class="card-grid card-grid--3">
+      {areas.map((entry) => (
+        <article class="card">
+          <a href={`/พื้นที่/${entry.data.slug}`}>
+            <h2 class="card__title">{entry.data.areaName}</h2>
+            <p class="card__text">{entry.data.excerpt}</p>
+          </a>
+        </article>
+      ))}
+    </div>
+    <section class="section section--tight">
+      <h2>ไม่พบพื้นที่ของคุณ</h2>
+      <p>ยังสามารถส่งข้อมูลและรูปมาประเมินก่อน เพื่อสอบถามทางเลือกการนัดหมายหรือการจัดส่งตามเงื่อนไขของงานนั้น ๆ</p>
+      <p><a href="/วิธีขายสินค้า">ดูวิธีขายสินค้า</a> · <a href="/ส่งสินค้าไอทีมาประเมิน">ดูวิธีส่งสินค้ามาประเมิน</a></p>
+    </section>
+  </div>
+</BaseLayout>

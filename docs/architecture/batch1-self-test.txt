@@ -1,0 +1,33 @@
+ARCHITECTURE BATCH 1 — SELF TEST
+
+Batch 0 validator:
+- Live routes: 89
+- Indexable: 88
+- Noindex: 1
+- Verdict: PASS
+
+Batch 1 validator:
+- Live release pillars: 8
+- Apple bridge members: 5
+- Local hub state: DEFERRED_TO_BATCH_5
+- Verdict: PASS
+
+Mock runtime apply using all audited service sourceHint paths:
+- Managed targets: 54
+- Dry-run changed: 54
+- Missing source files: 0
+- Write changed: 54
+- Runtime managed files detected: 54
+- Second write changed: 0
+- Second write unchanged: 54
+- Idempotence: PASS
+
+Safety assertions:
+- No URL rename
+- No redirect
+- No canonical switch
+- No robots/noindex change
+- No sitemap change
+- No frontmatter schema edit
+- No /รับซื้อ-apple-โคราช href emitted
+- Local pages not modified in Batch 1

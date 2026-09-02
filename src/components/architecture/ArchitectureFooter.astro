@@ -1,0 +1,73 @@
+---
+import navigation from '../../config/navigation-architecture.json';
+---
+
+<footer class="architecture-footer" data-architecture-shell="footer">
+  <div class="architecture-footer__inner">
+    <div class="architecture-footer__brand">
+      <a href={navigation.brand.homeUrl}>{navigation.brand.label}</a>
+      <p>ศูนย์กลางข้อมูลบริการรับซื้อสินค้าไอที พื้นที่ให้บริการ วิธีขาย และบทความสำหรับผู้ขายในโคราช</p>
+    </div>
+
+    <nav class="architecture-footer__columns" aria-label="ลิงก์ส่วนท้ายเว็บไซต์">
+      {navigation.footer.columns.map((column) => (
+        <section aria-labelledby={`footer-${column.id}`}>
+          <h2 id={`footer-${column.id}`}>{column.label}</h2>
+          <ul>
+            {column.links.map((item) => (
+              <li><a href={item.href}>{item.label}</a></li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .architecture-footer {
+    margin-top: 3rem;
+    border-top: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+    background: var(--architecture-footer-bg, Canvas);
+    color: var(--architecture-footer-text, CanvasText);
+  }
+  .architecture-footer__inner {
+    width: min(100% - 2rem, 76rem);
+    margin-inline: auto;
+    padding-block: 2.25rem;
+  }
+  .architecture-footer__brand {
+    max-width: 42rem;
+    margin-bottom: 1.5rem;
+  }
+  .architecture-footer__brand > a {
+    color: inherit;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .architecture-footer__brand p {
+    margin: .55rem 0 0;
+    line-height: 1.7;
+  }
+  .architecture-footer__columns {
+    display: grid;
+    gap: 1.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .architecture-footer__columns h2 {
+    margin: 0 0 .65rem;
+    font-size: 1rem;
+  }
+  .architecture-footer__columns ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: .45rem;
+  }
+  .architecture-footer__columns a {
+    color: inherit;
+    text-underline-offset: .2em;
+  }
+</style>

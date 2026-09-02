@@ -1,0 +1,64 @@
+{
+  "round": "EXPANSION ROUND 1",
+  "generatedAt": "2026-09-02T05:52:37.867Z",
+  "state": "PREDEPLOY_READY",
+  "productionReleaseAllowed": true,
+  "expectedCounts": {
+    "live": 99,
+    "indexable": 98,
+    "sitemap": 98
+  },
+  "git": {
+    "available": true,
+    "clean": false,
+    "head": "8c15903910c7fe0348b9f3ccc30a0fe921f4f53d",
+    "expectedShaMatch": null
+  },
+  "build": {
+    "attempted": true,
+    "passed": true,
+    "reason": "PASS"
+  },
+  "crawl": {
+    "attempted": true,
+    "passed": true,
+    "reason": "PASS"
+  },
+  "validatorPass": true,
+  "expectedSha": null,
+  "results": [
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-expansion-release-round-1.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-expansion-release-round-1.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/run-architecture-quality-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/run-architecture-quality-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npm run build",
+      "launchedAs": "C:\\WINDOWS\\system32\\cmd.exe /d /s /c npm run build",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/audit-production-build-architecture.mjs --dist=dist",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/audit-production-build-architecture.mjs --dist=dist",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    }
+  ],
+  "blockers": []
+}

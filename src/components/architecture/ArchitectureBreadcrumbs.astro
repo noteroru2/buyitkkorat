@@ -1,0 +1,60 @@
+---
+import { getRuntimeBreadcrumbs } from '../../config/runtime-architecture';
+
+interface Props {
+  pathname?: string;
+}
+
+const { pathname = Astro.url.pathname } = Astro.props;
+const items = getRuntimeBreadcrumbs(pathname);
+---
+
+{items.length > 1 && (
+  <nav class="architecture-breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      {items.map((item, index) => {
+        const isCurrent = index === items.length - 1;
+        return (
+          <li aria-current={isCurrent ? 'page' : undefined}>
+            {isCurrent ? (
+              <span>{item.label}</span>
+            ) : (
+              <a href={item.url}>{item.label}</a>
+            )}
+          </li>
+        );
+      })}
+    </ol>
+  </nav>
+)}
+
+<style>
+  .architecture-breadcrumbs {
+    width: min(100% - 2rem, 72rem);
+    margin: 0 auto;
+    padding: .75rem 0 .25rem;
+    font-size: .875rem;
+    line-height: 1.5;
+  }
+  .architecture-breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .architecture-breadcrumbs li:not(:last-child)::after {
+    content: '›';
+    margin-left: .35rem;
+    opacity: .55;
+  }
+  .architecture-breadcrumbs a {
+    color: inherit;
+    text-underline-offset: .2em;
+  }
+  .architecture-breadcrumbs [aria-current='page'] {
+    opacity: .72;
+  }
+</style>

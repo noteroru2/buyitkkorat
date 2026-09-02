@@ -1,0 +1,89 @@
+﻿url,cluster,page_type,recommended_parent,breadcrumb_chain,virtual_parent_flattened,index_state,ownership_status
+/ขายคอมหลายเครื่อง-โคราช,B2B,B2B/bulk,/รับซื้อสินค้าไอทียกล็อต,/ > /รับซื้อสินค้าไอทียกล็อต > /ขายคอมหลายเครื่อง-โคราช,NO,INDEX,GSC_REQUIRED
+/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช,B2B,B2B/bulk,/รับซื้อสินค้าไอทียกล็อต,/ > /รับซื้อสินค้าไอทียกล็อต > /ขายอุปกรณ์ไอทียกสำนักงาน-โคราช,NO,INDEX,GSC_REQUIRED
+/ข้อกำหนดการใช้บริการ,TRUST,Policy,/,/ > /ข้อกำหนดการใช้บริการ,NO,INDEX,LOCKED
+/คำถามที่พบบ่อย,TRUST,FAQ,/,/ > /คำถามที่พบบ่อย,NO,INDEX,LOCKED
+/ติดต่อ,TRUST,Contact,/,/ > /ติดต่อ,NO,INDEX,LOCKED
+/นโยบายความเป็นส่วนตัว,TRUST,Policy,/,/ > /นโยบายความเป็นส่วนตัว,NO,INDEX,LOCKED
+/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ,TRUST,Policy,/,/ > /นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ,NO,INDEX,LOCKED
+/บทความ,CONTENT,Article hub,/,/ > /บทความ,NO,INDEX,LOCKED
+/บทความ/ssd-และข้อมูลส่วนตัวควรจัดการอย่างไรก่อนขาย,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/ssd-และข้อมูลส่วนตัวควรจัดการอย่างไรก่อนขาย,NO,INDEX,PROVISIONAL
+/บทความ/กล่องและอุปกรณ์มีผลต่อราคามือสองหรือไม่,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/กล่องและอุปกรณ์มีผลต่อราคามือสองหรือไม่,NO,INDEX,PROVISIONAL
+/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร,NO,INDEX,PROVISIONAL
+/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร,NO,INDEX,PROVISIONAL
+/บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง,NO,INDEX,PROVISIONAL
+/บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน,NO,INDEX,PROVISIONAL
+/บทความ/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว,NO,INDEX,PROVISIONAL
+/บทความ/วิธีลบข้อมูลก่อนขายคอมพิวเตอร์,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/วิธีลบข้อมูลก่อนขายคอมพิวเตอร์,NO,INDEX,PROVISIONAL
+/บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad,NO,INDEX,PROVISIONAL
+/บทความ/วิธีออกจากบัญชี-google-ก่อนขายโทรศัพท์-android,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/วิธีออกจากบัญชี-google-ก่อนขายโทรศัพท์-android,NO,INDEX,PROVISIONAL
+/บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน,NO,INDEX,PROVISIONAL
+/บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร,NO,INDEX,PROVISIONAL
+/บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย,NO,INDEX,PROVISIONAL
+/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง,NO,INDEX,PROVISIONAL
+/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร,CONTENT,Article,/บทความ,/ > /บทความ > /บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร,NO,INDEX,PROVISIONAL
+/บริการรับซื้อถึงที่โคราช,SELLER-JOURNEY,Seller journey,/วิธีขายสินค้า,/ > /วิธีขายสินค้า > /บริการรับซื้อถึงที่โคราช,NO,INDEX,PROVISIONAL
+/บริษัทปิดกิจการขายอุปกรณ์ไอที,B2B,B2B/bulk,/รับซื้อสินค้าไอทียกล็อต,/ > /รับซื้อสินค้าไอทียกล็อต > /บริษัทปิดกิจการขายอุปกรณ์ไอที,NO,INDEX,GSC_REQUIRED
+/พื้นที่/ด่านขุนทด,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/ด่านขุนทด,YES,INDEX,GSC_REQUIRED
+/พื้นที่/บัวใหญ่,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/บัวใหญ่,YES,INDEX,GSC_REQUIRED
+/พื้นที่/ปักธงชัย,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/ปักธงชัย,YES,INDEX,GSC_REQUIRED
+/พื้นที่/ปากช่อง,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/ปากช่อง,YES,INDEX,GSC_REQUIRED
+/พื้นที่/พิมาย,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/พิมาย,YES,INDEX,GSC_REQUIRED
+/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี,YES,INDEX,GSC_REQUIRED
+/พื้นที่/สีคิ้ว,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/สีคิ้ว,YES,INDEX,GSC_REQUIRED
+/พื้นที่/สูงเนิน,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/สูงเนิน,YES,INDEX,GSC_REQUIRED
+/พื้นที่/เมืองนครราชสีมา,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/เมืองนครราชสีมา,YES,INDEX,GSC_REQUIRED
+/พื้นที่/โชคชัย,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/โชคชัย,YES,INDEX,GSC_REQUIRED
+/พื้นที่/โนนสูง,LOCATION,Location,virtual:local-hub,/ > /พื้นที่/โนนสูง,YES,INDEX,GSC_REQUIRED
+/รับซื้อ-apple-watch-โคราช,APPLE,Product category,virtual:apple-hub,/ > /รับซื้อ-apple-watch-โคราช,YES,INDEX,GSC_REQUIRED
+/รับซื้อ-cpu-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อ-cpu-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อ-imac-mac-mini-โคราช,APPLE,Product category,virtual:apple-hub,/ > /รับซื้อ-imac-mac-mini-โคราช,YES,INDEX,GSC_REQUIRED
+/รับซื้อ-ipad-โคราช,APPLE,Product category,virtual:apple-hub,/ > /รับซื้อ-ipad-โคราช,YES,INDEX,GSC_REQUIRED
+/รับซื้อ-iphone-โคราช,APPLE,Product category,virtual:apple-hub,/ > /รับซื้อ-iphone-โคราช,YES,INDEX,GSC_REQUIRED
+/รับซื้อ-macbook-โคราช,APPLE,Product category,virtual:apple-hub,/ > /รับซื้อ-macbook-โคราช,YES,INDEX,GSC_REQUIRED
+/รับซื้อ-nintendo-switch-โคราช,GAMING,Product category,/รับซื้อเครื่องเกม-โคราช,/ > /รับซื้อเครื่องเกม-โคราช > /รับซื้อ-nintendo-switch-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้อ-playstation-โคราช,GAMING,Product category,/รับซื้อเครื่องเกม-โคราช,/ > /รับซื้อเครื่องเกม-โคราช > /รับซื้อ-playstation-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้อ-server-network-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อ-server-network-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อ-ssd-hdd-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อ-ssd-hdd-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อกล้อง-โคราช,CAMERA,Product category,/,/ > /รับซื้อกล้อง-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้อการ์ดจอ-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อการ์ดจอ-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อคอมตั้งโต๊ะ-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อคอมตั้งโต๊ะ-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อคอมบริษัท-โคราช,B2B,B2B/bulk,/รับซื้อสินค้าไอทียกล็อต,/ > /รับซื้อสินค้าไอทียกล็อต > /รับซื้อคอมบริษัท-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อคอมประกอบ-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อคอมประกอบ-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อคอมพิวเตอร์-โคราช,COMPUTER,Product category,/,/ > /รับซื้อคอมพิวเตอร์-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อคอมเกมมิ่ง-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อคอมเกมมิ่ง-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อคอมเก่า-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อคอมเก่า-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อจอมอนิเตอร์-โคราช,OTHER-PRODUCT,Product category,/รับซื้อสินค้าไอที,/ > /รับซื้อสินค้าไอที > /รับซื้อจอมอนิเตอร์-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้อลำโพง-โคราช,OTHER-PRODUCT,Product category,/รับซื้อสินค้าไอที,/ > /รับซื้อสินค้าไอที > /รับซื้อลำโพง-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้อสินค้าไอที,OTHER-PRODUCT,Main service hub,/,/ > /รับซื้อสินค้าไอที,NO,INDEX,LOCKED
+/รับซื้อสินค้าไอทียกล็อต,B2B,B2B/bulk,/,/ > /รับซื้อสินค้าไอทียกล็อต,NO,INDEX,GSC_REQUIRED
+/รับซื้อสินค้าไอทีไม่มีอุปกรณ์-โคราช,OTHER-PRODUCT,Product condition,/รับซื้อสินค้าไอที,/ > /รับซื้อสินค้าไอที > /รับซื้อสินค้าไอทีไม่มีอุปกรณ์-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้อสินค้าไอทีไม่ได้ใช้งาน-โคราช,OTHER-PRODUCT,Product condition,/รับซื้อสินค้าไอที,/ > /รับซื้อสินค้าไอที > /รับซื้อสินค้าไอทีไม่ได้ใช้งาน-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้อหูฟัง-โคราช,OTHER-PRODUCT,Product category,/รับซื้อสินค้าไอที,/ > /รับซื้อสินค้าไอที > /รับซื้อหูฟัง-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้ออุปกรณ์-pos-โคราช,OTHER-PRODUCT,Product category,/รับซื้อสินค้าไอที,/ > /รับซื้อสินค้าไอที > /รับซื้ออุปกรณ์-pos-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้ออุปกรณ์สำนักงาน,B2B,B2B/bulk,/รับซื้อสินค้าไอทียกล็อต,/ > /รับซื้อสินค้าไอทียกล็อต > /รับซื้ออุปกรณ์สำนักงาน,NO,INDEX,GSC_REQUIRED
+/รับซื้อเครื่องปริ้น-โคราช,OTHER-PRODUCT,Product category,/รับซื้อสินค้าไอที,/ > /รับซื้อสินค้าไอที > /รับซื้อเครื่องปริ้น-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้อเครื่องเกม-โคราช,GAMING,Product category,/,/ > /รับซื้อเครื่องเกม-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้อเมนบอร์ด-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อเมนบอร์ด-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อเลนส์กล้อง-โคราช,CAMERA,Product category,/รับซื้อกล้อง-โคราช,/ > /รับซื้อกล้อง-โคราช > /รับซื้อเลนส์กล้อง-โคราช,NO,INDEX,PROVISIONAL
+/รับซื้อเวิร์กสเตชัน-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อเวิร์กสเตชัน-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อแท็บเล็ต-โคราช,MOBILE,Product category,/รับซื้อโทรศัพท์มือถือ-โคราช,/ > /รับซื้อโทรศัพท์มือถือ-โคราช > /รับซื้อแท็บเล็ต-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อแรม-โคราช,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,/ > /รับซื้อคอมพิวเตอร์-โคราช > /รับซื้อแรม-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโทรศัพท์-android-โคราช,MOBILE,Product category,/รับซื้อโทรศัพท์มือถือ-โคราช,/ > /รับซื้อโทรศัพท์มือถือ-โคราช > /รับซื้อโทรศัพท์-android-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโทรศัพท์-oppo-โคราช,MOBILE,Product category,/รับซื้อโทรศัพท์-android-โคราช,/ > /รับซื้อโทรศัพท์มือถือ-โคราช > /รับซื้อโทรศัพท์-android-โคราช > /รับซื้อโทรศัพท์-oppo-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโทรศัพท์-samsung-โคราช,MOBILE,Product category,/รับซื้อโทรศัพท์-android-โคราช,/ > /รับซื้อโทรศัพท์มือถือ-โคราช > /รับซื้อโทรศัพท์-android-โคราช > /รับซื้อโทรศัพท์-samsung-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโทรศัพท์-vivo-โคราช,MOBILE,Product category,/รับซื้อโทรศัพท์-android-โคราช,/ > /รับซื้อโทรศัพท์มือถือ-โคราช > /รับซื้อโทรศัพท์-android-โคราช > /รับซื้อโทรศัพท์-vivo-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช,MOBILE,Product category,/รับซื้อโทรศัพท์-android-โคราช,/ > /รับซื้อโทรศัพท์มือถือ-โคราช > /รับซื้อโทรศัพท์-android-โคราช > /รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโทรศัพท์จอแตก-โคราช,MOBILE,Product condition,/รับซื้อโทรศัพท์มือถือ-โคราช,/ > /รับซื้อโทรศัพท์มือถือ-โคราช > /รับซื้อโทรศัพท์จอแตก-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโทรศัพท์มือถือ-โคราช,MOBILE,Product category,/,/ > /รับซื้อโทรศัพท์มือถือ-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโน๊ตบุ๊ค-โคราช,NOTEBOOK,Product category,/,/ > /รับซื้อโน๊ตบุ๊ค-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโน๊ตบุ๊คจอแตก-โคราช,NOTEBOOK,Product condition,/รับซื้อโน๊ตบุ๊ค-โคราช,/ > /รับซื้อโน๊ตบุ๊ค-โคราช > /รับซื้อโน๊ตบุ๊คจอแตก-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช,NOTEBOOK,Product condition,/รับซื้อโน๊ตบุ๊ค-โคราช,/ > /รับซื้อโน๊ตบุ๊ค-โคราช > /รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช,NOTEBOOK,Product condition,/รับซื้อโน๊ตบุ๊ค-โคราช,/ > /รับซื้อโน๊ตบุ๊ค-โคราช > /รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช,NO,INDEX,GSC_REQUIRED
+/รับซื้อโน๊ตบุ๊คเสีย-โคราช,NOTEBOOK,Product condition,/รับซื้อโน๊ตบุ๊ค-โคราช,/ > /รับซื้อโน๊ตบุ๊ค-โคราช > /รับซื้อโน๊ตบุ๊คเสีย-โคราช,NO,INDEX,GSC_REQUIRED
+/วิธีขายสินค้า,SELLER-JOURNEY,Seller journey,/,/ > /วิธีขายสินค้า,NO,INDEX,PROVISIONAL
+/วิธีประเมินราคา,SELLER-JOURNEY,Seller journey,/วิธีขายสินค้า,/ > /วิธีขายสินค้า > /วิธีประเมินราคา,NO,INDEX,PROVISIONAL
+/ส่งสินค้าไอทีมาประเมิน,SELLER-JOURNEY,Seller journey,/วิธีขายสินค้า,/ > /วิธีขายสินค้า > /ส่งสินค้าไอทีมาประเมิน,NO,INDEX,PROVISIONAL
+/เกี่ยวกับเรา,TRUST,About,/,/ > /เกี่ยวกับเรา,NO,INDEX,LOCKED
+/404,UTILITY,Utility/error page,/,/ > /404,NO,NOINDEX,LOCKED

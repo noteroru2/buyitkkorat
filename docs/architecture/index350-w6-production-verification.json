@@ -1,0 +1,906 @@
+{
+  "wave": "INDEX350_W6_SAFE_FINAL",
+  "verifiedAt": "2026-09-03T04:48:05.927Z",
+  "origin": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com",
+  "state": "PRODUCTION_VERIFIED",
+  "productionVerified": true,
+  "releaseDate": "2026-09-03",
+  "deploymentId": null,
+  "deploymentSha": "1f6dc64755a1b430395e3be26bbbe052d32bdd30",
+  "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+  "realW5PerformanceAttested": false,
+  "counts": {
+    "routesPassed": 31,
+    "routesExpected": 31,
+    "parentGroupsPassed": 2,
+    "parentGroupsExpected": 2,
+    "sitemapUrls": 359,
+    "sitemapExpected": 359,
+    "minimumInbound": 4,
+    "indexableTargetFloor": 350,
+    "indexableExpected": 359
+  },
+  "routeResults": [
+    {
+      "url": "/พื้นที่/เทพารักษ์",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/เทพารักษ์",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/เมืองยาง",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/เมืองยาง",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/พระทองคำ",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/พระทองคำ",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/ลำทะเมนชัย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/ลำทะเมนชัย",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/บัวลาย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/บัวลาย",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/สีดา",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/สีดา",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/เฉลิมพระเกียรติ",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/เฉลิมพระเกียรติ",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/จอหอ",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/จอหอ",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/หัวทะเล",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/หัวทะเล",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/สุรนารี",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/สุรนารี",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 8,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร",
+      "robots": [
+        "index, follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 7,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    }
+  ],
+  "parentResults": [
+    {
+      "parent": "/พื้นที่",
+      "status": 200,
+      "missingChildren": [],
+      "passed": true
+    },
+    {
+      "parent": "/บทความ",
+      "status": 200,
+      "missingChildren": [],
+      "passed": true
+    }
+  ],
+  "inbound": [
+    {
+      "url": "/พื้นที่/เทพารักษ์",
+      "count": 11,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/ชุมพวง",
+        "/พื้นที่/ขามทะเลสอ",
+        "/พื้นที่/หนองบุญมาก",
+        "/พื้นที่/แก้งสนามนาง",
+        "/พื้นที่/โนนแดง",
+        "/พื้นที่/วังน้ำเขียว",
+        "/พื้นที่/สุรนารี",
+        "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+        "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+        "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เมืองยาง",
+      "count": 10,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/ขามทะเลสอ",
+        "/พื้นที่/หนองบุญมาก",
+        "/พื้นที่/แก้งสนามนาง",
+        "/พื้นที่/โนนแดง",
+        "/พื้นที่/วังน้ำเขียว",
+        "/พื้นที่/เทพารักษ์",
+        "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+        "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+        "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา"
+      ]
+    },
+    {
+      "url": "/พื้นที่/พระทองคำ",
+      "count": 5,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/เทพารักษ์",
+        "/พื้นที่/เมืองยาง",
+        "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+        "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ลำทะเมนชัย",
+      "count": 5,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/เทพารักษ์",
+        "/พื้นที่/เมืองยาง",
+        "/พื้นที่/พระทองคำ",
+        "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา"
+      ]
+    },
+    {
+      "url": "/พื้นที่/บัวลาย",
+      "count": 5,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/เทพารักษ์",
+        "/พื้นที่/เมืองยาง",
+        "/พื้นที่/พระทองคำ",
+        "/พื้นที่/ลำทะเมนชัย"
+      ]
+    },
+    {
+      "url": "/พื้นที่/สีดา",
+      "count": 6,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/เทพารักษ์",
+        "/พื้นที่/เมืองยาง",
+        "/พื้นที่/พระทองคำ",
+        "/พื้นที่/ลำทะเมนชัย",
+        "/พื้นที่/บัวลาย"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เฉลิมพระเกียรติ",
+      "count": 7,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/เทพารักษ์",
+        "/พื้นที่/เมืองยาง",
+        "/พื้นที่/พระทองคำ",
+        "/พื้นที่/ลำทะเมนชัย",
+        "/พื้นที่/บัวลาย",
+        "/พื้นที่/สีดา"
+      ]
+    },
+    {
+      "url": "/พื้นที่/จอหอ",
+      "count": 7,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/เมืองยาง",
+        "/พื้นที่/พระทองคำ",
+        "/พื้นที่/ลำทะเมนชัย",
+        "/พื้นที่/บัวลาย",
+        "/พื้นที่/สีดา",
+        "/พื้นที่/เฉลิมพระเกียรติ"
+      ]
+    },
+    {
+      "url": "/พื้นที่/หัวทะเล",
+      "count": 7,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/พระทองคำ",
+        "/พื้นที่/ลำทะเมนชัย",
+        "/พื้นที่/บัวลาย",
+        "/พื้นที่/สีดา",
+        "/พื้นที่/เฉลิมพระเกียรติ",
+        "/พื้นที่/จอหอ"
+      ]
+    },
+    {
+      "url": "/พื้นที่/สุรนารี",
+      "count": 7,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/ลำทะเมนชัย",
+        "/พื้นที่/บัวลาย",
+        "/พื้นที่/สีดา",
+        "/พื้นที่/เฉลิมพระเกียรติ",
+        "/พื้นที่/จอหอ",
+        "/พื้นที่/หัวทะเล"
+      ]
+    },
+    {
+      "url": "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+      "count": 7,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/บัวลาย",
+        "/พื้นที่/สีดา",
+        "/พื้นที่/เฉลิมพระเกียรติ",
+        "/พื้นที่/จอหอ",
+        "/พื้นที่/หัวทะเล",
+        "/พื้นที่/สุรนารี"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+      "count": 8,
+      "sources": [
+        "/",
+        "/พื้นที่",
+        "/พื้นที่/สีดา",
+        "/พื้นที่/เฉลิมพระเกียรติ",
+        "/พื้นที่/จอหอ",
+        "/พื้นที่/หัวทะเล",
+        "/พื้นที่/สุรนารี",
+        "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา"
+      ]
+    },
+    {
+      "url": "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา",
+      "count": 7,
+      "sources": [
+        "/พื้นที่",
+        "/พื้นที่/เฉลิมพระเกียรติ",
+        "/พื้นที่/จอหอ",
+        "/พื้นที่/หัวทะเล",
+        "/พื้นที่/สุรนารี",
+        "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+        "/พื้นที่/เขตอุตสาหกรรมสุรนารี"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย",
+        "/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง",
+        "/บทความ/ราคาประเมินจากรูปกับราคาหลังตรวจต่างกันอย่างไร"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน",
+        "/บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร",
+        "/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร",
+        "/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร",
+        "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร",
+        "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+        "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+        "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+        "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน",
+        "/บทความ/shutter-count-คืออะไรก่อนขายกล้องดิจิทัล",
+        "/บทความ/วิธีเช็กสุขภาพแบตเตอรี่ก่อนขายมือถือและโน้ตบุ๊ก"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/shutter-count-คืออะไรก่อนขายกล้องดิจิทัล",
+        "/บทความ/วิธีเช็กสุขภาพแบตเตอรี่ก่อนขายมือถือและโน้ตบุ๊ก",
+        "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/วิธีเช็กสุขภาพแบตเตอรี่ก่อนขายมือถือและโน้ตบุ๊ก",
+        "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+        "/บทความ/วิธีดู-smart-ssd-ก่อนขาย"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+        "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+        "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง",
+        "/บทความ/ราคาประเมินจากรูปกับราคาหลังตรวจต่างกันอย่างไร",
+        "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/ราคาประเมินจากรูปกับราคาหลังตรวจต่างกันอย่างไร",
+        "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+        "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+        "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+        "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร",
+        "/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร",
+        "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร",
+        "/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร",
+        "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร",
+        "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+        "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท"
+      ]
+    },
+    {
+      "url": "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+        "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+        "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ"
+      ]
+    },
+    {
+      "url": "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+        "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+        "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง"
+      ]
+    },
+    {
+      "url": "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร",
+      "count": 4,
+      "sources": [
+        "/บทความ",
+        "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+        "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+        "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร"
+      ]
+    }
+  ],
+  "sitemap": {
+    "status": 200,
+    "sources": [
+      "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com/sitemap-0.xml"
+    ],
+    "urlCount": 359,
+    "missingW6": [],
+    "riskInSitemap": false,
+    "passed": true
+  },
+  "finalRisk": {
+    "url": "/รับซื้อ-canon-eos-r-โคราช",
+    "released": false,
+    "httpStatus": 404,
+    "ownershipResolved": false
+  },
+  "errors": [],
+  "finalObservationState": "FINAL_OBSERVATION_ACTIVE",
+  "automaticFurtherRelease": false
+}

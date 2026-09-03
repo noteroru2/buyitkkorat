@@ -1,0 +1,21 @@
+{
+  "wave": "INDEX350_W2",
+  "package": "Production Release Gate",
+  "baseline": "INDEX350 W2 Series & Model 50 source release",
+  "changedFileCount": 13,
+  "changedFiles": [
+    "APPLY_INDEX350_W2_PRODUCTION_RELEASE_GATE.md",
+    "docs/architecture/INDEX350-W2-PRODUCTION-RELEASE-GATE.md",
+    "docs/architecture/architecture-quality-gate-report.json",
+    "docs/architecture/index350-w2-production-gate-changed-files.json",
+    "docs/architecture/index350-w2-production-gate-release-report.json",
+    "docs/architecture/index350-w2-production-gate-self-test.txt",
+    "package.json",
+    "scripts/predeploy-index-350-w2.mjs",
+    "scripts/validate-index-350-w2-production-gate.mjs",
+    "scripts/verify-index-350-w2-production.mjs",
+    "src/config/index-350-expansion-plan.json",
+    "src/config/index-350-w2-production-gate.json",
+    "src/config/index-350-w2-release.json"
+  ]
+}

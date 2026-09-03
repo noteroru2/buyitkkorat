@@ -1,0 +1,17 @@
+{
+  "title": "INDEX 350 — W3 Performance Review",
+  "generatedAt": "2026-09-02T13:12:16.967Z",
+  "state": "WAIT_FOR_REAL_W3_OBSERVATION_DATA",
+  "realPerformanceReviewed": false,
+  "missingInputs": [
+    "docs/architecture/index350-w3-observation-report.json",
+    "docs/architecture/index350-w3-observation-pages.csv",
+    "docs/architecture/index350-w3-query-ownership.csv"
+  ],
+  "w4": {
+    "candidateReviewReady": false,
+    "automaticRelease": false,
+    "locked": true
+  },
+  "note": "No W3 metrics were invented. Run W3 Observation Gate with real finalized GSC/indexation data first."
+}

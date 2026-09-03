@@ -37,7 +37,6 @@ reviewer: "WINNER IT"
 productFocus: "PlayStation / PS5 PS4"
 illustration: "console"
 ---
-
 ## รับซื้อ PlayStation ในโคราช
 
 PS5, PS5 Slim, PS4, PS4 Pro ยังมีความต้องการ ราคาขึ้นกับรุ่น ความจุ สภาพเครื่อง drift จอย แผ่นเกมที่แถม และว่าออกจากบัญชี PSN แล้วหรือไม่

@@ -1,0 +1,135 @@
+---
+import navigation from '../../config/navigation-architecture.json';
+
+const primary = navigation.header.primary;
+const utility = navigation.header.utility;
+---
+
+<header class="architecture-header" data-architecture-shell="header">
+  <div class="architecture-header__inner">
+    <a class="architecture-header__brand" href={navigation.brand.homeUrl} aria-label={navigation.brand.ariaLabel}>
+      {navigation.brand.label}
+    </a>
+
+    <nav class="architecture-header__nav" aria-label="เมนูหลัก">
+      <ul>
+        {primary.map((item) => (
+          <li>
+            {item.children.length > 0 ? (
+              <details>
+                <summary>{item.label}</summary>
+                <div class="architecture-header__menu">
+                  {item.href && <a class="architecture-header__all" href={item.href}>ดูทั้งหมด</a>}
+                  {item.children.map((child) => <a href={child.href}>{child.label}</a>)}
+                </div>
+              </details>
+            ) : (
+              item.href && <a href={item.href}>{item.label}</a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <nav class="architecture-header__utility" aria-label="เมนูช่วยเหลือ">
+      {utility.map((item) => (
+        <a class:list={['architecture-header__utility-link', item.role === 'PRIMARY_CTA' && 'is-primary']} href={item.href}>
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<style>
+  .architecture-header {
+    position: relative;
+    z-index: 30;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+    background: var(--architecture-nav-bg, Canvas);
+    color: var(--architecture-nav-text, CanvasText);
+  }
+  .architecture-header__inner {
+    width: min(100% - 2rem, 76rem);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: .75rem 1rem;
+    padding-block: .8rem;
+  }
+  .architecture-header__brand {
+    color: inherit;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .architecture-header__nav {
+    grid-column: 1 / -1;
+  }
+  .architecture-header__nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem 1rem;
+  }
+  .architecture-header__nav a,
+  .architecture-header__nav summary,
+  .architecture-header__utility a {
+    color: inherit;
+    text-underline-offset: .2em;
+  }
+  .architecture-header__nav summary {
+    cursor: pointer;
+    font-weight: 650;
+  }
+  .architecture-header__menu {
+    display: grid;
+    gap: .45rem;
+    margin-top: .55rem;
+    padding: .75rem;
+    min-width: 13rem;
+    border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+    border-radius: .7rem;
+    background: var(--architecture-nav-bg, Canvas);
+  }
+  .architecture-header__all {
+    font-weight: 700;
+  }
+  .architecture-header__utility {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+  }
+  .architecture-header__utility-link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 650;
+  }
+  .architecture-header__utility-link.is-primary {
+    padding: .55rem .8rem;
+    border: 1px solid currentColor;
+    border-radius: .65rem;
+  }
+  @media (min-width: 64rem) {
+    .architecture-header__inner {
+      grid-template-columns: auto 1fr auto;
+    }
+    .architecture-header__nav {
+      grid-column: auto;
+    }
+    .architecture-header__nav ul {
+      justify-content: center;
+    }
+    .architecture-header__nav li {
+      position: relative;
+    }
+    .architecture-header__menu {
+      position: absolute;
+      inset-inline-start: 0;
+      top: 100%;
+      box-shadow: 0 .6rem 1.8rem color-mix(in srgb, currentColor 10%, transparent);
+    }
+  }
+</style>

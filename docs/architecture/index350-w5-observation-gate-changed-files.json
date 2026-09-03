@@ -1,0 +1,40 @@
+{
+  "batch": "INDEX 350 — W5 Observation Gate",
+  "baseline": "INDEX 350 — W5 Production Release Gate",
+  "addsIndexableUrls": false,
+  "baselineCounts": {
+    "live": 329,
+    "indexable": 328,
+    "noindex": 1,
+    "sitemap": 328
+  },
+  "observedCount": 40,
+  "groupMix": {
+    "CONDITION": 5,
+    "B2B": 20,
+    "LOCAL": 15
+  },
+  "clusterMix": {
+    "NOTEBOOK": 1,
+    "MOBILE": 2,
+    "CAMERA": 1,
+    "GAMING": 1,
+    "B2B": 20,
+    "LOCATION": 15
+  },
+  "automaticW6": false,
+  "w6Locked": true,
+  "realObservationDataPackaged": false,
+  "selfTestScenarios": 9,
+  "changedFiles": [
+    "APPLY_INDEX350_W5_OBSERVATION_GATE.md",
+    "package.json",
+    "scripts/evaluate-index-350-w5-observation.mjs",
+    "scripts/validate-index-350-w5-observation-gate.mjs",
+    "src/config/index-350-w5-observation-gate.json",
+    "docs/gsc/index350-w5-gsc-template.csv",
+    "docs/gsc/index350-w5-indexation-template.csv",
+    "docs/architecture/index350-w5-observation-gate-self-test.txt",
+    "docs/architecture/index350-w5-observation-gate-changed-files.json"
+  ]
+}

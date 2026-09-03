@@ -1,0 +1,29 @@
+{
+  "title": "INDEX 350 — W1 Performance Review & W2 Candidate Selection",
+  "currentRealDataState": "WAIT_FOR_REAL_W1_OBSERVATION_DATA",
+  "currentFinalSelected": 0,
+  "provisionalShortlist": 50,
+  "composition": {
+    "series": 30,
+    "model": 20
+  },
+  "live": 139,
+  "indexable": 138,
+  "noindex": 1,
+  "w2TargetIndexable": 188,
+  "automaticW2": false,
+  "syntheticEligibleTest": {
+    "sourceObservation": "ROUND2_REVIEW_ELIGIBLE",
+    "performanceClasses": {
+      "EARLY_SIGNAL": 10,
+      "INDEXED_NO_VISIBILITY": 26,
+      "NOT_INDEXED": 4
+    },
+    "eligiblePool": 93,
+    "selected": 50,
+    "series": 30,
+    "model": 20,
+    "state": "W2_SELECTION_READY_FOR_MANUAL_APPROVAL"
+  },
+  "realReleaseDecision": "HOLD_UNTIL_REAL_W1_DATA"
+}

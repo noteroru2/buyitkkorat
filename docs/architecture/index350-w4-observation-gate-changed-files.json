@@ -1,0 +1,40 @@
+{
+  "batch": "INDEX 350 — W4 Observation Gate",
+  "baseline": "INDEX 350 — W4 Production Release Gate",
+  "addsIndexableUrls": false,
+  "baselineCounts": {
+    "live": 289,
+    "indexable": 288,
+    "noindex": 1,
+    "sitemap": 288
+  },
+  "observedCount": 50,
+  "groupMix": {
+    "SERIES": 18,
+    "MODEL": 7,
+    "CONDITION": 25
+  },
+  "clusterMix": {
+    "MOBILE": 20,
+    "CAMERA": 9,
+    "NOTEBOOK": 9,
+    "APPLE": 3,
+    "COMPUTER": 6,
+    "GAMING": 3
+  },
+  "automaticW5": false,
+  "w5Locked": true,
+  "realObservationDataPackaged": false,
+  "selfTestScenarios": 9,
+  "changedFiles": [
+    "APPLY_INDEX350_W4_OBSERVATION_GATE.md",
+    "package.json",
+    "scripts/evaluate-index-350-w4-observation.mjs",
+    "scripts/validate-index-350-w4-observation-gate.mjs",
+    "src/config/index-350-w4-observation-gate.json",
+    "docs/gsc/index350-w4-gsc-template.csv",
+    "docs/gsc/index350-w4-indexation-template.csv",
+    "docs/architecture/index350-w4-observation-gate-self-test.txt",
+    "docs/architecture/index350-w4-observation-gate-changed-files.json"
+  ]
+}

@@ -1,0 +1,157 @@
+$ node scripts/validate-site-architecture.mjs
+ARCHITECTURE BATCH 0 — VALIDATION
+Baseline live/indexable: 89/88
+Current live routes: 94
+Indexable: 93
+Noindex: 1
+Virtual architecture hubs: 1
+Parent migrations queued (not executed): 35
+GSC-gated ownership routes: 48
+Routes waiting on virtual parent release: 5
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/validate-core-hub-architecture.mjs
+ARCHITECTURE BATCH 1 — VALIDATION
+Live routes: 94
+Indexable: 93
+Live release pillars: 9
+Apple bridge members: 5
+Local hub state: RELEASED_BATCH_5
+Runtime managed files detected: 0
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/validate-parent-child-runtime.mjs
+ARCHITECTURE BATCH 2 — VALIDATION
+Live routes: 94
+Indexable: 93
+Breadcrumb-owned routes: 93
+Deep breadcrumb routes (HOME→PARENT→CURRENT+): 71
+Virtual-parent routes safely flattened: 5
+Runtime layouts detected: 0
+Stale Batch 1 blocks: 0
+Warnings: 1
+VERDICT: PASS
+WARN: Real source tree not present in this overlay; runtime layout integration must be applied inside the repository.
+
+$ node scripts/validate-internal-link-graph.mjs
+ARCHITECTURE BATCH 3 — INTERNAL LINK GRAPH VALIDATION
+Live routes: 94
+Indexable: 93
+Homepage discovery seeds: 12
+Conversion bridge sources: 17
+Projected max discovery links/page: 15
+Projected max related links/page: 6
+Projected zero contextual inbound: 6
+Unexpected zero contextual inbound: 0
+Tier A/B non-TRUST/non-LOCATION inbound<2: 0
+Articles inbound<2: 0
+Location routes inbound<2: 0
+Deferred zero by cluster: TRUST=6
+VERDICT: PASS
+
+$ node scripts/validate-cannibalization-triage.mjs
+ARCHITECTURE BATCH 4 — CANNIBALIZATION TRIAGE VALIDATION
+Live routes: 94
+Indexable: 93
+Triage groups: 16
+GSC-gated groups: 13
+Destructive candidates currently proposed: 0
+Automatic execution: false
+VERDICT: PASS
+
+$ node scripts/validate-local-area-architecture.mjs
+ARCHITECTURE BATCH 5 — LOCAL AREA ARCHITECTURE VALIDATION
+Live routes: 94 (Batch 5 local baseline preserved; later releases allowed)
+Indexable: 93 (Batch 5 local baseline preserved; later releases allowed)
+Local authority hub: LIVE
+Released local children: 11
+Virtual local hub remaining: false
+Homepage local seed: /พื้นที่
+Local routes projected inbound<2: 0
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/validate-brand-model-series-foundation.mjs
+ARCHITECTURE BATCH 6 — BRAND / SERIES / MODEL FOUNDATION VALIDATION
+Live routes: 94
+Indexable: 93
+Live expansion anchors: 12
+Brand candidates: 8
+Series candidates: 40
+Exact model candidates: 0
+Candidate URLs leaked live: 0
+Automatic publishing: false
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/validate-guide-authority-architecture.mjs
+ARCHITECTURE BATCH 7 — GUIDE / INFORMATIONAL AUTHORITY VALIDATION
+Live routes: 94
+Indexable: 93
+Existing live guides: 15
+Virtual topical clusters: 5
+Future guide candidates: 12
+Guide related inbound failures: 0
+Candidate URLs leaked live: 0
+Automatic publishing: false
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/validate-navigation-architecture.mjs
+ARCHITECTURE BATCH 8 — NAVIGATION / HEADER / FOOTER / DISCOVERY VALIDATION
+Live routes: 94
+Indexable: 93
+Header primary groups: 6/6
+Header hrefs (with utility): 31
+Footer columns: 5/5
+Footer hrefs: 30
+Homepage discovery hrefs: 10
+Tier A global-discovery failures: 0
+Unreleased candidate leaks: 0
+Global article-child links: 0
+Global location-child links: 4
+Warnings: 1
+VERDICT: PASS_WITH_SOURCE_INTEGRATION_WARNING
+WARN: Global shell layout integration not attested in this overlay; validate with --layout in the real repository.
+
+$ node scripts/validate-seo-index-control.mjs
+ARCHITECTURE BATCH 9 — SITEMAP / CANONICAL / SCHEMA / INDEX CONTROL VALIDATION
+Live routes: 94
+Indexable: 93
+Noindex: 1
+Sitemap eligible: 93
+Canonical profiles: 93
+WebPage schema profiles: 93
+Breadcrumb schema profiles: 92
+ItemList schema profiles: 11
+Unreleased candidates with SEO profiles: 0
+Warnings: 1
+VERDICT: PASS_WITH_SOURCE_INTEGRATION_WARNING
+WARN: Real SEO head integration not attested; validate with --layout in the source repository.
+
+$ node scripts/validate-architecture-quality-gate.mjs
+ARCHITECTURE BATCH 10 — QUALITY GATE FOUNDATION VALIDATION
+Live routes: 94
+Indexable: 93
+Governed unreleased candidates: 60
+Initial expansion release cap: 6
+Max crawl depth policy: 4
+Automatic expansion: false
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/validate-expansion-release-round-1.mjs
+EXPANSION RELEASE ROUND 1 — VALIDATION
+Live routes: 94
+Indexable: 93
+Released Brand nodes: 2
+Released Series nodes: 2
+Remaining Brand candidates: 8
+Remaining Series candidates: 40
+Model candidates: 0
+Sitemap expected URLs: 93
+Round 2 state: LOCKED
+Warnings: 0
+VERDICT: PASS

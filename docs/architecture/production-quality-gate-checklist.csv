@@ -1,0 +1,16 @@
+id,check,severity,passCriteria
+STATIC-01,Batch 0–9 validators,REQUIRED,PASS before expansion
+STATIC-02,Live/indexable/noindex,REQUIRED,90/89/1
+SEO-01,Sitemap URL count,REQUIRED,89
+SEO-02,Canonical count/page,REQUIRED,exactly 1 on indexable pages
+SEO-03,Robots count/page,REQUIRED,exactly 1
+SEO-04,BreadcrumbList count/page,REQUIRED,<=1
+SEO-05,WebSite schema owners,REQUIRED,<=1 total
+CRAWL-01,Broken governed links,REQUIRED,0
+CRAWL-02,Unexpected governed orphans,REQUIRED,0
+CRAWL-03,Maximum crawl depth,REQUIRED,<=4
+BUILD-01,Build command,REQUIRED,exit 0
+SOURCE-01,Shared Header/Footer integration,REQUIRED,attested
+SOURCE-02,Shared SEO head integration,REQUIRED,attested
+EXP-01,Evidence-backed Band-1 candidate,REQUIRED,at least 1
+EXP-02,Initial controlled release size,REQUIRED,<=6

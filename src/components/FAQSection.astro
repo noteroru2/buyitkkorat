@@ -1,69 +1,35 @@
 ---
-interface Faq {
-  question: string;
-  answer: string;
-}
-
-interface Props {
-  title?: string;
-  items: Faq[];
-}
-
-const { title = "คำถามที่พบบ่อย", items } = Astro.props;
+interface Faq { question:string; answer:string; }
+interface Props { title?:string; items:Faq[]; }
+const { title="คำถามที่พบบ่อย", items }=Astro.props;
 ---
 
-{
-  items.length > 0 && (
-    <section class="section faq" id="faq">
-      <div class="container">
+{items.length>0 && (
+  <section class="section faq" id="faq">
+    <div class="container faq__shell">
+      <div class="faq__heading">
+        <span class="section__eyebrow">FAQ</span>
         <h2 class="section__title">{title}</h2>
-        <div class="faq__list">
-          {items.map((item) => (
-            <details class="faq__item">
-              <summary>{item.question}</summary>
-              <div class="faq__answer">
-                <p>{item.answer}</p>
-              </div>
-            </details>
-          ))}
-        </div>
+        <p>คำตอบสั้น ๆ สำหรับเรื่องที่ควรรู้ก่อนส่งสินค้าเพื่อประเมิน</p>
       </div>
-    </section>
-  )
-}
+      <div class="faq__list">
+        {items.map((item)=><details class="faq__item"><summary><span>{item.question}</span><span class="faq__plus" aria-hidden="true">+</span></summary><div class="faq__answer"><p>{item.answer}</p></div></details>)}
+      </div>
+    </div>
+  </section>
+)}
 
 <style>
-  .faq__list {
-    display: grid;
-    gap: var(--space-3);
-  }
-
-  .faq__item {
-    background: white;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: 0 var(--space-4);
-  }
-
-  .faq__item summary {
-    cursor: pointer;
-    font-weight: 600;
-    min-height: 52px;
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-
-  .faq__item summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .faq__answer {
-    padding-bottom: var(--space-4);
-    color: var(--color-text-muted);
-  }
-
-  .faq__answer p {
-    margin: 0;
-  }
+  .faq__shell { display:grid; gap:1.4rem; }
+  .faq__heading p { margin:0; color:var(--color-text-muted); max-width:32rem; font-size:.88rem; }
+  .faq__list { display:grid; gap:.55rem; }
+  .faq__item { overflow:hidden; background:white; border:1px solid var(--color-border); border-radius:.85rem; box-shadow:var(--shadow-xs); }
+  .faq__item[open] { border-color:#d6dde6; box-shadow:var(--shadow-sm); }
+  .faq__item summary { cursor:pointer; min-height:54px; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.75rem 1rem; list-style:none; color:var(--color-navy); font-size:.9rem; font-weight:700; }
+  .faq__item summary::-webkit-details-marker { display:none; }
+  .faq__plus { width:1.8rem; height:1.8rem; flex:0 0 1.8rem; display:grid; place-items:center; border-radius:.55rem; background:#f1f5f9; color:var(--color-text-muted); transition:transform .15s ease; }
+  .faq__item[open] .faq__plus { transform:rotate(45deg); background:var(--color-primary-soft); color:var(--color-primary-dark); }
+  .faq__answer { padding:0 1rem 1rem; color:var(--color-text-muted); }
+  .faq__answer p { margin:0; font-size:.88rem; line-height:1.72; }
+  @media(min-width:900px){ .faq__shell { grid-template-columns:.75fr 1.25fr; gap:2.5rem; align-items:start; } .faq__heading { position:sticky; top:8rem; } }
 </style>

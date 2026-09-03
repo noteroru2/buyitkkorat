@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets';
+import { PRODUCT_PHOTOS, type ProductPhotoGroup } from '../data/productPhotos';
+interface Props { groups:ProductPhotoGroup[]; overview?:boolean; }
+const {groups,overview=false}=Astro.props;
+const photos=groups.flatMap(group=>overview?PRODUCT_PHOTOS[group].slice(0,1):PRODUCT_PHOTOS[group]);
+---
+{photos.length>0 && <section class="section product-gallery" aria-labelledby="product-gallery-heading">
+  <div class="container">
+    <p class="badge">ภาพถ่ายสินค้าจริง</p>
+    <h2 id="product-gallery-heading">{overview?'ดูตัวอย่างสินค้าแต่ละประเภท':'ตัวอย่างมุมภาพสำหรับส่งประเมิน'}</h2>
+    <p class="product-gallery__intro">ถ่ายให้เห็นด้านหน้า ด้านหลัง และจุดที่ต้องการแจ้งสภาพ พร้อมระบุรุ่นและอุปกรณ์ที่มี ภาพตัวอย่างช่วยให้เตรียมข้อมูลได้ครบ ส่วนราคาขึ้นกับสินค้าที่คุณส่งประเมิน</p>
+    <div class="product-gallery__grid">
+      {photos.map(photo=><figure data-image-slot={photo.slotId}>
+        <a href={photo.image.src} aria-label={`ดูภาพขนาดใหญ่: ${photo.caption}`}>
+          <Image src={photo.image} alt={photo.alt} widths={[360,640,960]} sizes="(max-width: 639px) calc(100vw - 32px), (max-width: 1023px) 45vw, 390px" format="webp" loading="lazy" decoding="async" />
+        </a>
+        <figcaption>{photo.caption}</figcaption>
+      </figure>)}
+    </div>
+  </div>
+</section>}
+<style>
+ .product-gallery { background:var(--color-surface-alt); }
+ .product-gallery__intro { max-width:48rem; color:var(--color-text-muted); margin-block:1rem 1.5rem; }
+ .product-gallery__grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.25rem; }
+ figure { margin:0; min-width:0; background:white; border:1px solid var(--color-border); border-radius:var(--radius-lg); overflow:hidden; }
+ a { display:block; background:#eef1f4; }
+ a:focus-visible { outline:3px solid var(--color-primary); outline-offset:-3px; }
+ img { display:block; width:100%; height:auto; aspect-ratio:4/3; object-fit:contain; }
+ figcaption { padding:1rem; font-size:.9rem; line-height:1.6; }
+ @media(max-width:1023px) { .product-gallery__grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+ @media(max-width:639px) { .product-gallery__grid { grid-template-columns:1fr; } }
+</style>

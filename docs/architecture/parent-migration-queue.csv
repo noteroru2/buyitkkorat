@@ -1,0 +1,36 @@
+﻿url,cluster,tier,currentParent,recommendedParent,ownershipStatus,executionState,notes
+/บริการรับซื้อถึงที่โคราช,SELLER-JOURNEY,B,/รับซื้อสินค้าไอที,/วิธีขายสินค้า,PROVISIONAL,QUEUED_NOT_EXECUTED,Seller-process page should roll up through /วิธีขายสินค้า rather than the generic IT commercial hub.
+/พื้นที่/ด่านขุนทด,LOCATION,C,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/พื้นที่/บัวใหญ่,LOCATION,C,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/พื้นที่/ปักธงชัย,LOCATION,C,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/พื้นที่/ปากช่อง,LOCATION,C,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/พื้นที่/พิมาย,LOCATION,C,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี,LOCATION,C,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/พื้นที่/สีคิ้ว,LOCATION,C,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/พื้นที่/สูงเนิน,LOCATION,C,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/พื้นที่/เมืองนครราชสีมา,LOCATION,A,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Audit recorded self-parenting; Batch 1 should replace this with a real province/local hub. Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/พื้นที่/โชคชัย,LOCATION,C,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/พื้นที่/โนนสูง,LOCATION,C,/พื้นที่/เมืองนครราชสีมา,/พื้นที่,GSC_REQUIRED,RELEASED_BATCH_5,Local runtime ownership released to /พื้นที่; existing URL/canonical preserved.
+/รับซื้อ-apple-watch-โคราช,APPLE,B,/รับซื้อโทรศัพท์มือถือ-โคราช,virtual:apple-hub,GSC_REQUIRED,QUEUED_NOT_EXECUTED,Remove Apple ownership from Mobile. Do not create/link the virtual Apple hub until a real route is released.
+/รับซื้อ-imac-mac-mini-โคราช,APPLE,B,/รับซื้อโทรศัพท์มือถือ-โคราช,virtual:apple-hub,GSC_REQUIRED,QUEUED_NOT_EXECUTED,Remove Apple ownership from Mobile. Do not create/link the virtual Apple hub until a real route is released.
+/รับซื้อ-ipad-โคราช,APPLE,B,/รับซื้อโทรศัพท์มือถือ-โคราช,virtual:apple-hub,GSC_REQUIRED,QUEUED_NOT_EXECUTED,Remove Apple ownership from Mobile. Do not create/link the virtual Apple hub until a real route is released.
+/รับซื้อ-iphone-โคราช,APPLE,A,/รับซื้อโทรศัพท์มือถือ-โคราช,virtual:apple-hub,GSC_REQUIRED,QUEUED_NOT_EXECUTED,Remove Apple ownership from Mobile. Do not create/link the virtual Apple hub until a real route is released.
+/รับซื้อ-macbook-โคราช,APPLE,A,/รับซื้อโทรศัพท์มือถือ-โคราช,virtual:apple-hub,GSC_REQUIRED,QUEUED_NOT_EXECUTED,Remove Apple ownership from Mobile. Do not create/link the virtual Apple hub until a real route is released.
+/รับซื้อกล้อง-โคราช,CAMERA,A,/รับซื้อสินค้าไอที,/,PROVISIONAL,QUEUED_NOT_EXECUTED,
+/รับซื้อคอมพิวเตอร์-โคราช,COMPUTER,A,/รับซื้อสินค้าไอที,/,GSC_REQUIRED,QUEUED_NOT_EXECUTED,
+/รับซื้อสินค้าไอทียกล็อต,B2B,A,/รับซื้อสินค้าไอที,/,GSC_REQUIRED,QUEUED_NOT_EXECUTED,
+/รับซื้อเครื่องเกม-โคราช,GAMING,A,/รับซื้อสินค้าไอที,/,PROVISIONAL,QUEUED_NOT_EXECUTED,
+/รับซื้อโทรศัพท์-oppo-โคราช,MOBILE,B,/รับซื้อโทรศัพท์มือถือ-โคราช,/รับซื้อโทรศัพท์-android-โคราช,GSC_REQUIRED,QUEUED_NOT_EXECUTED,Brand page should roll up through the Android hub to reduce flat mobile architecture.
+/รับซื้อโทรศัพท์-samsung-โคราช,MOBILE,B,/รับซื้อโทรศัพท์มือถือ-โคราช,/รับซื้อโทรศัพท์-android-โคราช,GSC_REQUIRED,QUEUED_NOT_EXECUTED,Brand page should roll up through the Android hub to reduce flat mobile architecture.
+/รับซื้อโทรศัพท์-vivo-โคราช,MOBILE,B,/รับซื้อโทรศัพท์มือถือ-โคราช,/รับซื้อโทรศัพท์-android-โคราช,GSC_REQUIRED,QUEUED_NOT_EXECUTED,Brand page should roll up through the Android hub to reduce flat mobile architecture.
+/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช,MOBILE,B,/รับซื้อโทรศัพท์มือถือ-โคราช,/รับซื้อโทรศัพท์-android-โคราช,GSC_REQUIRED,QUEUED_NOT_EXECUTED,Brand page should roll up through the Android hub to reduce flat mobile architecture.
+/รับซื้อโทรศัพท์มือถือ-โคราช,MOBILE,A,/รับซื้อสินค้าไอที,/,GSC_REQUIRED,QUEUED_NOT_EXECUTED,
+/รับซื้อโน๊ตบุ๊ค-โคราช,NOTEBOOK,A,/รับซื้อสินค้าไอที,/,GSC_REQUIRED,QUEUED_NOT_EXECUTED,
+/รับซื้อโน๊ตบุ๊คจอแตก-โคราช,NOTEBOOK,B,/รับซื้อสินค้าไอที,/รับซื้อโน๊ตบุ๊ค-โคราช,GSC_REQUIRED,QUEUED_NOT_EXECUTED,"Notebook condition/model intent belongs to the Notebook hub, not the generic IT hub."
+/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช,NOTEBOOK,B,/รับซื้อสินค้าไอที,/รับซื้อโน๊ตบุ๊ค-โคราช,GSC_REQUIRED,QUEUED_NOT_EXECUTED,"Notebook condition/model intent belongs to the Notebook hub, not the generic IT hub."
+/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช,NOTEBOOK,B,/รับซื้อสินค้าไอที,/รับซื้อโน๊ตบุ๊ค-โคราช,GSC_REQUIRED,QUEUED_NOT_EXECUTED,"Notebook condition/model intent belongs to the Notebook hub, not the generic IT hub."
+/รับซื้อโน๊ตบุ๊คเสีย-โคราช,NOTEBOOK,B,/รับซื้อสินค้าไอที,/รับซื้อโน๊ตบุ๊ค-โคราช,GSC_REQUIRED,QUEUED_NOT_EXECUTED,"Notebook condition/model intent belongs to the Notebook hub, not the generic IT hub."
+/วิธีขายสินค้า,SELLER-JOURNEY,A,/รับซื้อสินค้าไอที,/,PROVISIONAL,QUEUED_NOT_EXECUTED,
+/วิธีประเมินราคา,SELLER-JOURNEY,B,/รับซื้อสินค้าไอที,/วิธีขายสินค้า,PROVISIONAL,QUEUED_NOT_EXECUTED,Seller-process page should roll up through /วิธีขายสินค้า rather than the generic IT commercial hub.
+/ส่งสินค้าไอทีมาประเมิน,SELLER-JOURNEY,B,/รับซื้อสินค้าไอที,/วิธีขายสินค้า,PROVISIONAL,QUEUED_NOT_EXECUTED,Seller-process page should roll up through /วิธีขายสินค้า rather than the generic IT commercial hub.
+/404,UTILITY,UTILITY,/รับซื้อสินค้าไอที,/,LOCKED,QUEUED_NOT_EXECUTED,

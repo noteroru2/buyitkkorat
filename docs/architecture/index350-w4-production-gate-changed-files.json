@@ -1,0 +1,17 @@
+{
+  "wave": "INDEX350_W4",
+  "changedFiles": [
+    "APPLY_INDEX350_W4_PRODUCTION_RELEASE_GATE.md",
+    "docs/architecture/INDEX350-W4-PRODUCTION-RELEASE-GATE.md",
+    "docs/architecture/index350-w4-production-gate-release-report.json",
+    "docs/architecture/index350-w4-production-gate-self-test.txt",
+    "package.json",
+    "scripts/predeploy-index-350-w4.mjs",
+    "scripts/validate-index-350-w4-production-gate.mjs",
+    "scripts/verify-index-350-w4-production.mjs",
+    "src/config/index-350-expansion-plan.json",
+    "src/config/index-350-w4-production-gate.json",
+    "src/config/index-350-w4-release.json",
+    "docs/architecture/index350-w4-production-gate-changed-files.json"
+  ]
+}

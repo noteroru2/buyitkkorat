@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "batch": "ARCHITECTURE BATCH 10 — Architecture Production Quality Gate & Expansion Readiness",
+    "site": "รับซื้อไอทีโคราช.com",
+    "liveRoutes": 360,
+    "indexableRoutes": 359,
+    "newLiveRoutes": 31,
+    "expansionLockedByDefault": true,
+    "automaticExpansion": false,
+    "decisionStates": [
+      "BLOCKED",
+      "CONDITIONALLY_READY",
+      "READY_FOR_CONTROLLED_RELEASE"
+    ],
+    "latestRelease": "INDEX350_W6_SAFE_FINAL"
+  },
+  "requiredGates": {
+    "architectureStatic": {
+      "weight": 25,
+      "required": true,
+      "checks": [
+        "Batch 0–9 validators exit 0",
+        "live/indexable/noindex counts remain 90/89/1",
+        "no candidate or virtual URL leaks live",
+        "no unexpected orphan/near-orphan in governed clusters"
+      ]
+    },
+    "seoSignals": {
+      "weight": 20,
+      "required": true,
+      "checks": [
+        "sitemap count = 89",
+        "all 89 indexable pages have one canonical owner",
+        "all 89 indexable pages have index,follow",
+        "noindex utility route excluded from sitemap",
+        "candidate/virtual routes excluded from sitemap and schema ownership"
+      ]
+    },
+    "sourceIntegration": {
+      "weight": 20,
+      "required": true,
+      "checks": [
+        "real shared layout identified",
+        "Header/Footer integration attested",
+        "SEO head integration attested",
+        "no duplicate canonical/robots/JSON-LD shell"
+      ]
+    },
+    "buildAndCrawl": {
+      "weight": 25,
+      "required": true,
+      "checks": [
+        "npm build exits 0",
+        "all expected indexable routes have built HTML or production HTTP 200",
+        "no broken internal hrefs to governed live routes",
+        "no unexpected 404/5xx for governed routes",
+        "maximum governed crawl depth within policy"
+      ]
+    },
+    "expansionEvidence": {
+      "weight": 10,
+      "required": true,
+      "checks": [
+        "at least one Band-1 Brand/Series/Guide candidate has evidence input",
+        "candidate identity/source/ownership review complete",
+        "release candidate does not depend on invented metrics"
+      ]
+    }
+  },
+  "thresholds": {
+    "readyScore": 100,
+    "conditionalScoreMin": 80,
+    "maxCrawlDepth": 4,
+    "maxBrokenGovernedLinks": 0,
+    "maxUnexpectedOrphans": 0,
+    "maxDuplicateCanonicalPerPage": 1,
+    "maxDuplicateRobotsPerPage": 1,
+    "maxBreadcrumbListPerPage": 1,
+    "maxWebSiteSchemaOwners": 1,
+    "sitemapCount": 138
+  },
+  "releasePolicy": {
+    "firstExpansionType": "BRAND_OR_SERIES_ONLY",
+    "initialReleaseCap": 6,
+    "preferredPriorityBands": [
+      1
+    ],
+    "noModelPagesUntil": [
+      "at least one Brand/Series release has been observed",
+      "exact model identity verified",
+      "model-specific demand evidence exists",
+      "model content uniqueness gate passes"
+    ],
+    "noMassGuideExpansionUntil": [
+      "Guide authority graph passes production crawl",
+      "existing guide overlap remains controlled"
+    ],
+    "noLocalExpansionUntil": [
+      "current 11 local pages show acceptable uniqueness/ownership",
+      "Local Hub integration is verified in production"
+    ],
+    "round1Released": 4,
+    "round2Lock": "OBSERVE_GSC_AND_INDEXATION_BEFORE_NEXT_RELEASE",
+    "index350CurrentWave": "W1",
+    "index350W1Released": 40,
+    "index350NextWave": "W2_LOCKED_PENDING_W1_PRODUCTION_AND_GSC_REVIEW"
+  },
+  "blockingConditions": [
+    "any Batch 0–9 validator fails",
+    "build fails",
+    "production sitemap count differs from 89 before an intentional release",
+    "duplicate canonical or conflicting robots detected",
+    "candidate/virtual URL is indexable or appears in sitemap",
+    "broken governed internal links exist",
+    "unexpected governed orphan exists",
+    "real Header/Footer or SEO head integration is not attested",
+    "Round 2 release before Round 1 observation window/evidence review"
+  ]
+}

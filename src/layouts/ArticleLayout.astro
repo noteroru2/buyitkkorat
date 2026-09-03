@@ -1,73 +1,96 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import ArticleSources from '../components/ArticleSources.astro';
+import FAQSection from '../components/FAQSection.astro';
+import ProductPhotoGallery from '../components/ProductPhotoGallery.astro';
+import { photoGroupsForPath } from '../data/productPhotos';
+import type { ArticleSource } from '../data/articleSources';
 import Breadcrumbs from "../components/Breadcrumbs.astro";
 import RelatedServices from "../components/RelatedServices.astro";
 import RelatedArticles from "../components/RelatedArticles.astro";
-import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import ContentContactAside from "../components/ContentContactAside.astro";
+import ResponsiveImage from "../components/ResponsiveImage.astro";
+import ImageCTASection from "../components/ImageCTASection.astro";
 import { SITE, STORE_LOCATION } from "../data/site";
+import type { PageVisualAsset } from "../data/pageVisuals";
 import type { BreadcrumbItem } from "../utils/seo";
 
-interface Related {
-  title: string;
-  href: string;
-  excerpt?: string;
-}
-
+interface Related { title:string; href:string; excerpt?:string; }
 interface Props {
-  title: string;
-  description: string;
-  h1: string;
-  breadcrumbs: BreadcrumbItem[];
-  canonical?: string;
-  ogImage?: string;
-  updatedDate?: Date | string;
-  publishedDate?: Date | string;
-  schema?: Record<string, unknown> | Record<string, unknown>[];
-  relatedServices?: Related[];
-  relatedArticles?: Related[];
+  title:string; description:string; h1:string; breadcrumbs:BreadcrumbItem[];
+  canonical?:string; ogImage?:string; updatedDate?:Date|string; publishedDate?:Date|string;
+  schema?:Record<string,unknown>|Record<string,unknown>[];
+  relatedServices?:Related[]; relatedArticles?:Related[];
+  coverVisual?: PageVisualAsset; ctaVisual?: PageVisualAsset;
+  sources:ArticleSource[]; faqs:{question:string;answer:string}[];
 }
-
-const props = Astro.props;
-const publishedLabel = props.publishedDate
-  ? new Date(props.publishedDate).toLocaleDateString("th-TH")
-  : null;
-const updatedLabel = props.updatedDate
-  ? new Date(props.updatedDate).toLocaleDateString("th-TH")
-  : null;
+const props=Astro.props;
+const publishedLabel=props.publishedDate?new Date(props.publishedDate).toLocaleDateString("th-TH"):null;
+const updatedLabel=props.updatedDate?new Date(props.updatedDate).toLocaleDateString("th-TH"):null;
 ---
 
-<BaseLayout
-  title={props.title}
-  description={props.description}
-  canonical={props.canonical}
-  ogImage={props.ogImage}
-  ogType="article"
-  updatedDate={props.updatedDate}
-  schema={props.schema}
->
-  <div class="container" style="padding-top: var(--space-5)">
-    <Breadcrumbs items={props.breadcrumbs} />
-    <h1 style="max-width: 20ch">{props.h1}</h1>
-    <p style="color: var(--color-text-muted); font-size: var(--font-size-sm); max-width: 62ch">
-      เผยแพร่โดย {STORE_LOCATION.tradeName} ({SITE.brand})
-      {publishedLabel && <> · เผยแพร่ {publishedLabel}</>}
-      {updatedLabel && <> · อัปเดต {updatedLabel}</>}
-    </p>
-    <p style="color: var(--color-text-muted); font-size: var(--font-size-sm); max-width: 62ch">
-      เนื้อหาอธิบายขั้นตอนและปัจจัยที่ใช้ในการประเมินสินค้าไอทีมือสอง
-      ไม่ใช่การรับประกันราคาสุดท้าย {SITE.priceDisclaimer}
-    </p>
-  </div>
-  <article class="section">
-    <div class="container prose main-content">
-      <slot />
-    </div>
-  </article>
-  <RelatedServices title="หน้าที่เกี่ยวข้อง" items={props.relatedServices ?? []} />
-  <RelatedArticles title="อ่านต่อ" items={props.relatedArticles ?? []} />
-  <section class="section">
-    <div class="container" style="text-align:center">
-      <PrimaryLineCTA label="ส่งรุ่นและสภาพให้ประเมิน" />
+<BaseLayout title={props.title} description={props.description} canonical={props.canonical} ogImage={props.ogImage} ogType="article" updatedDate={props.updatedDate} schema={props.schema}>
+  <section class="page-intro article-intro">
+    <div class="container page-intro__inner">
+      <Breadcrumbs items={props.breadcrumbs} />
+      <p class="badge">คู่มือก่อนขายสินค้าไอที</p>
+      <h1>{props.h1}</h1>
+      <p class="page-intro__meta">
+        โดย <a href="/เกี่ยวกับเรา">{STORE_LOCATION.tradeName} ({SITE.brand})</a>
+        {publishedLabel && <> · เผยแพร่ {publishedLabel}</>}
+        {updatedLabel && <> · อัปเดต {updatedLabel}</>}
+      </p>
+      <p class="page-intro__lead article-intro__disclaimer">เนื้อหาอธิบายขั้นตอนและปัจจัยสำหรับสินค้ามือสอง ไม่ใช่การรับประกันราคาสุดท้าย</p>
     </div>
   </section>
+
+  {props.coverVisual && (
+    <section class="section article-visual-section" aria-label="ภาพประกอบบทความ">
+      <div class="container article-visual-section__container">
+        <ResponsiveImage
+          src={props.coverVisual.image}
+          alt={props.coverVisual.alt}
+          caption={props.coverVisual.caption}
+          width={1200}
+          height={750}
+          widths={[480, 768, 960, 1200]}
+          sizes="(max-width: 767px) calc(100vw - 32px), 820px"
+          loading="lazy"
+          fetchpriority="low"
+          slotId={props.coverVisual.slotId}
+        />
+      </div>
+    </section>
+  )}
+
+  <article class="section content-section">
+    <div class="container content-layout">
+      <div class="prose main-content content-card"><slot /><ArticleSources sources={props.sources} /></div>
+      <ContentContactAside title="มีรุ่นที่ต้องการขายอยู่แล้ว?" note="อ่านคู่มือได้เต็มที่ หรือส่งรุ่นและรูปผ่าน LINE เพื่อประเมินสินค้าจริงของคุณได้เลย" />
+    </div>
+  </article>
+  <ProductPhotoGallery groups={photoGroupsForPath(props.canonical ?? Astro.url.pathname)} />
+  <FAQSection items={props.faqs} />
+
+  <RelatedServices title="หน้าบริการที่เกี่ยวข้อง" items={props.relatedServices ?? []} />
+  <RelatedArticles title="อ่านต่อ" items={props.relatedArticles ?? []} />
+
+  {props.ctaVisual && (
+    <ImageCTASection
+      image={props.ctaVisual.image}
+      alt={props.ctaVisual.alt}
+      slotId={props.ctaVisual.slotId}
+      title="อ่านจบแล้ว ส่งรูปสินค้าให้ประเมินต่อได้ทันที"
+      description="ถ้าคุณมีสินค้าอยู่แล้ว สามารถส่งรุ่น สเปก รูปสภาพ และอุปกรณ์ผ่าน LINE เพื่อรับการประเมินเบื้องต้นตามข้อมูลจริงของเครื่องได้เลย"
+      note="บทความนี้เป็นข้อมูลประกอบการตัดสินใจ ส่วนราคาสุดท้ายขึ้นกับการตรวจสินค้าจริง"
+      phoneCta="article_phone"
+    />
+  )}
 </BaseLayout>
+
+<style>
+  .article-intro__disclaimer { font-size:.86rem; max-width:42rem; }
+  .article-visual-section { padding-block: 1.25rem 0; }
+  .article-visual-section__container { max-width: 54rem; }
+  .article-visual-section__container :global(.responsive-image picture) { aspect-ratio: 16 / 10; border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); }
+</style>

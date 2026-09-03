@@ -1,37 +1,43 @@
 ---
 import { getCollection, render } from "astro:content";
+import { getImage } from 'astro:assets';
+import { getArticleSources } from '../../data/articleSources';
 import ArticleLayout from "../../layouts/ArticleLayout.astro";
 import { absoluteUrl } from "../../utils/seo";
 import { getAllContentIndex, resolveRelated } from "../../utils/content";
-import {
-  articleSchema,
-  breadcrumbSchema,
-  buildGraph,
-  webpageSchema,
-} from "../../utils/schema";
+import { articleSchema, breadcrumbSchema, buildGraph, webpageSchema, faqSchema } from "../../utils/schema";
+import { getArticlePageVisuals } from "../../data/pageVisuals";
+import { getRuntimeBreadcrumbs, getRuntimeDiscoveryLinks, getRuntimeRelatedLinks } from "../../config/runtime-architecture";
 
 export async function getStaticPaths() {
   const articles = await getCollection("articles");
-  return articles.map((entry) => ({
-    params: { slug: entry.data.slug },
-    props: { entry },
-  }));
+  return articles.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const index = await getAllContentIndex();
-const related = resolveRelated(index, entry.data.relatedPages);
+const path = `/บทความ/${entry.data.slug}`;
+const architectureRelated = [
+  ...getRuntimeDiscoveryLinks(path, 12),
+  ...getRuntimeRelatedLinks(path, 6),
+].map((item) => item.url);
+const relatedPaths = [...new Set([...architectureRelated, ...entry.data.relatedPages])];
+const related = resolveRelated(index, relatedPaths);
 const relatedServices = related.filter((item) => !item.href.startsWith("/บทความ/"));
 const relatedArticles = related.filter((item) => item.href.startsWith("/บทความ/"));
-const path = `/บทความ/${entry.data.slug}`;
-const url = absoluteUrl(path);
-const breadcrumbs = [
-  { name: "หน้าแรก", href: "/" },
-  { name: "บทความ", href: "/บทความ" },
-  { name: entry.data.h1, href: path },
-];
-
+const pageVisuals = getArticlePageVisuals(entry.data.slug, entry.data.title);
+const url = absoluteUrl(entry.data.canonical ?? path);
+const socialImage=await getImage({src:pageVisuals.cover.image,width:1200,height:630,fit:'cover',format:'webp'});
+const articleImage=absoluteUrl(socialImage.src);
+const runtimeBreadcrumbs = getRuntimeBreadcrumbs(path);
+const breadcrumbs = runtimeBreadcrumbs.length
+  ? runtimeBreadcrumbs.map((item) => ({ name: item.reason === "HOME" ? "หน้าแรก" : item.label, href: item.url }))
+  : [
+      { name: "หน้าแรก", href: "/" },
+      { name: "บทความ", href: "/บทความ" },
+      { name: entry.data.h1, href: path },
+    ];
 const schema = buildGraph([
   webpageSchema({
     url,
@@ -39,14 +45,10 @@ const schema = buildGraph([
     description: entry.data.description,
     dateModified: entry.data.updatedDate.toISOString(),
   }),
-  articleSchema({
-    url,
-    headline: entry.data.h1,
-    description: entry.data.description,
-    datePublished: entry.data.publishedDate.toISOString(),
-    dateModified: entry.data.updatedDate.toISOString(),
-    author: entry.data.author,
-  }),
+  articleSchema({url,headline:entry.data.h1,description:entry.data.description,
+    datePublished:entry.data.publishedDate.toISOString(),dateModified:entry.data.updatedDate.toISOString(),
+    image:articleImage,author:entry.data.author}),
+  ...(entry.data.faq.length?[faqSchema(entry.data.faq,url)]:[]),
   breadcrumbSchema(breadcrumbs),
 ]);
 ---
@@ -56,13 +58,17 @@ const schema = buildGraph([
   description={entry.data.description}
   h1={entry.data.h1}
   breadcrumbs={breadcrumbs}
-  canonical={path}
-  ogImage={entry.data.ogImage}
+  canonical={entry.data.canonical ?? path}
+  ogImage={entry.data.ogImage==='/og/default.png'?socialImage.src:entry.data.ogImage}
+  sources={getArticleSources(entry.data.slug)}
+  faqs={entry.data.faq}
   updatedDate={entry.data.updatedDate}
   publishedDate={entry.data.publishedDate}
   schema={schema}
   relatedServices={relatedServices}
   relatedArticles={relatedArticles}
+  coverVisual={pageVisuals.cover}
+  ctaVisual={pageVisuals.cta}
 >
   <Content />
 </ArticleLayout>

@@ -54,7 +54,7 @@ const sources = await Promise.all(formats.map(async (format) => {
   })));
   return { format, srcset: images.map((image, index) => `${image.src} ${safeWidths[index]}w`).join(", ") };
 }));
-const fallback = await getImage({ src, width: Math.min(width, src.width), height, format: "webp", fit: "cover", position });
+const fallback = await getImage({ src, width: Math.min(width, src.width), height: Math.max(1, Math.round(Math.min(width, src.width) / ratio)), format: "webp", fit: "cover", position });
 ---
 
 <figure class:list={["responsive-image", className]} data-image-slot={slotId}>

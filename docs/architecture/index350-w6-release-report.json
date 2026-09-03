@@ -1,0 +1,23 @@
+{
+  "wave": "INDEX350_W6_SAFE_FINAL",
+  "sourceState": "RELEASED_MANUAL_SAFE",
+  "counts": {
+    "baselineLive": 329,
+    "baselineIndexable": 328,
+    "released": 31,
+    "local": 13,
+    "guide": 18,
+    "finalLive": 360,
+    "finalIndexable": 359,
+    "noindex": 1,
+    "sitemapTarget": 359,
+    "remainingHold": 1
+  },
+  "remainingRiskCandidate": "/รับซื้อ-canon-eos-r-โคราช",
+  "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+  "realW5PerformanceAttested": false,
+  "targetFloor350Met": true,
+  "fullBuffer360Met": false,
+  "automaticPublishing": false,
+  "productionAttested": false
+}

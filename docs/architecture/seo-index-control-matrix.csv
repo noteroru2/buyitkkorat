@@ -1,0 +1,91 @@
+url,pageType,cluster,tier,indexState,robots,canonicalPath,sitemapEligible,webSiteSchema,webPageSchema,breadcrumbSchema,itemListSchema,nativeSchemaPolicy
+/,Homepage,CORE-LOCAL,A,INDEX,"index,follow",/,TRUE,TRUE,TRUE,FALSE,TRUE,SOURCE_TEMPLATE_REVIEW
+/ขายคอมหลายเครื่อง-โคราช,B2B/bulk,B2B,B,INDEX,"index,follow",/ขายคอมหลายเครื่อง-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช,B2B/bulk,B2B,B,INDEX,"index,follow",/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/ข้อกำหนดการใช้บริการ,Policy,TRUST,B,INDEX,"index,follow",/ข้อกำหนดการใช้บริการ,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/คำถามที่พบบ่อย,FAQ,TRUST,B,INDEX,"index,follow",/คำถามที่พบบ่อย,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/ติดต่อ,Contact,TRUST,B,INDEX,"index,follow",/ติดต่อ,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/นโยบายความเป็นส่วนตัว,Policy,TRUST,B,INDEX,"index,follow",/นโยบายความเป็นส่วนตัว,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ,Policy,TRUST,B,INDEX,"index,follow",/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/บทความ,Article hub,CONTENT,A,INDEX,"index,follow",/บทความ,TRUE,FALSE,TRUE,TRUE,TRUE,NONE_REQUIRED
+/บทความ/ssd-และข้อมูลส่วนตัวควรจัดการอย่างไรก่อนขาย,Article,CONTENT,C,INDEX,"index,follow",/บทความ/ssd-และข้อมูลส่วนตัวควรจัดการอย่างไรก่อนขาย,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/กล่องและอุปกรณ์มีผลต่อราคามือสองหรือไม่,Article,CONTENT,C,INDEX,"index,follow",/บทความ/กล่องและอุปกรณ์มีผลต่อราคามือสองหรือไม่,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร,Article,CONTENT,C,INDEX,"index,follow",/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร,Article,CONTENT,C,INDEX,"index,follow",/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง,Article,CONTENT,C,INDEX,"index,follow",/บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน,Article,CONTENT,C,INDEX,"index,follow",/บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว,Article,CONTENT,C,INDEX,"index,follow",/บทความ/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/วิธีลบข้อมูลก่อนขายคอมพิวเตอร์,Article,CONTENT,C,INDEX,"index,follow",/บทความ/วิธีลบข้อมูลก่อนขายคอมพิวเตอร์,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad,Article,CONTENT,C,INDEX,"index,follow",/บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/วิธีออกจากบัญชี-google-ก่อนขายโทรศัพท์-android,Article,CONTENT,C,INDEX,"index,follow",/บทความ/วิธีออกจากบัญชี-google-ก่อนขายโทรศัพท์-android,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน,Article,CONTENT,C,INDEX,"index,follow",/บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร,Article,CONTENT,C,INDEX,"index,follow",/บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย,Article,CONTENT,C,INDEX,"index,follow",/บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง,Article,CONTENT,C,INDEX,"index,follow",/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร,Article,CONTENT,C,INDEX,"index,follow",/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/บริการรับซื้อถึงที่โคราช,Seller journey,SELLER-JOURNEY,B,INDEX,"index,follow",/บริการรับซื้อถึงที่โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/บริษัทปิดกิจการขายอุปกรณ์ไอที,B2B/bulk,B2B,B,INDEX,"index,follow",/บริษัทปิดกิจการขายอุปกรณ์ไอที,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/พื้นที่,Local authority hub,LOCATION,A,INDEX,"index,follow",/พื้นที่,TRUE,FALSE,TRUE,TRUE,TRUE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/ด่านขุนทด,Location,LOCATION,C,INDEX,"index,follow",/พื้นที่/ด่านขุนทด,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/บัวใหญ่,Location,LOCATION,C,INDEX,"index,follow",/พื้นที่/บัวใหญ่,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/ปักธงชัย,Location,LOCATION,C,INDEX,"index,follow",/พื้นที่/ปักธงชัย,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/ปากช่อง,Location,LOCATION,C,INDEX,"index,follow",/พื้นที่/ปากช่อง,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/พิมาย,Location,LOCATION,C,INDEX,"index,follow",/พื้นที่/พิมาย,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี,Location,LOCATION,C,INDEX,"index,follow",/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/สีคิ้ว,Location,LOCATION,C,INDEX,"index,follow",/พื้นที่/สีคิ้ว,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/สูงเนิน,Location,LOCATION,C,INDEX,"index,follow",/พื้นที่/สูงเนิน,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/เมืองนครราชสีมา,Location,LOCATION,A,INDEX,"index,follow",/พื้นที่/เมืองนครราชสีมา,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/โชคชัย,Location,LOCATION,C,INDEX,"index,follow",/พื้นที่/โชคชัย,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/พื้นที่/โนนสูง,Location,LOCATION,C,INDEX,"index,follow",/พื้นที่/โนนสูง,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/รับซื้อ-apple-watch-โคราช,Product category,APPLE,B,INDEX,"index,follow",/รับซื้อ-apple-watch-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อ-cpu-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อ-cpu-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อ-imac-mac-mini-โคราช,Product category,APPLE,B,INDEX,"index,follow",/รับซื้อ-imac-mac-mini-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อ-ipad-โคราช,Product category,APPLE,B,INDEX,"index,follow",/รับซื้อ-ipad-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อ-iphone-โคราช,Product category,APPLE,A,INDEX,"index,follow",/รับซื้อ-iphone-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อ-macbook-โคราช,Product category,APPLE,A,INDEX,"index,follow",/รับซื้อ-macbook-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อ-nintendo-switch-โคราช,Product category,GAMING,B,INDEX,"index,follow",/รับซื้อ-nintendo-switch-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อ-playstation-โคราช,Product category,GAMING,B,INDEX,"index,follow",/รับซื้อ-playstation-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อ-server-network-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อ-server-network-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อ-ssd-hdd-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อ-ssd-hdd-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อกล้อง-โคราช,Product category,CAMERA,A,INDEX,"index,follow",/รับซื้อกล้อง-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อการ์ดจอ-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อการ์ดจอ-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อคอมตั้งโต๊ะ-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อคอมตั้งโต๊ะ-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อคอมบริษัท-โคราช,B2B/bulk,B2B,B,INDEX,"index,follow",/รับซื้อคอมบริษัท-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อคอมประกอบ-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อคอมประกอบ-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อคอมพิวเตอร์-โคราช,Product category,COMPUTER,A,INDEX,"index,follow",/รับซื้อคอมพิวเตอร์-โคราช,TRUE,FALSE,TRUE,TRUE,TRUE,NONE_REQUIRED
+/รับซื้อคอมเกมมิ่ง-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อคอมเกมมิ่ง-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อคอมเก่า-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อคอมเก่า-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อจอมอนิเตอร์-โคราช,Product category,OTHER-PRODUCT,C,INDEX,"index,follow",/รับซื้อจอมอนิเตอร์-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อลำโพง-โคราช,Product category,OTHER-PRODUCT,C,INDEX,"index,follow",/รับซื้อลำโพง-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อสินค้าไอที,Main service hub,OTHER-PRODUCT,A,INDEX,"index,follow",/รับซื้อสินค้าไอที,TRUE,FALSE,TRUE,TRUE,TRUE,NONE_REQUIRED
+/รับซื้อสินค้าไอทียกล็อต,B2B/bulk,B2B,A,INDEX,"index,follow",/รับซื้อสินค้าไอทียกล็อต,TRUE,FALSE,TRUE,TRUE,TRUE,NONE_REQUIRED
+/รับซื้อสินค้าไอทีไม่มีอุปกรณ์-โคราช,Product condition,OTHER-PRODUCT,C,INDEX,"index,follow",/รับซื้อสินค้าไอทีไม่มีอุปกรณ์-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อสินค้าไอทีไม่ได้ใช้งาน-โคราช,Product condition,OTHER-PRODUCT,C,INDEX,"index,follow",/รับซื้อสินค้าไอทีไม่ได้ใช้งาน-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อหูฟัง-โคราช,Product category,OTHER-PRODUCT,C,INDEX,"index,follow",/รับซื้อหูฟัง-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้ออุปกรณ์-pos-โคราช,Product category,OTHER-PRODUCT,C,INDEX,"index,follow",/รับซื้ออุปกรณ์-pos-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้ออุปกรณ์สำนักงาน,B2B/bulk,B2B,B,INDEX,"index,follow",/รับซื้ออุปกรณ์สำนักงาน,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อเครื่องปริ้น-โคราช,Product category,OTHER-PRODUCT,C,INDEX,"index,follow",/รับซื้อเครื่องปริ้น-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อเครื่องเกม-โคราช,Product category,GAMING,A,INDEX,"index,follow",/รับซื้อเครื่องเกม-โคราช,TRUE,FALSE,TRUE,TRUE,TRUE,NONE_REQUIRED
+/รับซื้อเมนบอร์ด-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อเมนบอร์ด-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อเลนส์กล้อง-โคราช,Product category,CAMERA,B,INDEX,"index,follow",/รับซื้อเลนส์กล้อง-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อเวิร์กสเตชัน-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อเวิร์กสเตชัน-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อแท็บเล็ต-โคราช,Product category,MOBILE,B,INDEX,"index,follow",/รับซื้อแท็บเล็ต-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อแรม-โคราช,Product category,COMPUTER,B,INDEX,"index,follow",/รับซื้อแรม-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อโทรศัพท์-android-โคราช,Product category,MOBILE,B,INDEX,"index,follow",/รับซื้อโทรศัพท์-android-โคราช,TRUE,FALSE,TRUE,TRUE,TRUE,NONE_REQUIRED
+/รับซื้อโทรศัพท์-oppo-โคราช,Product category,MOBILE,B,INDEX,"index,follow",/รับซื้อโทรศัพท์-oppo-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อโทรศัพท์-samsung-โคราช,Product category,MOBILE,B,INDEX,"index,follow",/รับซื้อโทรศัพท์-samsung-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อโทรศัพท์-vivo-โคราช,Product category,MOBILE,B,INDEX,"index,follow",/รับซื้อโทรศัพท์-vivo-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช,Product category,MOBILE,B,INDEX,"index,follow",/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อโทรศัพท์จอแตก-โคราช,Product condition,MOBILE,B,INDEX,"index,follow",/รับซื้อโทรศัพท์จอแตก-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อโทรศัพท์มือถือ-โคราช,Product category,MOBILE,A,INDEX,"index,follow",/รับซื้อโทรศัพท์มือถือ-โคราช,TRUE,FALSE,TRUE,TRUE,TRUE,NONE_REQUIRED
+/รับซื้อโน๊ตบุ๊ค-โคราช,Product category,NOTEBOOK,A,INDEX,"index,follow",/รับซื้อโน๊ตบุ๊ค-โคราช,TRUE,FALSE,TRUE,TRUE,TRUE,NONE_REQUIRED
+/รับซื้อโน๊ตบุ๊คจอแตก-โคราช,Product condition,NOTEBOOK,B,INDEX,"index,follow",/รับซื้อโน๊ตบุ๊คจอแตก-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช,Product condition,NOTEBOOK,B,INDEX,"index,follow",/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช,Product condition,NOTEBOOK,B,INDEX,"index,follow",/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/รับซื้อโน๊ตบุ๊คเสีย-โคราช,Product condition,NOTEBOOK,B,INDEX,"index,follow",/รับซื้อโน๊ตบุ๊คเสีย-โคราช,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/วิธีขายสินค้า,Seller journey,SELLER-JOURNEY,A,INDEX,"index,follow",/วิธีขายสินค้า,TRUE,FALSE,TRUE,TRUE,TRUE,NONE_REQUIRED
+/วิธีประเมินราคา,Seller journey,SELLER-JOURNEY,B,INDEX,"index,follow",/วิธีประเมินราคา,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/ส่งสินค้าไอทีมาประเมิน,Seller journey,SELLER-JOURNEY,B,INDEX,"index,follow",/ส่งสินค้าไอทีมาประเมิน,TRUE,FALSE,TRUE,TRUE,FALSE,NONE_REQUIRED
+/เกี่ยวกับเรา,About,TRUST,B,INDEX,"index,follow",/เกี่ยวกับเรา,TRUE,FALSE,TRUE,TRUE,FALSE,SOURCE_TEMPLATE_REVIEW
+/404,Utility/error page,UTILITY,UTILITY,NOINDEX,"noindex,follow",,FALSE,FALSE,FALSE,FALSE,FALSE,NONE_REQUIRED

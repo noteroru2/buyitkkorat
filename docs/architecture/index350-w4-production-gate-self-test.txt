@@ -1,0 +1,41 @@
+INDEX 350 — W4 PRODUCTION RELEASE GATE SELF-TEST
+Date: 2026-09-02
+Scope: synthetic/static validation only; not a real Astro build, Git SHA attestation, or production deployment.
+
+STATIC GATE
+Live/indexable/noindex: 289/288/1
+W4 governed: 50/50
+Composition: Series 18 / Model 7 / Condition 25
+Parent groups: 30
+Sitemap target: 288
+Minimum inbound paths: 2
+W5: LOCKED
+VERDICT: PASS
+
+SYNTHETIC BUILT SURFACE
+Built governed pages: 289/289
+Unreachable indexable: 0
+Broken governed links: 0
+Max observed crawl depth: 1
+WebSite schema owners: 1
+W4 built pages: 50/50
+Sitemap URLs: 288/288
+Minimum W4 inbound paths: 2
+Errors: 0
+VERDICT: PASS
+
+SYNTHETIC PRODUCTION VERIFICATION
+W4 routes passed: 50/50
+Parent groups passed: 30/30
+Minimum W4 inbound paths: 2
+Sitemap: 288/288 — PASS
+State: PRODUCTION_VERIFIED
+Observation: OBSERVATION_ACTIVE
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W3 performance attested: false
+W5: LOCKED
+Errors: 0
+VERDICT: PASS
+
+IMPORTANT
+The PRODUCTION_VERIFIED state above was produced only against a local synthetic HTTP fixture. Real production remains unattested until the user runs the real build, exact-SHA predeploy, deploys, and runs scripts/verify-index-350-w4-production.mjs against the production domain.

@@ -1,0 +1,17 @@
+﻿url,cluster,tier,projectedInbound,status,reason
+/ข้อกำหนดการใช้บริการ,TRUST,B,0,DEFERRED,Navigation/footer owned
+/คำถามที่พบบ่อย,TRUST,B,0,DEFERRED,Navigation/footer owned
+/ติดต่อ,TRUST,B,0,DEFERRED,Navigation/footer owned
+/นโยบายความเป็นส่วนตัว,TRUST,B,0,DEFERRED,Navigation/footer owned
+/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ,TRUST,B,0,DEFERRED,Navigation/footer owned
+/พื้นที่/ด่านขุนทด,LOCATION,C,0,DEFERRED,Local Hub deferred to Batch 5
+/พื้นที่/บัวใหญ่,LOCATION,C,0,DEFERRED,Local Hub deferred to Batch 5
+/พื้นที่/ปักธงชัย,LOCATION,C,0,DEFERRED,Local Hub deferred to Batch 5
+/พื้นที่/ปากช่อง,LOCATION,C,0,DEFERRED,Local Hub deferred to Batch 5
+/พื้นที่/พิมาย,LOCATION,C,0,DEFERRED,Local Hub deferred to Batch 5
+/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี,LOCATION,C,0,DEFERRED,Local Hub deferred to Batch 5
+/พื้นที่/สีคิ้ว,LOCATION,C,0,DEFERRED,Local Hub deferred to Batch 5
+/พื้นที่/สูงเนิน,LOCATION,C,0,DEFERRED,Local Hub deferred to Batch 5
+/พื้นที่/โชคชัย,LOCATION,C,0,DEFERRED,Local Hub deferred to Batch 5
+/พื้นที่/โนนสูง,LOCATION,C,0,DEFERRED,Local Hub deferred to Batch 5
+/เกี่ยวกับเรา,TRUST,B,0,DEFERRED,Navigation/footer owned

@@ -1,0 +1,61 @@
+===== validate-index-350-expansion-plan.mjs =====
+INDEX 350+ EXPANSION PLAN VALIDATION
+Current indexable: 138
+W1 released: 40 (Brand 24 + Series 16)
+Remaining HOLD: 222
+Target indexable: 360
+Buffer above 350: 10
+Automatic publishing: false
+VERDICT: PASS
+
+===== validate-index-350-w1.mjs =====
+INDEX 350 W1 — BRAND & SERIES RELEASE VALIDATION
+Live/indexable/noindex: 139/138/1
+Released: 40 (24 Brand + 16 Series)
+Content files checked: 40
+Sitemap target: 138
+W2 state: LOCKED
+VERDICT: PASS
+
+===== validate-index-350-w1-production-gate.mjs =====
+INDEX 350 W1 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 139/138/1
+W1 governed: 40/40
+Parent groups: 10
+Sitemap target: 138
+Minimum W1 inbound paths: 2
+Minimum images/page: 2
+W2 locked: true
+VERDICT: PASS
+
+===== validate-index-350-w1-observation-gate.mjs =====
+INDEX 350 — W1 OBSERVATION GATE VALIDATION
+Live/indexable/noindex: 139/138/1
+Observed W1 URLs: 40
+Ownership pairs: 40
+Finalized-day gate: 7
+Visibility gate: 8/40
+Indexation gate: 32/40
+W2 locked: true
+VERDICT: PASS
+
+===== validate-index-350-w1-performance-w2-selection.mjs =====
+INDEX 350 — W1 PERFORMANCE REVIEW / W2 SELECTION VALIDATION
+Live/indexable: 139/138
+Provisional W2: 50
+Series/Model: 30/20
+W2 state: CANDIDATE_SELECTION_PREPARED_PENDING_REAL_W1_REVIEW
+Automatic W2: false
+VERDICT: PASS
+
+===== run-architecture-quality-gate.mjs =====
+ARCHITECTURE BATCH 10 — STATIC QUALITY GATE
+Validators: 10/10 passed
+Live/indexable/noindex: 139/138/1
+Unreleased candidates governed: 222
+Static architecture gate: PASS
+Production integration gate: UNATTESTED_IN_OVERLAY
+Expansion decision: CONDITIONALLY_READY
+Report: docs/architecture/architecture-quality-gate-report.json
+VERDICT: PASS_WITH_PRODUCTION_ATTESTATION_REQUIRED
+

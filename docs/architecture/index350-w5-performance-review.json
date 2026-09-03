@@ -1,0 +1,24 @@
+{
+  "title": "INDEX 350 — W5 Performance Review",
+  "generatedAt": "2026-09-02T16:05:29.366Z",
+  "state": "WAIT_FOR_REAL_W5_OBSERVATION_DATA",
+  "realPerformanceReviewed": false,
+  "missingInputs": [
+    "docs/architecture/index350-w5-observation-report.json",
+    "docs/architecture/index350-w5-observation-pages.csv",
+    "docs/architecture/index350-w5-query-ownership.csv"
+  ],
+  "w6": {
+    "candidateReviewReady": false,
+    "automaticRelease": false,
+    "locked": true
+  },
+  "finalBuffer": {
+    "safeProjectedIndexable": 359,
+    "fullProjectedIndexable": 360,
+    "targetFloor": 350,
+    "bufferShortfallWithoutCanon": 1,
+    "policy": "359 is acceptable because it exceeds the 350 floor. Do not trade ownership safety for the final one-page buffer."
+  },
+  "note": "No W5 metrics were invented. Run W5 Observation Gate with real finalized GSC/indexation data first."
+}

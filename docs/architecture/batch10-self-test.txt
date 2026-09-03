@@ -1,0 +1,81 @@
+$ validate foundation
+ARCHITECTURE BATCH 10 — QUALITY GATE FOUNDATION VALIDATION
+Live routes: 90
+Indexable: 89
+Governed unreleased candidates: 64
+Initial expansion release cap: 6
+Max crawl depth policy: 4
+Automatic expansion: false
+Warnings: 1
+VERDICT: PASS_WITH_PRODUCTION_ATTESTATION_REQUIRED
+WARN: Static quality gate report not generated yet. Run scripts/run-architecture-quality-gate.mjs.
+
+$ static quality gate
+ARCHITECTURE BATCH 10 — STATIC QUALITY GATE
+Validators: 10/10 passed
+Live/indexable/noindex: 90/89/1
+Unreleased candidates governed: 64
+Static architecture gate: PASS
+Production integration gate: UNATTESTED_IN_OVERLAY
+Expansion decision: CONDITIONALLY_READY
+Report: docs/architecture/architecture-quality-gate-report.json
+VERDICT: PASS_WITH_PRODUCTION_ATTESTATION_REQUIRED
+
+$ validate with report
+ARCHITECTURE BATCH 10 — QUALITY GATE FOUNDATION VALIDATION
+Live routes: 90
+Indexable: 89
+Governed unreleased candidates: 64
+Initial expansion release cap: 6
+Max crawl depth policy: 4
+Automatic expansion: false
+Warnings: 0
+VERDICT: PASS
+
+$ synthetic build crawl
+ARCHITECTURE BATCH 10 — BUILD / CRAWL AUDIT
+Built governed pages: 90/90
+Unreachable indexable: 3
+Broken governed links: 0
+Max observed crawl depth: 3
+Pages beyond depth policy: 0
+WebSite schema owners: 1
+Errors: 1
+Warnings: 0
+Report: docs/architecture/production-crawl-audit.json
+VERDICT: FAIL
+
+$ synthetic finalizer
+ARCHITECTURE BATCH 10 — EXPANSION READINESS DECISION
+State: BLOCKED
+Score: 55/100
+Blockers: sourceIntegration, buildAndCrawl
+Evidence: ROWS=1
+Initial release cap: 6
+Automatic expansion: false
+Report: docs/architecture/expansion-readiness-decision.json
+VERDICT: NO_GO
+
+$ synthetic build crawl — corrected global shell graph
+ARCHITECTURE BATCH 10 — BUILD / CRAWL AUDIT
+Built governed pages: 90/90
+Unreachable indexable: 0
+Broken governed links: 0
+Max observed crawl depth: 3
+Pages beyond depth policy: 0
+WebSite schema owners: 1
+Errors: 0
+Warnings: 0
+Report: docs/architecture/production-crawl-audit.json
+VERDICT: PASS
+
+$ synthetic finalizer — all gates represented
+ARCHITECTURE BATCH 10 — EXPANSION READINESS DECISION
+State: READY_FOR_CONTROLLED_RELEASE
+Score: 100/100
+Blockers: NONE
+Evidence: ROWS=1
+Initial release cap: 6
+Automatic expansion: false
+Report: docs/architecture/expansion-readiness-decision.json
+VERDICT: GO

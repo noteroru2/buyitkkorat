@@ -1,0 +1,27 @@
+{
+  "total": 360,
+  "replaced": 274,
+  "added": 49,
+  "existing": 37,
+  "issues": [],
+  "groups": {
+    "หน้าแรก": 1,
+    "หน้า 404": 1,
+    "ข้อมูลร้าน/นโยบาย": 7,
+    "บริการ": 273,
+    "หน้ารวม": 2,
+    "บทความ": 37,
+    "พื้นที่": 39
+  },
+  "assets": {
+    "src/assets/images/realistic/general-it-cover.webp": 53,
+    "src/assets/images/realistic/bulk-office-cover.webp": 34,
+    "src/assets/images/realistic/camera-cover.webp": 24,
+    "src/assets/images/realistic/notebook-cover.webp": 89,
+    "src/assets/images/realistic/component-cover.webp": 15,
+    "src/assets/images/realistic/mobile-apple-cover.webp": 70,
+    "src/assets/images/realistic/desktop-cover.webp": 15,
+    "src/assets/images/realistic/local-pickup-cover.webp": 44,
+    "src/assets/images/realistic/gaming-cover.webp": 16
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "wave": "INDEX350_W1",
+  "gate": "Observation Gate",
+  "baseline": "W1 Production Release Gate",
+  "changedFileCount": 12,
+  "changedFiles": [
+    "APPLY_INDEX350_W1_OBSERVATION_GATE.md",
+    "docs/architecture/INDEX350-W1-OBSERVATION-GATE.md",
+    "docs/architecture/architecture-quality-gate-report.json",
+    "docs/architecture/index350-w1-observation-gate-self-test.txt",
+    "docs/gsc/index350-w1-gsc-template.csv",
+    "docs/gsc/index350-w1-indexation-template.csv",
+    "package.json",
+    "scripts/evaluate-index-350-w1-observation.mjs",
+    "scripts/validate-index-350-w1-observation-gate.mjs",
+    "src/config/index-350-w1-observation-gate.json",
+    "src/config/index-350-w1-production-gate.json",
+    "src/config/index-350-w1-release.json"
+  ]
+}

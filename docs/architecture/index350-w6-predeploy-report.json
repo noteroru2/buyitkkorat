@@ -1,0 +1,246 @@
+{
+  "wave": "INDEX350_W6_SAFE_FINAL",
+  "generatedAt": "2026-09-03T04:30:50.472Z",
+  "state": "PREDEPLOY_READY",
+  "productionReleaseAllowed": true,
+  "expectedCounts": {
+    "live": 360,
+    "indexable": 359,
+    "sitemap": 359,
+    "w6": 31,
+    "local": 13,
+    "guide": 18,
+    "remainingHold": 1
+  },
+  "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+  "realW5PerformanceAttested": false,
+  "git": {
+    "available": true,
+    "head": "1f6dc64755a1b430395e3be26bbbe052d32bdd30",
+    "clean": false,
+    "expectedShaMatch": true
+  },
+  "staticPass": true,
+  "build": {
+    "attempted": true,
+    "passed": true,
+    "reason": "PASS"
+  },
+  "architectureCrawl": {
+    "attempted": true,
+    "passed": true,
+    "reason": "PASS"
+  },
+  "w6Audit": {
+    "attempted": true,
+    "passed": true,
+    "reason": "PASS"
+  },
+  "expectedSha": "1f6dc64755a1b430395e3be26bbbe052d32bdd30",
+  "blockers": [],
+  "results": [
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-expansion-plan.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-expansion-plan.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w1.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w1.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w1-production-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w1-production-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w2.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w2.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w2-production-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w2-production-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w2-observation-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w2-observation-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w2-performance-w3-selection.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w2-performance-w3-selection.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w3.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w3.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w3-production-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w3-production-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w3-observation-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w3-observation-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w3-performance-w4-selection.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w3-performance-w4-selection.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w4.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w4.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w4-production-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w4-production-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w4-observation-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w4-observation-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w4-performance-w5-selection.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w4-performance-w5-selection.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w5.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w5.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w5-production-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w5-production-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w5-observation-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w5-observation-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w5-performance-w6-selection.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w5-performance-w6-selection.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w6.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w6.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w6-production-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/validate-index-350-w6-production-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/run-architecture-quality-gate.mjs",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/run-architecture-quality-gate.mjs",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "npm run build",
+      "launchedAs": "C:\\WINDOWS\\system32\\cmd.exe /d /s /c npm run build",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/audit-production-build-architecture.mjs --dist=dist",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/audit-production-build-architecture.mjs --dist=dist",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    },
+    {
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/audit-index-350-w6-build.mjs --dist=dist",
+      "launchedAs": "C:\\Program Files\\nodejs\\node.exe scripts/audit-index-350-w6-build.mjs --dist=dist",
+      "exitCode": 0,
+      "signal": null,
+      "passed": true,
+      "error": null
+    }
+  ],
+  "finalRiskCandidate": "/รับซื้อ-canon-eos-r-โคราช",
+  "finalRiskCandidateReleased": false,
+  "nextState": "FINAL_OBSERVATION_REQUIRED"
+}

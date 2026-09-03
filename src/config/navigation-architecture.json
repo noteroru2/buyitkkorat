@@ -1,0 +1,363 @@
+{
+  "meta": {
+    "batch": "ARCHITECTURE BATCH 8 — Navigation / Header / Footer / Discovery Architecture",
+    "site": "รับซื้อไอทีโคราช.com",
+    "liveRoutes": 239,
+    "indexableRoutes": 238,
+    "newLiveRoutes": 40,
+    "primaryItemLimit": 6,
+    "submenuLinkLimit": 6,
+    "footerColumnLimit": 5,
+    "footerLinksPerColumnLimit": 6,
+    "automaticCandidateExposure": false,
+    "virtualHrefAllowed": false,
+    "policy": "Global navigation remains Hub-first after INDEX350 W1. Brand/Series discovery is contextual through parent hubs; Header/Footer are not expanded into a 40-link dump."
+  },
+  "brand": {
+    "homeUrl": "/",
+    "label": "รับซื้อไอทีโคราช.com",
+    "ariaLabel": "กลับหน้าแรก"
+  },
+  "header": {
+    "primary": [
+      {
+        "id": "services",
+        "label": "รับซื้อสินค้า",
+        "href": "/รับซื้อสินค้าไอที",
+        "children": [
+          {
+            "label": "รับซื้อโน๊ตบุ๊ค",
+            "href": "/รับซื้อโน๊ตบุ๊ค-โคราช"
+          },
+          {
+            "label": "รับซื้อคอมพิวเตอร์",
+            "href": "/รับซื้อคอมพิวเตอร์-โคราช"
+          },
+          {
+            "label": "รับซื้อโทรศัพท์มือถือ",
+            "href": "/รับซื้อโทรศัพท์มือถือ-โคราช"
+          },
+          {
+            "label": "รับซื้อกล้อง",
+            "href": "/รับซื้อกล้อง-โคราช"
+          },
+          {
+            "label": "รับซื้อเครื่องเกม",
+            "href": "/รับซื้อเครื่องเกม-โคราช"
+          }
+        ]
+      },
+      {
+        "id": "apple",
+        "label": "Apple",
+        "href": null,
+        "children": [
+          {
+            "label": "รับซื้อ iPhone",
+            "href": "/รับซื้อ-iphone-โคราช"
+          },
+          {
+            "label": "รับซื้อ MacBook",
+            "href": "/รับซื้อ-macbook-โคราช"
+          },
+          {
+            "label": "รับซื้อ iPad",
+            "href": "/รับซื้อ-ipad-โคราช"
+          },
+          {
+            "label": "รับซื้อ Apple Watch",
+            "href": "/รับซื้อ-apple-watch-โคราช"
+          },
+          {
+            "label": "รับซื้อ iMac / Mac mini",
+            "href": "/รับซื้อ-imac-mac-mini-โคราช"
+          }
+        ]
+      },
+      {
+        "id": "business",
+        "label": "บริษัท / ยกล็อต",
+        "href": "/รับซื้อสินค้าไอทียกล็อต",
+        "children": [
+          {
+            "label": "รับซื้อคอมบริษัท",
+            "href": "/รับซื้อคอมบริษัท-โคราช"
+          },
+          {
+            "label": "ขายคอมหลายเครื่อง",
+            "href": "/ขายคอมหลายเครื่อง-โคราช"
+          },
+          {
+            "label": "ขายไอทียกสำนักงาน",
+            "href": "/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช"
+          },
+          {
+            "label": "บริษัทปิดกิจการ",
+            "href": "/บริษัทปิดกิจการขายอุปกรณ์ไอที"
+          },
+          {
+            "label": "อุปกรณ์สำนักงาน",
+            "href": "/รับซื้ออุปกรณ์สำนักงาน"
+          }
+        ]
+      },
+      {
+        "id": "areas",
+        "label": "พื้นที่บริการ",
+        "href": "/พื้นที่",
+        "children": [
+          {
+            "label": "เมืองนครราชสีมา",
+            "href": "/พื้นที่/เมืองนครราชสีมา"
+          },
+          {
+            "label": "มทส.",
+            "href": "/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี"
+          },
+          {
+            "label": "ปากช่อง",
+            "href": "/พื้นที่/ปากช่อง"
+          },
+          {
+            "label": "สีคิ้ว",
+            "href": "/พื้นที่/สีคิ้ว"
+          },
+          {
+            "label": "ดูพื้นที่ทั้งหมด",
+            "href": "/พื้นที่"
+          }
+        ]
+      },
+      {
+        "id": "sell",
+        "label": "วิธีขาย",
+        "href": "/วิธีขายสินค้า",
+        "children": [
+          {
+            "label": "วิธีประเมินราคา",
+            "href": "/วิธีประเมินราคา"
+          },
+          {
+            "label": "ส่งสินค้ามาประเมิน",
+            "href": "/ส่งสินค้าไอทีมาประเมิน"
+          },
+          {
+            "label": "บริการรับซื้อถึงที่",
+            "href": "/บริการรับซื้อถึงที่โคราช"
+          },
+          {
+            "label": "คำถามที่พบบ่อย",
+            "href": "/คำถามที่พบบ่อย"
+          }
+        ]
+      },
+      {
+        "id": "guides",
+        "label": "บทความ",
+        "href": "/บทความ",
+        "children": []
+      }
+    ],
+    "utility": [
+      {
+        "label": "ติดต่อ",
+        "href": "/ติดต่อ",
+        "role": "UTILITY"
+      },
+      {
+        "label": "ประเมินราคา",
+        "href": "/วิธีประเมินราคา",
+        "role": "PRIMARY_CTA"
+      }
+    ]
+  },
+  "footer": {
+    "columns": [
+      {
+        "id": "core-services",
+        "label": "บริการหลัก",
+        "links": [
+          {
+            "label": "รับซื้อสินค้าไอที",
+            "href": "/รับซื้อสินค้าไอที"
+          },
+          {
+            "label": "รับซื้อโน๊ตบุ๊ค",
+            "href": "/รับซื้อโน๊ตบุ๊ค-โคราช"
+          },
+          {
+            "label": "รับซื้อคอมพิวเตอร์",
+            "href": "/รับซื้อคอมพิวเตอร์-โคราช"
+          },
+          {
+            "label": "รับซื้อโทรศัพท์มือถือ",
+            "href": "/รับซื้อโทรศัพท์มือถือ-โคราช"
+          },
+          {
+            "label": "รับซื้อกล้อง",
+            "href": "/รับซื้อกล้อง-โคราช"
+          },
+          {
+            "label": "รับซื้อเครื่องเกม",
+            "href": "/รับซื้อเครื่องเกม-โคราช"
+          }
+        ]
+      },
+      {
+        "id": "apple-products",
+        "label": "Apple และอุปกรณ์",
+        "links": [
+          {
+            "label": "รับซื้อ iPhone",
+            "href": "/รับซื้อ-iphone-โคราช"
+          },
+          {
+            "label": "รับซื้อ MacBook",
+            "href": "/รับซื้อ-macbook-โคราช"
+          },
+          {
+            "label": "รับซื้อ iPad",
+            "href": "/รับซื้อ-ipad-โคราช"
+          },
+          {
+            "label": "รับซื้อการ์ดจอ",
+            "href": "/รับซื้อการ์ดจอ-โคราช"
+          },
+          {
+            "label": "รับซื้อ RAM",
+            "href": "/รับซื้อแรม-โคราช"
+          },
+          {
+            "label": "รับซื้อ SSD / HDD",
+            "href": "/รับซื้อ-ssd-hdd-โคราช"
+          }
+        ]
+      },
+      {
+        "id": "business",
+        "label": "บริษัทและยกล็อต",
+        "links": [
+          {
+            "label": "รับซื้อสินค้าไอทียกล็อต",
+            "href": "/รับซื้อสินค้าไอทียกล็อต"
+          },
+          {
+            "label": "รับซื้อคอมบริษัท",
+            "href": "/รับซื้อคอมบริษัท-โคราช"
+          },
+          {
+            "label": "ขายคอมหลายเครื่อง",
+            "href": "/ขายคอมหลายเครื่อง-โคราช"
+          },
+          {
+            "label": "ขายไอทียกสำนักงาน",
+            "href": "/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช"
+          },
+          {
+            "label": "บริษัทปิดกิจการ",
+            "href": "/บริษัทปิดกิจการขายอุปกรณ์ไอที"
+          },
+          {
+            "label": "บริการรับซื้อถึงที่",
+            "href": "/บริการรับซื้อถึงที่โคราช"
+          }
+        ]
+      },
+      {
+        "id": "discovery",
+        "label": "พื้นที่และวิธีขาย",
+        "links": [
+          {
+            "label": "พื้นที่ให้บริการ",
+            "href": "/พื้นที่"
+          },
+          {
+            "label": "เมืองนครราชสีมา",
+            "href": "/พื้นที่/เมืองนครราชสีมา"
+          },
+          {
+            "label": "วิธีขายสินค้า",
+            "href": "/วิธีขายสินค้า"
+          },
+          {
+            "label": "วิธีประเมินราคา",
+            "href": "/วิธีประเมินราคา"
+          },
+          {
+            "label": "ส่งสินค้ามาประเมิน",
+            "href": "/ส่งสินค้าไอทีมาประเมิน"
+          },
+          {
+            "label": "บทความและคู่มือ",
+            "href": "/บทความ"
+          }
+        ]
+      },
+      {
+        "id": "trust",
+        "label": "ข้อมูลและความน่าเชื่อถือ",
+        "links": [
+          {
+            "label": "เกี่ยวกับเรา",
+            "href": "/เกี่ยวกับเรา"
+          },
+          {
+            "label": "ติดต่อ",
+            "href": "/ติดต่อ"
+          },
+          {
+            "label": "คำถามที่พบบ่อย",
+            "href": "/คำถามที่พบบ่อย"
+          },
+          {
+            "label": "นโยบายรับซื้อสินค้า",
+            "href": "/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ"
+          },
+          {
+            "label": "นโยบายความเป็นส่วนตัว",
+            "href": "/นโยบายความเป็นส่วนตัว"
+          },
+          {
+            "label": "ข้อกำหนดการใช้บริการ",
+            "href": "/ข้อกำหนดการใช้บริการ"
+          }
+        ]
+      }
+    ],
+    "bottomLinks": []
+  },
+  "discovery": {
+    "homepage": {
+      "primaryHubs": [
+        "/รับซื้อสินค้าไอที",
+        "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "/รับซื้อคอมพิวเตอร์-โคราช",
+        "/รับซื้อโทรศัพท์มือถือ-โคราช",
+        "/รับซื้อสินค้าไอทียกล็อต",
+        "/พื้นที่",
+        "/วิธีขายสินค้า",
+        "/บทความ"
+      ],
+      "appleDirectOwners": [
+        "/รับซื้อ-iphone-โคราช",
+        "/รับซื้อ-macbook-โคราช"
+      ]
+    },
+    "delegatedSurfaces": {
+      "breadcrumbs": "runtime-architecture.ts",
+      "contextualRelated": "runtime-architecture.ts",
+      "localRelated": "local-area-release.json",
+      "guideRelated": "guide-authority-architecture.json",
+      "brandSeriesCandidates": "brand-model-series-foundation.json"
+    },
+    "rules": [
+      "Global navigation links only to LIVE + INDEX routes.",
+      "Header is bounded to six primary choices.",
+      "Footer is bounded to five columns and six links per column.",
+      "Use hubs for breadth; do not enumerate all 90 routes globally.",
+      "Virtual Apple/Guide nodes may be labels but never href targets.",
+      "Brand/Series/Guide candidates stay out of Header/Footer/Homepage until released.",
+      "Contextual sibling/child discovery remains delegated to runtime architecture rather than global navigation."
+    ]
+  }
+}

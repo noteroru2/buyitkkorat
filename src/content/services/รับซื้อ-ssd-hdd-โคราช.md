@@ -40,7 +40,6 @@ reviewer: "WINNER IT"
 productFocus: "SSD / HDD / ที่เก็บข้อมูล"
 illustration: "desktop"
 ---
-
 ## ที่เก็บข้อมูลมือสองและความเสี่ยง
 
 SSD NVMe, SATA และ HDD มีเกณฑ์ราคาต่างกัน ความจุที่อ่านได้จริง สุขภาพดิสก์จาก SMART, จำนวนชั่วโมงใช้งาน bad sector มีผลต่อมูลค่า

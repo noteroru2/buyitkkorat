@@ -1,0 +1,70 @@
+$ node scripts/validate-index-350-w1-observation-gate.mjs
+INDEX 350 — W1 OBSERVATION GATE VALIDATION
+Live/indexable/noindex: 139/138/1
+Observed W1 URLs: 40
+Ownership pairs: 40
+Finalized-day gate: 7
+Visibility gate: 8/40
+Indexation gate: 32/40
+W2 locked: true
+VERDICT: PASS
+
+
+$ node scripts/evaluate-index-350-w1-observation.mjs --input=docs/architecture/gsc-day6.csv --indexation=docs/architecture/indexation-36.csv --output=docs/architecture/day6.json
+INDEX 350 — W1 OBSERVATION GATE
+Release date: 2026-09-02
+Latest finalized GSC date: 2026-09-08
+Finalized days after release: 6
+Visible W1 pages: 10/40
+Indexed W1 pages: 36/40
+Ownership review pairs: 0/40
+State: WAIT_FOR_FINALIZED_GSC
+W2: LOCKED
+Automatic W2: false
+Report: docs/architecture/day6.json
+VERDICT: WAIT_FOR_MORE_DATA
+
+
+$ node scripts/evaluate-index-350-w1-observation.mjs --input=docs/architecture/gsc-day7-low.csv --indexation=docs/architecture/indexation-36.csv --output=docs/architecture/day7-low.json
+INDEX 350 — W1 OBSERVATION GATE
+Release date: 2026-09-02
+Latest finalized GSC date: 2026-09-09
+Finalized days after release: 7
+Visible W1 pages: 4/40
+Indexed W1 pages: 36/40
+Ownership review pairs: 0/40
+State: HOLD_LOW_VISIBILITY
+W2: LOCKED
+Automatic W2: false
+Report: docs/architecture/day7-low.json
+VERDICT: HOLD
+
+
+$ node scripts/evaluate-index-350-w1-observation.mjs --input=docs/architecture/gsc-day7.csv --output=docs/architecture/day7-no-index.json
+INDEX 350 — W1 OBSERVATION GATE
+Release date: 2026-09-02
+Latest finalized GSC date: 2026-09-09
+Finalized days after release: 7
+Visible W1 pages: 10/40
+Indexed W1 pages: NOT PROVIDED
+Ownership review pairs: 0/40
+State: REVIEW_PENDING_INDEXATION
+W2: LOCKED
+Automatic W2: false
+Report: docs/architecture/day7-no-index.json
+VERDICT: HOLD
+
+
+$ node scripts/evaluate-index-350-w1-observation.mjs --input=docs/architecture/gsc-day7.csv --indexation=docs/architecture/indexation-36.csv --output=docs/architecture/day7-ready.json
+INDEX 350 — W1 OBSERVATION GATE
+Release date: 2026-09-02
+Latest finalized GSC date: 2026-09-09
+Finalized days after release: 7
+Visible W1 pages: 10/40
+Indexed W1 pages: 36/40
+Ownership review pairs: 0/40
+State: ROUND2_REVIEW_ELIGIBLE
+W2: LOCKED
+Automatic W2: false
+Report: docs/architecture/day7-ready.json
+VERDICT: REVIEW_ELIGIBLE

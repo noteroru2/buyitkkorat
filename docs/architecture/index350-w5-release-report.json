@@ -1,0 +1,42 @@
+{
+  "wave": "INDEX350_W5",
+  "title": "INDEX 350 EXPANSION — W5 Condition, B2B & Local 40 Pages",
+  "releaseDate": "2026-09-02",
+  "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+  "realW4PerformanceAttested": false,
+  "sourceCounts": {
+    "live": 329,
+    "indexable": 328,
+    "noindex": 1,
+    "sitemap": 328,
+    "w5Released": 40,
+    "condition": 5,
+    "b2b": 20,
+    "local": 15,
+    "remainingHold": 32
+  },
+  "quality": {
+    "minimumBodyCharacters": 3212,
+    "maximumPairSimilarity": 0.883,
+    "minimumProjectedInbound": 5,
+    "architectureValidators": "10/10 PASS"
+  },
+  "localSafety": {
+    "serviceAreaOnly": true,
+    "fakeBranch": false,
+    "fakeAddress": false,
+    "fakeHours": false,
+    "fakeCoordinates": false,
+    "fakeLocalBusinessSchema": false
+  },
+  "production": {
+    "realAstroBuild": "UNATTESTED_IN_ASSISTANT_RUNTIME",
+    "builtCrawl": "PENDING_USER_MACHINE",
+    "productionVerification": "PENDING"
+  },
+  "nextWave": {
+    "wave": "W6",
+    "state": "LOCKED_PENDING_W5_PRODUCTION_AND_OBSERVATION",
+    "remainingCandidates": 32
+  }
+}

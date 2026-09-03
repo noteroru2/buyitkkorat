@@ -1,0 +1,17 @@
+
+> winner-it-korat@0.0.1 validate:index350:w4
+> node scripts/validate-index-350-w4.mjs
+
+INDEX 350 EXPANSION — W4 SERIES, MODEL & CONDITION 50 RELEASE VALIDATION
+Live/indexable/noindex: 289/288/1
+Released: 50 — Series 18, Model 7, Condition 25
+Cluster mix: MOBILE=20, CAMERA=9, NOTEBOOK=9, APPLE=3, COMPUTER=6, GAMING=3
+Content files checked: 50
+Minimum body characters: 2812
+Max pair similarity: 0.9254
+Minimum projected inbound paths: 2
+Sitemap target: 288
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W3 performance attested: false
+W5: LOCKED
+VERDICT: PASS

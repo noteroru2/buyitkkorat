@@ -1,0 +1,45 @@
+{
+  "title": "INDEX 350 — W4 Performance Review & W5 Candidate Selection",
+  "generatedAt": "2026-09-02T21:30:00+07:00",
+  "scope": "REVIEW_AND_SELECTION_ONLY_NO_NEW_URLS",
+  "current": {
+    "live": 289,
+    "indexable": 288,
+    "noindex": 1,
+    "sitemap": 288
+  },
+  "w4RealDataPackaged": false,
+  "packagedReviewState": "WAIT_FOR_REAL_W4_OBSERVATION_DATA",
+  "packagedSelectionState": "WAIT_FOR_REAL_W4_REVIEW",
+  "packagedSelected": 0,
+  "w5": {
+    "targetIndexable": 328,
+    "releaseCap": 40,
+    "candidatePool": 53,
+    "provisionalComposition": {
+      "D_CONDITION": 5,
+      "E_B2B": 20,
+      "F_LOCAL": 15
+    },
+    "automaticRelease": false,
+    "locked": true
+  },
+  "remainingAfterHypotheticalW5": {
+    "total": 32,
+    "F_LOCAL": 13,
+    "G_GUIDE": 18,
+    "C_MODEL_OWNERSHIP_RISK": 1
+  },
+  "finalBufferRisk": {
+    "url": "/รับซื้อ-canon-eos-r-โคราช",
+    "safeProjectedIndexableIfUnresolved": 359,
+    "targetFloor": 350,
+    "targetWithBuffer": 360
+  },
+  "validation": {
+    "static": "PASS",
+    "cumulativeArchitecture": "PASS_WITH_PRODUCTION_ATTESTATION_REQUIRED",
+    "syntheticSelfTest": "PASS"
+  },
+  "note": "No real W4 GSC/indexation metrics were invented. W5 remains locked until real W4 observation is ROUND5_REVIEW_ELIGIBLE and the final 40 are manually approved."
+}

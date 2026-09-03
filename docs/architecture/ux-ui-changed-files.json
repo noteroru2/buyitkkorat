@@ -1,0 +1,22 @@
+{
+  "changedFileCount": 17,
+  "changedFiles": [
+    "docs/architecture/UX-UI-SYSTEM-REDESIGN.md",
+    "docs/architecture/architecture-quality-gate-report.json",
+    "src/components/TrustStrip.astro",
+    "src/components/MobileNavigation.astro",
+    "src/components/SiteFooter.astro",
+    "src/components/ContentContactAside.astro",
+    "src/components/StoreIdentityCard.astro",
+    "src/components/StickyMobileCTA.astro",
+    "src/components/SiteHeader.astro",
+    "src/components/HeroSection.astro",
+    "src/components/FAQSection.astro",
+    "src/layouts/ServicePageLayout.astro",
+    "src/layouts/AreaPageLayout.astro",
+    "src/layouts/ArticleLayout.astro",
+    "src/layouts/TrustPageLayout.astro",
+    "src/pages/index.astro",
+    "src/styles/global.css"
+  ]
+}

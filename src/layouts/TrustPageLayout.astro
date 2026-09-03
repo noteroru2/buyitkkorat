@@ -1,43 +1,37 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import ContentContactAside from "../components/ContentContactAside.astro";
+import PageCoverSection from "../components/PageCoverSection.astro";
+import { getTrustPageVisuals } from "../data/pageVisuals";
 import type { BreadcrumbItem } from "../utils/seo";
 
 interface Props {
-  title: string;
-  description: string;
-  h1: string;
-  breadcrumbs: BreadcrumbItem[];
-  canonical?: string;
-  ogImage?: string;
-  updatedDate?: Date | string;
-  schema?: Record<string, unknown> | Record<string, unknown>[];
+  title:string; description:string; h1:string; breadcrumbs:BreadcrumbItem[];
+  canonical?:string; ogImage?:string; updatedDate?:Date|string;
+  schema?:Record<string,unknown>|Record<string,unknown>[];
 }
-
-const props = Astro.props;
+const props=Astro.props;
+const visual = getTrustPageVisuals().cover;
 ---
 
-<BaseLayout
-  title={props.title}
-  description={props.description}
-  canonical={props.canonical}
-  ogImage={props.ogImage}
-  updatedDate={props.updatedDate}
-  schema={props.schema}
->
-  <div class="container" style="padding-top: var(--space-5)">
-    <Breadcrumbs items={props.breadcrumbs} />
-    <h1 style="max-width: 18ch">{props.h1}</h1>
-  </div>
-  <article class="section">
-    <div class="container prose main-content">
-      <slot />
-    </div>
-  </article>
-  <section class="section">
-    <div class="container" style="text-align:center">
-      <PrimaryLineCTA label="แอด LINE @buyhub" />
+<BaseLayout title={props.title} description={props.description} canonical={props.canonical} ogImage={props.ogImage} updatedDate={props.updatedDate} schema={props.schema}>
+  <section class="page-intro">
+    <div class="container page-intro__inner">
+      <Breadcrumbs items={props.breadcrumbs} />
+      <p class="badge">ข้อมูลร้านและเงื่อนไขบริการ</p>
+      <h1>{props.h1}</h1>
     </div>
   </section>
+
+
+  <PageCoverSection {...visual} compact eyebrow="ภาพประกอบสินค้าไอที" />
+
+  <article class="section content-section">
+    <div class="container content-layout">
+      <div class="prose main-content content-card"><slot /></div>
+      <ContentContactAside title="ต้องการสอบถามก่อนตัดสินใจ?" />
+    </div>
+  </article>
+
 </BaseLayout>

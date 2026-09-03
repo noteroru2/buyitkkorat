@@ -1,0 +1,53 @@
+candidateId,nodeType,cluster,label,parent,candidateUrl,priorityBand,releaseState,evidenceState,contentState
+brand:notebook:asus,BRAND,NOTEBOOK,ASUS,anchor:notebook,/รับซื้อโน๊ตบุ๊ค-asus-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+brand:notebook:acer,BRAND,NOTEBOOK,Acer,anchor:notebook,/รับซื้อโน๊ตบุ๊ค-acer-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+brand:notebook:lenovo,BRAND,NOTEBOOK,Lenovo,anchor:notebook,/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+brand:notebook:dell,BRAND,NOTEBOOK,Dell,anchor:notebook,/รับซื้อโน๊ตบุ๊ค-dell-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+brand:notebook:hp,BRAND,NOTEBOOK,HP,anchor:notebook,/รับซื้อโน๊ตบุ๊ค-hp-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+brand:notebook:msi,BRAND,NOTEBOOK,MSI,anchor:notebook,/รับซื้อโน๊ตบุ๊ค-msi-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+brand:camera:sony,BRAND,CAMERA,Sony,anchor:camera,/รับซื้อกล้อง-sony-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+brand:camera:canon,BRAND,CAMERA,Canon,anchor:camera,/รับซื้อกล้อง-canon-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+brand:camera:fujifilm,BRAND,CAMERA,Fujifilm,anchor:camera,/รับซื้อกล้อง-fujifilm-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+brand:camera:nikon,BRAND,CAMERA,Nikon,anchor:camera,/รับซื้อกล้อง-nikon-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:asus:rog,SERIES,NOTEBOOK,ROG,brand:notebook:asus,/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:asus:tuf,SERIES,NOTEBOOK,TUF Gaming,brand:notebook:asus,/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:asus:vivobook,SERIES,NOTEBOOK,Vivobook,brand:notebook:asus,/รับซื้อโน๊ตบุ๊ค-asus-vivobook-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:asus:zenbook,SERIES,NOTEBOOK,Zenbook,brand:notebook:asus,/รับซื้อโน๊ตบุ๊ค-asus-zenbook-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:acer:aspire,SERIES,NOTEBOOK,Aspire,brand:notebook:acer,/รับซื้อโน๊ตบุ๊ค-acer-aspire-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:acer:nitro,SERIES,NOTEBOOK,Nitro,brand:notebook:acer,/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:acer:predator,SERIES,NOTEBOOK,Predator,brand:notebook:acer,/รับซื้อโน๊ตบุ๊ค-acer-predator-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:acer:swift,SERIES,NOTEBOOK,Swift,brand:notebook:acer,/รับซื้อโน๊ตบุ๊ค-acer-swift-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:lenovo:ideapad,SERIES,NOTEBOOK,IdeaPad,brand:notebook:lenovo,/รับซื้อโน๊ตบุ๊ค-lenovo-ideapad-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:lenovo:thinkpad,SERIES,NOTEBOOK,ThinkPad,brand:notebook:lenovo,/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:lenovo:legion,SERIES,NOTEBOOK,Legion,brand:notebook:lenovo,/รับซื้อโน๊ตบุ๊ค-lenovo-legion-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:lenovo:loq,SERIES,NOTEBOOK,LOQ,brand:notebook:lenovo,/รับซื้อโน๊ตบุ๊ค-lenovo-loq-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:dell:inspiron,SERIES,NOTEBOOK,Inspiron,brand:notebook:dell,/รับซื้อโน๊ตบุ๊ค-dell-inspiron-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:dell:latitude,SERIES,NOTEBOOK,Latitude,brand:notebook:dell,/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:dell:xps,SERIES,NOTEBOOK,XPS,brand:notebook:dell,/รับซื้อโน๊ตบุ๊ค-dell-xps-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:dell:alienware,SERIES,NOTEBOOK,Alienware,brand:notebook:dell,/รับซื้อโน๊ตบุ๊ค-dell-alienware-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:hp:pavilion,SERIES,NOTEBOOK,Pavilion,brand:notebook:hp,/รับซื้อโน๊ตบุ๊ค-hp-pavilion-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:hp:victus,SERIES,NOTEBOOK,Victus,brand:notebook:hp,/รับซื้อโน๊ตบุ๊ค-hp-victus-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:hp:omen,SERIES,NOTEBOOK,OMEN,brand:notebook:hp,/รับซื้อโน๊ตบุ๊ค-hp-omen-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:hp:business,SERIES,NOTEBOOK,ProBook / EliteBook,brand:notebook:hp,/รับซื้อโน๊ตบุ๊ค-hp-business-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:msi:katana,SERIES,NOTEBOOK,Katana,brand:notebook:msi,/รับซื้อโน๊ตบุ๊ค-msi-katana-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:msi:cyborg,SERIES,NOTEBOOK,Cyborg,brand:notebook:msi,/รับซื้อโน๊ตบุ๊ค-msi-cyborg-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:msi:stealth,SERIES,NOTEBOOK,Stealth,brand:notebook:msi,/รับซื้อโน๊ตบุ๊ค-msi-stealth-โคราช,3,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:notebook:msi:raider,SERIES,NOTEBOOK,Raider,brand:notebook:msi,/รับซื้อโน๊ตบุ๊ค-msi-raider-โคราช,3,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:mobile:samsung:galaxy-s,SERIES,MOBILE,Galaxy S,anchor:samsung,/รับซื้อ-samsung-galaxy-s-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:mobile:samsung:galaxy-a,SERIES,MOBILE,Galaxy A,anchor:samsung,/รับซื้อ-samsung-galaxy-a-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:mobile:samsung:galaxy-z,SERIES,MOBILE,Galaxy Z,anchor:samsung,/รับซื้อ-samsung-galaxy-z-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:mobile:oppo:reno,SERIES,MOBILE,Reno,anchor:oppo,/รับซื้อ-oppo-reno-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:mobile:oppo:a,SERIES,MOBILE,A Series,anchor:oppo,/รับซื้อ-oppo-a-series-โคราช,3,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:mobile:vivo:v,SERIES,MOBILE,V Series,anchor:vivo,/รับซื้อ-vivo-v-series-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:mobile:vivo:y,SERIES,MOBILE,Y Series,anchor:vivo,/รับซื้อ-vivo-y-series-โคราช,3,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:mobile:xiaomi:xiaomi,SERIES,MOBILE,Xiaomi Series,anchor:xiaomi,/รับซื้อ-xiaomi-series-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:mobile:xiaomi:redmi,SERIES,MOBILE,Redmi Series,anchor:xiaomi,/รับซื้อ-redmi-series-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:mobile:xiaomi:poco,SERIES,MOBILE,POCO Series,anchor:xiaomi,/รับซื้อ-poco-series-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:camera:sony:alpha,SERIES,CAMERA,Alpha / α,brand:camera:sony,/รับซื้อกล้อง-sony-alpha-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:camera:canon:eos-r,SERIES,CAMERA,EOS R,brand:camera:canon,/รับซื้อกล้อง-canon-eos-r-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:camera:fujifilm:x,SERIES,CAMERA,X Series,brand:camera:fujifilm,/รับซื้อกล้อง-fujifilm-x-series-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:camera:nikon:z,SERIES,CAMERA,Z Series,brand:camera:nikon,/รับซื้อกล้อง-nikon-z-series-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:gaming:playstation:ps5,SERIES,GAMING,PlayStation 5 family,anchor:playstation,/รับซื้อ-playstation-5-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:gaming:playstation:ps4,SERIES,GAMING,PlayStation 4 family,anchor:playstation,/รับซื้อ-playstation-4-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:gaming:switch:oled,SERIES,GAMING,Nintendo Switch OLED family,anchor:nintendo-switch,/รับซื้อ-nintendo-switch-oled-โคราช,1,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+series:gaming:switch:lite,SERIES,GAMING,Nintendo Switch Lite family,anchor:nintendo-switch,/รับซื้อ-nintendo-switch-lite-โคราช,2,HOLD_FOUNDATION,UNASSESSED,UNASSESSED

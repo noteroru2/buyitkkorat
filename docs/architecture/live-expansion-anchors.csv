@@ -1,0 +1,13 @@
+id,url,nodeType,cluster,label,parent
+anchor:notebook,/รับซื้อโน๊ตบุ๊ค-โคราช,HUB,NOTEBOOK,โน๊ตบุ๊ค,/
+anchor:android,/รับซื้อโทรศัพท์-android-โคราช,HUB,MOBILE,โทรศัพท์ Android,/รับซื้อโทรศัพท์มือถือ-โคราช
+anchor:samsung,/รับซื้อโทรศัพท์-samsung-โคราช,BRAND,MOBILE,Samsung,/รับซื้อโทรศัพท์-android-โคราช
+anchor:oppo,/รับซื้อโทรศัพท์-oppo-โคราช,BRAND,MOBILE,OPPO,/รับซื้อโทรศัพท์-android-โคราช
+anchor:vivo,/รับซื้อโทรศัพท์-vivo-โคราช,BRAND,MOBILE,vivo,/รับซื้อโทรศัพท์-android-โคราช
+anchor:xiaomi,/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช,BRAND_GROUP,MOBILE,Xiaomi / Redmi / POCO,/รับซื้อโทรศัพท์-android-โคราช
+anchor:iphone,/รับซื้อ-iphone-โคราช,FAMILY,APPLE,iPhone,virtual:apple-hub
+anchor:ipad,/รับซื้อ-ipad-โคราช,FAMILY,APPLE,iPad,virtual:apple-hub
+anchor:macbook,/รับซื้อ-macbook-โคราช,FAMILY,APPLE,MacBook,virtual:apple-hub
+anchor:camera,/รับซื้อกล้อง-โคราช,HUB,CAMERA,กล้อง,/
+anchor:playstation,/รับซื้อ-playstation-โคราช,PLATFORM,GAMING,PlayStation,/รับซื้อเครื่องเกม-โคราช
+anchor:nintendo-switch,/รับซื้อ-nintendo-switch-โคราช,PLATFORM,GAMING,Nintendo Switch,/รับซื้อเครื่องเกม-โคราช

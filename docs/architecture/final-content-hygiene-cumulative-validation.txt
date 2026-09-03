@@ -1,0 +1,281 @@
+
+> winner-it-korat@0.0.1 validate:architecture
+> node scripts/run-architecture-quality-gate.mjs && node scripts/validate-expansion-round-1-production-gate.mjs && node scripts/validate-index-350-expansion-plan.mjs && node scripts/validate-index-350-w1.mjs && node scripts/validate-index-350-w1-production-gate.mjs && node scripts/validate-index-350-w1-performance-w2-selection.mjs && node scripts/validate-index-350-w2.mjs && node scripts/validate-index-350-w2-production-gate.mjs && node scripts/validate-index-350-w2-observation-gate.mjs && node scripts/validate-index-350-w2-performance-w3-selection.mjs && node scripts/validate-index-350-w3.mjs && node scripts/validate-index-350-w3-production-gate.mjs && node scripts/validate-index-350-w3-observation-gate.mjs && node scripts/validate-index-350-w3-performance-w4-selection.mjs && node scripts/validate-index-350-w4.mjs && node scripts/validate-index-350-w4-production-gate.mjs && node scripts/validate-index-350-w4-observation-gate.mjs && node scripts/validate-index-350-w4-performance-w5-selection.mjs && node scripts/validate-index-350-w5.mjs && node scripts/validate-index-350-w5-production-gate.mjs && node scripts/validate-index-350-w5-observation-gate.mjs && node scripts/validate-index-350-w5-performance-w6-selection.mjs && node scripts/validate-index-350-w6.mjs && node scripts/validate-index-350-w6-production-gate.mjs && node scripts/validate-index-350-final-completion-gate.mjs && node scripts/validate-final-content-hygiene.mjs
+
+ARCHITECTURE BATCH 10 — STATIC QUALITY GATE
+Validators: 10/10 passed
+Live/indexable/noindex: 360/359/1
+Unreleased candidates governed: 1
+Static architecture gate: PASS
+Production integration gate: UNATTESTED_IN_OVERLAY
+Expansion decision: CONDITIONALLY_READY
+Report: docs/architecture/architecture-quality-gate-report.json
+VERDICT: PASS_WITH_PRODUCTION_ATTESTATION_REQUIRED
+EXPANSION ROUND 1 — PRODUCTION / OBSERVATION GATE VALIDATION
+Live/indexable: 360/359
+Sitemap target: 359
+Released URLs governed: 4
+Minimum finalized GSC days: 7
+Round 2 locked: true
+Automatic deploy: false
+Automatic Round 2: false
+VERDICT: PASS
+INDEX 350+ EXPANSION PLAN VALIDATION
+Current indexable: 359
+W1/W2/W3/W4/W5/W6 released: 40/50/50/50/40/31
+W6 mix: Local 13, Guide 18
+Remaining HOLD: 1 — /รับซื้อ-canon-eos-r-โคราช
+Target floor met: true (359 >= 350)
+Full buffer target: 360
+Automatic publishing: false
+VERDICT: PASS
+INDEX 350 W1 — BRAND & SERIES RELEASE VALIDATION
+Live/indexable/noindex: 360/359/1
+Released: 40 (24 Brand + 16 Series)
+Content files checked: 40
+Sitemap target: 359
+W1 historical surface: PRESERVED
+VERDICT: PASS
+INDEX 350 W1 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+W1 governed: 40/40
+Parent groups: 10
+Sitemap target: 138
+Minimum W1 inbound paths: 2
+Minimum images/page: 0
+Historical W1 lock configured: true
+VERDICT: PASS
+INDEX 350 — W1 PERFORMANCE REVIEW / W2 SELECTION VALIDATION
+Live/indexable: 360/359
+W2 source release: 50
+Series/Model: 30/20
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W1 performance attested: false
+Automatic W2: false
+VERDICT: PASS
+INDEX 350 EXPANSION — W2 SERIES & MODEL RELEASE VALIDATION
+Live/indexable/noindex: 360/359/1
+Released: 50 (Series 30 + Model 20)
+Content files checked: 50
+Minimum body characters: 3240
+Max pair similarity: 0.9006
+Minimum projected inbound paths: 2
+Sitemap target: 359
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W1 performance attested: false
+W3: LOCKED
+VERDICT: PASS
+INDEX 350 W2 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+W2 governed: 50/50
+Parent groups: 27
+Sitemap target: 188
+Minimum W2 inbound paths: 2
+Minimum images/page: 0
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W1 performance attested: false
+W3: LOCKED
+VERDICT: PASS
+INDEX 350 — W2 OBSERVATION GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+Observed W2 URLs: 50 (Series 30, Model 20)
+Ownership pairs: 50
+Finalized-day gate: 7
+Visibility gate: 10/50 (Series 6/30, Model 4/20)
+Indexation gate: 40/50 (Series 24/30, Model 16/20)
+Release basis: MANUAL_APPROVAL_OVERRIDE
+W3 locked: true
+VERDICT: PASS
+INDEX 350 — W2 PERFORMANCE REVIEW / W3 SELECTION VALIDATION
+Live/indexable/noindex: 360/359/1
+W3 source release: 50/50 Model pages
+Cluster mix: NOTEBOOK=14, APPLE=10, MOBILE=14, CAMERA=5, GAMING=7
+Remaining model HOLD: 1
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W2 performance data packaged: false
+Automatic W3: false
+VERDICT: PASS
+INDEX 350 EXPANSION — W3 MODEL 50 RELEASE VALIDATION
+Live/indexable/noindex: 360/359/1
+Released Model pages: 50/50
+Cluster mix: NOTEBOOK=14, APPLE=10, MOBILE=14, CAMERA=5, GAMING=7
+Content files checked: 50
+Minimum body characters: 4971
+Max pair similarity: 0.9213
+Minimum projected inbound paths: 2
+Sitemap target: 359
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W2 performance attested: false
+W4: LOCKED
+VERDICT: PASS
+INDEX 350 W3 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+W3 governed: 50/50
+Parent groups: 32
+Sitemap target: 238
+Minimum W3 inbound paths: 2
+Minimum images/page: 0
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W2 performance attested: false
+W4: LOCKED
+VERDICT: PASS
+INDEX 350 — W3 OBSERVATION GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+Observed W3 URLs: 50 Model pages
+Cluster mix: NOTEBOOK 14 | APPLE 10 | MOBILE 14 | CAMERA 5 | GAMING 7
+Ownership pairs: 50
+Finalized-day gate: 7
+Visibility gate: 10/50; cluster minima NOTEBOOK 3, APPLE 2, MOBILE 3, CAMERA 1, GAMING 1
+Indexation gate: 40/50; cluster minima NOTEBOOK 11, APPLE 8, MOBILE 11, CAMERA 4, GAMING 6
+Release basis: MANUAL_APPROVAL_OVERRIDE
+W4 locked: true
+VERDICT: PASS
+INDEX 350 — W3 PERFORMANCE REVIEW / W4 SELECTION VALIDATION
+Live/indexable/noindex: 360/359/1
+W4 candidate pool remaining: 1; release mode: true
+Provisional shortlist: 50/50 — Series 18, Model 7, Condition 25
+Reserve/blocked: 6
+Real W3 performance data packaged: false
+Automatic W4: false
+VERDICT: PASS
+INDEX 350 EXPANSION — W4 SERIES, MODEL & CONDITION 50 RELEASE VALIDATION
+Live/indexable/noindex: 360/359/1
+Released: 50 — Series 18, Model 7, Condition 25
+Cluster mix: MOBILE=20, CAMERA=9, NOTEBOOK=9, APPLE=3, COMPUTER=6, GAMING=3
+Content files checked: 50
+Minimum body characters: 2719
+Max pair similarity: 0.9174
+Minimum projected inbound paths: 2
+Sitemap target: 359
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W3 performance attested: false
+W5: LOCKED
+VERDICT: PASS
+INDEX 350 W4 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+W4 governed: 50/50
+Composition: Series 18, Model 7, Condition 25
+Parent groups: 30
+Sitemap target: 288
+Minimum W4 inbound paths: 2
+Minimum images/page: 0
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W3 performance attested: false
+W5: LOCKED
+VERDICT: PASS
+INDEX 350 — W4 OBSERVATION GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+Observed W4 URLs: 50
+Type mix: SERIES 18 | MODEL 7 | CONDITION 25
+Cluster mix: MOBILE 20 | CAMERA 9 | NOTEBOOK 9 | APPLE 3 | COMPUTER 6 | GAMING 3
+Ownership pairs: 50
+Finalized-day gate: 7
+Visibility gate: 12/50; type minima SERIES 4, MODEL 2, CONDITION 5; cluster minima MOBILE 3, CAMERA 2, NOTEBOOK 2, APPLE 1, COMPUTER 1, GAMING 1
+Indexation gate: 40/50; type minima SERIES 14, MODEL 6, CONDITION 20; cluster minima MOBILE 16, CAMERA 7, NOTEBOOK 7, APPLE 2, COMPUTER 5, GAMING 2
+Release basis: MANUAL_APPROVAL_OVERRIDE
+W5 locked: true
+VERDICT: PASS
+INDEX 350 — W4 PERFORMANCE REVIEW / W5 SELECTION VALIDATION
+Live/indexable/noindex: 360/359/1
+Historical W5 candidate pool: 53 — Condition 5, B2B 20, Local 28
+Provisional shortlist: 40/40 — Condition 5, B2B 20, Local 15
+Local reserve: 13
+Deferred final wave: 19
+Real W4 performance data packaged: false
+Automatic W5: false
+VERDICT: PASS
+INDEX 350 EXPANSION — W5 CONDITION, B2B & LOCAL 40 RELEASE VALIDATION
+Live/indexable/noindex: 360/359/1
+Released: 40 — Condition 5, B2B 20, Local 15
+Content files checked: 40
+Minimum body characters: 3022
+Max pair similarity: 0.8831
+Minimum projected inbound paths: 5
+Sitemap target: 359
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W4 performance attested: false
+W6: LOCKED
+VERDICT: PASS
+INDEX 350 W5 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+W5 governed: 40/40
+Composition: Condition 5, B2B 20, Local 15
+Parent groups: 7
+Sitemap target: 328
+Minimum W5 inbound paths: 2
+Minimum images/page: 0
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W4 performance attested: false
+W6: LOCKED
+VERDICT: PASS
+INDEX 350 — W5 OBSERVATION GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+Observed W5 URLs: 40
+Type mix: CONDITION 5 | B2B 20 | LOCAL 15
+Cluster mix: NOTEBOOK 1 | MOBILE 2 | CAMERA 1 | GAMING 1 | B2B 20 | LOCATION 15
+Ownership pairs: 40
+Finalized-day gate: 7
+Visibility gate: 10/40; type minima CONDITION 1, B2B 5, LOCAL 4; B2B 5; Local 4; condition-cluster breadth 2/4
+Indexation gate: 32/40; type minima CONDITION 4, B2B 16, LOCAL 12; B2B 16; Local 12; condition-cluster breadth 3/4
+Release basis: MANUAL_APPROVAL_OVERRIDE
+W6 locked: true
+VERDICT: PASS
+INDEX 350 — W5 PERFORMANCE REVIEW / W6 FINAL SELECTION HISTORICAL VALIDATION
+Live/indexable/noindex: 360/359/1
+W6 safe released from historical selection: 31/31 — Local 13, Guide 18
+Remaining HOLD: 1 — /รับซื้อ-canon-eos-r-โคราช
+Real W5 performance data packaged: false
+Automatic W6: false
+VERDICT: PASS
+INDEX 350 EXPANSION — W6 FINAL LOCAL & GUIDE 31 RELEASE VALIDATION
+Live/indexable/noindex: 360/359/1
+Released: 31 — Local 13, Guide 18
+Content files checked: 31
+Minimum body characters: 2428
+Max pair similarity: 0.9027
+Minimum projected inbound paths: 4
+Sitemap target: 359
+Remaining HOLD: 1 — /รับซื้อ-canon-eos-r-โคราช
+Target floor met: true
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W5 performance attested: false
+Next state: FINAL_OBSERVATION_REQUIRED
+VERDICT: PASS
+INDEX 350 W6 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+W6 governed: 31/31
+Composition: Local 13, Guide 18
+Parent groups: 2
+Sitemap target: 359
+Minimum W6 inbound paths: 2
+Target floor: 350 — MET
+Remaining HOLD: 1 — /รับซื้อ-canon-eos-r-โคราช
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W5 performance attested: false
+Next: FINAL_OBSERVATION_REQUIRED
+VERDICT: PASS
+INDEX 350 — FINAL OBSERVATION & ARCHITECTURE COMPLETION GATE VALIDATION
+Live/indexable/noindex: 360/359/1
+Final observed W6 URLs: 31
+Type mix: LOCAL 13 | GUIDE 18
+Ownership pairs: 31
+Finalized-day gate: 14
+W6 visibility gate: 8/31 — Local 3, Guide 5
+W6 indexation gate: 25/31 — Local 10, Guide 15
+Site indexation completion floor: 350/359
+Canon risk: HOLD — /รับซื้อ-canon-eos-r-โคราช
+Automatic further release: false
+VERDICT: PASS
+FINAL CONTENT HYGIENE & VISUAL PLACEMENT — STATIC VALIDATION
+Live/indexable/noindex: 360/359/1
+Sitemap: 359
+Content files checked: 349
+SEO/editorial findings: 0
+Raw visible route lines: 0
+Empty H2/H3: 0
+Generic covers: homepage=REMOVED, service=REMOVED, area=REMOVED, trust/legal=REMOVED
+Article visual: COMPACT_RELEVANT_ONLY
+Image minimum/page: 0 (optional; alt validation retained when present)
+Canon EOS R: HOLD
+Report: docs/architecture/final-content-hygiene-report.json
+VERDICT: PASS

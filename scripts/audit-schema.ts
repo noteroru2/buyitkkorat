@@ -62,6 +62,11 @@ for (const file of walkHtml()) {
       if (!node || typeof node !== "object") continue;
       const n = node as Record<string, unknown>;
       const type = n["@type"];
+      if (type === 'Article') {
+        for (const field of ['headline','image','author','publisher','datePublished','dateModified','mainEntityOfPage']) {
+          if (!n[field]) issues.push({level:'critical',type:'schema-article-field',message:`Article missing ${field}`,file:route});
+        }
+      }
       if (type === "LocalBusiness" || type === "Store") {
         const address = n.address as Record<string, string> | undefined;
         const locality = `${address?.addressLocality ?? ""} ${address?.addressRegion ?? ""} ${address?.streetAddress ?? ""}`;
@@ -105,13 +110,17 @@ for (const file of walkHtml()) {
 
     const faqNode = nodes.find(
       (n) => n && typeof n === "object" && (n as { "@type"?: string })["@type"] === "FAQPage",
-    ) as { mainEntity?: { name?: string }[] } | undefined;
+    ) as { mainEntity?: { name?: string; acceptedAnswer?:{text?:string} }[] } | undefined;
     if (faqNode?.mainEntity?.length) {
       const visibleQuestions = $("details summary")
-        .map((_, s) => $(s).text().trim())
+        .map((_, s) => {
+          const question=$(s).clone();
+          question.find('[aria-hidden="true"]').remove();
+          return question.text().replace(/\s+/g,' ').trim();
+        })
         .get();
       for (const entity of faqNode.mainEntity) {
-        const name = entity.name?.trim() ?? "";
+        const name = entity.name?.replace(/\s+/g,' ').trim() ?? "";
         if (name && !visibleQuestions.some((q) => q === name)) {
           issues.push({
             level: "critical",
@@ -119,6 +128,15 @@ for (const file of walkHtml()) {
             message: `FAQ schema not visible: ${name}`,
             file: route,
           });
+        }
+        const questionIndex=visibleQuestions.indexOf(name);
+        if (questionIndex>=0) {
+          const answerNode=$('details summary').eq(questionIndex).parent().clone();
+          answerNode.find('summary, [aria-hidden="true"]').remove();
+          const answer=answerNode.text().replace(/\s+/g,' ').trim();
+          if(answer !== entity.acceptedAnswer?.text?.replace(/\s+/g,' ').trim()) {
+            issues.push({level:'critical',type:'schema-faq-answer-mismatch',message:`FAQ answer differs: ${name}`,file:route});
+          }
         }
       }
     }

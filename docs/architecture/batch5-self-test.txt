@@ -1,0 +1,74 @@
+$ node scripts/validate-site-architecture.mjs
+ARCHITECTURE BATCH 0 — VALIDATION
+Baseline live/indexable: 89/88
+Current live routes: 90
+Indexable: 89
+Noindex: 1
+Virtual architecture hubs: 1
+Parent migrations queued (not executed): 35
+GSC-gated ownership routes: 48
+Routes waiting on virtual parent release: 5
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/validate-core-hub-architecture.mjs
+ARCHITECTURE BATCH 1 — VALIDATION
+Live routes: 90
+Indexable: 89
+Live release pillars: 9
+Apple bridge members: 5
+Local hub state: RELEASED_BATCH_5
+Runtime managed files detected: 0
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/validate-parent-child-runtime.mjs
+ARCHITECTURE BATCH 2 — VALIDATION
+Live routes: 90
+Indexable: 89
+Breadcrumb-owned routes: 89
+Deep breadcrumb routes (HOME→PARENT→CURRENT+): 67
+Virtual-parent routes safely flattened: 5
+Runtime layouts detected: 0
+Stale Batch 1 blocks: 0
+Warnings: 1
+VERDICT: PASS
+WARN: Real source tree not present in this overlay; runtime layout integration must be applied inside the repository.
+
+$ node scripts/validate-internal-link-graph.mjs
+ARCHITECTURE BATCH 3 — INTERNAL LINK GRAPH VALIDATION
+Live routes: 90
+Indexable: 89
+Homepage discovery seeds: 12
+Conversion bridge sources: 15
+Projected max discovery links/page: 15
+Projected max related links/page: 6
+Projected zero contextual inbound: 6
+Unexpected zero contextual inbound: 0
+Tier A/B non-TRUST/non-LOCATION inbound<2: 0
+Articles inbound<2: 0
+Location routes inbound<2: 0
+Deferred zero by cluster: TRUST=6
+VERDICT: PASS
+
+$ node scripts/validate-cannibalization-triage.mjs
+ARCHITECTURE BATCH 4 — CANNIBALIZATION TRIAGE VALIDATION
+Live routes: 90
+Indexable: 89
+Triage groups: 16
+GSC-gated groups: 13
+Destructive candidates currently proposed: 0
+Automatic execution: false
+VERDICT: PASS
+
+$ node scripts/validate-local-area-architecture.mjs
+ARCHITECTURE BATCH 5 — LOCAL AREA ARCHITECTURE VALIDATION
+Live routes: 90 (baseline 89 + 1 hub)
+Indexable: 89 (baseline 88 + 1 hub)
+Local authority hub: LIVE
+Released local children: 11
+Virtual local hub remaining: false
+Homepage local seed: /พื้นที่
+Local routes projected inbound<2: 0
+Warnings: 0
+VERDICT: PASS

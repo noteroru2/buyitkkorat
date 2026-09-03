@@ -1,0 +1,33 @@
+INDEX 350 — W2 OBSERVATION GATE SELF-TEST
+
+Synthetic production release date: 2026-09-02
+These cases validate state-machine behavior only. They are not real GSC or production performance evidence.
+
+1) Day 6, visibility threshold met, no indexation
+   Expected: WAIT_FOR_FINALIZED_GSC
+   Result:   WAIT_FOR_FINALIZED_GSC
+
+2) Day 7, only 6/50 visible (Series 4/30, Model 2/20)
+   Expected: HOLD_LOW_VISIBILITY
+   Result:   HOLD_LOW_VISIBILITY
+
+3) Day 7, 10/50 visible (Series 6/30, Model 4/20), indexation missing
+   Expected: REVIEW_PENDING_INDEXATION
+   Result:   REVIEW_PENDING_INDEXATION
+
+4) Day 7, visibility + 40/50 indexation pass, 6 ownership-review pairs
+   Expected: OWNERSHIP_REVIEW_REQUIRED
+   Result:   OWNERSHIP_REVIEW_REQUIRED
+
+5) Day 7, 10/50 visible + 40/50 indexed + ownership gate pass
+   Expected: ROUND3_REVIEW_ELIGIBLE
+   Result:   ROUND3_REVIEW_ELIGIBLE
+
+Safety assertions:
+- W3 remains LOCKED in every state.
+- Automatic W3 release is false.
+- No merge, redirect, noindex, or canonical switch occurs automatically.
+- W2 release basis remains MANUAL_APPROVAL_OVERRIDE.
+- realW1PerformanceAttested remains false.
+
+VERDICT: PASS

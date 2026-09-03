@@ -1,0 +1,374 @@
+{
+  "meta": {
+    "wave": "INDEX350_W2",
+    "title": "INDEX 350 — W2 Observation Gate",
+    "expectedLiveRoutes": 189,
+    "expectedIndexableRoutes": 188,
+    "expectedNoindexRoutes": 1,
+    "expectedSitemapUrls": 188,
+    "observedUrls": [
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-yoga-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-hp-pavilion-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-hp-probook-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-hp-elitebook-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-msi-katana-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-msi-cyborg-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-msi-stealth-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-msi-raider-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-msi-modern-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-msi-prestige-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-gigabyte-g5-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-gigabyte-aorus-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-gigabyte-aero-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-surface-laptop-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-surface-pro-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-huawei-matebook-d-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-huawei-matebook-x-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-samsung-galaxy-book-series-โคราช",
+      "/รับซื้อ-samsung-galaxy-s-โคราช",
+      "/รับซื้อ-samsung-galaxy-a-โคราช",
+      "/รับซื้อ-samsung-galaxy-z-โคราช",
+      "/รับซื้อ-oppo-reno-โคราช",
+      "/รับซื้อ-vivo-v-series-โคราช",
+      "/รับซื้อ-xiaomi-series-โคราช",
+      "/รับซื้อ-redmi-note-โคราช",
+      "/รับซื้อ-poco-f-series-โคราช",
+      "/รับซื้อกล้อง-sony-alpha-a7-โคราช",
+      "/รับซื้อกล้อง-canon-eos-r-โคราช",
+      "/รับซื้อกล้อง-fujifilm-x-series-โคราช",
+      "/รับซื้อกล้อง-nikon-z-โคราช",
+      "/รับซื้อ-asus-rog-zephyrus-g14-โคราช",
+      "/รับซื้อ-asus-rog-zephyrus-g16-โคราช",
+      "/รับซื้อ-asus-rog-strix-g16-โคราช",
+      "/รับซื้อ-asus-tuf-a15-โคราช",
+      "/รับซื้อ-dell-latitude-7440-โคราช",
+      "/รับซื้อ-dell-latitude-7430-โคราช",
+      "/รับซื้อ-lenovo-thinkpad-t14-โคราช",
+      "/รับซื้อ-lenovo-x1-carbon-โคราช",
+      "/รับซื้อ-lenovo-legion-5-โคราช",
+      "/รับซื้อ-lenovo-loq-15-โคราช",
+      "/รับซื้อ-hp-victus-15-โคราช",
+      "/รับซื้อ-hp-omen-16-โคราช",
+      "/รับซื้อ-acer-nitro-v-15-โคราช",
+      "/รับซื้อ-acer-predator-helios-neo-16-โคราช",
+      "/รับซื้อ-iphone-13-โคราช",
+      "/รับซื้อ-iphone-14-pro-โคราช",
+      "/รับซื้อ-iphone-15-โคราช",
+      "/รับซื้อ-iphone-16-pro-โคราช",
+      "/รับซื้อ-macbook-air-m2-โคราช",
+      "/รับซื้อ-macbook-air-m3-โคราช"
+    ],
+    "observedCount": 50,
+    "seriesCount": 30,
+    "modelCount": 20,
+    "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+    "realW1PerformanceAttested": false,
+    "automaticW3": false,
+    "w3LockedByDefault": true,
+    "policy": "Observation never auto-releases W3 and never performs destructive SEO actions."
+  },
+  "states": [
+    "WAIT_FOR_PRODUCTION_VERIFICATION",
+    "WAIT_FOR_FINALIZED_GSC",
+    "HOLD_LOW_VISIBILITY",
+    "REVIEW_PENDING_INDEXATION",
+    "OWNERSHIP_REVIEW_REQUIRED",
+    "ROUND3_REVIEW_ELIGIBLE",
+    "BLOCKED"
+  ],
+  "inputs": {
+    "productionVerification": "docs/architecture/index350-w2-production-verification.json",
+    "gscRequiredColumns": [
+      "date",
+      "query",
+      "page",
+      "clicks",
+      "impressions",
+      "position"
+    ],
+    "indexationOptionalColumns": [
+      "url",
+      "indexed",
+      "status",
+      "last_crawl"
+    ],
+    "indexationPolicy": "Optional for early observation; required before ROUND3_REVIEW_ELIGIBLE."
+  },
+  "thresholds": {
+    "minimumFinalizedDays": 7,
+    "recommendedObservationDays": 14,
+    "minimumVisibleW2Pages": 10,
+    "minimumVisibleShare": 0.2,
+    "minimumVisibleSeriesPages": 6,
+    "minimumVisibleModelPages": 4,
+    "minimumIndexedW2Pages": 40,
+    "minimumIndexedShare": 0.8,
+    "minimumIndexedSeriesPages": 24,
+    "minimumIndexedModelPages": 16,
+    "ownershipOverlapMinQueries": 3,
+    "ownershipJaccardReview": 0.35,
+    "ownershipMinParentImpressions": 10,
+    "ownershipMinChildImpressions": 10,
+    "maximumOwnershipReviewPairsForEligibility": 5
+  },
+  "ownershipPairs": [
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-lenovo-yoga-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-hp-pavilion-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-hp-probook-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-hp-elitebook-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-msi-katana-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-msi-cyborg-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-msi-stealth-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-msi-raider-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-msi-modern-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-msi-prestige-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-gigabyte-g5-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-gigabyte-aorus-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-gigabyte-aero-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-surface-laptop-โคราช",
+      "parent": "/รับซื้อ-microsoft-surface-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-surface-pro-โคราช",
+      "parent": "/รับซื้อ-microsoft-surface-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-huawei-matebook-d-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-huawei-matebook-x-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-samsung-galaxy-book-series-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-book-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-s-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-samsung-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-a-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-samsung-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-z-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-samsung-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-oppo-reno-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-oppo-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-vivo-v-series-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-vivo-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-xiaomi-series-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-redmi-note-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-poco-f-series-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อกล้อง-sony-alpha-a7-โคราช",
+      "parent": "/รับซื้อกล้อง-sony-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อกล้อง-canon-eos-r-โคราช",
+      "parent": "/รับซื้อกล้อง-canon-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อกล้อง-fujifilm-x-series-โคราช",
+      "parent": "/รับซื้อกล้อง-fujifilm-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อกล้อง-nikon-z-โคราช",
+      "parent": "/รับซื้อกล้อง-nikon-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-asus-rog-zephyrus-g14-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-asus-rog-zephyrus-g16-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-asus-rog-strix-g16-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-asus-tuf-a15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-dell-latitude-7440-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-dell-latitude-7430-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-lenovo-thinkpad-t14-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-lenovo-x1-carbon-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-lenovo-legion-5-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-legion-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-lenovo-loq-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-loq-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-hp-victus-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-victus-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-hp-omen-16-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-omen-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-acer-nitro-v-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-acer-predator-helios-neo-16-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-predator-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-iphone-13-โคราช",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-iphone-14-pro-โคราช",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-iphone-15-โคราช",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-iphone-16-pro-โคราช",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-macbook-air-m2-โคราช",
+      "parent": "/รับซื้อ-macbook-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-macbook-air-m3-โคราช",
+      "parent": "/รับซื้อ-macbook-โคราช",
+      "nodeType": "MODEL LANDING PAGE"
+    }
+  ],
+  "hardRules": [
+    "No automatic W3 release.",
+    "No automatic merge, redirect, noindex, or canonical switch.",
+    "Similarity alone is never a destructive-action trigger.",
+    "Query ownership issues require manual query-by-page review.",
+    "Manual approval override remains disclosed; do not rewrite history as evidence-backed.",
+    "W3 remains locked until real W2 observation reaches ROUND3_REVIEW_ELIGIBLE and a human approves candidates."
+  ]
+}

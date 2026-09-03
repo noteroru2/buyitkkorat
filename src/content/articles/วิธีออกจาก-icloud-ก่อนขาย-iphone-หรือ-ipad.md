@@ -7,7 +7,7 @@ category: "guide"
 intent: "article"
 excerpt: "ออกจาก iCloud และปิด Find My ก่อนขาย iPhone หรือ iPad อย่างถูกต้อง เพื่อปกป้องข้อมูลและให้ผู้ซื้อใช้งานต่อได้"
 publishedDate: 2026-01-15
-updatedDate: 2026-08-05
+updatedDate: 2026-09-03
 featured: true
 indexable: true
 ogImage: "/og/default.png"
@@ -30,7 +30,6 @@ faq:
   - question: "ลืมรหัส Apple ID ทำอย่างไร"
     answer: "รีเซ็ตรหัสผ่าน iforgot.apple.com หรือติดต่อ Apple Support ก่อนขาย"
 ---
-
 ก่อนขาย iPhone หรือ iPad การออกจาก iCloud และปิด Find My เป็นขั้นตอนที่ขาดไม่ได้ หากไม่ทำ ผู้ซื้อจะไม่สามารถใช้งานเครื่องต่อได้ และข้อมูลส่วนตัวของคุณอาจยังค้างอยู่ใน iCloud บทความนี้อธิบายขั้นตอนอย่างละเอียด
 
 ## ทำไมต้องออกจาก iCloud
@@ -38,8 +37,6 @@ faq:
 - **Activation Lock** — เครื่องที่ยังผูก iCloud จะล็อกอยู่ ผู้ซื้อใช้ไม่ได้
 - **ข้อมูลส่วนตัว** — รูป เอกสาร แอป อาจซิงก์กับ iCloud
 - **มาตรฐานร้านรับซื้อ** — ร้านรับซื้อต้องการเครื่องที่ออกจาก iCloud แล้ว
-
-## ขั้นตอนก่อนออกจาก iCloud
 
 ### 1. สำรองข้อมูล
 
@@ -54,8 +51,6 @@ faq:
 
 - iMessage: Settings > Messages > Send & Receive > ออกจาก Apple ID
 - FaceTime: Settings > FaceTime > ออกจาก Apple ID
-
-## วิธีออกจาก iCloud บน iPhone/iPad
 
 ### วิธีที่ 1: จากเครื่อง (แนะนำ)
 

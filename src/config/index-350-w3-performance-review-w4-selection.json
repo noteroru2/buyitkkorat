@@ -1,0 +1,706 @@
+{
+  "meta": {
+    "title": "INDEX 350 — W3 Performance Review & W4 Candidate Selection",
+    "currentLive": 239,
+    "currentIndexable": 238,
+    "currentNoindex": 1,
+    "w4TargetIndexable": 288,
+    "w4ReleaseCap": 50,
+    "automaticPublishing": false,
+    "automaticW4Release": false,
+    "realW3PerformanceDataProvidedInPackage": false,
+    "currentDecision": "WAIT_FOR_REAL_W3_OBSERVATION_DATA",
+    "policy": "This batch reviews W3 only when real finalized GSC/indexation outputs exist. It never fabricates metrics and never publishes W4 candidates.",
+    "manualApprovalRequired": true
+  },
+  "requiredInputs": {
+    "observationReport": "docs/architecture/index350-w3-observation-report.json",
+    "observationPages": "docs/architecture/index350-w3-observation-pages.csv",
+    "queryOwnership": "docs/architecture/index350-w3-query-ownership.csv"
+  },
+  "states": [
+    "WAIT_FOR_REAL_W3_OBSERVATION_DATA",
+    "W3_REVIEW_HOLD",
+    "W4_CANDIDATE_REVIEW_READY",
+    "W4_SELECTION_READY_FOR_MANUAL_APPROVAL",
+    "W4_SELECTION_INCOMPLETE"
+  ],
+  "scoreWeights": {
+    "staticPriorityP1": 20,
+    "parentAlreadyLive": 20,
+    "sameWaveParentSelected": 16,
+    "seriesFit": 16,
+    "modelFit": 18,
+    "conditionFit": 14,
+    "clusterHealthy": 12,
+    "clusterEarlySignal": 6,
+    "clusterOwnershipClear": 8,
+    "provisionalPreference": 7,
+    "parentOwnershipRiskPenalty": -60,
+    "parentNotIndexedPenalty": -45,
+    "staticOwnershipRiskPenalty": -90,
+    "parentNotLivePenalty": -100,
+    "sameWaveParentMissingPenalty": -80
+  },
+  "composition": {
+    "softTargets": {
+      "B_SERIES": 18,
+      "C_MODEL": 7,
+      "D_CONDITION": 25
+    },
+    "minimums": {
+      "B_SERIES": 16,
+      "C_MODEL": 6,
+      "D_CONDITION": 24
+    },
+    "total": 50,
+    "candidatePool": 56,
+    "note": "Soft target uses all 18 remaining Series, 7 non-risk Models, and 25 Conditions. Adaptive fill may use reserve Conditions if a Series/Model is blocked, but group minima must still pass."
+  },
+  "conditionClusterMinimums": {
+    "NOTEBOOK": 4,
+    "MOBILE": 5,
+    "APPLE": 1,
+    "COMPUTER": 4,
+    "CAMERA": 3,
+    "GAMING": 2
+  },
+  "selectionRules": [
+    "Only HOLD_PLANNED candidates from B_SERIES, C_MODEL, and D_CONDITION are eligible.",
+    "Real W3 Observation state ROUND4_REVIEW_ELIGIBLE is required before SELECT decisions are emitted.",
+    "Candidate parent must already be LIVE, except an explicit same-wave MODEL may depend on a selected B_SERIES parent in W4.",
+    "If a candidate parent is one of the W3 observed URLs, it must be indexed and free of ownership-review risk.",
+    "W3 cluster health may influence score but does not invent candidate-specific performance.",
+    "Static ownership-risk URLs are blocked until manual review.",
+    "Condition cluster minima prevent W4 from becoming one-condition-family heavy.",
+    "No candidate is published, indexed, added to sitemap, or canonicalized by this batch.",
+    "No automatic W4 release, merge, redirect, noindex, or canonical switch."
+  ],
+  "sameWaveParentDependencies": [
+    {
+      "child": "/รับซื้อ-sony-a6000-โคราช",
+      "parent": "/รับซื้อกล้อง-sony-alpha-apsc-โคราช"
+    },
+    {
+      "child": "/รับซื้อ-sony-a6400-โคราช",
+      "parent": "/รับซื้อกล้อง-sony-alpha-apsc-โคราช"
+    }
+  ],
+  "staticOwnershipRiskUrls": [
+    "/รับซื้อ-canon-eos-r-โคราช"
+  ],
+  "provisionalSelection": [
+    {
+      "rank": 1,
+      "url": "/รับซื้อ-oppo-a-series-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-oppo-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 2,
+      "url": "/รับซื้อ-vivo-y-series-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-vivo-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 3,
+      "url": "/รับซื้อ-redmi-number-series-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 4,
+      "url": "/รับซื้อ-poco-x-series-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 5,
+      "url": "/รับซื้อ-realme-number-series-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-realme-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 6,
+      "url": "/รับซื้อ-realme-c-series-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-realme-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 7,
+      "url": "/รับซื้อ-realme-gt-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-realme-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 8,
+      "url": "/รับซื้อ-honor-magic-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-honor-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 9,
+      "url": "/รับซื้อ-honor-x-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-honor-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 10,
+      "url": "/รับซื้อ-huawei-nova-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-huawei-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 11,
+      "url": "/รับซื้อ-huawei-pura-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-huawei-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 12,
+      "url": "/รับซื้อ-motorola-edge-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-motorola-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 13,
+      "url": "/รับซื้อ-moto-g-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-motorola-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 14,
+      "url": "/รับซื้อ-nothing-phone-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-nothing-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 15,
+      "url": "/รับซื้อกล้อง-sony-alpha-apsc-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อกล้อง-sony-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 16,
+      "url": "/รับซื้อกล้อง-canon-eos-dslr-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อกล้อง-canon-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 17,
+      "url": "/รับซื้อกล้อง-fujifilm-gfx-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อกล้อง-fujifilm-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 18,
+      "url": "/รับซื้อกล้อง-lumix-g-โคราช",
+      "group": "B_SERIES",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อกล้อง-panasonic-lumix-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 19,
+      "url": "/รับซื้อ-dell-latitude-5420-โคราช",
+      "group": "C_MODEL",
+      "nodeType": "MODEL",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 20,
+      "url": "/รับซื้อ-acer-nitro-5-โคราช",
+      "group": "C_MODEL",
+      "nodeType": "MODEL",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 21,
+      "url": "/รับซื้อ-iphone-11-โคราช",
+      "group": "C_MODEL",
+      "nodeType": "MODEL",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "cluster": "APPLE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 22,
+      "url": "/รับซื้อ-iphone-12-โคราช",
+      "group": "C_MODEL",
+      "nodeType": "MODEL",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "cluster": "APPLE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 23,
+      "url": "/รับซื้อ-oppo-reno12-โคราช",
+      "group": "C_MODEL",
+      "nodeType": "MODEL",
+      "parent": "/รับซื้อ-oppo-reno-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 24,
+      "url": "/รับซื้อ-sony-a6000-โคราช",
+      "group": "C_MODEL",
+      "nodeType": "MODEL",
+      "parent": "/รับซื้อกล้อง-sony-alpha-apsc-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 25,
+      "url": "/รับซื้อ-sony-a6400-โคราช",
+      "group": "C_MODEL",
+      "nodeType": "MODEL",
+      "parent": "/รับซื้อกล้อง-sony-alpha-apsc-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 26,
+      "url": "/รับซื้อโน๊ตบุ๊คแบตเสื่อม-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 27,
+      "url": "/รับซื้อโน๊ตบุ๊คคีย์บอร์ดเสีย-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 28,
+      "url": "/รับซื้อโน๊ตบุ๊คบานพับแตก-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 29,
+      "url": "/รับซื้อโน๊ตบุ๊คไม่มีที่ชาร์จ-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 30,
+      "url": "/รับซื้อโน๊ตบุ๊คโดนน้ำ-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโน๊ตบุ๊คเสีย-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 31,
+      "url": "/รับซื้อโน๊ตบุ๊คติดรหัส-bios-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโน๊ตบุ๊คเสีย-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 32,
+      "url": "/รับซื้อโน๊ตบุ๊คพอร์ตเสีย-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโน๊ตบุ๊คเสีย-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 33,
+      "url": "/รับซื้อโทรศัพท์ฝาหลังแตก-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 34,
+      "url": "/รับซื้อโทรศัพท์แบตเสื่อม-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 35,
+      "url": "/รับซื้อโทรศัพท์กล้องเสีย-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 36,
+      "url": "/รับซื้อ-iphone-face-id-เสีย-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "cluster": "APPLE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 37,
+      "url": "/รับซื้อโทรศัพท์โดนน้ำ-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 38,
+      "url": "/รับซื้อโทรศัพท์พอร์ตชาร์จเสีย-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 39,
+      "url": "/รับซื้อการ์ดจอภาพแตก-artifact-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อการ์ดจอ-โคราช",
+      "cluster": "COMPUTER",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 40,
+      "url": "/รับซื้อ-ssd-health-ต่ำ-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อ-ssd-hdd-โคราช",
+      "cluster": "COMPUTER",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 41,
+      "url": "/รับซื้อ-hdd-bad-sector-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อ-ssd-hdd-โคราช",
+      "cluster": "COMPUTER",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 42,
+      "url": "/รับซื้อแรมมี-error-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อแรม-โคราช",
+      "cluster": "COMPUTER",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 43,
+      "url": "/รับซื้อเมนบอร์ดไม่ติด-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อเมนบอร์ด-โคราช",
+      "cluster": "COMPUTER",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 44,
+      "url": "/รับซื้อจอมอนิเตอร์มี-dead-pixel-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อจอมอนิเตอร์-โคราช",
+      "cluster": "COMPUTER",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 45,
+      "url": "/รับซื้อเลนส์มีรา-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อเลนส์กล้อง-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 46,
+      "url": "/รับซื้อกล้อง-shutter-count-สูง-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 47,
+      "url": "/รับซื้อกล้อง-evf-เสีย-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 48,
+      "url": "/รับซื้อจอย-drift-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อเครื่องเกม-โคราช",
+      "cluster": "GAMING",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 49,
+      "url": "/รับซื้อ-playstation-อ่านแผ่นไม่ได้-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อ-playstation-โคราช",
+      "cluster": "GAMING",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 50,
+      "url": "/รับซื้อ-nintendo-switch-แบตเสื่อม-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อ-nintendo-switch-โคราช",
+      "cluster": "GAMING",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W4 candidate only; requires real W3 Observation Gate + manual approval before source release."
+    }
+  ],
+  "reserveAndBlocked": [
+    {
+      "url": "/รับซื้อ-canon-eos-r-โคราช",
+      "group": "C_MODEL",
+      "nodeType": "MODEL",
+      "parent": "/รับซื้อกล้อง-canon-eos-r-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "RESERVE_OR_BLOCKED",
+      "reason": "STATIC_OWNERSHIP_RISK"
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "RESERVE_OR_BLOCKED",
+      "reason": "CONDITION_RESERVE_FOR_ADAPTIVE_FILL"
+    },
+    {
+      "url": "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "RESERVE_OR_BLOCKED",
+      "reason": "CONDITION_RESERVE_FOR_ADAPTIVE_FILL"
+    },
+    {
+      "url": "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "RESERVE_OR_BLOCKED",
+      "reason": "CONDITION_RESERVE_FOR_ADAPTIVE_FILL"
+    },
+    {
+      "url": "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "RESERVE_OR_BLOCKED",
+      "reason": "CONDITION_RESERVE_FOR_ADAPTIVE_FILL"
+    },
+    {
+      "url": "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อเครื่องเกม-โคราช",
+      "cluster": "GAMING",
+      "priority": "P1",
+      "state": "RESERVE_OR_BLOCKED",
+      "reason": "CONDITION_RESERVE_FOR_ADAPTIVE_FILL"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "wave": "INDEX350_W1",
+    "title": "INDEX 350 EXPANSION — W1 Production Release Gate",
+    "site": "รับซื้อไอทีโคราช.com",
+    "productionOrigin": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com",
+    "expectedLiveRoutes": 139,
+    "expectedIndexableRoutes": 138,
+    "expectedNoindexRoutes": 1,
+    "expectedSitemapUrls": 138,
+    "releasedCount": 40,
+    "releasedUrls": [
+      "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "/รับซื้อ-microsoft-surface-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "/รับซื้อ-samsung-galaxy-book-โคราช",
+      "/รับซื้อโทรศัพท์-realme-โคราช",
+      "/รับซื้อโทรศัพท์-honor-โคราช",
+      "/รับซื้อโทรศัพท์-huawei-โคราช",
+      "/รับซื้อโทรศัพท์-motorola-โคราช",
+      "/รับซื้อโทรศัพท์-nothing-โคราช",
+      "/รับซื้อกล้อง-sony-โคราช",
+      "/รับซื้อกล้อง-canon-โคราช",
+      "/รับซื้อกล้อง-fujifilm-โคราช",
+      "/รับซื้อกล้อง-nikon-โคราช",
+      "/รับซื้อกล้อง-panasonic-lumix-โคราช",
+      "/รับซื้อกล้อง-om-system-olympus-โคราช",
+      "/รับซื้อจอมอนิเตอร์-lg-โคราช",
+      "/รับซื้อจอมอนิเตอร์-samsung-โคราช",
+      "/รับซื้อจอมอนิเตอร์-dell-โคราช",
+      "/รับซื้ออุปกรณ์-logitech-โคราช",
+      "/รับซื้ออุปกรณ์-razer-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-acer-aspire-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-acer-predator-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-acer-swift-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-ideapad-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-legion-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-loq-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-hp-victus-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-hp-omen-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-asus-vivobook-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-asus-zenbook-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-dell-inspiron-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-dell-xps-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-dell-alienware-โคราช"
+    ],
+    "automaticDeploy": false,
+    "w2Locked": true,
+    "automaticW2": false
+  },
+  "states": [
+    "SOURCE_RELEASED",
+    "PREDEPLOY_PENDING",
+    "PREDEPLOY_READY",
+    "PRODUCTION_PENDING",
+    "PRODUCTION_VERIFIED",
+    "OBSERVATION_ACTIVE",
+    "BLOCKED"
+  ],
+  "routeRequirements": {
+    "httpStatus": 200,
+    "canonicalCount": 1,
+    "robotsCount": 1,
+    "robots": "index,follow",
+    "h1Count": 1,
+    "minimumImages": 0,
+    "lineCtaRequired": true,
+    "breadcrumbListMax": 1,
+    "minimumInboundDiscoveryPaths": 2,
+    "imageAltRequired": true,
+    "imagePolicy": "OPTIONAL_RELEVANT_ALT_REQUIRED_WHEN_PRESENT"
+  },
+  "buildRequirements": {
+    "governedBuiltPages": 139,
+    "unreachableIndexable": 0,
+    "brokenGovernedLinks": 0,
+    "maxCrawlDepth": 4,
+    "w1BuiltPages": 40,
+    "w1Errors": 0
+  },
+  "sitemapRequirements": {
+    "path": "/sitemap-index.xml",
+    "urlCount": 138,
+    "allW1UrlsRequired": true
+  },
+  "parentChildChecks": [
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "children": [
+        "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+        "/รับซื้อ-microsoft-surface-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+        "/รับซื้อ-samsung-galaxy-book-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "children": [
+        "/รับซื้อโทรศัพท์-realme-โคราช",
+        "/รับซื้อโทรศัพท์-honor-โคราช",
+        "/รับซื้อโทรศัพท์-huawei-โคราช",
+        "/รับซื้อโทรศัพท์-motorola-โคราช",
+        "/รับซื้อโทรศัพท์-nothing-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "children": [
+        "/รับซื้อกล้อง-sony-โคราช",
+        "/รับซื้อกล้อง-canon-โคราช",
+        "/รับซื้อกล้อง-fujifilm-โคราช",
+        "/รับซื้อกล้อง-nikon-โคราช",
+        "/รับซื้อกล้อง-panasonic-lumix-โคราช",
+        "/รับซื้อกล้อง-om-system-olympus-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อจอมอนิเตอร์-โคราช",
+      "children": [
+        "/รับซื้อจอมอนิเตอร์-lg-โคราช",
+        "/รับซื้อจอมอนิเตอร์-samsung-โคราช",
+        "/รับซื้อจอมอนิเตอร์-dell-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช",
+      "children": [
+        "/รับซื้ออุปกรณ์-logitech-โคราช",
+        "/รับซื้ออุปกรณ์-razer-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "children": [
+        "/รับซื้อโน๊ตบุ๊ค-acer-aspire-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-acer-predator-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-acer-swift-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "children": [
+        "/รับซื้อโน๊ตบุ๊ค-lenovo-ideapad-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-lenovo-legion-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-lenovo-loq-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "children": [
+        "/รับซื้อโน๊ตบุ๊ค-hp-victus-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-hp-omen-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "children": [
+        "/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-asus-vivobook-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-asus-zenbook-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "children": [
+        "/รับซื้อโน๊ตบุ๊ค-dell-inspiron-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-dell-xps-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-dell-alienware-โคราช"
+      ]
+    }
+  ],
+  "predeployValidators": [
+    "scripts/validate-index-350-expansion-plan.mjs",
+    "scripts/validate-index-350-w1.mjs",
+    "scripts/validate-index-350-w1-production-gate.mjs",
+    "scripts/run-architecture-quality-gate.mjs"
+  ],
+  "observation": {
+    "stateAfterProductionVerification": "OBSERVATION_ACTIVE",
+    "w2State": "LOCKED",
+    "minimumFinalizedGscDaysBeforeW2Review": 7,
+    "recommendedObservationDays": 14,
+    "requiredReview": [
+      "indexation of 40 W1 URLs",
+      "query→page ownership",
+      "brand/series cannibalization",
+      "W1 impression distribution",
+      "manual W2 candidate review"
+    ],
+    "policy": "Production verification starts observation only. W2 remains locked and is never auto-released.",
+    "gateConfig": "src/config/index-350-w1-observation-gate.json",
+    "evaluator": "scripts/evaluate-index-350-w1-observation.mjs",
+    "w2Eligibility": "MANUAL_REVIEW_ONLY"
+  }
+}

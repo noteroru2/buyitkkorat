@@ -1,0 +1,38 @@
+{
+  "protectedArchitectureFiles": [
+    {
+      "file": "src/config/site-architecture.json",
+      "unchanged": true
+    },
+    {
+      "file": "src/config/seo-index-control.json",
+      "unchanged": true
+    },
+    {
+      "file": "src/config/brand-model-series-foundation.json",
+      "unchanged": true
+    },
+    {
+      "file": "src/config/cannibalization-triage.json",
+      "unchanged": true
+    },
+    {
+      "file": "src/config/expansion-release-round-1.json",
+      "unchanged": true
+    },
+    {
+      "file": "src/config/expansion-round-1-production-gate.json",
+      "unchanged": true
+    }
+  ],
+  "uxSourceChecks": {
+    "header_line": true,
+    "floating_line": true,
+    "contact_aside": true,
+    "service_sidebar": true,
+    "area_sidebar": true,
+    "article_sidebar": true,
+    "trust_sidebar": true
+  },
+  "verdict": "PASS"
+}

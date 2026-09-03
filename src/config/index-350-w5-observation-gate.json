@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "wave": "INDEX350_W5",
+    "title": "INDEX 350 — W5 Observation Gate",
+    "expectedLiveRoutes": 329,
+    "expectedIndexableRoutes": 328,
+    "expectedNoindexRoutes": 1,
+    "expectedSitemapUrls": 328,
+    "observedUrls": [
+      "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช",
+      "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช",
+      "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช",
+      "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช",
+      "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช",
+      "/รับซื้อคอมโรงเรียน-โคราช",
+      "/รับซื้อคอมมหาวิทยาลัย-โคราช",
+      "/รับซื้อคอมโรงงาน-โคราช",
+      "/รับซื้อคอมโรงแรม-โคราช",
+      "/รับซื้อคอมคลินิก-โคราช",
+      "/รับซื้อคอมสำนักงานบัญชี-โคราช",
+      "/รับซื้อคอมบริษัทก่อสร้าง-โคราช",
+      "/รับซื้อคอมบริษัทขนส่ง-โคราช",
+      "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช",
+      "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช",
+      "/รับซื้อคอมร้านเกม-โคราช",
+      "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช",
+      "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช",
+      "/รับซื้อคอม-call-center-โคราช",
+      "/รับซื้อไอที-coworking-space-โคราช",
+      "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช",
+      "/รับซื้อคอมหมดสัญญาเช่า-โคราช",
+      "/รับซื้อ-it-asset-disposition-โคราช",
+      "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช",
+      "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช",
+      "/พื้นที่/ครบุรี",
+      "/พื้นที่/เสิงสาง",
+      "/พื้นที่/คง",
+      "/พื้นที่/บ้านเหลื่อม",
+      "/พื้นที่/จักราช",
+      "/พื้นที่/โนนไทย",
+      "/พื้นที่/ขามสะแกแสง",
+      "/พื้นที่/ประทาย",
+      "/พื้นที่/ห้วยแถลง",
+      "/พื้นที่/ชุมพวง",
+      "/พื้นที่/ขามทะเลสอ",
+      "/พื้นที่/หนองบุญมาก",
+      "/พื้นที่/แก้งสนามนาง",
+      "/พื้นที่/โนนแดง",
+      "/พื้นที่/วังน้ำเขียว"
+    ],
+    "observedCount": 40,
+    "groupMix": {
+      "D_CONDITION": 5,
+      "E_B2B": 20,
+      "F_LOCAL": 15
+    },
+    "clusterMix": {
+      "NOTEBOOK": 1,
+      "MOBILE": 2,
+      "CAMERA": 1,
+      "GAMING": 1,
+      "B2B": 20,
+      "LOCATION": 15
+    },
+    "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+    "realW4PerformanceAttested": false,
+    "automaticW6": false,
+    "w6LockedByDefault": true,
+    "policy": "Observation never auto-releases W6 and never performs destructive SEO actions."
+  },
+  "states": [
+    "WAIT_FOR_PRODUCTION_VERIFICATION",
+    "WAIT_FOR_FINALIZED_GSC",
+    "HOLD_LOW_VISIBILITY",
+    "REVIEW_PENDING_INDEXATION",
+    "OWNERSHIP_REVIEW_REQUIRED",
+    "ROUND6_REVIEW_ELIGIBLE",
+    "BLOCKED"
+  ],
+  "inputs": {
+    "productionVerification": "docs/architecture/index350-w5-production-verification.json",
+    "gscRequiredColumns": [
+      "date",
+      "query",
+      "page",
+      "clicks",
+      "impressions",
+      "position"
+    ],
+    "indexationOptionalColumns": [
+      "url",
+      "indexed",
+      "status",
+      "last_crawl"
+    ],
+    "indexationPolicy": "Optional for early observation; required before ROUND6_REVIEW_ELIGIBLE."
+  },
+  "thresholds": {
+    "minimumFinalizedDays": 7,
+    "recommendedObservationDays": 14,
+    "minimumVisibleW5Pages": 10,
+    "minimumVisibleShare": 0.25,
+    "minimumVisibleByType": {
+      "CONDITION": 1,
+      "B2B": 5,
+      "LOCAL": 4
+    },
+    "minimumVisibleByCluster": {
+      "B2B": 5,
+      "LOCATION": 4
+    },
+    "conditionClusters": [
+      "NOTEBOOK",
+      "MOBILE",
+      "CAMERA",
+      "GAMING"
+    ],
+    "minimumVisibleConditionClusters": 2,
+    "minimumIndexedW5Pages": 32,
+    "minimumIndexedShare": 0.8,
+    "minimumIndexedByType": {
+      "CONDITION": 4,
+      "B2B": 16,
+      "LOCAL": 12
+    },
+    "minimumIndexedByCluster": {
+      "B2B": 16,
+      "LOCATION": 12
+    },
+    "minimumIndexedConditionClusters": 3,
+    "ownershipOverlapMinQueries": 3,
+    "ownershipJaccardReview": 0.35,
+    "ownershipMinParentImpressions": 10,
+    "ownershipMinChildImpressions": 10,
+    "maximumOwnershipReviewPairsForEligibility": 4
+  },
+  "nodeTypeByUrl": {
+    "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช": "CONDITION",
+    "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช": "CONDITION",
+    "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช": "CONDITION",
+    "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช": "CONDITION",
+    "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช": "CONDITION",
+    "/รับซื้อคอมโรงเรียน-โคราช": "B2B",
+    "/รับซื้อคอมมหาวิทยาลัย-โคราช": "B2B",
+    "/รับซื้อคอมโรงงาน-โคราช": "B2B",
+    "/รับซื้อคอมโรงแรม-โคราช": "B2B",
+    "/รับซื้อคอมคลินิก-โคราช": "B2B",
+    "/รับซื้อคอมสำนักงานบัญชี-โคราช": "B2B",
+    "/รับซื้อคอมบริษัทก่อสร้าง-โคราช": "B2B",
+    "/รับซื้อคอมบริษัทขนส่ง-โคราช": "B2B",
+    "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช": "B2B",
+    "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช": "B2B",
+    "/รับซื้อคอมร้านเกม-โคราช": "B2B",
+    "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช": "B2B",
+    "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช": "B2B",
+    "/รับซื้อคอม-call-center-โคราช": "B2B",
+    "/รับซื้อไอที-coworking-space-โคราช": "B2B",
+    "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช": "B2B",
+    "/รับซื้อคอมหมดสัญญาเช่า-โคราช": "B2B",
+    "/รับซื้อ-it-asset-disposition-โคราช": "B2B",
+    "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช": "B2B",
+    "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช": "B2B",
+    "/พื้นที่/ครบุรี": "LOCAL",
+    "/พื้นที่/เสิงสาง": "LOCAL",
+    "/พื้นที่/คง": "LOCAL",
+    "/พื้นที่/บ้านเหลื่อม": "LOCAL",
+    "/พื้นที่/จักราช": "LOCAL",
+    "/พื้นที่/โนนไทย": "LOCAL",
+    "/พื้นที่/ขามสะแกแสง": "LOCAL",
+    "/พื้นที่/ประทาย": "LOCAL",
+    "/พื้นที่/ห้วยแถลง": "LOCAL",
+    "/พื้นที่/ชุมพวง": "LOCAL",
+    "/พื้นที่/ขามทะเลสอ": "LOCAL",
+    "/พื้นที่/หนองบุญมาก": "LOCAL",
+    "/พื้นที่/แก้งสนามนาง": "LOCAL",
+    "/พื้นที่/โนนแดง": "LOCAL",
+    "/พื้นที่/วังน้ำเขียว": "LOCAL"
+  },
+  "clusterByUrl": {
+    "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช": "NOTEBOOK",
+    "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช": "MOBILE",
+    "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช": "MOBILE",
+    "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช": "CAMERA",
+    "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช": "GAMING",
+    "/รับซื้อคอมโรงเรียน-โคราช": "B2B",
+    "/รับซื้อคอมมหาวิทยาลัย-โคราช": "B2B",
+    "/รับซื้อคอมโรงงาน-โคราช": "B2B",
+    "/รับซื้อคอมโรงแรม-โคราช": "B2B",
+    "/รับซื้อคอมคลินิก-โคราช": "B2B",
+    "/รับซื้อคอมสำนักงานบัญชี-โคราช": "B2B",
+    "/รับซื้อคอมบริษัทก่อสร้าง-โคราช": "B2B",
+    "/รับซื้อคอมบริษัทขนส่ง-โคราช": "B2B",
+    "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช": "B2B",
+    "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช": "B2B",
+    "/รับซื้อคอมร้านเกม-โคราช": "B2B",
+    "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช": "B2B",
+    "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช": "B2B",
+    "/รับซื้อคอม-call-center-โคราช": "B2B",
+    "/รับซื้อไอที-coworking-space-โคราช": "B2B",
+    "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช": "B2B",
+    "/รับซื้อคอมหมดสัญญาเช่า-โคราช": "B2B",
+    "/รับซื้อ-it-asset-disposition-โคราช": "B2B",
+    "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช": "B2B",
+    "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช": "B2B",
+    "/พื้นที่/ครบุรี": "LOCATION",
+    "/พื้นที่/เสิงสาง": "LOCATION",
+    "/พื้นที่/คง": "LOCATION",
+    "/พื้นที่/บ้านเหลื่อม": "LOCATION",
+    "/พื้นที่/จักราช": "LOCATION",
+    "/พื้นที่/โนนไทย": "LOCATION",
+    "/พื้นที่/ขามสะแกแสง": "LOCATION",
+    "/พื้นที่/ประทาย": "LOCATION",
+    "/พื้นที่/ห้วยแถลง": "LOCATION",
+    "/พื้นที่/ชุมพวง": "LOCATION",
+    "/พื้นที่/ขามทะเลสอ": "LOCATION",
+    "/พื้นที่/หนองบุญมาก": "LOCATION",
+    "/พื้นที่/แก้งสนามนาง": "LOCATION",
+    "/พื้นที่/โนนแดง": "LOCATION",
+    "/พื้นที่/วังน้ำเขียว": "LOCATION"
+  },
+  "ownershipPairs": [
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "child": "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช",
+      "nodeType": "CONDITION",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "child": "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช",
+      "nodeType": "CONDITION",
+      "cluster": "MOBILE"
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "child": "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช",
+      "nodeType": "CONDITION",
+      "cluster": "MOBILE"
+    },
+    {
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "child": "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช",
+      "nodeType": "CONDITION",
+      "cluster": "CAMERA"
+    },
+    {
+      "parent": "/รับซื้อเครื่องเกม-โคราช",
+      "child": "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช",
+      "nodeType": "CONDITION",
+      "cluster": "GAMING"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมโรงเรียน-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมมหาวิทยาลัย-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมโรงงาน-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมโรงแรม-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมคลินิก-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมสำนักงานบัญชี-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมบริษัทก่อสร้าง-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมบริษัทขนส่ง-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมร้านเกม-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอม-call-center-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อไอที-coworking-space-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อคอมหมดสัญญาเช่า-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อ-it-asset-disposition-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "child": "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช",
+      "nodeType": "B2B",
+      "cluster": "B2B"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/ครบุรี",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/เสิงสาง",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/คง",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/บ้านเหลื่อม",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/จักราช",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/โนนไทย",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/ขามสะแกแสง",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/ประทาย",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/ห้วยแถลง",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/ชุมพวง",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/ขามทะเลสอ",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/หนองบุญมาก",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/แก้งสนามนาง",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/โนนแดง",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/วังน้ำเขียว",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    }
+  ],
+  "hardRules": [
+    "No automatic W6 release.",
+    "No automatic merge, redirect, noindex, or canonical switch.",
+    "Similarity alone is never a destructive-action trigger.",
+    "Query ownership issues require manual query-by-page review.",
+    "Local pages remain service-area pages; no fake branches, addresses, hours, coordinates, or LocalBusiness entities.",
+    "Manual approval override remains disclosed; do not rewrite history as evidence-backed.",
+    "W6 remains locked until real W5 observation reaches ROUND6_REVIEW_ELIGIBLE and a human approves candidates."
+  ]
+}

@@ -1,0 +1,58 @@
+$ node scripts/validate-site-architecture.mjs
+ARCHITECTURE BATCH 0 — VALIDATION
+Live routes: 89
+Indexable: 88
+Noindex: 1
+Virtual architecture hubs: 2
+Parent migrations queued (not executed): 35
+GSC-gated ownership routes: 48
+Routes waiting on virtual parent release: 16
+Warnings: 0
+VERDICT: PASS
+
+EXIT=0
+
+$ node scripts/validate-core-hub-architecture.mjs
+ARCHITECTURE BATCH 1 — VALIDATION
+Live routes: 89
+Indexable: 88
+Live release pillars: 8
+Apple bridge members: 5
+Local hub state: DEFERRED_TO_BATCH_5
+Runtime managed files detected: 0
+Warnings: 0
+VERDICT: PASS
+
+EXIT=0
+
+$ node scripts/validate-parent-child-runtime.mjs
+ARCHITECTURE BATCH 2 — VALIDATION
+Live routes: 89
+Indexable: 88
+Breadcrumb-owned routes: 88
+Deep breadcrumb routes (HOME→PARENT→CURRENT+): 56
+Virtual-parent routes safely flattened: 16
+Runtime layouts detected: 0
+Stale Batch 1 blocks: 0
+Warnings: 1
+VERDICT: PASS
+WARN: Real source tree not present in this overlay; runtime layout integration must be applied inside the repository.
+
+EXIT=0
+
+$ node scripts/validate-internal-link-graph.mjs
+ARCHITECTURE BATCH 3 — INTERNAL LINK GRAPH VALIDATION
+Live routes: 89
+Indexable: 88
+Homepage discovery seeds: 12
+Conversion bridge sources: 15
+Projected max discovery links/page: 15
+Projected max related links/page: 6
+Projected zero contextual inbound: 16
+Unexpected zero contextual inbound: 0
+Tier A/B non-TRUST/non-LOCATION inbound<2: 0
+Articles inbound<2: 0
+Deferred zero by cluster: TRUST=6, LOCATION=10
+VERDICT: PASS
+
+EXIT=0

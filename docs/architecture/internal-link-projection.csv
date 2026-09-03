@@ -1,0 +1,89 @@
+﻿url,tier,cluster,pageType,recommendedParent,projectedInbound,discoveryOutbound,relatedOutbound,gateState
+/,A,CORE-LOCAL,Homepage,,87,12,0,PASS
+/ขายคอมหลายเครื่อง-โคราช,B,B2B,B2B/bulk,/รับซื้อสินค้าไอทียกล็อต,6,0,4,PASS
+/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช,B,B2B,B2B/bulk,/รับซื้อสินค้าไอทียกล็อต,5,0,4,PASS
+/ข้อกำหนดการใช้บริการ,B,TRUST,Policy,/,0,0,0,EXEMPT_TRUST
+/คำถามที่พบบ่อย,B,TRUST,FAQ,/,0,0,0,EXEMPT_TRUST
+/ติดต่อ,B,TRUST,Contact,/,0,0,0,EXEMPT_TRUST
+/นโยบายความเป็นส่วนตัว,B,TRUST,Policy,/,0,0,0,EXEMPT_TRUST
+/นโยบายรับซื้อสินค้าและการยืนยันเจ้าของ,B,TRUST,Policy,/,0,0,0,EXEMPT_TRUST
+/บทความ,A,CONTENT,Article hub,/,16,15,0,PASS
+/บทความ/ssd-และข้อมูลส่วนตัวควรจัดการอย่างไรก่อนขาย,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/กล่องและอุปกรณ์มีผลต่อราคามือสองหรือไม่,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/วิธีลบข้อมูลก่อนขายคอมพิวเตอร์,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/วิธีออกจาก-icloud-ก่อนขาย-iphone-หรือ-ipad,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/วิธีออกจากบัญชี-google-ก่อนขายโทรศัพท์-android,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร,C,CONTENT,Article,/บทความ,5,0,6,PASS
+/บริการรับซื้อถึงที่โคราช,B,SELLER-JOURNEY,Seller journey,/วิธีขายสินค้า,3,0,2,PASS
+/บริษัทปิดกิจการขายอุปกรณ์ไอที,B,B2B,B2B/bulk,/รับซื้อสินค้าไอทียกล็อต,5,0,4,PASS
+/พื้นที่/ด่านขุนทด,C,LOCATION,Location,virtual:local-hub,0,0,0,EXEMPT_LOCATION
+/พื้นที่/บัวใหญ่,C,LOCATION,Location,virtual:local-hub,0,0,0,EXEMPT_LOCATION
+/พื้นที่/ปักธงชัย,C,LOCATION,Location,virtual:local-hub,0,0,0,EXEMPT_LOCATION
+/พื้นที่/ปากช่อง,C,LOCATION,Location,virtual:local-hub,0,0,0,EXEMPT_LOCATION
+/พื้นที่/พิมาย,C,LOCATION,Location,virtual:local-hub,0,0,0,EXEMPT_LOCATION
+/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี,C,LOCATION,Location,virtual:local-hub,0,0,0,EXEMPT_LOCATION
+/พื้นที่/สีคิ้ว,C,LOCATION,Location,virtual:local-hub,0,0,0,EXEMPT_LOCATION
+/พื้นที่/สูงเนิน,C,LOCATION,Location,virtual:local-hub,0,0,0,EXEMPT_LOCATION
+/พื้นที่/เมืองนครราชสีมา,A,LOCATION,Location,virtual:local-hub,1,0,0,EXEMPT_LOCATION
+/พื้นที่/โชคชัย,C,LOCATION,Location,virtual:local-hub,0,0,0,EXEMPT_LOCATION
+/พื้นที่/โนนสูง,C,LOCATION,Location,virtual:local-hub,0,0,0,EXEMPT_LOCATION
+/รับซื้อ-apple-watch-โคราช,B,APPLE,Product category,virtual:apple-hub,4,0,4,PASS
+/รับซื้อ-cpu-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,7,0,6,PASS
+/รับซื้อ-imac-mac-mini-โคราช,B,APPLE,Product category,virtual:apple-hub,4,0,4,PASS
+/รับซื้อ-ipad-โคราช,B,APPLE,Product category,virtual:apple-hub,5,0,4,PASS
+/รับซื้อ-iphone-โคราช,A,APPLE,Product category,virtual:apple-hub,7,0,4,PASS
+/รับซื้อ-macbook-โคราช,A,APPLE,Product category,virtual:apple-hub,5,0,4,PASS
+/รับซื้อ-nintendo-switch-โคราช,B,GAMING,Product category,/รับซื้อเครื่องเกม-โคราช,2,0,1,PASS
+/รับซื้อ-playstation-โคราช,B,GAMING,Product category,/รับซื้อเครื่องเกม-โคราช,2,0,1,PASS
+/รับซื้อ-server-network-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,7,0,6,PASS
+/รับซื้อ-ssd-hdd-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,8,0,6,PASS
+/รับซื้อกล้อง-โคราช,A,CAMERA,Product category,/,3,1,3,PASS
+/รับซื้อการ์ดจอ-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,8,0,6,PASS
+/รับซื้อคอมตั้งโต๊ะ-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,7,0,6,PASS
+/รับซื้อคอมบริษัท-โคราช,B,B2B,B2B/bulk,/รับซื้อสินค้าไอทียกล็อต,6,0,4,PASS
+/รับซื้อคอมประกอบ-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,7,0,6,PASS
+/รับซื้อคอมพิวเตอร์-โคราช,A,COMPUTER,Product category,/,18,12,3,PASS
+/รับซื้อคอมเกมมิ่ง-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,7,0,6,PASS
+/รับซื้อคอมเก่า-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,7,0,6,PASS
+/รับซื้อจอมอนิเตอร์-โคราช,C,OTHER-PRODUCT,Product category,/รับซื้อสินค้าไอที,7,0,6,PASS
+/รับซื้อลำโพง-โคราช,C,OTHER-PRODUCT,Product category,/รับซื้อสินค้าไอที,7,0,6,PASS
+/รับซื้อสินค้าไอที,A,OTHER-PRODUCT,Main service hub,/,15,7,4,PASS
+/รับซื้อสินค้าไอทียกล็อต,A,B2B,B2B/bulk,/,11,5,3,PASS
+/รับซื้อสินค้าไอทีไม่มีอุปกรณ์-โคราช,C,OTHER-PRODUCT,Product condition,/รับซื้อสินค้าไอที,8,0,6,PASS
+/รับซื้อสินค้าไอทีไม่ได้ใช้งาน-โคราช,C,OTHER-PRODUCT,Product condition,/รับซื้อสินค้าไอที,7,0,6,PASS
+/รับซื้อหูฟัง-โคราช,C,OTHER-PRODUCT,Product category,/รับซื้อสินค้าไอที,7,0,6,PASS
+/รับซื้ออุปกรณ์-pos-โคราช,C,OTHER-PRODUCT,Product category,/รับซื้อสินค้าไอที,7,0,6,PASS
+/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,7,0,6,PASS
+/รับซื้ออุปกรณ์สำนักงาน,B,B2B,B2B/bulk,/รับซื้อสินค้าไอทียกล็อต,5,0,4,PASS
+/รับซื้อเครื่องปริ้น-โคราช,C,OTHER-PRODUCT,Product category,/รับซื้อสินค้าไอที,7,0,6,PASS
+/รับซื้อเครื่องเกม-โคราช,A,GAMING,Product category,/,5,2,3,PASS
+/รับซื้อเมนบอร์ด-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,7,0,6,PASS
+/รับซื้อเลนส์กล้อง-โคราช,B,CAMERA,Product category,/รับซื้อกล้อง-โคราช,2,0,0,PASS
+/รับซื้อเวิร์กสเตชัน-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,7,0,6,PASS
+/รับซื้อแท็บเล็ต-โคราช,B,MOBILE,Product category,/รับซื้อโทรศัพท์มือถือ-โคราช,3,0,2,PASS
+/รับซื้อแรม-โคราช,B,COMPUTER,Product category,/รับซื้อคอมพิวเตอร์-โคราช,7,0,6,PASS
+/รับซื้อโทรศัพท์-android-โคราช,B,MOBILE,Product category,/รับซื้อโทรศัพท์มือถือ-โคราช,8,4,2,PASS
+/รับซื้อโทรศัพท์-oppo-โคราช,B,MOBILE,Product category,/รับซื้อโทรศัพท์-android-โคราช,4,0,3,PASS
+/รับซื้อโทรศัพท์-samsung-โคราช,B,MOBILE,Product category,/รับซื้อโทรศัพท์-android-โคราช,4,0,3,PASS
+/รับซื้อโทรศัพท์-vivo-โคราช,B,MOBILE,Product category,/รับซื้อโทรศัพท์-android-โคราช,4,0,3,PASS
+/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช,B,MOBILE,Product category,/รับซื้อโทรศัพท์-android-โคราช,4,0,3,PASS
+/รับซื้อโทรศัพท์จอแตก-โคราช,B,MOBILE,Product condition,/รับซื้อโทรศัพท์มือถือ-โคราช,3,0,2,PASS
+/รับซื้อโทรศัพท์มือถือ-โคราช,A,MOBILE,Product category,/,12,3,3,PASS
+/รับซื้อโน๊ตบุ๊ค-โคราช,A,NOTEBOOK,Product category,/,12,4,3,PASS
+/รับซื้อโน๊ตบุ๊คจอแตก-โคราช,B,NOTEBOOK,Product condition,/รับซื้อโน๊ตบุ๊ค-โคราช,4,0,3,PASS
+/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช,B,NOTEBOOK,Product condition,/รับซื้อโน๊ตบุ๊ค-โคราช,4,0,3,PASS
+/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช,B,NOTEBOOK,Product condition,/รับซื้อโน๊ตบุ๊ค-โคราช,5,0,3,PASS
+/รับซื้อโน๊ตบุ๊คเสีย-โคราช,B,NOTEBOOK,Product condition,/รับซื้อโน๊ตบุ๊ค-โคราช,4,0,3,PASS
+/วิธีขายสินค้า,A,SELLER-JOURNEY,Seller journey,/,8,3,3,PASS
+/วิธีประเมินราคา,B,SELLER-JOURNEY,Seller journey,/วิธีขายสินค้า,9,0,2,PASS
+/ส่งสินค้าไอทีมาประเมิน,B,SELLER-JOURNEY,Seller journey,/วิธีขายสินค้า,6,0,2,PASS
+/เกี่ยวกับเรา,B,TRUST,About,/,0,0,0,EXEMPT_TRUST

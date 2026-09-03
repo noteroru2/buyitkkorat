@@ -1,0 +1,30 @@
+WINNER IT KORAT — UX/UI REDESIGN QA
+===================================
+
+Scope
+- Shared visual system redesigned across all page types.
+- No intentional URL/index/canonical/sitemap expansion.
+- LINE CTA promoted to persistent primary action.
+
+Static architecture validation
+- Architecture validators: 10/10 PASS
+- Live: 99
+- Indexable: 98
+- Noindex: 1
+- Sitemap target: 98
+- Round 1 production/observation gate validator: PASS
+- Round 2 locked: true
+
+UX source checks
+- Header LINE CTA: present
+- Mobile bottom LINE CTA: present
+- Desktop floating LINE CTA: present
+- Hero LINE CTA: present
+- Long-content desktop sticky contact sidebar: Service / Area / Article / Trust layouts
+- Desktop nav dropdown: present
+- Mobile nav primary LINE action: present
+- Homepage service-directory visual collapse: present
+
+Build attestation
+- Fresh Astro build after this UX/UI change: NOT ATTESTED in sandbox because npm dependency installation could not complete in the current runtime.
+- Owner must run npm ci / validate / build / crawl locally before deploy.

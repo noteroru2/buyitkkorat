@@ -1,0 +1,27 @@
+{
+  "wave": "INDEX350_W4",
+  "title": "INDEX 350 — W4 Production Release Gate",
+  "sourceSurface": {
+    "live": 289,
+    "indexable": 288,
+    "noindex": 1,
+    "sitemap": 288
+  },
+  "cohort": {
+    "total": 50,
+    "series": 18,
+    "model": 7,
+    "condition": 25,
+    "parentGroups": 30
+  },
+  "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+  "realW3PerformanceAttested": false,
+  "staticValidation": "PASS",
+  "syntheticBuiltSurface": "PASS",
+  "syntheticProductionVerification": "PASS",
+  "realBuild": "UNATTESTED",
+  "gitSha": "UNATTESTED",
+  "productionDeployment": "UNATTESTED",
+  "w5": "LOCKED",
+  "automaticW5": false
+}

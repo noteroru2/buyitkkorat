@@ -1,0 +1,43 @@
+$ node scripts/validate-index-350-expansion-plan.mjs
+INDEX 350+ EXPANSION PLAN VALIDATION
+Current indexable: 138
+W1 released: 40 (Brand 24 + Series 16)
+Remaining HOLD: 222
+Target indexable: 360
+Buffer above 350: 10
+Automatic publishing: false
+VERDICT: PASS
+
+
+$ node scripts/validate-index-350-w1.mjs
+INDEX 350 W1 — BRAND & SERIES RELEASE VALIDATION
+Live/indexable/noindex: 139/138/1
+Released: 40 (24 Brand + 16 Series)
+Content files checked: 40
+Sitemap target: 138
+W2 state: LOCKED
+VERDICT: PASS
+
+
+$ node scripts/run-architecture-quality-gate.mjs
+ARCHITECTURE BATCH 10 — STATIC QUALITY GATE
+Validators: 10/10 passed
+Live/indexable/noindex: 139/138/1
+Unreleased candidates governed: 222
+Static architecture gate: PASS
+Production integration gate: UNATTESTED_IN_OVERLAY
+Expansion decision: CONDITIONALLY_READY
+Report: docs/architecture/architecture-quality-gate-report.json
+VERDICT: PASS_WITH_PRODUCTION_ATTESTATION_REQUIRED
+
+
+$ node scripts/validate-expansion-round-1-production-gate.mjs
+EXPANSION ROUND 1 — PRODUCTION / OBSERVATION GATE VALIDATION
+Live/indexable: 139/138
+Sitemap target: 138
+Released URLs governed: 4
+Minimum finalized GSC days: 7
+Round 2 locked: true
+Automatic deploy: false
+Automatic Round 2: false
+VERDICT: PASS

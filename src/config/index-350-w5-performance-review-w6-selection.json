@@ -1,0 +1,446 @@
+{
+  "meta": {
+    "title": "INDEX 350 — W5 Performance Review & W6 Final Candidate Selection",
+    "currentLive": 329,
+    "currentIndexable": 328,
+    "currentNoindex": 1,
+    "targetFloorIndexable": 350,
+    "plannedFinalIndexable": 360,
+    "safeFinalIndexableWithoutCanon": 359,
+    "w6ReleaseCap": 32,
+    "remainingHold": 32,
+    "automaticPublishing": false,
+    "automaticW6Release": false,
+    "realW5PerformanceDataProvidedInPackage": false,
+    "currentDecision": "W6_SAFE_RELEASED_MANUAL",
+    "manualApprovalRequired": false,
+    "policy": "Historical W5 review/W6 selection record. The user explicitly approved the safe 31-page W6 source release; no real W5 performance data is claimed and Canon EOS R remains unresolved."
+  },
+  "requiredInputs": {
+    "observationReport": "docs/architecture/index350-w5-observation-report.json",
+    "observationPages": "docs/architecture/index350-w5-observation-pages.csv",
+    "queryOwnership": "docs/architecture/index350-w5-query-ownership.csv"
+  },
+  "optionalInputs": {
+    "canonOwnershipResolution": "docs/architecture/index350-canon-eos-r-ownership-resolution.json",
+    "canonOwnershipResolutionTemplate": "docs/architecture/index350-canon-eos-r-ownership-resolution.template.json"
+  },
+  "states": [
+    "WAIT_FOR_REAL_W5_OBSERVATION_DATA",
+    "W5_REVIEW_HOLD",
+    "W6_CANDIDATE_REVIEW_READY",
+    "W6_SAFE_SELECTION_READY_FOR_MANUAL_APPROVAL",
+    "W6_FULL_SELECTION_READY_FOR_MANUAL_APPROVAL",
+    "W6_SELECTION_INCOMPLETE_FLOOR_NOT_MET"
+  ],
+  "scoreWeights": {
+    "staticPriorityP1": 20,
+    "parentAlreadyLive": 20,
+    "localFit": 18,
+    "guideFit": 22,
+    "w5ReviewReady": 10,
+    "w5LocalTypeHealthy": 12,
+    "w5LocationClusterHealthy": 10,
+    "w5B2BTypeHealthyGuideBoost": 4,
+    "parentNotLivePenalty": -100,
+    "staticSafetyRiskPenalty": -100
+  },
+  "finalComposition": {
+    "safe": {
+      "F_LOCAL": 13,
+      "G_GUIDE": 18,
+      "total": 31,
+      "projectedIndexable": 359
+    },
+    "fullWithResolvedCanon": {
+      "C_MODEL": 1,
+      "F_LOCAL": 13,
+      "G_GUIDE": 18,
+      "total": 32,
+      "projectedIndexable": 360
+    },
+    "minimumPagesToReach350": 22,
+    "currentIndexable": 328
+  },
+  "selectionRules": [
+    "Only the 32 HOLD_PLANNED candidates remaining after W5 are in the final pool.",
+    "Real W5 Observation state ROUND6_REVIEW_ELIGIBLE is required before SELECT decisions are emitted.",
+    "Guide candidates require the live /บทความ parent and remain informational-intent owners that bridge to money pages.",
+    "Local candidates require the live /พื้นที่ parent plus HEALTHY W5 LOCAL and LOCATION review signals; they remain service areas, never fake branches.",
+    "Canon EOS R model is not part of the safe selection. It requires a separate explicit ownership resolution before selection.",
+    "The safe 31-page plan projects 359 indexable pages and clears the 350 floor without Canon.",
+    "No automatic W6 release, merge, redirect, noindex, canonical switch, sitemap addition, or source generation occurs in this batch.",
+    "Similarity alone never authorizes destructive SEO action.",
+    "Brand×District, Series×District, Model×District and Model×Condition Cartesian expansions remain prohibited."
+  ],
+  "safeProvisionalSelection": [
+    {
+      "rank": 1,
+      "url": "/พื้นที่/เทพารักษ์",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 2,
+      "url": "/พื้นที่/เมืองยาง",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 3,
+      "url": "/พื้นที่/พระทองคำ",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 4,
+      "url": "/พื้นที่/ลำทะเมนชัย",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 5,
+      "url": "/พื้นที่/บัวลาย",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 6,
+      "url": "/พื้นที่/สีดา",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 7,
+      "url": "/พื้นที่/เฉลิมพระเกียรติ",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 8,
+      "url": "/พื้นที่/จอหอ",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 9,
+      "url": "/พื้นที่/หัวทะเล",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 10,
+      "url": "/พื้นที่/สุรนารี",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 11,
+      "url": "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 12,
+      "url": "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 13,
+      "url": "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 14,
+      "url": "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 15,
+      "url": "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 16,
+      "url": "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 17,
+      "url": "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 18,
+      "url": "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 19,
+      "url": "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 20,
+      "url": "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 21,
+      "url": "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 22,
+      "url": "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 23,
+      "url": "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 24,
+      "url": "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 25,
+      "url": "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 26,
+      "url": "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 27,
+      "url": "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 28,
+      "url": "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 29,
+      "url": "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 30,
+      "url": "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    },
+    {
+      "rank": 31,
+      "url": "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "RELEASED_W6_MANUAL_SAFE",
+      "reason": "Released in W6 Safe Final by explicit manual approval override; no real W5 performance evidence claimed."
+    }
+  ],
+  "ownershipRiskCandidate": {
+    "url": "/รับซื้อ-canon-eos-r-โคราช",
+    "group": "C_MODEL",
+    "nodeType": "MODEL",
+    "parent": "/รับซื้อกล้อง-canon-eos-r-โคราช",
+    "cluster": "CAMERA",
+    "state": "STATIC_OWNERSHIP_REVIEW_REQUIRED",
+    "reason": "Model wording is unusually close to the live Canon EOS R series owner. Do not release without explicit query-ownership resolution.",
+    "resolutionRequired": true
+  },
+  "finalBuffer": {
+    "safeProjectedIndexable": 359,
+    "fullProjectedIndexable": 360,
+    "targetFloor": 350,
+    "bufferShortfallWithoutCanon": 1,
+    "policy": "359 is acceptable because it exceeds the 350 floor. Do not trade ownership safety for the final one-page buffer."
+  },
+  "releaseHistory": {
+    "wave": "W6_SAFE_FINAL",
+    "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+    "released": 31,
+    "local": 13,
+    "guide": 18,
+    "projectedAndNowSourceIndexable": 359,
+    "canonReleased": false,
+    "canonState": "STATIC_OWNERSHIP_REVIEW_REQUIRED"
+  }
+}

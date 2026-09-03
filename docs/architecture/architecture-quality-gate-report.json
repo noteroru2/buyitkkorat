@@ -1,0 +1,76 @@
+{
+  "batch": "ARCHITECTURE BATCH 10",
+  "generatedAt": "2026-09-02T16:44:10.504Z",
+  "staticArchitectureGate": "PASS",
+  "productionIntegrationGate": "UNATTESTED_IN_OVERLAY",
+  "expansionDecision": "CONDITIONALLY_READY",
+  "reason": "Static architecture is coherent, but real source integration/build/crawl and evidence gates must still pass.",
+  "counts": {
+    "live": 360,
+    "indexable": 359,
+    "noindex": 1,
+    "unreleasedCandidates": 1
+  },
+  "validators": [
+    {
+      "script": "validate-site-architecture.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "verdict": "PASS"
+    },
+    {
+      "script": "validate-core-hub-architecture.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "verdict": "PASS"
+    },
+    {
+      "script": "validate-parent-child-runtime.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "verdict": "PASS"
+    },
+    {
+      "script": "validate-internal-link-graph.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "verdict": "PASS"
+    },
+    {
+      "script": "validate-cannibalization-triage.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "verdict": "PASS"
+    },
+    {
+      "script": "validate-local-area-architecture.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "verdict": "PASS"
+    },
+    {
+      "script": "validate-brand-model-series-foundation.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "verdict": "PASS"
+    },
+    {
+      "script": "validate-guide-authority-architecture.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "verdict": "PASS"
+    },
+    {
+      "script": "validate-navigation-architecture.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "verdict": "PASS_WITH_SOURCE_INTEGRATION_WARNING"
+    },
+    {
+      "script": "validate-seo-index-control.mjs",
+      "passed": true,
+      "exitCode": 0,
+      "verdict": "PASS_WITH_SOURCE_INTEGRATION_WARNING"
+    }
+  ]
+}

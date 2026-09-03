@@ -1,0 +1,8 @@
+ARCHITECTURE BATCH 4 — CANNIBALIZATION TRIAGE VALIDATION
+Live routes: 89
+Indexable: 88
+Triage groups: 16
+GSC-gated groups: 13
+Destructive candidates currently proposed: 0
+Automatic execution: false
+VERDICT: PASS

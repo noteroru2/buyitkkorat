@@ -1,0 +1,15 @@
+{
+  "batch": "ARCHITECTURE BATCH 10",
+  "staticArchitectureGate": "PASS",
+  "productionIntegrationGate": "UNATTESTED_IN_OVERLAY",
+  "overlayExpansionDecision": "CONDITIONALLY_READY",
+  "syntheticCrawlerNegativeTest": "PASS_CAUGHT_3_ORPHANS",
+  "syntheticCrawlerCorrectedTest": "PASS",
+  "syntheticFinalizer": "GO_100_OF_100",
+  "realProductionDecision": "PENDING_REAL_REPO_BUILD_CRAWL_AND_EVIDENCE",
+  "liveRoutes": 90,
+  "indexable": 89,
+  "noindex": 1,
+  "unreleasedCandidates": 64,
+  "initialReleaseCap": 6
+}

@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-09-03T05:35:24.935Z",
+  "baseline": {
+    "live": 360,
+    "indexable": 359,
+    "noindex": 1,
+    "sitemap": 359,
+    "remainingHold": 1
+  },
+  "contentFilesChecked": 349,
+  "minimumBodyCharactersWithoutWhitespace": 1358,
+  "rawVisibleRouteLines": 0,
+  "emptyHeadings": 0,
+  "imagePolicy": "OPTIONAL_RELEVANT_ALT_REQUIRED_WHEN_PRESENT",
+  "visualPlacement": {
+    "homepageGenericCover": false,
+    "serviceGenericCover": false,
+    "areaGenericCover": false,
+    "trustLegalGenericImagery": false,
+    "articleCompactVisual": true
+  },
+  "findings": [],
+  "errors": [],
+  "verdict": "PASS"
+}

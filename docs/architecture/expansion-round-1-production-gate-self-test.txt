@@ -1,0 +1,61 @@
+EXPANSION ROUND 1 — PRODUCTION / OBSERVATION GATE SELF TEST
+
+$ gate validator
+EXPANSION ROUND 1 — PRODUCTION / OBSERVATION GATE VALIDATION
+Live/indexable: 94/93
+Sitemap target: 93
+Released URLs governed: 4
+Minimum finalized GSC days: 7
+Round 2 locked: true
+Automatic deploy: false
+Automatic Round 2: false
+VERDICT: PASS
+
+$ overlay predeploy expected HOLD
+EXPANSION ROUND 1 — PREDEPLOY GATE
+State: PREDEPLOY_PENDING
+Production release allowed: false
+Static validators: PASS
+Build: PACKAGE_JSON_NOT_FOUND
+Crawl: BUILD_NOT_ATTESTED
+Git HEAD: UNATTESTED
+Blockers: REAL_SOURCE_BUILD_NOT_RUN, REAL_BUILD_CRAWL_NOT_RUN
+Report: docs/architecture/expansion-round-1-predeploy-report.json
+VERDICT: HOLD
+
+$ synthetic production verify
+EXPANSION ROUND 1 — PRODUCTION VERIFICATION
+Origin: http://127.0.0.1:8765
+Released routes passed: 4/4
+Parent-child checks passed: 3/3
+Sitemap: 93/93 — PASS
+State: PRODUCTION_VERIFIED
+Release date: 2026-09-02
+Round 2: LOCKED
+Blockers: NONE
+Report: docs/architecture/expansion-round-1-production-verification.json
+VERDICT: PASS
+
+$ observation at 6 finalized days
+EXPANSION ROUND 1 — OBSERVATION GATE
+Release date: 2026-09-02
+Latest finalized GSC date: 2026-09-08
+Finalized days after release: 6
+New pages with impressions: 1/4
+State: WAIT_FOR_FINALIZED_GSC
+Round 2: LOCKED
+Automatic Round 2: false
+Report: docs/architecture/expansion-round-1-observation-status.json
+VERDICT: WAIT_FOR_MORE_DATA
+
+$ observation at 7 finalized days
+EXPANSION ROUND 1 — OBSERVATION GATE
+Release date: 2026-09-02
+Latest finalized GSC date: 2026-09-09
+Finalized days after release: 7
+New pages with impressions: 2/4
+State: ROUND2_REVIEW_ELIGIBLE
+Round 2: MANUAL_REVIEW_ELIGIBLE
+Automatic Round 2: false
+Report: docs/architecture/observation-seven-days.json
+VERDICT: REVIEW_ELIGIBLE

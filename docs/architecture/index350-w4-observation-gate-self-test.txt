@@ -1,0 +1,9 @@
+day6_wait => WAIT_FOR_FINALIZED_GSC
+day7_low => HOLD_LOW_VISIBILITY
+day7_type_skew => HOLD_LOW_VISIBILITY
+day7_cluster_skew => HOLD_LOW_VISIBILITY
+day7_pending_index => REVIEW_PENDING_INDEXATION
+day7_index_type_skew => REVIEW_PENDING_INDEXATION
+day7_index_cluster_skew => REVIEW_PENDING_INDEXATION
+day7_ownership_review => OWNERSHIP_REVIEW_REQUIRED
+day7_eligible => ROUND5_REVIEW_ELIGIBLE

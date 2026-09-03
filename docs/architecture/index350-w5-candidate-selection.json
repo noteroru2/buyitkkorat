@@ -1,0 +1,910 @@
+{
+  "title": "INDEX 350 — W5 Candidate Selection",
+  "generatedAt": "2026-09-02T14:35:54.433Z",
+  "state": "WAIT_FOR_REAL_W4_REVIEW",
+  "sourceReviewState": "WAIT_FOR_REAL_W4_OBSERVATION_DATA",
+  "automaticRelease": false,
+  "w5Locked": true,
+  "candidatePool": 53,
+  "eligiblePool": 53,
+  "compositionTarget": {
+    "softTargets": {
+      "D_CONDITION": 5,
+      "E_B2B": 20,
+      "F_LOCAL": 15
+    },
+    "minimums": {
+      "D_CONDITION": 5,
+      "E_B2B": 20,
+      "F_LOCAL": 15
+    },
+    "total": 40,
+    "candidatePool": 53,
+    "note": "W5 closes all remaining Condition and B2B candidates, plus 15 district-first Local pages. Exact composition is required for selection-ready status; do not weaken quality gates to force 40."
+  },
+  "selectedCount": 0,
+  "groupCounts": {},
+  "minimaSatisfied": false,
+  "selected": [],
+  "reserve": [
+    {
+      "url": "/รับซื้อคอมโรงเรียน-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมมหาวิทยาลัย-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมโรงงาน-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมโรงแรม-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมคลินิก-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมสำนักงานบัญชี-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมบริษัทก่อสร้าง-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมบริษัทขนส่ง-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมร้านเกม-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอม-call-center-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อไอที-coworking-space-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมหมดสัญญาเช่า-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-it-asset-disposition-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช",
+      "group": "E_B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "score": 69,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "B2B_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ครบุรี",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เสิงสาง",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/คง",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/บ้านเหลื่อม",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/จักราช",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/โนนไทย",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ขามสะแกแสง",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ประทาย",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ห้วยแถลง",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ชุมพวง",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ขามทะเลสอ",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/หนองบุญมาก",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/แก้งสนามนาง",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/โนนแดง",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/วังน้ำเขียว",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 67,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช",
+      "group": "D_CONDITION",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "cluster": "NOTEBOOK",
+      "score": 65,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "CONDITION_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช",
+      "group": "D_CONDITION",
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "cluster": "MOBILE",
+      "score": 65,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "CONDITION_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช",
+      "group": "D_CONDITION",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "cluster": "MOBILE",
+      "score": 65,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "CONDITION_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช",
+      "group": "D_CONDITION",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "cluster": "CAMERA",
+      "score": 65,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "CONDITION_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช",
+      "group": "D_CONDITION",
+      "parent": "/รับซื้อเครื่องเกม-โคราช",
+      "cluster": "GAMING",
+      "score": 65,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "CONDITION_FIT",
+        "PROVISIONAL_PREFERENCE"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เทพารักษ์",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เมืองยาง",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/พระทองคำ",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ลำทะเมนชัย",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/บัวลาย",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/สีดา",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เฉลิมพระเกียรติ",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/จอหอ",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/หัวทะเล",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/สุรนารี",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    },
+    {
+      "url": "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "score": 60,
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT"
+      ]
+    }
+  ],
+  "blocked": [],
+  "deferredFinalWave": [
+    {
+      "url": "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/รับซื้อ-canon-eos-r-โคราช",
+      "group": "C_MODEL",
+      "nodeType": "MODEL",
+      "parent": "/รับซื้อกล้อง-canon-eos-r-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "STATIC_OWNERSHIP_REVIEW_REQUIRED"
+    }
+  ],
+  "finalBufferRisk": {
+    "remainingHoldAfterHypotheticalW5": 32,
+    "remainingSafeWithoutCanonModel": 31,
+    "projectedSafeFinalIndexableWithoutCanonModel": 359,
+    "targetFloor": 350,
+    "targetWithBuffer": 360,
+    "riskUrl": "/รับซื้อ-canon-eos-r-โคราช",
+    "policy": "Do not release the Canon EOS R model merely to reach 360. Resolve query ownership manually or qualify one replacement route; 359 still exceeds the 350 floor."
+  },
+  "note": "W5 remains locked. Do not release until selection is complete and manually approved."
+}

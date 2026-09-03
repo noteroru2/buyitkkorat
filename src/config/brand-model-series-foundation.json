@@ -1,0 +1,1819 @@
+{
+  "meta": {
+    "batch": "ARCHITECTURE BATCH 6 — Brand / Model / Series Architecture Foundation",
+    "site": "รับซื้อไอทีโคราช.com",
+    "liveRouteBaselineAtStart": 90,
+    "indexableBaselineAtStart": 89,
+    "newLiveRoutes": 0,
+    "candidateBrandNodes": 0,
+    "candidateSeriesNodes": 9,
+    "candidateModelNodes": 0,
+    "foundationState": "INDEX350_W3_ACTIVE",
+    "automaticPublishing": false,
+    "policy": "Core Hub → Brand → Series → Model. W2 releases 30 Series and 20 exact Model pages under explicit manual approval; no location cross-product.",
+    "latestReleaseRound": "INDEX350_W2",
+    "releasedBrandNodes": 26,
+    "releasedSeriesNodes": 48,
+    "releasedModelNodes": 20,
+    "currentWave": "INDEX350_W4"
+  },
+  "taxonomy": {
+    "levels": [
+      "HUB",
+      "BRAND",
+      "SERIES",
+      "MODEL"
+    ],
+    "ownershipRules": [
+      "BRAND must belong to one live category/family hub.",
+      "SERIES must belong to one live or approved BRAND/PLATFORM/FAMILY parent.",
+      "MODEL must belong to one SERIES unless a documented manufacturer taxonomy makes a direct FAMILY parent more accurate.",
+      "A candidate may have only one primary SEO owner.",
+      "Local area is a separate axis and must never be multiplied into Brand/Series/Model routes.",
+      "Condition/problem intent is a separate axis; only create a model-condition page when independent demand and unique content justify it."
+    ]
+  },
+  "liveAnchors": [
+    {
+      "id": "anchor:notebook",
+      "url": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "nodeType": "HUB",
+      "cluster": "NOTEBOOK",
+      "label": "โน๊ตบุ๊ค",
+      "parent": "/"
+    },
+    {
+      "id": "anchor:android",
+      "url": "/รับซื้อโทรศัพท์-android-โคราช",
+      "nodeType": "HUB",
+      "cluster": "MOBILE",
+      "label": "โทรศัพท์ Android",
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช"
+    },
+    {
+      "id": "anchor:samsung",
+      "url": "/รับซื้อโทรศัพท์-samsung-โคราช",
+      "nodeType": "BRAND",
+      "cluster": "MOBILE",
+      "label": "Samsung",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช"
+    },
+    {
+      "id": "anchor:oppo",
+      "url": "/รับซื้อโทรศัพท์-oppo-โคราช",
+      "nodeType": "BRAND",
+      "cluster": "MOBILE",
+      "label": "OPPO",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช"
+    },
+    {
+      "id": "anchor:vivo",
+      "url": "/รับซื้อโทรศัพท์-vivo-โคราช",
+      "nodeType": "BRAND",
+      "cluster": "MOBILE",
+      "label": "vivo",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช"
+    },
+    {
+      "id": "anchor:xiaomi",
+      "url": "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช",
+      "nodeType": "BRAND_GROUP",
+      "cluster": "MOBILE",
+      "label": "Xiaomi / Redmi / POCO",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช"
+    },
+    {
+      "id": "anchor:iphone",
+      "url": "/รับซื้อ-iphone-โคราช",
+      "nodeType": "FAMILY",
+      "cluster": "APPLE",
+      "label": "iPhone",
+      "parent": "virtual:apple-hub"
+    },
+    {
+      "id": "anchor:ipad",
+      "url": "/รับซื้อ-ipad-โคราช",
+      "nodeType": "FAMILY",
+      "cluster": "APPLE",
+      "label": "iPad",
+      "parent": "virtual:apple-hub"
+    },
+    {
+      "id": "anchor:macbook",
+      "url": "/รับซื้อ-macbook-โคราช",
+      "nodeType": "FAMILY",
+      "cluster": "APPLE",
+      "label": "MacBook",
+      "parent": "virtual:apple-hub"
+    },
+    {
+      "id": "anchor:camera",
+      "url": "/รับซื้อกล้อง-โคราช",
+      "nodeType": "HUB",
+      "cluster": "CAMERA",
+      "label": "กล้อง",
+      "parent": "/"
+    },
+    {
+      "id": "anchor:playstation",
+      "url": "/รับซื้อ-playstation-โคราช",
+      "nodeType": "PLATFORM",
+      "cluster": "GAMING",
+      "label": "PlayStation",
+      "parent": "/รับซื้อเครื่องเกม-โคราช"
+    },
+    {
+      "id": "anchor:nintendo-switch",
+      "url": "/รับซื้อ-nintendo-switch-โคราช",
+      "nodeType": "PLATFORM",
+      "cluster": "GAMING",
+      "label": "Nintendo Switch",
+      "parent": "/รับซื้อเครื่องเกม-โคราช"
+    }
+  ],
+  "candidateBrands": [],
+  "candidateSeries": [
+    {
+      "id": "series:notebook:hp:business",
+      "nodeType": "SERIES",
+      "label": "ProBook / EliteBook",
+      "cluster": "NOTEBOOK",
+      "parent": "brand:notebook:hp",
+      "candidateUrl": "/รับซื้อโน๊ตบุ๊ค-hp-business-โคราช",
+      "priorityBand": 2,
+      "releaseState": "HOLD_FOUNDATION",
+      "evidenceState": "UNASSESSED",
+      "contentState": "UNASSESSED"
+    },
+    {
+      "id": "series:mobile:xiaomi:redmi",
+      "nodeType": "SERIES",
+      "label": "Redmi Series",
+      "cluster": "MOBILE",
+      "parent": "anchor:xiaomi",
+      "candidateUrl": "/รับซื้อ-redmi-series-โคราช",
+      "priorityBand": 2,
+      "releaseState": "HOLD_FOUNDATION",
+      "evidenceState": "UNASSESSED",
+      "contentState": "UNASSESSED"
+    },
+    {
+      "id": "series:mobile:xiaomi:poco",
+      "nodeType": "SERIES",
+      "label": "POCO Series",
+      "cluster": "MOBILE",
+      "parent": "anchor:xiaomi",
+      "candidateUrl": "/รับซื้อ-poco-series-โคราช",
+      "priorityBand": 2,
+      "releaseState": "HOLD_FOUNDATION",
+      "evidenceState": "UNASSESSED",
+      "contentState": "UNASSESSED"
+    },
+    {
+      "id": "series:camera:sony:alpha",
+      "nodeType": "SERIES",
+      "label": "Alpha / α",
+      "cluster": "CAMERA",
+      "parent": "brand:camera:sony",
+      "candidateUrl": "/รับซื้อกล้อง-sony-alpha-โคราช",
+      "priorityBand": 1,
+      "releaseState": "HOLD_FOUNDATION",
+      "evidenceState": "UNASSESSED",
+      "contentState": "UNASSESSED"
+    },
+    {
+      "id": "series:camera:nikon:z",
+      "nodeType": "SERIES",
+      "label": "Z Series",
+      "cluster": "CAMERA",
+      "parent": "brand:camera:nikon",
+      "candidateUrl": "/รับซื้อกล้อง-nikon-z-series-โคราช",
+      "priorityBand": 2,
+      "releaseState": "HOLD_FOUNDATION",
+      "evidenceState": "UNASSESSED",
+      "contentState": "UNASSESSED"
+    },
+    {
+      "id": "series:gaming:playstation:ps5",
+      "nodeType": "SERIES",
+      "label": "PlayStation 5 family",
+      "cluster": "GAMING",
+      "parent": "anchor:playstation",
+      "candidateUrl": "/รับซื้อ-playstation-5-โคราช",
+      "priorityBand": 1,
+      "releaseState": "HOLD_FOUNDATION",
+      "evidenceState": "UNASSESSED",
+      "contentState": "UNASSESSED"
+    },
+    {
+      "id": "series:gaming:playstation:ps4",
+      "nodeType": "SERIES",
+      "label": "PlayStation 4 family",
+      "cluster": "GAMING",
+      "parent": "anchor:playstation",
+      "candidateUrl": "/รับซื้อ-playstation-4-โคราช",
+      "priorityBand": 2,
+      "releaseState": "HOLD_FOUNDATION",
+      "evidenceState": "UNASSESSED",
+      "contentState": "UNASSESSED"
+    }
+  ],
+  "modelPolicy": {
+    "seededModelCandidates": [],
+    "candidateUrlPatterns": [
+      {
+        "family": "NOTEBOOK",
+        "pattern": "/รับซื้อโน๊ตบุ๊ค-{brand}-{series}-{exact-model-slug}-โคราช"
+      },
+      {
+        "family": "MOBILE",
+        "pattern": "/รับซื้อ-{brand}-{series}-{exact-model-slug}-โคราช"
+      },
+      {
+        "family": "IPHONE",
+        "parent": "/รับซื้อ-iphone-โคราช",
+        "pattern": "/รับซื้อ-iphone-{exact-model-slug}-โคราช"
+      },
+      {
+        "family": "IPAD",
+        "parent": "/รับซื้อ-ipad-โคราช",
+        "pattern": "/รับซื้อ-ipad-{exact-model-slug}-โคราช"
+      },
+      {
+        "family": "MACBOOK",
+        "parent": "/รับซื้อ-macbook-โคราช",
+        "pattern": "/รับซื้อ-macbook-{exact-model-slug}-โคราช"
+      },
+      {
+        "family": "CAMERA",
+        "pattern": "/รับซื้อกล้อง-{brand}-{series}-{exact-model-slug}-โคราช"
+      },
+      {
+        "family": "GAMING",
+        "pattern": "/รับซื้อ-{platform}-{exact-model-slug}-โคราช"
+      }
+    ],
+    "hardRule": "Do not seed exact model pages in the foundation. Exact model identity must be verified before a MODEL candidate is added."
+  },
+  "releaseGates": {
+    "BRAND": {
+      "required": [
+        "parent_is_live",
+        "brand_identity_verified",
+        "distinct_brand_valuation_factors_at_least_3",
+        "content_uniqueness_review_pass",
+        "internal_link_plan_pass",
+        "canonical_and_query_owner_review_pass"
+      ],
+      "demandEvidence": "At least one first-party or search-demand evidence source; do not invent metrics.",
+      "minimumContentContract": [
+        "brand-specific valuation factors",
+        "brand-specific accepted product families",
+        "condition/testing guidance relevant to the brand",
+        "local conversion path without duplicating the parent hub"
+      ]
+    },
+    "SERIES": {
+      "required": [
+        "parent_brand_or_platform_is_live",
+        "series_identity_verified",
+        "series_specific_value_or_condition_factors",
+        "content_uniqueness_review_pass",
+        "query_overlap_review_against_brand_parent",
+        "internal_link_plan_pass"
+      ],
+      "demandEvidence": "Prefer GSC query→page, lead logs, transaction history, or inventory history.",
+      "minimumContentContract": [
+        "series-specific valuation factors",
+        "clear differentiation from brand page",
+        "examples of products/models in the series",
+        "seller questions unique to the series"
+      ]
+    },
+    "MODEL": {
+      "required": [
+        "exact_model_identity_verified",
+        "manufacturer_or_reliable_reference_verified",
+        "parent_series_or_family_is_live",
+        "model_specific_valuation_factors",
+        "model_specific_condition_or_configuration_notes",
+        "content_uniqueness_review_pass",
+        "query_owner_review_pass",
+        "internal_link_plan_pass"
+      ],
+      "demandEvidence": "Require concrete search or first-party business evidence before release.",
+      "minimumContentContract": [
+        "exact model naming and aliases",
+        "configuration/value variables",
+        "condition-specific valuation notes",
+        "model-specific FAQ or seller checks"
+      ],
+      "prohibited": [
+        "generic template with only model name swapped",
+        "invented market price",
+        "unverified specifications",
+        "model×district pages",
+        "automatic generation from a product catalog alone"
+      ]
+    }
+  },
+  "expansionAxesPolicy": {
+    "allowedIndependentAxes": [
+      "PRODUCT",
+      "BRAND",
+      "SERIES",
+      "MODEL",
+      "CONDITION",
+      "LOCATION",
+      "GUIDE"
+    ],
+    "prohibitedCrossProducts": [
+      "BRAND×LOCATION",
+      "SERIES×LOCATION",
+      "MODEL×LOCATION",
+      "MODEL×CONDITION at scale without independent demand"
+    ],
+    "reason": "Prevent thin/doorway page multiplication and keep one clear query owner per intent."
+  },
+  "releaseWorkflow": [
+    "CANDIDATE",
+    "EVIDENCE_READY",
+    "CONTENT_READY",
+    "OWNERSHIP_REVIEW",
+    "RELEASE_APPROVED",
+    "LIVE",
+    "OBSERVE_GSC"
+  ],
+  "releasedNodes": [
+    {
+      "id": "brand:notebook:asus",
+      "nodeType": "BRAND",
+      "label": "รับซื้อโน๊ตบุ๊ค ASUS โคราช",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "EXPANSION_RELEASE_ROUND_1",
+      "evidence": [
+        "FIRST_PARTY_ENQUIRY",
+        "MANUFACTURER_IDENTITY_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:asus:rog",
+      "nodeType": "SERIES",
+      "label": "รับซื้อ ASUS ROG โคราช",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "EXPANSION_RELEASE_ROUND_1",
+      "evidence": [
+        "FIRST_PARTY_ENQUIRY",
+        "MANUFACTURER_SERIES_VERIFIED"
+      ]
+    },
+    {
+      "id": "brand:notebook:dell",
+      "nodeType": "BRAND",
+      "label": "รับซื้อโน๊ตบุ๊ค Dell โคราช",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "EXPANSION_RELEASE_ROUND_1",
+      "evidence": [
+        "FIRST_PARTY_CORPORATE_ENQUIRY",
+        "MANUFACTURER_IDENTITY_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:dell:latitude",
+      "nodeType": "SERIES",
+      "label": "รับซื้อ Dell Latitude โคราช",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "EXPANSION_RELEASE_ROUND_1",
+      "evidence": [
+        "FIRST_PARTY_CORPORATE_ENQUIRY",
+        "DELL_LATITUDE_7440_VERIFIED"
+      ]
+    },
+    {
+      "id": "brand:notebook:acer",
+      "nodeType": "BRAND",
+      "label": "Acer",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "brand:notebook:lenovo",
+      "nodeType": "BRAND",
+      "label": "Lenovo",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "brand:notebook:hp",
+      "nodeType": "BRAND",
+      "label": "HP",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "brand:notebook:msi",
+      "nodeType": "BRAND",
+      "label": "MSI",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "nodeType": "BRAND",
+      "label": "Gigabyte",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อ-microsoft-surface-โคราช",
+      "nodeType": "BRAND",
+      "label": "Microsoft Surface",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "url": "/รับซื้อ-microsoft-surface-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "nodeType": "BRAND",
+      "label": "Huawei MateBook",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อ-samsung-galaxy-book-โคราช",
+      "nodeType": "BRAND",
+      "label": "Samsung Galaxy Book",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "url": "/รับซื้อ-samsung-galaxy-book-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อโทรศัพท์-realme-โคราช",
+      "nodeType": "BRAND",
+      "label": "realme",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "url": "/รับซื้อโทรศัพท์-realme-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อโทรศัพท์-honor-โคราช",
+      "nodeType": "BRAND",
+      "label": "HONOR",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "url": "/รับซื้อโทรศัพท์-honor-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อโทรศัพท์-huawei-โคราช",
+      "nodeType": "BRAND",
+      "label": "Huawei",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "url": "/รับซื้อโทรศัพท์-huawei-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อโทรศัพท์-motorola-โคราช",
+      "nodeType": "BRAND",
+      "label": "Motorola",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "url": "/รับซื้อโทรศัพท์-motorola-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อโทรศัพท์-nothing-โคราช",
+      "nodeType": "BRAND",
+      "label": "Nothing Phone",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "url": "/รับซื้อโทรศัพท์-nothing-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "brand:camera:sony",
+      "nodeType": "BRAND",
+      "label": "Sony",
+      "cluster": "CAMERA",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "url": "/รับซื้อกล้อง-sony-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "brand:camera:canon",
+      "nodeType": "BRAND",
+      "label": "Canon",
+      "cluster": "CAMERA",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "url": "/รับซื้อกล้อง-canon-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "brand:camera:fujifilm",
+      "nodeType": "BRAND",
+      "label": "Fujifilm",
+      "cluster": "CAMERA",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "url": "/รับซื้อกล้อง-fujifilm-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "brand:camera:nikon",
+      "nodeType": "BRAND",
+      "label": "Nikon",
+      "cluster": "CAMERA",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "url": "/รับซื้อกล้อง-nikon-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อกล้อง-panasonic-lumix-โคราช",
+      "nodeType": "BRAND",
+      "label": "Panasonic Lumix",
+      "cluster": "CAMERA",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "url": "/รับซื้อกล้อง-panasonic-lumix-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อกล้อง-om-system-olympus-โคราช",
+      "nodeType": "BRAND",
+      "label": "OM SYSTEM / Olympus",
+      "cluster": "CAMERA",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "url": "/รับซื้อกล้อง-om-system-olympus-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อจอมอนิเตอร์-lg-โคราช",
+      "nodeType": "BRAND",
+      "label": "LG Monitor",
+      "cluster": "COMPUTER",
+      "parent": "/รับซื้อจอมอนิเตอร์-โคราช",
+      "url": "/รับซื้อจอมอนิเตอร์-lg-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อจอมอนิเตอร์-samsung-โคราช",
+      "nodeType": "BRAND",
+      "label": "Samsung Monitor",
+      "cluster": "COMPUTER",
+      "parent": "/รับซื้อจอมอนิเตอร์-โคราช",
+      "url": "/รับซื้อจอมอนิเตอร์-samsung-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้อจอมอนิเตอร์-dell-โคราช",
+      "nodeType": "BRAND",
+      "label": "Dell Monitor",
+      "cluster": "COMPUTER",
+      "parent": "/รับซื้อจอมอนิเตอร์-โคราช",
+      "url": "/รับซื้อจอมอนิเตอร์-dell-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้ออุปกรณ์-logitech-โคราช",
+      "nodeType": "BRAND",
+      "label": "Logitech",
+      "cluster": "COMPUTER",
+      "parent": "/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช",
+      "url": "/รับซื้ออุปกรณ์-logitech-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "index350:brand:รับซื้ออุปกรณ์-razer-โคราช",
+      "nodeType": "BRAND",
+      "label": "Razer",
+      "cluster": "COMPUTER",
+      "parent": "/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช",
+      "url": "/รับซื้ออุปกรณ์-razer-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:acer:aspire",
+      "nodeType": "SERIES",
+      "label": "Acer Aspire",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-acer-aspire-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:acer:nitro",
+      "nodeType": "SERIES",
+      "label": "Acer Nitro",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:acer:predator",
+      "nodeType": "SERIES",
+      "label": "Acer Predator",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-acer-predator-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:acer:swift",
+      "nodeType": "SERIES",
+      "label": "Acer Swift",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-acer-swift-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:lenovo:ideapad",
+      "nodeType": "SERIES",
+      "label": "Lenovo IdeaPad",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-lenovo-ideapad-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:lenovo:thinkpad",
+      "nodeType": "SERIES",
+      "label": "Lenovo ThinkPad",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:lenovo:legion",
+      "nodeType": "SERIES",
+      "label": "Lenovo Legion",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-lenovo-legion-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:lenovo:loq",
+      "nodeType": "SERIES",
+      "label": "Lenovo LOQ",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-lenovo-loq-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:hp:victus",
+      "nodeType": "SERIES",
+      "label": "HP Victus",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-hp-victus-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:hp:omen",
+      "nodeType": "SERIES",
+      "label": "HP OMEN",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-hp-omen-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:asus:tuf",
+      "nodeType": "SERIES",
+      "label": "ASUS TUF Gaming",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:asus:vivobook",
+      "nodeType": "SERIES",
+      "label": "ASUS Vivobook",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-asus-vivobook-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:asus:zenbook",
+      "nodeType": "SERIES",
+      "label": "ASUS Zenbook",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-asus-zenbook-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:dell:inspiron",
+      "nodeType": "SERIES",
+      "label": "Dell Inspiron",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-dell-inspiron-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:dell:xps",
+      "nodeType": "SERIES",
+      "label": "Dell XPS",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-dell-xps-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:notebook:dell:alienware",
+      "nodeType": "SERIES",
+      "label": "Dell Alienware",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-dell-alienware-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W1",
+      "evidence": [
+        "CONTENT_AND_OWNERSHIP_REVIEW",
+        "SOURCE_ROUTE_VERIFIED"
+      ]
+    },
+    {
+      "id": "series:index350-w2:lenovo-yoga",
+      "nodeType": "SERIES",
+      "label": "Lenovo Yoga",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-lenovo-yoga-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:hp-pavilion",
+      "nodeType": "SERIES",
+      "label": "HP Pavilion",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-hp-pavilion-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:hp-probook",
+      "nodeType": "SERIES",
+      "label": "HP ProBook",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-hp-probook-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:hp-elitebook",
+      "nodeType": "SERIES",
+      "label": "HP EliteBook",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-hp-elitebook-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:msi-katana",
+      "nodeType": "SERIES",
+      "label": "MSI Katana",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-katana-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:msi-cyborg",
+      "nodeType": "SERIES",
+      "label": "MSI Cyborg",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-cyborg-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:msi-stealth",
+      "nodeType": "SERIES",
+      "label": "MSI Stealth",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-stealth-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:msi-raider",
+      "nodeType": "SERIES",
+      "label": "MSI Raider",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-raider-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:msi-modern",
+      "nodeType": "SERIES",
+      "label": "MSI Modern",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-modern-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:msi-prestige",
+      "nodeType": "SERIES",
+      "label": "MSI Prestige",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-prestige-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:gigabyte-g5",
+      "nodeType": "SERIES",
+      "label": "Gigabyte G5",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-gigabyte-g5-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:gigabyte-aorus",
+      "nodeType": "SERIES",
+      "label": "Gigabyte AORUS",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-gigabyte-aorus-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:gigabyte-aero",
+      "nodeType": "SERIES",
+      "label": "Gigabyte AERO",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-gigabyte-aero-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:surface-laptop",
+      "nodeType": "SERIES",
+      "label": "Surface Laptop",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อ-microsoft-surface-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-surface-laptop-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:surface-pro",
+      "nodeType": "SERIES",
+      "label": "Surface Pro",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อ-microsoft-surface-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-surface-pro-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:huawei-matebook-d",
+      "nodeType": "SERIES",
+      "label": "Huawei MateBook D",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-huawei-matebook-d-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:huawei-matebook-x",
+      "nodeType": "SERIES",
+      "label": "Huawei MateBook X",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-huawei-matebook-x-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:samsung-galaxy-book-series",
+      "nodeType": "SERIES",
+      "label": "Samsung Galaxy Book",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อ-samsung-galaxy-book-โคราช",
+      "url": "/รับซื้อโน๊ตบุ๊ค-samsung-galaxy-book-series-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:samsung-galaxy-s",
+      "nodeType": "SERIES",
+      "label": "Samsung Galaxy S",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-samsung-โคราช",
+      "url": "/รับซื้อ-samsung-galaxy-s-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:samsung-galaxy-a",
+      "nodeType": "SERIES",
+      "label": "Samsung Galaxy A",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-samsung-โคราช",
+      "url": "/รับซื้อ-samsung-galaxy-a-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:samsung-galaxy-z",
+      "nodeType": "SERIES",
+      "label": "Samsung Galaxy Z",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-samsung-โคราช",
+      "url": "/รับซื้อ-samsung-galaxy-z-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:oppo-reno",
+      "nodeType": "SERIES",
+      "label": "OPPO Reno",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-oppo-โคราช",
+      "url": "/รับซื้อ-oppo-reno-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:vivo-v-series",
+      "nodeType": "SERIES",
+      "label": "vivo V Series",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-vivo-โคราช",
+      "url": "/รับซื้อ-vivo-v-series-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:xiaomi-series",
+      "nodeType": "SERIES",
+      "label": "Xiaomi Series",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช",
+      "url": "/รับซื้อ-xiaomi-series-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:redmi-note",
+      "nodeType": "SERIES",
+      "label": "Redmi Note",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช",
+      "url": "/รับซื้อ-redmi-note-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:poco-f-series",
+      "nodeType": "SERIES",
+      "label": "POCO F",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช",
+      "url": "/รับซื้อ-poco-f-series-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:sony-alpha-a7",
+      "nodeType": "SERIES",
+      "label": "Sony Alpha A7",
+      "cluster": "CAMERA",
+      "parent": "/รับซื้อกล้อง-sony-โคราช",
+      "url": "/รับซื้อกล้อง-sony-alpha-a7-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:canon-eos-r",
+      "nodeType": "SERIES",
+      "label": "Canon EOS R",
+      "cluster": "CAMERA",
+      "parent": "/รับซื้อกล้อง-canon-โคราช",
+      "url": "/รับซื้อกล้อง-canon-eos-r-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:fujifilm-x-series",
+      "nodeType": "SERIES",
+      "label": "Fujifilm X Series",
+      "cluster": "CAMERA",
+      "parent": "/รับซื้อกล้อง-fujifilm-โคราช",
+      "url": "/รับซื้อกล้อง-fujifilm-x-series-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:index350-w2:nikon-z",
+      "nodeType": "SERIES",
+      "label": "Nikon Z",
+      "cluster": "CAMERA",
+      "parent": "/รับซื้อกล้อง-nikon-โคราช",
+      "url": "/รับซื้อกล้อง-nikon-z-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:asus-rog-zephyrus-g14",
+      "nodeType": "MODEL",
+      "label": "ASUS ROG Zephyrus G14",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+      "url": "/รับซื้อ-asus-rog-zephyrus-g14-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:asus-rog-zephyrus-g16",
+      "nodeType": "MODEL",
+      "label": "ASUS ROG Zephyrus G16",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+      "url": "/รับซื้อ-asus-rog-zephyrus-g16-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:asus-rog-strix-g16",
+      "nodeType": "MODEL",
+      "label": "ASUS ROG Strix G16",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
+      "url": "/รับซื้อ-asus-rog-strix-g16-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:asus-tuf-a15",
+      "nodeType": "MODEL",
+      "label": "ASUS TUF A15",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช",
+      "url": "/รับซื้อ-asus-tuf-a15-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:dell-latitude-7440",
+      "nodeType": "MODEL",
+      "label": "Dell Latitude 7440",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช",
+      "url": "/รับซื้อ-dell-latitude-7440-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:dell-latitude-7430",
+      "nodeType": "MODEL",
+      "label": "Dell Latitude 7430",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช",
+      "url": "/รับซื้อ-dell-latitude-7430-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:lenovo-thinkpad-t14",
+      "nodeType": "MODEL",
+      "label": "Lenovo ThinkPad T14",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช",
+      "url": "/รับซื้อ-lenovo-thinkpad-t14-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:lenovo-x1-carbon",
+      "nodeType": "MODEL",
+      "label": "Lenovo X1 Carbon",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช",
+      "url": "/รับซื้อ-lenovo-x1-carbon-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:lenovo-legion-5",
+      "nodeType": "MODEL",
+      "label": "Lenovo Legion 5",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-legion-โคราช",
+      "url": "/รับซื้อ-lenovo-legion-5-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:lenovo-loq-15",
+      "nodeType": "MODEL",
+      "label": "Lenovo LOQ 15",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-loq-โคราช",
+      "url": "/รับซื้อ-lenovo-loq-15-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:hp-victus-15",
+      "nodeType": "MODEL",
+      "label": "HP Victus 15",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-victus-โคราช",
+      "url": "/รับซื้อ-hp-victus-15-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:hp-omen-16",
+      "nodeType": "MODEL",
+      "label": "HP OMEN 16",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-omen-โคราช",
+      "url": "/รับซื้อ-hp-omen-16-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:acer-nitro-v-15",
+      "nodeType": "MODEL",
+      "label": "Acer Nitro V 15",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช",
+      "url": "/รับซื้อ-acer-nitro-v-15-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:acer-predator-helios-neo-16",
+      "nodeType": "MODEL",
+      "label": "Predator Helios Neo 16",
+      "cluster": "NOTEBOOK",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-predator-โคราช",
+      "url": "/รับซื้อ-acer-predator-helios-neo-16-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:iphone-13",
+      "nodeType": "MODEL",
+      "label": "iPhone 13",
+      "cluster": "APPLE",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "url": "/รับซื้อ-iphone-13-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:iphone-14-pro",
+      "nodeType": "MODEL",
+      "label": "iPhone 14 Pro",
+      "cluster": "APPLE",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "url": "/รับซื้อ-iphone-14-pro-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:iphone-15",
+      "nodeType": "MODEL",
+      "label": "iPhone 15",
+      "cluster": "APPLE",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "url": "/รับซื้อ-iphone-15-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:iphone-16-pro",
+      "nodeType": "MODEL",
+      "label": "iPhone 16 Pro",
+      "cluster": "APPLE",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "url": "/รับซื้อ-iphone-16-pro-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:macbook-air-m2",
+      "nodeType": "MODEL",
+      "label": "MacBook Air M2",
+      "cluster": "APPLE",
+      "parent": "/รับซื้อ-macbook-โคราช",
+      "url": "/รับซื้อ-macbook-air-m2-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "model:index350-w2:macbook-air-m3",
+      "nodeType": "MODEL",
+      "label": "MacBook Air M3",
+      "cluster": "APPLE",
+      "parent": "/รับซื้อ-macbook-โคราช",
+      "url": "/รับซื้อ-macbook-air-m3-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W2",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "SOURCE_CONTENT_AND_OWNERSHIP_REVIEW"
+      ]
+    },
+    {
+      "id": "series:gaming:switch:oled",
+      "nodeType": "MODEL",
+      "label": "Nintendo Switch OLED",
+      "cluster": "GAMING",
+      "parent": "/รับซื้อ-nintendo-switch-โคราช",
+      "url": "/รับซื้อ-nintendo-switch-oled-โคราช",
+      "priorityBand": 1,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W3_MANUAL",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "NO_REAL_W2_PERFORMANCE_CLAIM"
+      ]
+    },
+    {
+      "id": "series:gaming:switch:lite",
+      "nodeType": "MODEL",
+      "label": "Nintendo Switch Lite",
+      "cluster": "GAMING",
+      "parent": "/รับซื้อ-nintendo-switch-โคราช",
+      "url": "/รับซื้อ-nintendo-switch-lite-โคราช",
+      "priorityBand": 2,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W3_MANUAL",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "NO_REAL_W2_PERFORMANCE_CLAIM"
+      ]
+    },
+    {
+      "id": "series:mobile:oppo:a",
+      "nodeType": "SERIES",
+      "label": "A Series",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-oppo-โคราช",
+      "url": "/รับซื้อ-oppo-a-series-โคราช",
+      "priorityBand": 3,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W4_MANUAL",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "NO_REAL_W3_PERFORMANCE_CLAIM"
+      ]
+    },
+    {
+      "id": "series:mobile:vivo:y",
+      "nodeType": "SERIES",
+      "label": "Y Series",
+      "cluster": "MOBILE",
+      "parent": "/รับซื้อโทรศัพท์-vivo-โคราช",
+      "url": "/รับซื้อ-vivo-y-series-โคราช",
+      "priorityBand": 3,
+      "releaseState": "LIVE",
+      "releaseRound": "INDEX350_W4_MANUAL",
+      "evidence": [
+        "MANUAL_APPROVAL_OVERRIDE",
+        "NO_REAL_W3_PERFORMANCE_CLAIM"
+      ]
+    }
+  ]
+}

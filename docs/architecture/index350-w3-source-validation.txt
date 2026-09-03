@@ -1,0 +1,13 @@
+INDEX 350 EXPANSION — W3 MODEL 50 RELEASE VALIDATION
+Live/indexable/noindex: 239/238/1
+Released Model pages: 50/50
+Cluster mix: NOTEBOOK=14, APPLE=10, MOBILE=14, CAMERA=5, GAMING=7
+Content files checked: 50
+Minimum body characters: 5121
+Max pair similarity: 0.9244
+Minimum projected inbound paths: 2
+Sitemap target: 238
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W2 performance attested: false
+W4: LOCKED
+VERDICT: PASS

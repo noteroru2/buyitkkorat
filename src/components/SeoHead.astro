@@ -28,7 +28,7 @@ const pathFromUrl = Astro.url.pathname.replace(/\/$/, "");
 const resolvedPath = canonical ?? (pathFromUrl === "" ? "/" : pathFromUrl);
 const canonicalUrl = absoluteUrl(resolvedPath);
 const ogImageUrl = absoluteUrl(ogImage);
-const robots = noindex ? "noindex, nofollow" : "index, follow";
+const robots = noindex ? "noindex, follow" : "index, follow";
 ---
 
 <meta charset="utf-8" />

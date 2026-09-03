@@ -1,0 +1,36 @@
+$ node scripts/apply-guide-authority-runtime.mjs --dry-run
+ARCHITECTURE BATCH 7 — GUIDE AUTHORITY RUNTIME APPLY
+Mode: DRY_RUN
+Existing live guides: 15
+Virtual guide clusters: 5
+Files to change: 4
+VERDICT: PASS
+
+$ node scripts/apply-guide-authority-runtime.mjs
+ARCHITECTURE BATCH 7 — GUIDE AUTHORITY RUNTIME APPLY
+Mode: WRITE
+Existing live guides: 15
+Virtual guide clusters: 5
+Files to change: 4
+VERDICT: PASS
+
+$ node scripts/validate-guide-authority-architecture.mjs
+ARCHITECTURE BATCH 7 — GUIDE / INFORMATIONAL AUTHORITY VALIDATION
+Live routes: 90
+Indexable: 89
+Existing live guides: 15
+Virtual topical clusters: 5
+Future guide candidates: 12
+Guide related inbound failures: 0
+Candidate URLs leaked live: 0
+Automatic publishing: false
+Warnings: 0
+VERDICT: PASS
+
+$ node scripts/apply-guide-authority-runtime.mjs
+ARCHITECTURE BATCH 7 — GUIDE AUTHORITY RUNTIME APPLY
+Mode: WRITE
+Existing live guides: 15
+Virtual guide clusters: 5
+Files to change: 0
+VERDICT: PASS

@@ -1,0 +1,9 @@
+INDEX 350 — W3 PERFORMANCE REVIEW / W4 SELECTION SELF-TEST
+No real data: WAIT_FOR_REAL_W3_OBSERVATION_DATA -> WAIT_FOR_REAL_W3_REVIEW -> SELECT 0/50
+Synthetic eligible: ROUND4_REVIEW_ELIGIBLE -> W4_CANDIDATE_REVIEW_READY -> W4_SELECTION_READY_FOR_MANUAL_APPROVAL
+Selected: 50/50 = Series 18 + Model 7 + Condition 25
+Static ownership risk Canon EOS R model: BLOCKED
+Sony same-wave parent dependency: PASS
+W3 observation CSV rows: 50/50 (exporter regression fixed)
+Automatic W4 release: false
+VERDICT: PASS

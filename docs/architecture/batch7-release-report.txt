@@ -1,0 +1,15 @@
+ARCHITECTURE BATCH 7 — SELF TEST
+
+Result: PASS
+
+- Dry-run: PASS
+- First apply: PASS
+- Validator: PASS
+- Second apply changed files: 0
+- Idempotence: PASS
+- Live routes preserved: 90
+- Indexable preserved: 89
+- Existing guides governed: 15
+- Virtual topical clusters: 5
+- Future guide candidates: 12
+- Candidate URLs published: 0

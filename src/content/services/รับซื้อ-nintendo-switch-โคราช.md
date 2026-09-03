@@ -37,7 +37,6 @@ reviewer: "WINNER IT"
 productFocus: "Nintendo Switch"
 illustration: "console"
 ---
-
 ## Switch มือสอง
 
 Standard, OLED, Lite ราคาต่างกัน จอ burn-in รอย Joy-Con drift แบตเตอรี่ dock และกล่องมีผล

@@ -1,0 +1,77 @@
+INDEX350 W1 PRODUCTION RELEASE GATE — SELF TEST
+
+SYNTAX CHECKS
+$ node --check scripts/validate-index-350-w1-production-gate.mjs
+PASS
+$ node --check scripts/audit-index-350-w1-build.mjs
+PASS
+$ node --check scripts/predeploy-index-350-w1.mjs
+PASS
+$ node --check scripts/verify-index-350-w1-production.mjs
+PASS
+
+STATIC VALIDATION
+$ node scripts/validate-index-350-expansion-plan.mjs
+INDEX 350+ EXPANSION PLAN VALIDATION
+Current indexable: 138
+W1 released: 40 (Brand 24 + Series 16)
+Remaining HOLD: 222
+Target indexable: 360
+Buffer above 350: 10
+Automatic publishing: false
+VERDICT: PASS
+
+$ node scripts/validate-index-350-w1.mjs
+INDEX 350 W1 — BRAND & SERIES RELEASE VALIDATION
+Live/indexable/noindex: 139/138/1
+Released: 40 (24 Brand + 16 Series)
+Content files checked: 40
+Sitemap target: 138
+W2 state: LOCKED
+VERDICT: PASS
+
+$ node scripts/validate-index-350-w1-production-gate.mjs
+INDEX 350 W1 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 139/138/1
+W1 governed: 40/40
+Parent groups: 10
+Sitemap target: 138
+Minimum W1 inbound paths: 2
+Minimum images/page: 2
+W2 locked: true
+VERDICT: PASS
+
+$ node scripts/run-architecture-quality-gate.mjs
+ARCHITECTURE BATCH 10 — STATIC QUALITY GATE
+Validators: 10/10 passed
+Live/indexable/noindex: 139/138/1
+Unreleased candidates governed: 222
+Static architecture gate: PASS
+Production integration gate: UNATTESTED_IN_OVERLAY
+Expansion decision: CONDITIONALLY_READY
+Report: docs/architecture/architecture-quality-gate-report.json
+VERDICT: PASS_WITH_PRODUCTION_ATTESTATION_REQUIRED
+
+
+SYNTHETIC BUILT-SURFACE AUDIT
+INDEX 350 W1 — BUILT SURFACE AUDIT
+W1 built pages: 40/40
+Parent groups checked: 10
+Sitemap URLs: 138/138
+Minimum observed W1 inbound paths: 2
+Errors: 0
+Report: docs/architecture/index350-w1-build-audit.json
+VERDICT: PASS
+
+SYNTHETIC PRODUCTION VERIFICATION
+INDEX 350 W1 — PRODUCTION VERIFICATION
+Origin: http://127.0.0.1:8767
+W1 routes passed: 40/40
+Parent groups passed: 10/10
+Minimum W1 inbound paths: 2
+Sitemap: 138/138 — PASS
+State: PRODUCTION_VERIFIED
+Observation: OBSERVATION_ACTIVE
+W2: LOCKED
+Errors: 0
+VERDICT: PASS

@@ -1,0 +1,11 @@
+---
+import type { ArticleSource } from '../data/articleSources';
+interface Props { sources:ArticleSource[]; }
+const {sources}=Astro.props;
+---
+<section class="article-sources" aria-labelledby="article-sources-heading">
+  <h2 id="article-sources-heading">เอกสารอ้างอิงและอ่านเพิ่มเติม</h2>
+  <ul>{sources.map(source=><li><a href={source.url} rel="external">{source.title}</a><p>{source.scope}</p></li>)}</ul>
+  <p>เอกสารเหล่านี้ประกอบข้อมูลทางเทคนิคและการเตรียมสินค้า ไม่ได้กำหนดราคารับซื้อของร้านหรือรับรองเงื่อนไขการซื้อขาย ข้อมูลรุ่นและเมนูอาจต่างกันตามอุปกรณ์</p>
+</section>
+<style>.article-sources{border-top:1px solid var(--color-border);margin-top:2rem;padding-top:1rem}.article-sources p{font-size:.9rem;color:var(--color-text-muted)}</style>

@@ -1,0 +1,178 @@
+[
+  {
+    "group": "acer",
+    "sourceFilename": "IMG_20260902_162312.jpg",
+    "asset": "src/assets/images/products/acer-1.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 209120,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "acer",
+    "sourceFilename": "IMG_20260902_162505.jpg",
+    "asset": "src/assets/images/products/acer-2.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 136360,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "acer",
+    "sourceFilename": "IMG_20260902_163742.jpg",
+    "asset": "src/assets/images/products/acer-3.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 152892,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "insta360",
+    "sourceFilename": "IMG_20260902_185315.jpg",
+    "asset": "src/assets/images/products/insta360-1.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 251288,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "insta360",
+    "sourceFilename": "IMG_20260902_185423.jpg",
+    "asset": "src/assets/images/products/insta360-2.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 124894,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "insta360",
+    "sourceFilename": "IMG_20260902_185502.jpg",
+    "asset": "src/assets/images/products/insta360-3.webp",
+    "width": 1205,
+    "height": 1600,
+    "bytes": 90508,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "lenovo",
+    "sourceFilename": "IMG_20260902_154611.jpg",
+    "asset": "src/assets/images/products/lenovo-1.webp",
+    "width": 1600,
+    "height": 1200,
+    "bytes": 223808,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "lenovo",
+    "sourceFilename": "IMG_20260902_154727.jpg",
+    "asset": "src/assets/images/products/lenovo-2.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 211416,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "macbook",
+    "sourceFilename": "IMG_20260902_114124.jpg",
+    "asset": "src/assets/images/products/macbook-1.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 140772,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "macbook",
+    "sourceFilename": "IMG_20260902_113427.jpg",
+    "asset": "src/assets/images/products/macbook-2.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 84276,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "msi",
+    "sourceFilename": "IMG_20260902_111301.jpg",
+    "asset": "src/assets/images/products/msi-1.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 159232,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "msi",
+    "sourceFilename": "IMG_20260902_111445.jpg",
+    "asset": "src/assets/images/products/msi-2.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 109220,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "msi",
+    "sourceFilename": "IMG_20260831_110349.jpg",
+    "asset": "src/assets/images/products/msi-3.webp",
+    "width": 1600,
+    "height": 1205,
+    "bytes": 53600,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "msi",
+    "sourceFilename": "IMG_20260831_110923.jpg",
+    "asset": "src/assets/images/products/msi-4.webp",
+    "width": 1600,
+    "height": 1200,
+    "bytes": 143904,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "desktop",
+    "sourceFilename": "687785232_954483720667378_1288465373043681687_n.jpg",
+    "asset": "src/assets/images/products/desktop-1.webp",
+    "width": 960,
+    "height": 720,
+    "bytes": 97556,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "desktop",
+    "sourceFilename": "692249065_1325102072812907_6523970223922240639_n.jpg",
+    "asset": "src/assets/images/products/desktop-2.webp",
+    "width": 720,
+    "height": 960,
+    "bytes": 88020,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "desktop",
+    "sourceFilename": "695725984_1322230623375989_5402671911893491063_n.jpg",
+    "asset": "src/assets/images/products/desktop-3.webp",
+    "width": 720,
+    "height": 960,
+    "bytes": 83322,
+    "status": "published",
+    "hasExif": false
+  },
+  {
+    "group": "macbook",
+    "sourceFilename": "IMG_20260902_113331.jpg",
+    "status": "held",
+    "reason": "Device serial visible; alternate angles used. Original unchanged."
+  }
+]

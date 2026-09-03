@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "wave": "INDEX350_W6_SAFE_FINAL",
+    "title": "INDEX 350 EXPANSION — W6 Final Local & Guide 31 Pages",
+    "baselineLive": 329,
+    "baselineIndexable": 328,
+    "released": 31,
+    "localReleased": 13,
+    "guideReleased": 18,
+    "finalLive": 360,
+    "finalIndexable": 359,
+    "noindex": 1,
+    "sitemap": 359,
+    "targetFloor": 350,
+    "plannedBufferTarget": 360,
+    "targetFloorMet": true,
+    "bufferShortfall": 1,
+    "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+    "realW5PerformanceAttested": false,
+    "automaticPublishing": false,
+    "automaticFurtherRelease": false,
+    "finalRiskCandidate": "/รับซื้อ-canon-eos-r-โคราช",
+    "finalRiskCandidateReleased": false,
+    "nextState": "FINAL_OBSERVATION_REQUIRED",
+    "productionGateState": "PREDEPLOY_PENDING_REAL_BUILD"
+  },
+  "releasedUrls": [
+    "/พื้นที่/เทพารักษ์",
+    "/พื้นที่/เมืองยาง",
+    "/พื้นที่/พระทองคำ",
+    "/พื้นที่/ลำทะเมนชัย",
+    "/พื้นที่/บัวลาย",
+    "/พื้นที่/สีดา",
+    "/พื้นที่/เฉลิมพระเกียรติ",
+    "/พื้นที่/จอหอ",
+    "/พื้นที่/หัวทะเล",
+    "/พื้นที่/สุรนารี",
+    "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+    "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+    "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา",
+    "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+    "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+    "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+    "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+    "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+    "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+    "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+    "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+    "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+    "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+    "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+    "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+    "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+    "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+    "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+    "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+    "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+    "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร"
+  ],
+  "groupMix": {
+    "F_LOCAL": 13,
+    "G_GUIDE": 18
+  },
+  "clusterMix": {
+    "LOCATION": 13,
+    "CONTENT": 18
+  },
+  "qualityGate": {
+    "minimumDiscoveryPaths": 2,
+    "minimumBodyCharacters": 2400,
+    "uniqueTitleRequired": true,
+    "uniqueH1Required": true,
+    "selfCanonicalRequired": true,
+    "indexFollowRequired": true,
+    "sitemapRequired": true,
+    "minimumImagesExpectedAfterBuild": 0,
+    "commercialLocationCrossProductForbidden": true,
+    "maximumPairSimilarity": 0.93,
+    "imagePolicy": "OPTIONAL_RELEVANT_ALT_REQUIRED_WHEN_PRESENT"
+  },
+  "localSafety": {
+    "fakeBranchForbidden": true,
+    "fakeAddressForbidden": true,
+    "fakeHoursForbidden": true,
+    "fakeLatLongForbidden": true,
+    "fakeLocalBusinessSchemaForbidden": true,
+    "serviceAreaLanguageRequired": true
+  },
+  "guideSafety": {
+    "informationalIntentRequired": true,
+    "commercialTargetLimit": 3,
+    "transactionalOwnershipRetainedByMoneyPages": true,
+    "noGuideLocationCrossProduct": true
+  },
+  "safety": {
+    "noPerformanceClaim": true,
+    "noAutoMerge": true,
+    "noAutoRedirect": true,
+    "noAutoNoindex": true,
+    "noAutoCanonicalSwitch": true,
+    "canonRiskRemainsHold": true,
+    "automaticFurtherRelease": false
+  },
+  "nextRequirements": [
+    "real npm build PASS",
+    "built architecture crawl 360/360",
+    "sitemap 359",
+    "production verification of W6 31 URLs",
+    "post-release indexation/GSC observation",
+    "final architecture review before any Canon decision"
+  ]
+}

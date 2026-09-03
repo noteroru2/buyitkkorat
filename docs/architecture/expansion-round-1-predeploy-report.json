@@ -1,0 +1,45 @@
+{
+  "round": "EXPANSION ROUND 1",
+  "generatedAt": "2026-09-02T04:23:36.128Z",
+  "state": "PREDEPLOY_PENDING",
+  "productionReleaseAllowed": false,
+  "expectedCounts": {
+    "live": 94,
+    "indexable": 93,
+    "sitemap": 93
+  },
+  "git": {
+    "available": false,
+    "clean": null,
+    "head": null,
+    "expectedShaMatch": null
+  },
+  "build": {
+    "attempted": false,
+    "passed": false,
+    "reason": "PACKAGE_JSON_NOT_FOUND"
+  },
+  "crawl": {
+    "attempted": false,
+    "passed": false,
+    "reason": "BUILD_NOT_ATTESTED"
+  },
+  "validatorPass": true,
+  "expectedSha": null,
+  "results": [
+    {
+      "command": "/opt/nvm/versions/node/v22.16.0/bin/node scripts/validate-expansion-release-round-1.mjs",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "command": "/opt/nvm/versions/node/v22.16.0/bin/node scripts/run-architecture-quality-gate.mjs",
+      "exitCode": 0,
+      "passed": true
+    }
+  ],
+  "blockers": [
+    "REAL_SOURCE_BUILD_NOT_RUN",
+    "REAL_BUILD_CRAWL_NOT_RUN"
+  ]
+}

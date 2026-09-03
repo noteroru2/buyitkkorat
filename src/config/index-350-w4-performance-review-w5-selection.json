@@ -1,0 +1,859 @@
+{
+  "meta": {
+    "title": "INDEX 350 — W4 Performance Review & W5 Candidate Selection",
+    "currentLive": 329,
+    "currentIndexable": 328,
+    "currentNoindex": 1,
+    "w5TargetIndexable": 328,
+    "w5ReleaseCap": 40,
+    "automaticPublishing": false,
+    "automaticW5Release": false,
+    "realW4PerformanceDataProvidedInPackage": false,
+    "currentDecision": "MANUAL_APPROVAL_OVERRIDE_RELEASED_SOURCE",
+    "policy": "This batch reviews W4 only when real finalized GSC/indexation outputs exist. It never fabricates metrics and never publishes W5 candidates.",
+    "manualApprovalRequired": true,
+    "targetFloor": 350,
+    "finalTargetIndexable": 360
+  },
+  "requiredInputs": {
+    "observationReport": "docs/architecture/index350-w4-observation-report.json",
+    "observationPages": "docs/architecture/index350-w4-observation-pages.csv",
+    "queryOwnership": "docs/architecture/index350-w4-query-ownership.csv"
+  },
+  "states": [
+    "WAIT_FOR_REAL_W4_OBSERVATION_DATA",
+    "W4_REVIEW_HOLD",
+    "W5_CANDIDATE_REVIEW_READY",
+    "W5_SELECTION_READY_FOR_MANUAL_APPROVAL",
+    "W5_SELECTION_INCOMPLETE"
+  ],
+  "scoreWeights": {
+    "staticPriorityP1": 20,
+    "parentAlreadyLive": 20,
+    "conditionFit": 18,
+    "b2bFit": 22,
+    "localFit": 20,
+    "w4ReviewReady": 10,
+    "w4ConditionTypeHealthy": 8,
+    "w4RelatedClusterHealthy": 6,
+    "provisionalPreference": 7,
+    "parentNotLivePenalty": -100,
+    "staticSafetyRiskPenalty": -90
+  },
+  "composition": {
+    "softTargets": {
+      "D_CONDITION": 5,
+      "E_B2B": 20,
+      "F_LOCAL": 15
+    },
+    "minimums": {
+      "D_CONDITION": 5,
+      "E_B2B": 20,
+      "F_LOCAL": 15
+    },
+    "total": 40,
+    "candidatePool": 53,
+    "note": "W5 closes all remaining Condition and B2B candidates, plus 15 district-first Local pages. Exact composition is required for selection-ready status; do not weaken quality gates to force 40."
+  },
+  "selectionRules": [
+    "Only HOLD_PLANNED candidates from D_CONDITION, E_B2B, and F_LOCAL are eligible for W5.",
+    "Real W4 Observation state ROUND5_REVIEW_ELIGIBLE is required before SELECT decisions are emitted.",
+    "Every W5 candidate parent must already be LIVE.",
+    "All 5 remaining Condition candidates are preferred to close the condition expansion without Model×Condition cartesian pages.",
+    "All 20 B2B candidates are preferred because they share the governed bulk-sale hub but own distinct organization/workflow intent.",
+    "Local selection is district-first; no local candidate may claim a physical branch or fake address.",
+    "Brand×District, Series×District, and Model×District pages remain prohibited.",
+    "No candidate is published, indexed, added to sitemap, or canonicalized by this batch.",
+    "No automatic W5 release, merge, redirect, noindex, or canonical switch."
+  ],
+  "provisionalSelection": [
+    {
+      "rank": 1,
+      "url": "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "cluster": "NOTEBOOK",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 2,
+      "url": "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 3,
+      "url": "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "cluster": "MOBILE",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 4,
+      "url": "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 5,
+      "url": "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช",
+      "group": "D_CONDITION",
+      "nodeType": "CONDITION",
+      "parent": "/รับซื้อเครื่องเกม-โคราช",
+      "cluster": "GAMING",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 6,
+      "url": "/รับซื้อคอมโรงเรียน-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 7,
+      "url": "/รับซื้อคอมมหาวิทยาลัย-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 8,
+      "url": "/รับซื้อคอมโรงงาน-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 9,
+      "url": "/รับซื้อคอมโรงแรม-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 10,
+      "url": "/รับซื้อคอมคลินิก-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 11,
+      "url": "/รับซื้อคอมสำนักงานบัญชี-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 12,
+      "url": "/รับซื้อคอมบริษัทก่อสร้าง-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 13,
+      "url": "/รับซื้อคอมบริษัทขนส่ง-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 14,
+      "url": "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 15,
+      "url": "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 16,
+      "url": "/รับซื้อคอมร้านเกม-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 17,
+      "url": "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 18,
+      "url": "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 19,
+      "url": "/รับซื้อคอม-call-center-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 20,
+      "url": "/รับซื้อไอที-coworking-space-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 21,
+      "url": "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 22,
+      "url": "/รับซื้อคอมหมดสัญญาเช่า-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 23,
+      "url": "/รับซื้อ-it-asset-disposition-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 24,
+      "url": "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 25,
+      "url": "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช",
+      "group": "E_B2B",
+      "nodeType": "B2B",
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "cluster": "B2B",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 26,
+      "url": "/พื้นที่/ครบุรี",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 27,
+      "url": "/พื้นที่/เสิงสาง",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 28,
+      "url": "/พื้นที่/คง",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 29,
+      "url": "/พื้นที่/บ้านเหลื่อม",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 30,
+      "url": "/พื้นที่/จักราช",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 31,
+      "url": "/พื้นที่/โนนไทย",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 32,
+      "url": "/พื้นที่/ขามสะแกแสง",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 33,
+      "url": "/พื้นที่/ประทาย",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 34,
+      "url": "/พื้นที่/ห้วยแถลง",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 35,
+      "url": "/พื้นที่/ชุมพวง",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 36,
+      "url": "/พื้นที่/ขามทะเลสอ",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 37,
+      "url": "/พื้นที่/หนองบุญมาก",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 38,
+      "url": "/พื้นที่/แก้งสนามนาง",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 39,
+      "url": "/พื้นที่/โนนแดง",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    },
+    {
+      "rank": 40,
+      "url": "/พื้นที่/วังน้ำเขียว",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "PROVISIONAL_ONLY",
+      "reason": "Provisional W5 candidate only; requires real W4 Observation Gate + manual approval before source release."
+    }
+  ],
+  "reserveLocal": [
+    {
+      "url": "/พื้นที่/เทพารักษ์",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/เมืองยาง",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/พระทองคำ",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/ลำทะเมนชัย",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/บัวลาย",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/สีดา",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/เฉลิมพระเกียรติ",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/จอหอ",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/หัวทะเล",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/สุรนารี",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    },
+    {
+      "url": "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา",
+      "group": "F_LOCAL",
+      "nodeType": "LOCATION",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "priority": "P1",
+      "state": "RESERVE_W6",
+      "reason": "Preserved for final local/guide wave or adaptive replacement after real W4 review."
+    }
+  ],
+  "deferredToFinalWave": [
+    {
+      "url": "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร",
+      "group": "G_GUIDE",
+      "nodeType": "GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "FINAL_GUIDE_WAVE"
+    },
+    {
+      "url": "/รับซื้อ-canon-eos-r-โคราช",
+      "group": "C_MODEL",
+      "nodeType": "MODEL",
+      "parent": "/รับซื้อกล้อง-canon-eos-r-โคราช",
+      "cluster": "CAMERA",
+      "priority": "P1",
+      "state": "DEFERRED_W6_OR_REVIEW",
+      "reason": "STATIC_OWNERSHIP_REVIEW_REQUIRED"
+    }
+  ],
+  "finalBufferRisk": {
+    "remainingHoldAfterHypotheticalW5": 32,
+    "remainingSafeWithoutCanonModel": 31,
+    "projectedSafeFinalIndexableWithoutCanonModel": 359,
+    "targetFloor": 350,
+    "targetWithBuffer": 360,
+    "riskUrl": "/รับซื้อ-canon-eos-r-โคราช",
+    "policy": "Do not release the Canon EOS R model merely to reach 360. Resolve query ownership manually or qualify one replacement route; 359 still exceeds the 350 floor."
+  },
+  "hardRules": [
+    "No invented W4 performance metrics.",
+    "No automatic W5 release.",
+    "No destructive SEO action from similarity alone.",
+    "No fake local branches, addresses, ratings, reviews, or coordinates.",
+    "Manual approval override history remains disclosed.",
+    "W5 remains locked until real W4 observation reaches ROUND5_REVIEW_ELIGIBLE and a human approves the final selection."
+  ],
+  "releaseOutcome": {
+    "released": 40,
+    "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+    "realW4PerformanceAttested": false,
+    "sourceState": "RELEASED_PENDING_REAL_BUILD",
+    "nextWave": "W6_LOCKED"
+  }
+}

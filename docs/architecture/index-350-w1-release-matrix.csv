@@ -1,0 +1,41 @@
+nodeType,url,parent,cluster,intent,releaseState,indexPolicy,discoveryPaths
+BRAND,/รับซื้อโน๊ตบุ๊ค-acer-โคราช,/รับซื้อโน๊ตบุ๊ค-โคราช,NOTEBOOK,รับซื้อโน๊ตบุ๊ค Acer โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช,/รับซื้อโน๊ตบุ๊ค-โคราช,NOTEBOOK,รับซื้อโน๊ตบุ๊ค Lenovo โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อโน๊ตบุ๊ค-hp-โคราช,/รับซื้อโน๊ตบุ๊ค-โคราช,NOTEBOOK,รับซื้อโน๊ตบุ๊ค HP โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อโน๊ตบุ๊ค-msi-โคราช,/รับซื้อโน๊ตบุ๊ค-โคราช,NOTEBOOK,รับซื้อโน๊ตบุ๊ค MSI โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช,/รับซื้อโน๊ตบุ๊ค-โคราช,NOTEBOOK,รับซื้อโน๊ตบุ๊ค Gigabyte โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อ-microsoft-surface-โคราช,/รับซื้อโน๊ตบุ๊ค-โคราช,NOTEBOOK,รับซื้อ Microsoft Surface โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อโน๊ตบุ๊ค-huawei-โคราช,/รับซื้อโน๊ตบุ๊ค-โคราช,NOTEBOOK,รับซื้อโน๊ตบุ๊ค Huawei โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อ-samsung-galaxy-book-โคราช,/รับซื้อโน๊ตบุ๊ค-โคราช,NOTEBOOK,รับซื้อ Samsung Galaxy Book โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อโทรศัพท์-realme-โคราช,/รับซื้อโทรศัพท์-android-โคราช,MOBILE,รับซื้อโทรศัพท์ realme โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อโทรศัพท์-honor-โคราช,/รับซื้อโทรศัพท์-android-โคราช,MOBILE,รับซื้อโทรศัพท์ HONOR โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อโทรศัพท์-huawei-โคราช,/รับซื้อโทรศัพท์-android-โคราช,MOBILE,รับซื้อโทรศัพท์ Huawei โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อโทรศัพท์-motorola-โคราช,/รับซื้อโทรศัพท์-android-โคราช,MOBILE,รับซื้อโทรศัพท์ Motorola โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อโทรศัพท์-nothing-โคราช,/รับซื้อโทรศัพท์-android-โคราช,MOBILE,รับซื้อโทรศัพท์ Nothing โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อกล้อง-sony-โคราช,/รับซื้อกล้อง-โคราช,CAMERA,รับซื้อกล้อง Sony โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อกล้อง-canon-โคราช,/รับซื้อกล้อง-โคราช,CAMERA,รับซื้อกล้อง Canon โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อกล้อง-fujifilm-โคราช,/รับซื้อกล้อง-โคราช,CAMERA,รับซื้อกล้อง Fujifilm โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อกล้อง-nikon-โคราช,/รับซื้อกล้อง-โคราช,CAMERA,รับซื้อกล้อง Nikon โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อกล้อง-panasonic-lumix-โคราช,/รับซื้อกล้อง-โคราช,CAMERA,รับซื้อกล้อง Panasonic Lumix โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อกล้อง-om-system-olympus-โคราช,/รับซื้อกล้อง-โคราช,CAMERA,รับซื้อกล้อง OM System Olympus โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อจอมอนิเตอร์-lg-โคราช,/รับซื้อจอมอนิเตอร์-โคราช,COMPUTER,รับซื้อจอมอนิเตอร์ LG โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อจอมอนิเตอร์-samsung-โคราช,/รับซื้อจอมอนิเตอร์-โคราช,COMPUTER,รับซื้อจอมอนิเตอร์ Samsung โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้อจอมอนิเตอร์-dell-โคราช,/รับซื้อจอมอนิเตอร์-โคราช,COMPUTER,รับซื้อจอมอนิเตอร์ Dell โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้ออุปกรณ์-logitech-โคราช,/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช,COMPUTER,รับซื้ออุปกรณ์ Logitech โคราช,RELEASED_W1,INDEX,2+
+BRAND,/รับซื้ออุปกรณ์-razer-โคราช,/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช,COMPUTER,รับซื้ออุปกรณ์ Razer โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-acer-aspire-โคราช,/รับซื้อโน๊ตบุ๊ค-acer-โคราช,NOTEBOOK,รับซื้อ Acer Aspire โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช,/รับซื้อโน๊ตบุ๊ค-acer-โคราช,NOTEBOOK,รับซื้อ Acer Nitro โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-acer-predator-โคราช,/รับซื้อโน๊ตบุ๊ค-acer-โคราช,NOTEBOOK,รับซื้อ Acer Predator โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-acer-swift-โคราช,/รับซื้อโน๊ตบุ๊ค-acer-โคราช,NOTEBOOK,รับซื้อ Acer Swift โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-lenovo-ideapad-โคราช,/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช,NOTEBOOK,รับซื้อ Lenovo IdeaPad โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช,/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช,NOTEBOOK,รับซื้อ Lenovo ThinkPad โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-lenovo-legion-โคราช,/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช,NOTEBOOK,รับซื้อ Lenovo Legion โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-lenovo-loq-โคราช,/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช,NOTEBOOK,รับซื้อ Lenovo LOQ โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-hp-victus-โคราช,/รับซื้อโน๊ตบุ๊ค-hp-โคราช,NOTEBOOK,รับซื้อ HP Victus โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-hp-omen-โคราช,/รับซื้อโน๊ตบุ๊ค-hp-โคราช,NOTEBOOK,รับซื้อ HP OMEN โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช,/รับซื้อโน๊ตบุ๊ค-asus-โคราช,NOTEBOOK,รับซื้อ ASUS TUF Gaming โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-asus-vivobook-โคราช,/รับซื้อโน๊ตบุ๊ค-asus-โคราช,NOTEBOOK,รับซื้อ ASUS Vivobook โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-asus-zenbook-โคราช,/รับซื้อโน๊ตบุ๊ค-asus-โคราช,NOTEBOOK,รับซื้อ ASUS Zenbook โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-dell-inspiron-โคราช,/รับซื้อโน๊ตบุ๊ค-dell-โคราช,NOTEBOOK,รับซื้อ Dell Inspiron โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-dell-xps-โคราช,/รับซื้อโน๊ตบุ๊ค-dell-โคราช,NOTEBOOK,รับซื้อ Dell XPS โคราช,RELEASED_W1,INDEX,2+
+SERIES,/รับซื้อโน๊ตบุ๊ค-dell-alienware-โคราช,/รับซื้อโน๊ตบุ๊ค-dell-โคราช,NOTEBOOK,รับซื้อ Dell Alienware โคราช,RELEASED_W1,INDEX,2+

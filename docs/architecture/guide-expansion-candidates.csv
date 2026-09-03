@@ -1,0 +1,13 @@
+id,title,cluster,priorityBand,candidateUrl,primaryCommercialOwner,releaseState,evidenceState,contentState
+guide:notebook:battery-health,แบตโน๊ตบุ๊คเสื่อมมีผลต่อราคามือสองอย่างไร,NOTEBOOK_PREPARATION,1,/บทความ/แบตโน๊ตบุ๊คเสื่อมมีผลต่อราคามือสองอย่างไร,/รับซื้อโน๊ตบุ๊ค-โคราช,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:notebook:screen-condition,รอยจอ จุดสว่าง และจอแตกกระทบราคารับซื้อโน๊ตบุ๊คอย่างไร,NOTEBOOK_PREPARATION,1,/บทความ/ตำหนิจอโน๊ตบุ๊คมีผลต่อราคาอย่างไร,/รับซื้อโน๊ตบุ๊คจอแตก-โคราช,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:notebook:charger,ไม่มีที่ชาร์จโน๊ตบุ๊คยังประเมินราคาได้หรือไม่,NOTEBOOK_PREPARATION,2,/บทความ/โน๊ตบุ๊คไม่มีที่ชาร์จประเมินราคาอย่างไร,/รับซื้อโน๊ตบุ๊ค-โคราช,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:mobile:battery,สุขภาพแบตมือถือมีผลต่อราคามือสองอย่างไร,DEVICE_VALUATION,1,/บทความ/สุขภาพแบตมือถือมีผลต่อราคามือสองอย่างไร,/รับซื้อโทรศัพท์มือถือ-โคราช,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:mobile:screen,จอแตก จอเขียว และทัชเสียต่างกันอย่างไรตอนประเมินมือถือ,DEVICE_VALUATION,1,/บทความ/อาการหน้าจอมือถือมีผลต่อราคาอย่างไร,/รับซื้อโทรศัพท์จอแตก-โคราช,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:apple:activation-lock,Activation Lock คืออะไรและต้องเช็กอย่างไรก่อนขายอุปกรณ์ Apple,DATA_SECURITY,1,/บทความ/activation-lock-ต้องเช็กอย่างไรก่อนขาย-apple,/รับซื้อ-iphone-โคราช,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:camera:shutter,Shutter Count มีผลต่อราคากล้องมือสองแค่ไหน,DEVICE_VALUATION,1,/บทความ/shutter-count-มีผลต่อราคากล้องมือสองอย่างไร,/รับซื้อกล้อง-โคราช,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:camera:lens-fungus,ราในเลนส์และฝ้ามีผลต่อราคาประเมินอย่างไร,DEVICE_VALUATION,1,/บทความ/ราในเลนส์มีผลต่อราคาประเมินอย่างไร,/รับซื้อเลนส์กล้อง-โคราช,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:gpu:mining,การ์ดจอเคยขุดเหมืองมีผลต่อการประเมินอย่างไร,DEVICE_VALUATION,2,/บทความ/การ์ดจอเคยขุดเหมืองมีผลต่อราคาอย่างไร,/รับซื้อการ์ดจอ-โคราช,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:b2b:asset-list,ทำ Asset List สำหรับขายอุปกรณ์ไอทีบริษัทอย่างไร,B2B_BULK,1,/บทความ/ทำ-asset-list-ขายอุปกรณ์ไอทีบริษัทอย่างไร,/รับซื้อสินค้าไอทียกล็อต,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:b2b:data-wipe,บริษัทควรจัดการข้อมูลก่อนขายคอมหลายเครื่องอย่างไร,B2B_BULK,2,/บทความ/บริษัทควรลบข้อมูลก่อนขายคอมหลายเครื่องอย่างไร,/ขายคอมหลายเครื่อง-โคราช,HOLD_FOUNDATION,UNASSESSED,UNASSESSED
+guide:seller:serial,ควรถ่าย Serial Number หรือข้อมูลเครื่องส่วนไหนก่อนส่งประเมิน,SELLER_PREPARATION,2,/บทความ/ควรถ่ายข้อมูลเครื่องอะไรบ้างก่อนส่งประเมิน,/วิธีประเมินราคา,HOLD_FOUNDATION,UNASSESSED,UNASSESSED

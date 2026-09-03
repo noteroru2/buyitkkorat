@@ -163,17 +163,20 @@ export function articleSchema(opts: {
   datePublished: string;
   dateModified: string;
   author?: string;
+  image: string;
 }) {
   return {
     "@type": "Article",
     "@id": `${opts.url}#article`,
     headline: opts.headline,
+    image: [opts.image],
     description: opts.description,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified,
     author: {
       "@type": "Organization",
       name: opts.author ?? SITE.brand,
+      url: absoluteUrl('/เกี่ยวกับเรา'),
     },
     publisher: { "@id": SITE.organizationId },
     mainEntityOfPage: { "@id": `${opts.url}#webpage` },
@@ -182,8 +185,16 @@ export function articleSchema(opts: {
 }
 
 export function buildGraph(nodes: Record<string, unknown>[]) {
+  const ownsWebsite = nodes.some((node) =>
+    node["@type"] === "WebPage" && (node.url === SITE.url || node.url === `${SITE.url}/`)
+  );
   return {
     "@context": "https://schema.org",
-    "@graph": [organizationSchema(), localBusinessSchema(), websiteSchema(), ...nodes],
+    "@graph": [
+      organizationSchema(),
+      localBusinessSchema(),
+      ...(ownsWebsite ? [websiteSchema()] : []),
+      ...nodes,
+    ],
   };
 }

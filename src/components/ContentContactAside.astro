@@ -1,0 +1,159 @@
+---
+import { SITE, STORE_LOCATION } from "../data/site";
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+
+interface Props {
+  title?: string;
+  note?: string;
+}
+
+const {
+  title = "ส่งรูปประเมินผ่าน LINE",
+  note = "เริ่มจากรุ่น สเปก รูปสภาพ และตำหนิที่เห็นได้ก่อน ไม่ต้องเดินทางมาที่ร้านเพื่อขอราคาเบื้องต้น",
+} = Astro.props;
+---
+
+<aside class="contact-aside" aria-label="ติดต่อประเมินราคา">
+  <div class="contact-aside__status">
+    <span class="contact-aside__dot" aria-hidden="true"></span>
+    ช่องทางประเมินหลัก
+  </div>
+  <h2>{title}</h2>
+  <p class="contact-aside__lead">{note}</p>
+  <ol class="contact-aside__steps">
+    <li><span>1</span><div><strong>ส่งข้อมูลสินค้า</strong><small>รุ่น · สเปก · รูป · ตำหนิ</small></div></li>
+    <li><span>2</span><div><strong>รับราคาเบื้องต้น</strong><small>ประเมินจากข้อมูลที่ส่งมา</small></div></li>
+    <li><span>3</span><div><strong>ค่อยตกลงวิธีส่งมอบ</strong><small>นัดรับหรือจัดส่งตามเงื่อนไข</small></div></li>
+  </ol>
+  <div class="contact-aside__actions">
+    <PrimaryLineCTA label={`LINE ${SITE.lineId}`} event="sidebar_line_click" />
+    <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="sidebar_phone">
+      โทร {SITE.phoneDisplay}
+    </a>
+  </div>
+  <p class="contact-aside__identity">
+    <strong>{STORE_LOCATION.tradeName}</strong><br />
+    หน้าร้านจริงจังหวัด{STORE_LOCATION.province}
+  </p>
+  <p class="contact-aside__fineprint">{SITE.priceDisclaimer}</p>
+</aside>
+
+<style>
+  .contact-aside {
+    position: sticky;
+    top: 7.75rem;
+    padding: 1.35rem;
+    border-radius: var(--radius-xl);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid var(--color-border-strong);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .contact-aside__status {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+  }
+
+  .contact-aside__dot {
+    width: .55rem;
+    height: .55rem;
+    border-radius: 999px;
+    background: var(--color-line);
+    box-shadow: 0 0 0 4px rgba(6, 199, 85, .12);
+  }
+
+  .contact-aside h2 {
+    margin: .8rem 0 .45rem;
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  .contact-aside__lead {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    line-height: 1.65;
+  }
+
+  .contact-aside__steps {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    display: grid;
+    gap: .65rem;
+  }
+
+  .contact-aside__steps li {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    align-items: start;
+    gap: .7rem;
+  }
+
+  .contact-aside__steps li > span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: .7rem;
+    display: grid;
+    place-items: center;
+    background: var(--color-primary-soft);
+    color: var(--color-primary-dark);
+    font-weight: 800;
+    font-size: .82rem;
+  }
+
+  .contact-aside__steps strong,
+  .contact-aside__steps small {
+    display: block;
+  }
+
+  .contact-aside__steps strong {
+    font-size: .92rem;
+    line-height: 1.35;
+  }
+
+  .contact-aside__steps small {
+    margin-top: .1rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+  }
+
+  .contact-aside__actions {
+    display: grid;
+    gap: .55rem;
+  }
+
+  .contact-aside__actions :global(.btn) {
+    width: 100%;
+  }
+
+  .contact-aside__identity {
+    margin: 1rem 0 .35rem;
+    padding-top: .9rem;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+    line-height: 1.55;
+  }
+
+  .contact-aside__identity strong {
+    color: var(--color-text);
+  }
+
+  .contact-aside__fineprint {
+    margin: 0;
+    color: var(--color-text-subtle);
+    font-size: .73rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 959px) {
+    .contact-aside { display: none; }
+  }
+</style>

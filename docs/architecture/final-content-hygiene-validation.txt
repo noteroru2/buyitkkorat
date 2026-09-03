@@ -1,0 +1,13 @@
+FINAL CONTENT HYGIENE & VISUAL PLACEMENT — STATIC VALIDATION
+Live/indexable/noindex: 360/359/1
+Sitemap: 359
+Content files checked: 349
+SEO/editorial findings: 0
+Raw visible route lines: 0
+Empty H2/H3: 0
+Generic covers: homepage=REMOVED, service=REMOVED, area=REMOVED, trust/legal=REMOVED
+Article visual: COMPACT_RELEVANT_ONLY
+Image minimum/page: 0 (optional; alt validation retained when present)
+Canon EOS R: HOLD
+Report: docs/architecture/final-content-hygiene-report.json
+VERDICT: PASS

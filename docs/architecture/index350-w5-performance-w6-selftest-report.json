@@ -1,0 +1,46 @@
+{
+  "title": "INDEX 350 — W5 Performance Review / W6 Final Selection Self-Test",
+  "evidenceType": "SYNTHETIC_SELF_TEST_ONLY",
+  "realGscData": false,
+  "realIndexationData": false,
+  "realCanonOwnershipResolution": false,
+  "scenarios": [
+    {
+      "name": "no_real_w5_inputs",
+      "reviewState": "WAIT_FOR_REAL_W5_OBSERVATION_DATA",
+      "selectionState": "WAIT_FOR_REAL_W5_REVIEW",
+      "selected": 0,
+      "projectedIndexable": 328
+    },
+    {
+      "name": "synthetic_round6_eligible_safe",
+      "observationState": "ROUND6_REVIEW_ELIGIBLE",
+      "reviewState": "W6_CANDIDATE_REVIEW_READY",
+      "selectionState": "W6_SAFE_SELECTION_READY_FOR_MANUAL_APPROVAL",
+      "selected": 31,
+      "composition": {"F_LOCAL": 13, "G_GUIDE": 18},
+      "projectedIndexable": 359,
+      "canonOwnership": "UNRESOLVED"
+    },
+    {
+      "name": "synthetic_local_watch",
+      "reviewState": "W6_CANDIDATE_REVIEW_READY",
+      "selectionState": "W6_SELECTION_INCOMPLETE_FLOOR_NOT_MET",
+      "selected": 18,
+      "composition": {"G_GUIDE": 18},
+      "projectedIndexable": 346,
+      "floorMet": false
+    },
+    {
+      "name": "synthetic_canon_resolution",
+      "reviewState": "W6_CANDIDATE_REVIEW_READY",
+      "selectionState": "W6_FULL_SELECTION_READY_FOR_MANUAL_APPROVAL",
+      "selected": 32,
+      "composition": {"F_LOCAL": 13, "G_GUIDE": 18, "C_MODEL": 1},
+      "projectedIndexable": 360,
+      "canonOwnership": "SYNTHETIC_APPROVED_FOR_SELF_TEST_ONLY"
+    }
+  ],
+  "automaticW6Release": false,
+  "verdict": "PASS"
+}

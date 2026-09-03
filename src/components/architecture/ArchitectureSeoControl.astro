@@ -1,0 +1,52 @@
+---
+import {
+  buildArchitectureSchema,
+  getArchitectureCanonicalPath,
+  getArchitectureRobots,
+  serializeArchitectureJsonLd,
+  toArchitectureAbsoluteUrl,
+} from '../../config/seo-index-control';
+
+interface Props {
+  pathname?: string;
+  title?: string;
+  description?: string;
+}
+
+const {
+  pathname = Astro.url.pathname,
+  title,
+  description,
+} = Astro.props;
+
+const origin = Astro.site?.href ?? Astro.url.origin;
+const canonicalPath = getArchitectureCanonicalPath(pathname);
+const canonicalUrl = canonicalPath
+  ? toArchitectureAbsoluteUrl(canonicalPath, origin)
+  : null;
+const robots = getArchitectureRobots(pathname);
+const schemaGraph = buildArchitectureSchema({
+  pathname,
+  title,
+  description,
+  origin,
+});
+const jsonLd = schemaGraph.length
+  ? serializeArchitectureJsonLd({
+      '@context': 'https://schema.org',
+      '@graph': schemaGraph,
+    })
+  : null;
+---
+
+<meta name="robots" content={robots} data-architecture-seo="robots" />
+{canonicalUrl && (
+  <link rel="canonical" href={canonicalUrl} data-architecture-seo="canonical" />
+)}
+{jsonLd && (
+  <script
+    type="application/ld+json"
+    set:html={jsonLd}
+    data-architecture-seo="jsonld"
+  />
+)}

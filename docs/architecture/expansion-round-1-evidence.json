@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "round": "EXPANSION RELEASE ROUND 1 — Evidence-Backed Brand / Series Release",
+    "site": "รับซื้อไอทีโคราช.com",
+    "decision": "RELEASE_4",
+    "gscQueryPageEvidence": "NOT_AVAILABLE",
+    "firstPartyEvidenceUsed": true,
+    "manufacturerVerificationUsed": true,
+    "inventedMetrics": false,
+    "releaseCap": 6,
+    "releasedCount": 4
+  },
+  "sources": [
+    {
+      "id": "FP-ASUS-ROG-2026-08",
+      "type": "FIRST_PARTY_PROJECT_ENQUIRY",
+      "supports": [
+        "brand:notebook:asus",
+        "series:notebook:asus:rog"
+      ],
+      "summary": "Recent customer valuation enquiry for an ASUS ROG Zephyrus G14 2025 / GA403UH class gaming notebook; demonstrates real brand and ROG-family sell-side demand.",
+      "metrics": null
+    },
+    {
+      "id": "FP-DELL-LATITUDE-2026-08",
+      "type": "FIRST_PARTY_CORPORATE_ENQUIRY",
+      "supports": [
+        "brand:notebook:dell",
+        "series:notebook:dell:latitude"
+      ],
+      "summary": "Recent corporate sell-side enquiry for a Dell Latitude 7440 with a formal buy-offer workflow; demonstrates real Dell and Latitude-family demand.",
+      "metrics": null
+    },
+    {
+      "id": "OFFICIAL-ASUS-ROG",
+      "type": "MANUFACTURER_REFERENCE",
+      "supports": [
+        "brand:notebook:asus",
+        "series:notebook:asus:rog"
+      ],
+      "source": "ASUS / ROG official laptop family pages",
+      "facts": [
+        "ROG is an ASUS gaming-device/laptop family",
+        "ROG laptop families include Flow, Zephyrus and Strix"
+      ]
+    },
+    {
+      "id": "OFFICIAL-DELL-LATITUDE-7440",
+      "type": "MANUFACTURER_REFERENCE",
+      "supports": [
+        "brand:notebook:dell",
+        "series:notebook:dell:latitude"
+      ],
+      "source": "Dell official Support / Manuals for Latitude 7440",
+      "facts": [
+        "Latitude 7440 is a verified Dell Latitude product",
+        "Dell publishes setup/specification and service documentation for Latitude 7440"
+      ]
+    }
+  ],
+  "holdReasonForOthers": "No equally strong Round-1 evidence package was attested for Acer, Lenovo, HP, MSI or the remaining seeded series; keep HOLD_FOUNDATION."
+}

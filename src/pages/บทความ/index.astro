@@ -2,6 +2,9 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import PageCoverSection from "../../components/PageCoverSection.astro";
+import ImageCTASection from "../../components/ImageCTASection.astro";
+import { ARTICLE_DIRECTORY_VISUALS } from "../../data/pageVisuals";
 import { absoluteUrl } from "../../utils/seo";
 import { breadcrumbSchema, buildGraph, webpageSchema } from "../../utils/schema";
 
@@ -34,6 +37,19 @@ const schema = buildGraph([
     <Breadcrumbs items={breadcrumbs} />
     <h1>บทความแนะนำก่อนขายสินค้าไอที</h1>
     <p class="section__lead">ความรู้ที่ใช้ได้จริงก่อนส่งรูปประเมินผ่าน LINE</p>
+  </div>
+
+  <PageCoverSection
+    image={ARTICLE_DIRECTORY_VISUALS.cover.image}
+    alt={ARTICLE_DIRECTORY_VISUALS.cover.alt}
+    caption={ARTICLE_DIRECTORY_VISUALS.cover.caption}
+    slotId={ARTICLE_DIRECTORY_VISUALS.cover.slotId}
+    eyebrow="ภาพรวมหมวดบทความ"
+    title="อ่านบทความในบรรยากาศที่ดูน่าเชื่อถือและเข้าใจง่าย"
+    lead="ภาพหน้าปกช่วยให้หน้ารวมบทความดูไม่โล่งเกินไป และทำให้เว็บมีมาตรฐานภาพที่สม่ำเสมอทั้งระบบ"
+  />
+
+  <div class="container section section--tight">
     <div class="card-grid card-grid--3">
       {
         articles.map((article) => (
@@ -47,4 +63,14 @@ const schema = buildGraph([
       }
     </div>
   </div>
+
+  <ImageCTASection
+    image={ARTICLE_DIRECTORY_VISUALS.cta.image}
+    alt={ARTICLE_DIRECTORY_VISUALS.cta.alt}
+    slotId={ARTICLE_DIRECTORY_VISUALS.cta.slotId}
+    title="ต้องการประเมินสินค้าจริงของคุณต่อ?"
+    description="หลังจากอ่านคู่มือแล้ว คุณสามารถส่งรูปสินค้า รุ่น และสภาพจริงผ่าน LINE เพื่อขอประเมินเบื้องต้นได้ทันที"
+    note="ข้อมูลในบทความช่วยให้เตรียมตัวง่ายขึ้น แต่ราคาสุดท้ายขึ้นกับการตรวจสินค้าจริง"
+    phoneCta="article_index_phone"
+  />
 </BaseLayout>

@@ -1,0 +1,39 @@
+INDEX 350 — W2 PRODUCTION RELEASE GATE SELF-TEST
+
+STATIC
+- validate:index350:w2:prod: PASS
+- validate:index350:w2: PASS
+- validate:index350: PASS
+- validate:architecture: PASS_WITH_PRODUCTION_ATTESTATION_REQUIRED
+- Script syntax: PASS
+
+SYNTHETIC BUILT SURFACE
+- Governed built pages: 189/189
+- Indexable: 188
+- Unreachable indexable: 0
+- Broken governed links: 0
+- Max observed crawl depth: 4
+- WebSite schema owners: 1
+- W2 built pages: 50/50
+- Sitemap URLs: 188/188
+- Minimum observed W2 inbound paths: 2
+- W2 errors: 0
+- Verdict: PASS
+
+SYNTHETIC PRODUCTION VERIFICATION
+- W2 routes passed: 50/50
+- Parent groups passed: 27/27
+- Minimum W2 inbound paths: 2
+- Sitemap: 188/188 PASS
+- State: PRODUCTION_VERIFIED
+- Observation: OBSERVATION_ACTIVE
+- Release basis: MANUAL_APPROVAL_OVERRIDE
+- Real W1 performance attested: false
+- W3: LOCKED
+- Errors: 0
+- Verdict: PASS
+
+REAL ATTESTATION
+- Real npm build in this runtime: NOT_ATTESTED
+- Real production: NOT_ATTESTED
+- Required next: Windows build + SHA-locked predeploy + production verification

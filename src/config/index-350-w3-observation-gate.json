@@ -1,0 +1,492 @@
+{
+  "meta": {
+    "wave": "INDEX350_W3",
+    "title": "INDEX 350 — W3 Observation Gate",
+    "expectedLiveRoutes": 239,
+    "expectedIndexableRoutes": 238,
+    "expectedNoindexRoutes": 1,
+    "expectedSitemapUrls": 238,
+    "observedUrls": [
+      "/รับซื้อ-asus-tuf-f15-โคราช",
+      "/รับซื้อ-asus-vivobook-15-โคราช",
+      "/รับซื้อ-asus-zenbook-14-โคราช",
+      "/รับซื้อ-dell-inspiron-15-โคราช",
+      "/รับซื้อ-dell-xps-13-โคราช",
+      "/รับซื้อ-alienware-m16-โคราช",
+      "/รับซื้อ-lenovo-ideapad-slim-3-โคราช",
+      "/รับซื้อ-lenovo-yoga-slim-7-โคราช",
+      "/รับซื้อ-hp-elitebook-840-โคราช",
+      "/รับซื้อ-hp-probook-440-โคราช",
+      "/รับซื้อ-hp-pavilion-15-โคราช",
+      "/รับซื้อ-acer-aspire-5-โคราช",
+      "/รับซื้อ-msi-katana-15-โคราช",
+      "/รับซื้อ-msi-cyborg-15-โคราช",
+      "/รับซื้อ-iphone-13-pro-โคราช",
+      "/รับซื้อ-iphone-14-โคราช",
+      "/รับซื้อ-iphone-15-pro-โคราช",
+      "/รับซื้อ-iphone-16-โคราช",
+      "/รับซื้อ-macbook-air-m1-โคราช",
+      "/รับซื้อ-macbook-air-m4-โคราช",
+      "/รับซื้อ-macbook-pro-m1-โคราช",
+      "/รับซื้อ-macbook-pro-m3-โคราช",
+      "/รับซื้อ-ipad-gen-10-โคราช",
+      "/รับซื้อ-ipad-gen-11-a16-โคราช",
+      "/รับซื้อ-samsung-galaxy-s23-โคราช",
+      "/รับซื้อ-samsung-galaxy-s24-โคราช",
+      "/รับซื้อ-samsung-galaxy-s25-โคราช",
+      "/รับซื้อ-samsung-galaxy-a55-โคราช",
+      "/รับซื้อ-samsung-galaxy-a56-โคราช",
+      "/รับซื้อ-samsung-galaxy-z-fold6-โคราช",
+      "/รับซื้อ-samsung-galaxy-z-flip6-โคราช",
+      "/รับซื้อ-oppo-reno13-โคราช",
+      "/รับซื้อ-vivo-v40-โคราช",
+      "/รับซื้อ-vivo-v50-โคราช",
+      "/รับซื้อ-xiaomi-14-โคราช",
+      "/รับซื้อ-xiaomi-15-โคราช",
+      "/รับซื้อ-redmi-note-14-โคราช",
+      "/รับซื้อ-poco-f6-โคราช",
+      "/รับซื้อ-sony-a7iii-โคราช",
+      "/รับซื้อ-canon-r6-mark-ii-โคราช",
+      "/รับซื้อ-fujifilm-x-t5-โคราช",
+      "/รับซื้อ-fujifilm-x-s20-โคราช",
+      "/รับซื้อ-nikon-z6-ii-โคราช",
+      "/รับซื้อ-ps5-slim-โคราช",
+      "/รับซื้อ-ps5-pro-โคราช",
+      "/รับซื้อ-ps4-pro-โคราช",
+      "/รับซื้อ-nintendo-switch-oled-โคราช",
+      "/รับซื้อ-nintendo-switch-lite-โคราช",
+      "/รับซื้อ-nintendo-switch-2-โคราช",
+      "/รับซื้อ-steam-deck-oled-โคราช"
+    ],
+    "observedCount": 50,
+    "modelCount": 50,
+    "clusterMix": {
+      "NOTEBOOK": 14,
+      "APPLE": 10,
+      "MOBILE": 14,
+      "CAMERA": 5,
+      "GAMING": 7
+    },
+    "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+    "realW2PerformanceAttested": false,
+    "automaticW4": false,
+    "w4LockedByDefault": true,
+    "policy": "Observation never auto-releases W4 and never performs destructive SEO actions."
+  },
+  "states": [
+    "WAIT_FOR_PRODUCTION_VERIFICATION",
+    "WAIT_FOR_FINALIZED_GSC",
+    "HOLD_LOW_VISIBILITY",
+    "REVIEW_PENDING_INDEXATION",
+    "OWNERSHIP_REVIEW_REQUIRED",
+    "ROUND4_REVIEW_ELIGIBLE",
+    "BLOCKED"
+  ],
+  "inputs": {
+    "productionVerification": "docs/architecture/index350-w3-production-verification.json",
+    "gscRequiredColumns": [
+      "date",
+      "query",
+      "page",
+      "clicks",
+      "impressions",
+      "position"
+    ],
+    "indexationOptionalColumns": [
+      "url",
+      "indexed",
+      "status",
+      "last_crawl"
+    ],
+    "indexationPolicy": "Optional for early observation; required before ROUND4_REVIEW_ELIGIBLE."
+  },
+  "thresholds": {
+    "minimumFinalizedDays": 7,
+    "recommendedObservationDays": 14,
+    "minimumVisibleW3Pages": 10,
+    "minimumVisibleShare": 0.2,
+    "minimumVisibleByCluster": {
+      "NOTEBOOK": 3,
+      "APPLE": 2,
+      "MOBILE": 3,
+      "CAMERA": 1,
+      "GAMING": 1
+    },
+    "minimumIndexedW3Pages": 40,
+    "minimumIndexedShare": 0.8,
+    "minimumIndexedByCluster": {
+      "NOTEBOOK": 11,
+      "APPLE": 8,
+      "MOBILE": 11,
+      "CAMERA": 4,
+      "GAMING": 6
+    },
+    "ownershipOverlapMinQueries": 3,
+    "ownershipJaccardReview": 0.35,
+    "ownershipMinParentImpressions": 10,
+    "ownershipMinChildImpressions": 10,
+    "maximumOwnershipReviewPairsForEligibility": 5
+  },
+  "clusterByUrl": {
+    "/รับซื้อ-asus-tuf-f15-โคราช": "NOTEBOOK",
+    "/รับซื้อ-asus-vivobook-15-โคราช": "NOTEBOOK",
+    "/รับซื้อ-asus-zenbook-14-โคราช": "NOTEBOOK",
+    "/รับซื้อ-dell-inspiron-15-โคราช": "NOTEBOOK",
+    "/รับซื้อ-dell-xps-13-โคราช": "NOTEBOOK",
+    "/รับซื้อ-alienware-m16-โคราช": "NOTEBOOK",
+    "/รับซื้อ-lenovo-ideapad-slim-3-โคราช": "NOTEBOOK",
+    "/รับซื้อ-lenovo-yoga-slim-7-โคราช": "NOTEBOOK",
+    "/รับซื้อ-hp-elitebook-840-โคราช": "NOTEBOOK",
+    "/รับซื้อ-hp-probook-440-โคราช": "NOTEBOOK",
+    "/รับซื้อ-hp-pavilion-15-โคราช": "NOTEBOOK",
+    "/รับซื้อ-acer-aspire-5-โคราช": "NOTEBOOK",
+    "/รับซื้อ-msi-katana-15-โคราช": "NOTEBOOK",
+    "/รับซื้อ-msi-cyborg-15-โคราช": "NOTEBOOK",
+    "/รับซื้อ-iphone-13-pro-โคราช": "APPLE",
+    "/รับซื้อ-iphone-14-โคราช": "APPLE",
+    "/รับซื้อ-iphone-15-pro-โคราช": "APPLE",
+    "/รับซื้อ-iphone-16-โคราช": "APPLE",
+    "/รับซื้อ-macbook-air-m1-โคราช": "APPLE",
+    "/รับซื้อ-macbook-air-m4-โคราช": "APPLE",
+    "/รับซื้อ-macbook-pro-m1-โคราช": "APPLE",
+    "/รับซื้อ-macbook-pro-m3-โคราช": "APPLE",
+    "/รับซื้อ-ipad-gen-10-โคราช": "APPLE",
+    "/รับซื้อ-ipad-gen-11-a16-โคราช": "APPLE",
+    "/รับซื้อ-samsung-galaxy-s23-โคราช": "MOBILE",
+    "/รับซื้อ-samsung-galaxy-s24-โคราช": "MOBILE",
+    "/รับซื้อ-samsung-galaxy-s25-โคราช": "MOBILE",
+    "/รับซื้อ-samsung-galaxy-a55-โคราช": "MOBILE",
+    "/รับซื้อ-samsung-galaxy-a56-โคราช": "MOBILE",
+    "/รับซื้อ-samsung-galaxy-z-fold6-โคราช": "MOBILE",
+    "/รับซื้อ-samsung-galaxy-z-flip6-โคราช": "MOBILE",
+    "/รับซื้อ-oppo-reno13-โคราช": "MOBILE",
+    "/รับซื้อ-vivo-v40-โคราช": "MOBILE",
+    "/รับซื้อ-vivo-v50-โคราช": "MOBILE",
+    "/รับซื้อ-xiaomi-14-โคราช": "MOBILE",
+    "/รับซื้อ-xiaomi-15-โคราช": "MOBILE",
+    "/รับซื้อ-redmi-note-14-โคราช": "MOBILE",
+    "/รับซื้อ-poco-f6-โคราช": "MOBILE",
+    "/รับซื้อ-sony-a7iii-โคราช": "CAMERA",
+    "/รับซื้อ-canon-r6-mark-ii-โคราช": "CAMERA",
+    "/รับซื้อ-fujifilm-x-t5-โคราช": "CAMERA",
+    "/รับซื้อ-fujifilm-x-s20-โคราช": "CAMERA",
+    "/รับซื้อ-nikon-z6-ii-โคราช": "CAMERA",
+    "/รับซื้อ-ps5-slim-โคราช": "GAMING",
+    "/รับซื้อ-ps5-pro-โคราช": "GAMING",
+    "/รับซื้อ-ps4-pro-โคราช": "GAMING",
+    "/รับซื้อ-nintendo-switch-oled-โคราช": "GAMING",
+    "/รับซื้อ-nintendo-switch-lite-โคราช": "GAMING",
+    "/รับซื้อ-nintendo-switch-2-โคราช": "GAMING",
+    "/รับซื้อ-steam-deck-oled-โคราช": "GAMING"
+  },
+  "ownershipPairs": [
+    {
+      "child": "/รับซื้อ-asus-tuf-f15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-asus-vivobook-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-vivobook-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-asus-zenbook-14-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-zenbook-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-dell-inspiron-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-inspiron-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-dell-xps-13-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-xps-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-alienware-m16-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-alienware-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-lenovo-ideapad-slim-3-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-ideapad-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-lenovo-yoga-slim-7-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-yoga-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-hp-elitebook-840-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-elitebook-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-hp-probook-440-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-probook-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-hp-pavilion-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-pavilion-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-acer-aspire-5-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-aspire-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-msi-katana-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-katana-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-msi-cyborg-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-cyborg-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "NOTEBOOK"
+    },
+    {
+      "child": "/รับซื้อ-iphone-13-pro-โคราช",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "APPLE"
+    },
+    {
+      "child": "/รับซื้อ-iphone-14-โคราช",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "APPLE"
+    },
+    {
+      "child": "/รับซื้อ-iphone-15-pro-โคราช",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "APPLE"
+    },
+    {
+      "child": "/รับซื้อ-iphone-16-โคราช",
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "APPLE"
+    },
+    {
+      "child": "/รับซื้อ-macbook-air-m1-โคราช",
+      "parent": "/รับซื้อ-macbook-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "APPLE"
+    },
+    {
+      "child": "/รับซื้อ-macbook-air-m4-โคราช",
+      "parent": "/รับซื้อ-macbook-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "APPLE"
+    },
+    {
+      "child": "/รับซื้อ-macbook-pro-m1-โคราช",
+      "parent": "/รับซื้อ-macbook-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "APPLE"
+    },
+    {
+      "child": "/รับซื้อ-macbook-pro-m3-โคราช",
+      "parent": "/รับซื้อ-macbook-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "APPLE"
+    },
+    {
+      "child": "/รับซื้อ-ipad-gen-10-โคราช",
+      "parent": "/รับซื้อ-ipad-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "APPLE"
+    },
+    {
+      "child": "/รับซื้อ-ipad-gen-11-a16-โคราช",
+      "parent": "/รับซื้อ-ipad-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "APPLE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-s23-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-s-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-s24-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-s-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-s25-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-s-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-a55-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-a-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-a56-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-a-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-z-fold6-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-z-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-z-flip6-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-z-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-oppo-reno13-โคราช",
+      "parent": "/รับซื้อ-oppo-reno-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-vivo-v40-โคราช",
+      "parent": "/รับซื้อ-vivo-v-series-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-vivo-v50-โคราช",
+      "parent": "/รับซื้อ-vivo-v-series-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-xiaomi-14-โคราช",
+      "parent": "/รับซื้อ-xiaomi-series-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-xiaomi-15-โคราช",
+      "parent": "/รับซื้อ-xiaomi-series-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-redmi-note-14-โคราช",
+      "parent": "/รับซื้อ-redmi-note-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-poco-f6-โคราช",
+      "parent": "/รับซื้อ-poco-f-series-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "MOBILE"
+    },
+    {
+      "child": "/รับซื้อ-sony-a7iii-โคราช",
+      "parent": "/รับซื้อกล้อง-sony-alpha-a7-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "CAMERA"
+    },
+    {
+      "child": "/รับซื้อ-canon-r6-mark-ii-โคราช",
+      "parent": "/รับซื้อกล้อง-canon-eos-r-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "CAMERA"
+    },
+    {
+      "child": "/รับซื้อ-fujifilm-x-t5-โคราช",
+      "parent": "/รับซื้อกล้อง-fujifilm-x-series-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "CAMERA"
+    },
+    {
+      "child": "/รับซื้อ-fujifilm-x-s20-โคราช",
+      "parent": "/รับซื้อกล้อง-fujifilm-x-series-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "CAMERA"
+    },
+    {
+      "child": "/รับซื้อ-nikon-z6-ii-โคราช",
+      "parent": "/รับซื้อกล้อง-nikon-z-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "CAMERA"
+    },
+    {
+      "child": "/รับซื้อ-ps5-slim-โคราช",
+      "parent": "/รับซื้อ-playstation-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "GAMING"
+    },
+    {
+      "child": "/รับซื้อ-ps5-pro-โคราช",
+      "parent": "/รับซื้อ-playstation-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "GAMING"
+    },
+    {
+      "child": "/รับซื้อ-ps4-pro-โคราช",
+      "parent": "/รับซื้อ-playstation-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "GAMING"
+    },
+    {
+      "child": "/รับซื้อ-nintendo-switch-oled-โคราช",
+      "parent": "/รับซื้อ-nintendo-switch-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "GAMING"
+    },
+    {
+      "child": "/รับซื้อ-nintendo-switch-lite-โคราช",
+      "parent": "/รับซื้อ-nintendo-switch-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "GAMING"
+    },
+    {
+      "child": "/รับซื้อ-nintendo-switch-2-โคราช",
+      "parent": "/รับซื้อ-nintendo-switch-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "GAMING"
+    },
+    {
+      "child": "/รับซื้อ-steam-deck-oled-โคราช",
+      "parent": "/รับซื้อเครื่องเกม-โคราช",
+      "nodeType": "MODEL LANDING PAGE",
+      "cluster": "GAMING"
+    }
+  ],
+  "hardRules": [
+    "No automatic W4 release.",
+    "No automatic merge, redirect, noindex, or canonical switch.",
+    "Similarity alone is never a destructive-action trigger.",
+    "Query ownership issues require manual query-by-page review.",
+    "Manual approval override remains disclosed; do not rewrite history as evidence-backed.",
+    "W4 remains locked until real W3 observation reaches ROUND4_REVIEW_ELIGIBLE and a human approves candidates."
+  ]
+}

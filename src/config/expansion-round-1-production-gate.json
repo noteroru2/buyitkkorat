@@ -3,10 +3,10 @@
     "round": "EXPANSION ROUND 1 — Production Release & Observation Gate",
     "site": "รับซื้อไอทีโคราช.com",
     "productionOrigin": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com",
-    "expectedLiveRoutes": 99,
-    "expectedIndexableRoutes": 98,
+    "expectedLiveRoutes": 139,
+    "expectedIndexableRoutes": 138,
     "expectedNoindexRoutes": 1,
-    "expectedSitemapUrls": 98,
+    "expectedSitemapUrls": 138,
     "releasedUrls": [
       "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
       "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช",
@@ -16,7 +16,7 @@
     "round2Locked": true,
     "automaticDeploy": false,
     "automaticRound2": false,
-    "policy": "Round 1 is not considered released until the real repository passes build/crawl and production verifies the four new URLs, canonical/robots/schema/sitemap and parent-child discovery. Round 2 remains locked until finalized GSC observation reaches the review gate."
+    "policy": "Historical Round 1 observation remains locked; current repository counts include INDEX350 W1 (139/138/1). W2 is not automatically allowed."
   },
   "states": [
     "PREDEPLOY_PENDING",
@@ -78,7 +78,7 @@
     },
     "sitemapRequirements": {
       "path": "/sitemap-index.xml",
-      "urlCount": 98,
+      "urlCount": 138,
       "mustContainReleasedUrls": true
     }
   },

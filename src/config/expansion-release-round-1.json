@@ -13,7 +13,10 @@
     "localReleased": 0,
     "automaticPublishing": false,
     "productionGateState": "PREDEPLOY_PENDING_REAL_REPO",
-    "observationState": "LOCKED_UNTIL_PRODUCTION_VERIFIED"
+    "observationState": "LOCKED_UNTIL_PRODUCTION_VERIFIED",
+    "currentRepositoryLive": 139,
+    "currentRepositoryIndexable": 138,
+    "index350W1Released": 40
   },
   "releasedNodes": [
     {

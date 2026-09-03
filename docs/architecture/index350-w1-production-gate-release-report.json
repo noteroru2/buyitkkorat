@@ -1,0 +1,19 @@
+{
+  "wave": "INDEX350_W1",
+  "title": "INDEX 350 EXPANSION — W1 Production Release Gate",
+  "staticGate": "PASS",
+  "scriptSyntax": "PASS",
+  "syntheticBuildAudit": "PASS",
+  "syntheticProductionVerification": "PASS",
+  "syntheticMetrics": {
+    "w1Routes": "40/40",
+    "parentGroups": "10/10",
+    "minimumInboundPaths": 2,
+    "sitemap": "138/138"
+  },
+  "realBuild": "NOT_ATTESTED_IN_THIS_RUNTIME",
+  "realProduction": "NOT_ATTESTED",
+  "w2": "LOCKED",
+  "realPredeployRequired": true,
+  "realProductionVerificationRequired": true
+}

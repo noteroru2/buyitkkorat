@@ -1,0 +1,18 @@
+INDEX 350 — W4 PERFORMANCE REVIEW / W5 SELECTION SELF-TEST
+
+Synthetic source observation: ROUND5_REVIEW_ELIGIBLE
+W4 pages reviewed: 50/50
+Performance classes: EARLY_SIGNAL=50
+Type health: SERIES=HEALTHY, MODEL=HEALTHY, CONDITION=HEALTHY
+Cluster health: MOBILE=HEALTHY, CAMERA=HEALTHY, NOTEBOOK=HEALTHY, APPLE=HEALTHY, COMPUTER=HEALTHY, GAMING=HEALTHY
+Review state: W5_CANDIDATE_REVIEW_READY
+Candidate pool: 53
+Eligible pool: 53/53
+Selected: 40/40
+Composition: D_CONDITION=5, E_B2B=20, F_LOCAL=15
+Group minima satisfied: true
+Selection state: W5_SELECTION_READY_FOR_MANUAL_APPROVAL
+Automatic W5 release: false
+SELFTEST: PASS
+
+Packaged real-data state remains WAIT_FOR_REAL_W4_OBSERVATION_DATA / WAIT_FOR_REAL_W4_REVIEW. Synthetic data is not production evidence.

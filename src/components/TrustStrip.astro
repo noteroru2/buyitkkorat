@@ -1,62 +1,67 @@
 ---
 const items = [
-  { title: "ประเมินผ่าน LINE", text: "ส่งรุ่น รูป และสภาพเพื่อรับการประเมินเบื้องต้น" },
-  {
-    title: "หน้าร้านอุบล · บริการโคราช",
-    text: "หน้าร้านจริงที่อุบลราชธานี ให้บริการลูกค้าในนครราชสีมาแบบนัดรับหรือจัดส่ง ไม่ใช่สาขาโคราช",
-  },
-  { title: "โปร่งใสราคา", text: "ราคาสุดท้ายยืนยันหลังตรวจสอบสินค้าจริง" },
-  { title: "บุคคลและองค์กร", text: "รองรับรายชิ้น หลายชิ้น และยกล็อตตามเงื่อนไข" },
+  { icon: "01", title: "ส่งรูปผ่าน LINE", text: "เริ่มจากรุ่น สเปก รูป และสภาพ เพื่อประเมินเบื้องต้นก่อน" },
+  { icon: "02", title: "ตัวตนร้านตรวจสอบได้", text: "ร้านอำพล เทรดดิ้งมีหน้าร้านจริงจังหวัดอุบลราชธานี และให้บริการลูกค้าโคราชตามเงื่อนไข" },
+  { icon: "03", title: "บอกราคาตามสภาพจริง", text: "ราคาเบื้องต้นอาจเปลี่ยนหลังตรวจเครื่องจริง เพื่อให้เงื่อนไขชัดเจนทั้งสองฝ่าย" },
+  { icon: "04", title: "รองรับบุคคลและองค์กร", text: "ขายเครื่องเดียว หลายชิ้น หรือยกล็อต สามารถส่งรายการให้ตรวจเบื้องต้นได้" },
 ];
 ---
 
-<section class="trust section--tight" aria-label="จุดเด่นบริการ">
+<section class="trust" aria-label="จุดเด่นบริการ">
   <div class="container trust__grid">
-    {
-      items.map((item) => (
-        <article class="trust__item">
+    {items.map((item) => (
+      <article class="trust__item">
+        <span class="trust__icon" aria-hidden="true">{item.icon}</span>
+        <div>
           <h2>{item.title}</h2>
           <p>{item.text}</p>
-        </article>
-      ))
-    }
+        </div>
+      </article>
+    ))}
   </div>
 </section>
 
 <style>
+  .trust {
+    position:relative;
+    z-index:2;
+    margin-top:-1.25rem;
+    padding-bottom:1.25rem;
+  }
   .trust__grid {
-    display: grid;
-    gap: var(--space-3);
-    grid-template-columns: 1fr;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:.65rem;
+    padding:.75rem;
+    border:1px solid var(--color-border-strong);
+    border-radius:1.25rem;
+    background:rgba(255,255,255,.96);
+    box-shadow:var(--shadow-md);
   }
-
-  @media (min-width: 640px) {
-    .trust__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .trust__grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
   .trust__item {
-    background: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    padding: var(--space-4);
+    display:grid;
+    grid-template-columns:2.25rem 1fr;
+    gap:.7rem;
+    align-items:start;
+    padding:.65rem;
   }
-
-  .trust__item h2 {
-    margin: 0 0 var(--space-2);
-    font-size: var(--font-size-base);
+  .trust__icon {
+    width:2.25rem;
+    height:2.25rem;
+    border-radius:.7rem;
+    display:grid;
+    place-items:center;
+    background:var(--color-primary-soft);
+    color:var(--color-primary-dark);
+    font-size:.68rem;
+    font-weight:900;
   }
-
-  .trust__item p {
-    margin: 0;
-    font-size: var(--font-size-sm);
-    color: var(--color-text-muted);
+  .trust__item h2 { margin:0 0 .16rem; font-size:.9rem; line-height:1.4; }
+  .trust__item p { margin:0; color:var(--color-text-muted); font-size:.76rem; line-height:1.55; }
+  @media(min-width:640px){ .trust__grid{grid-template-columns:repeat(2,1fr);} }
+  @media(min-width:1024px){
+    .trust { margin-top:-1.65rem; padding-bottom:1.8rem; }
+    .trust__grid{grid-template-columns:repeat(4,1fr); gap:0; padding:.55rem;}
+    .trust__item + .trust__item{border-left:1px solid var(--color-border);}
   }
 </style>

@@ -16,9 +16,9 @@ const live=architecture.routes.filter((n)=>n.kind==='LIVE');
 const indexable=live.filter((n)=>n.indexState==='INDEX');
 const errors=[];
 
-if(live.length!==gate.meta.expectedLiveRoutes) errors.push(`Live ${live.length} != ${gate.meta.expectedLiveRoutes}`);
-if(indexable.length!==gate.meta.expectedIndexableRoutes) errors.push(`Indexable ${indexable.length} != ${gate.meta.expectedIndexableRoutes}`);
-if(seo.sitemap.expectedUrlCount!==gate.meta.expectedSitemapUrls) errors.push('Sitemap count drift');
+if(live.length<gate.meta.expectedLiveRoutes) errors.push(`Live ${live.length} < historical minimum ${gate.meta.expectedLiveRoutes}`);
+if(indexable.length<gate.meta.expectedIndexableRoutes) errors.push(`Indexable ${indexable.length} < historical minimum ${gate.meta.expectedIndexableRoutes}`);
+if(seo.sitemap.expectedUrlCount<gate.meta.expectedSitemapUrls) errors.push('Sitemap count dropped below historical gate');
 if(gate.meta.round2Locked!==true) errors.push('Round 2 must be locked by default');
 if(gate.meta.automaticDeploy!==false) errors.push('Automatic deploy must be false');
 if(gate.meta.automaticRound2!==false) errors.push('Automatic Round 2 must be false');

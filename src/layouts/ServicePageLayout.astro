@@ -7,22 +7,16 @@ import FAQSection from "../components/FAQSection.astro";
 import RelatedServices from "../components/RelatedServices.astro";
 import RelatedArticles from "../components/RelatedArticles.astro";
 import SafetyNotice from "../components/SafetyNotice.astro";
-import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
 import ResponsiveImage from "../components/ResponsiveImage.astro";
+import ContentContactAside from "../components/ContentContactAside.astro";
+import PageCoverSection from "../components/PageCoverSection.astro";
+import ImageCTASection from "../components/ImageCTASection.astro";
 import type { ImageMetadata } from "astro";
-import { SITE } from "../data/site";
+import type { PageVisualAsset } from "../data/pageVisuals";
 import type { BreadcrumbItem } from "../utils/seo";
 
-interface Faq {
-  question: string;
-  answer: string;
-}
-
-interface Related {
-  title: string;
-  href: string;
-  excerpt?: string;
-}
+interface Faq { question: string; answer: string; }
+interface Related { title: string; href: string; excerpt?: string; }
 
 interface Props {
   title: string;
@@ -44,40 +38,36 @@ interface Props {
     caption: string;
     slotId: string;
   };
+  coverVisual?: PageVisualAsset;
+  ctaVisual?: PageVisualAsset;
 }
 
 const {
-  title,
-  description,
-  h1,
-  lead,
-  breadcrumbs,
-  canonical,
-  ogImage,
-  updatedDate,
-  schema,
-  illustration = "devices",
-  faqs = [],
-  relatedServices = [],
-  relatedArticles = [],
-  pilotImage,
+  title, description, h1, lead, breadcrumbs, canonical, ogImage, updatedDate, schema,
+  illustration = "devices", faqs = [], relatedServices = [], relatedArticles = [], pilotImage,
+  coverVisual, ctaVisual,
 } = Astro.props;
 ---
 
-<BaseLayout
-  title={title}
-  description={description}
-  canonical={canonical}
-  ogImage={ogImage}
-  updatedDate={updatedDate}
-  schema={schema}
->
-  <div class="container" style="padding-top: var(--space-4)">
-    <Breadcrumbs items={breadcrumbs} />
-  </div>
+<BaseLayout title={title} description={description} canonical={canonical} ogImage={ogImage} updatedDate={updatedDate} schema={schema}>
+  <div class="container service-breadcrumbs"><Breadcrumbs items={breadcrumbs} /></div>
+
   <HeroSection h1={h1} lead={lead} illustration={illustration}>
     <CuteDeviceIllustration slot="illustration" type={illustration} title={h1} />
   </HeroSection>
+
+  {coverVisual && (
+    <PageCoverSection
+      image={coverVisual.image}
+      alt={coverVisual.alt}
+      caption={coverVisual.caption}
+      slotId={coverVisual.slotId}
+      eyebrow="ภาพประกอบหมวดสินค้า"
+      title="ดูภาพรวมประเภทสินค้าที่เกี่ยวข้อง"
+      lead="เพิ่มความน่าเชื่อถือด้วยภาพจริงสไตล์สินค้าที่สอดคล้องกับหน้าบริการนี้ และช่วยให้ผู้ใช้เห็นประเภทอุปกรณ์ที่สามารถส่งมาประเมินได้"
+    />
+  )}
+
   {pilotImage && (
     <section class="section pilot-image-section" aria-label="ภาพประกอบขั้นตอนบริการ">
       <div class="container pilot-image-container">
@@ -96,30 +86,34 @@ const {
       </div>
     </section>
   )}
-  <article class="section">
-    <div class="container prose main-content">
-      <slot />
+
+  <article class="section content-section">
+    <div class="container content-layout">
+      <div class="prose main-content content-card"><slot /></div>
+      <ContentContactAside />
     </div>
   </article>
+
   <SafetyNotice />
   <FAQSection items={faqs} />
   <RelatedServices items={relatedServices} />
   <RelatedArticles items={relatedArticles} />
-  <section class="section">
-    <div class="container" style="text-align:center">
-      <h2 class="section__title">พร้อมขายแล้ว ส่งรายละเอียดมาได้เลย</h2>
-      <p class="section__lead" style="margin-inline:auto">
-        แอด LINE {SITE.lineId} เพื่อส่งรูปและข้อมูลประเมินเบื้องต้นในโคราช
-      </p>
-      <PrimaryLineCTA label="แอด LINE @buyhub" event="service_cta_click" />
-      <p class="disclaimer" style="margin-top: var(--space-4); display:inline-block; text-align:left">
-        {SITE.priceDisclaimer}
-      </p>
-    </div>
-  </section>
+
+  {ctaVisual && (
+    <ImageCTASection
+      image={ctaVisual.image}
+      alt={ctaVisual.alt}
+      slotId={ctaVisual.slotId}
+      title="พร้อมขายแล้ว? ส่งรูปทาง LINE ก่อนนัดรับ"
+      description="ส่งรุ่น สเปก รูปสภาพ และตำหนิผ่าน LINE เพื่อให้ทีมงานตรวจข้อมูลเบื้องต้นได้เร็วขึ้น ก่อนคุยเรื่องนัดรับหรือการจัดส่ง"
+      note="ราคาสุดท้ายยืนยันหลังตรวจสินค้าจริง สภาพ อุปกรณ์ และการใช้งานอีกครั้ง"
+      phoneCta="service_final_phone"
+    />
+  )}
 </BaseLayout>
 
 <style>
-  .pilot-image-section { padding-block: var(--space-6) 0; }
-  .pilot-image-container { max-width: 50rem; }
+  .service-breadcrumbs { padding-top:1rem; }
+  .pilot-image-section { padding-block:2rem 0; }
+  .pilot-image-container { max-width:52rem; }
 </style>

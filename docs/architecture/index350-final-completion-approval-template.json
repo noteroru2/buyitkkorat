@@ -1,0 +1,8 @@
+{
+  "approved": false,
+  "approvedBy": "",
+  "approvedAt": "",
+  "acknowledgeCanonRemainsHold": true,
+  "acknowledgeNoAutomaticFurtherRelease": true,
+  "notes": "Copy this template to index350-final-completion-approval.json only after the evaluator reports ARCHITECTURE_COMPLETION_ELIGIBLE."
+}

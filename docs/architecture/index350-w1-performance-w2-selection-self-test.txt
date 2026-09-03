@@ -1,0 +1,39 @@
+INDEX 350 — W1 PERFORMANCE REVIEW & W2 CANDIDATE SELECTION SELF TEST
+
+SYNTHETIC INPUT ONLY — NOT REAL W1 PERFORMANCE
+
+Source observation: ROUND2_REVIEW_ELIGIBLE
+Performance state: W2_CANDIDATE_REVIEW_READY
+Performance classes: {"EARLY_SIGNAL": 10, "INDEXED_NO_VISIBILITY": 26, "NOT_INDEXED": 4}
+
+Selection state: W2_SELECTION_READY_FOR_MANUAL_APPROVAL
+Selected: 50/50
+Series: 30/30
+Model: 20/20
+Eligible pool after synthetic W1 blockers: 93/126
+
+Top 20 synthetic selections:
+ 1. MODEL /รับซื้อ-asus-tuf-a15-โคราช score=83
+ 2. MODEL /รับซื้อ-lenovo-thinkpad-t14-โคราช score=83
+ 3. MODEL /รับซื้อ-lenovo-x1-carbon-โคราช score=83
+ 4. MODEL /รับซื้อ-lenovo-legion-5-โคราช score=83
+ 5. MODEL /รับซื้อ-lenovo-loq-15-โคราช score=83
+ 6. MODEL /รับซื้อ-hp-victus-15-โคราช score=83
+ 7. MODEL /รับซื้อ-hp-omen-16-โคราช score=83
+ 8. MODEL /รับซื้อ-acer-nitro-v-15-โคราช score=83
+ 9. MODEL /รับซื้อ-acer-predator-helios-neo-16-โคราช score=83
+10. MODEL /รับซื้อ-acer-aspire-5-โคราช score=75
+11. MODEL /รับซื้อ-acer-nitro-5-โคราช score=75
+12. MODEL /รับซื้อ-asus-tuf-f15-โคราช score=75
+13. MODEL /รับซื้อ-asus-vivobook-15-โคราช score=75
+14. MODEL /รับซื้อ-lenovo-ideapad-slim-3-โคราช score=75
+15. MODEL /รับซื้อ-asus-rog-zephyrus-g14-โคราช score=58
+16. MODEL /รับซื้อ-asus-rog-zephyrus-g16-โคราช score=58
+17. MODEL /รับซื้อ-asus-rog-strix-g16-โคราช score=58
+18. MODEL /รับซื้อ-dell-latitude-7440-โคราช score=58
+19. MODEL /รับซื้อ-dell-latitude-7430-โคราช score=58
+20. MODEL /รับซื้อ-iphone-13-โคราช score=58
+
+Automatic W2 release: false
+W2 remains locked pending manual approval.
+SELFTEST_VERDICT: PASS

@@ -1,0 +1,12 @@
+INDEX 350 W5 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 329/328/1
+W5 governed: 40/40
+Composition: Condition 5, B2B 20, Local 15
+Parent groups: 7
+Sitemap target: 328
+Minimum W5 inbound paths: 2
+Minimum images/page: 2
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W4 performance attested: false
+W6: LOCKED
+VERDICT: PASS

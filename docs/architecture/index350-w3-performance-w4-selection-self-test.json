@@ -1,0 +1,61 @@
+{
+  "title": "INDEX 350 — W3 Performance Review & W4 Candidate Selection Self-Test",
+  "tests": {
+    "noRealData": {
+      "expectedReview": "WAIT_FOR_REAL_W3_OBSERVATION_DATA",
+      "expectedSelection": "WAIT_FOR_REAL_W3_REVIEW",
+      "selected": 0,
+      "pass": true
+    },
+    "eligibleSyntheticObservation": {
+      "sourceObservation": "ROUND4_REVIEW_ELIGIBLE",
+      "reviewState": "W4_CANDIDATE_REVIEW_READY",
+      "reviewedPages": 50,
+      "clusterHealth": {
+        "NOTEBOOK": "HEALTHY",
+        "APPLE": "HEALTHY",
+        "MOBILE": "HEALTHY",
+        "CAMERA": "HEALTHY",
+        "GAMING": "HEALTHY"
+      },
+      "selectionState": "W4_SELECTION_READY_FOR_MANUAL_APPROVAL",
+      "selected": 50,
+      "groupCounts": {
+        "B_SERIES": 18,
+        "C_MODEL": 7,
+        "D_CONDITION": 25
+      },
+      "conditionClusterCounts": {
+        "NOTEBOOK": 7,
+        "MOBILE": 5,
+        "APPLE": 1,
+        "COMPUTER": 4,
+        "CAMERA": 4,
+        "GAMING": 4
+      },
+      "sameWaveSonyDependencySatisfied": true,
+      "staticRiskBlocked": true,
+      "pass": true
+    },
+    "csvExporterRegression": {
+      "rows": 50,
+      "expectedRows": 50,
+      "columns": [
+        "url",
+        "nodeType",
+        "cluster",
+        "clicks",
+        "impressions",
+        "uniqueQueries",
+        "avgPosition",
+        "signal",
+        "visible",
+        "indexed",
+        "indexStatus",
+        "lastCrawl"
+      ],
+      "pass": true
+    }
+  },
+  "automaticW4Release": false
+}

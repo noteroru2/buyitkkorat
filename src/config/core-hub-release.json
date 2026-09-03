@@ -6,8 +6,8 @@
     "policy": "Strengthen deterministic parent→child, child→parent and bounded sibling links. Batch 5 additionally releases /พื้นที่ as the real local authority hub.",
     "localHubState": "RELEASED_BATCH_5",
     "appleHubState": "BRIDGE_ONLY_UNTIL_REAL_HUB_EXISTS",
-    "brandModelSeriesState": "FOUNDATION_ONLY_BATCH_6",
-    "expansionPolicy": "Brand/Series/Model candidates are governed by brand-model-series-foundation.json and are not runtime links until released.",
+    "brandModelSeriesState": "INDEX350_W1_RELEASED",
+    "expansionPolicy": "W1 adds 24 Brand + 16 Series live routes; remaining INDEX350 candidates stay HOLD and are not emitted.",
     "guideAuthorityState": "RUNTIME_GUIDE_GRAPH_BATCH_7",
     "guideAuthorityPolicy": "The live /บทความ hub remains the URL parent; virtual topical guide clusters are non-linkable organizational nodes.",
     "navigationArchitectureState": "GLOBAL_NAV_CONFIG_BATCH_8",
@@ -17,7 +17,8 @@
     "architectureQualityGateState": "BATCH_10_PRE_PRODUCTION_GATE",
     "architectureQualityGatePolicy": "Expansion remains locked until static architecture validation passes and real-repository build/crawl integration is attested.",
     "expansionRound1State": "RELEASED_4",
-    "expansionRound1Policy": "ASUS/ROG and Dell/Latitude only; no model release."
+    "expansionRound1Policy": "ASUS/ROG and Dell/Latitude only; no model release.",
+    "index350Wave": "W1_RELEASED_SOURCE_PENDING_PRODUCTION"
   },
   "homepagePrimaryHubs": [
     "/รับซื้อสินค้าไอที",
@@ -68,7 +69,15 @@
         "/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช",
         "/รับซื้อโน๊ตบุ๊คเสีย-โคราช",
         "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
-        "/รับซื้อโน๊ตบุ๊ค-dell-โคราช"
+        "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+        "/รับซื้อ-microsoft-surface-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+        "/รับซื้อ-samsung-galaxy-book-โคราช"
       ]
     },
     {
@@ -123,7 +132,13 @@
       ],
       "sourceHint": "src/content/services/รับซื้อกล้อง-โคราช.md",
       "children": [
-        "/รับซื้อเลนส์กล้อง-โคราช"
+        "/รับซื้อเลนส์กล้อง-โคราช",
+        "/รับซื้อกล้อง-sony-โคราช",
+        "/รับซื้อกล้อง-canon-โคราช",
+        "/รับซื้อกล้อง-fujifilm-โคราช",
+        "/รับซื้อกล้อง-nikon-โคราช",
+        "/รับซื้อกล้อง-panasonic-lumix-โคราช",
+        "/รับซื้อกล้อง-om-system-olympus-โคราช"
       ]
     },
     {
@@ -280,6 +295,46 @@
     "/รับซื้อโน๊ตบุ๊ค-asus-โคราช": "รับซื้อโน๊ตบุ๊ค ASUS โคราช",
     "/รับซื้อโน๊ตบุ๊ค-asus-rog-โคราช": "รับซื้อ ASUS ROG โคราช",
     "/รับซื้อโน๊ตบุ๊ค-dell-โคราช": "รับซื้อโน๊ตบุ๊ค Dell โคราช",
-    "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช": "รับซื้อ Dell Latitude โคราช"
+    "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช": "รับซื้อ Dell Latitude โคราช",
+    "/รับซื้อโน๊ตบุ๊ค-acer-โคราช": "Acer",
+    "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช": "Lenovo",
+    "/รับซื้อโน๊ตบุ๊ค-hp-โคราช": "HP",
+    "/รับซื้อโน๊ตบุ๊ค-msi-โคราช": "MSI",
+    "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช": "Gigabyte",
+    "/รับซื้อ-microsoft-surface-โคราช": "Microsoft Surface",
+    "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช": "Huawei MateBook",
+    "/รับซื้อ-samsung-galaxy-book-โคราช": "Samsung Galaxy Book",
+    "/รับซื้อโทรศัพท์-realme-โคราช": "realme",
+    "/รับซื้อโทรศัพท์-honor-โคราช": "HONOR",
+    "/รับซื้อโทรศัพท์-huawei-โคราช": "Huawei",
+    "/รับซื้อโทรศัพท์-motorola-โคราช": "Motorola",
+    "/รับซื้อโทรศัพท์-nothing-โคราช": "Nothing Phone",
+    "/รับซื้อกล้อง-sony-โคราช": "Sony",
+    "/รับซื้อกล้อง-canon-โคราช": "Canon",
+    "/รับซื้อกล้อง-fujifilm-โคราช": "Fujifilm",
+    "/รับซื้อกล้อง-nikon-โคราช": "Nikon",
+    "/รับซื้อกล้อง-panasonic-lumix-โคราช": "Panasonic Lumix",
+    "/รับซื้อกล้อง-om-system-olympus-โคราช": "OM SYSTEM / Olympus",
+    "/รับซื้อจอมอนิเตอร์-lg-โคราช": "LG Monitor",
+    "/รับซื้อจอมอนิเตอร์-samsung-โคราช": "Samsung Monitor",
+    "/รับซื้อจอมอนิเตอร์-dell-โคราช": "Dell Monitor",
+    "/รับซื้ออุปกรณ์-logitech-โคราช": "Logitech",
+    "/รับซื้ออุปกรณ์-razer-โคราช": "Razer",
+    "/รับซื้อโน๊ตบุ๊ค-acer-aspire-โคราช": "Acer Aspire",
+    "/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช": "Acer Nitro",
+    "/รับซื้อโน๊ตบุ๊ค-acer-predator-โคราช": "Acer Predator",
+    "/รับซื้อโน๊ตบุ๊ค-acer-swift-โคราช": "Acer Swift",
+    "/รับซื้อโน๊ตบุ๊ค-lenovo-ideapad-โคราช": "Lenovo IdeaPad",
+    "/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช": "Lenovo ThinkPad",
+    "/รับซื้อโน๊ตบุ๊ค-lenovo-legion-โคราช": "Lenovo Legion",
+    "/รับซื้อโน๊ตบุ๊ค-lenovo-loq-โคราช": "Lenovo LOQ",
+    "/รับซื้อโน๊ตบุ๊ค-hp-victus-โคราช": "HP Victus",
+    "/รับซื้อโน๊ตบุ๊ค-hp-omen-โคราช": "HP OMEN",
+    "/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช": "ASUS TUF Gaming",
+    "/รับซื้อโน๊ตบุ๊ค-asus-vivobook-โคราช": "ASUS Vivobook",
+    "/รับซื้อโน๊ตบุ๊ค-asus-zenbook-โคราช": "ASUS Zenbook",
+    "/รับซื้อโน๊ตบุ๊ค-dell-inspiron-โคราช": "Dell Inspiron",
+    "/รับซื้อโน๊ตบุ๊ค-dell-xps-โคราช": "Dell XPS",
+    "/รับซื้อโน๊ตบุ๊ค-dell-alienware-โคราช": "Dell Alienware"
   }
 }

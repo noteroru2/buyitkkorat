@@ -1,5 +1,5 @@
 ---
-import { MAIN_NAV, SITE } from "../data/site";
+import { MAIN_NAV, SITE, STORE_LOCATION } from "../data/site";
 import PrimaryLineCTA from "./PrimaryLineCTA.astro";
 import FacebookCTA from "./FacebookCTA.astro";
 ---
@@ -7,37 +7,22 @@ import FacebookCTA from "./FacebookCTA.astro";
 <div id="mobile-navigation" class="mobile-nav" hidden data-mobile-nav>
   <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="เมนูมือถือ">
     <div class="mobile-nav__top">
-      <strong>{SITE.brand}</strong>
-      <button type="button" class="mobile-nav__close" data-mobile-menu-close>
-        ปิด
-      </button>
+      <div><strong>{SITE.brand}</strong><small>{STORE_LOCATION.tradeName}</small></div>
+      <button type="button" class="mobile-nav__close" data-mobile-menu-close aria-label="ปิดเมนู">✕</button>
     </div>
+    <div class="mobile-nav__quick"><PrimaryLineCTA label={`LINE ${SITE.lineId} · ส่งรูปประเมิน`} /></div>
     <nav aria-label="เมนูมือถือ">
       <ul>
-        {
-          MAIN_NAV.flatMap((item) =>
-            item.children?.length
-              ? item.children.map((child) => (
-                  <li>
-                    <a href={child.href}>{child.label}</a>
-                  </li>
-                ))
-              : [
-                  <li>
-                    <a href={item.href}>{item.label}</a>
-                  </li>,
-                ],
-          )
-        }
-        <li><a href="/เกี่ยวกับเรา">เกี่ยวกับเรา</a></li>
-        <li><a href="/คำถามที่พบบ่อย">คำถามที่พบบ่อย</a></li>
+        {MAIN_NAV.flatMap((item)=>item.children?.length
+          ? [<li class="mobile-nav__group"><span>{item.label}</span></li>, ...item.children.map((child)=><li><a href={child.href}>{child.label}<span aria-hidden="true">→</span></a></li>)]
+          : [<li><a href={item.href}>{item.label}<span aria-hidden="true">→</span></a></li>]
+        )}
+        <li><a href="/เกี่ยวกับเรา">เกี่ยวกับเรา<span aria-hidden="true">→</span></a></li>
+        <li><a href="/คำถามที่พบบ่อย">คำถามที่พบบ่อย<span aria-hidden="true">→</span></a></li>
       </ul>
     </nav>
     <div class="mobile-nav__cta">
-      <PrimaryLineCTA label={`แอด LINE ${SITE.lineId}`} />
-      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="mobile_nav_phone">
-        โทร {SITE.phoneDisplay}
-      </a>
+      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="mobile_nav_phone">โทร {SITE.phoneDisplay}</a>
       <FacebookCTA />
     </div>
   </div>
@@ -45,93 +30,35 @@ import FacebookCTA from "./FacebookCTA.astro";
 
 <script>
   function setupMobileNav() {
-    const nav = document.querySelector("[data-mobile-nav]");
-    const toggle = document.querySelector("[data-mobile-menu-toggle]");
-    const closeBtn = document.querySelector("[data-mobile-menu-close]");
-    if (!(nav instanceof HTMLElement) || !(toggle instanceof HTMLElement)) return;
-
-    const open = () => {
-      nav.hidden = false;
-      toggle.setAttribute("aria-expanded", "true");
-      document.body.style.overflow = "hidden";
-    };
-    const close = () => {
-      nav.hidden = true;
-      toggle.setAttribute("aria-expanded", "false");
-      document.body.style.overflow = "";
-    };
-
-    toggle.addEventListener("click", () => {
-      if (nav.hidden) open();
-      else close();
-    });
-    closeBtn?.addEventListener("click", close);
-    nav.addEventListener("click", (event) => {
-      if (event.target === nav) close();
-    });
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !nav.hidden) close();
-    });
+    const nav=document.querySelector("[data-mobile-nav]");
+    const toggle=document.querySelector("[data-mobile-menu-toggle]");
+    const closeBtn=document.querySelector("[data-mobile-menu-close]");
+    if(!(nav instanceof HTMLElement)||!(toggle instanceof HTMLElement)) return;
+    const open=()=>{nav.hidden=false;toggle.setAttribute("aria-expanded","true");document.body.style.overflow="hidden";};
+    const close=()=>{nav.hidden=true;toggle.setAttribute("aria-expanded","false");document.body.style.overflow="";};
+    toggle.addEventListener("click",()=>nav.hidden?open():close());
+    closeBtn?.addEventListener("click",close);
+    nav.addEventListener("click",(event)=>{if(event.target===nav) close();});
+    nav.querySelectorAll("a").forEach((link)=>link.addEventListener("click",close));
+    document.addEventListener("keydown",(event)=>{if(event.key==="Escape"&&!nav.hidden) close();});
   }
-
   setupMobileNav();
-  document.addEventListener("astro:page-load", setupMobileNav);
+  document.addEventListener("astro:page-load",setupMobileNav);
 </script>
 
 <style>
-  .mobile-nav {
-    position: fixed;
-    inset: 0;
-    z-index: 60;
-    background: rgba(36, 50, 74, 0.4);
-  }
-
-  .mobile-nav__panel {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: min(100%, 22rem);
-    height: 100%;
-    background: var(--color-cream);
-    padding: var(--space-5);
-    overflow: auto;
-    box-shadow: var(--shadow-lg);
-  }
-
-  .mobile-nav__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--space-5);
-  }
-
-  .mobile-nav__close {
-    min-height: 44px;
-    padding: 0 1rem;
-    border-radius: var(--radius-pill);
-    border: 1px solid var(--color-border);
-    background: white;
-    cursor: pointer;
-  }
-
-  .mobile-nav ul {
-    list-style: none;
-    margin: 0 0 var(--space-5);
-    padding: 0;
-  }
-
-  .mobile-nav a {
-    display: flex;
-    align-items: center;
-    min-height: 44px;
-    text-decoration: none;
-    color: var(--color-text);
-    font-weight: 600;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .mobile-nav__cta {
-    display: grid;
-    gap: var(--space-3);
-  }
+  .mobile-nav { position:fixed; inset:0; z-index:60; background:rgba(15,23,42,.5); backdrop-filter:blur(3px); }
+  .mobile-nav__panel { position:absolute; top:0; right:0; width:min(92vw,23.5rem); height:100%; padding:1rem; overflow:auto; background:#fff; box-shadow:-18px 0 50px rgba(15,23,42,.2); }
+  .mobile-nav__top { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:.2rem 0 1rem; border-bottom:1px solid var(--color-border); }
+  .mobile-nav__top > div { display:flex; flex-direction:column; line-height:1.2; }
+  .mobile-nav__top small { margin-top:.2rem; color:var(--color-text-subtle); font-size:.7rem; }
+  .mobile-nav__close { width:42px; height:42px; border-radius:.75rem; border:1px solid var(--color-border-strong); background:#f8fafc; cursor:pointer; color:var(--color-text); }
+  .mobile-nav__quick { padding:1rem 0 .5rem; }
+  .mobile-nav__quick :global(.btn) { width:100%; min-height:50px; }
+  .mobile-nav ul { list-style:none; margin:.5rem 0 1rem; padding:0; }
+  .mobile-nav li a { min-height:44px; display:flex; align-items:center; justify-content:space-between; gap:.75rem; padding:.45rem .4rem; border-bottom:1px solid #eef1f5; color:var(--color-text); text-decoration:none; font-size:.9rem; font-weight:650; }
+  .mobile-nav li a span { color:var(--color-primary); }
+  .mobile-nav__group { margin-top:.85rem; padding:.4rem .4rem .25rem; color:var(--color-text-subtle); font-size:.68rem; font-weight:850; text-transform:uppercase; letter-spacing:.06em; }
+  .mobile-nav__cta { display:grid; grid-template-columns:1fr 1fr; gap:.5rem; padding-top:.75rem; border-top:1px solid var(--color-border); }
+  .mobile-nav__cta :global(.btn) { width:100%; }
 </style>

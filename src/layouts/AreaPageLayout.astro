@@ -5,77 +5,75 @@ import FAQSection from "../components/FAQSection.astro";
 import RelatedServices from "../components/RelatedServices.astro";
 import RelatedArticles from "../components/RelatedArticles.astro";
 import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import ContentContactAside from "../components/ContentContactAside.astro";
+import PageCoverSection from "../components/PageCoverSection.astro";
+import ImageCTASection from "../components/ImageCTASection.astro";
 import { SITE } from "../data/site";
+import type { PageVisualAsset } from "../data/pageVisuals";
 import type { BreadcrumbItem } from "../utils/seo";
 
-interface Faq {
-  question: string;
-  answer: string;
-}
-
-interface Related {
-  title: string;
-  href: string;
-  excerpt?: string;
-}
-
+interface Faq { question: string; answer: string; }
+interface Related { title: string; href: string; excerpt?: string; }
 interface Props {
-  title: string;
-  description: string;
-  h1: string;
-  lead: string;
-  breadcrumbs: BreadcrumbItem[];
-  canonical?: string;
-  ogImage?: string;
-  updatedDate?: Date | string;
+  title: string; description: string; h1: string; lead: string; breadcrumbs: BreadcrumbItem[];
+  canonical?: string; ogImage?: string; updatedDate?: Date | string;
   schema?: Record<string, unknown> | Record<string, unknown>[];
-  faqs?: Faq[];
-  relatedServices?: Related[];
-  relatedArticles?: Related[];
+  faqs?: Faq[]; relatedServices?: Related[]; relatedArticles?: Related[];
+  coverVisual?: PageVisualAsset; ctaVisual?: PageVisualAsset;
 }
-
 const props = Astro.props;
 ---
 
-<BaseLayout
-  title={props.title}
-  description={props.description}
-  canonical={props.canonical}
-  ogImage={props.ogImage}
-  updatedDate={props.updatedDate}
-  schema={props.schema}
->
-  <div class="container" style="padding-top: var(--space-5)">
-    <Breadcrumbs items={props.breadcrumbs} />
-    <p class="badge">พื้นที่บริการตามนัดหมาย</p>
-    <h1 style="max-width: 18ch; margin-top: var(--space-3)">{props.h1}</h1>
-    <p style="color: var(--color-text-muted); max-width: 40rem">{props.lead}</p>
-    <div class="cta-row" style="margin: var(--space-4) 0">
-      <PrimaryLineCTA label="สอบถามคิวนัดรับในโคราช" event="hero_line_click" />
-      <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="area_phone">
-        โทร {SITE.phoneDisplay}
-      </a>
+<BaseLayout title={props.title} description={props.description} canonical={props.canonical} ogImage={props.ogImage} updatedDate={props.updatedDate} schema={props.schema}>
+  <section class="page-intro area-intro">
+    <div class="container page-intro__inner">
+      <Breadcrumbs items={props.breadcrumbs} />
+      <p class="badge">พื้นที่บริการตามนัดหมาย</p>
+      <h1>{props.h1}</h1>
+      <p class="page-intro__lead">{props.lead}</p>
+      <div class="cta-row page-intro__actions">
+        <PrimaryLineCTA label={`LINE ${SITE.lineId} · สอบถามคิวนัดรับ`} event="hero_line_click" />
+        <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="area_phone">โทร {SITE.phoneDisplay}</a>
+      </div>
+      <p class="page-intro__meta">
+        พื้นที่บริการในนครราชสีมา · หน้าร้านจริงอยู่จังหวัดอุบลราชธานี ·
+        <a href="/พื้นที่/เมืองนครราชสีมา">ศูนย์พื้นที่จังหวัด</a> · <a href="/เกี่ยวกับเรา">เกี่ยวกับร้าน</a>
+      </p>
     </div>
-    <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); max-width: 40rem">
-      พื้นที่บริการในนครราชสีมา · หน้าร้านจริงอยู่จังหวัดอุบลราชธานี ·
-      <a href="/พื้นที่/เมืองนครราชสีมา">ศูนย์พื้นที่จังหวัด</a>
-      ·
-      <a href="/เกี่ยวกับเรา">เกี่ยวกับร้าน</a>
-      ·
-      <a href="/ติดต่อ">ติดต่อ</a>
-    </p>
-  </div>
-  <article class="section">
-    <div class="container prose main-content">
-      <slot />
+  </section>
+
+  {props.coverVisual && (
+    <PageCoverSection
+      image={props.coverVisual.image}
+      alt={props.coverVisual.alt}
+      caption={props.coverVisual.caption}
+      slotId={props.coverVisual.slotId}
+      eyebrow="ภาพการนัดรับและการจัดส่ง"
+      title="ตัวอย่างบรรยากาศบริการในพื้นที่"
+      lead="ใช้สื่อสารให้เห็นภาพรวมของการประเมิน นัดรับ หรือการส่งสินค้าในพื้นที่ให้บริการ โดยย้ำว่าต้องนัดหมายตามคิวและเงื่อนไขของงาน"
+    />
+  )}
+
+  <article class="section content-section">
+    <div class="container content-layout">
+      <div class="prose main-content content-card"><slot /></div>
+      <ContentContactAside title="เช็กคิวนัดรับผ่าน LINE" note="ส่งรายการสินค้า พื้นที่ และรูปก่อน เพื่อเช็กความเหมาะสมของคิวรับหรือทางเลือกการจัดส่ง" />
     </div>
   </article>
+
   <FAQSection items={props.faqs ?? []} />
   <RelatedServices items={props.relatedServices ?? []} />
   <RelatedArticles items={props.relatedArticles ?? []} />
-  <section class="section">
-    <div class="container" style="text-align:center">
-      <PrimaryLineCTA label="แอด LINE @buyhub" />
-    </div>
-  </section>
+
+  {props.ctaVisual && (
+    <ImageCTASection
+      image={props.ctaVisual.image}
+      alt={props.ctaVisual.alt}
+      slotId={props.ctaVisual.slotId}
+      title="ส่งพื้นที่และรูปสินค้าเพื่อเช็กคิวนัดรับ"
+      description="หากอยู่ในโคราช ให้ส่งรุ่นสินค้า รูปสภาพ และพื้นที่ของคุณผ่าน LINE ก่อน เพื่อเช็กความเหมาะสมของคิวรับหรือทางเลือกการจัดส่ง"
+      note="ไม่มีหน้าร้านหรือสาขาประจำในจังหวัดนครราชสีมา การให้บริการเป็นแบบนัดหมายหรือจัดส่งตามเงื่อนไข"
+      phoneCta="area_phone"
+    />
+  )}
 </BaseLayout>

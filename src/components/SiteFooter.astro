@@ -2,140 +2,58 @@
 import { CONTACT_CHANNELS, FOOTER_LINKS, SERVICE_AREA, SITE, STORE_LOCATION, formatStoreFullAddress } from "../data/site";
 import FacebookCTA from "./FacebookCTA.astro";
 import MapsCTA from "./MapsCTA.astro";
-
-const fullAddress = formatStoreFullAddress();
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+const fullAddress=formatStoreFullAddress();
 ---
 
 <footer class="footer">
-  <div class="container footer__grid">
-    <div>
-      <p class="footer__brand">{SITE.brand}</p>
+  <div class="container footer__top">
+    <div class="footer__brand-block">
+      <div class="footer__brand-row"><span class="footer__mark">W</span><div><strong>{SITE.brand}</strong><small>รับซื้อไอทีโคราช</small></div></div>
       <p class="footer__legal">{SITE.tradeName} · ดำเนินงานโดย {SITE.legalName}</p>
-      <p class="footer__area">หน้าร้านจริง: {fullAddress}</p>
-      <p class="footer__area">เปิด{STORE_LOCATION.openingHoursText}</p>
-      <p class="footer__area">พื้นที่ให้บริการ: {SERVICE_AREA.label}</p>
-      <p class="footer__note">{SERVICE_AREA.wording}</p>
-      <p>
-        โทร:
-        <a href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="footer_phone">{SITE.phoneDisplay}</a>
-      </p>
-      <p>
-        LINE:
-        <a
-          href={SITE.lineUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-event="line_click"
-          data-cta="footer_line"
-        >
-          {SITE.lineId}
-        </a>
-      </p>
-      {
-        CONTACT_CHANNELS.facebookUrl && (
-          <p>
-            Facebook:{" "}
-            <a
-              href={CONTACT_CHANNELS.facebookUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-event="facebook_click"
-              data-cta="footer_facebook"
-            >
-              เพจ Facebook
-            </a>
-          </p>
-        )
-      }
-      <div class="footer__cta">
-        <MapsCTA cta="footer_maps" />
-        <FacebookCTA label="Facebook" />
+      <p class="footer__muted">หน้าร้านจริง: {fullAddress}<br />เปิด{STORE_LOCATION.openingHoursText}</p>
+      <p class="footer__muted">{SERVICE_AREA.wording}</p>
+    </div>
+
+    <div class="footer__contact">
+      <p class="footer__title">ส่งข้อมูลเพื่อประเมิน</p>
+      <PrimaryLineCTA label={`LINE ${SITE.lineId}`} event="footer_line_click" />
+      <a class="footer__phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="footer_phone">โทร {SITE.phoneDisplay}</a>
+      <div class="footer__secondary">
+        {CONTACT_CHANNELS.mapsUrl && <MapsCTA cta="footer_maps" />}
+        {CONTACT_CHANNELS.facebookUrl && <FacebookCTA label="Facebook" />}
       </div>
     </div>
-    <nav aria-label="ลิงก์ท้ายหน้า">
-      <ul class="footer__links">
-        {
-          FOOTER_LINKS.map((link) => (
-            <li>
-              <a href={link.href}>{link.label}</a>
-            </li>
-          ))
-        }
-      </ul>
+
+    <nav class="footer__nav" aria-label="ลิงก์ท้ายหน้า">
+      <p class="footer__title">ข้อมูลเว็บไซต์</p>
+      <ul class="footer__links">{FOOTER_LINKS.map((link)=><li><a href={link.href}>{link.label}</a></li>)}</ul>
     </nav>
   </div>
   <div class="container footer__bottom">
     <p>© {new Date().getFullYear()} {SITE.brand} · {SITE.name}</p>
+    <p>ข้อมูลราคาเป็นการประเมินเบื้องต้นและยืนยันหลังตรวจสอบสินค้าจริง</p>
   </div>
 </footer>
 
 <style>
-  .footer {
-    background: #1f2a3d;
-    color: #f5f7fb;
-    padding: var(--space-7) 0 var(--space-5);
-    margin-top: var(--space-8);
-  }
-
-  .footer a {
-    color: #ffe0c2;
-  }
-
-  .footer__grid {
-    display: grid;
-    gap: var(--space-6);
-  }
-
-  @media (min-width: 768px) {
-    .footer__grid {
-      grid-template-columns: 1.2fr 1fr;
-    }
-  }
-
-  .footer__brand {
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    margin: 0 0 var(--space-2);
-  }
-
-  .footer__legal,
-  .footer__area,
-  .footer__note {
-    color: #c7d0df;
-  }
-
-  .footer__note {
-    font-size: var(--font-size-sm);
-    max-width: 36rem;
-  }
-
-  .footer__cta {
-    margin-top: var(--space-3);
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-  }
-
-  .footer__links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: var(--space-2);
-  }
-
-  .footer__links a {
-    text-decoration: none;
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-  }
-
-  .footer__bottom {
-    margin-top: var(--space-6);
-    padding-top: var(--space-4);
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-    font-size: var(--font-size-sm);
-    color: #aeb8c9;
-  }
+  .footer { margin-top:3rem; padding:3.2rem 0 1.4rem; background:#111d33; color:#eef3f9; }
+  .footer__top { display:grid; gap:2rem; }
+  .footer__brand-row { display:flex; align-items:center; gap:.7rem; margin-bottom:.9rem; }
+  .footer__mark { width:2.55rem; height:2.55rem; display:grid; place-items:center; border-radius:.8rem; background:var(--color-primary); color:white; font-weight:900; }
+  .footer__brand-row div { display:flex; flex-direction:column; line-height:1.15; }
+  .footer__brand-row strong { font-size:1.1rem; }
+  .footer__brand-row small { margin-top:.18rem; color:#aebbd0; font-size:.72rem; }
+  .footer__legal { color:#dbe4f0; font-size:.88rem; }
+  .footer__muted { max-width:37rem; color:#aebbd0; font-size:.8rem; line-height:1.7; }
+  .footer__title { margin:0 0 .75rem; color:white; font-size:.78rem; font-weight:800; letter-spacing:.04em; text-transform:uppercase; }
+  .footer__contact :global(.btn--line) { min-width:12rem; }
+  .footer__phone { display:block; width:max-content; margin:.7rem 0; color:white; text-decoration:none; font-weight:750; }
+  .footer__secondary { display:flex; flex-wrap:wrap; gap:.45rem; }
+  .footer__links { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.2rem .8rem; }
+  .footer__links a { min-height:36px; display:flex; align-items:center; color:#c7d2e3; text-decoration:none; font-size:.8rem; }
+  .footer__links a:hover { color:white; }
+  .footer__bottom { margin-top:2rem; padding-top:1rem; border-top:1px solid rgba(255,255,255,.1); display:flex; flex-wrap:wrap; justify-content:space-between; gap:.5rem 1rem; color:#8291a8; font-size:.72rem; }
+  .footer__bottom p { margin:0; }
+  @media(min-width:800px){ .footer__top { grid-template-columns:1.35fr .75fr 1fr; align-items:start; } }
 </style>

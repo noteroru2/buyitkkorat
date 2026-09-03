@@ -35,7 +35,8 @@ if (registry.virtualNodes.some((n) => n.id === 'virtual:local-hub')) errors.push
 if (!registry.virtualNodes.some((n) => n.id === 'virtual:apple-hub')) errors.push('Apple virtual hub was accidentally removed');
 
 const children = local.hub.children;
-if (children.length !== 11) errors.push(`Expected 11 released local children; got ${children.length}`);
+const expectedLocalChildren = local.meta.currentAreaRoutes ?? local.meta.existingAreaRoutes ?? 11;
+if (children.length !== expectedLocalChildren) errors.push(`Expected ${expectedLocalChildren} governed local children; got ${children.length}`);
 if (new Set(children).size !== children.length) errors.push('Duplicate local children');
 for (const url of children) {
   const node = byUrl.get(url);
@@ -45,7 +46,7 @@ for (const url of children) {
   if (node.recommendedParent !== '/พื้นที่') errors.push(`Local parent not released: ${url} -> ${node.recommendedParent}`);
 }
 const extraLocal = live.filter((n) => n.cluster === 'LOCATION' && n.url !== '/พื้นที่' && !children.includes(n.url));
-if (extraLocal.length) errors.push(`Unexpected new local expansion in Batch 5: ${extraLocal.map((n)=>n.url).join(', ')}`);
+if (extraLocal.length) errors.push(`Ungoverned local routes outside local-area-release.json: ${extraLocal.map((n)=>n.url).join(', ')}`);
 
 const releaseHub = release.coreHubs.find((h) => h.url === '/พื้นที่');
 if (!releaseHub || releaseHub.role !== 'LOCAL_HUB') errors.push('/พื้นที่ is not released as LOCAL_HUB');

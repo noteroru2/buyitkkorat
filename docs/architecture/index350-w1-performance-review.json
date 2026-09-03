@@ -1,0 +1,17 @@
+{
+  "title": "INDEX 350 — W1 Performance Review",
+  "generatedAt": "2026-09-02T10:59:21.974Z",
+  "state": "WAIT_FOR_REAL_W1_OBSERVATION_DATA",
+  "realPerformanceReviewed": false,
+  "missingInputs": [
+    "docs/architecture/index350-w1-observation-report.json",
+    "docs/architecture/index350-w1-observation-pages.csv",
+    "docs/architecture/index350-w1-query-ownership.csv"
+  ],
+  "w2": {
+    "candidateReviewReady": false,
+    "automaticRelease": false,
+    "locked": true
+  },
+  "note": "No performance metrics were invented. Run W1 Observation Gate with real finalized GSC/indexation data first."
+}

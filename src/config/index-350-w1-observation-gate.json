@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "wave": "INDEX350_W1",
+    "title": "INDEX 350 — W1 Observation Gate",
+    "expectedLiveRoutes": 139,
+    "expectedIndexableRoutes": 138,
+    "expectedNoindexRoutes": 1,
+    "expectedSitemapUrls": 138,
+    "observedUrls": [
+      "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "/รับซื้อ-microsoft-surface-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "/รับซื้อ-samsung-galaxy-book-โคราช",
+      "/รับซื้อโทรศัพท์-realme-โคราช",
+      "/รับซื้อโทรศัพท์-honor-โคราช",
+      "/รับซื้อโทรศัพท์-huawei-โคราช",
+      "/รับซื้อโทรศัพท์-motorola-โคราช",
+      "/รับซื้อโทรศัพท์-nothing-โคราช",
+      "/รับซื้อกล้อง-sony-โคราช",
+      "/รับซื้อกล้อง-canon-โคราช",
+      "/รับซื้อกล้อง-fujifilm-โคราช",
+      "/รับซื้อกล้อง-nikon-โคราช",
+      "/รับซื้อกล้อง-panasonic-lumix-โคราช",
+      "/รับซื้อกล้อง-om-system-olympus-โคราช",
+      "/รับซื้อจอมอนิเตอร์-lg-โคราช",
+      "/รับซื้อจอมอนิเตอร์-samsung-โคราช",
+      "/รับซื้อจอมอนิเตอร์-dell-โคราช",
+      "/รับซื้ออุปกรณ์-logitech-โคราช",
+      "/รับซื้ออุปกรณ์-razer-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-acer-aspire-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-acer-predator-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-acer-swift-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-ideapad-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-legion-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-lenovo-loq-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-hp-victus-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-hp-omen-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-asus-vivobook-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-asus-zenbook-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-dell-inspiron-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-dell-xps-โคราช",
+      "/รับซื้อโน๊ตบุ๊ค-dell-alienware-โคราช"
+    ],
+    "observedCount": 40,
+    "automaticW2": false,
+    "w2LockedByDefault": true,
+    "policy": "Observation never auto-releases W2 and never performs destructive SEO actions."
+  },
+  "states": [
+    "WAIT_FOR_PRODUCTION_VERIFICATION",
+    "WAIT_FOR_FINALIZED_GSC",
+    "HOLD_LOW_VISIBILITY",
+    "REVIEW_PENDING_INDEXATION",
+    "OWNERSHIP_REVIEW_REQUIRED",
+    "ROUND2_REVIEW_ELIGIBLE",
+    "BLOCKED"
+  ],
+  "inputs": {
+    "productionVerification": "docs/architecture/index350-w1-production-verification.json",
+    "gscRequiredColumns": [
+      "date",
+      "query",
+      "page",
+      "clicks",
+      "impressions",
+      "position"
+    ],
+    "indexationOptionalColumns": [
+      "url",
+      "indexed",
+      "status",
+      "last_crawl"
+    ],
+    "indexationPolicy": "Optional for early observation; required before ROUND2_REVIEW_ELIGIBLE."
+  },
+  "thresholds": {
+    "minimumFinalizedDays": 7,
+    "recommendedObservationDays": 14,
+    "minimumVisibleW1Pages": 8,
+    "minimumVisibleShare": 0.2,
+    "minimumIndexedW1Pages": 32,
+    "minimumIndexedShare": 0.8,
+    "ownershipOverlapMinQueries": 3,
+    "ownershipJaccardReview": 0.35,
+    "ownershipMinParentImpressions": 10,
+    "ownershipMinChildImpressions": 10,
+    "maximumOwnershipReviewPairsForEligibility": 4
+  },
+  "ownershipPairs": [
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-microsoft-surface-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อ-samsung-galaxy-book-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโทรศัพท์-realme-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโทรศัพท์-honor-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโทรศัพท์-huawei-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโทรศัพท์-motorola-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโทรศัพท์-nothing-โคราช",
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อกล้อง-sony-โคราช",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อกล้อง-canon-โคราช",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อกล้อง-fujifilm-โคราช",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อกล้อง-nikon-โคราช",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อกล้อง-panasonic-lumix-โคราช",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อกล้อง-om-system-olympus-โคราช",
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อจอมอนิเตอร์-lg-โคราช",
+      "parent": "/รับซื้อจอมอนิเตอร์-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อจอมอนิเตอร์-samsung-โคราช",
+      "parent": "/รับซื้อจอมอนิเตอร์-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อจอมอนิเตอร์-dell-โคราช",
+      "parent": "/รับซื้อจอมอนิเตอร์-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้ออุปกรณ์-logitech-โคราช",
+      "parent": "/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้ออุปกรณ์-razer-โคราช",
+      "parent": "/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช",
+      "nodeType": "BRAND LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-acer-aspire-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-acer-predator-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-acer-swift-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-lenovo-ideapad-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-lenovo-thinkpad-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-lenovo-legion-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-lenovo-loq-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-hp-victus-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-hp-omen-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-asus-tuf-gaming-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-asus-vivobook-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-asus-zenbook-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-dell-inspiron-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-dell-xps-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    },
+    {
+      "child": "/รับซื้อโน๊ตบุ๊ค-dell-alienware-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+      "nodeType": "SERIES LANDING PAGE"
+    }
+  ],
+  "decisions": {
+    "WAIT_FOR_FINALIZED_GSC": "Latest finalized GSC date is less than 7 days after verified release.",
+    "HOLD_LOW_VISIBILITY": "Date gate passed but fewer than 8/40 W1 URLs have impressions.",
+    "REVIEW_PENDING_INDEXATION": "Visibility gate passed but indexation evidence is absent or below 80%.",
+    "OWNERSHIP_REVIEW_REQUIRED": "Too many parent-child pairs show meaningful shared-query overlap; review before W2.",
+    "ROUND2_REVIEW_ELIGIBLE": "All observation gates passed. Manual W2 candidate review may begin; W2 remains locked until manually approved."
+  },
+  "hardRules": [
+    "No invented GSC metrics",
+    "No automatic W2 release",
+    "No automatic merge",
+    "No automatic redirect",
+    "No automatic noindex",
+    "No automatic canonical switch",
+    "No Brand×District or Series×District expansion from observation data alone"
+  ]
+}

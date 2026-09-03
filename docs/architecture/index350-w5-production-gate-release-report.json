@@ -1,0 +1,22 @@
+{
+  "wave": "INDEX350_W5",
+  "createdAt": "2026-09-02",
+  "sourceBaseline": {
+    "live": 329,
+    "indexable": 328,
+    "noindex": 1,
+    "sitemap": 328
+  },
+  "w5": {
+    "released": 40,
+    "condition": 5,
+    "b2b": 20,
+    "local": 15,
+    "parentGroups": 7
+  },
+  "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+  "realW4PerformanceAttested": false,
+  "realAstroBuild": "UNATTESTED_IN_ASSISTANT_RUNTIME",
+  "productionVerification": "PENDING",
+  "w6": "LOCKED"
+}

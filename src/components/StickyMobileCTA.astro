@@ -3,44 +3,83 @@ import { SITE } from "../data/site";
 import PrimaryLineCTA from "./PrimaryLineCTA.astro";
 ---
 
-<div class="sticky-cta" role="region" aria-label="ติดต่อด่วน">
-  <div class="sticky-cta__inner">
-    <PrimaryLineCTA label={`แอด LINE ${SITE.lineId}`} event="sticky_line_click" />
-    <a
-      class="btn btn--phone"
-      href={`tel:${SITE.phoneTel}`}
-      data-event="phone_click"
-      data-cta="phone"
-    >
-      โทร {SITE.phoneDisplay}
+<div class="sticky-cta" role="region" aria-label="ติดต่อประเมินด่วน">
+  <div class="sticky-cta__mobile">
+    <PrimaryLineCTA label={`LINE ${SITE.lineId}`} event="sticky_line_click" />
+    <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="sticky_phone">
+      โทรสอบถาม
+    </a>
+  </div>
+
+  <div class="sticky-cta__desktop">
+    <span class="sticky-cta__desktop-label">ส่งรูปสินค้าเพื่อประเมินเบื้องต้น</span>
+    <PrimaryLineCTA label={`LINE ${SITE.lineId}`} event="floating_line_click" />
+    <a class="sticky-cta__desktop-phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta="floating_phone">
+      หรือโทร {SITE.phoneDisplay}
     </a>
   </div>
 </div>
 
 <style>
-  .sticky-cta {
+  .sticky-cta__mobile {
     position: fixed;
     inset-inline: 0;
     bottom: 0;
-    z-index: 40;
-    background: rgba(255, 248, 239, 0.96);
-    border-top: 1px solid var(--color-border);
-    backdrop-filter: blur(8px);
-    padding: var(--space-3) var(--container-pad);
-    padding-bottom: calc(var(--space-3) + env(safe-area-inset-bottom, 0px));
+    z-index: 45;
+    display:grid;
+    grid-template-columns:1.35fr .85fr;
+    gap:.55rem;
+    padding:.65rem var(--container-pad);
+    padding-bottom:calc(.65rem + env(safe-area-inset-bottom,0px));
+    background:rgba(255,255,255,.96);
+    border-top:1px solid var(--color-border-strong);
+    box-shadow:0 -8px 30px rgba(15,23,42,.08);
+    backdrop-filter:blur(12px);
   }
 
-  .sticky-cta__inner {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: var(--space-2);
-    width: min(100%, var(--container-max));
-    margin-inline: auto;
-  }
+  .sticky-cta__mobile :global(.btn) { min-height:48px; padding-inline:.8rem; }
 
-  @media (min-width: 768px) {
-    .sticky-cta {
-      display: none;
+  .sticky-cta__desktop { display:none; }
+
+  @media (min-width:768px) {
+    .sticky-cta__mobile { display:none; }
+    .sticky-cta__desktop {
+      position:fixed;
+      right:1.35rem;
+      bottom:1.35rem;
+      z-index:45;
+      display:grid;
+      width:18.5rem;
+      gap:.42rem;
+      padding:.75rem;
+      border-radius:1.15rem;
+      background:rgba(255,255,255,.96);
+      border:1px solid var(--color-border-strong);
+      box-shadow:0 18px 55px rgba(15,23,42,.18);
+      backdrop-filter:blur(12px);
+    }
+
+    .sticky-cta__desktop-label {
+      padding:0 .2rem;
+      color:var(--color-text-muted);
+      font-size:.72rem;
+      font-weight:700;
+    }
+
+    .sticky-cta__desktop :global(.btn--line) {
+      width:100%;
+      min-height:48px;
+      box-shadow:0 9px 22px rgba(6,199,85,.18);
+    }
+
+    .sticky-cta__desktop-phone {
+      display:block;
+      padding:.1rem .2rem 0;
+      color:var(--color-text-muted);
+      text-align:center;
+      text-decoration:none;
+      font-size:.72rem;
+      font-weight:650;
     }
   }
 </style>

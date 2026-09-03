@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "wave": "INDEX350_W4",
+    "title": "INDEX 350 — W4 Production Release Gate",
+    "site": "รับซื้อไอทีโคราช.com",
+    "productionOrigin": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com",
+    "expectedLiveRoutes": 289,
+    "expectedIndexableRoutes": 288,
+    "expectedNoindexRoutes": 1,
+    "expectedSitemapUrls": 288,
+    "releasedCount": 50,
+    "releasedSeriesCount": 18,
+    "releasedModelCount": 7,
+    "releasedConditionCount": 25,
+    "releasedUrls": [
+      "/รับซื้อ-oppo-a-series-โคราช",
+      "/รับซื้อ-vivo-y-series-โคราช",
+      "/รับซื้อ-redmi-number-series-โคราช",
+      "/รับซื้อ-poco-x-series-โคราช",
+      "/รับซื้อ-realme-number-series-โคราช",
+      "/รับซื้อ-realme-c-series-โคราช",
+      "/รับซื้อ-realme-gt-โคราช",
+      "/รับซื้อ-honor-magic-โคราช",
+      "/รับซื้อ-honor-x-โคราช",
+      "/รับซื้อ-huawei-nova-โคราช",
+      "/รับซื้อ-huawei-pura-โคราช",
+      "/รับซื้อ-motorola-edge-โคราช",
+      "/รับซื้อ-moto-g-โคราช",
+      "/รับซื้อ-nothing-phone-โคราช",
+      "/รับซื้อกล้อง-sony-alpha-apsc-โคราช",
+      "/รับซื้อกล้อง-canon-eos-dslr-โคราช",
+      "/รับซื้อกล้อง-fujifilm-gfx-โคราช",
+      "/รับซื้อกล้อง-lumix-g-โคราช",
+      "/รับซื้อ-dell-latitude-5420-โคราช",
+      "/รับซื้อ-acer-nitro-5-โคราช",
+      "/รับซื้อ-iphone-11-โคราช",
+      "/รับซื้อ-iphone-12-โคราช",
+      "/รับซื้อ-oppo-reno12-โคราช",
+      "/รับซื้อ-sony-a6000-โคราช",
+      "/รับซื้อ-sony-a6400-โคราช",
+      "/รับซื้อโน๊ตบุ๊คแบตเสื่อม-โคราช",
+      "/รับซื้อโน๊ตบุ๊คคีย์บอร์ดเสีย-โคราช",
+      "/รับซื้อโน๊ตบุ๊คบานพับแตก-โคราช",
+      "/รับซื้อโน๊ตบุ๊คไม่มีที่ชาร์จ-โคราช",
+      "/รับซื้อโน๊ตบุ๊คโดนน้ำ-โคราช",
+      "/รับซื้อโน๊ตบุ๊คติดรหัส-bios-โคราช",
+      "/รับซื้อโน๊ตบุ๊คพอร์ตเสีย-โคราช",
+      "/รับซื้อโทรศัพท์ฝาหลังแตก-โคราช",
+      "/รับซื้อโทรศัพท์แบตเสื่อม-โคราช",
+      "/รับซื้อโทรศัพท์กล้องเสีย-โคราช",
+      "/รับซื้อ-iphone-face-id-เสีย-โคราช",
+      "/รับซื้อโทรศัพท์โดนน้ำ-โคราช",
+      "/รับซื้อโทรศัพท์พอร์ตชาร์จเสีย-โคราช",
+      "/รับซื้อการ์ดจอภาพแตก-artifact-โคราช",
+      "/รับซื้อ-ssd-health-ต่ำ-โคราช",
+      "/รับซื้อ-hdd-bad-sector-โคราช",
+      "/รับซื้อแรมมี-error-โคราช",
+      "/รับซื้อเมนบอร์ดไม่ติด-โคราช",
+      "/รับซื้อจอมอนิเตอร์มี-dead-pixel-โคราช",
+      "/รับซื้อเลนส์มีรา-โคราช",
+      "/รับซื้อกล้อง-shutter-count-สูง-โคราช",
+      "/รับซื้อกล้อง-evf-เสีย-โคราช",
+      "/รับซื้อจอย-drift-โคราช",
+      "/รับซื้อ-playstation-อ่านแผ่นไม่ได้-โคราช",
+      "/รับซื้อ-nintendo-switch-แบตเสื่อม-โคราช"
+    ],
+    "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+    "realW3PerformanceAttested": false,
+    "automaticDeploy": false,
+    "w5Locked": true,
+    "automaticW5": false
+  },
+  "states": [
+    "SOURCE_RELEASED",
+    "PREDEPLOY_PENDING",
+    "PREDEPLOY_READY",
+    "PRODUCTION_PENDING",
+    "PRODUCTION_VERIFIED",
+    "OBSERVATION_ACTIVE",
+    "BLOCKED"
+  ],
+  "routeRequirements": {
+    "httpStatus": 200,
+    "canonicalCount": 1,
+    "robotsCount": 1,
+    "robots": "index,follow",
+    "h1Count": 1,
+    "minimumImages": 2,
+    "imageAltRequired": true,
+    "lineCtaRequired": true,
+    "breadcrumbListMax": 1,
+    "minimumInboundDiscoveryPaths": 2
+  },
+  "buildRequirements": {
+    "governedBuiltPages": 289,
+    "unreachableIndexable": 0,
+    "brokenGovernedLinks": 0,
+    "maxCrawlDepth": 4,
+    "w4BuiltPages": 50,
+    "w4Errors": 0
+  },
+  "sitemapRequirements": {
+    "path": "/sitemap-index.xml",
+    "urlCount": 288,
+    "allW4UrlsRequired": true
+  },
+  "parentChildChecks": [
+    {
+      "parent": "/รับซื้อโทรศัพท์-oppo-โคราช",
+      "children": [
+        "/รับซื้อ-oppo-a-series-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-vivo-โคราช",
+      "children": [
+        "/รับซื้อ-vivo-y-series-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-xiaomi-redmi-poco-โคราช",
+      "children": [
+        "/รับซื้อ-redmi-number-series-โคราช",
+        "/รับซื้อ-poco-x-series-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-realme-โคราช",
+      "children": [
+        "/รับซื้อ-realme-number-series-โคราช",
+        "/รับซื้อ-realme-c-series-โคราช",
+        "/รับซื้อ-realme-gt-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-honor-โคราช",
+      "children": [
+        "/รับซื้อ-honor-magic-โคราช",
+        "/รับซื้อ-honor-x-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-huawei-โคราช",
+      "children": [
+        "/รับซื้อ-huawei-nova-โคราช",
+        "/รับซื้อ-huawei-pura-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-motorola-โคราช",
+      "children": [
+        "/รับซื้อ-motorola-edge-โคราช",
+        "/รับซื้อ-moto-g-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-nothing-โคราช",
+      "children": [
+        "/รับซื้อ-nothing-phone-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อกล้อง-sony-โคราช",
+      "children": [
+        "/รับซื้อกล้อง-sony-alpha-apsc-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อกล้อง-canon-โคราช",
+      "children": [
+        "/รับซื้อกล้อง-canon-eos-dslr-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อกล้อง-fujifilm-โคราช",
+      "children": [
+        "/รับซื้อกล้อง-fujifilm-gfx-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อกล้อง-panasonic-lumix-โคราช",
+      "children": [
+        "/รับซื้อกล้อง-lumix-g-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-dell-latitude-โคราช",
+      "children": [
+        "/รับซื้อ-dell-latitude-5420-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-acer-nitro-โคราช",
+      "children": [
+        "/รับซื้อ-acer-nitro-5-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อ-iphone-โคราช",
+      "children": [
+        "/รับซื้อ-iphone-11-โคราช",
+        "/รับซื้อ-iphone-12-โคราช",
+        "/รับซื้อ-iphone-face-id-เสีย-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อ-oppo-reno-โคราช",
+      "children": [
+        "/รับซื้อ-oppo-reno12-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อกล้อง-sony-alpha-apsc-โคราช",
+      "children": [
+        "/รับซื้อ-sony-a6000-โคราช",
+        "/รับซื้อ-sony-a6400-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "children": [
+        "/รับซื้อโน๊ตบุ๊คแบตเสื่อม-โคราช",
+        "/รับซื้อโน๊ตบุ๊คคีย์บอร์ดเสีย-โคราช",
+        "/รับซื้อโน๊ตบุ๊คบานพับแตก-โคราช",
+        "/รับซื้อโน๊ตบุ๊คไม่มีที่ชาร์จ-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊คเสีย-โคราช",
+      "children": [
+        "/รับซื้อโน๊ตบุ๊คโดนน้ำ-โคราช",
+        "/รับซื้อโน๊ตบุ๊คติดรหัส-bios-โคราช",
+        "/รับซื้อโน๊ตบุ๊คพอร์ตเสีย-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "children": [
+        "/รับซื้อโทรศัพท์ฝาหลังแตก-โคราช",
+        "/รับซื้อโทรศัพท์แบตเสื่อม-โคราช",
+        "/รับซื้อโทรศัพท์กล้องเสีย-โคราช",
+        "/รับซื้อโทรศัพท์โดนน้ำ-โคราช",
+        "/รับซื้อโทรศัพท์พอร์ตชาร์จเสีย-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อการ์ดจอ-โคราช",
+      "children": [
+        "/รับซื้อการ์ดจอภาพแตก-artifact-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อ-ssd-hdd-โคราช",
+      "children": [
+        "/รับซื้อ-ssd-health-ต่ำ-โคราช",
+        "/รับซื้อ-hdd-bad-sector-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อแรม-โคราช",
+      "children": [
+        "/รับซื้อแรมมี-error-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อเมนบอร์ด-โคราช",
+      "children": [
+        "/รับซื้อเมนบอร์ดไม่ติด-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อจอมอนิเตอร์-โคราช",
+      "children": [
+        "/รับซื้อจอมอนิเตอร์มี-dead-pixel-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อเลนส์กล้อง-โคราช",
+      "children": [
+        "/รับซื้อเลนส์มีรา-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "children": [
+        "/รับซื้อกล้อง-shutter-count-สูง-โคราช",
+        "/รับซื้อกล้อง-evf-เสีย-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อเครื่องเกม-โคราช",
+      "children": [
+        "/รับซื้อจอย-drift-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อ-playstation-โคราช",
+      "children": [
+        "/รับซื้อ-playstation-อ่านแผ่นไม่ได้-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อ-nintendo-switch-โคราช",
+      "children": [
+        "/รับซื้อ-nintendo-switch-แบตเสื่อม-โคราช"
+      ]
+    }
+  ],
+  "predeployValidators": [
+    "scripts/validate-index-350-expansion-plan.mjs",
+    "scripts/validate-index-350-w1.mjs",
+    "scripts/validate-index-350-w1-production-gate.mjs",
+    "scripts/validate-index-350-w2.mjs",
+    "scripts/validate-index-350-w2-production-gate.mjs",
+    "scripts/validate-index-350-w2-observation-gate.mjs",
+    "scripts/validate-index-350-w2-performance-w3-selection.mjs",
+    "scripts/validate-index-350-w3.mjs",
+    "scripts/validate-index-350-w3-production-gate.mjs",
+    "scripts/validate-index-350-w3-observation-gate.mjs",
+    "scripts/validate-index-350-w3-performance-w4-selection.mjs",
+    "scripts/validate-index-350-w4.mjs",
+    "scripts/validate-index-350-w4-production-gate.mjs",
+    "scripts/run-architecture-quality-gate.mjs"
+  ],
+  "observation": {
+    "stateAfterProductionVerification": "OBSERVATION_ACTIVE",
+    "w5State": "LOCKED",
+    "minimumFinalizedGscDaysBeforeW5Review": 7,
+    "recommendedObservationDays": 14,
+    "requiredReview": [
+      "indexation of 50 W4 URLs",
+      "query→page ownership",
+      "Series/Model/Condition parent-child cannibalization",
+      "W4 cluster impression distribution",
+      "manual W5 candidate review"
+    ],
+    "policy": "Production verification starts W4 observation only. W5 remains locked and is never auto-released.",
+    "w5Eligibility": "MANUAL_REVIEW_ONLY"
+  },
+  "safety": {
+    "noPerformanceClaim": true,
+    "noAutoMerge": true,
+    "noAutoRedirect": true,
+    "noAutoNoindex": true,
+    "noAutoCanonicalSwitch": true,
+    "noAutoW5Release": true
+  }
+}

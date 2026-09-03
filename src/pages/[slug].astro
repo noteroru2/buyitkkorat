@@ -5,6 +5,7 @@ import { absoluteUrl } from "../utils/seo";
 import { asIllustration, getAllContentIndex, resolveRelated } from "../utils/content";
 import { breadcrumbSchema, buildGraph, faqSchema, serviceSchema, webpageSchema } from "../utils/schema";
 import { PILOT_IMAGES, type PilotImageKey } from "../data/pilotImages";
+import { getServicePageVisuals } from "../data/pageVisuals";
 import { getRuntimeBreadcrumbs, getRuntimeDiscoveryLinks, getRuntimeRelatedLinks } from "../config/runtime-architecture";
 
 export async function getStaticPaths() {
@@ -25,6 +26,7 @@ const related = resolveRelated(index, relatedPaths);
 const relatedServices = related.filter((item) => !item.href.startsWith("/บทความ/"));
 const relatedArticles = related.filter((item) => item.href.startsWith("/บทความ/"));
 const pilotImage = entry.data.pilotImage ? PILOT_IMAGES[entry.data.pilotImage as PilotImageKey] : undefined;
+const pageVisuals = getServicePageVisuals(entry.data.slug, entry.data.title, entry.data.productFocus);
 
 const url = absoluteUrl(path);
 const runtimeBreadcrumbs = getRuntimeBreadcrumbs(path);
@@ -59,6 +61,8 @@ const schema = buildGraph([
   relatedServices={relatedServices}
   relatedArticles={relatedArticles}
   pilotImage={pilotImage}
+  coverVisual={pageVisuals.cover}
+  ctaVisual={pageVisuals.cta}
 >
   <Content />
 </ServicePageLayout>

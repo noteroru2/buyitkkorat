@@ -1,0 +1,8 @@
+INDEX 350 — W3 PERFORMANCE REVIEW / W4 SELECTION VALIDATION
+Live/indexable/noindex: 239/238/1
+W4 candidate pool: 56 — Series 18, Model 8, Condition 30
+Provisional shortlist: 50/50 — Series 18, Model 7, Condition 25
+Reserve/blocked: 6
+Real W3 performance data packaged: false
+Automatic W4: false
+VERDICT: PASS

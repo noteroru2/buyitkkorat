@@ -1,0 +1,23 @@
+{
+  "wave": "INDEX350_W2",
+  "title": "INDEX 350 — W2 Production Release Gate",
+  "staticGate": "PASS",
+  "scriptSyntax": "PASS",
+  "syntheticBuildAudit": "PASS",
+  "syntheticProductionVerification": "PASS",
+  "syntheticMetrics": {
+    "governedPages": "189/189",
+    "w2Routes": "50/50",
+    "parentGroups": "27/27",
+    "minimumInboundPaths": 2,
+    "sitemap": "188/188",
+    "maxCrawlDepth": 4
+  },
+  "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+  "realW1PerformanceAttested": false,
+  "realBuild": "NOT_ATTESTED_IN_THIS_RUNTIME",
+  "realProduction": "NOT_ATTESTED",
+  "w3": "LOCKED",
+  "realPredeployRequired": true,
+  "realProductionVerificationRequired": true
+}

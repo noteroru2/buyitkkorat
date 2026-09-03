@@ -1,0 +1,105 @@
+---
+import type { ImageMetadata } from "astro";
+import ResponsiveImage from "./ResponsiveImage.astro";
+import PrimaryLineCTA from "./PrimaryLineCTA.astro";
+import { SITE } from "../data/site";
+
+interface Props {
+  image: ImageMetadata;
+  alt: string;
+  slotId: string;
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  note?: string;
+  lineLabel?: string;
+  phoneCta?: string;
+}
+
+const {
+  image,
+  alt,
+  slotId,
+  eyebrow = "พร้อมประเมินทันที",
+  title = "ส่งรูปสินค้าให้ประเมินทาง LINE ได้เลย",
+  description = `ส่งรุ่น สเปก รูปสภาพ ตำหนิ และอุปกรณ์ผ่าน LINE ${SITE.lineId} เพื่อเช็กแนวทางประเมินเบื้องต้นก่อนนัดรับหรือจัดส่ง`,
+  note = SITE.priceDisclaimer,
+  lineLabel = `LINE ${SITE.lineId} · ส่งรูปประเมิน`,
+  phoneCta = "generic_image_cta_phone",
+} = Astro.props;
+---
+
+<section class="section image-cta-section" aria-label={title}>
+  <div class="container">
+    <div class="image-cta-section__card">
+      <div class="image-cta-section__media">
+        <ResponsiveImage
+          src={image}
+          alt={alt}
+          width={1280}
+          height={720}
+          widths={[640, 960, 1280]}
+          sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 50vw, 520px"
+          loading="lazy"
+          fetchpriority="low"
+          slotId={slotId}
+          class="image-cta-section__image"
+        />
+      </div>
+      <div class="image-cta-section__content">
+        <span class="section__eyebrow">{eyebrow}</span>
+        <h2 class="section__title">{title}</h2>
+        <p>{description}</p>
+        <div class="image-cta-section__actions">
+          <PrimaryLineCTA label={lineLabel} event="service_cta_click" />
+          <a class="btn btn--phone" href={`tel:${SITE.phoneTel}`} data-event="phone_click" data-cta={phoneCta}>โทร {SITE.phoneDisplay}</a>
+        </div>
+        <p class="image-cta-section__note">{note}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .image-cta-section { padding-top: 1rem; }
+  .image-cta-section__card {
+    display: grid;
+    gap: 1.25rem;
+    padding: clamp(1rem, 2vw, 1.35rem);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(20, 33, 58, .08);
+    background: linear-gradient(135deg, #f7fff8 0%, #ffffff 60%, #fff8f1 100%);
+    box-shadow: var(--shadow-md);
+  }
+  .image-cta-section__media :global(.responsive-image picture) {
+    border-radius: calc(var(--radius-xl) - .2rem);
+    box-shadow: var(--shadow-sm);
+    aspect-ratio: 16 / 9;
+  }
+  .image-cta-section__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image-cta-section__content .section__title { margin-bottom: .55rem; }
+  .image-cta-section__content p { margin: 0; color: var(--color-text-muted); }
+  .image-cta-section__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+    margin-top: 1rem;
+  }
+  .image-cta-section__actions :global(.btn) { min-height: 50px; }
+  .image-cta-section__note {
+    margin-top: .9rem !important;
+    padding-top: .9rem;
+    border-top: 1px solid var(--color-border);
+    font-size: .79rem;
+  }
+  @media (min-width: 960px) {
+    .image-cta-section__card {
+      grid-template-columns: minmax(0, 1.04fr) minmax(20rem, .96fr);
+      align-items: center;
+    }
+  }
+</style>

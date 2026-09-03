@@ -22,7 +22,7 @@ const warnings = [];
 
 if (live.length !== architecture.meta.currentRoutes) errors.push(`Navigation live count drift: ${live.length}`);
 if (indexable.length !== architecture.meta.currentIndexable) errors.push(`Navigation indexable count drift: ${indexable.length}`);
-if (navigation.meta.newLiveRoutes !== 5) errors.push(`navigation meta newLiveRoutes must reflect real-repo merge additions (5), got ${navigation.meta.newLiveRoutes}`);
+if (navigation.meta.newLiveRoutes !== 40) errors.push(`navigation meta newLiveRoutes must reflect INDEX350 W1 release (40), got ${navigation.meta.newLiveRoutes}`);
 if (navigation.meta.automaticCandidateExposure !== false) errors.push('automaticCandidateExposure must be false');
 if (navigation.meta.virtualHrefAllowed !== false) errors.push('virtualHrefAllowed must be false');
 

@@ -4,6 +4,7 @@ import AreaPageLayout from "../../layouts/AreaPageLayout.astro";
 import { absoluteUrl } from "../../utils/seo";
 import { getAllContentIndex, resolveRelated } from "../../utils/content";
 import { breadcrumbSchema, buildGraph, faqSchema, serviceSchema, webpageSchema } from "../../utils/schema";
+import { getAreaPageVisuals } from "../../data/pageVisuals";
 import { getRuntimeBreadcrumbs, getRuntimeDiscoveryLinks, getRuntimeRelatedLinks } from "../../config/runtime-architecture";
 
 export async function getStaticPaths() {
@@ -23,6 +24,7 @@ const relatedPaths = [...new Set([...architectureRelated, ...entry.data.relatedP
 const related = resolveRelated(index, relatedPaths);
 const relatedServices = related.filter((item) => !item.href.startsWith("/บทความ/"));
 const relatedArticles = related.filter((item) => item.href.startsWith("/บทความ/"));
+const pageVisuals = getAreaPageVisuals();
 const url = absoluteUrl(path);
 const runtimeBreadcrumbs = getRuntimeBreadcrumbs(path);
 const breadcrumbs = runtimeBreadcrumbs.length
@@ -54,6 +56,8 @@ const schema = buildGraph([
   faqs={entry.data.faq}
   relatedServices={relatedServices}
   relatedArticles={relatedArticles}
+  coverVisual={pageVisuals.cover}
+  ctaVisual={pageVisuals.cta}
 >
   <Content />
 </AreaPageLayout>

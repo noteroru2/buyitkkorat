@@ -46,14 +46,12 @@ const architecture = JSON.parse(fs.readFileSync(path.join(root,'src/config/site-
 const seo = JSON.parse(fs.readFileSync(path.join(root,'src/config/seo-index-control.json'),'utf8'));
 const brand = JSON.parse(fs.readFileSync(path.join(root,'src/config/brand-model-series-foundation.json'),'utf8'));
 const guide = JSON.parse(fs.readFileSync(path.join(root,'src/config/guide-authority-architecture.json'),'utf8'));
+const indexPlanPath=path.join(root,'src/config/index-350-expansion-plan.json');
+const indexPlan=fs.existsSync(indexPlanPath)?JSON.parse(fs.readFileSync(indexPlanPath,'utf8')):null;
 
 const live = architecture.routes.filter((n)=>n.kind==='LIVE');
 const indexable = live.filter((n)=>n.indexState==='INDEX');
-const candidateCount =
-  brand.candidateBrands.length +
-  brand.candidateSeries.length +
-  brand.modelPolicy.seededModelCandidates.length +
-  guide.candidateGuides.length;
+const candidateCount = indexPlan ? indexPlan.candidates.filter((c)=>c.releaseState==='HOLD_PLANNED').length : (brand.candidateBrands.length + brand.candidateSeries.length + brand.modelPolicy.seededModelCandidates.length + guide.candidateGuides.length);
 
 const staticGate =
   allPassed &&

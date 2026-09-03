@@ -1,0 +1,1041 @@
+{
+  "wave": "INDEX350_W5",
+  "verifiedAt": "2026-09-02T15:40:46.204Z",
+  "origin": "http://127.0.0.1:8765",
+  "state": "PRODUCTION_VERIFIED",
+  "productionVerified": true,
+  "releaseDate": "2026-09-02",
+  "deploymentId": null,
+  "deploymentSha": "SYNTHETIC_SELFTEST",
+  "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+  "realW4PerformanceAttested": false,
+  "counts": {
+    "routesPassed": 40,
+    "routesExpected": 40,
+    "parentGroupsPassed": 7,
+    "parentGroupsExpected": 7,
+    "sitemapUrls": 328,
+    "sitemapExpected": 328,
+    "minimumInbound": 2
+  },
+  "routeResults": [
+    {
+      "url": "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมโรงเรียน-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมโรงเรียน-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมมหาวิทยาลัย-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมมหาวิทยาลัย-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมโรงงาน-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมโรงงาน-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมโรงแรม-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมโรงแรม-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมคลินิก-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมคลินิก-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมสำนักงานบัญชี-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมสำนักงานบัญชี-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมบริษัทก่อสร้าง-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมบริษัทก่อสร้าง-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมบริษัทขนส่ง-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมบริษัทขนส่ง-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมร้านเกม-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมร้านเกม-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอม-call-center-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอม-call-center-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อไอที-coworking-space-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อไอที-coworking-space-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อคอมหมดสัญญาเช่า-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อคอมหมดสัญญาเช่า-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อ-it-asset-disposition-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อ-it-asset-disposition-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/ครบุรี",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/ครบุรี",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/เสิงสาง",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/เสิงสาง",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/คง",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/คง",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/บ้านเหลื่อม",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/บ้านเหลื่อม",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/จักราช",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/จักราช",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/โนนไทย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/โนนไทย",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/ขามสะแกแสง",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/ขามสะแกแสง",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/ประทาย",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/ประทาย",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/ห้วยแถลง",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/ห้วยแถลง",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/ชุมพวง",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/ชุมพวง",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/ขามทะเลสอ",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/ขามทะเลสอ",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/หนองบุญมาก",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/หนองบุญมาก",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/แก้งสนามนาง",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/แก้งสนามนาง",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/โนนแดง",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/โนนแดง",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    },
+    {
+      "url": "/พื้นที่/วังน้ำเขียว",
+      "status": 200,
+      "canonicalCount": 1,
+      "canonicalPath": "/พื้นที่/วังน้ำเขียว",
+      "robots": [
+        "index,follow"
+      ],
+      "h1Count": 1,
+      "imageCount": 2,
+      "imagesMissingAlt": 0,
+      "lineLinks": 1,
+      "breadcrumbLists": 1,
+      "error": null,
+      "passed": true
+    }
+  ],
+  "parentResults": [
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "status": 200,
+      "missingChildren": [],
+      "passed": true
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "status": 200,
+      "missingChildren": [],
+      "passed": true
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "status": 200,
+      "missingChildren": [],
+      "passed": true
+    },
+    {
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "status": 200,
+      "missingChildren": [],
+      "passed": true
+    },
+    {
+      "parent": "/รับซื้อเครื่องเกม-โคราช",
+      "status": 200,
+      "missingChildren": [],
+      "passed": true
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "status": 200,
+      "missingChildren": [],
+      "passed": true
+    },
+    {
+      "parent": "/พื้นที่",
+      "status": 200,
+      "missingChildren": [],
+      "passed": true
+    }
+  ],
+  "inbound": [
+    {
+      "url": "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อโน๊ตบุ๊ค-โคราช"
+      ]
+    },
+    {
+      "url": "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อโทรศัพท์มือถือ-โคราช"
+      ]
+    },
+    {
+      "url": "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อโทรศัพท์-android-โคราช"
+      ]
+    },
+    {
+      "url": "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อกล้อง-โคราช"
+      ]
+    },
+    {
+      "url": "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อเครื่องเกม-โคราช"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมโรงเรียน-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมมหาวิทยาลัย-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมโรงงาน-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมโรงแรม-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมคลินิก-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมสำนักงานบัญชี-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมบริษัทก่อสร้าง-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมบริษัทขนส่ง-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมร้านเกม-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอม-call-center-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อไอที-coworking-space-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อคอมหมดสัญญาเช่า-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-it-asset-disposition-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/รับซื้อสินค้าไอทียกล็อต"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ครบุรี",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เสิงสาง",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/คง",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/บ้านเหลื่อม",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/จักราช",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/โนนไทย",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ขามสะแกแสง",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ประทาย",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ห้วยแถลง",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ชุมพวง",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ขามทะเลสอ",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/หนองบุญมาก",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/แก้งสนามนาง",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/โนนแดง",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    },
+    {
+      "url": "/พื้นที่/วังน้ำเขียว",
+      "count": 2,
+      "sources": [
+        "/",
+        "/พื้นที่"
+      ]
+    }
+  ],
+  "sitemap": {
+    "status": 200,
+    "sources": [
+      "/sitemap-index.xml"
+    ],
+    "urlCount": 328,
+    "missingW5": [],
+    "passed": true
+  },
+  "errors": [],
+  "w6State": "LOCKED",
+  "observationState": "OBSERVATION_ACTIVE"
+}

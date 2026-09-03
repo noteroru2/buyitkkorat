@@ -20,7 +20,7 @@ const warnings = [];
 
 if (live.length !== architecture.meta.currentRoutes) errors.push(`Live route count drift: ${live.length} != ${architecture.meta.currentRoutes}`);
 if (indexable.length !== architecture.meta.currentIndexable) errors.push(`Indexable route count drift: ${indexable.length} != ${architecture.meta.currentIndexable}`);
-if (!['FOUNDATION_ONLY','CONTROLLED_RELEASE_ACTIVE'].includes(foundation.meta.foundationState)) errors.push(`Bad foundationState: ${foundation.meta.foundationState}`);
+if (!['FOUNDATION_ONLY','CONTROLLED_RELEASE_ACTIVE','INDEX350_W1_ACTIVE','INDEX350_W2_ACTIVE','INDEX350_W3_ACTIVE'].includes(foundation.meta.foundationState)) errors.push(`Bad foundationState: ${foundation.meta.foundationState}`);
 if (foundation.meta.automaticPublishing !== false) errors.push('automaticPublishing must remain false');
 if (!['FOUNDATION_ONLY_BATCH_6','FOUNDATION_ONLY_BATCH_6'].includes(core.meta.brandModelSeriesState)) {}
 

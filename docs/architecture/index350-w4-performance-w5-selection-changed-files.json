@@ -1,0 +1,24 @@
+{
+  "base": "buyitkkorat-index350-w4-observation-gate-full",
+  "changedOrAddedCount": 16,
+  "removedCount": 0,
+  "changedOrAdded": [
+    "APPLY_INDEX350_W4_PERFORMANCE_REVIEW_W5_SELECTION.md",
+    "docs/architecture/INDEX350-W4-PERFORMANCE-REVIEW-W5-SELECTION.md",
+    "docs/architecture/architecture-quality-gate-report.json",
+    "docs/architecture/index350-w4-performance-review.json",
+    "docs/architecture/index350-w4-performance-w5-selection-release-report.json",
+    "docs/architecture/index350-w4-performance-w5-selection-self-test.txt",
+    "docs/architecture/index350-w4-performance-w5-selection-validation.txt",
+    "docs/architecture/index350-w5-candidate-selection.csv",
+    "docs/architecture/index350-w5-candidate-selection.json",
+    "docs/architecture/index350-w5-provisional-candidate-matrix.csv",
+    "package.json",
+    "scripts/evaluate-index-350-w4-performance-review.mjs",
+    "scripts/select-index-350-w5-candidates.mjs",
+    "scripts/validate-index-350-w4-performance-w5-selection.mjs",
+    "src/config/index-350-expansion-plan.json",
+    "src/config/index-350-w4-performance-review-w5-selection.json"
+  ],
+  "removed": []
+}

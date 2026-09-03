@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "wave": "INDEX350_W5",
+    "title": "INDEX 350 — W5 Production Release Gate",
+    "site": "รับซื้อไอทีโคราช.com",
+    "productionOrigin": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com",
+    "expectedLiveRoutes": 329,
+    "expectedIndexableRoutes": 328,
+    "expectedNoindexRoutes": 1,
+    "expectedSitemapUrls": 328,
+    "releasedCount": 40,
+    "releasedConditionCount": 5,
+    "releasedB2BCount": 20,
+    "releasedLocalCount": 15,
+    "releasedUrls": [
+      "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช",
+      "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช",
+      "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช",
+      "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช",
+      "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช",
+      "/รับซื้อคอมโรงเรียน-โคราช",
+      "/รับซื้อคอมมหาวิทยาลัย-โคราช",
+      "/รับซื้อคอมโรงงาน-โคราช",
+      "/รับซื้อคอมโรงแรม-โคราช",
+      "/รับซื้อคอมคลินิก-โคราช",
+      "/รับซื้อคอมสำนักงานบัญชี-โคราช",
+      "/รับซื้อคอมบริษัทก่อสร้าง-โคราช",
+      "/รับซื้อคอมบริษัทขนส่ง-โคราช",
+      "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช",
+      "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช",
+      "/รับซื้อคอมร้านเกม-โคราช",
+      "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช",
+      "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช",
+      "/รับซื้อคอม-call-center-โคราช",
+      "/รับซื้อไอที-coworking-space-โคราช",
+      "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช",
+      "/รับซื้อคอมหมดสัญญาเช่า-โคราช",
+      "/รับซื้อ-it-asset-disposition-โคราช",
+      "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช",
+      "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช",
+      "/พื้นที่/ครบุรี",
+      "/พื้นที่/เสิงสาง",
+      "/พื้นที่/คง",
+      "/พื้นที่/บ้านเหลื่อม",
+      "/พื้นที่/จักราช",
+      "/พื้นที่/โนนไทย",
+      "/พื้นที่/ขามสะแกแสง",
+      "/พื้นที่/ประทาย",
+      "/พื้นที่/ห้วยแถลง",
+      "/พื้นที่/ชุมพวง",
+      "/พื้นที่/ขามทะเลสอ",
+      "/พื้นที่/หนองบุญมาก",
+      "/พื้นที่/แก้งสนามนาง",
+      "/พื้นที่/โนนแดง",
+      "/พื้นที่/วังน้ำเขียว"
+    ],
+    "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+    "realW4PerformanceAttested": false,
+    "automaticDeploy": false,
+    "w6Locked": true,
+    "automaticW6": false
+  },
+  "states": [
+    "SOURCE_RELEASED",
+    "PREDEPLOY_PENDING",
+    "PREDEPLOY_READY",
+    "PRODUCTION_PENDING",
+    "PRODUCTION_VERIFIED",
+    "OBSERVATION_ACTIVE",
+    "BLOCKED"
+  ],
+  "routeRequirements": {
+    "httpStatus": 200,
+    "canonicalCount": 1,
+    "robotsCount": 1,
+    "robots": "index,follow",
+    "h1Count": 1,
+    "minimumImages": 2,
+    "imageAltRequired": true,
+    "lineCtaRequired": true,
+    "breadcrumbListMax": 1,
+    "minimumInboundDiscoveryPaths": 2
+  },
+  "buildRequirements": {
+    "governedBuiltPages": 329,
+    "unreachableIndexable": 0,
+    "brokenGovernedLinks": 0,
+    "maxCrawlDepth": 4,
+    "w5BuiltPages": 40,
+    "w5Errors": 0
+  },
+  "sitemapRequirements": {
+    "path": "/sitemap-index.xml",
+    "urlCount": 328,
+    "allW5UrlsRequired": true
+  },
+  "parentChildChecks": [
+    {
+      "parent": "/รับซื้อโน๊ตบุ๊ค-โคราช",
+      "children": [
+        "/รับซื้อโน๊ตบุ๊คสภาพภายนอกหนัก-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์มือถือ-โคราช",
+      "children": [
+        "/รับซื้อโทรศัพท์ไม่มีกล่อง-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อโทรศัพท์-android-โคราช",
+      "children": [
+        "/รับซื้อโทรศัพท์สแกนนิ้วเสีย-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อกล้อง-โคราช",
+      "children": [
+        "/รับซื้อกล้องเซ็นเซอร์มีฝุ่น-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อเครื่องเกม-โคราช",
+      "children": [
+        "/รับซื้อเครื่องเกม-hdmi-เสีย-โคราช"
+      ]
+    },
+    {
+      "parent": "/รับซื้อสินค้าไอทียกล็อต",
+      "children": [
+        "/รับซื้อคอมโรงเรียน-โคราช",
+        "/รับซื้อคอมมหาวิทยาลัย-โคราช",
+        "/รับซื้อคอมโรงงาน-โคราช",
+        "/รับซื้อคอมโรงแรม-โคราช",
+        "/รับซื้อคอมคลินิก-โคราช",
+        "/รับซื้อคอมสำนักงานบัญชี-โคราช",
+        "/รับซื้อคอมบริษัทก่อสร้าง-โคราช",
+        "/รับซื้อคอมบริษัทขนส่ง-โคราช",
+        "/รับซื้ออุปกรณ์ไอทีร้านค้าปลีก-โคราช",
+        "/รับซื้อ-pos-ร้านอาหาร-คาเฟ่-โคราช",
+        "/รับซื้อคอมร้านเกม-โคราช",
+        "/รับซื้อคอมอินเทอร์เน็ตคาเฟ่-โคราช",
+        "/รับซื้อไอทีโกดังศูนย์กระจายสินค้า-โคราช",
+        "/รับซื้อคอม-call-center-โคราช",
+        "/รับซื้อไอที-coworking-space-โคราช",
+        "/รับซื้อคอมบริษัทเปลี่ยนเครื่องพนักงาน-โคราช",
+        "/รับซื้อคอมหมดสัญญาเช่า-โคราช",
+        "/รับซื้อ-it-asset-disposition-โคราช",
+        "/รับซื้อจอมอนิเตอร์หลายเครื่อง-โคราช",
+        "/รับซื้อโน๊ตบุ๊คบริษัทหลายเครื่อง-โคราช"
+      ]
+    },
+    {
+      "parent": "/พื้นที่",
+      "children": [
+        "/พื้นที่/ครบุรี",
+        "/พื้นที่/เสิงสาง",
+        "/พื้นที่/คง",
+        "/พื้นที่/บ้านเหลื่อม",
+        "/พื้นที่/จักราช",
+        "/พื้นที่/โนนไทย",
+        "/พื้นที่/ขามสะแกแสง",
+        "/พื้นที่/ประทาย",
+        "/พื้นที่/ห้วยแถลง",
+        "/พื้นที่/ชุมพวง",
+        "/พื้นที่/ขามทะเลสอ",
+        "/พื้นที่/หนองบุญมาก",
+        "/พื้นที่/แก้งสนามนาง",
+        "/พื้นที่/โนนแดง",
+        "/พื้นที่/วังน้ำเขียว"
+      ]
+    }
+  ],
+  "predeployValidators": [
+    "scripts/validate-index-350-expansion-plan.mjs",
+    "scripts/validate-index-350-w1.mjs",
+    "scripts/validate-index-350-w1-production-gate.mjs",
+    "scripts/validate-index-350-w2.mjs",
+    "scripts/validate-index-350-w2-production-gate.mjs",
+    "scripts/validate-index-350-w2-observation-gate.mjs",
+    "scripts/validate-index-350-w2-performance-w3-selection.mjs",
+    "scripts/validate-index-350-w3.mjs",
+    "scripts/validate-index-350-w3-production-gate.mjs",
+    "scripts/validate-index-350-w3-observation-gate.mjs",
+    "scripts/validate-index-350-w3-performance-w4-selection.mjs",
+    "scripts/validate-index-350-w4.mjs",
+    "scripts/validate-index-350-w4-production-gate.mjs",
+    "scripts/validate-index-350-w4-observation-gate.mjs",
+    "scripts/validate-index-350-w4-performance-w5-selection.mjs",
+    "scripts/validate-index-350-w5.mjs",
+    "scripts/validate-index-350-w5-production-gate.mjs",
+    "scripts/run-architecture-quality-gate.mjs"
+  ],
+  "observation": {
+    "stateAfterProductionVerification": "OBSERVATION_ACTIVE",
+    "w6State": "LOCKED",
+    "minimumFinalizedGscDaysBeforeW6Review": 7,
+    "recommendedObservationDays": 14,
+    "requiredReview": [
+      "indexation of 40 W5 URLs",
+      "query→page ownership",
+      "Condition/B2B/Local parent-child cannibalization",
+      "W5 type and cluster impression distribution",
+      "manual W6 candidate review"
+    ],
+    "policy": "Production verification starts W5 observation only. W6 remains locked and is never auto-released.",
+    "w6Eligibility": "MANUAL_REVIEW_ONLY"
+  },
+  "localSafety": {
+    "fakeBranchForbidden": true,
+    "fakeAddressForbidden": true,
+    "fakeHoursForbidden": true,
+    "fakeLatLongForbidden": true,
+    "fakeLocalBusinessSchemaForbidden": true,
+    "serviceAreaLanguageRequired": true
+  },
+  "safety": {
+    "noPerformanceClaim": true,
+    "noAutoMerge": true,
+    "noAutoRedirect": true,
+    "noAutoNoindex": true,
+    "noAutoCanonicalSwitch": true,
+    "noAutoW6Release": true
+  }
+}

@@ -19,7 +19,9 @@ import SafetyNotice from "../components/SafetyNotice.astro";
 import PrivacyNotice from "../components/PrivacyNotice.astro";
 import RelatedArticles from "../components/RelatedArticles.astro";
 import FAQSection from "../components/FAQSection.astro";
-import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import PageCoverSection from "../components/PageCoverSection.astro";
+import ImageCTASection from "../components/ImageCTASection.astro";
+import { HOME_PAGE_VISUALS } from "../data/pageVisuals";
 import { SITE } from "../data/site";
 import { absoluteUrl } from "../utils/seo";
 import { buildGraph, faqSchema, webpageSchema } from "../utils/schema";
@@ -96,6 +98,16 @@ const schema = buildGraph([
   >
     <CuteDeviceIllustration slot="illustration" type="devices" title="อุปกรณ์ไอทีมือสอง" />
   </HeroSection>
+
+  <PageCoverSection
+    image={HOME_PAGE_VISUALS.cover.image}
+    alt={HOME_PAGE_VISUALS.cover.alt}
+    caption={HOME_PAGE_VISUALS.cover.caption}
+    slotId={HOME_PAGE_VISUALS.cover.slotId}
+    eyebrow="ภาพหน้าปกเว็บไซต์"
+    title="หมวดสินค้าที่รับประเมินแบบเห็นภาพชัดขึ้น"
+    lead="ใช้ภาพจริงสไตล์เดียวกันทั้งเว็บเพื่อให้หน้าแรกดูน่าเชื่อถือ เข้าใจง่าย และช่วยให้ลูกค้าเห็นประเภทอุปกรณ์ที่สามารถส่งมาประเมินได้ตั้งแต่ต้น"
+  />
 
   <TrustStrip />
   <StoreIdentityCard ctaPrefix="home_identity" />
@@ -206,67 +218,65 @@ const schema = buildGraph([
   <SafetyNotice />
   <RelatedArticles items={articles} />
 
-  <section class="section section--tight">
+  <section class="section section--tight service-directory-section">
     <div class="container">
-      <h2 class="section__title">ลิงก์บริการเพิ่มเติม</h2>
-      <ul class="card-grid card-grid--3" style="list-style:none;margin:0;padding:0">
-        {
-          [
-            ["/รับซื้อ-apple-watch-โคราช", "Apple Watch"],
-            ["/รับซื้อ-cpu-โคราช", "CPU"],
-            ["/รับซื้อ-ssd-hdd-โคราช", "SSD / HDD"],
-            ["/รับซื้อเมนบอร์ด-โคราช", "เมนบอร์ด"],
-            ["/รับซื้อแรม-โคราช", "แรม"],
-            ["/รับซื้อจอมอนิเตอร์-โคราช", "จอมอนิเตอร์"],
-            ["/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช", "อุปกรณ์คอมพิวเตอร์"],
-            ["/รับซื้อเลนส์กล้อง-โคราช", "เลนส์กล้อง"],
-            ["/รับซื้อ-playstation-โคราช", "PlayStation"],
-            ["/รับซื้อ-nintendo-switch-โคราช", "Nintendo Switch"],
-            ["/รับซื้อลำโพง-โคราช", "ลำโพง"],
-            ["/รับซื้อหูฟัง-โคราช", "หูฟัง"],
-            ["/รับซื้อ-server-network-โคราช", "Server / Network"],
-            ["/รับซื้อเครื่องปริ้น-โคราช", "เครื่องปริ้น"],
-            ["/รับซื้ออุปกรณ์-pos-โคราช", "อุปกรณ์ POS"],
-            ["/รับซื้อคอมบริษัท-โคราช", "คอมบริษัท"],
-            ["/รับซื้อคอมเกมมิ่ง-โคราช", "คอมเกมมิ่ง"],
-            ["/รับซื้อคอมประกอบ-โคราช", "คอมประกอบ"],
-            ["/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช", "โน๊ตบุ๊คเกมมิ่ง"],
-            ["/รับซื้อโน๊ตบุ๊คเสีย-โคราช", "โน๊ตบุ๊คเสีย"],
-            ["/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช", "โน๊ตบุ๊คเปิดไม่ติด"],
-            ["/รับซื้อโน๊ตบุ๊คจอแตก-โคราช", "โน๊ตบุ๊คจอแตก"],
-            ["/รับซื้อคอมเก่า-โคราช", "คอมเก่า"],
-            ["/รับซื้อสินค้าไอทีไม่มีอุปกรณ์-โคราช", "ไม่มีอุปกรณ์"],
-            ["/ขายคอมหลายเครื่อง-โคราช", "ขายคอมหลายเครื่อง"],
-            ["/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช", "ยกสำนักงาน"],
-            ["/บริษัทปิดกิจการขายอุปกรณ์ไอที", "ปิดกิจการ"],
-            ["/วิธีประเมินราคา", "วิธีประเมินราคา"],
-            ["/พื้นที่/สีคิ้ว", "สีคิ้ว"],
-            ["/พื้นที่/สูงเนิน", "สูงเนิน"],
-            ["/พื้นที่/พิมาย", "พิมาย"],
-            ["/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี", "มทส."],
-          ].map(([href, label]) => (
-            <li class="card" style="padding:var(--space-3)">
-              <a href={href}>{label}</a>
-            </li>
-          ))
-        }
-      </ul>
+      <details class="service-directory">
+        <summary>
+          <span><strong>บริการและหน้าข้อมูลเพิ่มเติม</strong><small>เปิดดูหมวดเฉพาะ อุปกรณ์ และพื้นที่ที่เกี่ยวข้อง</small></span>
+          <span class="service-directory__icon" aria-hidden="true">+</span>
+        </summary>
+        <ul class="service-directory__links">
+          {
+            [
+              ["/รับซื้อ-apple-watch-โคราช", "Apple Watch"], ["/รับซื้อ-cpu-โคราช", "CPU"],
+              ["/รับซื้อ-ssd-hdd-โคราช", "SSD / HDD"], ["/รับซื้อเมนบอร์ด-โคราช", "เมนบอร์ด"],
+              ["/รับซื้อแรม-โคราช", "แรม"], ["/รับซื้อจอมอนิเตอร์-โคราช", "จอมอนิเตอร์"],
+              ["/รับซื้ออุปกรณ์คอมพิวเตอร์-โคราช", "อุปกรณ์คอมพิวเตอร์"], ["/รับซื้อเลนส์กล้อง-โคราช", "เลนส์กล้อง"],
+              ["/รับซื้อ-playstation-โคราช", "PlayStation"], ["/รับซื้อ-nintendo-switch-โคราช", "Nintendo Switch"],
+              ["/รับซื้อลำโพง-โคราช", "ลำโพง"], ["/รับซื้อหูฟัง-โคราช", "หูฟัง"],
+              ["/รับซื้อ-server-network-โคราช", "Server / Network"], ["/รับซื้อเครื่องปริ้น-โคราช", "เครื่องปริ้น"],
+              ["/รับซื้ออุปกรณ์-pos-โคราช", "อุปกรณ์ POS"], ["/รับซื้อคอมบริษัท-โคราช", "คอมบริษัท"],
+              ["/รับซื้อคอมเกมมิ่ง-โคราช", "คอมเกมมิ่ง"], ["/รับซื้อคอมประกอบ-โคราช", "คอมประกอบ"],
+              ["/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช", "โน๊ตบุ๊คเกมมิ่ง"], ["/รับซื้อโน๊ตบุ๊คเสีย-โคราช", "โน๊ตบุ๊คเสีย"],
+              ["/รับซื้อโน๊ตบุ๊คเปิดไม่ติด-โคราช", "โน๊ตบุ๊คเปิดไม่ติด"], ["/รับซื้อโน๊ตบุ๊คจอแตก-โคราช", "โน๊ตบุ๊คจอแตก"],
+              ["/รับซื้อคอมเก่า-โคราช", "คอมเก่า"], ["/รับซื้อสินค้าไอทีไม่มีอุปกรณ์-โคราช", "ไม่มีอุปกรณ์"],
+              ["/ขายคอมหลายเครื่อง-โคราช", "ขายคอมหลายเครื่อง"], ["/ขายอุปกรณ์ไอทียกสำนักงาน-โคราช", "ยกสำนักงาน"],
+              ["/บริษัทปิดกิจการขายอุปกรณ์ไอที", "ปิดกิจการ"], ["/วิธีประเมินราคา", "วิธีประเมินราคา"],
+              ["/พื้นที่/สีคิ้ว", "สีคิ้ว"], ["/พื้นที่/สูงเนิน", "สูงเนิน"], ["/พื้นที่/พิมาย", "พิมาย"],
+              ["/พื้นที่/มหาวิทยาลัยเทคโนโลยีสุรนารี", "มทส."],
+            ].map(([href,label]) => <li><a href={href}>{label}<span aria-hidden="true">→</span></a></li>)
+          }
+        </ul>
+      </details>
     </div>
   </section>
 
   <FAQSection items={faqs} />
 
-  <section class="section">
-    <div class="container" style="text-align:center">
-      <h2 class="section__title">ส่งรุ่นและรูปสินค้าเพื่อประเมินเบื้องต้น</h2>
-      <p class="section__lead" style="margin-inline:auto">
-        ติดต่อผ่าน LINE {SITE.lineId} หรือโทร {SITE.phoneDisplay} · ดูข้อมูลร้านที่
-        <a href="/เกี่ยวกับเรา">เกี่ยวกับเรา</a>
-      </p>
-      <PrimaryLineCTA label="แอด LINE @buyhub" event="service_cta_click" />
-      <p class="disclaimer" style="margin-top:var(--space-4);display:inline-block;text-align:left">
-        {SITE.priceDisclaimer}
-      </p>
-    </div>
-  </section>
+  <ImageCTASection
+    image={HOME_PAGE_VISUALS.cta.image}
+    alt={HOME_PAGE_VISUALS.cta.alt}
+    slotId={HOME_PAGE_VISUALS.cta.slotId}
+    title="เห็นปุ่ม LINE ชัดขึ้น พร้อมเริ่มประเมินได้ทันที"
+    description="ส่งรุ่น สเปก รูปสภาพ และตำหนิผ่าน LINE ได้เลย เพื่อรับการประเมินเบื้องต้นก่อนนัดรับหรือจัดส่ง โดยไม่ต้องลงประกาศเอง"
+    note={`${SITE.priceDisclaimer} · ตรวจสอบข้อมูลร้านเพิ่มเติมได้ที่หน้าเกี่ยวกับเรา`}
+    phoneCta="home_final_phone"
+  />
 </BaseLayout>
+
+<style>
+  .service-directory-section { padding-top:1rem; }
+  .service-directory { overflow:hidden; border:1px solid var(--color-border); border-radius:var(--radius-lg); background:white; box-shadow:var(--shadow-xs); }
+  .service-directory summary { min-height:64px; padding:.9rem 1rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; cursor:pointer; list-style:none; }
+  .service-directory summary::-webkit-details-marker { display:none; }
+  .service-directory summary > span:first-child { display:flex; flex-direction:column; }
+  .service-directory summary strong { color:var(--color-navy); font-size:.95rem; }
+  .service-directory summary small { margin-top:.12rem; color:var(--color-text-muted); font-size:.75rem; }
+  .service-directory__icon { width:2rem; height:2rem; flex:0 0 2rem; display:grid; place-items:center; border-radius:.6rem; background:#f1f5f9; font-weight:800; transition:transform .15s ease; }
+  .service-directory[open] .service-directory__icon { transform:rotate(45deg); background:var(--color-primary-soft); color:var(--color-primary-dark); }
+  .service-directory__links { list-style:none; margin:0; padding:0 1rem 1rem; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.35rem .7rem; }
+  .service-directory__links a { min-height:38px; display:flex; align-items:center; justify-content:space-between; gap:.6rem; padding:.35rem .55rem; border-radius:.6rem; background:#f8fafc; color:var(--color-text); text-decoration:none; font-size:.78rem; font-weight:650; }
+  .service-directory__links a:hover { background:#fff7ed; color:var(--color-primary-dark); }
+  .service-directory__links a span { color:var(--color-primary); }
+  @media(min-width:720px){ .service-directory__links { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+</style>

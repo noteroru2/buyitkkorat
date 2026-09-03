@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import PageCoverSection from "../components/PageCoverSection.astro";
+import { HOME_PAGE_VISUALS } from "../data/pageVisuals";
 ---
 
 <BaseLayout
@@ -21,4 +23,13 @@ import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
       </div>
     </div>
   </section>
+
+  <PageCoverSection
+    image={HOME_PAGE_VISUALS.cover.image}
+    alt={HOME_PAGE_VISUALS.cover.alt}
+    slotId="VISUAL-404-01"
+    eyebrow="ยังไปต่อได้"
+    title="กลับไปดูหมวดสินค้าไอทีหรือส่งรูปประเมินได้เลย"
+    lead="แม้ลิงก์นี้จะไม่พบ คุณยังสามารถกลับหน้าแรก เลือกหมวดบริการ หรือเปิด LINE เพื่อส่งรูปสินค้าที่ต้องการประเมินได้ทันที"
+  />
 </BaseLayout>

@@ -1,0 +1,26 @@
+{
+  "batch": "INDEX 350 — Final Observation & Architecture Completion Gate",
+  "base": "INDEX 350 — W6 Production Release Gate",
+  "urlChanges": 0,
+  "sourceSnapshot": {
+    "live": 360,
+    "indexable": 359,
+    "noindex": 1,
+    "sitemap": 359
+  },
+  "intentionalFiles": [
+    "APPLY_INDEX350_FINAL_OBSERVATION_ARCHITECTURE_COMPLETION_GATE.md",
+    "package.json",
+    "src/config/index-350-final-completion-gate.json",
+    "scripts/validate-index-350-final-completion-gate.mjs",
+    "scripts/evaluate-index-350-final-observation.mjs",
+    "docs/gsc/index350-final-gsc-template.csv",
+    "docs/gsc/index350-final-indexation-template.csv",
+    "docs/architecture/index350-final-completion-approval-template.json",
+    "docs/architecture/index350-final-observation-completion-gate-self-test.txt",
+    "docs/architecture/index350-final-observation-completion-gate-changed-files.json"
+  ],
+  "automaticFurtherRelease": false,
+  "canonRiskCandidate": "/รับซื้อ-canon-eos-r-โคราช",
+  "canonState": "HOLD"
+}

@@ -1,0 +1,21 @@
+{
+  "batch": "INDEX 350 — W3 Observation Gate",
+  "base": "INDEX 350 — W3 Production Release Gate",
+  "changedFiles": [
+    "APPLY_INDEX350_W3_OBSERVATION_GATE.md",
+    "package.json",
+    "src/config/index-350-w3-observation-gate.json",
+    "scripts/validate-index-350-w3-observation-gate.mjs",
+    "scripts/evaluate-index-350-w3-observation.mjs",
+    "docs/gsc/index350-w3-gsc-template.csv",
+    "docs/gsc/index350-w3-indexation-template.csv",
+    "docs/architecture/index350-w3-observation-gate-self-test.txt",
+    "docs/architecture/index350-w3-observation-gate-changed-files.json"
+  ],
+  "count": 9,
+  "notes": [
+    "No new live URL released.",
+    "W4 remains locked.",
+    "Observation requires real W3 production verification and finalized GSC/indexation evidence."
+  ]
+}

@@ -1,0 +1,235 @@
+=== validate:index350:w4:review ===
+
+> winner-it-korat@0.0.1 validate:index350:w4:review
+> node scripts/validate-index-350-w4-performance-w5-selection.mjs
+
+INDEX 350 — W4 PERFORMANCE REVIEW / W5 SELECTION VALIDATION
+Live/indexable/noindex: 289/288/1
+W5 candidate pool: 53 — Condition 5, B2B 20, Local 28
+Provisional shortlist: 40/40 — Condition 5, B2B 20, Local 15
+Local reserve: 13
+Deferred final wave: 19
+Real W4 performance data packaged: false
+Automatic W5: false
+VERDICT: PASS
+
+=== review:index350:w4 (packaged no real data) ===
+
+> winner-it-korat@0.0.1 review:index350:w4
+> node scripts/evaluate-index-350-w4-performance-review.mjs
+
+INDEX 350 — W4 PERFORMANCE REVIEW
+State: WAIT_FOR_REAL_W4_OBSERVATION_DATA
+Missing inputs: docs/architecture/index350-w4-observation-report.json, docs/architecture/index350-w4-observation-pages.csv, docs/architecture/index350-w4-query-ownership.csv
+W5 candidate review ready: false
+W5 automatic release: false
+Report: docs/architecture/index350-w4-performance-review.json
+VERDICT: WAIT_FOR_DATA
+
+=== select:index350:w5 (packaged no real data) ===
+
+> winner-it-korat@0.0.1 select:index350:w5
+> node scripts/select-index-350-w5-candidates.mjs
+
+INDEX 350 — W5 CANDIDATE SELECTION
+Source review: WAIT_FOR_REAL_W4_OBSERVATION_DATA
+Candidate pool: 53
+Eligible pool: 53/53
+Selected: 0/40
+Group counts: NONE
+Group minima satisfied: false
+State: WAIT_FOR_REAL_W4_REVIEW
+Automatic W5 release: false
+Final buffer risk: /รับซื้อ-canon-eos-r-โคราช
+Report: docs/architecture/index350-w5-candidate-selection.json
+VERDICT: HOLD
+
+=== cumulative validate:architecture ===
+
+> winner-it-korat@0.0.1 validate:architecture
+> node scripts/run-architecture-quality-gate.mjs && node scripts/validate-expansion-round-1-production-gate.mjs && node scripts/validate-index-350-expansion-plan.mjs && node scripts/validate-index-350-w1.mjs && node scripts/validate-index-350-w1-production-gate.mjs && node scripts/validate-index-350-w1-performance-w2-selection.mjs && node scripts/validate-index-350-w2.mjs && node scripts/validate-index-350-w2-production-gate.mjs && node scripts/validate-index-350-w2-observation-gate.mjs && node scripts/validate-index-350-w2-performance-w3-selection.mjs && node scripts/validate-index-350-w3.mjs && node scripts/validate-index-350-w3-production-gate.mjs && node scripts/validate-index-350-w3-observation-gate.mjs && node scripts/validate-index-350-w3-performance-w4-selection.mjs && node scripts/validate-index-350-w4.mjs && node scripts/validate-index-350-w4-production-gate.mjs && node scripts/validate-index-350-w4-observation-gate.mjs && node scripts/validate-index-350-w4-performance-w5-selection.mjs
+
+ARCHITECTURE BATCH 10 — STATIC QUALITY GATE
+Validators: 10/10 passed
+Live/indexable/noindex: 289/288/1
+Unreleased candidates governed: 72
+Static architecture gate: PASS
+Production integration gate: UNATTESTED_IN_OVERLAY
+Expansion decision: CONDITIONALLY_READY
+Report: docs/architecture/architecture-quality-gate-report.json
+VERDICT: PASS_WITH_PRODUCTION_ATTESTATION_REQUIRED
+EXPANSION ROUND 1 — PRODUCTION / OBSERVATION GATE VALIDATION
+Live/indexable: 289/288
+Sitemap target: 288
+Released URLs governed: 4
+Minimum finalized GSC days: 7
+Round 2 locked: true
+Automatic deploy: false
+Automatic Round 2: false
+VERDICT: PASS
+INDEX 350+ EXPANSION PLAN VALIDATION
+Current indexable: 288
+W1 released: 40
+W2 released: 50
+W3 released: 50 Model pages
+W4 released: 50 (18 Series + 7 Model + 25 Condition)
+Remaining HOLD: 72
+Target indexable: 360
+Buffer above 350: 10
+Automatic publishing: false
+VERDICT: PASS
+INDEX 350 W1 — BRAND & SERIES RELEASE VALIDATION
+Live/indexable/noindex: 289/288/1
+Released: 40 (24 Brand + 16 Series)
+Content files checked: 40
+Sitemap target: 288
+W1 historical surface: PRESERVED
+VERDICT: PASS
+INDEX 350 W1 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 289/288/1
+W1 governed: 40/40
+Parent groups: 10
+Sitemap target: 138
+Minimum W1 inbound paths: 2
+Minimum images/page: 2
+Historical W1 lock configured: true
+VERDICT: PASS
+INDEX 350 — W1 PERFORMANCE REVIEW / W2 SELECTION VALIDATION
+Live/indexable: 289/288
+W2 source release: 50
+Series/Model: 30/20
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W1 performance attested: false
+Automatic W2: false
+VERDICT: PASS
+INDEX 350 EXPANSION — W2 SERIES & MODEL RELEASE VALIDATION
+Live/indexable/noindex: 289/288/1
+Released: 50 (Series 30 + Model 20)
+Content files checked: 50
+Minimum body characters: 3396
+Max pair similarity: 0.9017
+Minimum projected inbound paths: 2
+Sitemap target: 288
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W1 performance attested: false
+W3: LOCKED
+VERDICT: PASS
+INDEX 350 W2 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 289/288/1
+W2 governed: 50/50
+Parent groups: 27
+Sitemap target: 188
+Minimum W2 inbound paths: 2
+Minimum images/page: 2
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W1 performance attested: false
+W3: LOCKED
+VERDICT: PASS
+INDEX 350 — W2 OBSERVATION GATE VALIDATION
+Live/indexable/noindex: 289/288/1
+Observed W2 URLs: 50 (Series 30, Model 20)
+Ownership pairs: 50
+Finalized-day gate: 7
+Visibility gate: 10/50 (Series 6/30, Model 4/20)
+Indexation gate: 40/50 (Series 24/30, Model 16/20)
+Release basis: MANUAL_APPROVAL_OVERRIDE
+W3 locked: true
+VERDICT: PASS
+INDEX 350 — W2 PERFORMANCE REVIEW / W3 SELECTION VALIDATION
+Live/indexable/noindex: 289/288/1
+W3 source release: 50/50 Model pages
+Cluster mix: NOTEBOOK=14, APPLE=10, MOBILE=14, CAMERA=5, GAMING=7
+Remaining model HOLD: 1
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W2 performance data packaged: false
+Automatic W3: false
+VERDICT: PASS
+INDEX 350 EXPANSION — W3 MODEL 50 RELEASE VALIDATION
+Live/indexable/noindex: 289/288/1
+Released Model pages: 50/50
+Cluster mix: NOTEBOOK=14, APPLE=10, MOBILE=14, CAMERA=5, GAMING=7
+Content files checked: 50
+Minimum body characters: 5121
+Max pair similarity: 0.9244
+Minimum projected inbound paths: 2
+Sitemap target: 288
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W2 performance attested: false
+W4: LOCKED
+VERDICT: PASS
+INDEX 350 W3 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 289/288/1
+W3 governed: 50/50
+Parent groups: 32
+Sitemap target: 238
+Minimum W3 inbound paths: 2
+Minimum images/page: 2
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W2 performance attested: false
+W4: LOCKED
+VERDICT: PASS
+INDEX 350 — W3 OBSERVATION GATE VALIDATION
+Live/indexable/noindex: 289/288/1
+Observed W3 URLs: 50 Model pages
+Cluster mix: NOTEBOOK 14 | APPLE 10 | MOBILE 14 | CAMERA 5 | GAMING 7
+Ownership pairs: 50
+Finalized-day gate: 7
+Visibility gate: 10/50; cluster minima NOTEBOOK 3, APPLE 2, MOBILE 3, CAMERA 1, GAMING 1
+Indexation gate: 40/50; cluster minima NOTEBOOK 11, APPLE 8, MOBILE 11, CAMERA 4, GAMING 6
+Release basis: MANUAL_APPROVAL_OVERRIDE
+W4 locked: true
+VERDICT: PASS
+INDEX 350 — W3 PERFORMANCE REVIEW / W4 SELECTION VALIDATION
+Live/indexable/noindex: 289/288/1
+W4 candidate pool remaining: 6; release mode: true
+Provisional shortlist: 50/50 — Series 18, Model 7, Condition 25
+Reserve/blocked: 6
+Real W3 performance data packaged: false
+Automatic W4: false
+VERDICT: PASS
+INDEX 350 EXPANSION — W4 SERIES, MODEL & CONDITION 50 RELEASE VALIDATION
+Live/indexable/noindex: 289/288/1
+Released: 50 — Series 18, Model 7, Condition 25
+Cluster mix: MOBILE=20, CAMERA=9, NOTEBOOK=9, APPLE=3, COMPUTER=6, GAMING=3
+Content files checked: 50
+Minimum body characters: 2812
+Max pair similarity: 0.9254
+Minimum projected inbound paths: 2
+Sitemap target: 288
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W3 performance attested: false
+W5: LOCKED
+VERDICT: PASS
+INDEX 350 W4 — PRODUCTION RELEASE GATE VALIDATION
+Live/indexable/noindex: 289/288/1
+W4 governed: 50/50
+Composition: Series 18, Model 7, Condition 25
+Parent groups: 30
+Sitemap target: 288
+Minimum W4 inbound paths: 2
+Minimum images/page: 2
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W3 performance attested: false
+W5: LOCKED
+VERDICT: PASS
+INDEX 350 — W4 OBSERVATION GATE VALIDATION
+Live/indexable/noindex: 289/288/1
+Observed W4 URLs: 50
+Type mix: SERIES 18 | MODEL 7 | CONDITION 25
+Cluster mix: MOBILE 20 | CAMERA 9 | NOTEBOOK 9 | APPLE 3 | COMPUTER 6 | GAMING 3
+Ownership pairs: 50
+Finalized-day gate: 7
+Visibility gate: 12/50; type minima SERIES 4, MODEL 2, CONDITION 5; cluster minima MOBILE 3, CAMERA 2, NOTEBOOK 2, APPLE 1, COMPUTER 1, GAMING 1
+Indexation gate: 40/50; type minima SERIES 14, MODEL 6, CONDITION 20; cluster minima MOBILE 16, CAMERA 7, NOTEBOOK 7, APPLE 2, COMPUTER 5, GAMING 2
+Release basis: MANUAL_APPROVAL_OVERRIDE
+W5 locked: true
+VERDICT: PASS
+INDEX 350 — W4 PERFORMANCE REVIEW / W5 SELECTION VALIDATION
+Live/indexable/noindex: 289/288/1
+W5 candidate pool: 53 — Condition 5, B2B 20, Local 28
+Provisional shortlist: 40/40 — Condition 5, B2B 20, Local 15
+Local reserve: 13
+Deferred final wave: 19
+Real W4 performance data packaged: false
+Automatic W5: false
+VERDICT: PASS

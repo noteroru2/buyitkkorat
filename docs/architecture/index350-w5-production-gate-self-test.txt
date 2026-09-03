@@ -1,0 +1,17 @@
+INDEX 350 — W5 PRODUCTION RELEASE GATE SELF-TEST
+Date: 2026-09-02
+Synthetic/static attestation only; not real Astro build or production.
+
+Static gate: PASS
+Synthetic architecture crawl: 329/329
+Unreachable indexable: 0
+Broken governed links: 0
+Max observed crawl depth: 1
+W5 built surface: 40/40
+Parent groups: 7/7
+Minimum inbound: 2
+Sitemap: 328/328
+Synthetic production verification: PASS
+State: PRODUCTION_VERIFIED (synthetic only)
+Observation: OBSERVATION_ACTIVE (synthetic only)
+W6: LOCKED

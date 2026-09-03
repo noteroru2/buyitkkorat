@@ -1,0 +1,26 @@
+{
+  "title": "INDEX 350 — W3 Performance Review & W4 Candidate Selection",
+  "state": "WAIT_FOR_REAL_W3_OBSERVATION_DATA",
+  "baseline": {
+    "live": 239,
+    "indexable": 238,
+    "noindex": 1
+  },
+  "candidatePool": {
+    "total": 56,
+    "B_SERIES": 18,
+    "C_MODEL": 8,
+    "D_CONDITION": 30
+  },
+  "provisionalShortlist": {
+    "total": 50,
+    "B_SERIES": 18,
+    "C_MODEL": 7,
+    "D_CONDITION": 25
+  },
+  "reserveOrBlocked": 6,
+  "realW3PerformanceDataProvided": false,
+  "automaticW4Release": false,
+  "w4Locked": true,
+  "note": "No real W3 metrics are included or invented. The selector emits SELECT decisions only after a real ROUND4_REVIEW_ELIGIBLE observation report."
+}

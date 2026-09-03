@@ -1,0 +1,392 @@
+{
+  "meta": {
+    "wave": "INDEX350_FINAL",
+    "title": "INDEX 350 — Final Observation & Architecture Completion Gate",
+    "site": "รับซื้อไอทีโคราช.com",
+    "productionOrigin": "https://xn--42cmb2cn7ce1fa0bs7aw2n0a2f.com",
+    "expectedLiveRoutes": 360,
+    "expectedIndexableRoutes": 359,
+    "expectedNoindexRoutes": 1,
+    "expectedSitemapUrls": 359,
+    "targetFloor": 350,
+    "sourceTargetFloorMet": true,
+    "observedWave": "INDEX350_W6_SAFE_FINAL",
+    "observedUrls": [
+      "/พื้นที่/เทพารักษ์",
+      "/พื้นที่/เมืองยาง",
+      "/พื้นที่/พระทองคำ",
+      "/พื้นที่/ลำทะเมนชัย",
+      "/พื้นที่/บัวลาย",
+      "/พื้นที่/สีดา",
+      "/พื้นที่/เฉลิมพระเกียรติ",
+      "/พื้นที่/จอหอ",
+      "/พื้นที่/หัวทะเล",
+      "/พื้นที่/สุรนารี",
+      "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+      "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+      "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา",
+      "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+      "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+      "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+      "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+      "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+      "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+      "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+      "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+      "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+      "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+      "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+      "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+      "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร"
+    ],
+    "observedCount": 31,
+    "groupMix": {
+      "F_LOCAL": 13,
+      "G_GUIDE": 18
+    },
+    "clusterMix": {
+      "LOCATION": 13,
+      "CONTENT": 18
+    },
+    "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+    "realW5PerformanceAttested": false,
+    "completionRequiresRealEvidence": true,
+    "automaticFurtherRelease": false,
+    "finalRiskCandidate": "/รับซื้อ-canon-eos-r-โคราช",
+    "finalRiskState": "HOLD_PLANNED",
+    "completionAt359Allowed": true,
+    "policy": "Architecture completion confirms the >=350 target floor from real production/indexation evidence; it never auto-releases the Canon EOS R risk candidate."
+  },
+  "states": [
+    "WAIT_FOR_PRODUCTION_VERIFICATION",
+    "WAIT_FOR_FINALIZED_GSC",
+    "HOLD_LOW_W6_VISIBILITY",
+    "REVIEW_PENDING_W6_INDEXATION",
+    "SITE_INDEXATION_FLOOR_NOT_MET",
+    "FINAL_RISK_CLEANUP_REQUIRED",
+    "OWNERSHIP_REVIEW_REQUIRED",
+    "COMPLETION_APPROVAL_INVALID",
+    "ARCHITECTURE_COMPLETION_ELIGIBLE",
+    "ARCHITECTURE_COMPLETED",
+    "BLOCKED"
+  ],
+  "inputs": {
+    "productionVerification": "docs/architecture/index350-w6-production-verification.json",
+    "gscRequiredColumns": [
+      "date",
+      "query",
+      "page",
+      "clicks",
+      "impressions",
+      "position"
+    ],
+    "indexationRequiredColumns": [
+      "url",
+      "indexed"
+    ],
+    "indexationOptionalColumns": [
+      "status",
+      "last_crawl"
+    ],
+    "completionApproval": "docs/architecture/index350-final-completion-approval.json",
+    "completionApprovalTemplate": "docs/architecture/index350-final-completion-approval-template.json"
+  },
+  "thresholds": {
+    "minimumFinalizedDays": 14,
+    "recommendedObservationDays": 28,
+    "minimumVisibleW6Pages": 8,
+    "minimumVisibleShare": 0.258065,
+    "minimumVisibleByType": {
+      "LOCAL": 3,
+      "GUIDE": 5
+    },
+    "minimumIndexedW6Pages": 25,
+    "minimumIndexedW6Share": 0.806452,
+    "minimumIndexedByType": {
+      "LOCAL": 10,
+      "GUIDE": 15
+    },
+    "minimumSiteIndexationCoverage": 350,
+    "minimumSiteIndexedPages": 350,
+    "ownershipOverlapMinQueries": 3,
+    "ownershipJaccardReview": 0.35,
+    "ownershipMinParentImpressions": 10,
+    "ownershipMinChildImpressions": 10,
+    "maximumOwnershipReviewPairsForCompletion": 3
+  },
+  "nodeTypeByUrl": {
+    "/พื้นที่/เทพารักษ์": "LOCAL",
+    "/พื้นที่/เมืองยาง": "LOCAL",
+    "/พื้นที่/พระทองคำ": "LOCAL",
+    "/พื้นที่/ลำทะเมนชัย": "LOCAL",
+    "/พื้นที่/บัวลาย": "LOCAL",
+    "/พื้นที่/สีดา": "LOCAL",
+    "/พื้นที่/เฉลิมพระเกียรติ": "LOCAL",
+    "/พื้นที่/จอหอ": "LOCAL",
+    "/พื้นที่/หัวทะเล": "LOCAL",
+    "/พื้นที่/สุรนารี": "LOCAL",
+    "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา": "LOCAL",
+    "/พื้นที่/เขตอุตสาหกรรมสุรนารี": "LOCAL",
+    "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา": "LOCAL",
+    "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที": "GUIDE",
+    "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย": "GUIDE",
+    "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย": "GUIDE",
+    "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย": "GUIDE",
+    "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค": "GUIDE",
+    "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย": "GUIDE",
+    "/บทความ/วิธีดู-smart-ssd-ก่อนขาย": "GUIDE",
+    "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ": "GUIDE",
+    "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย": "GUIDE",
+    "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน": "GUIDE",
+    "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง": "GUIDE",
+    "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง": "GUIDE",
+    "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต": "GUIDE",
+    "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท": "GUIDE",
+    "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย": "GUIDE",
+    "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร": "GUIDE",
+    "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร": "GUIDE",
+    "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร": "GUIDE"
+  },
+  "clusterByUrl": {
+    "/พื้นที่/เทพารักษ์": "LOCATION",
+    "/พื้นที่/เมืองยาง": "LOCATION",
+    "/พื้นที่/พระทองคำ": "LOCATION",
+    "/พื้นที่/ลำทะเมนชัย": "LOCATION",
+    "/พื้นที่/บัวลาย": "LOCATION",
+    "/พื้นที่/สีดา": "LOCATION",
+    "/พื้นที่/เฉลิมพระเกียรติ": "LOCATION",
+    "/พื้นที่/จอหอ": "LOCATION",
+    "/พื้นที่/หัวทะเล": "LOCATION",
+    "/พื้นที่/สุรนารี": "LOCATION",
+    "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา": "LOCATION",
+    "/พื้นที่/เขตอุตสาหกรรมสุรนารี": "LOCATION",
+    "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา": "LOCATION",
+    "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที": "CONTENT",
+    "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย": "CONTENT",
+    "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย": "CONTENT",
+    "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย": "CONTENT",
+    "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค": "CONTENT",
+    "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย": "CONTENT",
+    "/บทความ/วิธีดู-smart-ssd-ก่อนขาย": "CONTENT",
+    "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ": "CONTENT",
+    "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย": "CONTENT",
+    "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน": "CONTENT",
+    "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง": "CONTENT",
+    "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง": "CONTENT",
+    "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต": "CONTENT",
+    "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท": "CONTENT",
+    "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย": "CONTENT",
+    "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร": "CONTENT",
+    "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร": "CONTENT",
+    "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร": "CONTENT"
+  },
+  "ownershipPairs": [
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/เทพารักษ์",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/เมืองยาง",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/พระทองคำ",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/ลำทะเมนชัย",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/บัวลาย",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/สีดา",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/เฉลิมพระเกียรติ",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/จอหอ",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/หัวทะเล",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/สุรนารี",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/พื้นที่",
+      "child": "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา",
+      "nodeType": "LOCAL",
+      "cluster": "LOCATION"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    },
+    {
+      "parent": "/บทความ",
+      "child": "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร",
+      "nodeType": "GUIDE",
+      "cluster": "CONTENT"
+    }
+  ],
+  "completionApprovalRequirements": {
+    "approved": true,
+    "approvedByRequired": true,
+    "approvedAtRequired": true,
+    "acknowledgeCanonRemainsHold": true,
+    "acknowledgeNoAutomaticFurtherRelease": true
+  },
+  "hardRules": [
+    "No automatic further release after architecture completion.",
+    "Canon EOS R remains HOLD unless a separate explicit query-ownership resolution is approved later.",
+    "Completion at 359 source-indexable pages is valid because the project floor is 350; 360 is a buffer target, not a reason to force a risky URL live.",
+    "No merge, redirect, noindex, or canonical switch may be triggered automatically from similarity or observation alone.",
+    "Finalized GSC dates count only W6 pages and their relevant parents after the verified W6 production release date.",
+    "Architecture completion requires real W6 production verification, at least 14 finalized observation days, W6 visibility/indexation gates, >=350 confirmed indexed site pages, ownership safety, and explicit completion approval.",
+    "ARCHITECTURE_COMPLETED confirms the architecture/indexation floor; it does not guarantee rankings, traffic, leads, or that all 359 source-indexable URLs are indexed."
+  ]
+}

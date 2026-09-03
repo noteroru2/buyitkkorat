@@ -2,9 +2,9 @@
   "meta": {
     "batch": "ARCHITECTURE BATCH 10 — Architecture Production Quality Gate & Expansion Readiness",
     "site": "รับซื้อไอทีโคราช.com",
-    "liveRoutes": 99,
-    "indexableRoutes": 98,
-    "newLiveRoutes": 5,
+    "liveRoutes": 360,
+    "indexableRoutes": 359,
+    "newLiveRoutes": 31,
     "expansionLockedByDefault": true,
     "automaticExpansion": false,
     "decisionStates": [
@@ -12,7 +12,7 @@
       "CONDITIONALLY_READY",
       "READY_FOR_CONTROLLED_RELEASE"
     ],
-    "latestRelease": "EXPANSION_RELEASE_ROUND_1"
+    "latestRelease": "INDEX350_W6_SAFE_FINAL"
   },
   "requiredGates": {
     "architectureStatic": {
@@ -77,7 +77,7 @@
     "maxDuplicateRobotsPerPage": 1,
     "maxBreadcrumbListPerPage": 1,
     "maxWebSiteSchemaOwners": 1,
-    "sitemapCount": 98
+    "sitemapCount": 138
   },
   "releasePolicy": {
     "firstExpansionType": "BRAND_OR_SERIES_ONLY",
@@ -100,7 +100,10 @@
       "Local Hub integration is verified in production"
     ],
     "round1Released": 4,
-    "round2Lock": "OBSERVE_GSC_AND_INDEXATION_BEFORE_NEXT_RELEASE"
+    "round2Lock": "OBSERVE_GSC_AND_INDEXATION_BEFORE_NEXT_RELEASE",
+    "index350CurrentWave": "W1",
+    "index350W1Released": 40,
+    "index350NextWave": "W2_LOCKED_PENDING_W1_PRODUCTION_AND_GSC_REVIEW"
   },
   "blockingConditions": [
     "any Batch 0–9 validator fails",

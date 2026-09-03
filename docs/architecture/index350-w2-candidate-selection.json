@@ -1,0 +1,401 @@
+{
+  "title": "INDEX 350 — W2 Candidate Selection",
+  "generatedAt": "2026-09-02T10:59:22.028Z",
+  "state": "WAIT_FOR_REAL_W1_REVIEW",
+  "sourceReviewState": "WAIT_FOR_REAL_W1_OBSERVATION_DATA",
+  "automaticRelease": false,
+  "w2Locked": true,
+  "compositionTarget": {
+    "SERIES": 30,
+    "MODEL": 20,
+    "total": 50
+  },
+  "selectedCount": 0,
+  "selected": [],
+  "reserve": [
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-lenovo-yoga-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-hp-pavilion-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-hp-probook-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-hp-elitebook-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-katana-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-cyborg-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-stealth-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-raider-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-modern-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-msi-prestige-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-gigabyte-g5-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-gigabyte-aorus-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-gigabyte-aero-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-gigabyte-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-surface-laptop-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อ-microsoft-surface-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-surface-pro-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อ-microsoft-surface-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-huawei-matebook-d-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-huawei-matebook-x-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-huawei-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อโน๊ตบุ๊ค-samsung-galaxy-book-series-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อ-samsung-galaxy-book-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อ-samsung-galaxy-s-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-samsung-โคราช",
+      "score": 60
+    },
+    {
+      "url": "/รับซื้อ-samsung-galaxy-a-โคราช",
+      "nodeType": "SERIES",
+      "parent": "/รับซื้อโทรศัพท์-samsung-โคราช",
+      "score": 60
+    }
+  ],
+  "blocked": [
+    {
+      "url": "/รับซื้อ-lenovo-yoga-slim-7-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-lenovo-yoga-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-hp-elitebook-840-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-elitebook-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-hp-probook-440-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-probook-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-hp-pavilion-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-hp-pavilion-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-msi-katana-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-katana-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-msi-cyborg-15-โคราช",
+      "parent": "/รับซื้อโน๊ตบุ๊ค-msi-cyborg-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-samsung-galaxy-s23-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-s-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-samsung-galaxy-s24-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-s-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-samsung-galaxy-s25-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-s-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-samsung-galaxy-a55-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-a-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-samsung-galaxy-a56-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-a-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-samsung-galaxy-z-fold6-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-z-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-samsung-galaxy-z-flip6-โคราช",
+      "parent": "/รับซื้อ-samsung-galaxy-z-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-oppo-reno12-โคราช",
+      "parent": "/รับซื้อ-oppo-reno-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-oppo-reno13-โคราช",
+      "parent": "/รับซื้อ-oppo-reno-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-vivo-v40-โคราช",
+      "parent": "/รับซื้อ-vivo-v-series-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-vivo-v50-โคราช",
+      "parent": "/รับซื้อ-vivo-v-series-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-xiaomi-14-โคราช",
+      "parent": "/รับซื้อ-xiaomi-series-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-xiaomi-15-โคราช",
+      "parent": "/รับซื้อ-xiaomi-series-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-redmi-note-14-โคราช",
+      "parent": "/รับซื้อ-redmi-note-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-poco-f6-โคราช",
+      "parent": "/รับซื้อ-poco-f-series-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-sony-a6000-โคราช",
+      "parent": "/รับซื้อกล้อง-sony-alpha-apsc-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-sony-a6400-โคราช",
+      "parent": "/รับซื้อกล้อง-sony-alpha-apsc-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-sony-a7iii-โคราช",
+      "parent": "/รับซื้อกล้อง-sony-alpha-a7-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-canon-eos-r-โคราช",
+      "parent": "/รับซื้อกล้อง-canon-eos-r-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-canon-r6-mark-ii-โคราช",
+      "parent": "/รับซื้อกล้อง-canon-eos-r-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-fujifilm-x-t5-โคราช",
+      "parent": "/รับซื้อกล้อง-fujifilm-x-series-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-fujifilm-x-s20-โคราช",
+      "parent": "/รับซื้อกล้อง-fujifilm-x-series-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    },
+    {
+      "url": "/รับซื้อ-nikon-z6-ii-โคราช",
+      "parent": "/รับซื้อกล้อง-nikon-z-โคราช",
+      "reasons": [
+        "P1",
+        "PARENT_NOT_LIVE",
+        "LEGACY_PARENT_NO_W1_METRIC"
+      ]
+    }
+  ],
+  "note": "Real W1 performance review is not ready; provisional list remains non-release."
+}

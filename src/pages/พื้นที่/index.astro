@@ -2,6 +2,9 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import PageCoverSection from "../../components/PageCoverSection.astro";
+import ImageCTASection from "../../components/ImageCTASection.astro";
+import { AREA_DIRECTORY_VISUALS } from "../../data/pageVisuals";
 import { absoluteUrl } from "../../utils/seo";
 import { breadcrumbSchema, buildGraph, webpageSchema } from "../../utils/schema";
 
@@ -47,6 +50,19 @@ const schema = buildGraph([
     <p class="section__lead">
       เลือกพื้นที่เพื่อดูข้อมูลบริการและวิธีส่งรายละเอียดประเมินเบื้องต้น จังหวัดนครราชสีมาเป็นพื้นที่ให้บริการตามการนัดหมาย ไม่ใช่สาขาหรือหน้าร้านประจำ
     </p>
+  </div>
+
+  <PageCoverSection
+    image={AREA_DIRECTORY_VISUALS.cover.image}
+    alt={AREA_DIRECTORY_VISUALS.cover.alt}
+    caption={AREA_DIRECTORY_VISUALS.cover.caption}
+    slotId={AREA_DIRECTORY_VISUALS.cover.slotId}
+    eyebrow="ภาพรวมงานนัดรับในพื้นที่"
+    title="ช่วยให้ลูกค้าเห็นภาพรูปแบบบริการได้ชัดขึ้น"
+    lead="เพิ่มภาพหน้าปกสำหรับหน้ารวมพื้นที่ เพื่อสื่อว่าการให้บริการในโคราชเป็นแบบนัดหมายหรือจัดส่งตามเงื่อนไข ไม่ใช่หน้าร้านประจำ"
+  />
+
+  <div class="container section section--tight">
     <div class="card-grid card-grid--3">
       {areas.map((entry) => (
         <article class="card">
@@ -63,4 +79,14 @@ const schema = buildGraph([
       <p><a href="/วิธีขายสินค้า">ดูวิธีขายสินค้า</a> · <a href="/ส่งสินค้าไอทีมาประเมิน">ดูวิธีส่งสินค้ามาประเมิน</a></p>
     </section>
   </div>
+
+  <ImageCTASection
+    image={AREA_DIRECTORY_VISUALS.cta.image}
+    alt={AREA_DIRECTORY_VISUALS.cta.alt}
+    slotId={AREA_DIRECTORY_VISUALS.cta.slotId}
+    title="ส่งพื้นที่และรูปสินค้า เพื่อเช็กคิวบริการได้เร็วขึ้น"
+    description="หากคุณอยู่ในโคราช สามารถส่งพื้นที่ รุ่นสินค้า และรูปสภาพผ่าน LINE เพื่อเช็กความเหมาะสมของคิวนัดรับหรือทางเลือกการจัดส่งก่อน"
+    note="พื้นที่บริการเป็นแบบนัดหมายตามคิวและเงื่อนไขของงาน ไม่มีสาขาประจำในจังหวัดนครราชสีมา"
+    phoneCta="area_index_phone"
+  />
 </BaseLayout>

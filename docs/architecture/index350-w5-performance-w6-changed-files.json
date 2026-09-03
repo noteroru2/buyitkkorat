@@ -1,0 +1,20 @@
+{
+  "title": "INDEX 350 — W5 Performance Review & W6 Final Candidate Selection",
+  "changedFiles": [
+    "package.json",
+    "src/config/index-350-w5-performance-review-w6-selection.json",
+    "scripts/evaluate-index-350-w5-performance-review.mjs",
+    "scripts/select-index-350-w6-final-candidates.mjs",
+    "scripts/validate-index-350-w5-performance-w6-selection.mjs",
+    "docs/architecture/INDEX350-W5-PERFORMANCE-REVIEW-W6-FINAL-SELECTION.md",
+    "docs/architecture/index350-canon-eos-r-ownership-resolution.template.json",
+    "docs/architecture/index350-w5-performance-review.json",
+    "docs/architecture/index350-w6-final-candidate-selection.json",
+    "docs/architecture/index350-w6-final-candidate-selection.csv",
+    "docs/architecture/index350-w5-performance-w6-selftest-report.json",
+    "APPLY_INDEX350_W5_PERFORMANCE_REVIEW_W6_FINAL_SELECTION.md"
+  ],
+  "urlChanges": 0,
+  "indexabilityChanges": 0,
+  "automaticW6Release": false
+}

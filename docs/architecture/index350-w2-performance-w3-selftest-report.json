@@ -1,0 +1,42 @@
+{
+  "title": "INDEX 350 — W2 Performance Review / W3 Selection Self-test",
+  "evidenceType": "SYNTHETIC_SELF_TEST_ONLY",
+  "realGscData": false,
+  "realIndexationData": false,
+  "scenarios": [
+    {
+      "name": "No real W2 observation artifacts",
+      "performanceReviewState": "WAIT_FOR_REAL_W2_OBSERVATION_DATA",
+      "selected": 0,
+      "selectionState": "WAIT_FOR_REAL_W2_REVIEW",
+      "automaticRelease": false
+    },
+    {
+      "name": "Synthetic W2 observation eligible and all parents healthy",
+      "performanceReviewState": "W3_CANDIDATE_REVIEW_READY",
+      "candidatePool": 58,
+      "eligiblePool": 55,
+      "selected": 50,
+      "clusterMinimumsSatisfied": true,
+      "selectionState": "W3_SELECTION_READY_FOR_MANUAL_APPROVAL",
+      "blockedStatic": [
+        "/รับซื้อ-sony-a6000-โคราช",
+        "/รับซื้อ-sony-a6400-โคราช",
+        "/รับซื้อ-canon-eos-r-โคราช"
+      ],
+      "automaticRelease": false
+    },
+    {
+      "name": "Synthetic ownership risk on OPPO Reno parent",
+      "performanceReviewState": "W3_CANDIDATE_REVIEW_READY",
+      "selected": 50,
+      "blockedChildren": [
+        "/รับซื้อ-oppo-reno12-โคราช",
+        "/รับซื้อ-oppo-reno13-โคราช"
+      ],
+      "replacementBehavior": "Healthy reserve candidates filled the selection while cluster minima remained satisfied.",
+      "automaticRelease": false
+    }
+  ],
+  "note": "These are deterministic synthetic safety tests. They are not production performance claims and must never be presented as GSC/indexation evidence."
+}

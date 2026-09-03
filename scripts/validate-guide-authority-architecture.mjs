@@ -20,7 +20,7 @@ const warnings = [];
 
 if (live.length !== architecture.meta.currentRoutes) errors.push(`Guide architecture live-count drift: ${live.length} != ${architecture.meta.currentRoutes}`);
 if (indexable.length !== architecture.meta.currentIndexable) errors.push(`Guide architecture indexable-count drift: ${indexable.length} != ${architecture.meta.currentIndexable}`);
-if (guide.meta.newLiveRoutes !== 0) warnings.push(`Guide architecture itself added no routes; real-repo reconciliation is tracked in site architecture, guide meta=${guide.meta.newLiveRoutes}`);
+if (guide.meta.newLiveRoutes !== (guide.meta.index350W6ReleasedGuides ?? 0)) errors.push(`Guide new-route metadata drift: ${guide.meta.newLiveRoutes}`);
 if (guide.meta.automaticPublishing !== false) errors.push('automaticPublishing must remain false');
 if (guide.guides.length !== guide.meta.existingLiveGuides) errors.push(`Guide count drift: ${guide.guides.length} != ${guide.meta.existingLiveGuides}`);
 if (guide.clusters.length !== 5) errors.push(`Expected 5 virtual guide clusters; got ${guide.clusters.length}`);

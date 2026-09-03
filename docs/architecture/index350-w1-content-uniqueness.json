@@ -1,0 +1,12 @@
+{
+  "pages": 40,
+  "minBodyCharacters": 2157,
+  "averageBodyCharacters": 2267.9,
+  "maxPairwiseSequenceSimilarity": 0.8796,
+  "mostSimilarPair": [
+    "/รับซื้อโน๊ตบุ๊ค-acer-swift-โคราช",
+    "/รับซื้อโน๊ตบุ๊ค-asus-zenbook-โคราช"
+  ],
+  "exactDuplicateBodies": 0,
+  "note": "Sequence similarity is a conservative structural measure; exact duplicate bodies must remain zero."
+}

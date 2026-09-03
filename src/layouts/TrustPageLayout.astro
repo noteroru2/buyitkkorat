@@ -1,43 +1,61 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
-import PrimaryLineCTA from "../components/PrimaryLineCTA.astro";
+import ContentContactAside from "../components/ContentContactAside.astro";
+import PageCoverSection from "../components/PageCoverSection.astro";
+import ImageCTASection from "../components/ImageCTASection.astro";
+import { getTrustPageVisuals, type PageVisualAsset } from "../data/pageVisuals";
 import type { BreadcrumbItem } from "../utils/seo";
 
 interface Props {
-  title: string;
-  description: string;
-  h1: string;
-  breadcrumbs: BreadcrumbItem[];
-  canonical?: string;
-  ogImage?: string;
-  updatedDate?: Date | string;
-  schema?: Record<string, unknown> | Record<string, unknown>[];
+  title:string; description:string; h1:string; breadcrumbs:BreadcrumbItem[];
+  canonical?:string; ogImage?:string; updatedDate?:Date|string;
+  schema?:Record<string,unknown>|Record<string,unknown>[];
+  coverVisual?: PageVisualAsset; ctaVisual?: PageVisualAsset;
 }
-
-const props = Astro.props;
+const props=Astro.props;
+const defaults = getTrustPageVisuals();
+const coverVisual = props.coverVisual ?? defaults.cover;
+const ctaVisual = props.ctaVisual ?? defaults.cta;
 ---
 
-<BaseLayout
-  title={props.title}
-  description={props.description}
-  canonical={props.canonical}
-  ogImage={props.ogImage}
-  updatedDate={props.updatedDate}
-  schema={props.schema}
->
-  <div class="container" style="padding-top: var(--space-5)">
-    <Breadcrumbs items={props.breadcrumbs} />
-    <h1 style="max-width: 18ch">{props.h1}</h1>
-  </div>
-  <article class="section">
-    <div class="container prose main-content">
-      <slot />
-    </div>
-  </article>
-  <section class="section">
-    <div class="container" style="text-align:center">
-      <PrimaryLineCTA label="แอด LINE @buyhub" />
+<BaseLayout title={props.title} description={props.description} canonical={props.canonical} ogImage={props.ogImage} updatedDate={props.updatedDate} schema={props.schema}>
+  <section class="page-intro">
+    <div class="container page-intro__inner">
+      <Breadcrumbs items={props.breadcrumbs} />
+      <p class="badge">ข้อมูลร้านและเงื่อนไขบริการ</p>
+      <h1>{props.h1}</h1>
     </div>
   </section>
+
+  {coverVisual && (
+    <PageCoverSection
+      image={coverVisual.image}
+      alt={coverVisual.alt}
+      caption={coverVisual.caption}
+      slotId={coverVisual.slotId}
+      eyebrow="ภาพประกอบแบรนด์และบริการ"
+      title="ภาพรวมการรับซื้อสินค้าไอทีของร้าน"
+      lead="ใช้ภาพสไตล์เดียวกันทั้งเว็บเพื่อให้หน้าเกี่ยวกับร้าน นโยบาย และข้อมูลสำคัญดูเป็นมาตรฐานและน่าเชื่อถือมากขึ้น"
+    />
+  )}
+
+  <article class="section content-section">
+    <div class="container content-layout">
+      <div class="prose main-content content-card"><slot /></div>
+      <ContentContactAside title="ต้องการสอบถามก่อนตัดสินใจ?" />
+    </div>
+  </article>
+
+  {ctaVisual && (
+    <ImageCTASection
+      image={ctaVisual.image}
+      alt={ctaVisual.alt}
+      slotId={ctaVisual.slotId}
+      title="ต้องการเช็กข้อมูลเพิ่มเติมก่อนขายหรือก่อนเดินทาง?"
+      description="สามารถส่งรุ่นสินค้า รายการที่ต้องการขาย หรือคำถามที่เกี่ยวกับการประเมินผ่าน LINE ได้ทันที เพื่อรับคำแนะนำเบื้องต้นจากร้าน"
+      note="หากเป็นงานรับซื้อจริง ราคาจะยืนยันหลังตรวจสินค้าและตรวจเงื่อนไขประกอบอีกครั้ง"
+      phoneCta="trust_phone"
+    />
+  )}
 </BaseLayout>

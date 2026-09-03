@@ -1,15 +1,15 @@
 {
   "batch": "ARCHITECTURE BATCH 10",
-  "generatedAt": "2026-09-02T05:52:35.463Z",
+  "generatedAt": "2026-09-03T04:21:55.774Z",
   "staticArchitectureGate": "PASS",
   "productionIntegrationGate": "UNATTESTED_IN_OVERLAY",
   "expansionDecision": "CONDITIONALLY_READY",
   "reason": "Static architecture is coherent, but real source integration/build/crawl and evidence gates must still pass.",
   "counts": {
-    "live": 99,
-    "indexable": 98,
+    "live": 360,
+    "indexable": 359,
     "noindex": 1,
-    "unreleasedCandidates": 58
+    "unreleasedCandidates": 1
   },
   "validators": [
     {

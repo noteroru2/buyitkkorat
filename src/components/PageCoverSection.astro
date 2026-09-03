@@ -1,0 +1,71 @@
+---
+import type { ImageMetadata } from "astro";
+import ResponsiveImage from "./ResponsiveImage.astro";
+
+interface Props {
+  image: ImageMetadata;
+  alt: string;
+  slotId: string;
+  caption?: string;
+  eyebrow?: string;
+  title?: string;
+  lead?: string;
+}
+
+const {
+  image,
+  alt,
+  slotId,
+  caption,
+  eyebrow = "ภาพประกอบหน้าบริการ",
+  title,
+  lead,
+} = Astro.props;
+---
+
+<section class="section section--tight page-cover-section" aria-label={title ?? eyebrow}>
+  <div class="container page-cover-section__container">
+    {(title || lead) && (
+      <div class="page-cover-section__copy">
+        <span class="section__eyebrow">{eyebrow}</span>
+        {title && <h2 class="section__title">{title}</h2>}
+        {lead && <p class="section__lead">{lead}</p>}
+      </div>
+    )}
+    <div class="page-cover-section__media">
+      <ResponsiveImage
+        src={image}
+        alt={alt}
+        caption={caption}
+        width={1200}
+        height={900}
+        widths={[480, 768, 960, 1200]}
+        sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 64px), 1120px"
+        loading="eager"
+        fetchpriority="high"
+        slotId={slotId}
+        class="page-cover-section__image"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .page-cover-section { padding-top: 1.2rem; }
+  .page-cover-section__container {
+    display: grid;
+    gap: 1rem;
+    padding: clamp(1rem, 2.2vw, 1.35rem);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: linear-gradient(180deg, #fffaf6 0%, #ffffff 100%);
+    box-shadow: var(--shadow-sm);
+  }
+  .page-cover-section__copy .section__lead { margin-bottom: 0; }
+  .page-cover-section__media :global(.responsive-image picture) {
+    border-radius: calc(var(--radius-xl) - .25rem);
+    box-shadow: var(--shadow-md);
+    background: #fff;
+    aspect-ratio: 4 / 3;
+  }
+</style>

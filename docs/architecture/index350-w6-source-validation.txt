@@ -1,0 +1,37 @@
+INDEX 350 W6 SAFE FINAL SOURCE VALIDATION
+Generated: 2026-09-02
+
+INDEX 350 EXPANSION — W6 FINAL LOCAL & GUIDE 31 RELEASE VALIDATION
+Live/indexable/noindex: 360/359/1
+Released: 31 — Local 13, Guide 18
+Content files checked: 31
+Minimum body characters: 2422
+Max pair similarity: 0.9082
+Minimum projected inbound paths: 4
+Sitemap target: 359
+Remaining HOLD: 1 — /รับซื้อ-canon-eos-r-โคราช
+Target floor met: true
+Release basis: MANUAL_APPROVAL_OVERRIDE
+Real W5 performance attested: false
+Next state: FINAL_OBSERVATION_REQUIRED
+VERDICT: PASS
+
+INDEX 350+ EXPANSION PLAN VALIDATION
+Current indexable: 359
+W1/W2/W3/W4/W5/W6 released: 40/50/50/50/40/31
+W6 mix: Local 13, Guide 18
+Remaining HOLD: 1 — /รับซื้อ-canon-eos-r-โคราช
+Target floor met: true (359 >= 350)
+Full buffer target: 360
+Automatic publishing: false
+VERDICT: PASS
+
+ARCHITECTURE BATCH 10 — STATIC QUALITY GATE
+Validators: 10/10 passed
+Live/indexable/noindex: 360/359/1
+Unreleased candidates governed: 1
+Static architecture gate: PASS
+Production integration gate: UNATTESTED_IN_OVERLAY
+Expansion decision: CONDITIONALLY_READY
+Report: docs/architecture/architecture-quality-gate-report.json
+VERDICT: PASS_WITH_PRODUCTION_ATTESTATION_REQUIRED

@@ -11,6 +11,7 @@ const readiness=JSON.parse(fs.readFileSync(path.join(root,'src/config/architectu
 const core=JSON.parse(fs.readFileSync(path.join(root,'src/config/core-hub-release.json'),'utf8'));
 const brand=JSON.parse(fs.readFileSync(path.join(root,'src/config/brand-model-series-foundation.json'),'utf8'));
 const guide=JSON.parse(fs.readFileSync(path.join(root,'src/config/guide-authority-architecture.json'),'utf8'));
+const indexPlan=JSON.parse(fs.readFileSync(path.join(root,'src/config/index-350-expansion-plan.json'),'utf8'));
 
 const live=architecture.routes.filter((n)=>n.kind==='LIVE');
 const indexable=live.filter((n)=>n.indexState==='INDEX');
@@ -19,7 +20,7 @@ const warnings=[];
 
 if (live.length!==readiness.meta.liveRoutes) errors.push(`Live count drift: ${live.length} != ${readiness.meta.liveRoutes}`);
 if (indexable.length!==readiness.meta.indexableRoutes) errors.push(`Indexable count drift: ${indexable.length} != ${readiness.meta.indexableRoutes}`);
-if (readiness.meta.newLiveRoutes!==5) errors.push('Real-repo merged readiness meta must report 5 added live routes');
+if (readiness.meta.newLiveRoutes!==40) errors.push('INDEX350 W1 readiness meta must report 40 new live routes');
 if (readiness.meta.expansionLockedByDefault!==true) errors.push('Expansion must be locked by default');
 if (readiness.meta.automaticExpansion!==false) errors.push('Automatic expansion must be false');
 if (readiness.releasePolicy.initialReleaseCap > 6) errors.push('Initial release cap must not exceed 6');
@@ -27,12 +28,8 @@ if (readiness.thresholds.maxCrawlDepth > 4) errors.push('Crawl-depth policy unex
 if (readiness.thresholds.maxBrokenGovernedLinks !== 0) errors.push('Broken-link threshold must remain 0');
 if (readiness.thresholds.maxUnexpectedOrphans !== 0) errors.push('Orphan threshold must remain 0');
 
-const candidateCount =
-  brand.candidateBrands.length +
-  brand.candidateSeries.length +
-  brand.modelPolicy.seededModelCandidates.length +
-  guide.candidateGuides.length;
-if (candidateCount !== 58) errors.push(`Expected 58 governed unreleased candidates after real-repo reconciliation, got ${candidateCount}`);
+const candidateCount = indexPlan.candidates.filter((c)=>c.releaseState==='HOLD_PLANNED').length;
+if (candidateCount !== 222) errors.push(`Expected 222 INDEX350 HOLD candidates after W1, got ${candidateCount}`);
 if (brand.modelPolicy.seededModelCandidates.length !== 0) errors.push('Model candidates must still be 0 before controlled expansion');
 
 if (core.meta.architectureQualityGateState !== 'BATCH_10_PRE_PRODUCTION_GATE') {

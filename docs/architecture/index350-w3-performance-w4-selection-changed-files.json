@@ -1,0 +1,65 @@
+{
+  "count": 15,
+  "files": [
+    {
+      "path": "APPLY_INDEX350_W3_PERFORMANCE_REVIEW_W4_SELECTION.md",
+      "change": "ADDED"
+    },
+    {
+      "path": "docs/architecture/index350-w3-performance-review.json",
+      "change": "ADDED"
+    },
+    {
+      "path": "docs/architecture/index350-w3-performance-w4-selection-release-report.json",
+      "change": "ADDED"
+    },
+    {
+      "path": "docs/architecture/index350-w3-performance-w4-selection-self-test.json",
+      "change": "ADDED"
+    },
+    {
+      "path": "docs/architecture/index350-w3-performance-w4-selection-self-test.txt",
+      "change": "ADDED"
+    },
+    {
+      "path": "docs/architecture/index350-w3-performance-w4-selection-validation.txt",
+      "change": "ADDED"
+    },
+    {
+      "path": "docs/architecture/index350-w4-candidate-selection.csv",
+      "change": "ADDED"
+    },
+    {
+      "path": "docs/architecture/index350-w4-candidate-selection.json",
+      "change": "ADDED"
+    },
+    {
+      "path": "docs/architecture/index350-w4-provisional-candidate-matrix.csv",
+      "change": "ADDED"
+    },
+    {
+      "path": "package.json",
+      "change": "MODIFIED"
+    },
+    {
+      "path": "scripts/evaluate-index-350-w3-observation.mjs",
+      "change": "MODIFIED"
+    },
+    {
+      "path": "scripts/evaluate-index-350-w3-performance-review.mjs",
+      "change": "ADDED"
+    },
+    {
+      "path": "scripts/select-index-350-w4-candidates.mjs",
+      "change": "ADDED"
+    },
+    {
+      "path": "scripts/validate-index-350-w3-performance-w4-selection.mjs",
+      "change": "ADDED"
+    },
+    {
+      "path": "src/config/index-350-w3-performance-review-w4-selection.json",
+      "change": "ADDED"
+    }
+  ]
+}

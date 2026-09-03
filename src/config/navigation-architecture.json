@@ -2,16 +2,16 @@
   "meta": {
     "batch": "ARCHITECTURE BATCH 8 — Navigation / Header / Footer / Discovery Architecture",
     "site": "รับซื้อไอทีโคราช.com",
-    "liveRoutes": 99,
-    "indexableRoutes": 98,
-    "newLiveRoutes": 5,
+    "liveRoutes": 239,
+    "indexableRoutes": 238,
+    "newLiveRoutes": 40,
     "primaryItemLimit": 6,
     "submenuLinkLimit": 6,
     "footerColumnLimit": 5,
     "footerLinksPerColumnLimit": 6,
     "automaticCandidateExposure": false,
     "virtualHrefAllowed": false,
-    "policy": "Global navigation remains Hub-first and bounded after Round 1. New Brand/Series URLs are discovered from the Notebook hub/contextual graph, not added to Header/Footer."
+    "policy": "Global navigation remains Hub-first after INDEX350 W1. Brand/Series discovery is contextual through parent hubs; Header/Footer are not expanded into a 40-link dump."
   },
   "brand": {
     "homeUrl": "/",

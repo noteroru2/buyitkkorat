@@ -1,0 +1,49 @@
+{
+  "batch": "INDEX 350 EXPANSION — W4 Series, Model & Condition 50 Pages",
+  "generatedAt": "2026-09-02",
+  "baseline": {
+    "live": 239,
+    "indexable": 238,
+    "noindex": 1
+  },
+  "sourceResult": {
+    "live": 289,
+    "indexable": 288,
+    "noindex": 1,
+    "sitemap": 288
+  },
+  "released": {
+    "total": 50,
+    "series": 18,
+    "model": 7,
+    "condition": 25,
+    "clusterMix": {
+      "MOBILE": 20,
+      "CAMERA": 9,
+      "NOTEBOOK": 9,
+      "APPLE": 3,
+      "COMPUTER": 6,
+      "GAMING": 3
+    }
+  },
+  "releaseBasis": "MANUAL_APPROVAL_OVERRIDE",
+  "realW3PerformanceAttested": false,
+  "quality": {
+    "minimumBodyCharacters": 2812,
+    "maximumPairSimilarity": 0.9254,
+    "minimumProjectedInboundPaths": 2,
+    "ownershipRiskExcluded": [
+      "/รับซื้อ-canon-eos-r-โคราช"
+    ]
+  },
+  "nextWave": {
+    "wave": "W5",
+    "state": "LOCKED_PENDING_W4_PRODUCTION_AND_OBSERVATION",
+    "automaticRelease": false
+  },
+  "attestation": {
+    "staticValidation": "PASS",
+    "realAstroBuild": "UNATTESTED",
+    "production": "UNVERIFIED"
+  }
+}

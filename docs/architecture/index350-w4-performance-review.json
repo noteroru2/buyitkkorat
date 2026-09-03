@@ -1,0 +1,26 @@
+{
+  "title": "INDEX 350 — W4 Performance Review",
+  "generatedAt": "2026-09-02T14:35:54.259Z",
+  "state": "WAIT_FOR_REAL_W4_OBSERVATION_DATA",
+  "realPerformanceReviewed": false,
+  "missingInputs": [
+    "docs/architecture/index350-w4-observation-report.json",
+    "docs/architecture/index350-w4-observation-pages.csv",
+    "docs/architecture/index350-w4-query-ownership.csv"
+  ],
+  "w5": {
+    "candidateReviewReady": false,
+    "automaticRelease": false,
+    "locked": true
+  },
+  "finalBufferRisk": {
+    "remainingHoldAfterHypotheticalW5": 32,
+    "remainingSafeWithoutCanonModel": 31,
+    "projectedSafeFinalIndexableWithoutCanonModel": 359,
+    "targetFloor": 350,
+    "targetWithBuffer": 360,
+    "riskUrl": "/รับซื้อ-canon-eos-r-โคราช",
+    "policy": "Do not release the Canon EOS R model merely to reach 360. Resolve query ownership manually or qualify one replacement route; 359 still exceeds the 350 floor."
+  },
+  "note": "No W4 metrics were invented. Run W4 Observation Gate with real finalized GSC/indexation data first."
+}

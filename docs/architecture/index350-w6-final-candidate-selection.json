@@ -1,0 +1,399 @@
+{
+  "title": "INDEX 350 — W6 Final Candidate Selection",
+  "generatedAt": "2026-09-02T16:05:29.425Z",
+  "state": "WAIT_FOR_REAL_W5_REVIEW",
+  "sourceReviewState": "WAIT_FOR_REAL_W5_OBSERVATION_DATA",
+  "automaticRelease": false,
+  "w6Locked": true,
+  "candidatePool": 32,
+  "eligiblePool": 0,
+  "selectedCount": 0,
+  "groupCounts": {},
+  "projectedIndexable": 328,
+  "targetFloor": 350,
+  "plannedFinalIndexable": 360,
+  "floorMet": false,
+  "fullBufferMet": false,
+  "canonOwnership": {
+    "approved": false,
+    "resolutionFileExists": false,
+    "resolutionPath": "docs/architecture/index350-canon-eos-r-ownership-resolution.json",
+    "state": "UNRESOLVED"
+  },
+  "selected": [],
+  "blocked": [
+    {
+      "url": "/รับซื้อ-canon-eos-r-โคราช",
+      "group": "C_MODEL",
+      "parent": "/รับซื้อกล้อง-canon-eos-r-โคราช",
+      "cluster": "CAMERA",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "STATIC_OWNERSHIP_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เทพารักษ์",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เมืองยาง",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/พระทองคำ",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/ลำทะเมนชัย",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/บัวลาย",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/สีดา",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เฉลิมพระเกียรติ",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/จอหอ",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/หัวทะเล",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/สุรนารี",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/นิคมอุตสาหกรรมนวนคร-นครราชสีมา",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/เขตอุตสาหกรรมสุรนารี",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/พื้นที่/มหาวิทยาลัยราชภัฏนครราชสีมา",
+      "group": "F_LOCAL",
+      "parent": "/พื้นที่",
+      "cluster": "LOCATION",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "LOCAL_FIT",
+        "W5_LOCAL_HEALTH_REQUIRED"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    },
+    {
+      "url": "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร",
+      "group": "G_GUIDE",
+      "parent": "/บทความ",
+      "cluster": "CONTENT",
+      "reasons": [
+        "P1",
+        "PARENT_LIVE",
+        "GUIDE_FIT"
+      ]
+    }
+  ],
+  "finalBuffer": {
+    "safeProjectedIndexable": 359,
+    "fullProjectedIndexable": 360,
+    "targetFloor": 350,
+    "bufferShortfallWithoutCanon": 1,
+    "policy": "359 is acceptable because it exceeds the 350 floor. Do not trade ownership safety for the final one-page buffer."
+  },
+  "note": "W6 remains locked. No SELECT decisions until real W5 review is ready."
+}

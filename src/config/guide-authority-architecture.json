@@ -5,14 +5,15 @@
     "articleHub": "/บทความ",
     "liveRouteBaseline": 90,
     "indexableBaseline": 89,
-    "existingLiveGuides": 19,
+    "existingLiveGuides": 37,
     "virtualGuideClusters": 5,
     "candidateGuides": 10,
-    "newLiveRoutes": 0,
+    "newLiveRoutes": 18,
     "maxCommercialTargetsPerGuide": 3,
     "maxRelatedGuidesPerGuide": 3,
     "automaticPublishing": false,
-    "policy": "Real-repo reconciliation governs 19 live guides in five virtual clusters; overlapping battery-health and shutter-count candidates were retired because equivalent live guides already exist."
+    "policy": "Batch 7 guide graph preserved and extended by INDEX350 W6 Safe Final with 18 informational guides. Commercial intent remains with money pages; automatic publishing remains disabled.",
+    "index350W6ReleasedGuides": 18
   },
   "hub": {
     "url": "/บทความ",
@@ -29,7 +30,12 @@
         "/บทความ/วิธีถ่ายรูปสินค้าไอทีเพื่อให้ประเมินราคาได้เร็ว",
         "/บทความ/ส่งโน๊ตบุ๊คหรือโทรศัพท์อย่างไรให้ปลอดภัย",
         "/บทความ/เช็กราคาสินค้าไอทีก่อนขายต้องดูอะไรบ้าง",
-        "/บทความ/ราคาประเมินจากรูปกับราคาหลังตรวจต่างกันอย่างไร"
+        "/บทความ/ราคาประเมินจากรูปกับราคาหลังตรวจต่างกันอย่างไร",
+        "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+        "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+        "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+        "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+        "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร"
       ],
       "intentBoundary": "General preparation, photography, accessories, shipping and price-check education; never own a local buy-service query.",
       "primaryCommercialOwners": [
@@ -63,7 +69,12 @@
       "members": [
         "/บทความ/วิธีเช็กสเปกโน๊ตบุ๊คก่อนส่งประเมิน",
         "/บทความ/สินค้าไอทีเปิดไม่ติดยังประเมินราคาได้อย่างไร",
-        "/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร"
+        "/บทความ/เตรียมโน๊ตบุ๊คก่อนขายอย่างไร",
+        "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+        "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+        "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+        "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+        "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย"
       ],
       "intentBoundary": "Notebook preparation/specification/problem education; generic sell-notebook intent stays with the Notebook money hub.",
       "primaryCommercialOwners": [
@@ -77,7 +88,10 @@
       "virtual": true,
       "members": [
         "/บทความ/ขายคอมหลายเครื่องควรเตรียมรายการอย่างไร",
-        "/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร"
+        "/บทความ/ขายอุปกรณ์ไอทีของบริษัทต้องเตรียมเอกสารอะไร",
+        "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+        "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+        "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย"
       ],
       "intentBoundary": "Document/asset-list education for organizations; bulk transactional intent stays with B2B money pages.",
       "primaryCommercialOwners": [
@@ -93,7 +107,12 @@
         "/บทความ/ข้อควรรู้ก่อนขายกล้องและเลนส์มือสอง",
         "/บทความ/ปัจจัยที่ทำให้ราคาการ์ดจอมือสองแตกต่างกัน",
         "/บทความ/shutter-count-คืออะไรก่อนขายกล้องดิจิทัล",
-        "/บทความ/วิธีเช็กสุขภาพแบตเตอรี่ก่อนขายมือถือและโน้ตบุ๊ก"
+        "/บทความ/วิธีเช็กสุขภาพแบตเตอรี่ก่อนขายมือถือและโน้ตบุ๊ก",
+        "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+        "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+        "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+        "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+        "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร"
       ],
       "intentBoundary": "Explain valuation factors for a device type; the corresponding service page owns 'รับซื้อ ... โคราช' transactional intent.",
       "primaryCommercialOwners": [
@@ -330,6 +349,222 @@
         "/วิธีประเมินราคา"
       ],
       "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/วิธีดู-serial-number-ก่อนขายสินค้าไอที",
+      "title": "วิธีดู Serial Number ก่อนขายสินค้าไอที",
+      "cluster": "SELLER_PREPARATION",
+      "intent": "Informational: แยก Serial Number ออกจากชื่อรุ่น, SKU และ asset tag ให้ถูกต้อง พร้อมปกป้องเลขเครื่องเมื่อต้องส่งรูป",
+      "commercialTargets": [
+        "/วิธีประเมินราคา",
+        "/รับซื้อสินค้าไอที",
+        "/วิธีขายสินค้า"
+      ],
+      "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/วิธีดู-service-tag-dell-ก่อนขาย",
+      "title": "วิธีดู Service Tag Dell ก่อนขาย",
+      "cluster": "NOTEBOOK_PREPARATION",
+      "intent": "Informational: หาตัวระบุเครื่อง Dell จากฉลากและข้อมูลระบบ พร้อมแยก Service Tag ออกจากชื่อ Latitude/XPS/Inspiron",
+      "commercialTargets": [
+        "/รับซื้อโน๊ตบุ๊ค-dell-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "/วิธีประเมินราคา"
+      ],
+      "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/วิธีดูรหัสรุ่น-asus-ก่อนขาย",
+      "title": "วิธีดูรหัสรุ่น ASUS ก่อนขาย",
+      "cluster": "NOTEBOOK_PREPARATION",
+      "intent": "Informational: อ่านรหัสรุ่น ASUS ให้ถึงระดับรุ่นย่อย ไม่หยุดแค่ชื่อ ROG, TUF, Vivobook หรือ Zenbook",
+      "commercialTargets": [
+        "/รับซื้อโน๊ตบุ๊ค-asus-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "/วิธีประเมินราคา"
+      ],
+      "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่น-macbook-ก่อนขาย",
+      "title": "วิธีดูรุ่น MacBook ก่อนขาย",
+      "cluster": "NOTEBOOK_PREPARATION",
+      "intent": "Informational: แยก MacBook Air/Pro, ขนาดจอ, ชิป, RAM, Storage และรหัสเครื่องก่อนขอราคา",
+      "commercialTargets": [
+        "/รับซื้อ-macbook-โคราช",
+        "/วิธีประเมินราคา",
+        "/วิธีขายสินค้า"
+      ],
+      "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊ค",
+      "title": "วิธีดูรุ่นการ์ดจอในโน๊ตบุ๊คก่อนขาย",
+      "cluster": "NOTEBOOK_PREPARATION",
+      "intent": "Informational: เช็กทั้ง iGPU และการ์ดจอแยก พร้อมหลีกเลี่ยงการสรุปประสิทธิภาพจากชื่อ GPU เพียงอย่างเดียว",
+      "commercialTargets": [
+        "/รับซื้อโน๊ตบุ๊คเกมมิ่ง-โคราช",
+        "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "/รับซื้อการ์ดจอ-โคราช"
+      ],
+      "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/วิธีดู-battery-health-iphone-ก่อนขาย",
+      "title": "วิธีดู Battery Health iPhone ก่อนขาย",
+      "cluster": "DEVICE_VALUATION",
+      "intent": "Informational: อ่าน Maximum Capacity และข้อความสถานะแบตอย่างถูกบริบท ไม่ใช้เปอร์เซ็นต์เดียวตัดสินราคา",
+      "commercialTargets": [
+        "/รับซื้อ-iphone-โคราช",
+        "/รับซื้อโทรศัพท์มือถือ-โคราช",
+        "/วิธีประเมินราคา"
+      ],
+      "ownershipRisk": "MEDIUM"
+    },
+    {
+      "url": "/บทความ/วิธีดู-smart-ssd-ก่อนขาย",
+      "title": "วิธีดู SMART SSD ก่อนขาย",
+      "cluster": "DEVICE_VALUATION",
+      "intent": "Informational: อ่านค่า health, media errors, temperature และข้อมูลการเขียนโดยไม่ยึด Health % จากโปรแกรมเดียว",
+      "commercialTargets": [
+        "/รับซื้อ-ssd-hdd-โคราช",
+        "/รับซื้อคอมพิวเตอร์-โคราช",
+        "/วิธีประเมินราคา"
+      ],
+      "ownershipRisk": "MEDIUM"
+    },
+    {
+      "url": "/บทความ/วิธีเช็ก-dead-pixel-ก่อนขายจอ",
+      "title": "วิธีเช็ก Dead Pixel ก่อนขายจอมอนิเตอร์",
+      "cluster": "DEVICE_VALUATION",
+      "intent": "Informational: ทดสอบสีเต็มจอเพื่อแยก dead/stuck pixel ออกจากฝุ่น รอย และ backlight bleed",
+      "commercialTargets": [
+        "/รับซื้อจอมอนิเตอร์-โคราช",
+        "/วิธีประเมินราคา",
+        "/รับซื้อสินค้าไอที"
+      ],
+      "ownershipRisk": "MEDIUM"
+    },
+    {
+      "url": "/บทความ/วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "title": "วิธีทดสอบคีย์บอร์ดโน๊ตบุ๊คก่อนขาย",
+      "cluster": "NOTEBOOK_PREPARATION",
+      "intent": "Informational: ทดสอบปุ่มตัวอักษร ตัวเลข modifier, function และอาการกดติด/เบิ้ลอย่างเป็นระบบก่อนขอราคา",
+      "commercialTargets": [
+        "/รับซื้อโน๊ตบุ๊ค-โคราช",
+        "/รับซื้อโน๊ตบุ๊คเสีย-โคราช",
+        "/วิธีประเมินราคา"
+      ],
+      "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "title": "วิธีแพ็กจอมอนิเตอร์ก่อนส่งประเมิน",
+      "cluster": "SELLER_PREPARATION",
+      "intent": "Informational: ป้องกันแรงกดหน้าจอ มุมพาเนล และขาตั้ง โดยใช้กล่องแข็งและวัสดุกันกระแทกที่ไม่กดผิวจอ",
+      "commercialTargets": [
+        "/รับซื้อจอมอนิเตอร์-โคราช",
+        "/ส่งสินค้าไอทีมาประเมิน",
+        "/วิธีขายสินค้า"
+      ],
+      "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กคอมตั้งโต๊ะก่อนส่ง",
+      "title": "วิธีแพ็กคอมตั้งโต๊ะก่อนส่งประเมิน",
+      "cluster": "SELLER_PREPARATION",
+      "intent": "Informational: ลดความเสี่ยงจากการ์ดจอหนัก กระจกเคส ฮีตซิงก์ และชิ้นส่วนหลวมก่อนขนส่งคอมตั้งโต๊ะ",
+      "commercialTargets": [
+        "/รับซื้อคอมตั้งโต๊ะ-โคราช",
+        "/ส่งสินค้าไอทีมาประเมิน",
+        "/วิธีขายสินค้า"
+      ],
+      "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/วิธีแพ็กกล้องและเลนส์ก่อนส่ง",
+      "title": "วิธีแพ็กกล้องและเลนส์ก่อนส่งประเมิน",
+      "cluster": "SELLER_PREPARATION",
+      "intent": "Informational: แยกบอดี้ เลนส์ แบต และอุปกรณ์ พร้อมปิดฝา mount และกันความชื้น/แรงกระแทกก่อนส่ง",
+      "commercialTargets": [
+        "/รับซื้อกล้อง-โคราช",
+        "/รับซื้อเลนส์กล้อง-โคราช",
+        "/ส่งสินค้าไอทีมาประเมิน"
+      ],
+      "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "title": "วิธีเตรียมคอมบริษัทก่อนขายยกล็อต",
+      "cluster": "B2B_BULK",
+      "intent": "Informational: วางแผน ownership, asset list, data sanitization, grading และจุดโหลดก่อนขายคอมองค์กรหลายเครื่อง",
+      "commercialTargets": [
+        "/รับซื้อสินค้าไอทียกล็อต",
+        "/ขายคอมหลายเครื่อง-โคราช",
+        "/รับซื้อคอมบริษัท-โคราช"
+      ],
+      "ownershipRisk": "MEDIUM"
+    },
+    {
+      "url": "/บทความ/วิธีทำ-asset-list-ก่อนขายไอทีบริษัท",
+      "title": "วิธีทำ Asset List ก่อนขายอุปกรณ์ไอทีบริษัท",
+      "cluster": "B2B_BULK",
+      "intent": "Informational: ออกแบบตารางสินทรัพย์ที่พอสำหรับตีราคา ตรวจนับ และส่งมอบ โดยไม่ใส่ข้อมูลส่วนตัวเกินจำเป็น",
+      "commercialTargets": [
+        "/รับซื้อสินค้าไอทียกล็อต",
+        "/รับซื้อคอมบริษัท-โคราช",
+        "/วิธีประเมินราคา"
+      ],
+      "ownershipRisk": "MEDIUM"
+    },
+    {
+      "url": "/บทความ/วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "title": "วิธีเช็กราคาคอมหลายเครื่องก่อนขาย",
+      "cluster": "B2B_BULK",
+      "intent": "Informational: เปรียบเทียบราคาล็อตโดยจัดกลุ่มรุ่นและสภาพ ไม่เอาราคาประกาศรายเครื่องคูณจำนวนตรง ๆ",
+      "commercialTargets": [
+        "/ขายคอมหลายเครื่อง-โคราช",
+        "/รับซื้อสินค้าไอทียกล็อต",
+        "/วิธีประเมินราคา"
+      ],
+      "ownershipRisk": "MEDIUM"
+    },
+    {
+      "url": "/บทความ/ประกันหมดมีผลต่อราคามือสองอย่างไร",
+      "title": "ประกันหมดมีผลต่อราคาสินค้าไอทีมือสองอย่างไร",
+      "cluster": "DEVICE_VALUATION",
+      "intent": "Informational: แยกผลของประกันจากอายุ สภาพ อะไหล่ และความสามารถในการซ่อม ไม่ตีว่าหมดประกันแล้วไม่มีมูลค่า",
+      "commercialTargets": [
+        "/วิธีประเมินราคา",
+        "/รับซื้อสินค้าไอที",
+        "/วิธีขายสินค้า"
+      ],
+      "ownershipRisk": "MEDIUM"
+    },
+    {
+      "url": "/บทความ/อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "title": "อุปกรณ์ไม่ครบมีผลต่อราคามือสองอย่างไร",
+      "cluster": "SELLER_PREPARATION",
+      "intent": "Informational: แยกอุปกรณ์จำเป็นต่อการทดสอบออกจากของสะสม เช่น charger, dock, controller, box และคู่มือ",
+      "commercialTargets": [
+        "/วิธีประเมินราคา",
+        "/รับซื้อสินค้าไอที",
+        "/วิธีขายสินค้า"
+      ],
+      "ownershipRisk": "LOW"
+    },
+    {
+      "url": "/บทความ/รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร",
+      "title": "รอยและตำหนิมีผลต่อราคาสินค้าไอทีอย่างไร",
+      "cluster": "DEVICE_VALUATION",
+      "intent": "Informational: แยกรอยใช้งานทั่วไป ตำหนิโครงสร้าง ความเสียหายจอ และอาการฟังก์ชัน เพื่อรายงานสภาพแบบตรวจสอบได้",
+      "commercialTargets": [
+        "/วิธีประเมินราคา",
+        "/รับซื้อสินค้าไอที",
+        "/วิธีขายสินค้า"
+      ],
+      "ownershipRisk": "MEDIUM"
     }
   ],
   "candidateGuides": [

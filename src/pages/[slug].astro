@@ -8,6 +8,25 @@ import { PILOT_IMAGES, type PilotImageKey } from "../data/pilotImages";
 import { getServicePageVisuals } from "../data/pageVisuals";
 import { getRuntimeBreadcrumbs, getRuntimeDiscoveryLinks, getRuntimeRelatedLinks } from "../config/runtime-architecture";
 
+const K1_SERVICE_SEO_OVERRIDES = {
+  "รับซื้อกล้อง-โคราช": {
+    title: "รับซื้อกล้อง โคราช | Canon Sony Fuji Nikon กล้องมือสอง",
+    description: "ขายกล้อง DSLR หรือ Mirrorless ในโคราช ส่งรุ่น รูปสภาพ Shutter Count เลนส์และอุปกรณ์เพื่อประเมินเบื้องต้น นัดรับตามคิวหรือจัดส่งได้",
+  },
+  "รับซื้อลำโพง-โคราช": {
+    title: "รับซื้อลำโพง โคราช | JBL Bose Sony Marshall มือสอง",
+    description: "รับประเมินลำโพง Bluetooth และลำโพงบ้านมือสองในโคราช ตรวจเสียง แบต ปุ่ม การเชื่อมต่อและสภาพ ส่งรูปและรุ่นเพื่อประเมินเบื้องต้น",
+  },
+  "รับซื้อโน๊ตบุ๊ค-โคราช": {
+    title: "รับซื้อโน๊ตบุ๊ค โคราช | ทุกยี่ห้อ ประเมินจากรุ่นและสภาพ",
+    description: "ขายโน๊ตบุ๊คมือสองในโคราช Dell HP Lenovo ASUS Acer MSI หรือ MacBook ส่งรุ่น สเปก รูปสภาพ จอและแบต เพื่อประเมินเบื้องต้นก่อนนัดรับหรือจัดส่ง",
+  },
+  "รับซื้อโทรศัพท์จอแตก-โคราช": {
+    title: "รับซื้อโทรศัพท์จอแตก โคราช | iPhone Samsung ยังขายได้",
+    description: "มือถือจอแตกยังประเมินได้ ส่งรุ่น ความจุ รูปจอ อาการทัชและการแสดงผล พร้อมสถานะบัญชี เพื่อประเมินเบื้องต้นก่อนตรวจเครื่องจริง",
+  },
+} as const;
+
 export async function getStaticPaths() {
   const services = await getCollection("services");
   return services.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
@@ -17,6 +36,9 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 const index = await getAllContentIndex();
 const path = `/${entry.data.slug}`;
+const k1Seo = K1_SERVICE_SEO_OVERRIDES[entry.data.slug as keyof typeof K1_SERVICE_SEO_OVERRIDES];
+const pageTitle = k1Seo?.title ?? entry.data.title;
+const pageDescription = k1Seo?.description ?? entry.data.description;
 const architectureRelated = [
   ...getRuntimeDiscoveryLinks(path, 16),
   ...getRuntimeRelatedLinks(path, 6),
@@ -39,16 +61,16 @@ const breadcrumbs = runtimeBreadcrumbs.length
     ];
 
 const schema = buildGraph([
-  webpageSchema({ url, name: entry.data.title, description: entry.data.description, dateModified: entry.data.updatedDate.toISOString() }),
-  serviceSchema({ url, name: entry.data.h1, description: entry.data.description }),
+  webpageSchema({ url, name: pageTitle, description: pageDescription, dateModified: entry.data.updatedDate.toISOString() }),
+  serviceSchema({ url, name: entry.data.h1, description: pageDescription }),
   breadcrumbSchema(breadcrumbs),
   ...(entry.data.faq.length ? [faqSchema(entry.data.faq, url)] : []),
 ]);
 ---
 
 <ServicePageLayout
-  title={entry.data.title}
-  description={entry.data.description}
+  title={pageTitle}
+  description={pageDescription}
   h1={entry.data.h1}
   lead={entry.data.excerpt}
   breadcrumbs={breadcrumbs}

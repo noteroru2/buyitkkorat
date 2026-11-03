@@ -19,7 +19,14 @@ export function organizationSchema() {
     legalName: SITE.legalName,
     url: SITE.url,
     telephone: SITE.phoneTel,
-    sameAs: sameAsLinks(),
+    sameAs: [...sameAsLinks(), "https://amphon.co.th/", "https://webuy.in.th/"],
+    parentOrganization: {
+      "@type": "Organization",
+      "@id": "https://amphon.co.th/#organization",
+      name: "อำพล เทรดดิ้ง",
+      legalName: SITE.legalName,
+      url: "https://amphon.co.th/",
+    },
     location: { "@id": SITE.localBusinessId },
     areaServed: [
       {
@@ -70,7 +77,13 @@ export function localBusinessSchema() {
       opens: "09:00",
       closes: "21:00",
     },
-    parentOrganization: { "@id": SITE.organizationId },
+    parentOrganization: {
+      "@type": "Organization",
+      "@id": "https://amphon.co.th/#organization",
+      name: "อำพล เทรดดิ้ง",
+      legalName: SITE.legalName,
+      url: "https://amphon.co.th/",
+    },
     areaServed: {
       "@type": "AdministrativeArea",
       name: `จังหวัด${SERVICE_AREA.primaryProvince}`,

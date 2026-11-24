@@ -1,0 +1,28 @@
+name: Korat verified store hours SEO QA (no deploy)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/data/site.ts'
+      - 'src/utils/schema.ts'
+      - 'tests/korat-store-hours.test.mjs'
+      - '.github/workflows/korat-store-hours-qa.yml'
+permissions:
+  contents: read
+jobs:
+  hours-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Build all pages with real fallback storefront hours
+        run: npm run build
+      - name: Verify visible hours, JSON-LD and no phantom Korat branch
+        run: node --test tests/korat-store-hours.test.mjs

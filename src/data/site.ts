@@ -43,9 +43,9 @@ export const STORE_LOCATION = {
   postalCode: envOr("PUBLIC_STORE_POSTAL_CODE", "34000"),
   country: envOr("PUBLIC_STORE_COUNTRY", "TH"),
   /** Human-readable hours on pages */
-  openingHoursText: envOr("PUBLIC_STORE_HOURS_TEXT", "ทุกวัน 09:00–21:00"),
+  openingHoursText: envOr("PUBLIC_STORE_HOURS_TEXT", "จันทร์–เสาร์ 09:00–19:00"),
   /** Schema.org openingHours string */
-  openingHoursSchema: envOr("PUBLIC_STORE_OPENING_HOURS", "Mo-Su 09:00-21:00"),
+  openingHoursSchema: envOr("PUBLIC_STORE_OPENING_HOURS", "Mo-Sa 09:00-19:00"),
   mapsUrl: CONTACT_CHANNELS.mapsUrl,
   /** Schema addressLocality per Batch 1.1 brief */
   addressLocality: "ตำบลในเมือง อำเภอเมืองอุบลราชธานี",
